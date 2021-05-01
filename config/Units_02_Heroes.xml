@@ -357,7 +357,6 @@
 				<BlendTransitionDefinition from="turn" to="shoot" mergeTicks="3"/>
 				<InstantTransitionDefinition from="shoot" to="default"/>
 				<BlendTransitionDefinition from="default" to="shoot" mergeTicks="3"/>
-=
 				<BlendTransitionDefinition from="default" to="unconscious" mergeTicks="3"/>
 				<BlendTransitionDefinition from="turn" to="unconscious" mergeTicks="3"/>
 				<BlendTransitionDefinition from="unconscious" to="default" mergeTicks="3"/>
@@ -597,7 +596,7 @@
 
 	<!--Saxony-->
 	<!--Brunhilde-->
-	<UnitConfiguration id="sax_hero_brunhilde" type="hero_mech">
+	<UnitConfiguration id="sax_hero_brunhilde" type="mech">
 		<IsAbstract>false</IsAbstract>
 		<Type>Mech</Type>
 		<Health>900</Health>
@@ -625,7 +624,7 @@
 				<SecondaryWeaponConfiguration weaponConfigurationId="sax_hero_brunhilde_cannon_RM" offsetX="2.8" offsetY="-1.75" direction="90"/>
 				<SecondaryWeaponConfiguration weaponConfigurationId="sax_hero_brunhilde_cannon_RR" offsetX="2.8" offsetY="1.75" direction="90"/>
 			</SecondaryWeapons>
-			<AlternatingWeaponDelay>4</AlternatingWeaponDelay>
+			<AlternatingWeaponDelay>1</AlternatingWeaponDelay>
 			<State>Alternating</State>
 		</AdvancedSecondaryWeaponModuleConfiguration>
 
@@ -658,8 +657,8 @@
 
 		<!--Costs-->
 		<BuildCost>
-			<IronCost>550</IronCost>
-			<OilCost>170</OilCost>
+			<IronCost>650</IronCost>
+			<OilCost>175</OilCost>
 			<PopulationCost>5</PopulationCost>
 		</BuildCost>
 		<RepairCost>
@@ -1016,15 +1015,15 @@
 				<InstantTransitionDefinition from="turn" to="default"/>
 				<BlendTransitionDefinition from="default" to="unconscious" mergeTicks="3"/>
 				<BlendTransitionDefinition from="turn" to="unconscious" mergeTicks="3"/>
-				<StationaryTransitionDefinition from="unconscious" to="default" fadeOut="3" flat="32" fadeIn="0"/>
+				<StationaryTransitionDefinition from="unconscious" to="default" fadeOut="3" flat="8" fadeIn="0"/>
 				<BlendTransitionDefinition from="turn" to="interact" mergeTicks="3"/>
 				<BlendTransitionDefinition from="default" to="interact" mergeTicks="3"/>
 				<InstantTransitionDefinition from="interact" to="default"/>
 
 				<BlendTransitionDefinition from="turn" to="aim" mergeTicks="15"/>
 				<BlendTransitionDefinition from="default" to="aim" mergeTicks="15"/>
-				<StationaryTransitionDefinition from="aim" to="default" fadeOut="0" flat="15" fadeIn="0"/>
-				<StationaryTransitionDefinition from="aim" to="turn" fadeOut="0" flat="15" fadeIn="0"/>
+				<StationaryTransitionDefinition from="aim" to="default" fadeOut="0" flat="5" fadeIn="0"/>
+				<StationaryTransitionDefinition from="aim" to="turn" fadeOut="0" flat="5" fadeIn="0"/>
 
 				<InstantTransitionDefinition from="aim" to="shoot"/>
 				<InstantTransitionDefinition from="shoot" to="aim"/>

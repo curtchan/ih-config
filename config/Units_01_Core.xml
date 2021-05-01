@@ -332,14 +332,14 @@
 		<UnitConfiguration id="pol_soldier_exo" type="exoskeleton" parentId="com_exo">
 			<IsAbstract>false</IsAbstract>
 			<Type>Mech</Type>
-			<Health>175</Health>
+			<Health>200</Health>
 			<ArmorType>Light</ArmorType>
 			<VisionRadius>40</VisionRadius>
 			<Weapons>
 				<Weapon>pol_soldier_exo_autocannon</Weapon>
 				<Weapon>pol_soldier_exo_melee</Weapon>
 			</Weapons>
-			<SquadSize>3</SquadSize>
+			<SquadSize>5</SquadSize>
 			<!--Navigation-->
 			<NavRadius>Human</NavRadius>
 
@@ -382,7 +382,6 @@
 				<MechMovementAbilityDefinition defaultMovement="true"/>
 				<DefaultMechAttackAbilityDefinition weapon="pol_soldier_exo_autocannon" defaultAttack="true"/>
 				<DefaultMechAttackAbilityDefinition weapon="pol_soldier_exo_melee" defaultMelee="true" abilityType="MeleeAttack"/>
-				<MechDefenseModeAbilityDefinition DamageReductionModifer="0.2" AbilityType="VeteranMechAbility" cooldown="8" VeteranAbility="true"/>
 			</UnitAbilities>
 
 			<!--ExperienceValues-->
@@ -408,7 +407,6 @@
 			<KineticToVelocity>0.5</KineticToVelocity>
 			<RotationSpeed>96</RotationSpeed>
 			<MoveSpeed>3.45</MoveSpeed>
-			<ChargingMoveSpeed>3</ChargingMoveSpeed>
 			<ForwardScale>1.2</ForwardScale>
 			<PositiveDelta>120</PositiveDelta>
 			<NegativeDelta>60</NegativeDelta>
@@ -567,7 +565,7 @@
 		<!-- Polania Recon-->
 		<UnitConfiguration id="pol_mech_recon" type="mech" parentId="com_light_mech">
 			<IsAbstract>false</IsAbstract>
-			<Health>750</Health>
+			<Health>650</Health>
 			<VisionRadius>40</VisionRadius>
 			<AfterDeathVisionDuration>4.8</AfterDeathVisionDuration> <!-- in seconds -->
 			<AfterDeathVisionRadius>30</AfterDeathVisionRadius>
@@ -627,7 +625,7 @@
 
 			<!--Veterancy-->
 			<Veterancy>
-				<VeteranThreshold>1500</VeteranThreshold>
+				<VeteranThreshold>500</VeteranThreshold>
 				<EliteThreshold>3500</EliteThreshold>
 			</Veterancy>
 
@@ -741,7 +739,7 @@
 		<!-- Polania Artillery | Siege Tank-->
 		<UnitConfiguration id="pol_mech_artillery" type="mech" parentId="com_medium_mech">
 			<IsAbstract>false</IsAbstract>
-			<Health>600</Health>
+			<Health>650</Health>
 			<VisionRadius>35</VisionRadius>
 			<Weapons>
 				<Weapon>pol_mech_artillery_cannon_motion</Weapon>
@@ -820,7 +818,7 @@
 
 			<!--Veterancy-->
 			<Veterancy>
-				<VeteranThreshold>3000</VeteranThreshold>
+				<VeteranThreshold>1000</VeteranThreshold>
 				<EliteThreshold>7000</EliteThreshold>
 			</Veterancy>
 
@@ -844,7 +842,7 @@
 			</ExperienceValues>
 
 			<!--Internals-->
-			<MoveSpeed>2.5</MoveSpeed>
+			<MoveSpeed>3.0</MoveSpeed>
 			<MaxKineticVelocity>0</MaxKineticVelocity>			
 			<Acceleration>0.05</Acceleration>
 			<RotationSpeed>22</RotationSpeed>
@@ -875,9 +873,9 @@
 				<Transitions>
 				<!--Attention: the flat-value should be as long as the actual time for the artillery to change to siege mode. 
 				Having a lower value might lead to delayed visual attacks and therefore early visualization of logical attack (damage)-->
-					<StationaryTransitionDefinition from="default" to="siege" fadeOut="3" flat="42" fadeIn="0"/>
-					<StationaryTransitionDefinition from="turn" to="siege" fadeOut="3" flat="42" fadeIn="0"/>
-					<StationaryTransitionDefinition from="siege" to="default" fadeOut="3" flat="45" fadeIn="3"/>
+					<StationaryTransitionDefinition from="default" to="siege" fadeOut="3" flat="20" fadeIn="0"/>
+					<StationaryTransitionDefinition from="turn" to="siege" fadeOut="3" flat="20" fadeIn="0"/>
+					<StationaryTransitionDefinition from="siege" to="default" fadeOut="3" flat="20" fadeIn="3"/>
 					<InstantTransitionDefinition from="shoot_siege" to="siege"/>
 					<BlendTransitionDefinition from="siege" to="shoot_siege" mergeTicks="3"/>
 					<BlendTransitionDefinition from="default" to="turn" mergeTicks="3"/>
@@ -1028,14 +1026,14 @@
 			</ExperienceValues>
 
 			<!--Internals-->
-			<RotationSpeed>50</RotationSpeed>
+			<RotationSpeed>75</RotationSpeed>
 			<KineticToVelocity>2</KineticToVelocity>
 			<MaxKineticVelocity>2</MaxKineticVelocity>
 			<RotationAcceleration>0.05</RotationAcceleration>
-			<MoveSpeed>2.25</MoveSpeed>
+			<MoveSpeed>3.6</MoveSpeed>
 			<PositiveDelta>90</PositiveDelta>
 			<NegativeDelta>160</NegativeDelta>
-			<Acceleration>0.05</Acceleration>
+			<Acceleration>1</Acceleration>
 			<MotionScaleCurve>
 				<Key x="0" y="1"/>
 				<Key x="60" y="1"/>
@@ -1307,7 +1305,7 @@
 
 			<!--Veterancy-->
 			<Veterancy>
-				<VeteranThreshold>2000</VeteranThreshold>
+				<VeteranThreshold>0</VeteranThreshold>
 				<EliteThreshold>5000</EliteThreshold>
 			</Veterancy>
 
@@ -1331,7 +1329,7 @@
 			</ExperienceValues>
 
 			<!--Internals-->
-			<MoveSpeed>2.21</MoveSpeed>
+			<MoveSpeed>2.5</MoveSpeed>
 			<Acceleration>0.15</Acceleration>
 			<RotationSpeed>21.09</RotationSpeed>
 			<RotationAcceleration>0.002</RotationAcceleration>
@@ -1486,7 +1484,7 @@
 				<Weapon>sax_soldier_mortar_mortar</Weapon>
 				<Weapon>sax_soldier_mortar_melee</Weapon>
 			</Weapons>
-			<SquadSize>3</SquadSize>
+			<SquadSize>4</SquadSize>
 
 			<!--Hitsystem-->
 			<HitzoneRadius>1</HitzoneRadius>
@@ -1494,8 +1492,8 @@
 
 			<!--Costs-->
 			<BuildCost>
-				<IronCost>300</IronCost>
-				<OilCost>50</OilCost>
+				<IronCost>330</IronCost>
+				<OilCost>80</OilCost>
 				<PopulationCost>3</PopulationCost>
 			</BuildCost>
 			<RepairCost>
@@ -1547,7 +1545,7 @@
         <MechBrawlMovementAbilityDefinition defaultMovement="true"/>
         <DefaultMechAttackAbilityDefinition weapon="sax_soldier_mortar_mortar" defaultAttack="true"/>
         <DefaultMechAttackAbilityDefinition weapon="sax_soldier_mortar_melee" defaultMelee="true" abilityType="MeleeAttack"/>
-		<MechDisruptAbilityDefinition abilityType="VeteranMechAbility" cooldown="10" Range="10" VeteranAbility="true"/>
+	<MechDisruptAbilityDefinition abilityType="VeteranMechAbility" cooldown="10" Range="10" VeteranAbility="true"/>
       </UnitAbilities>
 
 			<UnitStates>
@@ -1696,11 +1694,11 @@
 
 			<!--Internals-->
 			<RotationSpeed>60</RotationSpeed>
-			<MoveSpeed>1.5</MoveSpeed>
+			<MoveSpeed>2.0</MoveSpeed>
 			<ForwardScale>1.2</ForwardScale>
 			<PositiveDelta>120</PositiveDelta>
 			<NegativeDelta>60</NegativeDelta>
-			<Acceleration>0.2</Acceleration>
+			<Acceleration>1.0</Acceleration>
 			<MotionScaleCurve>
 				<Key x="0" y="1"/>
 				<Key x="60" y="0.5"/>
@@ -1864,7 +1862,7 @@
 
 			<!--Veterancy-->
 			<Veterancy>
-				<VeteranThreshold>2500</VeteranThreshold>
+				<VeteranThreshold>2000</VeteranThreshold>
 				<EliteThreshold>5500</EliteThreshold>
 			</Veterancy>
 
@@ -1890,12 +1888,12 @@
 			<!--Internals-->
 			<MaxKineticVelocity>0</MaxKineticVelocity>
 			<KineticToVelocity>0</KineticToVelocity>			
-			<RotationSpeed>38</RotationSpeed>
-			<RotationAcceleration>0.005</RotationAcceleration>
-			<MoveSpeed>3.56</MoveSpeed>
+			<RotationSpeed>50</RotationSpeed>
+			<RotationAcceleration>0.1</RotationAcceleration>
+			<MoveSpeed>3.75</MoveSpeed>
 			<PositiveDelta>180</PositiveDelta>
 			<NegativeDelta>0</NegativeDelta>
-			<Acceleration>0.05</Acceleration>
+			<Acceleration>1.0</Acceleration>
 			<MotionScaleCurve>
 				<Key x="0" y="1"/>
 				<Key x="90" y="0.5"/>
@@ -1912,7 +1910,7 @@
 		<!-- Saxony Artillery-->
 		<UnitConfiguration id="sax_mech_artillery" type="mech" parentId="com_light_mech">
 			<IsAbstract>false</IsAbstract>
-			<Health>750</Health>
+			<Health>350</Health>
 			<VisionRadius>25</VisionRadius>
 			<Weapons>
 				<Weapon>sax_mech_artillery_cannon</Weapon>
@@ -1985,7 +1983,7 @@
 			</ExperienceValues>
 
 			<!--Internals-->
-			<MoveSpeed>1.75</MoveSpeed>
+			<MoveSpeed>2.1</MoveSpeed>
 			<KineticToVelocity>0.5</KineticToVelocity>
 			<MaxKineticVelocity>0.5</MaxKineticVelocity>
 			<Acceleration>0.05</Acceleration>
@@ -2084,7 +2082,7 @@
 			</ExperienceValues>
 
 			<!--Internals-->
-			<MoveSpeed>2.66</MoveSpeed>
+			<MoveSpeed>2.50</MoveSpeed>
 			<Acceleration>0.35</Acceleration>
 			<RotationSpeed>52</RotationSpeed>
 			<RotationAcceleration>0.1</RotationAcceleration>
@@ -2114,6 +2112,7 @@
 				<Weapon>sax_mech_mother_wheel_BR</Weapon>
 				<Weapon>sax_mech_mother_wheel_FR</Weapon>
 				<Weapon>sax_mech_mother_grenaderain</Weapon>
+				<Weapon>pol_mech_gunfort_mortar</Weapon>
 			</Weapons>
 			<PreventImplicitTargeting>true</PreventImplicitTargeting>
 
@@ -2137,7 +2136,12 @@
 						<Weapon>sax_mech_mother_wheel_FR</Weapon>
 					</Weapons>
 				</MechMotherDroneAttackDefinition>
+				<DefaultMechAttackAbilityDefinition weapon="pol_mech_gunfort_mortar" abilityType="VeteranMechAbility" VeteranAbility="true" deactivateAfterShot="true"/>
 			</UnitAbilities>
+			
+			<AutoAbilities>
+				<AllAroundAttackAutoAbilityDefinition weapon="pol_mech_gunfort_mortar" abilityType="VeteranMechAbility" minTargetsInRange="2" settingIdentifier="RainAutoAbility"/>
+			</AutoAbilities>
 
 			<!--Costs-->
 			<BuildCost>
@@ -2169,7 +2173,7 @@
       <ExperienceValues>
         <AttackerXP>
           <!--how many points would an attacker get when doing 100% damage-->
-          <Rookie>1400</Rookie>
+          <Rookie>400</Rookie>
           <Veteran>1680</Veteran>
           <Elite>2100</Elite>
         </AttackerXP>
@@ -2188,7 +2192,7 @@
       </ExperienceValues>
 
 			<!--Internals-->
-			<MoveSpeed>1.7</MoveSpeed>
+			<MoveSpeed>2.5</MoveSpeed>
 			<Acceleration>0.15</Acceleration>
 			<RotationSpeed>42.5</RotationSpeed>
 			<RotationAcceleration>0.01</RotationAcceleration>
@@ -2336,7 +2340,7 @@
 			<!--Decay describes velocity reduction in meter per tick! -->
 			<KineticVelocityProportionalDecay>0.2</KineticVelocityProportionalDecay>
 			<KineticVelocityConstantDecay>0.05</KineticVelocityConstantDecay>			
-			<MoveSpeed>2.23</MoveSpeed>
+			<MoveSpeed>2.4</MoveSpeed>
 			<Acceleration>0.15</Acceleration>
 			<RotationSpeed>39.9</RotationSpeed>
 			<RotationAcceleration>0.01</RotationAcceleration>
@@ -2356,9 +2360,9 @@
 						<MechAimStateDefinition name="aim"/>
 					</States>
 					<Transitions>
-						<StationaryTransitionDefinition from="default" to="siege" fadeOut="3" flat="24" fadeIn="0"/>
-						<StationaryTransitionDefinition from="turn" to="siege" fadeOut="3" flat="24" fadeIn="0"/>
-						<StationaryTransitionDefinition from="siege" to="default" fadeOut="3" flat="24" fadeIn="3"/>
+						<StationaryTransitionDefinition from="default" to="siege" fadeOut="3" flat="18" fadeIn="0"/>
+						<StationaryTransitionDefinition from="turn" to="siege" fadeOut="3" flat="18" fadeIn="0"/>
+						<StationaryTransitionDefinition from="siege" to="default" fadeOut="3" flat="18" fadeIn="3"/>
 						<BlendTransitionDefinition from="default" to="turn" mergeTicks="3"/>
 						<BlendTransitionDefinition from="turn" to="default" mergeTicks="3"/>
 						<InstantTransitionDefinition from="shoot_siege" to="siege"/>
@@ -2532,7 +2536,7 @@
 				<Weapon>rus_soldier_exo_jump</Weapon>
 			</Weapons>
 			<AttackRange>13</AttackRange>
-			<SquadSize>3</SquadSize>
+			<SquadSize>5</SquadSize>
 
 			<!--Hitsystem-->
 			<!--<HitzoneRadius>.6</HitzoneRadius>-->
@@ -2573,7 +2577,7 @@
 						<Weapon>rus_soldier_exo_melee2</Weapon>
 					</Weapons>
 				</MultiWeaponMechAttackAbilityDefinition>
-				<MechJumpDefinition abilityType="VeteranMechAbility" weaponId="rus_soldier_exo_jump" jumpRange="35" cooldown="480" jumpTimeForMinDistance="2.94" jumpTimeForMaxDistance="2.94"/>
+				<MechJumpDefinition abilityType="VeteranMechAbility" weaponId="rus_soldier_exo_jump" jumpRange="60" cooldown="200" jumpTimeForMinDistance="2.94" jumpTimeForMaxDistance="2.94"/>
 				<AirDropBattleReinforceDefinition abilityType="AirDropBattleReinforce" weaponId="rus_soldier_exo_jump" range="15" cooldown="880" maxCount="2" impactDelay="14" delayBetweenSpawns="3" VeteranAbility="true" />
 			</UnitAbilities>
 			
@@ -2775,9 +2779,9 @@
 				<PopulationCost>4</PopulationCost>
 			</BuildCost>
 			<RepairCost>
-				<IronCost>5</IronCost>
-				<OilCost>1</OilCost>
-				<BatchSize>40</BatchSize>
+				<IronCost>250</IronCost>
+				<OilCost>45</OilCost>
+				<BatchSize>500</BatchSize>
 			</RepairCost>
 			<ReserveBuildCost>
 				<IronCost>210</IronCost>
@@ -2817,7 +2821,7 @@
 			<MaxKineticVelocity>1</MaxKineticVelocity>
 			<KineticToVelocity>4</KineticToVelocity>
 			<MaxKineticVelocity>4</MaxKineticVelocity>
-			<MoveSpeed>2.3</MoveSpeed>
+			<MoveSpeed>2.0</MoveSpeed>
 			<Acceleration>0.2</Acceleration>
 			<RotationSpeed>44</RotationSpeed>
 			<RotationAcceleration>0.05</RotationAcceleration>
@@ -2879,6 +2883,7 @@
 			<Weapons>
 				<Weapon>rus_mech_bomber_launcher</Weapon>
 				<Weapon>rus_mech_bomber_axial</Weapon>
+				<Weapon>rus_mech_gunfort_demolisher</Weapon>
 			</Weapons>
 
 			<!--Hitsystem-->
@@ -2897,7 +2902,11 @@
 			<UnitAbilities>
 				<MechMovementAbilityDefinition defaultMovement="true"/>
 				<DefaultMechAttackAbilityDefinition weapon="rus_mech_bomber_launcher" defaultAttack="true"/>
+				<MechChargingUpAttackDefinition weapon="rus_mech_gunfort_demolisher" abilityType="VeteranMechAbility" VeteranAbility="true" DeactivateAfterShot="true"/>
 			</UnitAbilities>
+			<AutoAbilities>
+				<AreaAttackAutoAbilityDefinition weapon="rus_mech_gunfort_demolisher" abilityType="VeteranMechAbility" settingIdentifier="DemolisherAutoAbility"/>
+			</AutoAbilities>
 
 			<!--Costs-->
 			<BuildCost>
@@ -2921,8 +2930,8 @@
 
 			<!--Veterancy-->
 			<Veterancy>
-				<VeteranThreshold>3500</VeteranThreshold>
-				<EliteThreshold>8000</EliteThreshold>
+				<VeteranThreshold>2500</VeteranThreshold>
+				<EliteThreshold>7000</EliteThreshold>
 			</Veterancy>
 
 			<!--ExperienceValues-->
@@ -2966,6 +2975,7 @@
 					<DefaultMechStateDefinition name="default"/>
 					<MechAimStateDefinition name="aim"/>
 					<MechShootStateDefinition name="shoot" PreTicks="1" PostTicks="3"/>
+					<MechShootStateDefinition name="shoot_demolisher" PreTicks="1" PostTicks="3"/>
 					<MechTurnStateDefinition name="turn"/>
 				</States>
 				<Transitions>
@@ -2974,6 +2984,9 @@
 					<BlendTransitionDefinition from="turn" to="aim" mergeTicks="3"/>
 					<InstantTransitionDefinition from="shoot" to="default"/>
 					<BlendTransitionDefinition from="default" to="aim" mergeTicks="3"/>
+					<BlendTransitionDefinition from="turn" to="shoot_demolisher" mergeTicks="3"/>
+					<BlendTransitionDefinition from="default" to="shoot_demolisher" mergeTicks="3"/>
+					<BlendTransitionDefinition from="shoot_demolisher" to="default" mergeTicks="3"/>
 					<InstantTransitionDefinition from="shoot" to="aim"/>
 					<InstantTransitionDefinition from="aim" to="shoot"/>
 					<InstantTransitionDefinition from="aim" to="turn"/>
@@ -2997,6 +3010,12 @@
 							<Request>aim</Request>
 						</StateNames>
 					</AttackRequest>
+					<AbilityRequest ability="VeteranMechAbility">
+						<StateNames>
+							<Request>shoot_demolisher</Request>
+							<Request>default</Request>
+						</StateNames>
+					</AbilityRequest>
 				</Requests>
 			</UnitStates>
 		</UnitConfiguration>
@@ -3004,7 +3023,7 @@
 		<!-- Rusviet Artillery | Rocket artillery-->	
 		<UnitConfiguration id="rus_mech_artillery" type="mech" parentId="com_medium_mech">
 			<IsAbstract>false</IsAbstract>
-			<Health>750</Health>
+			<Health>500</Health>
 			<ArmorType>Light</ArmorType>
 			<VisionRadius>35</VisionRadius>
 			<Weapons>
@@ -3162,6 +3181,7 @@
 		<UnitConfiguration id="rus_mech_revolver" type="mech" parentId="com_medium_mech">
 			<IsAbstract>false</IsAbstract>
 			<Health>1150</Health>
+			<ArmorType>Heavy</ArmorType>
 			<VisionRadius>40</VisionRadius>
 			<Weapons>
 				<weapon>rus_mech_revolver_cannon_L</weapon>
@@ -3254,7 +3274,7 @@
 			<!--Internals-->
 			<MaxKineticVelocity>0</MaxKineticVelocity>
 			<KineticToVelocity>0</KineticToVelocity>			
-			<MoveSpeed>2.4</MoveSpeed>
+			<MoveSpeed>2</MoveSpeed>
 			<Acceleration>0.1</Acceleration>
 			<RotationSpeed>38</RotationSpeed>
 			<RotationAcceleration>0.05</RotationAcceleration>
@@ -3401,7 +3421,7 @@
 
 			<!--Internals-->
 			<!--Plain Copied from Revolver-->
-			<MoveSpeed>3</MoveSpeed>
+			<MoveSpeed>1.8</MoveSpeed>
 			<Acceleration>0.1</Acceleration>
 			<KineticToVelocity>1</KineticToVelocity>
 			<MaxKineticVelocity>2</MaxKineticVelocity>
@@ -3521,8 +3541,8 @@
 			</AutoAbilities>
 			<!--Costs-->
 			<BuildCost>
-				<IronCost>700</IronCost>
-				<OilCost>210</OilCost>
+				<IronCost>725</IronCost>
+				<OilCost>230</OilCost>
 				<PopulationCost>6</PopulationCost>
 			</BuildCost>
 			<RepairCost>
@@ -3536,7 +3556,7 @@
 
 			<!--Veterancy-->
 			<Veterancy>
-				<VeteranThreshold>3000</VeteranThreshold>
+				<VeteranThreshold>2000</VeteranThreshold>
 				<EliteThreshold>7000</EliteThreshold>
 			</Veterancy>
 
@@ -3560,7 +3580,7 @@
 			</ExperienceValues>
 
 			<!--Internals-->
-			<MoveSpeed>2.60</MoveSpeed>
+			<MoveSpeed>2.0</MoveSpeed>
 			<KineticToVelocity>2.5</KineticToVelocity>
 			<MaxKineticVelocity>2.5</MaxKineticVelocity>
 			<Acceleration>0.15</Acceleration>
@@ -3739,7 +3759,7 @@
 			<RotationSpeed>56</RotationSpeed>
 			<MaxKineticVelocity>0</MaxKineticVelocity>
 			<KineticToVelocity>0</KineticToVelocity>
-			<MoveSpeed>1.8</MoveSpeed>
+			<MoveSpeed>2.4</MoveSpeed>
 			<PositiveDelta>180</PositiveDelta>
 			<NegativeDelta>-1</NegativeDelta>
 			<Acceleration>0.025</Acceleration>
@@ -3807,7 +3827,7 @@
 		<!-- Cannon system-->	
 		<UnitConfiguration id="com_support_cannon" type="mech" parentId="com_weaponsys">
 			<IsAbstract>false</IsAbstract>
-			<Health>600</Health>
+			<Health>500</Health>
 			<VisionRadius>35</VisionRadius>
 			<Weapons>
 				<Weapon>com_support_cannon_cannon</Weapon>
@@ -3958,8 +3978,8 @@
 		<!-- Mortar system-->	
 		<UnitConfiguration id="com_support_mortar" type="mech" parentId="com_weaponsys">
 			<IsAbstract>false</IsAbstract>
-			<Health>400</Health>
-			<VisionRadius>30</VisionRadius>
+			<Health>350</Health>
+			<VisionRadius>20</VisionRadius>
 			<StandardCrew>Engineer</StandardCrew>
 			<Weapons>
 				<Weapon>com_support_mortar_mortar</Weapon>
@@ -4179,7 +4199,7 @@
 		<UnitConfiguration id="sax_mech_mothersdrone" type="mech" parentId="com_light_mech">
 			<IsAbstract>False</IsAbstract>
 			<NavRadius>Human</NavRadius>
-			<Health>75</Health>
+			<Health>50</Health>
 			<ArmorType>Light</ArmorType>
 			<!--IsMinion means that the unit does not count as UnitsKilled or UnitsLost in BattleStatistics and UnitDeathLimit handicap-->
 			<Tags>IsMinion</Tags>

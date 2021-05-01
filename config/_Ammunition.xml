@@ -119,7 +119,7 @@
     <OuterExplosionRadiusDamageModifier>0</OuterExplosionRadiusDamageModifier>
     <ExplosionDelay>0</ExplosionDelay>
     <FlightDuration>24</FlightDuration>
-    <DeviationRange>6.5</DeviationRange>
+    <DeviationRange>4</DeviationRange>
   </AmmoConfiguration>
   <AmmoConfiguration id="MortarSystemGrenade" type="explosive">
     <GarrisonedUnitdamageModifier>0.1</GarrisonedUnitdamageModifier>
@@ -203,13 +203,13 @@
     <OuterExplosionRadiusDamageModifier>0.4</OuterExplosionRadiusDamageModifier>
     <ExplosionDelay>0</ExplosionDelay>
     <FlightDuration>24</FlightDuration>
-    <DeviationRange>15</DeviationRange>
+    <DeviationRange>10</DeviationRange>
   </AmmoConfiguration>
   <AmmoConfiguration id="GunfortDemolisherGrenade" type="explosive">
     <GarrisonedUnitdamageModifier>0.1</GarrisonedUnitdamageModifier>
     <ExplosionRadius>5</ExplosionRadius>
-    <OuterExplosionRadius>10</OuterExplosionRadius>
-    <OuterExplosionRadiusDamageModifier>0.05</OuterExplosionRadiusDamageModifier>
+    <OuterExplosionRadius>30</OuterExplosionRadius>
+    <OuterExplosionRadiusDamageModifier>1</OuterExplosionRadiusDamageModifier>
     <ExplosionDelay>0</ExplosionDelay>
     <FlightDurationType>HorizontalVelocity</FlightDurationType>
     <FlightSpeed>56</FlightSpeed>

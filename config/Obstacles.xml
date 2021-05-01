@@ -389,10 +389,10 @@
 				<Health>75</Health>
 				<ObstacleType>Metal</ObstacleType>
 				<Targetable>true</Targetable>
-				<Collision>HumanVaultable, SmallMechBreakable, BigMechBreakable</Collision>
+				<Collision>Human, SmallMech, BigMechBreakable</Collision>
 				<HarvestGains>
-					<TotalIronGains>50</TotalIronGains>
-					<TotalOilGains>5</TotalOilGains>
+					<TotalIronGains>70</TotalIronGains>
+					<TotalOilGains>25</TotalOilGains>
 					<HarvestTime>10.0</HarvestTime>
 				</HarvestGains>
 				<InvulnerabilityTicks>16</InvulnerabilityTicks>
@@ -402,8 +402,8 @@
 			<ObstacleConfiguration id="tier1Wreck" type="wreck" parentId="defaultWreck">
 				<AvoidanceRadius>2.5</AvoidanceRadius>
 				<HarvestGains>
-					<TotalIronGains>50</TotalIronGains>
-					<TotalOilGains>15</TotalOilGains>
+					<TotalIronGains>70</TotalIronGains>
+					<TotalOilGains>25</TotalOilGains>
 					<HarvestTime>10.0</HarvestTime>
 				</HarvestGains>
 			</ObstacleConfiguration>
@@ -412,8 +412,8 @@
 			<ObstacleConfiguration id="tier2Wreck" type="wreck" parentId="defaultWreck">
 				<AvoidanceRadius>3.5</AvoidanceRadius>
 				<HarvestGains>
-					<TotalIronGains>90</TotalIronGains>
-					<TotalOilGains>30</TotalOilGains>
+					<TotalIronGains>120</TotalIronGains>
+					<TotalOilGains>60</TotalOilGains>
 					<HarvestTime>10.0</HarvestTime>
 				</HarvestGains>
 			</ObstacleConfiguration>
@@ -421,8 +421,8 @@
 		<!--Gunfort Wreck-->	
 			<ObstacleConfiguration id="gunfortWreck" type="wreck" parentId="defaultWreck">
 				<HarvestGains>
-					<TotalIronGains>120</TotalIronGains>
-					<TotalOilGains>40</TotalOilGains>
+					<TotalIronGains>160</TotalIronGains>
+					<TotalOilGains>60</TotalOilGains>
 					<HarvestTime>15.0</HarvestTime>
 				</HarvestGains>
 			</ObstacleConfiguration>
@@ -1094,7 +1094,7 @@
 			</ObstacleConfiguration>
 	
 	<ObstacleConfiguration id="DefaultBuildingWall" type="buildingWall">
-		<Health>50</Health>
+		<Health>100</Health>
 		<ArmorType>Medium</ArmorType>
 		<Targetable>false</Targetable>
 		<Collision>Human, SmallMech, BigMechBreakable</Collision>
@@ -1102,21 +1102,21 @@
 	
 	<ObstacleConfiguration id="BuildingWallBrick" parentId="DefaultBuildingWall" type="buildingWall">
 		<ArmorType>Medium</ArmorType>
-		<Health>150</Health>
+		<Health>500</Health>
 		<ObstacleType>Brick</ObstacleType>
 		<Targetable>false</Targetable>
 	</ObstacleConfiguration>
 	
 	<ObstacleConfiguration id="BuildingWallWood" parentId="DefaultBuildingWall" type="buildingWall">
 		<ArmorType>Medium</ArmorType>
-		<Health>90</Health>
+		<Health>180</Health>
 		<ObstacleType>Wood</ObstacleType>
 		<Targetable>false</Targetable>
 	</ObstacleConfiguration>
 	
 	<ObstacleConfiguration id="BuildingWallMetal" parentId="DefaultBuildingWall" type="buildingWall">
-		<ArmorType>Medium</ArmorType>
-		<Health>175</Health>
+		<ArmorType>Heavy</ArmorType>
+		<Health>400</Health>
 		<ObstacleType>Metal</ObstacleType>
 		<Targetable>false</Targetable>
 	</ObstacleConfiguration>

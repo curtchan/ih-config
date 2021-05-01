@@ -900,9 +900,9 @@
 				
 				<!--Structure Building-->
 				<BuildCost>
-					<IronCost>200</IronCost>
-					<OilCost>15</OilCost>
-					<PopulationCost>1</PopulationCost>
+					<IronCost>75</IronCost>
+					<OilCost>10</OilCost>
+					<PopulationCost>0</PopulationCost>
 				</BuildCost>
 				<ConstructionPoints>400</ConstructionPoints>
 				<ConstructionExperience>0</ConstructionExperience>					
@@ -922,7 +922,7 @@
 				</Refund>
 				
 				<!--Stats-->
-				<Health>350</Health>
+				<Health>250</Health>
 				<VisionRadius>50</VisionRadius>
 				<Bunker coneAngle="360" />
 				
@@ -933,8 +933,8 @@
 						<StructureId>pol_structure_bunkertier01</StructureId>
 						<UpgradeDuration>45</UpgradeDuration>
 						<BuildCost>
-							<IronCost>200</IronCost>
-							<OilCost>30</OilCost>
+							<IronCost>50</IronCost>
+							<OilCost>20</OilCost>
 							<PopulationCost>0</PopulationCost>
 						</BuildCost>
 					</UpgradeOption>
@@ -948,16 +948,16 @@
 				
 				<!--Structure Building-->
 					<BuildCost>
-						<IronCost>350</IronCost>
-						<OilCost>30</OilCost>
-						<PopulationCost>1</PopulationCost>
+						<IronCost>175</IronCost>
+						<OilCost>25</OilCost>
+						<PopulationCost>0</PopulationCost>
 					</BuildCost>
 					<ConstructionPoints>400</ConstructionPoints>
 					<ConstructionExperience>0</ConstructionExperience>					
 					<RestrictToBuildArea>false</RestrictToBuildArea>
 				
 				<!--Stats-->
-					<Health>350</Health>
+					<Health>250</Health>
 					<VisionRadius>55</VisionRadius>
 					<Bunker coneAngle="360" />
 					<WeaponModule>
@@ -986,8 +986,8 @@
 							<StructureId>pol_structure_bunkertier02</StructureId>
 							<UpgradeDuration>45</UpgradeDuration>
 							<BuildCost>
-								<IronCost>250</IronCost>
-								<OilCost>40</OilCost>
+								<IronCost>75</IronCost>
+								<OilCost>30</OilCost>
 								<PopulationCost>0</PopulationCost>
 							</BuildCost>
 							<CanShootDuringUpgrade>false</CanShootDuringUpgrade>
@@ -1002,15 +1002,15 @@
 				
 				<!--Structure Building-->
 					<BuildCost>
-						<IronCost>450</IronCost>
-						<OilCost>50</OilCost>
-						<PopulationCost>1</PopulationCost>
+						<IronCost>200</IronCost>
+						<OilCost>75</OilCost>
+						<PopulationCost>0</PopulationCost>
 					</BuildCost>
 					<ConstructionPoints>400</ConstructionPoints>
 					<RestrictToBuildArea>false</RestrictToBuildArea>
 				
 				<!--Stats-->
-					<Health>550</Health>
+					<Health>450</Health>
 					<VisionRadius>60</VisionRadius>
 					<Bunker coneAngle="360" />
 					<WeaponModule>
@@ -1040,15 +1040,15 @@
 					<Shape type="convex"><Vertex x="-2" y="-1.2" height="0.2" /><Vertex x="0" y="-2.6" height="0.2" /><Vertex x="2" y="-1.2" height="0.2" /><Vertex x="2" y="1" height="0.2" /><Vertex x="0.8" y="2.9" height="0.2" /><Vertex x="-0.8" y="2.9" height="0.2" /><Vertex x="-2" y="1" height="0.2" /></Shape>
 				
 				<!--Stats-->
-					<Health>300</Health>
+					<Health>350</Health>
 					<VisionRadius>40</VisionRadius>
 					<Bunker coneAngle="180" />
 
 				<!--Structure Building-->
 				<BuildCost>
-					<IronCost>200</IronCost>
-					<OilCost>30</OilCost>
-					<PopulationCost>1</PopulationCost>
+					<IronCost>100</IronCost>
+					<OilCost>15</OilCost>
+					<PopulationCost>0</PopulationCost>
 				</BuildCost>
 
 				<!--Upgrade Structure-->
@@ -1058,8 +1058,8 @@
 							<StructureId>rus_structure_bunkertier01</StructureId>
 							<UpgradeDuration>45</UpgradeDuration>
 							<BuildCost>
-								<IronCost>200</IronCost>
-								<OilCost>35</OilCost>
+								<IronCost>75</IronCost>
+								<OilCost>25</OilCost>
 								<PopulationCost>0</PopulationCost>
 							</BuildCost>
 						</UpgradeOption>
@@ -1072,7 +1072,7 @@
 					<Shape type="convex"><Vertex x="-2.7" y="-2.5" height="0.2" /><Vertex x="-2.3" y="-2.9" height="0.2" /><Vertex x="2.25" y="-2.9" height="0.2" /><Vertex x="2.5" y="-2.5" height="0.2" /><Vertex x="2.5" y="2.5" height="0.2" /><Vertex x="2.25" y="2.9" height="0.2" /><Vertex x="-2.25" y="2.8" height="0.2" /><Vertex x="-2.6" y="2.5" height="0.2" /></Shape>
 				
 				<!--Stats-->
-					<Health>550</Health>
+					<Health>450</Health>
 					<VisionRadius>40</VisionRadius>
 					<Bunker coneAngle="180" />
 					<WeaponModule>
@@ -1083,9 +1083,9 @@
 
 				<!--Structure Building-->
 				<BuildCost>
-					<IronCost>400</IronCost>
-					<OilCost>50</OilCost>
-					<PopulationCost>1</PopulationCost>
+					<IronCost>200</IronCost>
+					<OilCost>35</OilCost>
+					<PopulationCost>0</PopulationCost>
 				</BuildCost>
 				
 				<!--Upgrade Structure-->
@@ -1095,8 +1095,8 @@
 							<StructureId>rus_structure_bunkertier02</StructureId>
 							<UpgradeDuration>45</UpgradeDuration>
 							<BuildCost>
-								<IronCost>300</IronCost>
-								<OilCost>70</OilCost>
+								<IronCost>100</IronCost>
+								<OilCost>50</OilCost>
 								<PopulationCost>0</PopulationCost>
 							</BuildCost>
 							<CanShootDuringUpgrade>false</CanShootDuringUpgrade>
@@ -1110,7 +1110,7 @@
 					<Shape type="convex"><Vertex x="-2.7" y="-2.5" height="0.2" /><Vertex x="-2.3" y="-2.9" height="0.2" /><Vertex x="2.25" y="-2.9" height="0.2" /><Vertex x="2.5" y="-2.5" height="0.2" /><Vertex x="2.5" y="2.5" height="0.2" /><Vertex x="2.25" y="2.9" height="0.2" /><Vertex x="-2.25" y="2.8" height="0.2" /><Vertex x="-2.6" y="2.5" height="0.2" /></Shape>
 				
 				<!--Stats-->
-					<Health>750</Health>
+					<Health>650</Health>
 					<VisionRadius>40</VisionRadius>
 					<Bunker coneAngle="180" />
 					<WeaponModule>
@@ -1121,9 +1121,9 @@
 
 				<!--Structure Building-->
 				<BuildCost>
-					<IronCost>600</IronCost>
+					<IronCost>300</IronCost>
 					<OilCost>100</OilCost>
-					<PopulationCost>1</PopulationCost>
+					<PopulationCost>0</PopulationCost>
 				</BuildCost>
 			</StructureConfiguration>
 			
@@ -1134,15 +1134,15 @@
 					<Shape type="convex"><Vertex x="-2.4" y="-1.6" height="0.2" /><Vertex x="-1.4" y="-2.6" height="0.2" /><Vertex x="1.5" y="-2.7" height="0.2" /><Vertex x="2.4" y="-1.7" height="0.2" /><Vertex x="2.4" y="0.9" height="0.2" /><Vertex x="1.5" y="2.7" height="0.2" /><Vertex x="-1.5" y="2.7" height="0.2" /><Vertex x="-2.4" y="0.9" height="0.2" /></Shape>
 								
 				<!--Stats-->
-					<Health>250</Health>
+					<Health>350</Health>
 					<VisionRadius>40</VisionRadius>
 					<Bunker coneAngle="240" />
 
 				<!--Structure Building-->
 				<BuildCost>
-					<IronCost>150</IronCost>
-					<OilCost>15</OilCost>
-					<PopulationCost>1</PopulationCost>
+					<IronCost>80</IronCost>
+					<OilCost>10</OilCost>
+					<PopulationCost>0</PopulationCost>
 				</BuildCost>
 
 				<!--Upgrade Structure-->
@@ -1152,7 +1152,7 @@
 							<StructureId>sax_structure_bunkertier01</StructureId>
 							<UpgradeDuration>45</UpgradeDuration>
 							<BuildCost>
-								<IronCost>150</IronCost>
+								<IronCost>60</IronCost>
 								<OilCost>20</OilCost>
 								<PopulationCost>0</PopulationCost>
 							</BuildCost>
@@ -1166,7 +1166,7 @@
 					<Shape type="convex"><Vertex x="-2.7" y="-2.5" height="0.2" /><Vertex x="-2.3" y="-2.9" height="0.2" /><Vertex x="2.25" y="-2.9" height="0.2" /><Vertex x="2.5" y="-2.5" height="0.2" /><Vertex x="2.5" y="2.5" height="0.2" /><Vertex x="2.25" y="2.9" height="0.2" /><Vertex x="-2.25" y="2.8" height="0.2" /><Vertex x="-2.6" y="2.5" height="0.2" /></Shape>
 				
 				<!--Stats-->
-					<Health>350</Health>
+					<Health>450</Health>
 					<VisionRadius>40</VisionRadius>
 					<Bunker coneAngle="240" />
 					<WeaponModule>
@@ -1177,7 +1177,7 @@
 
 				<!--Structure Building-->
 				<BuildCost>
-					<IronCost>275</IronCost>
+					<IronCost>180</IronCost>
 					<OilCost>30</OilCost>
 					<PopulationCost>1</PopulationCost>
 				</BuildCost>
@@ -1189,8 +1189,8 @@
 							<StructureId>sax_structure_bunkertier02</StructureId>
 							<UpgradeDuration>45</UpgradeDuration>
 							<BuildCost>
-								<IronCost>160</IronCost>
-								<OilCost>25</OilCost>
+								<IronCost>90</IronCost>
+								<OilCost>40</OilCost>
 								<PopulationCost>0</PopulationCost>
 							</BuildCost>
 							<CanShootDuringUpgrade>true</CanShootDuringUpgrade>
@@ -1204,7 +1204,7 @@
 					<Shape type="convex"><Vertex x="-2.7" y="-2.5" height="0.2" /><Vertex x="-2.3" y="-2.9" height="0.2" /><Vertex x="2.25" y="-2.9" height="0.2" /><Vertex x="2.5" y="-2.5" height="0.2" /><Vertex x="2.5" y="2.5" height="0.2" /><Vertex x="2.25" y="2.9" height="0.2" /><Vertex x="-2.25" y="2.8" height="0.2" /><Vertex x="-2.6" y="2.5" height="0.2" /></Shape>
 				
 				<!--Stats-->
-					<Health>450</Health>
+					<Health>650</Health>
 					<VisionRadius>40</VisionRadius>
 					<Bunker coneAngle="240" />
 					<WeaponModule>
@@ -1215,9 +1215,9 @@
 
 				<!--Structure Building-->
 				<BuildCost>
-					<IronCost>400</IronCost>
-					<OilCost>40</OilCost>
-					<PopulationCost>1</PopulationCost>
+					<IronCost>200</IronCost>
+					<OilCost>60</OilCost>
+					<PopulationCost>0</PopulationCost>
 				</BuildCost>
 			</StructureConfiguration>
 			

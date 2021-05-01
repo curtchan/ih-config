@@ -1,4 +1,4 @@
-<!-- Weapon Configurations-->
+﻿<!-- Weapon Configurations-->
 <WeaponConfigurations>
 
 <!--Common Weapons-->
@@ -490,9 +490,9 @@
 						<Cooldown>14</Cooldown>
 					
 					<!--Ranges-->
-						<Range>24</Range>
+						<Range>30</Range>
 						<ProjectileRange>34</ProjectileRange>
-						<AttackRange>22</AttackRange>
+						<AttackRange>30</AttackRange>
 						<MeleeRange>2</MeleeRange>
 											
 					<!--Supression-->
@@ -526,8 +526,8 @@
 					<Cooldown>48</Cooldown>
 					
 					<!--Ranges-->
-						<Range>35</Range>
-						<AttackRange>33</AttackRange>
+						<Range>38</Range>
+						<AttackRange>38</AttackRange>
 						<ProjectileRange>42</ProjectileRange>
 						<MeleeRange>10</MeleeRange>	
 						
@@ -566,11 +566,11 @@
 						
 					<!--Cooldowns-->
 						<!--Attention: lowering this value might lead to "skipping" attacks since the used weapon-arm might not be ready to shoot yet-->
-						<Cooldown>24</Cooldown>
+						<Cooldown>16</Cooldown>
 						
 					<!--Ranges-->
-						<Range>26</Range>
-						<AttackRange>25</AttackRange>
+						<Range>28</Range>
+						<AttackRange>28</AttackRange>
 						<ProjectileRange>33</ProjectileRange>
 						
 					<!--Supression-->
@@ -691,10 +691,10 @@
 						<ConeAngleDegree>70</ConeAngleDegree>
 						
 					<!--Cooldowns-->
-						<Cooldown>76</Cooldown>
+						<Cooldown>60</Cooldown>
 						
 					<!--Ranges-->
-						<Range>65</Range>
+						<Range>80</Range>
 						<MinimumRange>10</MinimumRange>
 						
 					<!--Delay-->
@@ -722,10 +722,10 @@
 						<ConeAngleDegree>70</ConeAngleDegree>
 						
 					<!--Cooldowns-->
-						<Cooldown>76</Cooldown>
+						<Cooldown>60</Cooldown>
 						
 					<!--Ranges-->
-						<Range>65</Range>
+						<Range>80</Range>
 						<MinimumRange>10</MinimumRange>
 						
 					<!--Delay-->
@@ -753,12 +753,12 @@
 						<SpreadHeight>1.5</SpreadHeight>
 					
 					<!--Cooldowns-->
-						<Cooldown>24</Cooldown>
+						<Cooldown>8</Cooldown>
 					
 					<!--Ranges-->
-						<Range>20</Range>
-						<AttackRange>20</AttackRange>
-						<ProjectileRange>25</ProjectileRange>
+						<Range>26</Range>
+						<AttackRange>26</AttackRange>
+						<ProjectileRange>30</ProjectileRange>
 										
 					<!--Supression-->
 						<Suppression>2</Suppression>
@@ -849,7 +849,7 @@
 					<!--Shot Information-->
 						<AmmoConfigurationId>TurGrenade</AmmoConfigurationId>
 						<Height>4</Height>					
-						<BurstSize>16</BurstSize>
+						<BurstSize>24</BurstSize>
 						<BurstDelay>3</BurstDelay>
 						
 					<!--Hitsystem-->
@@ -920,7 +920,7 @@
 						<SpreadHeight>2</SpreadHeight>
 						
 					<!--Cooldowns-->
-						<Cooldown>8</Cooldown>
+						<Cooldown>10</Cooldown>
 						
 					<!--Ranges-->
 						<Range>10</Range>
@@ -995,7 +995,7 @@
 						<Cooldown>580</Cooldown>
 						
 					<!--Ranges-->
-						<Range>12</Range>
+						<Range>20</Range>
 						<ProjectileRange>25</ProjectileRange>
 										
 					<!--Delay-->
@@ -1065,7 +1065,7 @@
 					<!--Ranges-->
 						<Range>45</Range>
            				<MinimumRange>10</MinimumRange>
-						<AttackRange>41</AttackRange>
+						<AttackRange>50</AttackRange>
 						<MeleeRange>2</MeleeRange>
 					
 					<!--Delay-->
@@ -1130,7 +1130,7 @@
 					<!--Ranges-->
 						<Range>28</Range>
 						<ProjectileRange>38</ProjectileRange>
-						<AttackRange>26</AttackRange>
+						<AttackRange>28</AttackRange>
 
 					<!--Splash-->
 						<SplashRadius>2.5</SplashRadius>
@@ -1170,9 +1170,9 @@
 						<Cooldown>40</Cooldown>
 						
 					<!--Ranges-->
-						<Range>45</Range>
-						<ProjectileRange>55</ProjectileRange>
-						<AttackRange>42</AttackRange>
+						<Range>60</Range>
+						<ProjectileRange>75</ProjectileRange>
+						<AttackRange>60</AttackRange>
 					
 					<!--Splash-->
 					<SplashRadius>3</SplashRadius>
@@ -1240,7 +1240,7 @@
 						<Cooldown>360</Cooldown>
 					
 					<!--Ranges-->
-						<Range>100</Range>
+						<Range>140</Range>
 						<MinimumRange>15</MinimumRange>
 					
 					<!--Delay-->
@@ -1268,12 +1268,12 @@
 					<Cooldown>56</Cooldown>
 
 					<!--Ranges-->
-					<AttackRange>35</AttackRange>
-					<Range>40</Range>
-					<ProjectileRange>75</ProjectileRange>
+					<AttackRange>45</AttackRange>
+					<Range>50</Range>
+					<ProjectileRange>65</ProjectileRange>
 
 					<!--Splash-->
-					<SplashRadius>4</SplashRadius>
+					<SplashRadius>6</SplashRadius>
 					<SplashAmmoConfigurationId>KaiserSplash</SplashAmmoConfigurationId>
 
 					<!--Supression-->
@@ -1307,12 +1307,12 @@
 					<SpreadHeight>1.5</SpreadHeight>
 
 					<!--Cooldowns-->
-					<Cooldown>32</Cooldown>
+					<Cooldown>8</Cooldown>
 
 					<!--Ranges-->
-					<Range>20</Range>
-					<AttackRange>20</AttackRange>
-					<ProjectileRange>25</ProjectileRange>
+					<Range>26</Range>
+					<AttackRange>26</AttackRange>
+					<ProjectileRange>30</ProjectileRange>
 
 					<!--Supression-->
 					<Suppression>2</Suppression>
@@ -1342,12 +1342,12 @@
 					<SpreadHeight>1.5</SpreadHeight>
 
 					<!--Cooldowns-->
-					<Cooldown>24</Cooldown>
+					<Cooldown>16</Cooldown>
 
 					<!--Ranges-->
-					<Range>20</Range>
-					<AttackRange>20</AttackRange>
-					<ProjectileRange>25</ProjectileRange>
+					<Range>26</Range>
+					<AttackRange>26</AttackRange>
+					<ProjectileRange>30</ProjectileRange>
 
 					<!--Supression-->
 					<Suppression>2</Suppression>
@@ -1368,12 +1368,12 @@
 					<SpreadHeight>1.5</SpreadHeight>
 
 					<!--Cooldowns-->
-					<Cooldown>24</Cooldown>
+					<Cooldown>16</Cooldown>
 
 					<!--Ranges-->
-					<Range>20</Range>
-					<AttackRange>20</AttackRange>
-					<ProjectileRange>25</ProjectileRange>
+					<Range>26</Range>
+					<AttackRange>26</AttackRange>
+					<ProjectileRange>30</ProjectileRange>
 
 					<!--Supression-->
 					<Suppression>2</Suppression>
@@ -1532,12 +1532,12 @@
 						<ConeAngleDegree>5</ConeAngleDegree>
 					
 					<!--Cooldowns-->
-						<Cooldown>720</Cooldown>
+						<Cooldown>600</Cooldown>
 					
 					<!--Ranges-->
-						<Range>50</Range>
-						<ProjectileRange>60</ProjectileRange>
-						<AttackRange>50</AttackRange>
+						<Range>80</Range>
+						<ProjectileRange>100</ProjectileRange>
+						<AttackRange>80</AttackRange>
 					
 					<!--Delay-->
 						<AttackDelay>0</AttackDelay>
@@ -1561,14 +1561,14 @@
 						<SpreadHeight>1</SpreadHeight>
 					
 					<!--Cooldowns-->
-						<Cooldown>30</Cooldown>
+						<Cooldown>24</Cooldown>
 					
 					<!--Ranges-->
-						<Range>32</Range>
+						<Range>48</Range>
 						<MinimumRange>3</MinimumRange>	
 						<MeleeRange>5</MeleeRange>
-						<ProjectileRange>42</ProjectileRange>
-						<AttackRange>30</AttackRange>
+						<ProjectileRange>58</ProjectileRange>
+						<AttackRange>48</AttackRange>
 					
 					<!--Delay-->
 						<AttackDelay>0</AttackDelay>
@@ -1776,13 +1776,13 @@
 					<IgnoreLOS>true</IgnoreLOS>					
 				
 				<!--Cooldowns-->
-					<Cooldown>240</Cooldown>
+					<Cooldown>200</Cooldown>
 				
 				<!--Ranges-->
-					<Range>60</Range>
+					<Range>100</Range>
 					<MinimumRange>10</MinimumRange>	
 					<MeleeRange>5</MeleeRange>
-					<AttackRange>57</AttackRange>
+					<AttackRange>90</AttackRange>
 				
 				<!--Delay-->
 					<AttackDelay>0</AttackDelay>
@@ -1812,10 +1812,10 @@
 					<Cooldown>4</Cooldown>
 				
 				<!--Ranges-->
-					<Range>60</Range>
+					<Range>100</Range>
 					<MinimumRange>10</MinimumRange>	
 					<MeleeRange>5</MeleeRange>
-					<AttackRange>57</AttackRange>
+					<AttackRange>90</AttackRange>
 				
 				<!--Delay-->
 					<AttackDelay>0</AttackDelay>
@@ -1840,13 +1840,13 @@
 				<SpreadHeight>1.5</SpreadHeight>
 
 				<!--Cooldowns-->
-				<Cooldown>24</Cooldown>
-				<BoostedCooldown>16</BoostedCooldown>
+				<Cooldown>8</Cooldown>
+				<BoostedCooldown>4</BoostedCooldown>
 
 				<!--Ranges-->
-				<AttackRange>20</AttackRange>
-				<Range>20</Range>
-				<ProjectileRange>25</ProjectileRange>
+				<Range>26</Range>
+				<AttackRange>26</AttackRange>
+				<ProjectileRange>30</ProjectileRange>
 
 				<!--Supression-->
 				<Suppression>0.5</Suppression>
@@ -1924,12 +1924,12 @@
 				<SpreadHeight>1.5</SpreadHeight>
 
 				<!--Cooldowns-->
-				<Cooldown>24</Cooldown>
+				<Cooldown>8</Cooldown>
 
 				<!--Ranges-->
-				<AttackRange>20</AttackRange>
-				<Range>20</Range>
-				<ProjectileRange>25</ProjectileRange>
+				<Range>26</Range>
+				<AttackRange>26</AttackRange>
+				<ProjectileRange>30</ProjectileRange>
 
 				<!--Supression-->
 				<Suppression>2</Suppression>
@@ -1997,7 +1997,7 @@
 					<Cooldown>24</Cooldown>
 						
 				<!--Ranges-->
-					<Range>10</Range>
+					<Range>14</Range>
 					
 				<!--Supression-->
 					<Suppression>25</Suppression>
@@ -2032,7 +2032,7 @@
 				<!--cd can be set in ability config in Units_01_Core.xml-->
 
 				<!--Ranges-->
-				<Range>20</Range>
+				<Range>60</Range>
 
 				<!--Delay-->
 				<AttackDelay>0</AttackDelay>
@@ -2117,9 +2117,9 @@
 						<Cooldown>240</Cooldown>
 
 					<!--Ranges-->
-						<Range>32</Range>
-						<AttackRange>30</AttackRange>
-						<ProjectileRange>42</ProjectileRange>
+						<Range>48</Range>
+						<AttackRange>46</AttackRange>
+						<ProjectileRange>52</ProjectileRange>
 		
 					<!--Splash-->
 						<SplashRadius>2</SplashRadius>
@@ -2149,12 +2149,12 @@
 						<Cooldown>720</Cooldown>
 					
 					<!--Ranges-->
-						<Range>28</Range>
-						<AttackRange>28</AttackRange>
-						<ProjectileRange>38</ProjectileRange>
+						<Range>48</Range>
+						<AttackRange>48</AttackRange>
+						<ProjectileRange>62</ProjectileRange>
 					
 					<!--Delay-->
-						<AttackDelay>6</AttackDelay>
+						<AttackDelay>0</AttackDelay>
 
 			    <!--Noise-->
 			    <ShotNoiseRange>55</ShotNoiseRange>
@@ -2259,8 +2259,8 @@
 					<Cooldown>64</Cooldown>
 
 				<!--Ranges-->
-					<Range>50</Range>
-					<AttackRange>45</AttackRange>
+					<Range>70</Range>
+					<AttackRange>68</AttackRange>
 					<MinimumRange>12</MinimumRange>
 
 				<!--Delay-->
@@ -2554,7 +2554,7 @@
 	</WeaponConfiguration>
 
 <!-- Structure Weapons-->
-	<!--Polalia Tier1 Bunker-->
+	<!--Polania Tier1 Bunker-->
 	<WeaponConfiguration id="pol_structure_t1bunker">
 		<!--Shot Information-->
 			<AmmoConfigurationId>PolBunkerMGCartridge</AmmoConfigurationId>
@@ -2765,10 +2765,10 @@
 						<BoostedCooldown>24</BoostedCooldown>
 					
 					<!--Ranges-->
-						<Range>32</Range>
+						<Range>50</Range>
 						<MeleeRange>2</MeleeRange>
-						<AttackRange>30</AttackRange>
-						<ProjectileRange>40</ProjectileRange>
+						<AttackRange>50</AttackRange>
+						<ProjectileRange>60</ProjectileRange>
 					
 					<!--Supression-->
 						<Suppression>30</Suppression>
@@ -2804,9 +2804,9 @@
 						<Cooldown>320</Cooldown>
 					
 					<!--Ranges-->
-						<Range>40</Range>
-						<AttackRange>38</AttackRange>
-						<ProjectileRange>50</ProjectileRange>
+						<Range>75</Range>
+						<AttackRange>75</AttackRange>
+						<ProjectileRange>85</ProjectileRange>
 						<MeleeRange>2</MeleeRange>
 					
 					<!--Supression-->
@@ -3145,8 +3145,8 @@
 				<!--Shot Information-->
 					<AmmoConfigurationId>Prince_GatlingCartridge</AmmoConfigurationId>
 					<Height>2.5</Height>
-					<BurstSize>1</BurstSize>
-					<BurstDelay>10</BurstDelay>
+					<BurstSize>8</BurstSize>
+					<BurstDelay>1</BurstDelay>
 				
 				<!--Hitsystem-->
 					<ConeAngleDegree>90</ConeAngleDegree>
@@ -3154,12 +3154,12 @@
 					<SpreadHeight>1.5</SpreadHeight>
 				
 				<!--Cooldowns-->
-         			 <Cooldown>12</Cooldown>
+         			 <Cooldown>8</Cooldown>
 					
 				<!--Ranges-->
-					<Range>25</Range>
-					<AttackRange>23</AttackRange>
-					<ProjectileRange>32</ProjectileRange>
+					<Range>20</Range>
+					<AttackRange>20</AttackRange>
+					<ProjectileRange>27</ProjectileRange>
 					
 				<!--Supression-->
 					<Suppression>5</Suppression>
@@ -3183,7 +3183,7 @@
 					<AmmoConfigurationId>Prince_GatlingSweepCartridge</AmmoConfigurationId>
 					<Height>2.5</Height>
 					<BurstSize>10</BurstSize>
-					<BurstDelay>3</BurstDelay>
+					<BurstDelay>1</BurstDelay>
 
 				<!--Splash-->
 					<SplashRadius>1.5</SplashRadius>
@@ -3203,7 +3203,7 @@
 					<ProjectileRange>32</ProjectileRange>
 
 				<!--Supression-->
-					<Suppression>0</Suppression>
+					<Suppression>5</Suppression>
 					<SuppressionZoneFull>1</SuppressionZoneFull>
 					<SuppressionZoneZero>2</SuppressionZoneZero>
 					
@@ -3624,12 +3624,12 @@
 						<SpreadHeight>3.5</SpreadHeight>
 					
 					<!--Cooldowns-->
-						<Cooldown>40</Cooldown>
+						<Cooldown>16</Cooldown>
 					<!--Ranges-->
-						<MinimumRange>12</MinimumRange>
-						<Range>28</Range>
-						<AttackRange>24</AttackRange>
-						<ProjectileRange>38</ProjectileRange>
+						<MinimumRange>6</MinimumRange>
+						<Range>32</Range>
+						<AttackRange>28</AttackRange>
+						<ProjectileRange>42</ProjectileRange>
 					<!--Splash-->
 						<SplashRadius>2.5</SplashRadius>
 						<SplashAmmoConfigurationId>Gen_Splash</SplashAmmoConfigurationId>
@@ -3664,7 +3664,7 @@
 						<SpreadHeight>2</SpreadHeight>
 						
 					<!--Cooldowns-->
-						<Cooldown>40</Cooldown>
+						<Cooldown>20</Cooldown>
 						
 					<!--Ranges-->
 						<AttackRange>5</AttackRange>
@@ -3726,7 +3726,7 @@
 					<!--Cooldowns--><!--cd can be set in ability config in Units_02_Heroes.xml-->
 						
 					<!--Ranges-->
-						<Range>20</Range>
+						<Range>100</Range>
 					
 					<!--Supression-->
 						<Suppression>25</Suppression>

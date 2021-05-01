@@ -69,7 +69,7 @@
 			<UnitReservePickingOption>
 				<UnitName>com_support_mortar</UnitName>
 				<Phase>1</Phase>
-				<ReservePointCost>1</ReservePointCost>
+				<ReservePointCost>2</ReservePointCost>
 			</UnitReservePickingOption>
 
 			<!--Units Phase 2-->
@@ -183,7 +183,7 @@
 			<UnitReservePickingOption>
 				<UnitName>com_support_mortar</UnitName>
 				<Phase>1</Phase>
-				<ReservePointCost>1</ReservePointCost>
+				<ReservePointCost>2</ReservePointCost>
 			</UnitReservePickingOption>
 			
 			<!--Units Phase 2-->
@@ -297,7 +297,7 @@
 			<UnitReservePickingOption>
 				<UnitName>com_support_mortar</UnitName>
 				<Phase>1</Phase>
-				<ReservePointCost>1</ReservePointCost>
+				<ReservePointCost>2</ReservePointCost>
 			</UnitReservePickingOption>
 			
 			<!--Units Phase 2-->

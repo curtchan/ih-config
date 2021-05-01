@@ -3,7 +3,7 @@
 	<!--Common-->	
 		<!-- Cannon system-->	
 		<UnitConfiguration overrideId="com_support_cannon" type="mech" parentId="com_weaponsys">
-			<Health>700</Health>
+			<Health>500</Health>
 		</UnitConfiguration>
 
 	<!-- Polania -->
@@ -84,7 +84,7 @@
 
 		<!-- Polania Recon-->
 		<UnitConfiguration overrideId="pol_mech_recon" type="mech" parentId="com_light_mech">
-			<Health>850</Health>
+			<Health>650</Health>
 		</UnitConfiguration>
 
 		<!-- Polania Recon-->
@@ -116,7 +116,7 @@
 
 		<!-- Polania Stinger-->
 		<UnitConfiguration overrideId="pol_mech_stinger" type="mech" parentId="com_medium_mech">
-			<Health>1200</Health>
+			<Health>1000</Health>
 
 			<!--Costs-->
 			<BuildCost>
@@ -235,8 +235,8 @@
 			<UnitConfiguration overrideId="sax_mech_artillery" type="mech" parentId="com_light_mech">
 			<!--Costs-->
 				<BuildCost>
-					<IronCost>450</IronCost>
-					<OilCost>120</OilCost>
+					<IronCost>500</IronCost>
+					<OilCost>125</OilCost>
 					<PopulationCost>5</PopulationCost>
 				</BuildCost>
 
@@ -244,7 +244,7 @@
 
 			<!-- Saxony Mother-->
 			<UnitConfiguration overrideId="sax_mech_mother" type="mech" parentId="com_medium_mech">
-				<Health>900</Health>
+				<Health>800</Health>
 
 				<!--Costs-->
 				<BuildCost>
@@ -256,7 +256,7 @@
 
 			<!-- Saxony Dachs-->
 			<UnitConfiguration overrideId="sax_mech_dachs" type="mech" parentId="sax_mech_tank">
-				<Health>700</Health>
+				<Health>600</Health>
 				<BuildCost>
 					<IronCost>525</IronCost>
 					<OilCost>160</OilCost>
@@ -364,7 +364,7 @@
 							<Weapon>rus_soldier_exo_melee2</Weapon>
 						</Weapons>
 					</MultiWeaponMechAttackAbilityDefinition>
-					<MechJumpDefinition abilityType="VeteranMechAbility" weaponId="rus_soldier_exo_jump" jumpRange="35" cooldown="360" jumpTimeForMinDistance="2.94" jumpTimeForMaxDistance="2.94"/>
+					<MechJumpDefinition abilityType="VeteranMechAbility" weaponId="rus_soldier_exo_jump" jumpRange="60" cooldown="120" jumpTimeForMinDistance="2.94" jumpTimeForMaxDistance="2.94"/>
 					<AirDropBattleReinforceDefinition abilityType="AirDropBattleReinforce" weaponId="rus_soldier_exo_jump" range="15" cooldown="880" maxCount="2" impactDelay="14" delayBetweenSpawns="3" VeteranAbility="true" />
 				</UnitAbilities>
 
@@ -377,7 +377,7 @@
 
 			<!-- Rusviet Flamer Mech-->
 			<UnitConfiguration overrideId="rus_mech_flamer" type="mech"  parentId="com_light_mech">
-				<Health>750</Health>
+				<Health>850</Health>
 			</UnitConfiguration>
 
 			<!-- Rusviet Bomber-->
@@ -403,7 +403,7 @@
 
 			<!-- Rusviet Revolver-->
 			<UnitConfiguration overrideId="rus_mech_revolver" type="mech" parentId="com_medium_mech">
-				<Health>1100</Health>
+				<Health>1350</Health>
 				<BuildCost>
 					<IronCost>525</IronCost>
 					<OilCost>155</OilCost>
@@ -413,7 +413,7 @@
 
 			<!--Rusviet Scythe-->
 			<UnitConfiguration overrideId="rus_mech_scythe" type="mech" parentId="com_heavy_mech">
-				<Health>1400</Health>
+				<Health>2000</Health>
 				<BuildCost>
 					<IronCost>600</IronCost>
 					<OilCost>140</OilCost>
@@ -423,7 +423,7 @@
 
 			<!--Rusviet Gunfort-->
 			<UnitConfiguration overrideId="rus_mech_gunfort" type="mech" parentId="com_heavy_mech">
-				<Health>1750</Health>
+				<Health>2250</Health>
 			</UnitConfiguration>
 
 

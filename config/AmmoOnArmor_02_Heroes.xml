@@ -482,19 +482,19 @@
  
 		<!--Gunter Melee-->
 			<AmmoOnArmorInteraction id="GunterMeleeOnUnarmored" ammoType="Gunter_Melee" armorType="Unarmored" type="melee">
-		  <Damage>50</Damage>
+		  <Damage>100</Damage>
 		  <Kinetic>0.7</Kinetic>
 		</AmmoOnArmorInteraction>
 			<AmmoOnArmorInteraction id="GunterMeleeOnLight" ammoType="Gunter_Melee" armorType="Light" type="melee">
-		  <Damage>50</Damage>
+		  <Damage>100</Damage>
 		  <Kinetic>0</Kinetic>
 		</AmmoOnArmorInteraction>
 			<AmmoOnArmorInteraction id="GunterMeleeOnMedium" ammoType="Gunter_Melee" armorType="Medium" type="melee">
-		  <Damage>50</Damage>
+		  <Damage>100</Damage>
 		  <Kinetic>0</Kinetic>
 		</AmmoOnArmorInteraction>
 			<AmmoOnArmorInteraction id="GunterMeleeOnHeavy" ammoType="Gunter_Melee" armorType="Heavy" type="melee">
-		  <Damage>50</Damage>
+		  <Damage>100</Damage>
 		  <Kinetic>0</Kinetic>
 		</AmmoOnArmorInteraction>
 			<AmmoOnArmorInteraction id="GunterMeleeOnStructure" ammoType="Gunter_Melee" armorType="Structure" type="melee">
@@ -504,28 +504,28 @@
 
 		<!--Gunter Stab-->
 			<AmmoOnArmorInteraction id="StabOnUnarmored" ammoType="Gunter_ApStab" armorType="Unarmored" type="melee">
-				<Damage>150</Damage>
+				<Damage>250</Damage>
 				<Kinetic>1.3</Kinetic>
 				<Piercing>False</Piercing>
 				<VerticalAim>0</VerticalAim>
 				<VerticalAimHigh>0</VerticalAimHigh>
 			</AmmoOnArmorInteraction>
 			<AmmoOnArmorInteraction id="StabOnLight" ammoType="Gunter_ApStab" armorType="Light" type="melee">
-				<Damage>150</Damage>
+				<Damage>250</Damage>
 				<Kinetic>0.5</Kinetic>
 				<Piercing>False</Piercing>
 				<VerticalAim>0</VerticalAim>
 				<VerticalAimHigh>0</VerticalAimHigh>
 			</AmmoOnArmorInteraction>
 			<AmmoOnArmorInteraction id="StabOnMedium" ammoType="Gunter_ApStab" armorType="Medium" type="melee">
-				<Damage>150</Damage>
+				<Damage>250</Damage>
 				<Kinetic>0.5</Kinetic>
 				<Piercing>False</Piercing>
 				<VerticalAim>0</VerticalAim>
 				<VerticalAimHigh>0</VerticalAimHigh>
 			</AmmoOnArmorInteraction>
 			<AmmoOnArmorInteraction id="StabOnHeavy" ammoType="Gunter_ApStab" armorType="Heavy" type="melee">
-				<Damage>100</Damage>
+				<Damage>200</Damage>
 				<Kinetic>0.25</Kinetic>
 				<Piercing>False</Piercing>
 				<VerticalAim>0</VerticalAim>

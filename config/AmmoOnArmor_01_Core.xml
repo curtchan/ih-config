@@ -604,21 +604,21 @@
 
 	<!--Stinger Ability-->
 	<AmmoOnArmorInteraction id="AbilityBoltOnUnarmored" ammoType="StingerAbilityBolt" armorType="Unarmored">
-		<Damage>400</Damage>
+		<Damage>200</Damage>
 		<Kinetic>1</Kinetic>
 		<Piercing>False</Piercing>
 		<VerticalAim>0.5</VerticalAim>
 		<VerticalAimHigh>0.9</VerticalAimHigh>
 	</AmmoOnArmorInteraction>
 	<AmmoOnArmorInteraction id="AbilityBoltOnLight" ammoType="StingerAbilityBolt" armorType="Light">
-		<Damage>465</Damage>
+		<Damage>265</Damage>
 		<Kinetic>0</Kinetic>
 		<Piercing>False</Piercing>
 		<VerticalAim>0.5</VerticalAim>
 		<VerticalAimHigh>0.5</VerticalAimHigh>
 	</AmmoOnArmorInteraction>
 	<AmmoOnArmorInteraction id="AbilityBoltOnMedium" ammoType="StingerAbilityBolt" armorType="Medium">
-		<Damage>465</Damage>
+		<Damage>265</Damage>
 		<Kinetic>0</Kinetic>
 		<Piercing>False</Piercing>
 		<VerticalAim>0.5</VerticalAim>
@@ -626,14 +626,14 @@
 	</AmmoOnArmorInteraction>
 	<AmmoOnArmorInteraction id="AbilityBoltOnHeavy" ammoType="StingerAbilityBolt" armorType="Heavy">
 		<Effectiveness>1</Effectiveness>
-		<Damage>465</Damage>
+		<Damage>265</Damage>
 		<Kinetic>0</Kinetic>
 		<Piercing>False</Piercing>
 		<VerticalAim>0.5</VerticalAim>
 		<VerticalAimHigh>0.5</VerticalAimHigh>
 	</AmmoOnArmorInteraction>
 	<AmmoOnArmorInteraction id="AbilityBoltOnStructure" ammoType="StingerAbilityBolt" armorType="Structure">
-		<Damage>300</Damage>
+		<Damage>100</Damage>
 		<Kinetic>0</Kinetic>
 		<Piercing>False</Piercing>
 		<VerticalAim>0.5</VerticalAim>
@@ -839,14 +839,14 @@
 		<VerticalAimHigh>0.8</VerticalAimHigh>
 	</AmmoOnArmorInteraction>
 	<AmmoOnArmorInteraction id="KaiserShellOnLight" ammoType="KaiserShell" armorType="Light">
-		<Damage>140</Damage>
+		<Damage>175</Damage>
 		<Kinetic>1</Kinetic>
 		<Piercing>False</Piercing>
 		<VerticalAim>0.5</VerticalAim>
 		<VerticalAimHigh>0.5</VerticalAimHigh>
 	</AmmoOnArmorInteraction>
 	<AmmoOnArmorInteraction id="KaiserShellOnMedium" ammoType="KaiserShell" armorType="Medium">
-		<Damage>125</Damage>
+		<Damage>150</Damage>
 		<Kinetic>0.75</Kinetic>
 		<Piercing>False</Piercing>
 		<VerticalAim>0.5</VerticalAim>
@@ -854,7 +854,7 @@
 	</AmmoOnArmorInteraction>
 	<AmmoOnArmorInteraction id="KaiserShellOnHeavy" ammoType="KaiserShell" armorType="Heavy">
 		<Effectiveness>1</Effectiveness>
-		<Damage>125</Damage>
+		<Damage>145</Damage>
 		<Kinetic>0.5</Kinetic>
 		<Piercing>False</Piercing>
 		<VerticalAim>0.5</VerticalAim>
@@ -871,7 +871,7 @@
 	<!--SaxonyGunfort|Kaiser|KaiserMG-->
 	<AmmoOnArmorInteraction id="KaiserMGOnUnarmored" ammoType="KaiserMgCartridge" armorType="Unarmored">
 		<Effectiveness>1</Effectiveness>
-		<Damage>5</Damage>
+		<Damage>10</Damage>
 		<Kinetic>0.1</Kinetic>
 		<Piercing>False</Piercing>
 		<VerticalAim>0.5</VerticalAim>
@@ -910,7 +910,7 @@
 	<!--SaxonyGunfort|Kaiser|Kaiser Side MG-->
 	<AmmoOnArmorInteraction id="KaiserSMGOnUnarmored" ammoType="KaiserSideMgCartridge" armorType="Unarmored">
 		<Effectiveness>1</Effectiveness>
-		<Damage>7</Damage>
+		<Damage>9</Damage>
 		<Kinetic>0.1</Kinetic>
 		<Piercing>False</Piercing>
 		<VerticalAim>0.5</VerticalAim>
@@ -948,7 +948,7 @@
 	<!--SaxonyGunfort|Kaiser|KaiserMG-->
 	<AmmoOnArmorInteraction id="KaiserRMGOnUnarmored" ammoType="KaiserRearMgCartridge" armorType="Unarmored">
 		<Effectiveness>1</Effectiveness>
-		<Damage>5</Damage>
+		<Damage>7</Damage>
 		<Kinetic>1</Kinetic>
 		<Piercing>False</Piercing>
 		<VerticalAim>0.5</VerticalAim>
@@ -985,23 +985,23 @@
 
 	<!--SaxonyGunfort|Kaiser|KaiserRockets-->
 	<AmmoOnArmorInteraction id="KaiserRocketsOnUnarmored" ammoType="KaiserRockets" armorType="Unarmored" type="explosive">
-		<Damage>30</Damage>
+		<Damage>40</Damage>
 		<Kinetic>0.8</Kinetic>
 		<Piercing>False</Piercing>
 	</AmmoOnArmorInteraction>
 	<AmmoOnArmorInteraction id="KaiserRocketsOnLight" ammoType="KaiserRockets" armorType="Light" type="explosive">
-		<Damage>10</Damage>
+		<Damage>20</Damage>
 		<Kinetic>0.5</Kinetic>
 		<Piercing>False</Piercing>
 	</AmmoOnArmorInteraction>
 	<AmmoOnArmorInteraction id="KaiserRocketsOnMedium" ammoType="KaiserRockets" armorType="Medium" type="explosive">
-		<Damage>10</Damage>
+		<Damage>20</Damage>
 		<Kinetic>0.1</Kinetic>
 		<Piercing>False</Piercing>
 	</AmmoOnArmorInteraction>
 	<AmmoOnArmorInteraction id="KaiserRocketsOnHeavy" ammoType="KaiserRockets" armorType="Heavy" type="explosive">
 		<Effectiveness>1</Effectiveness>
-		<Damage>5</Damage>
+		<Damage>10</Damage>
 		<Kinetic>0</Kinetic>
 		<Piercing>False</Piercing>
 	</AmmoOnArmorInteraction>
@@ -1058,21 +1058,21 @@
 		<VerticalAimHigh>0.7</VerticalAimHigh>
 	</AmmoOnArmorInteraction>
 	<AmmoOnArmorInteraction id="TankOnLight" ammoType="TankShell" armorType="Light">
-		<Damage>27</Damage>
+		<Damage>28</Damage>
 		<Kinetic>0.5</Kinetic>
 		<Piercing>False</Piercing>
 		<VerticalAim>0.5</VerticalAim>
 		<VerticalAimHigh>0.5</VerticalAimHigh>
 	</AmmoOnArmorInteraction>
 	<AmmoOnArmorInteraction id="TankOnMedium" ammoType="TankShell" armorType="Medium">
-		<Damage>20</Damage>
+		<Damage>22</Damage>
 		<Kinetic>0.5</Kinetic>
 		<Piercing>False</Piercing>
 		<VerticalAim>0.5</VerticalAim>
 		<VerticalAimHigh>0.5</VerticalAimHigh>
 	</AmmoOnArmorInteraction>
 	<AmmoOnArmorInteraction id="TankOnHeavy" ammoType="TankShell" armorType="Heavy">
-		<Damage>12</Damage>
+		<Damage>14</Damage>
 		<Kinetic>0.25</Kinetic>
 		<Piercing>False</Piercing>
 		<VerticalAim>0.5</VerticalAim>
@@ -1127,21 +1127,21 @@
 
 	<!--Dachs-->
 	<AmmoOnArmorInteraction id="DachsOnUnarmored" ammoType="DachsShell" armorType="Unarmored">
-		<Damage>100</Damage>
+		<Damage>150</Damage>
 		<Kinetic>2</Kinetic>
 		<VerticalAim>0.35</VerticalAim>
 		<VerticalAimHigh>0.7</VerticalAimHigh>
 		<Piercing>False</Piercing>
 	</AmmoOnArmorInteraction>
 	<AmmoOnArmorInteraction id="DachsOnLight" ammoType="DachsShell" armorType="Light">
-		<Damage>85</Damage>
+		<Damage>100</Damage>
 		<Kinetic>1</Kinetic>
 		<Piercing>False</Piercing>
 		<VerticalAim>0.5</VerticalAim>
 		<VerticalAimHigh>0.5</VerticalAimHigh>
 	</AmmoOnArmorInteraction>
 	<AmmoOnArmorInteraction id="DachsOnMedium" ammoType="DachsShell" armorType="Medium">
-		<Damage>60</Damage>
+		<Damage>70</Damage>
 		<Kinetic>0.8</Kinetic>
 		<Piercing>False</Piercing>
 		<VerticalAim>0.5</VerticalAim>
@@ -1280,28 +1280,28 @@
 	<!--RusvietGunfort|GunfortMGCartridge-->
 	<AmmoOnArmorInteraction id="GunfortMGOnUnarmored" ammoType="GunfortMgCartridge" armorType="Unarmored">
 		<Effectiveness>1</Effectiveness>
-		<Damage>5</Damage>
+		<Damage>10</Damage>
 		<Kinetic>0.01</Kinetic>
 		<Piercing>False</Piercing>
 		<VerticalAim>0.5</VerticalAim>
 		<VerticalAimHigh>0.7</VerticalAimHigh>
 	</AmmoOnArmorInteraction>
 	<AmmoOnArmorInteraction id="GunfortMGOnLight" ammoType="GunfortMgCartridge" armorType="Light">
-		<Damage>1</Damage>
+		<Damage>3</Damage>
 		<Kinetic>0.1</Kinetic>
 		<Piercing>False</Piercing>
 		<VerticalAim>0.5</VerticalAim>
 		<VerticalAimHigh>0.5</VerticalAimHigh>
 	</AmmoOnArmorInteraction>
 	<AmmoOnArmorInteraction id="GunfortMGOnMedium" ammoType="GunfortMgCartridge" armorType="Medium">
-		<Damage>0.1</Damage>
+		<Damage>1</Damage>
 		<Kinetic>0</Kinetic>
 		<Piercing>False</Piercing>
 		<VerticalAim>0.5</VerticalAim>
 		<VerticalAimHigh>0.5</VerticalAimHigh>
 	</AmmoOnArmorInteraction>
 	<AmmoOnArmorInteraction id="GunfortMGOnHeavy" ammoType="GunfortMgCartridge" armorType="Heavy">
-		<Damage>0.1</Damage>
+		<Damage>1</Damage>
 		<Kinetic>0</Kinetic>
 		<Piercing>False</Piercing>
 		<VerticalAim>0.5</VerticalAim>
@@ -1476,7 +1476,7 @@
 		<Piercing>False</Piercing>
 	</AmmoOnArmorInteraction>
 	<AmmoOnArmorInteraction id="DachsRocketsOnLight" ammoType="DachsRockets" armorType="Light" type="explosive">
-		<Damage>80</Damage>
+		<Damage>200</Damage>
 		<Kinetic>0.5</Kinetic>
 		<Piercing>False</Piercing>
 	</AmmoOnArmorInteraction>
@@ -1736,13 +1736,13 @@
 		<Piercing>False</Piercing>
 	</AmmoOnArmorInteraction>
 	<AmmoOnArmorInteraction id="DemolisherOnMedium" ammoType="GunfortDemolisherGrenade" armorType="Medium" type="explosive">
-		<Damage>150</Damage>
+		<Damage>250</Damage>
 		<Kinetic>1</Kinetic>
 		<Piercing>False</Piercing>
 	</AmmoOnArmorInteraction>
 	<AmmoOnArmorInteraction id="DemolisherOnHeavy" ammoType="GunfortDemolisherGrenade" armorType="Heavy" type="explosive">
 		<Effectiveness>1</Effectiveness>
-		<Damage>100</Damage>
+		<Damage>300</Damage>
 		<Kinetic>0.5</Kinetic>
 		<Piercing>False</Piercing>
 	</AmmoOnArmorInteraction>

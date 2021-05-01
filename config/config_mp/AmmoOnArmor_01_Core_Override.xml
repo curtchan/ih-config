@@ -11,14 +11,14 @@
 
 <!--SpecOps|AutoCannon-->
 <AmmoOnArmorInteraction overrideId="AutoOnUnarmored" ammoType="AutoCannonCartridge" armorType="Unarmored">
-		<Damage>25</Damage>
+		<Damage>22</Damage>
 		<Kinetic>0.7</Kinetic>
 		<Piercing>False</Piercing>
 		<VerticalAim>0.5</VerticalAim>
 		<VerticalAimHigh>0.9</VerticalAimHigh>
 	</AmmoOnArmorInteraction>
 	<AmmoOnArmorInteraction overrideId="AutoOnLight" ammoType="AutoCannonCartridge" armorType="Light">
-		<Damage>30</Damage>
+		<Damage>28</Damage>
 		<Kinetic>0.25</Kinetic>
 		<Piercing>False</Piercing>
 		<VerticalAim>0.5</VerticalAim>
@@ -26,7 +26,7 @@
 	</AmmoOnArmorInteraction>
 	<AmmoOnArmorInteraction overrideId="AutoOnMedium" ammoType="AutoCannonCartridge" armorType="Medium">
 		<Effectiveness>1</Effectiveness>
-		<Damage>25</Damage>
+		<Damage>23</Damage>
 		<Kinetic>0.25</Kinetic>
 		<Piercing>False</Piercing>
 		<VerticalAim>0.5</VerticalAim>
@@ -40,7 +40,7 @@
 		<VerticalAimHigh>0.5</VerticalAimHigh>
 	</AmmoOnArmorInteraction>
 	<AmmoOnArmorInteraction overrideId="AutoOnStructure" ammoType="AutoCannonCartridge" armorType="Structure">
-		<Damage>10</Damage>
+		<Damage>8</Damage>
 		<Kinetic>0.125</Kinetic>
 		<Piercing>False</Piercing>
 		<VerticalAim>0.2</VerticalAim>
@@ -49,14 +49,14 @@
 
 <!--Stinger Autoattack-->
 	<AmmoOnArmorInteraction overrideId="BoltOnLight" ammoType="StingerBolt" armorType="Light">
-		<Damage>115</Damage>
+		<Damage>100</Damage>
 		<Kinetic>0</Kinetic>
 		<Piercing>True</Piercing>
 		<VerticalAim>0.5</VerticalAim>
 		<VerticalAimHigh>0.5</VerticalAimHigh>
 	</AmmoOnArmorInteraction>
 	<AmmoOnArmorInteraction overrideId="BoltOnMedium" ammoType="StingerBolt" armorType="Medium">
-		<Damage>90</Damage>
+		<Damage>80</Damage>
 		<Kinetic>0</Kinetic>
 		<Piercing>False</Piercing>
 		<VerticalAim>0.5</VerticalAim>
@@ -64,7 +64,7 @@
 	</AmmoOnArmorInteraction>
 	<AmmoOnArmorInteraction overrideId="BoltOnHeavy" ammoType="StingerBolt" armorType="Heavy">
 		<Effectiveness>1</Effectiveness>
-		<Damage>90</Damage>
+		<Damage>80</Damage>
 		<Kinetic>0</Kinetic>
 		<Piercing>False</Piercing>
 		<VerticalAim>0.5</VerticalAim>
@@ -73,7 +73,7 @@
 
 <!--HeavyRifle|Recon-->
 	<AmmoOnArmorInteraction overrideId="HeavyRifleOnLight" ammoType="HeavyRifleShell" armorType="Light">
-		<Damage>70</Damage>
+		<Damage>55</Damage>
 		<Kinetic>1</Kinetic>
 		<Piercing>False</Piercing>
 		<VerticalAim>0.5</VerticalAim>
@@ -81,21 +81,21 @@
 	</AmmoOnArmorInteraction>
 	<AmmoOnArmorInteraction overrideId="HeavyRifleOnMedium" ammoType="HeavyRifleShell" armorType="Medium">
 		<Effectiveness>1</Effectiveness>
-		<Damage>70</Damage>
+		<Damage>45</Damage>
 		<Kinetic>1</Kinetic>
 		<Piercing>False</Piercing>
 		<VerticalAim>0.5</VerticalAim>
 		<VerticalAimHigh>0.5</VerticalAimHigh>
 	</AmmoOnArmorInteraction>
 	<AmmoOnArmorInteraction overrideId="HeavyRifleOnHeavy" ammoType="HeavyRifleShell" armorType="Heavy">
-		<Damage>50</Damage>
+		<Damage>35</Damage>
 		<Kinetic>0.5</Kinetic>
 		<Piercing>False</Piercing>
 		<VerticalAim>0.5</VerticalAim>
 		<VerticalAimHigh>0.5</VerticalAimHigh>
 	</AmmoOnArmorInteraction>
 	<AmmoOnArmorInteraction overrideId="HeavyRifleOnStructure" ammoType="HeavyRifleShell" armorType="Structure">
-		<Damage>35</Damage>
+		<Damage>30</Damage>
 		<Kinetic>0.5</Kinetic>
 		<Piercing>False</Piercing>
 		<VerticalAim>0.5</VerticalAim>
@@ -174,12 +174,12 @@
 	</AmmoOnArmorInteraction>
 	<AmmoOnArmorInteraction overrideId="BomberOnMedium" ammoType="BomberGrenade" armorType="Medium" type="explosive">
 		<Effectiveness>1</Effectiveness>
-		<Damage>65</Damage>
+		<Damage>50</Damage>
 		<Kinetic>0.4</Kinetic>
 		<Piercing>False</Piercing>
 	</AmmoOnArmorInteraction>
 	<AmmoOnArmorInteraction overrideId="BomberOnHeavy" ammoType="BomberGrenade" armorType="Heavy" type="explosive">
-		<Damage>50</Damage>
+		<Damage>35</Damage>
 		<Kinetic>0</Kinetic>
 		<Piercing>False</Piercing>
 	</AmmoOnArmorInteraction>
@@ -262,22 +262,22 @@
 
 	<!--MortarSystem-->
 	<AmmoOnArmorInteraction overrideId="MortarSOnUnarmored" ammoType="MortarSystemGrenade" armorType="Unarmored" type="explosive">
-		<Damage>70</Damage>
+		<Damage>60</Damage>
 		<Kinetic>2</Kinetic>
 		<Piercing>False</Piercing>
 	</AmmoOnArmorInteraction>
 	<AmmoOnArmorInteraction overrideId="MortarSOnLight" ammoType="MortarSystemGrenade" armorType="Light" type="explosive">
-		<Damage>50</Damage>
+		<Damage>45</Damage>
 		<Kinetic>0.5</Kinetic>
 		<Piercing>False</Piercing>
 	</AmmoOnArmorInteraction>
 	<AmmoOnArmorInteraction overrideId="MortarSOnMedium" ammoType="MortarSystemGrenade" armorType="Medium" type="explosive">
-		<Damage>40</Damage>
+		<Damage>30</Damage>
 		<Kinetic>0.1</Kinetic>
 		<Piercing>False</Piercing>
 	</AmmoOnArmorInteraction>
 	<AmmoOnArmorInteraction overrideId="MortarSOnHeavy" ammoType="MortarSystemGrenade" armorType="Heavy" type="explosive">
-		<Damage>40</Damage>
+		<Damage>20</Damage>
 		<Kinetic>0</Kinetic>
 		<Piercing>False</Piercing>
 		<Effectiveness>1</Effectiveness>
@@ -367,16 +367,16 @@
 		<Kinetic>1.1</Kinetic>
 	</AmmoOnArmorInteraction>
 	<AmmoOnArmorInteraction overrideId="BladeOnLight" ammoType="ShockTroopBlade" armorType="Light" type="melee">
-		<Damage>40</Damage>
+		<Damage>50</Damage>
 		<Kinetic>0.7</Kinetic>
 	</AmmoOnArmorInteraction>
 	<AmmoOnArmorInteraction overrideId="BladeOnMedium" ammoType="ShockTroopBlade" armorType="Medium" type="melee">
-		<Damage>35</Damage>
+		<Damage>45</Damage>
 		<Kinetic>0.2</Kinetic>
 		<Effectiveness>1</Effectiveness>
 	</AmmoOnArmorInteraction>
 	<AmmoOnArmorInteraction overrideId="BladeOnHeavy" ammoType="ShockTroopBlade" armorType="Heavy" type="melee">
-		<Damage>25</Damage>
+		<Damage>35</Damage>
 		<Kinetic>0.1</Kinetic>
 	</AmmoOnArmorInteraction>	
 	<AmmoOnArmorInteraction overrideId="BladeOnStructure" ammoType="ShockTroopBlade" armorType="Structure" type="melee">
@@ -386,19 +386,19 @@
 
 	<!--Scythe|Scythe-->
 	<AmmoOnArmorInteraction overrideId="ScytheOnUnarmored" ammoType="ScytheMelee" armorType="Unarmored" type="melee">
-		<Damage>175</Damage>
+		<Damage>200</Damage>
 		<Kinetic>1.5</Kinetic>
 	</AmmoOnArmorInteraction>
 	<AmmoOnArmorInteraction overrideId="ScytheOnLight" ammoType="ScytheMelee" armorType="Light" type="melee">
-		<Damage>150</Damage>
+		<Damage>200</Damage>
 		<Kinetic>1</Kinetic>
 	</AmmoOnArmorInteraction>
 	<AmmoOnArmorInteraction overrideId="ScytheOnMedium" ammoType="ScytheMelee" armorType="Medium" type="melee">
-		<Damage>150</Damage>
+		<Damage>200</Damage>
 		<Kinetic>2</Kinetic>
 	</AmmoOnArmorInteraction>
 	<AmmoOnArmorInteraction overrideId="ScytheOnHeavy" ammoType="ScytheMelee" armorType="Heavy" type="melee">
-		<Damage>150</Damage>
+		<Damage>200</Damage>
 		<Kinetic>2</Kinetic>
 		<Effectiveness>1</Effectiveness>
 	</AmmoOnArmorInteraction>	

@@ -20,9 +20,9 @@
 	<UnitConfiguration overrideId="pol_hero_cavalry" type="cavalry" parentId="com_soldier_rifleman">
 		<ReinforceCooldown>90</ReinforceCooldown>
 		<ArmorType>Unarmored</ArmorType>
-		<Health>250</Health>
+		<Health>300</Health>
 		<ReinforceCost>
-			<IronCost>50</IronCost>
+			<IronCost>35</IronCost>
 			<OilCost>7</OilCost>
 			<PopulationCost>0</PopulationCost>
 		</ReinforceCost>
@@ -87,8 +87,8 @@
 	</UnitConfiguration>
 
 	<!--Brunhilde-->
-	<UnitConfiguration overrideId="sax_hero_brunhilde" type="hero_mech">
-		<Health>1100</Health>
+	<UnitConfiguration overrideId="sax_hero_brunhilde" type="mech">
+		<Health>900</Health>
 	</UnitConfiguration>
 
 	<!--Rusviet-->
@@ -165,8 +165,8 @@
 					<Weapon>rus_hero_general_melee4</Weapon>
 				</Weapons>
 			</MultiWeaponMechAttackAbilityDefinition>
-			<MechJumpDefinition abilityType="HeroAbility1" weaponId="rus_hero_general_jump" jumpRange="40" cooldown="600" jumpTimeForMinDistance="3.6" jumpTimeForMaxDistance="3.6"/>
-			<LifeStealAbilityDefinition PercentageToHeal="0.2" TypeOfDamageDealt="Melee" abilityType="HeroAbility2"/><!-- Bloodlust Ability -->
+			<MechJumpDefinition abilityType="HeroAbility1" weaponId="rus_hero_general_jump" jumpRange="140" cooldown="300" jumpTimeForMinDistance="3.6" jumpTimeForMaxDistance="3.6"/>
+			<LifeStealAbilityDefinition PercentageToHeal="0.3" TypeOfDamageDealt="Melee" abilityType="HeroAbility2"/><!-- Bloodlust Ability -->
 		</UnitAbilities>
 	</UnitConfiguration>
 

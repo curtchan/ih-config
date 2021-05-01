@@ -1072,7 +1072,7 @@
         <SkillType>StopTeamSkill</SkillType>
         <SkillSlot>4</SkillSlot>
       </SkillConfiguration>
-      <!--<SkillConfiguration>                    NOT FINISHED
+      <!--<SkillConfiguration>                    NOT FINISHED                 
         <SkillType>AbilityTeamSkill</SkillType>
         <Ability>VeteranMechAbility</Ability>
         <SkillId>disrupt</SkillId>
@@ -1647,6 +1647,12 @@
 				<SkillType>StopTeamSkill</SkillType>
 				<SkillSlot>4</SkillSlot>
 			</SkillConfiguration>
+			<SkillConfiguration>
+        			<SkillType>AbilityTeamSkill</SkillType>
+        			<Ability>VeteranMechAbility</Ability>
+        			<SkillId>rain</SkillId>
+        			<SkillSlot>5</SkillSlot>
+      			</SkillConfiguration>
 		</Skills>
 		<IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_sax_mech_mother.png</IconName>
 		<Priority>56</Priority>
@@ -1872,6 +1878,12 @@
       <SkillConfiguration>
         <SkillType>StopTeamSkill</SkillType>
         <SkillSlot>4</SkillSlot>
+      </SkillConfiguration>
+	<SkillConfiguration>
+        <SkillType>AbilityTeamSkill</SkillType>
+        <Ability>VeteranMechAbility</Ability>
+        <SkillId>demolisher</SkillId>
+        <SkillSlot>5</SkillSlot>
       </SkillConfiguration>
     </Skills>
 		<IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_rus_mech_bomber.png</IconName>
@@ -2551,7 +2563,6 @@
       </SkillConfiguration>
     </Skills>
 		<IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_com_support_cannon.png</IconName>
-		<HasFactionSpecificPortrait>true</HasFactionSpecificPortrait>
 		<VisualWeaponName>com_support_cannon</VisualWeaponName>
 		<Priority>100</Priority>
 		<Height>2</Height>
@@ -2604,7 +2615,6 @@
       </SkillConfiguration>
     </Skills>
 		<IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_com_support_mg.png</IconName>
-		<HasFactionSpecificPortrait>true</HasFactionSpecificPortrait>
 		<Priority>105</Priority>
 		<Height>2</Height>
 		<WreckTimeToLifeinSeconds>4.85</WreckTimeToLifeinSeconds>
@@ -2656,7 +2666,6 @@
       </SkillConfiguration>
     </Skills>
 		<IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_com_support_mortar.png</IconName>
-		<HasFactionSpecificPortrait>true</HasFactionSpecificPortrait>
 		<Priority>109</Priority>
 		<Height>2</Height>
 		<WreckTimeToLifeinSeconds>4.85</WreckTimeToLifeinSeconds>
