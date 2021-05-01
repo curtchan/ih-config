@@ -1,0 +1,1749 @@
+<UnitConfigurations>
+	<!--Playable Units-->
+	<!--Polania-->
+	<!--Heroes-->
+
+	<!--AnnaChild-->
+	<UnitConfiguration id="pol_hero_annachild" type="hero" parentId="com_soldier_rifleman">
+		<IsAbstract>false</IsAbstract>
+		<Health>150</Health>
+		<ArmorType>Unarmored</ArmorType>
+		<SquadSize>1</SquadSize>
+		<CanCollectEquipment>false</CanCollectEquipment>
+		<WeaponId>pol_hero_annachild_snowball</WeaponId>
+		<MeleeWeaponId>pol_hero_annachild_melee</MeleeWeaponId>
+		<StatesId>SnowballFighterStates</StatesId>
+		<VisionRadius>50</VisionRadius>
+		<CanVault>false</CanVault>
+		<!--Internals-->
+		<PrimaryMoveSpeed>5</PrimaryMoveSpeed>
+	</UnitConfiguration>
+	<UnitConfiguration id="pol_hero_annachildrifle" type="hero" parentId="com_soldier_rifleman">
+		<IsAbstract>false</IsAbstract>
+		<Health>150</Health>
+		<ArmorType>Unarmored</ArmorType>
+		<SquadSize>1</SquadSize>
+		<CanCollectEquipment>false</CanCollectEquipment>
+		<WeaponId>pol_hero_annachild_rifle</WeaponId>
+		<MeleeWeaponId>com_soldier_no_automelee</MeleeWeaponId>
+		<StatesId>pol_annachild_rifle</StatesId>
+		<VisionRadius>50</VisionRadius>
+		<CanVault>false</CanVault>
+		<!--Internals-->
+		<PrimaryMoveSpeed>5</PrimaryMoveSpeed>
+		<UnitAbilities>
+			<PowerShotAbilityDefinition weapon="pol_hero_anna_rifle_power_shot" abilityType="PowerShot"/>
+		</UnitAbilities>
+	</UnitConfiguration>
+
+
+	<!--Brother-->
+	<UnitConfiguration id="rus_hero_brotheradult" type="hero" parentId="com_soldier_rifleman">
+		<IsAbstract>false</IsAbstract>
+		<Health>500</Health>
+		<ArmorType>Unarmored</ArmorType>
+		<SquadSize>1</SquadSize>
+		<CanCollectEquipment>false</CanCollectEquipment>
+		<WeaponId>pol_hero_anna_rifle</WeaponId>
+		<StatesId>rus_hero_brotheradult</StatesId>
+		<!--Internals-->
+		<PrimaryMoveSpeed>5</PrimaryMoveSpeed>
+		<UnitAbilities>
+		</UnitAbilities>
+	</UnitConfiguration>
+
+	<!--Brother Teen-->
+	<UnitConfiguration id="pol_hero_brotherteen" type="hero" parentId="com_soldier_rifleman">
+		<IsAbstract>false</IsAbstract>
+		<Health>500</Health>
+		<ArmorType>Unarmored</ArmorType>
+		<SquadSize>1</SquadSize>
+		<CanCollectEquipment>false</CanCollectEquipment>
+		<LimitedInteractions>Exploration</LimitedInteractions>
+		<StatesId>pol_anna_rifle</StatesId>
+		<CanVault>false</CanVault>
+		<WeaponId/>
+		<StatesId>BrotherTeenStates</StatesId>
+		<CanVault>false</CanVault>
+		<!--Internals-->
+		<PrimaryMoveSpeed>5</PrimaryMoveSpeed>
+		<UnitAbilities>
+		</UnitAbilities>
+		<UseDefaultUnitUI>true</UseDefaultUnitUI>
+	</UnitConfiguration>
+
+	<!--Tsar-->
+    <UnitConfiguration id="rus_hero_tsar" type="human" parentId="com_civilian">
+        <IsAbstract>false</IsAbstract>
+        <Tags>Infantry</Tags>
+
+        <Health>400</Health>
+        <ArmorType>Unarmored</ArmorType>
+
+        <WeaponId>com_soldier_tsar_handgun</WeaponId>
+        <MeleeWeaponId>com_soldier_melee_weak</MeleeWeaponId>
+		
+		<CanVault>true</CanVault>
+		<!--BrawlSpeed>4</BrawlSpeed-->
+		<VaultSpeed>3.5</VaultSpeed>
+
+        <CanCollectEquipment>false</CanCollectEquipment>
+        <StatesId>pol_rifle</StatesId>
+        <SquadSize>1</SquadSize>
+
+        <!--Internals-->
+        <PrimaryMoveSpeed>5</PrimaryMoveSpeed>
+        <UnitAbilities />
+    </UnitConfiguration>
+
+	
+
+	<!--Trains-->
+	<!-- Locomotive -->
+	<UnitConfiguration id="com_mech_trainlocomotive" type="wagon" parentId="com_wagon">
+		<IsAbstract>false</IsAbstract>
+		<Health>960</Health>
+		<VisionRadius>30</VisionRadius>
+
+		<!--Wagon-Specific-->
+		<AxisSuspensionInfo>
+			<Offset>0</Offset>
+			<SubAxes>
+				<AxisSuspensionInfo>
+					<Offset>1.6</Offset>
+					<SubAxes>
+						<AxisSuspensionInfo>
+							<Offset>1.825</Offset>
+							<AxisDirection>Rail</AxisDirection>
+						</AxisSuspensionInfo>
+						<AxisSuspensionInfo>
+							<Offset>0</Offset>
+							<AxisDirection>Train</AxisDirection>
+						</AxisSuspensionInfo>
+					</SubAxes>
+				</AxisSuspensionInfo>
+				<AxisSuspensionInfo>
+					<Offset>-1.6</Offset>
+					<SubAxes>
+						<AxisSuspensionInfo>
+							<Offset>0</Offset>
+							<AxisDirection>Train</AxisDirection>
+						</AxisSuspensionInfo>
+						<AxisSuspensionInfo>
+							<Offset>-2</Offset>
+							<AxisDirection>Rail</AxisDirection>
+						</AxisSuspensionInfo>
+					</SubAxes>
+				</AxisSuspensionInfo>
+			</SubAxes>
+		</AxisSuspensionInfo>
+		<Length>10</Length>
+		<WreckConfiguration/>
+	</UnitConfiguration>
+
+	<!--Locomotive Tender-->
+	<UnitConfiguration id="com_mech_trainlocomotivetender" type="wagon" parentId="com_wagon">
+		<IsAbstract>false</IsAbstract>
+		<Health>10</Health>
+		<VisionRadius>10</VisionRadius>
+		<!--Wagon-Specific-->
+		<AxisSuspensionInfo>
+			<Offset>0</Offset>
+			<SubAxes>
+				<AxisSuspensionInfo>
+					<Offset>0.96</Offset>
+					<AxisDirection>Train</AxisDirection>
+				</AxisSuspensionInfo>
+				<AxisSuspensionInfo>
+					<Offset>-0.96</Offset>
+					<AxisDirection>Train</AxisDirection>
+				</AxisSuspensionInfo>
+			</SubAxes>
+		</AxisSuspensionInfo>
+		<Length>4.6</Length>
+		<WreckConfiguration/>
+	</UnitConfiguration>
+
+	<!--Armored Transport Wagon-->
+	<UnitConfiguration id="com_mech_trainarmored" type="wagon" parentId="com_wagon">
+		<IsAbstract>false</IsAbstract>
+		<Health>10</Health>
+		<VisionRadius>40</VisionRadius>
+
+		<!--Abilities-->
+		<UnitAbilities>
+			<MechAbilityDefinition abilityType="Unload" />
+		</UnitAbilities>
+
+		<!--Internals-->
+		<GarrisonModuleConfiguration/>
+		<WreckConfiguration/>
+	</UnitConfiguration>
+
+	<!--Cannon Wagon-->
+	<UnitConfiguration id="com_mech_traincannon" type="wagon" parentId="com_wagon">
+		<IsAbstract>false</IsAbstract>
+		<Health>10</Health>
+		<VisionRadius>40</VisionRadius>
+
+		<Weapons>
+			<Weapon>com_mech_traincannon_cannon</Weapon>
+		</Weapons>
+
+		<!--Abilities-->
+		<UnitAbilities>
+			<MechAbilityDefinition abilityType="Deploy" cooldown="10"/>
+			<TurretTrainAttackAbilityDefinition weapon="com_mech_traincannon_cannon" defaultAttack="true"/>
+		</UnitAbilities>
+
+		<!--Internals-->
+		<UnitStates>
+			<States>
+				<DefaultMechStateDefinition name="default"/>
+				<StationaryMechStateDefinition name="siege"/>
+				<MechShootStateDefinition name="shoot" PreTicks="1" PostTicks="3"/>
+			</States>
+			<Transitions>
+				<StationaryTransitionDefinition from="default" to="siege" fadeOut="0" flat="8" fadeIn="0"/>
+				<StationaryTransitionDefinition from="siege" to="default" fadeOut="0" flat="8" fadeIn="0"/>
+				<InstantTransitionDefinition from="shoot" to="siege"/>
+				<BlendTransitionDefinition from="siege" to="shoot" mergeTicks="3"/>
+			</Transitions>
+			<Requests>
+				<MoveRequest>
+					<StateNames>
+						<Request>default</Request>
+					</StateNames>
+				</MoveRequest>
+				<AttackRequest if="default">
+					<StateNames>
+						<Request>siege</Request>
+					</StateNames>
+				</AttackRequest>
+				<AttackRequest if="siege">
+					<StateNames>
+						<Request>shoot</Request>
+						<Request>siege</Request>
+					</StateNames>
+				</AttackRequest>
+				<AbilityRequest if="default" ability="Deploy">
+					<StateNames>
+						<Request>siege</Request>
+					</StateNames>
+				</AbilityRequest>
+				<AbilityRequest if="siege" ability="Deploy">
+					<StateNames>
+						<Request>default</Request>
+					</StateNames>
+				</AbilityRequest>
+			</Requests>
+			<DeployedStates>
+				<State>siege</State>
+				<State>shoot</State>
+			</DeployedStates>
+		</UnitStates>
+		<WreckConfiguration/>
+	</UnitConfiguration>
+
+	<!--Cannon Support Wagon-->
+	<UnitConfiguration id="com_mech_traincannonsupport" type="wagon" parentId="com_wagon">
+		<IsAbstract>false</IsAbstract>
+		<Health>10</Health>
+		<VisionRadius>10</VisionRadius>
+		<WreckConfiguration/>
+	</UnitConfiguration>
+
+	<!--Flatbed Wagon-->
+	<UnitConfiguration id="com_mech_trainflatbed" type="wagon" parentId="com_wagon">
+		<IsAbstract>false</IsAbstract>
+		<Health>10</Health>
+		<VisionRadius>10</VisionRadius>
+		<WreckConfiguration/>
+	</UnitConfiguration>
+
+	<!--Freight Wagon-->
+	<UnitConfiguration id="com_mech_trainfreight" type="wagon" parentId="com_wagon">
+		<IsAbstract>false</IsAbstract>
+		<Health>10</Health>
+		<VisionRadius>20</VisionRadius>
+		<WreckConfiguration/>
+	</UnitConfiguration>
+
+	<!--Not Playable Units-->
+	<!--Polania-->
+	<!--NPC-->
+
+	<!--Father-->	
+	<UnitConfiguration id="pol_npc_father" type="hero" parentId="com_soldier_rifleman">
+		<IsAbstract>false</IsAbstract>
+		<Health>100</Health>
+		<ArmorType>Light</ArmorType>
+		<SquadSize>1</SquadSize>
+		<CanCollectEquipment>false</CanCollectEquipment>
+		<WeaponId>pol_hero_anna_rifle</WeaponId>
+		<StatesId>pol_rifle</StatesId>
+		<!--Internals-->
+		<PrimaryMoveSpeed>5</PrimaryMoveSpeed>
+		<UnitAbilities>
+		</UnitAbilities>
+	</UnitConfiguration>
+
+	<!--Friend-->
+	<UnitConfiguration id="pol_npc_friend" type="hero" parentId="com_soldier_rifleman">
+		<IsAbstract>false</IsAbstract>
+		<Health>100</Health>
+		<ArmorType>Light</ArmorType>
+		<SquadSize>1</SquadSize>
+		<CanCollectEquipment>false</CanCollectEquipment>
+		<WeaponId/>
+		<StatesId>pol_rifle</StatesId>
+		<!--Internals-->
+		<PrimaryMoveSpeed>5</PrimaryMoveSpeed>
+		<UnitAbilities>
+		</UnitAbilities>
+	</UnitConfiguration>
+
+	<!--Ruviet-->
+	<!--Trains-->
+
+	<!--Rusviet Battletrain-->
+	<UnitConfiguration id="rus_train">
+	</UnitConfiguration>
+
+	<!--Saxony-->
+	<!--NPC-->
+	<!--Technician-->
+	<UnitConfiguration id="sax_npc_technician" type="hero" parentId="com_soldier_rifleman">
+		<IsAbstract>false</IsAbstract>
+		<Health>100</Health>
+		<ArmorType>Light</ArmorType>
+		<SquadSize>1</SquadSize>
+		<CanCollectEquipment>false</CanCollectEquipment>
+		<WeaponId/>
+		<StatesId>pol_rifle</StatesId>
+		<!--Internals-->
+		<PrimaryMoveSpeed>5</PrimaryMoveSpeed>
+		<UnitAbilities>
+		</UnitAbilities>
+	</UnitConfiguration>
+
+
+	<!--Tesla-->
+	<!--Mechs & Exo-Skeletons-->	
+
+	<!--Charger-->
+	<UnitConfiguration id="tes_mech_charger" type="exoskeleton" parentId="com_exo">
+		<IsAbstract>false</IsAbstract>
+		<SquadSize>3</SquadSize>
+		<Health>100</Health>
+		<ArmorType>Unarmored</ArmorType>
+		<Tags>Mech</Tags>
+		<ImmuneToLightning>true</ImmuneToLightning>
+		<EnergyChargeRange>20</EnergyChargeRange>
+		<VisionRadius>50</VisionRadius>
+		<Weapons>
+			<Weapon>tes_mech_serve_charger</Weapon>
+		</Weapons>
+
+		<!--Navigation-->
+		<NavRadius>Human</NavRadius>
+		<LimitedInteractions>Attack, Retreat, Exploration, MeleeAttack, Custom, Conquer, Collect, Repair, Revive, ChargeEnergy</LimitedInteractions>
+		<RepairSpeed>0.15</RepairSpeed>
+
+		<!--Hitsystem-->
+		<HitzoneRadius>2.5</HitzoneRadius>
+		<DefaultHeight>2.5</DefaultHeight>
+
+		<!--Abilities-->
+		<UnitAbilities>
+			<MechMovementAbilityDefinition defaultMovement="true"/>
+			<DefaultMechAttackAbilityDefinition weapon="tes_mech_serve_charger" defaultMelee="true"/>
+			<MechChargeEndBossEnergyDefinition />
+		</UnitAbilities>
+
+		<!--Costs-->
+		<BuildCost>
+			<IronCost>350</IronCost>
+			<OilCost>200</OilCost>
+			<PopulationCost>4</PopulationCost>
+		</BuildCost>
+		<RepairCost>
+			<IronCost>5</IronCost>
+			<OilCost>0</OilCost>
+			<BatchSize>40</BatchSize>
+		</RepairCost>
+		<UpkeepCost>
+			<OilCost>1</OilCost>
+		</UpkeepCost>
+
+		<!--Internals-->
+		<SupportedSpecialSpawnTypes>SmallElevatorCrawlOut</SupportedSpecialSpawnTypes>
+		<KineticToVelocity>0.2</KineticToVelocity>
+		<RotationSpeed>85</RotationSpeed>
+		<RotationAcceleration>0.1</RotationAcceleration>
+		<MoveSpeed>2</MoveSpeed>
+		<Acceleration>0.1</Acceleration>
+		<MotionScaleCurve>
+			<Key x="0" y="1"/>
+			<Key x="90" y="0.8"/>
+			<Key x="180" y="0.5"/>
+		</MotionScaleCurve>
+		<ReversingMotionScaleCurve>
+			<Key x="0" y=".5"/>
+			<Key x="90" y=".25"/>
+			<Key x="180" y=".35"/>
+		</ReversingMotionScaleCurve>
+		<!--Decay describes velocity reduction in meter per tick! -->
+		<KineticVelocityProportionalDecay>0.2</KineticVelocityProportionalDecay>
+		<KineticVelocityConstantDecay>0.1</KineticVelocityConstantDecay>
+		<WreckConfiguration/>
+		<UnitStates>
+			<States>
+				<StationaryMechStateDefinition name="elevator_spawn"/>
+				<DefaultMechStateDefinition name="default"/>
+				<MechShootStateDefinition name="shoot" PreTicks="7" PostTicks="3"/>
+				<MechTurnStateDefinition name="turn"/>
+				<MechInteractStateDefinition name="interact"/>
+			</States>
+			<Transitions>
+				<StationaryTransitionDefinition from="elevator_spawn" to="default" fadeOut="8" flat="0" fadeIn="0"/>
+				<BlendTransitionDefinition from="default" to="turn" mergeTicks="1"/>
+				<InstantTransitionDefinition from="turn" to="default"/>
+				<BlendTransitionDefinition from="turn" to="shoot" mergeTicks="3"/>
+				<InstantTransitionDefinition from="shoot" to="default"/>
+				<BlendTransitionDefinition from="default" to="shoot" mergeTicks="3"/>
+				<BlendTransitionDefinition from="default" to="interact" mergeTicks="3"/>
+				<BlendTransitionDefinition from="turn" to="interact" mergeTicks="3"/>
+				<InstantTransitionDefinition from="interact" to="default"/>
+			</Transitions>
+			<Requests>
+				<MoveRequest>
+					<StateNames>
+						<Request>default</Request>
+					</StateNames>
+				</MoveRequest>
+				<TurnRequest if="elevator_spawn">
+					<StateNames>
+						<Request>default</Request>
+						<Request>turn</Request>
+					</StateNames>
+				</TurnRequest>
+				<TurnRequest>
+					<StateNames>
+						<Request>turn</Request>
+					</StateNames>
+				</TurnRequest>
+				<AttackRequest if="elevator_spawn">
+					<StateNames>
+						<Request>default</Request>
+						<Request>shoot</Request>
+						<Request>default</Request>
+					</StateNames>
+				</AttackRequest>
+				<AttackRequest>
+					<StateNames>
+						<Request>shoot</Request>
+						<Request>default</Request>
+					</StateNames>
+				</AttackRequest>
+				<InteractRequest if="elevator_spawn">
+					<StateNames>
+						<Request>default</Request>
+						<Request>interact</Request>
+					</StateNames>
+				</InteractRequest>
+				<InteractRequest>
+					<StateNames>
+						<Request>interact</Request>
+					</StateNames>
+				</InteractRequest>
+			</Requests>
+		</UnitStates>
+	</UnitConfiguration>
+
+	<!-- Tesla Walker-->
+	<UnitConfiguration id="tes_soldier_walker" type="exoskeleton" parentId="com_exo">
+		<IsAbstract>false</IsAbstract>
+		<Health>200</Health>
+		<ArmorType>Light</ArmorType>
+		<ImmuneToLightning>true</ImmuneToLightning>
+		<VisionRadius>50</VisionRadius>
+		<Weapons>
+			<Weapon>tes_soldier_walker_rifle</Weapon>
+		</Weapons>
+
+		<!--Navigation-->
+		<NavRadius>SmallMech</NavRadius>
+
+		<!--Hitsystem-->
+		<HitzoneRadius>0.85</HitzoneRadius>
+		<DefaultHeight>2.5</DefaultHeight>
+
+		<!--Abilities-->
+		<UnitAbilities>
+			<MechMovementAbilityDefinition defaultMovement="true"/>
+			<DefaultMechAttackAbilityDefinition weapon="tes_soldier_walker_rifle" defaultAttack="true"/>
+		</UnitAbilities>
+
+		<!--Costs-->
+		<BuildCost>
+			<IronCost>350</IronCost>
+			<OilCost>200</OilCost>
+			<PopulationCost>4</PopulationCost>
+		</BuildCost>
+		<RepairCost>
+			<IronCost>5</IronCost>
+			<OilCost>0</OilCost>
+			<BatchSize>40</BatchSize>
+		</RepairCost>
+		<UpkeepCost>
+			<OilCost>1</OilCost>
+		</UpkeepCost>
+
+		<!--Veterancy-->
+		<Veterancy>
+			<VeteranThreshold>9000</VeteranThreshold>
+			<EliteThreshold>9500</EliteThreshold>
+		</Veterancy>
+
+		<!--Internals-->
+		<KineticToVelocity>0.2</KineticToVelocity>
+		<RotationSpeed>52</RotationSpeed>
+		<RotationAcceleration>0.1</RotationAcceleration>
+		<MoveSpeed>2.9</MoveSpeed>
+		<Acceleration>0.1</Acceleration>
+		<MotionScaleCurve>
+			<Key x="0" y="1"/>
+			<Key x="90" y="1"/>
+			<Key x="180" y="1"/>
+		</MotionScaleCurve>
+		<ReversingMotionScaleCurve>
+			<Key x="0" y=".25"/>
+			<Key x="90" y=".25"/>
+			<Key x="180" y=".25"/>
+		</ReversingMotionScaleCurve>
+		<!--Decay describes velocity reduction in meter per tick! -->
+		<KineticVelocityProportionalDecay>0.2</KineticVelocityProportionalDecay>
+		<KineticVelocityConstantDecay>0.1</KineticVelocityConstantDecay>
+		<WreckConfiguration/>
+		<UnitStates>
+			<States>
+				<DefaultMechStateDefinition name="default"/>
+				<MechShootStateDefinition name="shoot" PreTicks="9" PostTicks="3"/>
+				<MechTurnStateDefinition name="turn"/>
+			</States>
+			<Transitions>
+				<BlendTransitionDefinition from="default" to="turn" mergeTicks="1"/>
+				<InstantTransitionDefinition from="turn" to="default"/>
+				<BlendTransitionDefinition from="turn" to="shoot" mergeTicks="3"/>
+				<InstantTransitionDefinition from="shoot" to="default"/>
+				<BlendTransitionDefinition from="default" to="shoot" mergeTicks="3"/>
+			</Transitions>
+			<Requests>
+				<MoveRequest>
+					<StateNames>
+						<Request>default</Request>
+					</StateNames>
+				</MoveRequest>
+				<TurnRequest>
+					<StateNames>
+						<Request>turn</Request>
+					</StateNames>
+				</TurnRequest>
+				<AttackRequest>
+					<StateNames>
+						<Request>shoot</Request>
+						<Request>default</Request>
+					</StateNames>
+				</AttackRequest>
+			</Requests>
+		</UnitStates>
+	</UnitConfiguration>
+
+	<!--Guard-->
+	<UnitConfiguration id="tes_mech_guard" type="mech" parentId="com_heavy_mech">
+		<IsAbstract>false</IsAbstract>
+		<Type>Mech</Type>
+		<Health>750</Health>
+		<ArmorType>Medium</ArmorType>
+		<ImmuneToLightning>true</ImmuneToLightning>
+		<VisionRadius>50</VisionRadius>
+		<Weapons>
+			<Weapon>tes_mech_guard_rockets</Weapon>
+			<Weapon>tes_mech_guard_rockets_LL</Weapon>
+			<Weapon>tes_mech_guard_rockets_LR</Weapon>
+			<Weapon>tes_mech_guard_rockets_RL</Weapon>
+			<Weapon>tes_mech_guard_rockets_RR</Weapon>
+			<Weapon>tes_mech_guard_gatling_L</Weapon>
+			<Weapon>tes_mech_guard_gatling_R</Weapon>
+			<Weapon>tes_mech_guard_gatling</Weapon>
+			<Weapon>tes_mech_guard_railgun</Weapon>
+		</Weapons>
+
+		<!--Navigation-->
+		<NavRadius>SmallMech</NavRadius>
+
+		<!--Hitsystem-->
+		<HitzoneRadius>2.5</HitzoneRadius>
+		<DefaultHeight>2.5</DefaultHeight>
+
+		<!--Abilities-->
+		<UnitAbilities>
+			<MechFortifyAbilityDefinition abilityType="Deploy" cooldown="8" DisabledInAlpha2="false" DamageReductionModifer="1"/>
+			<MechMovementAbilityDefinition defaultMovement="true"/>
+			<!--<MultiWeaponMechAttackAbilityDefinition weapon="tes_mech_guard_gatling" defaultAttack="true" autoswitching="true">
+				<Weapons>
+					<Weapon>tes_mech_guard_gatling_R</Weapon>
+					<Weapon>tes_mech_guard_gatling_L</Weapon>
+				</Weapons>				
+			</MultiWeaponMechAttackAbilityDefinition>-->
+			<DefaultMechAttackAbilityDefinition weapon="tes_mech_guard_railgun" abilityType="Grenade" defaultAttack="true"/>
+			<TeslaGuardMechRocketAbilityDefinition weapon="tes_mech_guard_rockets_LL" abilityType="Rockets" defaultAttack="false" DeactivateAfterShot="true" DistanceBetweenPoints="3">
+				<Weapons>
+					<Weapon>tes_mech_guard_rockets_LL</Weapon>
+					<Weapon>tes_mech_guard_rockets_LR</Weapon>
+					<Weapon>tes_mech_guard_rockets_RL</Weapon>
+					<Weapon>tes_mech_guard_rockets_RR</Weapon>
+				</Weapons>
+			</TeslaGuardMechRocketAbilityDefinition>
+		</UnitAbilities>
+		<AutoAbilities>
+			<AreaAttackAutoAbilityDefinition weapon="tes_mech_guard_rockets_LL" abilityType="Rockets" considerationRange="5" minTargetsInArea="1" settingIdentifier="ShockAutoAbility"/>
+			<FortifyAutoAbilityDefinition abilityType="Deploy" healthLostRatioThreshold="0.75" noMoveOrderGivenTime="30" conditions="InCombat" settingIdentifier="DeployAutoAbility"/>
+		</AutoAbilities>
+		<AdvancedSecondaryWeaponModuleConfiguration>
+			<SecondaryWeapons>
+				<SecondaryWeaponConfiguration weaponConfigurationId="tes_mech_guard_gatling_R" offsetX="2" offsetY="0" direction="15"/>
+				<SecondaryWeaponConfiguration weaponConfigurationId="tes_mech_guard_gatling_L" offsetX="-2" offsetY="0" direction="-15"/>
+			</SecondaryWeapons>
+			<AlternatingWeaponDelay>15</AlternatingWeaponDelay>
+			<State>Alternating</State>
+		</AdvancedSecondaryWeaponModuleConfiguration>
+
+		<!--Internals-->
+		<SupportedSpecialSpawnTypes>SmallElevatorPlatform</SupportedSpecialSpawnTypes>
+		<MaxKineticVelocity>1.5</MaxKineticVelocity>
+		<KineticToVelocity>1</KineticToVelocity>
+		<KineticVelocityProportionalDecay>0.2</KineticVelocityProportionalDecay>
+		<KineticVelocityConstantDecay>0.05</KineticVelocityConstantDecay>	
+		<RotationSpeed>32</RotationSpeed>
+		<RotationAcceleration>0.1</RotationAcceleration>
+		<MoveSpeed>1.5</MoveSpeed>
+		<Acceleration>0.1</Acceleration>
+		<MotionScaleCurve>
+			<Key x="0" y="1"/>
+			<Key x="90" y="1"/>
+			<Key x="180" y="1"/>
+		</MotionScaleCurve>
+
+		<!--Costs-->
+		<BuildCost>
+			<IronCost>350</IronCost>
+			<OilCost>200</OilCost>
+			<PopulationCost>4</PopulationCost>
+		</BuildCost>
+		<RepairCost>
+			<IronCost>5</IronCost>
+			<OilCost>0</OilCost>
+			<BatchSize>40</BatchSize>
+		</RepairCost>
+		<UpkeepCost>
+			<OilCost>1</OilCost>
+		</UpkeepCost>
+		<UnitStates>
+			<States>
+				<StationaryMechStateDefinition name="elevator_spawn"/>
+				<DefaultMechStateDefinition name="default"/>
+				<MechShootStateDefinition name="shoot" PreTicks="7" PostTicks="7"/>
+				<MechTurnStateDefinition name="turn"/>
+				<StationaryMechStateDefinition name="siege"/>
+			</States>
+			<Transitions>
+				<StationaryTransitionDefinition from="elevator_spawn" to="default" fadeOut="16" flat="0" fadeIn="0"/>
+				<BlendTransitionDefinition from="default" to="turn" mergeTicks="1"/>
+				<InstantTransitionDefinition from="turn" to="default"/>
+				<BlendTransitionDefinition from="turn" to="shoot" mergeTicks="3"/>
+				<InstantTransitionDefinition from="shoot" to="default"/>
+				<BlendTransitionDefinition from="default" to="shoot" mergeTicks="3"/>
+				<StationaryTransitionDefinition from="default" to="siege" fadeOut="3" flat="24" fadeIn="0"/>
+				<StationaryTransitionDefinition from="siege" to="default" fadeOut="3" flat="24" fadeIn="3"/>
+				<StationaryTransitionDefinition from="siege" to="turn" fadeOut="3" flat="24" fadeIn="3"/>
+				<StationaryTransitionDefinition from="siege" to="shoot" fadeOut="3" flat="24" fadeIn="3"/>
+			</Transitions>
+			<Requests>
+				<MoveRequest>
+					<StateNames>
+						<Request>default</Request>
+					</StateNames>
+				</MoveRequest>
+				<TurnRequest if="elevator_spawn">
+					<StateNames>
+						<Request>default</Request>
+						<Request>turn</Request>
+					</StateNames>
+				</TurnRequest>
+				<TurnRequest>
+					<StateNames>
+						<Request>turn</Request>
+					</StateNames>
+				</TurnRequest>
+				<AttackRequest if="elevator_spawn">
+					<StateNames>
+						<Request>default</Request>
+						<Request>shoot</Request>
+						<Request>default</Request>
+					</StateNames>
+				</AttackRequest>
+				<AttackRequest>
+					<StateNames>
+						<Request>shoot</Request>
+						<Request>default</Request>
+					</StateNames>
+				</AttackRequest>
+				<AbilityRequest if="siege" ability="Deploy">
+					<StateNames>
+						<Request>default</Request>
+					</StateNames>
+				</AbilityRequest>
+				<AbilityRequest ability="Deploy">
+					<StateNames>
+						<Request>default</Request>
+						<Request>siege</Request>
+					</StateNames>
+				</AbilityRequest>
+				<AbilityRequest if="siege" ability="Rockets">
+					<StateNames>
+						<Request>default</Request>
+						<Request>shoot</Request>
+						<Request>default</Request>
+					</StateNames>
+				</AbilityRequest>
+				<AbilityRequest if="siege" ability="Grenade">
+					<StateNames>
+						<Request>default</Request>
+						<Request>shoot</Request>
+						<Request>default</Request>
+					</StateNames>
+				</AbilityRequest>
+			</Requests>
+			<DeployedStates>
+				<State>siege</State>
+			</DeployedStates>
+		</UnitStates>
+	</UnitConfiguration>
+
+	<!--Ikarus (former: Pandora or Boss) -->
+	<UnitConfiguration id="tes_mech_ikarus" type="mech" parentId="com_heavy_mech">
+		<IsAbstract>false</IsAbstract>
+		<Health>25000</Health>
+		<Tags>None</Tags>
+		<VisionRadius>40</VisionRadius>
+		<Weapons>
+			<Weapon>tes_mech_ikarus_rockets_F</Weapon>
+			<Weapon>tes_mech_ikarus_rockets_L</Weapon>
+			<Weapon>tes_mech_ikarus_rockets_R</Weapon>
+			<Weapon>tes_mech_ikarus_shocktrap_launcher</Weapon>
+		</Weapons>
+		<ImmuneToLightning>true</ImmuneToLightning>
+		<LimitedInteractions>Attack, Retreat, Exploration</LimitedInteractions>
+
+		<DontShowSelectToolTips>true</DontShowSelectToolTips>
+		<!--Hitsystem-->
+		<HitzoneRadius>3.5</HitzoneRadius>
+		<DefaultHeight>15</DefaultHeight>
+
+		<!--Abilities-->
+		<UnitAbilities>
+			<IkarusMotionDefinition defaultMovement="true" ShocktrapDropAbilityType="HeroAbility1">
+				<ShockTrapConfiguration ShockTrapAmmoName="IkarusShocktrap">
+					<LifeTime>20</LifeTime>
+					<CooldownPerHit>0.5</CooldownPerHit>
+					<StartDelay>0.2</StartDelay>
+				</ShockTrapConfiguration>			
+			</IkarusMotionDefinition>		
+			<MechAbilityDefinition abilityType="Deploy"/>
+			<MechAbilityDefinition abilityType="VeteranMechAbility"/>
+			<MechAbilityDefinition abilityType="HeroAbility2"/>
+			<MechChargingUpAttackDefinition weapon="tes_mech_ikarus_shocktrap_launcher" abilityType="Mortar" DeactivateAfterShot="true"/>
+		</UnitAbilities>
+
+		<AdvancedSecondaryWeaponModuleConfiguration>
+			<SecondaryWeapons>
+				<SecondaryWeaponConfiguration weaponConfigurationId="tes_mech_ikarus_rockets_F" offsetX="0" offsetY="0" direction="0"/>
+				<SecondaryWeaponConfiguration weaponConfigurationId="tes_mech_ikarus_rockets_R" offsetX="0" offsetY="0" direction="120"/>
+				<SecondaryWeaponConfiguration weaponConfigurationId="tes_mech_ikarus_rockets_L" offsetX="0" offsetY="0" direction="240"/>
+			</SecondaryWeapons>
+			<AllowedStates>
+				<State>charging</State>
+			</AllowedStates>
+			<AlternatingWeaponDelay>8</AlternatingWeaponDelay>
+			<ChargingAbilityType>Rockets</ChargingAbilityType>
+		</AdvancedSecondaryWeaponModuleConfiguration>
+
+		<!--Costs-->
+		<BuildCost>
+			<IronCost>350</IronCost>
+			<OilCost>130</OilCost>
+			<PopulationCost>5</PopulationCost>
+		</BuildCost>
+		<RepairCost>
+			<IronCost>0</IronCost>
+			<OilCost>0</OilCost>
+			<BatchSize>80</BatchSize>
+		</RepairCost>
+		<UpkeepCost>
+			<OilCost>0</OilCost>
+		</UpkeepCost>
+
+		<!--Veterancy-->
+		<Veterancy>
+			<VeteranThreshold>50000</VeteranThreshold>
+			<EliteThreshold>100000</EliteThreshold>
+		</Veterancy>
+		
+		<!--Veterancy adjustment for hard difficulty-->
+		<DamageModifier>
+			<Rookie>1</Rookie>
+			<Veteran>1.15</Veteran>
+			<Elite>1.15</Elite>
+		</DamageModifier>
+		<HealthModifier>
+			<Rookie>1</Rookie>
+			<Veteran>1.1</Veteran>
+			<Elite>1.1</Elite>
+		</HealthModifier>
+
+		<!--ExperienceValues-->
+		<ExperienceValues>
+			<AttackerXP>
+				
+				<Rookie>1200</Rookie>
+				<Veteran>1400</Veteran>
+				<Elite>1900</Elite>
+			</AttackerXP>
+			<DamageXP>
+				<!--how many points would this unit get if someone does 100% damage to it-->
+				<Rookie>1750</Rookie>
+				<Veteran>2100</Veteran>
+				<Elite>2625</Elite>
+			</DamageXP>
+			<HealerXP>
+				<!--how many points would a healer get if they heal 100% HPs-->
+				<Rookie>750</Rookie>
+				<Veteran>975</Veteran>
+				<Elite>1125</Elite>
+			</HealerXP>
+		</ExperienceValues>
+
+		<!--Internals-->
+		<WalkWithoutTurn>true</WalkWithoutTurn>
+		<MoveSpeed>2</MoveSpeed>
+		<MaxKineticVelocity>0</MaxKineticVelocity>
+		<KineticToVelocity>0</KineticToVelocity>
+		<Acceleration>0.1</Acceleration>
+		<RotationSpeed>42</RotationSpeed>
+		<RotationAcceleration>0.05</RotationAcceleration>
+		<MotionScaleCurve>
+			<Key x="0" y="1"/>
+			<Key x="180" y="1"/>
+		</MotionScaleCurve>
+		<UnitStates>
+			<States>
+				<DefaultMechStateDefinition name="default"/>
+				<MechTurnStateDefinition name="turn"/>
+				<StationaryMechStateDefinition name="charging"/>
+				<StationaryMechStateDefinition name="down"/>
+				<StationaryMechStateDefinition name="bomb"/>
+				<MechInteractStateDefinition name="interact"/>
+				<MechShootStateDefinition name="shoot" PreTicks="1" PostTicks="3"/>
+			</States>
+			<Transitions>
+				<StationaryTransitionDefinition from="default" to="charging" fadeOut="3" flat="24" fadeIn="0"/>
+				<StationaryTransitionDefinition from="turn" to="charging" fadeOut="3" flat="24" fadeIn="0"/>
+				<StationaryTransitionDefinition from="charging" to="default" fadeOut="3" flat="24" fadeIn="3"/>
+				<BlendTransitionDefinition from="default" to="turn" mergeTicks="3"/>
+				<BlendTransitionDefinition from="turn" to="default" mergeTicks="3"/>
+				<InstantTransitionDefinition from="default" to="interact"/>
+				<InstantTransitionDefinition from="interact" to="default"/>
+				<StationaryTransitionDefinition from="shoot" to="charging"/>
+				<StationaryTransitionDefinition from="charging" to="shoot"/>
+				<StationaryTransitionDefinition from="default" to="down" fadeOut="3" flat="24" fadeIn="0"/>
+				<StationaryTransitionDefinition from="down" to="default" fadeOut="3" flat="24" fadeIn="0"/>
+				<StationaryTransitionDefinition from="default" to="bomb" fadeOut="3" flat="24" fadeIn="0"/>
+				<StationaryTransitionDefinition from="bomb" to="default" fadeOut="3" flat="24" fadeIn="0"/>
+			</Transitions>
+			<Requests>
+				<!--Move-->
+				<MoveRequest if="charging|down|shoot|bomb">
+					<StateNames>
+					</StateNames>
+				</MoveRequest>
+				<MoveRequest>
+					<StateNames>
+						<Request>default</Request>
+					</StateNames>
+				</MoveRequest>
+				<!--Turn-->
+				<TurnRequest if="charging|down|shoot|bomb">
+					<StateNames>
+					</StateNames>
+				</TurnRequest>
+				<TurnRequest>
+					<StateNames>
+						<Request>default</Request>
+						<Request>turn</Request>
+						<Request>default</Request>
+					</StateNames>
+				</TurnRequest>
+				<!--Attack-->
+				<AttackRequest if="charging">
+					<StateNames>
+						<Request>shoot</Request>
+						<Request>charging</Request>
+					</StateNames>
+				</AttackRequest>
+				<AttackRequest>
+					<StateNames>
+					</StateNames>
+				</AttackRequest>
+				<!--Interact-->
+				<InteractRequest if="charging|down|shoot|bomb">
+					<StateNames>
+					</StateNames>
+				</InteractRequest>
+				<InteractRequest>
+					<StateNames>
+						<Request>default</Request>
+						<Request>interact</Request>
+					</StateNames>
+				</InteractRequest>
+				<!--Charging-->
+				<AbilityRequest if="charging|shoot" ability="Deploy">
+					<StateNames>
+						<Request>default</Request>
+					</StateNames>
+				</AbilityRequest>
+				<AbilityRequest ability="Deploy">
+					<StateNames>
+						<Request>default</Request>
+						<Request>charging</Request>
+					</StateNames>
+				</AbilityRequest>
+				<!--Down-->
+				<AbilityRequest if="down" ability="VeteranMechAbility">
+					<StateNames>
+						<Request>default</Request>
+					</StateNames>
+				</AbilityRequest>
+				<AbilityRequest ability="VeteranMechAbility">
+					<StateNames>
+						<Request>default</Request>
+						<Request>down</Request>
+					</StateNames>
+				</AbilityRequest>
+				<AbilityRequest ability="HeroAbility2">
+					<StateNames>
+						<Request>default</Request>
+						<Request>bomb</Request>
+					</StateNames>
+				</AbilityRequest>
+			</Requests>
+			<DeployedStates>
+				<State>charging</State>
+				<State>shoot</State>
+				<State>down</State>
+				<State>bomb</State>
+			</DeployedStates>
+		</UnitStates>
+	</UnitConfiguration>
+
+	<!--Serve-->
+	<UnitConfiguration id="tes_mech_serve" type="exoskeleton" parentId="com_exo">
+		<IsAbstract>false</IsAbstract>
+		<SquadSize>7</SquadSize>
+		<Health>70</Health>
+		<ArmorType>Unarmored</ArmorType>
+		<Tags>Mech</Tags>
+		<ImmuneToLightning>true</ImmuneToLightning>
+		<VisionRadius>50</VisionRadius>
+		<Weapons>
+			<Weapon>tes_mech_serve_shocker</Weapon>
+		</Weapons>
+
+		<!--Navigation-->
+		<NavRadius>Human</NavRadius>
+		<LimitedInteractions>Attack, Retreat, Exploration, MeleeAttack, Custom, Conquer, Collect, Repair, Revive, Upgrade</LimitedInteractions>
+		<RepairSpeed>0.15</RepairSpeed>
+		<RepairRange>15</RepairRange>
+
+		<!--Hitsystem-->
+		<HitzoneRadius>2.5</HitzoneRadius>
+		<DefaultHeight>2.5</DefaultHeight>
+
+		<!--Abilities-->
+		<UnitAbilities>
+			<MechMovementAbilityDefinition defaultMovement="true"/>
+			<DefaultMechAttackAbilityDefinition weapon="tes_mech_serve_shocker" defaultMelee="true"/>
+			<MechUpgradeInteractDefinition/>
+		</UnitAbilities>
+
+		<!--Costs-->
+		<BuildCost>
+			<IronCost>350</IronCost>
+			<OilCost>200</OilCost>
+			<PopulationCost>4</PopulationCost>
+		</BuildCost>
+		<RepairCost>
+			<IronCost>5</IronCost>
+			<OilCost>0</OilCost>
+			<BatchSize>40</BatchSize>
+		</RepairCost>
+		<UpkeepCost>
+			<OilCost>1</OilCost>
+		</UpkeepCost>
+
+		<!--Internals-->
+		<SupportedSpecialSpawnTypes>SmallElevatorCrawlOut</SupportedSpecialSpawnTypes>
+		<KineticToVelocity>0.2</KineticToVelocity>
+		<RotationSpeed>85</RotationSpeed>
+		<RotationAcceleration>0.1</RotationAcceleration>
+		<MoveSpeed>2.9</MoveSpeed>
+		<Acceleration>0.1</Acceleration>
+		<MotionScaleCurve>
+			<Key x="0" y="1"/>
+			<Key x="90" y="0.8"/>
+			<Key x="180" y="0.5"/>
+		</MotionScaleCurve>
+		<ReversingMotionScaleCurve>
+			<Key x="0" y=".5"/>
+			<Key x="90" y=".25"/>
+			<Key x="180" y=".35"/>
+		</ReversingMotionScaleCurve>
+		<!--Decay describes velocity reduction in meter per tick! -->
+		<KineticVelocityProportionalDecay>0.2</KineticVelocityProportionalDecay>
+		<KineticVelocityConstantDecay>0.1</KineticVelocityConstantDecay>
+		<ConsiderInteractionDistance>30</ConsiderInteractionDistance>
+		<WreckConfiguration/>
+		<UnitStates>
+			<States>
+				<StationaryMechStateDefinition name="elevator_spawn"/>
+				<DefaultMechStateDefinition name="default"/>
+				<MechShootStateDefinition name="shoot" PreTicks="7" PostTicks="3"/>
+				<MechTurnStateDefinition name="turn"/>
+				<MechInteractStateDefinition name="interact"/>
+			</States>
+			<Transitions>
+				<StationaryTransitionDefinition from="elevator_spawn" to="default" fadeOut="8" flat="0" fadeIn="0"/>
+				<BlendTransitionDefinition from="default" to="turn" mergeTicks="1"/>
+				<InstantTransitionDefinition from="turn" to="default"/>
+				<BlendTransitionDefinition from="turn" to="shoot" mergeTicks="3"/>
+				<InstantTransitionDefinition from="shoot" to="default"/>
+				<BlendTransitionDefinition from="default" to="shoot" mergeTicks="3"/>
+				<BlendTransitionDefinition from="default" to="interact" mergeTicks="3"/>
+				<BlendTransitionDefinition from="turn" to="interact" mergeTicks="3"/>
+				<InstantTransitionDefinition from="interact" to="default"/>
+			</Transitions>
+			<Requests>
+				<MoveRequest>
+					<StateNames>
+						<Request>default</Request>
+					</StateNames>
+				</MoveRequest>
+				<TurnRequest if="elevator_spawn">
+					<StateNames>
+						<Request>default</Request>
+						<Request>turn</Request>
+					</StateNames>
+				</TurnRequest>
+				<TurnRequest>
+					<StateNames>
+						<Request>turn</Request>
+					</StateNames>
+				</TurnRequest>
+				<AttackRequest if="elevator_spawn">
+					<StateNames>
+						<Request>default</Request>
+						<Request>shoot</Request>
+						<Request>default</Request>
+					</StateNames>
+				</AttackRequest>
+				<AttackRequest>
+					<StateNames>
+						<Request>shoot</Request>
+						<Request>default</Request>
+					</StateNames>
+				</AttackRequest>
+				<InteractRequest if="elevator_spawn">
+					<StateNames>
+						<Request>default</Request>
+						<Request>interact</Request>
+					</StateNames>
+				</InteractRequest>
+				<InteractRequest>
+					<StateNames>
+						<Request>interact</Request>
+					</StateNames>
+				</InteractRequest>
+			</Requests>
+		</UnitStates>
+	</UnitConfiguration>
+
+	<!--Civilian-->
+	<!--Mechs-->
+
+	<!--Fieldworker-->
+	<UnitConfiguration id="com_mech_fieldworker" type="mech">
+		<IsAbstract>false</IsAbstract>
+		<Type>Mech</Type>
+		<Health>500</Health>
+		<ArmorType>Light</ArmorType>
+		<Tags>Mech</Tags>
+		<VisionRadius>30</VisionRadius>
+		<Weapons>
+			<!--Does not have any weapons (maybe a special action but thats all). Unsure if it is ok to remove all weapons...-->
+		</Weapons>
+
+		<!--Navigation-->
+		<!--Whatever is appropriate-->
+		<NavRadius>BigMech</NavRadius>
+
+		<!--Hitsystem-->
+		<HitzoneRadius>2.5</HitzoneRadius>
+		<DefaultHeight>2.5</DefaultHeight>
+		<DamageHitzones>
+			<DamageHitzone>
+				<Id>1</Id>
+				<LowerAngle>135</LowerAngle>
+				<UpperAngle>225</UpperAngle>
+				<Type>Vulnerable</Type>
+			</DamageHitzone>
+		</DamageHitzones>
+
+		<!--Abilities-->
+		<UnitAbilities>
+			<MechMovementAbilityDefinition defaultMovement="true"/>
+		</UnitAbilities>
+
+		<!--Costs-->
+		<BuildCost>
+			<IronCost>200</IronCost>
+			<OilCost>100</OilCost>
+			<PopulationCost>3</PopulationCost>
+		</BuildCost>
+		<RepairCost>
+			<IronCost>5</IronCost>
+			<OilCost>0</OilCost>
+			<BatchSize>20</BatchSize>
+			<!--random value-->
+		</RepairCost>
+		<UpkeepCost>
+			<OilCost>1</OilCost>
+		</UpkeepCost>
+
+		<!--Veterancy-->
+		<Veterancy>
+			<VeteranThreshold>2000</VeteranThreshold>
+			<EliteThreshold>8000</EliteThreshold>
+		</Veterancy>
+
+		<!--ExperienceValues-->
+		<ExperienceValues>
+			<AttackerXP>
+				<!--how many points would an attacker get when doing 100% damage-->
+				<Rookie>500</Rookie>
+				<Veteran>1000</Veteran>
+				<Elite>2400</Elite>
+			</AttackerXP>
+			<DamageXP>
+				<!--how many points would this unit get if someone does 100% damage to it-->
+				<Rookie>40</Rookie>
+				<Veteran>40</Veteran>
+				<Elite>40</Elite>
+			</DamageXP>
+			<HealerXP>
+				<!--how many points would a healer get if they heal 100% HPs-->
+				<Rookie>250</Rookie>
+				<Veteran>250</Veteran>
+				<Elite>250</Elite>
+			</HealerXP>
+		</ExperienceValues>
+		
+		<!--Internals-->
+		<KineticToVelocity>0.2</KineticToVelocity>
+		<RotationSpeed>28</RotationSpeed>
+		<RotationAcceleration>0.05</RotationAcceleration>
+		<MoveSpeed>2.32</MoveSpeed>
+		<PositiveDelta>90</PositiveDelta>
+		<NegativeDelta>160</NegativeDelta>
+		<Acceleration>0.05</Acceleration>
+		<MotionScaleCurve>
+			<Key x="0" y="1"/>
+			<Key x="60" y="1"/>
+			<Key x="110" y="0"/>
+			<Key x="180" y="-.6"/>
+		</MotionScaleCurve>
+		
+		<!--Decay describes velocity reduction in meter per tick! -->
+		<KineticVelocityProportionalDecay>0.2</KineticVelocityProportionalDecay>
+		<KineticVelocityConstantDecay>0.1</KineticVelocityConstantDecay>
+		<WreckConfiguration>pol_mech_stinger_wreck</WreckConfiguration>
+		<UnitStates>
+			<States>
+				<DefaultMechStateDefinition name="default"/>
+			</States>
+			<Transitions>
+			</Transitions>
+			<Requests>
+				<MoveRequest>
+					<StateNames>
+						<Request>default</Request>
+					</StateNames>
+				</MoveRequest>
+			</Requests>
+		</UnitStates>
+	</UnitConfiguration>
+
+	<!--Transporter-->
+	<UnitConfiguration id="com_mech_transport" type="mech" parentId="com_mech_fieldworker">
+		<IsAbstract>false</IsAbstract>
+		<Type>Mech</Type>
+		<Health>500</Health>
+		<ArmorType>Light</ArmorType>
+		<VisionRadius>30</VisionRadius>
+		<!--Navigation-->
+		<!--Whatever is appropriate-->
+		<NavRadius>BigMech</NavRadius>
+
+		<!--Costs-->
+		<BuildCost>
+			<IronCost>250</IronCost>
+			<OilCost>100</OilCost>
+			<PopulationCost>3</PopulationCost>
+		</BuildCost>
+		<RepairCost>
+			<IronCost>5</IronCost>
+			<OilCost>0</OilCost>
+			<BatchSize>20</BatchSize>
+			<!--random value-->
+		</RepairCost>
+		<UpkeepCost>
+			<OilCost>1</OilCost>
+		</UpkeepCost>
+		
+		<!--Internals-->
+		<KineticToVelocity>0.2</KineticToVelocity>
+		<RotationSpeed>85</RotationSpeed>
+		<RotationAcceleration>0.05</RotationAcceleration>
+		<MoveSpeed>3.6</MoveSpeed>
+		<PositiveDelta>90</PositiveDelta>
+		<NegativeDelta>160</NegativeDelta>
+		<Acceleration>0.05</Acceleration>
+		<MotionScaleCurve>
+			<Key x="0" y="1"/>
+			<Key x="60" y="1"/>
+			<Key x="110" y="0"/>
+			<Key x="180" y="-.6"/>
+		</MotionScaleCurve>
+	</UnitConfiguration>
+
+	<!--Woodcutter-->
+	<UnitConfiguration id="com_mech_woodcutter" type="mech" parentId="com_mech_fieldworker">
+		<IsAbstract>false</IsAbstract>
+		<Type>Mech</Type>
+		<Health>500</Health>
+		<ArmorType>Light</ArmorType>
+		<VisionRadius>30</VisionRadius>
+		<Weapons>
+			<Weapon>com_mech_woodcutter_melee</Weapon>
+		</Weapons>
+
+		<DamageHitzones>
+			<DamageHitzone>
+				<Id>1</Id>
+				<LowerAngle>135</LowerAngle>
+				<UpperAngle>225</UpperAngle>
+				<Type>Vulnerable</Type>
+			</DamageHitzone>
+		</DamageHitzones>
+
+		<!--Navigation-->
+		<!--Whatever is appropriate-->
+		<NavRadius>SmallMech</NavRadius>
+
+		<!--Abilities-->
+		<UnitAbilities>
+			<MechMovementAbilityDefinition defaultMovement="true"/>
+			<DefaultMechAttackAbilityDefinition weapon="com_mech_woodcutter_melee" defaultMelee="true" abilityType="MeleeAttack"/>
+		</UnitAbilities>
+		<!--Costs-->
+		<BuildCost>
+			<IronCost>300</IronCost>
+			<OilCost>100</OilCost>
+			<PopulationCost>4</PopulationCost>
+		</BuildCost>
+		<RepairCost>
+			<IronCost>5</IronCost>
+			<OilCost>0</OilCost>
+			<BatchSize>55</BatchSize>
+			<!--random value-->
+		</RepairCost>
+		<UpkeepCost>
+			<OilCost>2</OilCost>
+		</UpkeepCost>
+		<UnitStates>
+			<States>
+				<DefaultMechStateDefinition name="default"/>
+				<MechShootStateDefinition name="brawl" PreTicks="10"/>
+				<MechTurnStateDefinition name="turn"/>
+			</States>
+
+			<Transitions>
+				<BlendTransitionDefinition from="default" to="turn" mergeTicks="1"/>
+				<InstantTransitionDefinition from="turn" to="default"/>
+				<BlendTransitionDefinition from="turn" to="brawl" mergeTicks="3"/>
+				<BlendTransitionDefinition from="brawl" to="default" mergeTicks="3"/>
+				<BlendTransitionDefinition from="default" to="brawl" mergeTicks="3"/>
+			</Transitions>
+
+			<Requests>
+				<MoveRequest>
+					<StateNames>
+						<Request>default</Request>
+					</StateNames>
+				</MoveRequest>
+				<TurnRequest>
+					<StateNames>
+						<Request>turn</Request>
+					</StateNames>
+				</TurnRequest>
+				<MeleeAttackRequest>
+					<StateNames>
+						<Request>brawl</Request>
+						<Request>default</Request>
+					</StateNames>
+				</MeleeAttackRequest>
+			</Requests>
+		</UnitStates>
+		
+		<!--Internals-->
+		<KineticToVelocity>0.2</KineticToVelocity>
+		<RotationSpeed>50</RotationSpeed>
+		<RotationAcceleration>0.05</RotationAcceleration>
+		<MoveSpeed>2.05</MoveSpeed>
+		<PositiveDelta>90</PositiveDelta>
+		<NegativeDelta>160</NegativeDelta>
+		<Acceleration>0.05</Acceleration>
+		<MotionScaleCurve>
+			<Key x="0" y="1"/>
+			<Key x="60" y="1"/>
+			<Key x="110" y="0"/>
+			<Key x="180" y="-.6"/>
+		</MotionScaleCurve>
+	</UnitConfiguration>
+
+
+	<!--Humans-->
+	<!--Farmer Boy-->
+	<UnitConfiguration id="com_npc_farmerboy" type="hero" parentId="com_civilian">
+		<IsAbstract>false</IsAbstract>
+		<SquadSize>1</SquadSize>
+		<CanVault>false</CanVault>
+
+		<UseDefaultUnitUI>true</UseDefaultUnitUI>
+
+		<!--Internals-->
+		<PrimaryMoveSpeed>5</PrimaryMoveSpeed>
+		<UnitAbilities>
+		</UnitAbilities>
+	</UnitConfiguration>
+	<UnitConfiguration id="pol_npc_farmerboy" type="hero" parentId="com_npc_farmerboy" />
+	
+	<!--Farmer Boy Snow-->
+	<UnitConfiguration id="com_npc_farmerboysnow" type="hero" parentId="com_soldier_rifleman">
+		<IsAbstract>false</IsAbstract>
+		<Health>50</Health>
+		<SquadSize>1</SquadSize>
+		<CanCollectEquipment>false</CanCollectEquipment>
+		<CanVault>false</CanVault>
+		<WeaponId>com_npc_farmerboy_snowball</WeaponId>
+		<StatesId>SnowballFighterStates</StatesId>
+		<ClearImplicitThreshold>3</ClearImplicitThreshold>
+		<CoverTopHeight>1</CoverTopHeight>				
+		<!--Internals-->
+		<PrimaryMoveSpeed>5</PrimaryMoveSpeed>
+		<UnitAbilities>
+		</UnitAbilities>
+		<SuppressStatusIcons>true</SuppressStatusIcons>
+		<UseDefaultUnitUI>true</UseDefaultUnitUI>
+	</UnitConfiguration>
+	<UnitConfiguration id="pol_npc_farmerboysnow" type="hero" parentId="com_npc_farmerboysnow" />
+
+	<!--Farmer Male-->
+	<UnitConfiguration id="com_npc_farmermale" type="human" parentId="com_civilian">
+		<IsAbstract>false</IsAbstract>
+		<CanCollectEquipment>true</CanCollectEquipment>
+		<StatesId>pol_rifle</StatesId>
+
+		<!--Internals-->
+		<PrimaryMoveSpeed>5</PrimaryMoveSpeed>
+		<UnitAbilities>
+		</UnitAbilities>
+	</UnitConfiguration>
+	<UnitConfiguration id="pol_npc_farmermale" type="human" parentId="com_npc_farmermale" />
+	<UnitConfiguration id="rus_npc_farmermale" type="human" parentId="com_npc_farmermale">
+		<DropsEquipment>false</DropsEquipment>
+	</UnitConfiguration>
+
+	<!--Farmer Female-->
+	<UnitConfiguration id="com_npc_farmerfemale" type="human" parentId="com_civilian">
+		<IsAbstract>false</IsAbstract>
+		<DropsEquipment>false</DropsEquipment>
+
+		<!--Internals-->
+		<PrimaryMoveSpeed>5</PrimaryMoveSpeed>
+		<UnitAbilities>
+		</UnitAbilities>
+	</UnitConfiguration>
+	<UnitConfiguration id="pol_npc_farmerfemale" type="human" parentId="com_npc_farmerfemale" />
+
+	<!--City Male-->
+	<UnitConfiguration id="com_npc_citymale" type="human" parentId="com_civilian">
+		<IsAbstract>false</IsAbstract>
+
+		<!--Internals-->
+		<PrimaryMoveSpeed>5</PrimaryMoveSpeed>
+		<!--CanVault>false</CanVault-->
+		<!--VaultSpeed>3.5</VaultSpeed-->
+		<UnitAbilities>
+		</UnitAbilities>
+	</UnitConfiguration>
+	<UnitConfiguration id="pol_npc_citymale" type="human" parentId="com_npc_citymale" />
+	<UnitConfiguration id="rus_npc_citymale" type="human" parentId="com_npc_citymale" />
+	<UnitConfiguration id="sax_npc_citymale" type="human" parentId="com_npc_citymale" />
+	<UnitConfiguration id="tes_npc_citymale" type="human" parentId="com_npc_citymale">
+			<ImmuneToLightning>true</ImmuneToLightning>
+	</UnitConfiguration>
+
+	<!--Party Guests-->
+	<UnitConfiguration id="com_npc_citymalepartyguest" type="human" parentId="com_npc_citymale" />
+	<UnitConfiguration id="com_npc_citymalepartywaiter" type="human" parentId="com_npc_citymale" />
+
+	<!--City Female-->
+	<UnitConfiguration id="com_npc_cityfemale" type="human" parentId="com_civilian">
+		<IsAbstract>false</IsAbstract>
+
+		<!--Internals-->
+		<PrimaryMoveSpeed>5</PrimaryMoveSpeed>
+		<UnitAbilities>
+		</UnitAbilities>
+	</UnitConfiguration>
+	<UnitConfiguration id="pol_npc_cityfemale" type="human" parentId="com_npc_cityfemale" />
+	<UnitConfiguration id="rus_npc_cityfemale" type="human" parentId="com_npc_cityfemale" />
+	<UnitConfiguration id="sax_npc_cityfemale" type="human" parentId="com_npc_cityfemale" />
+	<UnitConfiguration id="tes_npc_cityfemale" type="human" parentId="com_npc_cityfemale">
+			<ImmuneToLightning>true</ImmuneToLightning>
+	</UnitConfiguration>
+	
+	<!--Party Guests-->
+	<UnitConfiguration id="com_npc_cityfemalepartyguest" type="human" parentId="com_npc_cityfemale" />
+
+
+	<!--Farmer Male Weapon Variants-->
+	<UnitConfiguration id="com_npc_farmermalerifleman" type="human" parentId="com_soldier_rifleman">
+		<IsAbstract>false</IsAbstract>
+		<Health>80</Health>
+		<WeaponId>pol_soldier_rifleman_rifle</WeaponId>
+		<StatesId>pol_rifle</StatesId>
+
+		<!--Internals-->
+		<PrimaryMoveSpeed>5</PrimaryMoveSpeed>
+		<UnitAbilities>
+		</UnitAbilities>
+	</UnitConfiguration>
+	<UnitConfiguration id="pol_npc_farmermalerifleman" type="human" parentId="com_npc_farmermalerifleman" />
+	<UnitConfiguration id="rus_npc_farmermalerifleman" type="human" parentId="com_npc_farmermalerifleman" />
+	
+	<UnitConfiguration id="com_npc_farmermalegrenadier" type="human" parentId="com_soldier_grenadier">
+		<IsAbstract>false</IsAbstract>
+		<Health>80</Health>
+		<WeaponId>pol_soldier_rifleman_rifle</WeaponId>
+		<StatesId>pol_grenade</StatesId>
+
+		<!--Internals-->
+		<PrimaryMoveSpeed>5</PrimaryMoveSpeed>
+		<UnitAbilities>
+		</UnitAbilities>
+	</UnitConfiguration>
+	<UnitConfiguration id="pol_npc_farmermalegrenadier" type="human" parentId="com_npc_farmermalegrenadier" />
+	<UnitConfiguration id="rus_npc_farmermalegrenadier" type="human" parentId="com_npc_farmermalegrenadier" />
+	
+	<UnitConfiguration id="com_npc_farmermalegunner" type="human" parentId="com_soldier_gunner">
+		<IsAbstract>false</IsAbstract>
+		<Health>80</Health>
+		<WeaponId>pol_soldier_gunner_cannon</WeaponId>
+
+		<!--Internals-->
+		<PrimaryMoveSpeed>5</PrimaryMoveSpeed>
+		<UnitAbilities>
+		</UnitAbilities>
+	</UnitConfiguration>
+	<UnitConfiguration id="pol_npc_farmermalegunner" type="human" parentId="com_npc_farmermalegunner" />
+	<UnitConfiguration id="rus_npc_farmermalegunner" type="human" parentId="com_npc_farmermalegunner" />
+
+	<!--City Male Weapon Variants-->
+	<UnitConfiguration id="com_npc_citymalerifleman" type="human" parentId="com_soldier_rifleman">
+		<IsAbstract>false</IsAbstract>
+		<Health>80</Health>
+		<WeaponId>pol_soldier_rifleman_rifle</WeaponId>
+		<StatesId>pol_rifle</StatesId>
+
+		<!--Internals-->
+		<PrimaryMoveSpeed>5</PrimaryMoveSpeed>
+		<UnitAbilities>
+		</UnitAbilities>
+	</UnitConfiguration>
+	<UnitConfiguration id="pol_npc_citymalerifleman" type="human" parentId="com_npc_citymalerifleman" />
+	<UnitConfiguration id="rus_npc_citymalerifleman" type="human" parentId="com_npc_citymalerifleman" />
+	<UnitConfiguration id="sax_npc_citymalerifleman" type="human" parentId="com_npc_citymalerifleman" />
+	<UnitConfiguration id="tes_npc_citymalerifleman" type="human" parentId="com_npc_citymalerifleman">
+			<ImmuneToLightning>true</ImmuneToLightning>
+	</UnitConfiguration>
+	
+	<UnitConfiguration id="com_npc_citymalegrenadier" type="human" parentId="com_soldier_grenadier">
+		<IsAbstract>false</IsAbstract>
+		<Health>80</Health>
+		<WeaponId>pol_soldier_rifleman_rifle</WeaponId>
+		<StatesId>pol_grenade</StatesId>
+
+		<!--Internals-->
+		<PrimaryMoveSpeed>5</PrimaryMoveSpeed>
+		<UnitAbilities>
+		</UnitAbilities>
+	</UnitConfiguration>
+	<UnitConfiguration id="pol_npc_citymalegrenadier" type="human" parentId="com_npc_citymalegrenadier" />
+	<UnitConfiguration id="rus_npc_citymalegrenadier" type="human" parentId="com_npc_citymalegrenadier" />
+	<UnitConfiguration id="sax_npc_citymalegrenadier" type="human" parentId="com_npc_citymalegrenadier" />
+	<UnitConfiguration id="tes_npc_citymalegrenadier" type="human" parentId="com_npc_citymalegrenadier">
+			<ImmuneToLightning>true</ImmuneToLightning>
+	</UnitConfiguration>
+	
+	<UnitConfiguration id="com_npc_citymalegunner" type="human" parentId="com_soldier_gunner">
+		<IsAbstract>false</IsAbstract>
+		<Health>80</Health>
+		<WeaponId>pol_soldier_gunner_cannon</WeaponId>
+
+		<!--Internals-->
+		<PrimaryMoveSpeed>5</PrimaryMoveSpeed>
+		<UnitAbilities>
+		</UnitAbilities>
+	</UnitConfiguration>
+	<UnitConfiguration id="pol_npc_citymalegunner" type="human" parentId="com_npc_citymalegunner" />
+	<UnitConfiguration id="rus_npc_citymalegunner" type="human" parentId="com_npc_citymalegunner" />
+	<UnitConfiguration id="sax_npc_citymalegunner" type="human" parentId="com_npc_citymalegunner" />
+	<UnitConfiguration id="tes_npc_citymalegunner" type="human" parentId="com_npc_citymalegunner">
+			<ImmuneToLightning>true</ImmuneToLightning>
+	</UnitConfiguration>
+
+
+	<!--Cutscene Only Units-->
+	<!--Polania-->
+	<!--Heroes-->
+
+	<!--Rebel Leader (Human)-->
+	<UnitConfiguration id="pol_npc_rebelleader" type="hero" parentId="com_soldier_rifleman">
+		<IsAbstract>false</IsAbstract>
+		<Health>100</Health>
+		<ArmorType>Light</ArmorType>
+		<SquadSize>1</SquadSize>
+		<CanCollectEquipment>false</CanCollectEquipment>
+		<WeaponId>pol_hero_anna_rifle</WeaponId>
+		<StatesId>pol_rifle</StatesId>
+		<!--Internals-->
+		<PrimaryMoveSpeed>5</PrimaryMoveSpeed>
+		<UnitAbilities>
+		</UnitAbilities>
+	</UnitConfiguration>
+
+	<!--Saxony-->				
+	<!--Heroes-->
+
+	<!--NPC-->
+	<!--Rusviet-->
+	<!--Heroes-->
+	<UnitConfiguration id="rus_npc_tsar" type="human" parentId="rus_hero_tsar">
+		<SquadSize>1</SquadSize>
+	</UnitConfiguration>
+
+	<!--Rusviet General (Human)-->
+	<UnitConfiguration id="rus_npc_general" type="hero" parentId="com_civilian">
+		<IsAbstract>false</IsAbstract>
+		<Health>100</Health>
+		<ArmorType>Light</ArmorType>
+		<SquadSize>1</SquadSize>
+		<CanCollectEquipment>false</CanCollectEquipment>
+		
+		<UseDefaultUnitUI>true</UseDefaultUnitUI>
+		
+		
+		<!--Internals-->
+		<PrimaryMoveSpeed>5</PrimaryMoveSpeed>
+		<UnitAbilities>
+		</UnitAbilities>
+	</UnitConfiguration>
+
+	<!--Animals-->
+
+	<!--Chicken-->
+	<UnitConfiguration id="com_animal_chicken" type="human" parentId="com_soldier_rifleman">
+		<IsAbstract>false</IsAbstract>
+		<Health>5</Health>
+		<ArmorType>Unarmored</ArmorType>
+		<Tags>None</Tags>
+		<SquadSize>5</SquadSize>
+		<CanCollectEquipment>false</CanCollectEquipment>
+		<DropsEquipment>false</DropsEquipment>
+		<WeaponId>com_animal_melee</WeaponId>
+		<MeleeWeaponId>com_animal_melee</MeleeWeaponId>
+		<StatesId>pol_rifle</StatesId>
+		<CanVault>false</CanVault>
+		<!--Internals-->
+		<PrimaryMoveSpeed>3</PrimaryMoveSpeed>
+		<UnitAbilities>
+		</UnitAbilities>
+	</UnitConfiguration>
+
+	<!--Crow-->
+	<UnitConfiguration id="com_animal_crow" type="human" parentId="com_soldier_rifleman">
+		<IsAbstract>false</IsAbstract>
+		<Health>5</Health>
+		<ArmorType>Unarmored</ArmorType>
+		<Tags>None</Tags>
+		<SquadSize>5</SquadSize>
+		<CanCollectEquipment>false</CanCollectEquipment>
+		<DropsEquipment>false</DropsEquipment>
+		<WeaponId>com_animal_melee</WeaponId>
+		<MeleeWeaponId>com_animal_melee</MeleeWeaponId>
+		<StatesId>pol_rifle</StatesId>
+		<CanVault>false</CanVault>
+		<!--Internals-->
+		<PrimaryMoveSpeed>0.64</PrimaryMoveSpeed>
+		<UnitAbilities>
+		</UnitAbilities>
+	</UnitConfiguration>
+
+	<!--Deer-->
+	<UnitConfiguration id="com_animal_deer" type="human" parentId="com_soldier_rifleman">
+		<IsAbstract>false</IsAbstract>
+		<Health>80</Health>
+		<ArmorType>Unarmored</ArmorType>
+		<Tags>None</Tags>
+		<SquadSize>1</SquadSize>
+		<CanCollectEquipment>false</CanCollectEquipment>
+		<DropsEquipment>false</DropsEquipment>
+		<WeaponId>com_animal_melee</WeaponId>
+		<MeleeWeaponId>com_animal_melee</MeleeWeaponId>
+		<StatesId>pol_rifle</StatesId>
+		<CanVault>false</CanVault>
+		<!--Internals-->
+		<PrimaryMoveSpeed>6.8</PrimaryMoveSpeed>
+		<UnitAbilities>
+		</UnitAbilities>
+	</UnitConfiguration>
+
+	<!--Piglet-->
+	<UnitConfiguration id="com_animal_piglet" type="human" parentId="com_soldier_rifleman">
+		<IsAbstract>false</IsAbstract>
+		<Health>10</Health>
+		<ArmorType>Unarmored</ArmorType>
+		<Tags>None</Tags>
+		<SquadSize>5</SquadSize>
+		<CanCollectEquipment>false</CanCollectEquipment>
+		<DropsEquipment>false</DropsEquipment>
+		<WeaponId>com_animal_melee</WeaponId>
+		<MeleeWeaponId>com_animal_melee</MeleeWeaponId>
+		<StatesId>pol_rifle</StatesId>
+		<CanVault>false</CanVault>
+		<!--Internals-->
+		<PrimaryMoveSpeed>2.8</PrimaryMoveSpeed>
+		<UnitAbilities>
+		</UnitAbilities>
+	</UnitConfiguration>
+
+	<!--Pig-->
+	<UnitConfiguration id="com_animal_pig" type="human" parentId="com_soldier_rifleman">
+		<IsAbstract>false</IsAbstract>
+		<Health>10</Health>
+		<ArmorType>Unarmored</ArmorType>
+		<Tags>None</Tags>
+		<SquadSize>5</SquadSize>
+		<CanCollectEquipment>false</CanCollectEquipment>
+		<DropsEquipment>false</DropsEquipment>
+		<WeaponId>com_animal_melee</WeaponId>
+		<MeleeWeaponId>com_animal_melee</MeleeWeaponId>
+		<StatesId>pol_rifle</StatesId>
+		<CanVault>false</CanVault>
+		<!--Internals-->
+		<PrimaryMoveSpeed>0.8</PrimaryMoveSpeed>
+		<UnitAbilities>
+		</UnitAbilities>
+	</UnitConfiguration>			
+
+	<!--Sheep-->
+	<UnitConfiguration id="com_animal_sheep" type="human" parentId="com_soldier_rifleman">
+		<IsAbstract>false</IsAbstract>
+		<Health>45</Health>
+		<ArmorType>Unarmored</ArmorType>
+		<Tags>None</Tags>
+		<SquadSize>5</SquadSize>
+		<CanCollectEquipment>false</CanCollectEquipment>
+		<DropsEquipment>false</DropsEquipment>
+		<WeaponId>com_animal_melee</WeaponId>
+		<MeleeWeaponId>com_animal_melee</MeleeWeaponId>
+		<StatesId>pol_rifle</StatesId>
+		<CanVault>false</CanVault>
+		<!--Internals-->
+		<PrimaryMoveSpeed>0.8</PrimaryMoveSpeed>
+		<UnitAbilities>
+		</UnitAbilities>
+	</UnitConfiguration>
+
+	<!--Cow-->
+	<UnitConfiguration id="com_animal_cow" type="human" parentId="com_soldier_rifleman">
+		<IsAbstract>false</IsAbstract>
+		<Health>80</Health>
+		<ArmorType>Unarmored</ArmorType>
+		<Tags>None</Tags>
+		<SquadSize>1</SquadSize>
+		<CanCollectEquipment>false</CanCollectEquipment>
+		<DropsEquipment>false</DropsEquipment>
+		<WeaponId>com_animal_melee</WeaponId>
+		<MeleeWeaponId>com_animal_melee</MeleeWeaponId>
+		<StatesId>pol_rifle</StatesId>
+		<CanVault>false</CanVault>
+		<!--Internals-->
+		<PrimaryMoveSpeed>1.1</PrimaryMoveSpeed>
+		<UnitAbilities>
+		</UnitAbilities>
+	</UnitConfiguration>
+
+	<!--Bear-->
+	<UnitConfiguration id="com_animal_bear" type="human" parentId="com_soldier_rifleman">
+		<IsAbstract>false</IsAbstract>
+		<Health>80</Health>
+		<ArmorType>Unarmored</ArmorType>
+		<Tags>None</Tags>
+		<SquadSize>1</SquadSize>
+		<CanCollectEquipment>false</CanCollectEquipment>
+		<DropsEquipment>false</DropsEquipment>
+		<WeaponId>com_animal_melee</WeaponId>
+		<MeleeWeaponId>com_animal_melee</MeleeWeaponId>
+		<StatesId>pol_rifle</StatesId>
+		<CanVault>false</CanVault>
+		<!--Internals-->
+		<PrimaryMoveSpeed>6.4</PrimaryMoveSpeed>
+		<UnitAbilities>
+		</UnitAbilities>
+	</UnitConfiguration>
+
+	<!-- End of File-->
+</UnitConfigurations>

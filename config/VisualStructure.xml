@@ -1,0 +1,82 @@
+<VisualStructureRepository>
+	<VisualStructureConfiguration id="base_ironmine">
+		<MinimapConquerableSpriteId>ui@Images/HUD/Icons/Minimap/iron.png</MinimapConquerableSpriteId>
+	</VisualStructureConfiguration>
+	
+	<VisualStructureConfiguration id="base_oilfield">
+		<MinimapConquerableSpriteId>ui@Images/HUD/Icons/Minimap/oil.png</MinimapConquerableSpriteId>
+	</VisualStructureConfiguration>
+	
+	<VisualStructureConfiguration id="base_flag">
+		<MinimapConquerableSpriteId>ui@Images/HUD/Icons/Minimap/flag.png</MinimapConquerableSpriteId>
+	</VisualStructureConfiguration>
+	
+	<VisualStructureConfiguration id="pol_structure_bunker">
+		<SampleGroundSlope>true</SampleGroundSlope>
+		<MaxAllowedSlope>0.15</MaxAllowedSlope>
+		<GroundSamplePoints>
+			<RV x="-3" y="-3"></RV>
+			<RV x="-3" y="3"></RV>
+			<RV x="3" y="3"></RV>
+			<RV x="3" y="-3"></RV>
+		</GroundSamplePoints>
+	</VisualStructureConfiguration>
+	<VisualStructureConfiguration id="pol_structure_bunkertier02">
+		<SampleGroundSlope>true</SampleGroundSlope>
+		<MaxAllowedSlope>0.15</MaxAllowedSlope>
+		<GroundSamplePoints>
+			<RV x="-3" y="-3"></RV>
+			<RV x="-3" y="3"></RV>
+			<RV x="3" y="3"></RV>
+			<RV x="3" y="-3"></RV>
+		</GroundSamplePoints>
+	</VisualStructureConfiguration>
+	<VisualStructureConfiguration id="pol_structure_bunkertier01">
+		<SampleGroundSlope>true</SampleGroundSlope>
+		<MaxAllowedSlope>0.15</MaxAllowedSlope>
+		<GroundSamplePoints>
+			<RV x="-3" y="-3"></RV>
+			<RV x="-3" y="3"></RV>
+			<RV x="3" y="3"></RV>
+			<RV x="3" y="-3"></RV>
+		</GroundSamplePoints>
+	</VisualStructureConfiguration>
+	<VisualStructureConfiguration id="sax_structure_bunker" parentId="pol_structure_bunker">
+	</VisualStructureConfiguration>
+	<VisualStructureConfiguration id="sax_structure_bunkertier02" parentId="pol_structure_bunkertier02">
+	</VisualStructureConfiguration>
+	<VisualStructureConfiguration id="sax_structure_bunkertier01" parentId="pol_structure_bunkertier01">
+	</VisualStructureConfiguration>
+	<VisualStructureConfiguration id="rus_structure_bunkertier01" parentId="pol_structure_bunkertier01">
+	</VisualStructureConfiguration>
+	
+	<VisualStructureConfiguration id="com_structure_oilfield" parentId="base_oilfield">
+	</VisualStructureConfiguration>
+	<VisualStructureConfiguration id="pol_structure_oilpump01" parentId="base_oilfield">
+	</VisualStructureConfiguration>
+	<VisualStructureConfiguration id="pol_structure_oilpump02" parentId="base_oilfield">
+	</VisualStructureConfiguration>
+	<VisualStructureConfiguration id="sax_structure_oilpump01" parentId="base_oilfield">
+	</VisualStructureConfiguration>
+	<VisualStructureConfiguration id="sax_structure_oilpump02" parentId="base_oilfield">
+	</VisualStructureConfiguration>
+	<VisualStructureConfiguration id="rus_structure_oilpump01" parentId="base_oilfield">
+	</VisualStructureConfiguration>
+	<VisualStructureConfiguration id="rus_structure_oilpump02" parentId="base_oilfield">
+	</VisualStructureConfiguration>
+	
+	<VisualStructureConfiguration id="com_structure_ironmine" parentId="base_ironmine">
+	</VisualStructureConfiguration>
+	<VisualStructureConfiguration id="pol_structure_ironmine01" parentId="base_ironmine">
+	</VisualStructureConfiguration>
+	<VisualStructureConfiguration id="pol_structure_ironmine02" parentId="base_ironmine">
+	</VisualStructureConfiguration>
+	<VisualStructureConfiguration id="sax_structure_ironmine01" parentId="base_ironmine">
+	</VisualStructureConfiguration>
+	<VisualStructureConfiguration id="sax_structure_ironmine02" parentId="base_ironmine">
+	</VisualStructureConfiguration>
+	<VisualStructureConfiguration id="rus_structure_ironmine01" parentId="base_ironmine">
+	</VisualStructureConfiguration>
+	<VisualStructureConfiguration id="rus_structure_ironmine02" parentId="base_ironmine">
+	</VisualStructureConfiguration>
+ </VisualStructureRepository>

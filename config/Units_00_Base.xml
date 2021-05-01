@@ -1,0 +1,520 @@
+<UnitConfigurations>
+	<!--Base Infantry-->
+	<UnitConfiguration id="com_soldier" type="human">
+		<IsAbstract>true</IsAbstract>
+		<Health>100</Health>
+		<ArmorType>Unarmored</ArmorType>
+		<Tags>Infantry</Tags>
+		<MeleeWeaponId>com_soldier_melee</MeleeWeaponId>
+		<SquadSize>5</SquadSize>
+		<Equipment>Rifle</Equipment>
+		<CanCollectEquipment>true</CanCollectEquipment>
+		<CanVault>true</CanVault>
+		<VisionRadius>45</VisionRadius>
+		
+		<!--Status Effects-->
+		<Suppression>
+			<Max>100</Max>
+			<Enter>75</Enter>
+			<Exit>30</Exit>
+		</Suppression>
+		
+		<!--Burning time unit is seconds-->
+		<BurnValueDecay>1</BurnValueDecay>
+		<BurnStartLimit>10</BurnStartLimit>
+		<BurnEndLimit>10</BurnEndLimit>
+		<BurnValueMax>15</BurnValueMax>
+		<BurnDamageTimeInterval>1</BurnDamageTimeInterval>
+
+		<!--Navigation-->
+		<NavRadius>Human</NavRadius>
+		<NavigationType>Soldier</NavigationType>
+		<AvoidanceTurnaround>1.8</AvoidanceTurnaround>
+
+		<!--Hitsystem-->
+		<HitzoneRadius>0.3</HitzoneRadius>
+		<DefaultHeight>1.75</DefaultHeight>
+		<CoverHeight>0.8</CoverHeight>
+		<CoverTopHeight>1.2</CoverTopHeight>
+		<KneelHeight>0.8</KneelHeight>
+		<CrawlHeight>0.4</CrawlHeight>
+
+		<!--Abilities-->
+		<BoostCooldown>180</BoostCooldown><!--In Seconds!!!!-->
+		<BoostDuration>15</BoostDuration><!--In Seconds!!!!-->
+		<ReinforceCooldown>15</ReinforceCooldown>
+
+		<!--Costs-->
+		<BuildCost>
+			<IronCost>150</IronCost>
+			<OilCost>0</OilCost>
+			<PopulationCost>3</PopulationCost>
+		</BuildCost>
+		<ReinforceCost>
+			<IronCost>15</IronCost>
+			<OilCost>0</OilCost>
+			<PopulationCost>0</PopulationCost>
+		</ReinforceCost>
+		<HealCost>
+			<IronCost>25</IronCost>
+			<OilCost>0</OilCost>
+		</HealCost>
+		<HealDuration>15</HealDuration><!--Duration of the interaction in Seconds!!!!-->
+		<HealCooldown>25</HealCooldown><!--Cooldown for the healing Medics in Seconds!!!!-->
+
+		<!--Veterancy-->
+		<Veterancy>
+			<VeteranThreshold>1000</VeteranThreshold>
+			<EliteThreshold>2250</EliteThreshold>
+		</Veterancy>
+    
+		<DamageModifier>
+			<Rookie>1</Rookie>
+			<Veteran>1.15</Veteran>
+			<Elite>1.3</Elite>
+		</DamageModifier>
+		<HealthModifier>
+			<Rookie>1</Rookie>
+			<Veteran>1.3</Veteran>
+			<Elite>1.5</Elite>
+		</HealthModifier>
+		
+		<AutoAbilities>
+			<SelfBuffAutoAbilityDefinition abilityType="Boost" conditions="SquadOnly, InCombat" settingIdentifier="BoostAutoAbility"/>
+		</AutoAbilities>
+
+		<!--ExperienceValues-->
+		<ExperienceValues>
+			<AttackerXP><!-- how many points would an attacker get when doing 100% damage-->
+				<Rookie>100</Rookie>
+				<Veteran>150</Veteran>
+				<Elite>200</Elite>
+			</AttackerXP>
+			<DamageXP><!-- how many points would this unit get if someone does 100% damage to it-->
+				<Rookie>20</Rookie>
+				<Veteran>20</Veteran>
+				<Elite>20</Elite>
+			</DamageXP>
+			<HealerXP><!-- how many points would a healer get if they heal 100% HPs-->
+				<Rookie>150</Rookie>
+				<Veteran>195</Veteran>
+				<Elite>225</Elite>
+			</HealerXP>
+		</ExperienceValues>
+		<ConquerExperienceValue>50</ConquerExperienceValue> <!-- How many XP do I get when conquering a Flagpole or a resource building-->
+		<ConquerPower>1</ConquerPower>
+
+		<!--Internals-->
+		<MaxKineticVelocity>2</MaxKineticVelocity>
+		<KineticToVelocity>2</KineticToVelocity>
+		<TumbleThreshold>1</TumbleThreshold>
+		<!--Decay describes velocity reduction in meter per tick! -->
+		<KineticVelocityProportionalDecay>0.2</KineticVelocityProportionalDecay>
+		<KineticVelocityConstantDecay>0.05</KineticVelocityConstantDecay>
+		<PrimarySpeedAlignment>0</PrimarySpeedAlignment>
+		<PrimaryMoveSpeed>5</PrimaryMoveSpeed>
+		<BrawlSpeed>5</BrawlSpeed>
+		<SecondarySpeedAlignment>-0.5</SecondarySpeedAlignment>
+		<SecondaryMoveSpeed>3.0</SecondaryMoveSpeed>
+		<PrimaryCrawlSpeed>0.4</PrimaryCrawlSpeed>
+		<SecondaryCrawlSpeed>0.4</SecondaryCrawlSpeed>
+		<ShiftCoverSpeed>1.8</ShiftCoverSpeed>
+		<Acceleration>0.45</Acceleration>
+		<WalkSpeed>1.6</WalkSpeed>
+		<VaultSpeed>4</VaultSpeed>
+		<WalkTurnSpeed>1</WalkTurnSpeed>
+		<KneelTurnSpeed>1</KneelTurnSpeed>
+		<CrawlTurnSpeed>0.2</CrawlTurnSpeed>
+		<LeftCoverShootOffset>0.5</LeftCoverShootOffset>
+		<RightCoverShootOffset>0.5</RightCoverShootOffset>
+		<ExplorationSpeed>2</ExplorationSpeed>
+		<ExplorationAcceleration>0.25</ExplorationAcceleration>
+		<ConsiderInteractionDistance>5</ConsiderInteractionDistance>
+	</UnitConfiguration>
+	
+	<UnitConfiguration id="com_exo" type="exoskeleton">
+		<IsAbstract>true</IsAbstract>
+		<Type>Mech</Type>
+		<ArmorType>Light</ArmorType>
+		<Tags>Infantry</Tags>
+		<SquadSize>3</SquadSize>
+		<NavRadius>Human</NavRadius>
+		<LimitedInteractions>Attack, Retreat, Exploration, MeleeAttack, Custom, Conquer, Revive, Collect</LimitedInteractions>
+		<ConsiderInteractionDistance>5</ConsiderInteractionDistance>	
+		
+		<HealCost>
+			<IronCost>100</IronCost>
+			<OilCost>10</OilCost>
+		</HealCost>
+		<HealDuration>15</HealDuration><!--Duration of the interaction in Seconds-->
+		<HealCooldown>50</HealCooldown><!--Cooldown for the healing Medics in Seconds-->
+		
+		<ConquerExperienceValue>50</ConquerExperienceValue> <!-- How many XP do I get when conquering a Flagpole or a resource building-->
+		<ConquerPower>1.666</ConquerPower>
+
+    <!--Hitsystem-->
+    <HitzoneRadius>0.45</HitzoneRadius>
+				
+		<MaxKineticVelocity>2</MaxKineticVelocity>
+		<KineticToVelocity>2</KineticToVelocity>
+		<KineticVelocityProportionalDecay>0.2</KineticVelocityProportionalDecay>
+		<KineticVelocityConstantDecay>0.05</KineticVelocityConstantDecay>	
+		
+    <!--Veterancy-->
+    <Veterancy>
+			<VeteranThreshold>1500</VeteranThreshold>
+			<EliteThreshold>3000</EliteThreshold>
+		</Veterancy>
+    
+    <DamageModifier>
+      <Rookie>1</Rookie>
+      <Veteran>1.15</Veteran>
+      <Elite>1.3</Elite>
+    </DamageModifier>
+    <HealthModifier>
+      <Rookie>1</Rookie>
+      <Veteran>1.3</Veteran>
+      <Elite>1.5</Elite>
+    </HealthModifier>
+    
+	<ReinforceCooldown>40</ReinforceCooldown>
+
+	</UnitConfiguration>
+	
+	<UnitConfiguration id="com_weaponsys" type="mech">
+		<IsAbstract>true</IsAbstract>
+		<Type>WeaponSystem</Type>
+		<ArmorType>Light</ArmorType>
+		<Tags>None</Tags>
+		<!--Navigation-->
+		<NavRadius>SmallMech</NavRadius>
+		<LimitedInteractions>Attack, Retreat, Exploration, Replenish</LimitedInteractions>
+		<MaxKineticVelocity>0</MaxKineticVelocity>
+		<KineticToVelocity>0</KineticToVelocity>
+		<KineticVelocityProportionalDecay>0</KineticVelocityProportionalDecay>
+		<KineticVelocityConstantDecay>0</KineticVelocityConstantDecay>	
+		<ConsiderInteractionDistance>5</ConsiderInteractionDistance>	
+
+	</UnitConfiguration>
+	
+	<UnitConfiguration id="com_light_mech" type="mech">
+		<IsAbstract>true</IsAbstract>
+		<Type>Mech</Type>
+		<ArmorType>Light</ArmorType>
+		<Tags>Mech</Tags>
+    
+		<AfterDeathVisionDuration>4.8</AfterDeathVisionDuration> <!-- in seconds -->
+		<AfterDeathVisionRadius>30</AfterDeathVisionRadius>
+
+		<!--Navigation-->
+		<NavRadius>SmallMech</NavRadius>
+		<LimitedInteractions>Attack, Retreat, Exploration, MeleeAttack</LimitedInteractions>
+		<ConsiderInteractionDistance>5</ConsiderInteractionDistance>	
+		
+    <!--Veterancy-->
+    <Veterancy>
+      <VeteranThreshold>1500</VeteranThreshold>
+      <EliteThreshold>3000</EliteThreshold>
+    </Veterancy>
+    
+    <DamageModifier>
+      <Rookie>1</Rookie>
+      <Veteran>1.15</Veteran>
+      <Elite>1.3</Elite>
+    </DamageModifier>
+    <HealthModifier>
+      <Rookie>1</Rookie>
+      <Veteran>1.3</Veteran>
+      <Elite>1.5</Elite>
+    </HealthModifier>
+
+    <!--Internals-->
+		<MaxKineticVelocity>2</MaxKineticVelocity>
+		<KineticToVelocity>1.5</KineticToVelocity>
+		<KineticVelocityProportionalDecay>0.2</KineticVelocityProportionalDecay>
+		<KineticVelocityConstantDecay>0.05</KineticVelocityConstantDecay>
+	  <WalkSpeed>3</WalkSpeed>
+	</UnitConfiguration>
+	
+	<UnitConfiguration id="com_medium_mech" type="mech">
+		<IsAbstract>true</IsAbstract>
+		<Type>Mech</Type>
+		<ArmorType>Medium</ArmorType>
+		<Tags>Mech</Tags>
+
+		<AfterDeathVisionDuration>4.8</AfterDeathVisionDuration> <!-- in seconds -->
+		<AfterDeathVisionRadius>30</AfterDeathVisionRadius>
+
+		<!--Navigation-->
+		<NavRadius>BigMech</NavRadius>
+		<LimitedInteractions>Attack, Retreat, Exploration, MeleeAttack</LimitedInteractions>
+		<ConsiderInteractionDistance>5</ConsiderInteractionDistance>	
+		
+    <!--Veterancy-->
+    <Veterancy>
+      <VeteranThreshold>1500</VeteranThreshold>
+      <EliteThreshold>3000</EliteThreshold>
+    </Veterancy>
+    
+    <DamageModifier>
+      <Rookie>1</Rookie>
+      <Veteran>1.15</Veteran>
+      <Elite>1.3</Elite>
+    </DamageModifier>
+    <HealthModifier>
+      <Rookie>1</Rookie>
+      <Veteran>1.3</Veteran>
+      <Elite>1.5</Elite>
+    </HealthModifier>
+
+    <!--Internals-->
+		<MaxKineticVelocity>1.5</MaxKineticVelocity>
+		<KineticToVelocity>1.5</KineticToVelocity>
+		<KineticVelocityProportionalDecay>0.2</KineticVelocityProportionalDecay>
+		<KineticVelocityConstantDecay>0.05</KineticVelocityConstantDecay>
+	  <WalkSpeed>2</WalkSpeed>
+	</UnitConfiguration>
+	
+	<UnitConfiguration id="com_heavy_mech" type="mech">
+		<IsAbstract>true</IsAbstract>
+		<!--Decay describes velocity reduction in meter per tick! -->
+		<Type>Mech</Type>
+		<ArmorType>Heavy</ArmorType>
+		<Tags>Mech</Tags>
+
+		<AfterDeathVisionDuration>4.8</AfterDeathVisionDuration> <!-- in seconds -->
+		<AfterDeathVisionRadius>30</AfterDeathVisionRadius>
+
+		<!--Navigation-->
+		<NavRadius>BigMech</NavRadius>
+		<LimitedInteractions>Attack, Retreat, Exploration, MeleeAttack</LimitedInteractions>
+	    <ConsiderInteractionDistance>5</ConsiderInteractionDistance>	
+		
+    <!--Veterancy-->
+    <Veterancy>
+      <VeteranThreshold>1500</VeteranThreshold>
+      <EliteThreshold>3000</EliteThreshold>
+    </Veterancy>
+
+    <DamageModifier>
+      <Rookie>1</Rookie>
+      <Veteran>1.15</Veteran>
+      <Elite>1.3</Elite>
+    </DamageModifier>
+    <HealthModifier>
+      <Rookie>1</Rookie>
+      <Veteran>1.3</Veteran>
+      <Elite>1.5</Elite>
+    </HealthModifier>
+
+    <!--Internals-->
+    <MaxKineticVelocity>0.5</MaxKineticVelocity>
+		<KineticToVelocity>1</KineticToVelocity>
+		<KineticVelocityProportionalDecay>0.2</KineticVelocityProportionalDecay>
+		<KineticVelocityConstantDecay>0.05</KineticVelocityConstantDecay>
+	  <WalkSpeed>2</WalkSpeed>
+	</UnitConfiguration>
+	
+	<UnitConfiguration id="com_civilian" type="human">
+		<IsAbstract>true</IsAbstract>
+		<Health>80</Health>
+		<ArmorType>Unarmored</ArmorType>
+		<Tags>None</Tags>
+		<MeleeWeaponId>com_soldier_melee</MeleeWeaponId>
+		<SquadSize>5</SquadSize>
+		<Equipment>Rifle</Equipment>
+		<StatesId>pol_rifle</StatesId>
+		<CanCollectEquipment>false</CanCollectEquipment>
+		<CanVault>true</CanVault>
+		<VisionRadius>45</VisionRadius>
+		<!--civilians should not be able to enter suppressed state as they are animated for that state-->
+		<Suppression>
+			<Max>10</Max>
+			<Enter>100</Enter>
+			<Exit>1</Exit>
+		</Suppression>
+
+		<!--Navigation-->
+		<NavRadius>Human</NavRadius>
+		<NavigationType>Soldier</NavigationType>
+		<AvoidanceTurnaround>1.8</AvoidanceTurnaround>
+
+		<!--Hitsystem-->
+		<HitzoneRadius>0.3</HitzoneRadius>
+		<DefaultHeight>1.75</DefaultHeight>
+		<CoverHeight>0.8</CoverHeight>
+		<CoverTopHeight>1.2</CoverTopHeight>
+		<KneelHeight>0.8</KneelHeight>
+		<CrawlHeight>0.3</CrawlHeight>
+
+		<!--Abilities-->
+		<BoostCooldown>780</BoostCooldown>
+		<BoostDuration>15</BoostDuration>
+		<ReinforceCooldown>15</ReinforceCooldown>
+
+		<!--Costs-->
+		<BuildCost>
+			<IronCost>150</IronCost>
+			<OilCost>0</OilCost>
+			<PopulationCost>3</PopulationCost>
+		</BuildCost>
+		<ReinforceCost>
+			<IronCost>15</IronCost>
+			<OilCost>0</OilCost>
+			<PopulationCost>0</PopulationCost>
+		</ReinforceCost>
+		<HealCost>
+			<IronCost>15</IronCost>
+			<OilCost>0</OilCost>
+		</HealCost>
+		<HealDuration>8</HealDuration><!--Duration of the interaction in Seconds!!!!-->
+		<HealCooldown>30</HealCooldown><!--Cooldown for the healing Medics in Seconds!!!!-->
+
+    <!--Probably does not make sense to grant civilians access to veterancy-->
+		<!--Veterancy--><!--
+		<Veterancy>
+			<VeteranThreshold>2000</VeteranThreshold>
+			<EliteThreshold>6000</EliteThreshold>
+		</Veterancy>
+		<DamageModifier>
+			<Rookie>1</Rookie>
+			<Veteran>1.3</Veteran>
+			<Elite>1.5</Elite>
+		</DamageModifier>
+		<HealthModifier>
+			<Rookie>1</Rookie>
+			<Veteran>1.3</Veteran>
+			<Elite>1.5</Elite>
+		</HealthModifier>-->
+
+		<!--ExperienceValues-->
+		<ExperienceValues>
+			<AttackerXP><!-- how many points would an attacker get when doing 100% damage-->
+				<Rookie>50</Rookie>
+				<Veteran>100</Veteran>
+				<Elite>120</Elite>
+			</AttackerXP>
+			<DamageXP><!-- how many points would this unit get if someone does 100% damage to it-->
+				<Rookie>20</Rookie>
+				<Veteran>20</Veteran>
+				<Elite>20</Elite>
+			</DamageXP>
+			<HealerXP><!-- how many points would a healer get if they heal 100% HPs-->
+				<Rookie>150</Rookie>
+				<Veteran>150</Veteran>
+				<Elite>150</Elite>
+			</HealerXP>
+		</ExperienceValues>
+		<ConquerExperienceValue>50</ConquerExperienceValue> <!-- How many XP do I get when conquering a Flagpole or a resource building-->
+		<ConquerPower>1</ConquerPower>
+
+		<!--Internals-->
+		<MaxKineticVelocity>2</MaxKineticVelocity>
+		<KineticToVelocity>2</KineticToVelocity>
+		<TumbleThreshold>1</TumbleThreshold>
+		<!--Decay describes velocity reduction in meter per tick! -->
+		<KineticVelocityProportionalDecay>0.2</KineticVelocityProportionalDecay>
+		<KineticVelocityConstantDecay>0.05</KineticVelocityConstantDecay>
+		<PrimarySpeedAlignment>0</PrimarySpeedAlignment>
+		<PrimaryMoveSpeed>5</PrimaryMoveSpeed>
+		<BrawlSpeed>5</BrawlSpeed>
+		<SecondarySpeedAlignment>-0.5</SecondarySpeedAlignment>
+		<SecondaryMoveSpeed>3.0</SecondaryMoveSpeed>
+		<PrimaryCrawlSpeed>0.4</PrimaryCrawlSpeed>
+		<SecondaryCrawlSpeed>0.4</SecondaryCrawlSpeed>
+		<ShiftCoverSpeed>1.8</ShiftCoverSpeed>
+		<Acceleration>0.45</Acceleration>
+		<WalkSpeed>1.6</WalkSpeed>
+		<WalkTurnSpeed>1</WalkTurnSpeed>
+		<KneelTurnSpeed>1</KneelTurnSpeed>
+		<CrawlTurnSpeed>0.2</CrawlTurnSpeed>
+		<LeftCoverShootOffset>0.5</LeftCoverShootOffset>
+		<RightCoverShootOffset>0.5</RightCoverShootOffset>
+		<ExplorationSpeed>2</ExplorationSpeed>
+		<ExplorationAcceleration>0.25</ExplorationAcceleration>
+	    <ConsiderInteractionDistance>5</ConsiderInteractionDistance>	
+	</UnitConfiguration>
+		
+	<!--Trains-->
+	<UnitConfiguration id="com_wagon" type="wagon">
+		<IsAbstract>true</IsAbstract>
+		<Type>Mech</Type>
+		<ArmorType>Medium</ArmorType>
+		<Tags>None</Tags>
+		<LimitedInteractions>Attack</LimitedInteractions>
+		<ConsiderInteractionDistance>5</ConsiderInteractionDistance>	
+		<ShowConqueredToolTips>true</ShowConqueredToolTips>
+
+		
+		<!--Hitsystem-->
+		<DefaultHeight>2.5</DefaultHeight>
+
+		<!--Costs-->
+		<BuildCost>
+			<IronCost>400</IronCost>
+			<OilCost>300</OilCost>
+			<PopulationCost>5</PopulationCost>
+		</BuildCost>
+		<RepairCost>
+			<IronCost>5</IronCost>
+			<OilCost>0</OilCost>
+			<BatchSize>60</BatchSize>
+		</RepairCost>
+		<UpkeepCost>
+		</UpkeepCost>
+
+		<!--ExperienceValues-->
+		<ExperienceValues>
+			<AttackerXP> <!--how many points would an attacker get when doing 100% damage-->
+				<Rookie>500</Rookie>
+				<Veteran>1000</Veteran>
+				<Elite>2400</Elite>
+			</AttackerXP>
+			<DamageXP> <!--how many points would this unit get if someone does 100% damage to it-->
+				<Rookie>40</Rookie>
+				<Veteran>40</Veteran>
+				<Elite>40</Elite>
+			</DamageXP>
+			<HealerXP> <!--how many points would a healer get if they heal 100% HPs-->
+				<Rookie>250</Rookie>
+				<Veteran>250</Veteran>
+				<Elite>250</Elite>
+			</HealerXP>
+		</ExperienceValues>
+
+		<!--Internals-->
+		<MoveSpeed>6</MoveSpeed>
+		<Acceleration>5</Acceleration>
+		<UnitStates>
+			<States>
+				<DefaultMechStateDefinition name="default"/>
+			</States>
+			<Transitions>
+			</Transitions>
+			<Requests>
+				<MoveRequest>
+					<StateNames>
+						<Request>default</Request>
+					</StateNames>
+				</MoveRequest>
+			</Requests>
+		</UnitStates>
+		
+		<!--Wagon-Specific-->
+		<AxisSuspensionInfo>
+			<Offset>0</Offset>
+			<SubAxes>
+				<AxisSuspensionInfo>
+					<Offset>1.7</Offset>
+					<AxisDirection>Train</AxisDirection>
+				</AxisSuspensionInfo>
+				<AxisSuspensionInfo>
+					<Offset>-1.7</Offset>
+					<AxisDirection>Train</AxisDirection>
+				</AxisSuspensionInfo>
+			</SubAxes>
+		</AxisSuspensionInfo>
+		<Length>6.2</Length>
+	</UnitConfiguration>
+	
+</UnitConfigurations>

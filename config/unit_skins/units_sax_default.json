@@ -1,0 +1,372 @@
+{
+  "Units": [
+    {
+      "UnitID": "sax_hero_brunhilde",
+      "SkinID": "default",
+      "MainPrefabName": "cha_sax_hero_brunhilde.prefab",
+      "RagdollPrefabName": "",
+      "DestroyedPrefabName": "cha_sax_hero_brunhilde_wreck.prefab",
+      "AssetBundleFile": "units_sax_default"
+    },
+    {
+      "UnitID": "sax_hero_gunter",
+      "SkinID": "default",
+      "MainPrefabName": "cha_sax_hero_gunter.prefab",
+      "RagdollPrefabName": "cha_sax_hero_gunter_ragdoll.prefab",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_sax_default"
+    },
+    {
+      "UnitID": "sax_hero_nacht",
+      "SkinID": "default",
+      "MainPrefabName": "cha_sax_hero_nacht.prefab",
+      "RagdollPrefabName": "cha_sax_hero_nacht_ragdoll.prefab",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_sax_default"
+    },
+    {
+      "UnitID": "sax_hero_tag",
+      "SkinID": "default",
+      "MainPrefabName": "cha_sax_hero_tag.prefab",
+      "RagdollPrefabName": "cha_sax_hero_tag_ragdoll.prefab",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_sax_default"
+    },
+    {
+      "UnitID": "sax_mech_artillery",
+      "SkinID": "default",
+      "MainPrefabName": "cha_sax_mech_artillery.prefab",
+      "RagdollPrefabName": "",
+      "DestroyedPrefabName": "cha_sax_mech_artillery_wreck.prefab",
+      "AssetBundleFile": "units_sax_default"
+    },
+    {
+      "UnitID": "sax_mech_dachs",
+      "SkinID": "default",
+      "MainPrefabName": "cha_sax_mech_dachs.prefab",
+      "RagdollPrefabName": "",
+      "DestroyedPrefabName": "cha_sax_mech_dachs_wreck.prefab",
+      "AssetBundleFile": "units_sax_default"
+    },
+    {
+      "UnitID": "sax_mech_gatling",
+      "SkinID": "default",
+      "MainPrefabName": "cha_sax_mech_gatling.prefab",
+      "RagdollPrefabName": "",
+      "DestroyedPrefabName": "cha_sax_mech_gatling_wreck.prefab",
+      "AssetBundleFile": "units_sax_default"
+    },
+    {
+      "UnitID": "sax_mech_gunfort",
+      "SkinID": "default",
+      "MainPrefabName": "cha_sax_mech_gunfort.prefab",
+      "RagdollPrefabName": "",
+      "DestroyedPrefabName": "cha_sax_mech_gunfort_wreck.prefab",
+      "AssetBundleFile": "units_sax_default"
+    },
+    {
+      "UnitID": "sax_mech_tank",
+      "SkinID": "default",
+      "MainPrefabName": "cha_sax_mech_tank.prefab",
+      "RagdollPrefabName": "",
+      "DestroyedPrefabName": "cha_sax_mech_tank_wreck.prefab",
+      "AssetBundleFile": "units_sax_default"
+    },
+    {
+      "UnitID": "sax_soldier_engineer",
+      "SkinID": "default",
+      "MainPrefabName": "cha_sax_soldier_engineer.prefab",
+      "RagdollPrefabName": "cha_sax_soldier_engineer_ragdoll.prefab",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_sax_default"
+    },
+    {
+      "UnitID": "sax_soldier_flamer",
+      "SkinID": "default",
+      "MainPrefabName": "cha_sax_soldier_flamer.prefab",
+      "RagdollPrefabName": "cha_sax_soldier_flamer_ragdoll.prefab",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_sax_default"
+    },
+    {
+      "UnitID": "sax_soldier_grenadier",
+      "SkinID": "default",
+      "MainPrefabName": "cha_sax_soldier_grenadier.prefab",
+      "RagdollPrefabName": "cha_sax_soldier_grenadier_ragdoll.prefab",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_sax_default"
+    },
+    {
+      "UnitID": "sax_soldier_gunner",
+      "SkinID": "default",
+      "MainPrefabName": "cha_sax_soldier_gunner.prefab",
+      "RagdollPrefabName": "cha_sax_soldier_gunner_ragdoll.prefab",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_sax_default"
+    },
+    {
+      "UnitID": "sax_soldier_medic",
+      "SkinID": "default",
+      "MainPrefabName": "cha_sax_soldier_medic.prefab",
+      "RagdollPrefabName": "cha_sax_soldier_medic_ragdoll.prefab",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_sax_default"
+    },
+    {
+      "UnitID": "sax_soldier_mg",
+      "SkinID": "default",
+      "MainPrefabName": "cha_sax_soldier_mg.prefab",
+      "RagdollPrefabName": "cha_sax_soldier_mg_ragdoll.prefab",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_sax_default"
+    },
+    {
+      "UnitID": "sax_soldier_mortar",
+      "SkinID": "default",
+      "MainPrefabName": "cha_sax_soldier_mortar.prefab",
+      "RagdollPrefabName": "cha_sax_soldier_mortar_ragdoll.prefab",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_sax_default"
+    },
+    {
+      "UnitID": "sax_soldier_rifleman",
+      "SkinID": "default",
+      "MainPrefabName": "cha_sax_soldier_rifleman.prefab",
+      "RagdollPrefabName": "cha_sax_soldier_rifleman_ragdoll.prefab",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_sax_default"
+    },
+    {
+      "UnitID": "sax_structure_barracks01",
+      "SkinID": "default",
+      "MainPrefabName": "sct_sax_structure_barracks01.prefab",
+      "RagdollPrefabName": "",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_sax_default"
+    },
+    {
+      "UnitID": "sax_structure_barracks02",
+      "SkinID": "default",
+      "MainPrefabName": "sct_sax_structure_barracks02.prefab",
+      "RagdollPrefabName": "",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_sax_default"
+    },
+    {
+      "UnitID": "sax_structure_bunkertier01",
+      "SkinID": "default",
+      "MainPrefabName": "sct_sax_structure_bunkertier01.prefab",
+      "RagdollPrefabName": "",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_sax_default"
+    },
+    {
+      "UnitID": "sax_structure_hq",
+      "SkinID": "default",
+      "MainPrefabName": "sct_sax_structure_hq.prefab",
+      "RagdollPrefabName": "",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_sax_default"
+    },
+    {
+      "UnitID": "sax_structure_ironmine01",
+      "SkinID": "default",
+      "MainPrefabName": "sct_sax_structure_ironmine01.prefab",
+      "RagdollPrefabName": "",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_sax_default"
+    },
+    {
+      "UnitID": "sax_structure_ironmine02",
+      "SkinID": "default",
+      "MainPrefabName": "sct_sax_structure_ironmine02.prefab",
+      "RagdollPrefabName": "",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_sax_default"
+    },
+    {
+      "UnitID": "sax_structure_medicbuilding",
+      "SkinID": "default",
+      "MainPrefabName": "sct_sax_structure_medicbuilding.prefab",
+      "RagdollPrefabName": "",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_sax_default"
+    },
+    {
+      "UnitID": "sax_structure_oilpump01",
+      "SkinID": "default",
+      "MainPrefabName": "sct_sax_structure_oilpump01.prefab",
+      "RagdollPrefabName": "",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_sax_default"
+    },
+    {
+      "UnitID": "sax_structure_oilpump02",
+      "SkinID": "default",
+      "MainPrefabName": "sct_sax_structure_oilpump02.prefab",
+      "RagdollPrefabName": "",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_sax_default"
+    },
+    {
+      "UnitID": "sax_structure_workshop01",
+      "SkinID": "default",
+      "MainPrefabName": "sct_sax_structure_workshop01.prefab",
+      "RagdollPrefabName": "",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_sax_default"
+    },
+    {
+      "UnitID": "sax_structure_workshop02",
+      "SkinID": "default",
+      "MainPrefabName": "sct_sax_structure_workshop02.prefab",
+      "RagdollPrefabName": "",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_sax_default"
+    },
+    {
+      "UnitID": "sax_support_cannon",
+      "SkinID": "default",
+      "MainPrefabName": "cha_sax_support_cannon.prefab",
+      "RagdollPrefabName": "cha_sax_soldier_rifleman_ragdoll.prefab",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_sax_default"
+    },
+    {
+      "UnitID": "sax_support_mg",
+      "SkinID": "default",
+      "MainPrefabName": "cha_sax_support_mg.prefab",
+      "RagdollPrefabName": "cha_sax_soldier_rifleman_ragdoll.prefab",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_sax_default"
+    },
+    {
+      "UnitID": "sax_support_mortar",
+      "SkinID": "default",
+      "MainPrefabName": "cha_sax_support_mortar.prefab",
+      "RagdollPrefabName": "cha_sax_soldier_rifleman_ragdoll.prefab",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_sax_default"
+    },
+    {
+      "UnitID": "sax_hero_prince",
+      "SkinID": "default",
+      "MainPrefabName": "cha_sax_hero_prince.prefab",
+      "RagdollPrefabName": "",
+      "DestroyedPrefabName": "cha_sax_hero_prince_wreck.prefab",
+      "AssetBundleFile": "units_sax_default"
+    },
+    {
+      "UnitID": "sax_mech_mother",
+      "SkinID": "default",
+      "MainPrefabName": "cha_sax_mech_mother.prefab",
+      "RagdollPrefabName": "",
+      "DestroyedPrefabName": "cha_sax_mech_mother_wreck.prefab",
+      "AssetBundleFile": "units_sax_default"
+    },
+    {
+      "UnitID": "sax_support_destroyer",
+      "SkinID": "default",
+      "MainPrefabName": "cha_sax_support_destroyer.prefab",
+      "RagdollPrefabName": "cha_sax_soldier_rifleman_ragdoll.prefab",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_sax_default"
+    },
+    {
+      "UnitID": "sax_structure_bunkertier02",
+      "SkinID": "default",
+      "MainPrefabName": "sct_sax_structure_bunkertier02.prefab",
+      "RagdollPrefabName": "",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_sax_default"
+    },
+    {
+      "UnitID": "sax_structure_bunker",
+      "SkinID": "default",
+      "MainPrefabName": "sct_sax_structure_bunker.prefab",
+      "RagdollPrefabName": "",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_sax_default"
+    },
+    {
+      "UnitID": "sax_hero_wolf",
+      "SkinID": "default",
+      "MainPrefabName": "cha_sax_hero_wolf.fbx",
+      "RagdollPrefabName": "cha_sax_hero_wolf_ragdoll.prefab",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_sax_default"
+    },
+    {
+      "UnitID": "sax_mech_mothersdrone",
+      "SkinID": "default",
+      "MainPrefabName": "cha_sax_mech_mothersdrone.prefab",
+      "RagdollPrefabName": "",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_sax_default"
+    },
+    {
+      "UnitID": "sax_npc_technician",
+      "SkinID": "default",
+      "MainPrefabName": "cha_sax_npc_technician.prefab",
+      "RagdollPrefabName": "cha_sax_soldier_rifleman_ragdoll.prefab",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_sax_default"
+    },
+    {
+      "UnitID": "sax_npc_cityfemale",
+      "SkinID": "default",
+      "MainPrefabName": "cha_sax_npc_cityfemale.prefab",
+      "RagdollPrefabName": "cha_sax_npc_cityfemale_ragdoll.prefab",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_sax_default"
+    },
+    {
+      "UnitID": "sax_npc_citymale",
+      "SkinID": "default",
+      "MainPrefabName": "cha_sax_npc_citymale.prefab",
+      "RagdollPrefabName": "cha_sax_npc_citymale_ragdoll.prefab",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_sax_default"
+    },
+    {
+      "UnitID": "sax_npc_citymalerifleman",
+      "SkinID": "default",
+      "MainPrefabName": "cha_sax_npc_citymalerifleman.prefab",
+      "RagdollPrefabName": "cha_sax_npc_citymale_ragdoll.prefab",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_sax_default"
+    },
+    {
+      "UnitID": "sax_npc_citymalegunner",
+      "SkinID": "default",
+      "MainPrefabName": "cha_sax_npc_citymalegunner.prefab",
+      "RagdollPrefabName": "cha_sax_npc_citymale_ragdoll.prefab",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_sax_default"
+    },
+    {
+      "UnitID": "sax_npc_citymalegrenadier",
+      "SkinID": "default",
+      "MainPrefabName": "cha_sax_npc_citymalegrenadier.prefab",
+      "RagdollPrefabName": "cha_sax_npc_citymale_ragdoll.prefab",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_sax_default"
+    },
+    {
+      "UnitID": "sax_hero_brunhildegunter",
+      "SkinID": "default",
+      "MainPrefabName": "cha_sax_hero_brunhildegunter.prefab",
+      "RagdollPrefabName": "",
+      "DestroyedPrefabName": "cha_sax_hero_brunhilde_wreck.prefab",
+      "AssetBundleFile": "units_sax_default"
+    },
+    {
+      "UnitID": "sax_mech_mothersgrenade",
+      "SkinID": "default",
+      "MainPrefabName": "cha_sax_mech_mothersgrenade.prefab",
+      "RagdollPrefabName": "",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_sax_default"
+    }
+  ]
+}

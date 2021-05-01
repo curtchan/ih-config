@@ -1,0 +1,203 @@
+<ObjectConfigurations>
+	
+	<ObjectConfiguration id="rail_switch" type="custom">
+		<InteractionTimeSeconds>1.5</InteractionTimeSeconds>
+	</ObjectConfiguration>
+	
+	<ObjectConfiguration id="rail_blocker" type="railblocker">
+		<DeconstructionPoints>500</DeconstructionPoints>
+		<BatchSize>20</BatchSize>
+		<CostsPerBatch>
+			<IronCost>10</IronCost>
+		</CostsPerBatch>
+	</ObjectConfiguration>
+	
+	<ObjectConfiguration id="custom_interactable" type="custom">
+		<InteractionTimeSeconds>6</InteractionTimeSeconds>
+	</ObjectConfiguration>
+
+	<ObjectConfiguration id="custom_interactable_snowman" type="custom">
+		<InteractionTimeSeconds>0.3</InteractionTimeSeconds>
+	</ObjectConfiguration>
+	
+	<ObjectConfiguration id="custom_interactable_2Seconds" type="custom">
+		<InteractionTimeSeconds>2</InteractionTimeSeconds>
+	</ObjectConfiguration>
+	
+	<ObjectConfiguration id="custom_interactable_1Second" type="custom">
+		<InteractionTimeSeconds>1</InteractionTimeSeconds>
+	</ObjectConfiguration>
+	
+	<ObjectConfiguration id="custom_interactable_0Seconds" type="custom">
+		<InteractionTimeSeconds>0</InteractionTimeSeconds>
+	</ObjectConfiguration>
+	
+	<ObjectConfiguration id="drawbridge_01" type="door">
+		<OpeningTransition>
+			<DurationTicksFrom>64</DurationTicksFrom>
+			<DurationTicksTo>0</DurationTicksTo>
+		</OpeningTransition>
+		<ClosingTransition>
+			<DurationTicksFrom>0</DurationTicksFrom>
+			<DurationTicksTo>64</DurationTicksTo>
+		</ClosingTransition>
+		<ClosingBlockedByEntities>true</ClosingBlockedByEntities>
+	</ObjectConfiguration>
+	
+	<ObjectConfiguration id="crate" type="crate">
+		<PickupTime>0</PickupTime>
+	</ObjectConfiguration>
+	<ObjectConfiguration id="crate_rifle" parentId="crate" type="crate">
+		<DroppedEquipment>equip_rifle</DroppedEquipment>
+	</ObjectConfiguration>
+	<ObjectConfiguration id="crate_grenade" parentId="crate" type="crate">
+		<DroppedEquipment>equip_grenade</DroppedEquipment>
+	</ObjectConfiguration>
+	<ObjectConfiguration id="crate_bazooka" parentId="crate" type="crate">
+		<DroppedEquipment>equip_bazooka</DroppedEquipment>
+	</ObjectConfiguration>
+	<ObjectConfiguration id="crate_engineer" parentId="crate" type="crate">
+		<DroppedEquipment>equip_engineer</DroppedEquipment>
+	</ObjectConfiguration>
+	<ObjectConfiguration id="crate_medic" parentId="crate" type="crate">
+		<DroppedEquipment>equip_medic</DroppedEquipment>
+	</ObjectConfiguration>
+	<ObjectConfiguration id="crate_mg" parentId="crate" type="crate">
+		<DroppedEquipment>equip_mg</DroppedEquipment>
+		</ObjectConfiguration>
+	<ObjectConfiguration id="crate_flamethrower" parentId="crate" type="crate">
+		<DroppedEquipment>equip_flamethrower</DroppedEquipment>
+	</ObjectConfiguration>
+	
+	<ObjectConfiguration id="healthboxbase" type="healthbox">
+		<PickupTime>0</PickupTime>
+	</ObjectConfiguration>
+	<ObjectConfiguration id="healthbox" parentId="healthboxbase" type="healthbox">
+		<HealingAmount>10000</HealingAmount>
+	</ObjectConfiguration>
+	
+	<ObjectConfiguration id="equip" type="equip">
+		<PickupTime>8.0</PickupTime>
+		<DespawnTicks>960</DespawnTicks>
+	</ObjectConfiguration>
+	<ObjectConfiguration id="equip_rifle" parentId="equip" type="equip">
+		<EquipmentType>Rifle</EquipmentType>
+	</ObjectConfiguration>
+	<ObjectConfiguration id="equip_grenade" parentId="equip" type="equip">
+		<EquipmentType>Grenades</EquipmentType>
+	</ObjectConfiguration>
+	<ObjectConfiguration id="equip_bazooka" parentId="equip" type="equip">
+		<EquipmentType>Bazooka</EquipmentType>
+	</ObjectConfiguration>	
+	<ObjectConfiguration id="equip_medic" parentId="equip" type="equip">
+		<EquipmentType>Medic</EquipmentType>
+	</ObjectConfiguration>
+	<ObjectConfiguration id="equip_engineer" parentId="equip" type="equip">
+		<EquipmentType>Engineer</EquipmentType>
+	</ObjectConfiguration>
+	<ObjectConfiguration id="equip_flamethrower" parentId="equip" type="equip">
+		<EquipmentType>Flamethrower</EquipmentType>
+	</ObjectConfiguration>
+	<ObjectConfiguration id="equip_mg" parentId="equip" type="equip">
+		<EquipmentType>MG</EquipmentType>
+	</ObjectConfiguration>
+	
+	<ObjectConfiguration id="pallet" type="resourcepalett">
+		<PickupTime>10.0</PickupTime>
+	</ObjectConfiguration>
+	<ObjectConfiguration id="crate_oil" parentId="pallet" type="resourcepalett">
+		<ResourceType>Oil</ResourceType>
+		<ResourceAmount>20</ResourceAmount>
+		<GrantToAllies>true</GrantToAllies>
+	</ObjectConfiguration>
+	<ObjectConfiguration id="crate_iron" parentId="pallet" type="resourcepalett">
+		<ResourceType>Iron</ResourceType>
+		<ResourceAmount>60</ResourceAmount>
+		<GrantToAllies>true</GrantToAllies>
+	</ObjectConfiguration>
+	<ObjectConfiguration id="crate_victorypoints" parentId="pallet" type="resourcepalett">
+		<PickupTime>20.0</PickupTime>
+		<ResourceType>VictoryPoints</ResourceType>
+		<ResourceAmount>50</ResourceAmount>
+		<GrantToAllies>true</GrantToAllies>
+		<RemoveCompletelyWhenOpened>true</RemoveCompletelyWhenOpened>
+	</ObjectConfiguration>
+	
+	<ObjectConfiguration id="mis_mine_buried" type="mine">
+		<IsAbstract>false</IsAbstract>
+		<SpawningMineConfig>com_mech_mine</SpawningMineConfig>
+		<MechDetectionRadius>15</MechDetectionRadius>
+		<VisionRadius>15</VisionRadius>
+		<WarningShoutRadius>20</WarningShoutRadius>
+		
+		<!--Stats-->
+		<Health>100</Health>
+		<ArmorType>Unarmored</ArmorType>
+		
+		<!--Constructions-->
+		<BuildCost>
+			<IronCost>100</IronCost>
+			<OilCost>10</OilCost>
+			<PopulationCost>1</PopulationCost>
+		</BuildCost>
+		<ConstructionPoints>250</ConstructionPoints>
+		<ConstructionExperience>40</ConstructionExperience>
+
+		<!--Refund-->	
+		<Refund>
+			<IronCost>60</IronCost>
+			<OilCost>5</OilCost>
+		</Refund>
+
+		<!--placement & Geometry-->
+		<Shape type="rect" x="-0.5" y="-0.5" width="1" height="1" />
+	</ObjectConfiguration>
+	
+	<ObjectConfiguration id="flagpole" type="flagpole">
+		<IsAbstract>true</IsAbstract>
+		<CollisionShape type="convex">
+			<Vertex x="-0.5"   y="0.25"  height="0.01" />
+			<Vertex x="-0.5"   y="-0.25" height="0.01" />
+			<Vertex x="-0.25"  y="-0.5"  height="0.01" />
+			<Vertex x="0.25"   y="-0.5"  height="0.01" />
+			<Vertex x="0.5"    y="-0.25" height="0.01" />
+			<Vertex x="0.5"    y="0.25"  height="0.01" />
+			<Vertex x="0.25"   y="0.5"   height="0.01" />
+			<Vertex x="-0.25"  y="0.5"   height="0.01" />
+		</CollisionShape>
+		<VisionRadius>40</VisionRadius>
+	</ObjectConfiguration>
+	
+	<ObjectConfiguration id="flagpole_victory_points" parentId="flagpole" type="flagpole">
+		<IsAbstract>false</IsAbstract>
+		<MaxConquerPoints>300</MaxConquerPoints>
+		<ProductionAmount>0</ProductionAmount><!--The VictoryPoint-Production is depending on Superiority (see Game.xml)-->
+		<GrantToAllies>true</GrantToAllies>
+		<ResourceType>VictoryPoints</ResourceType>
+	</ObjectConfiguration>
+	
+	<ObjectConfiguration id="flagpole_oil" parentId="flagpole" type="flagpole">
+		<IsAbstract>false</IsAbstract>
+		<MaxConquerPoints>300</MaxConquerPoints>
+		<ProductionAmount>5</ProductionAmount>
+		<GrantToAllies>true</GrantToAllies>
+		<ResourceType>Oil</ResourceType>
+	</ObjectConfiguration>
+	
+	<ObjectConfiguration id="flagpole_iron" parentId="flagpole" type="flagpole">
+		<IsAbstract>false</IsAbstract>
+		<MaxConquerPoints>300</MaxConquerPoints>
+		<ProductionAmount>5</ProductionAmount>
+		<GrantToAllies>true</GrantToAllies>
+		<ResourceType>Iron</ResourceType>
+	</ObjectConfiguration>
+	
+	<ObjectConfiguration id="flagpole_conquer_territory" parentId="flagpole" type="flagpole">
+		<IsAbstract>false</IsAbstract>
+		<MaxConquerPoints>50</MaxConquerPoints>
+		<ProductionAmount>0</ProductionAmount>
+		<GrantToAllies>true</GrantToAllies>
+		<ResourceType>None</ResourceType>
+	</ObjectConfiguration>
+  
+</ObjectConfigurations>

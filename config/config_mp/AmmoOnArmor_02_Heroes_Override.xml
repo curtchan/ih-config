@@ -1,0 +1,263 @@
+<AmmoOnArmorInteractionRepository>
+
+	<!--Anna Rifle-->
+		<AmmoOnArmorInteraction overrideId="AnnaRifleOnLight" ammoType="Anna_RifleCartridge" armorType="Light">
+		  <Damage>20</Damage>
+		  <Kinetic>0</Kinetic>
+		  <Piercing>False</Piercing>
+		  <VerticalAim>0.5</VerticalAim>
+		  <VerticalAimHigh>0.5</VerticalAimHigh>
+		  <Effectiveness>1</Effectiveness>
+		</AmmoOnArmorInteraction>
+
+	<!--Cavalry Melee-->
+		<AmmoOnArmorInteraction overrideId="CavMeleeOnUnarmored" ammoType="Cav_Melee" armorType="Unarmored" type="melee">
+			<Damage>20</Damage>
+			<Kinetic>0.7</Kinetic>
+		</AmmoOnArmorInteraction>
+		<AmmoOnArmorInteraction overrideId="CavMeleeOnLight" ammoType="Cav_Melee" armorType="Light" type="melee">
+			<Damage>10</Damage>
+			<Kinetic>0</Kinetic>
+		</AmmoOnArmorInteraction>
+		<AmmoOnArmorInteraction overrideId="CavMeleeOnMedium" ammoType="Cav_Melee" armorType="Medium" type="melee">
+			<Damage>5</Damage>
+			<Kinetic>0</Kinetic>
+			<Effectiveness>1</Effectiveness>
+		</AmmoOnArmorInteraction>
+		<AmmoOnArmorInteraction overrideId="CavMeleeOnheavy" ammoType="Cav_Melee" armorType="Heavy" type="melee">
+			<Damage>5</Damage>
+			<Kinetic>0</Kinetic>
+			<Effectiveness>1</Effectiveness>
+		</AmmoOnArmorInteraction>
+
+	<!--Rebel Leader-->
+		<!-- Rebel Melee-->
+		<AmmoOnArmorInteraction overrideId="Rebel_MeleeOnStructure" ammoType="Rebel_Melee" armorType="Structure" type="melee">
+		  <Damage>60</Damage>
+		  <Kinetic>15</Kinetic>
+		</AmmoOnArmorInteraction>
+
+		<!-- Rebel Melee Series-->
+		<AmmoOnArmorInteraction overrideId="Rebel_MeleeSOnStructure" ammoType="Rebel_MeleeSeries" armorType="Structure" type="melee">
+			<Damage>20</Damage>
+			<Kinetic>15</Kinetic>
+		</AmmoOnArmorInteraction>
+
+		<!-- Rebel Melee Series Splash-->
+		<AmmoOnArmorInteraction overrideId="Rebel_MeleeSplashSOnStructure" ammoType="Rebel_MeleeSeriesSplash" armorType="Structure" type="melee">
+			<Damage>30</Damage>
+			<Kinetic>15</Kinetic>
+		</AmmoOnArmorInteraction>
+
+	<!--Gunter-->
+		<AmmoOnArmorInteraction overrideId="GHandgunOnLight" ammoType="Gunter_HandgunShell" armorType="Light">
+			<Damage>65</Damage>
+			<Kinetic>0.5</Kinetic>
+			<Piercing>False</Piercing>
+			<VerticalAim>0.5</VerticalAim>
+			<VerticalAimHigh>0.5</VerticalAimHigh>
+		</AmmoOnArmorInteraction>
+		<AmmoOnArmorInteraction overrideId="GHandgunOnMedium" ammoType="Gunter_HandgunShell" armorType="Medium">
+			<Damage>65</Damage>
+			<Kinetic>0.5</Kinetic>
+			<Piercing>False</Piercing>
+			<VerticalAim>0.5</VerticalAim>
+			<VerticalAimHigh>0.5</VerticalAimHigh>
+  		</AmmoOnArmorInteraction>
+		<AmmoOnArmorInteraction overrideId="GHandgunOnHeavy" ammoType="Gunter_HandgunShell" armorType="Heavy">
+			<Damage>50</Damage>
+			<Kinetic>0.25</Kinetic>
+			<Piercing>False</Piercing>
+			<VerticalAim>0.5</VerticalAim>
+			<VerticalAimHigh>0.5</VerticalAimHigh>
+			<Effectiveness>1</Effectiveness>
+		</AmmoOnArmorInteraction>
+
+		<!--Gunter Splash-->
+		<AmmoOnArmorInteraction overrideId="GSplashOnLight" ammoType="Gunter_Splash" armorType="Light" type="explosive">
+			<Damage>50</Damage>
+			<Kinetic>0</Kinetic>
+		</AmmoOnArmorInteraction>
+		<AmmoOnArmorInteraction overrideId="GSplashOnMedium" ammoType="Gunter_Splash" armorType="Medium" type="explosive">
+			<Damage>50</Damage>
+			<Kinetic>0</Kinetic>
+		</AmmoOnArmorInteraction>
+		<AmmoOnArmorInteraction overrideId="GSplashOnHeavy" ammoType="Gunter_Splash" armorType="Heavy" type="explosive">
+			<Damage>50</Damage>
+			<Kinetic>0</Kinetic>
+			<Effectiveness>-1</Effectiveness>
+		</AmmoOnArmorInteraction>
+
+	<!--Prince-->
+		<!--Prince Gatling-->
+		<AmmoOnArmorInteraction overrideId="PGCOnUnarmored" ammoType="Prince_GatlingCartridge" armorType="Unarmored">
+			<Damage>50</Damage>
+			<Kinetic>0.8</Kinetic>
+			<Piercing>False</Piercing>
+			<VerticalAim>0.5</VerticalAim>
+			<VerticalAimHigh>0.9</VerticalAimHigh>
+		</AmmoOnArmorInteraction>
+		<AmmoOnArmorInteraction overrideId="PGCOnLight" ammoType="Prince_GatlingCartridge" armorType="Light">
+			<Damage>60</Damage>
+			<Kinetic>0.5</Kinetic>
+			<Piercing>False</Piercing>
+			<VerticalAim>0.5</VerticalAim>
+			<VerticalAimHigh>0.5</VerticalAimHigh>
+		</AmmoOnArmorInteraction>
+		<AmmoOnArmorInteraction overrideId="PGCOnMedium" ammoType="Prince_GatlingCartridge" armorType="Medium">
+			<Effectiveness>1</Effectiveness>
+			<Damage>45</Damage>
+			<Kinetic>0.3</Kinetic>
+			<Piercing>False</Piercing>
+			<VerticalAim>0.5</VerticalAim>
+			<VerticalAimHigh>0.5</VerticalAimHigh>
+		</AmmoOnArmorInteraction>
+		<AmmoOnArmorInteraction overrideId="PGCOnHeavy" ammoType="Prince_GatlingCartridge" armorType="Heavy">
+			<Damage>35</Damage>
+			<Kinetic>0</Kinetic>
+			<Piercing>False</Piercing>
+			<VerticalAim>0.5</VerticalAim>
+			<VerticalAimHigh>0.5</VerticalAimHigh>
+			<Effectiveness>1</Effectiveness>
+		</AmmoOnArmorInteraction>
+		<AmmoOnArmorInteraction overrideId="PGCOnStructure" ammoType="Prince_GatlingCartridge" armorType="Structure">
+			<Damage>15</Damage>
+			<Kinetic>0</Kinetic>
+			<Piercing>False</Piercing>
+			<VerticalAim>0.5</VerticalAim>
+			<VerticalAimHigh>0.5</VerticalAimHigh>
+		</AmmoOnArmorInteraction>
+
+		<!--Prince Gatling Sweep-->
+		<AmmoOnArmorInteraction overrideId="PGSCOnUnarmored" ammoType="Prince_GatlingSweepCartridge" armorType="Unarmored" type="explosive">
+		  <Damage>50</Damage>
+		  <Kinetic>0.8</Kinetic>
+		  <Piercing>False</Piercing>
+		  <VerticalAim>0.5</VerticalAim>
+		  <VerticalAimHigh>0.9</VerticalAimHigh>
+		</AmmoOnArmorInteraction>
+		<AmmoOnArmorInteraction overrideId="PGSCOnLight" ammoType="Prince_GatlingSweepCartridge" armorType="Light" type="explosive">
+		  <Damage>30</Damage>
+		  <Kinetic>0.5</Kinetic>
+		  <Piercing>False</Piercing>
+		  <VerticalAim>0.5</VerticalAim>
+		  <VerticalAimHigh>0.5</VerticalAimHigh>
+		</AmmoOnArmorInteraction>
+		<AmmoOnArmorInteraction overrideId="PGSCOnMedium" ammoType="Prince_GatlingSweepCartridge" armorType="Medium" type="explosive">
+		  <Effectiveness>1</Effectiveness>
+		  <Damage>30</Damage>
+		  <Kinetic>0.3</Kinetic>
+		  <Piercing>False</Piercing>
+		  <VerticalAim>0.5</VerticalAim>
+		  <VerticalAimHigh>0.5</VerticalAimHigh>
+		</AmmoOnArmorInteraction>
+		<AmmoOnArmorInteraction overrideId="PGSCOnHeavy" ammoType="Prince_GatlingSweepCartridge" armorType="Heavy" type="explosive">
+		  <Damage>20</Damage>
+		  <Kinetic>0</Kinetic>
+		  <Piercing>False</Piercing>
+		  <VerticalAim>0.5</VerticalAim>
+		  <VerticalAimHigh>0.5</VerticalAimHigh>
+			<Effectiveness>1</Effectiveness>
+		</AmmoOnArmorInteraction>
+		<AmmoOnArmorInteraction overrideId="PGSCOnStructure" ammoType="Prince_GatlingSweepCartridge" armorType="Structure" type="explosive">
+		  <Damage>15</Damage>
+		  <Kinetic>0</Kinetic>
+		  <Piercing>False</Piercing>
+		  <VerticalAim>0.5</VerticalAim>
+		  <VerticalAimHigh>0.5</VerticalAimHigh>
+		</AmmoOnArmorInteraction>
+
+<!--Rusviet-->
+	<!--Olga-->
+		<!--Olga Melee-->
+		<AmmoOnArmorInteraction overrideId="OlgaMeleeOnLight" ammoType="Olga_Melee" armorType="Light" type="melee">
+			<Damage>30</Damage>
+			<Kinetic>0</Kinetic>
+		</AmmoOnArmorInteraction>
+
+		<!--Olga Cartridge-->
+			<AmmoOnArmorInteraction overrideId="OlgaCartridgeOnLight" ammoType="Olga_Cartridge" armorType="Light">
+				<Damage>5</Damage>
+				<Kinetic>0</Kinetic>
+				<Piercing>False</Piercing>
+				<VerticalAim>0.5</VerticalAim>
+				<VerticalAimHigh>0.5</VerticalAimHigh>
+			</AmmoOnArmorInteraction>
+
+		<!--Changa Melee-->
+			<AmmoOnArmorInteraction overrideId="ChangaOnUnarmored" ammoType="Olga_ChangaMelee" armorType="Unarmored" type="melee">
+			    <Damage>80</Damage>
+			    <Kinetic>0.7</Kinetic>
+				<Effectiveness>1</Effectiveness>
+			</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction overrideId="ChangaOnLight" ammoType="Olga_ChangaMelee" armorType="Light" type="melee">
+			    <Damage>10</Damage>
+		 	    <Kinetic>0</Kinetic>
+			</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction overrideId="ChangaOnMedium" ammoType="Olga_ChangaMelee" armorType="Medium" type="melee">
+			    <Damage>5</Damage>
+			    <Kinetic>0</Kinetic>
+			</AmmoOnArmorInteraction>
+
+		<!--Olga Detonator-->
+			<AmmoOnArmorInteraction overrideId="DetonatorOnUnarmored" ammoType="Olga_Detonator" armorType="Unarmored" type="explosive">
+				<Damage>150</Damage>
+				<Kinetic>2</Kinetic>
+				<Piercing>False</Piercing>
+			</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction overrideId="DetonatorOnLight" ammoType="Olga_Detonator" armorType="Light" type="explosive">
+				<Damage>250</Damage>
+				<Kinetic>1</Kinetic>
+				<Piercing>False</Piercing>
+			</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction overrideId="DetonatorOnMedium" ammoType="Olga_Detonator" armorType="Medium" type="explosive">
+				<Damage>250</Damage>
+				<Kinetic>0.4</Kinetic>
+				<Piercing>False</Piercing>
+			</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction overrideId="DetonatorOnHeavy" ammoType="Olga_Detonator" armorType="Heavy" type="explosive">
+				<Damage>200</Damage>
+				<Kinetic>0</Kinetic>
+				<Piercing>False</Piercing>
+				<Effectiveness>1</Effectiveness>
+			</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction overrideId="DetonatorOnStructure" ammoType="Olga_Detonator" armorType="Structure" type="explosive">
+				<Damage>150</Damage>
+				<Kinetic>0</Kinetic>
+				<Piercing>False</Piercing>
+			</AmmoOnArmorInteraction>
+
+	<!--Brother-->
+		<!--Brother Cartridge-->
+			<AmmoOnArmorInteraction overrideId="BrotherCartridgeOnUnarmored" ammoType="BrotherCartridge" armorType="Unarmored">
+				<Damage>30</Damage>
+				<Kinetic>0.5</Kinetic>
+				<Piercing>False</Piercing>
+				<VerticalAim>0.5</VerticalAim>
+				<VerticalAimHigh>0.9</VerticalAimHigh>
+			</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction overrideId="BrotherCartridgeOnLight" ammoType="BrotherCartridge" armorType="Light">
+				<Damage>30</Damage>
+				<Kinetic>0.5</Kinetic>
+				<Piercing>False</Piercing>
+				<VerticalAim>0.5</VerticalAim>
+				<VerticalAimHigh>0.5</VerticalAimHigh>
+			</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction overrideId="BrotherCartridgeOnMedium" ammoType="BrotherCartridge" armorType="Medium">
+				<Damage>30</Damage>
+				<Kinetic>0.5</Kinetic>
+				<Piercing>False</Piercing>
+				<VerticalAim>0.5</VerticalAim>
+				<VerticalAimHigh>0.5</VerticalAimHigh>
+			</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction overrideId="BrotherCartridgeOnHeavy" ammoType="BrotherCartridge" armorType="Heavy">
+				<Damage>20</Damage>
+				<Kinetic>0.25</Kinetic>
+				<Piercing>False</Piercing>
+				<VerticalAim>0.5</VerticalAim>
+				<VerticalAimHigh>0.5</VerticalAimHigh>
+				<Effectiveness>1</Effectiveness>
+			</AmmoOnArmorInteraction>
+
+<!--End of File-->
+</AmmoOnArmorInteractionRepository>

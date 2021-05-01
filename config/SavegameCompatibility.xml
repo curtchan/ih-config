@@ -1,0 +1,33 @@
+<savegameConfig>
+	<SavegameCompatibility>
+		<!--exambles for version-strings: "1", "1.0.3", "0.10.0.23 rev. 28945"-->
+		<!--<BaseVersionCompatibility MinCompatibleVersion="1.0.1" />-->
+		<!--<ScenarioCompatibilities>-->
+			<!--<ScenarioCompatibility ScenarioId="sp_pol_01" MinCompatibleVersion="1.0.3" />-->
+		<!--</ScenarioCompatibilities>-->
+		<BaseVersionCompatibility MinCompatibleVersion="1.1.3" />
+		<ScenarioCompatibilities>
+			<ScenarioCompatibility ScenarioId="sp_pol_02" MinCompatibleVersion="1.1.5" />
+			<ScenarioCompatibility ScenarioId="sp_pol_03" MinCompatibleVersion="1.1.5" />
+			<ScenarioCompatibility ScenarioId="sp_pol_04" MinCompatibleVersion="1.1.5" />
+			<ScenarioCompatibility ScenarioId="sp_pol_05" MinCompatibleVersion="1.1.5" />
+			<ScenarioCompatibility ScenarioId="sp_pol_06" MinCompatibleVersion="1.1.5" />
+			<ScenarioCompatibility ScenarioId="sp_pol_07" MinCompatibleVersion="1.1.5" />
+			<ScenarioCompatibility ScenarioId="sp_rus_01" MinCompatibleVersion="1.1.5" />
+			<ScenarioCompatibility ScenarioId="sp_rus_02" MinCompatibleVersion="1.1.5" />
+			<ScenarioCompatibility ScenarioId="sp_rus_03" MinCompatibleVersion="1.1.5" />
+			<ScenarioCompatibility ScenarioId="sp_rus_04" MinCompatibleVersion="1.1.5" />
+			<ScenarioCompatibility ScenarioId="sp_rus_05" MinCompatibleVersion="1.1.5" />
+			<ScenarioCompatibility ScenarioId="sp_rus_06" MinCompatibleVersion="1.1.5" />
+			<ScenarioCompatibility ScenarioId="sp_rus_07" MinCompatibleVersion="1.1.5" />
+			<ScenarioCompatibility ScenarioId="sp_sax_01" MinCompatibleVersion="1.1.5" />
+			<ScenarioCompatibility ScenarioId="sp_sax_04" MinCompatibleVersion="1.1.5" />
+			<ScenarioCompatibility ScenarioId="sp_sax_06" MinCompatibleVersion="1.1.5" />
+			<ScenarioCompatibility ScenarioId="sp_bon_03" MinCompatibleVersion="1.1.5" />
+			<ScenarioCompatibility ScenarioId="mp_2p_03" MinCompatibleVersion="1.1.5" />
+			<ScenarioCompatibility ScenarioId="mp_2p_04" MinCompatibleVersion="1.1.5" />
+			<ScenarioCompatibility ScenarioId="mp_4p_03" MinCompatibleVersion="1.1.5" />
+			<ScenarioCompatibility ScenarioId="mp_6p_01" MinCompatibleVersion="1.1.5" />
+		</ScenarioCompatibilities>
+	</SavegameCompatibility>
+</savegameConfig>

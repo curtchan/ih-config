@@ -1,0 +1,1273 @@
+<AmmoOnArmorInteractionRepository>
+<!--Polania-->
+	<!--Anna-->
+		<!--Anna Rifle-->
+			<AmmoOnArmorInteraction id="AnnaRifleOnUnarmored" ammoType="Anna_RifleCartridge" armorType="Unarmored">
+		  <Damage>50</Damage>
+		  <Kinetic>1.2</Kinetic>
+		  <Piercing>False</Piercing>
+		  <VerticalAim>0.5</VerticalAim>
+		  <VerticalAimHigh>0.9</VerticalAimHigh>
+		</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="AnnaRifleOnLight" ammoType="Anna_RifleCartridge" armorType="Light">
+		  <Damage>30</Damage>
+		  <Kinetic>0</Kinetic>
+		  <Piercing>False</Piercing>
+		  <VerticalAim>0.5</VerticalAim>
+		  <VerticalAimHigh>0.5</VerticalAimHigh>
+		  <Effectiveness>1</Effectiveness>
+		</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="AnnaRifleOnMedium" ammoType="Anna_RifleCartridge" armorType="Medium">
+		  <Damage>10</Damage>
+		  <Kinetic>0</Kinetic>
+		  <Piercing>False</Piercing>
+		  <VerticalAim>0.5</VerticalAim>
+		  <VerticalAimHigh>0.5</VerticalAimHigh>
+		  <Effectiveness>1</Effectiveness>
+		</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="AnnaRifleOnHeavy" ammoType="Anna_RifleCartridge" armorType="Heavy">
+		  <Damage>10</Damage>
+		  <Kinetic>0</Kinetic>
+		  <Piercing>False</Piercing>
+		  <VerticalAim>0.5</VerticalAim>
+		  <VerticalAimHigh>0.5</VerticalAimHigh>
+		</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="AnnaRifleOnStructure" ammoType="Anna_RifleCartridge" armorType="Structure">
+		  <Damage>15</Damage>
+		  <Kinetic>0</Kinetic>
+		  <Piercing>False</Piercing>
+		  <VerticalAim>0.5</VerticalAim>
+		  <VerticalAimHigh>0.5</VerticalAimHigh>
+		</AmmoOnArmorInteraction>
+
+		<!--Anna Power Shot-->
+			<AmmoOnArmorInteraction id="APSCOnUnarmored" ammoType="Anna_PowerShotCartridge" armorType="Unarmored">
+		  <Damage>250</Damage>
+		  <Kinetic>1.3</Kinetic>
+		  <Piercing>True</Piercing>
+		  <VerticalAim>0.5</VerticalAim>
+		  <VerticalAimHigh>0.9</VerticalAimHigh>
+		  <Effectiveness>1</Effectiveness>
+		</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="APSCOnLight" ammoType="Anna_PowerShotCartridge" armorType="Light">
+		  <Damage>75</Damage>
+		  <Kinetic>0.5</Kinetic>
+		  <Piercing>False</Piercing>
+		  <VerticalAim>0.5</VerticalAim>
+		  <VerticalAimHigh>0.5</VerticalAimHigh>
+		</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="APSCOnMedium" ammoType="Anna_PowerShotCartridge" armorType="Medium">
+		  <Damage>80</Damage>
+		  <Kinetic>0.5</Kinetic>
+		  <Piercing>False</Piercing>
+		  <VerticalAim>0.25</VerticalAim>
+		  <VerticalAimHigh>0.5</VerticalAimHigh>
+		  <Effectiveness>1</Effectiveness>
+		</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="APSCOnHeavy" ammoType="Anna_PowerShotCartridge" armorType="Heavy">
+		  <Damage>75</Damage>
+		  <Kinetic>0</Kinetic>
+		  <Piercing>False</Piercing>
+		  <VerticalAim>0.5</VerticalAim>
+		  <VerticalAimHigh>0.5</VerticalAimHigh>
+		</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="APSCOnStructure" ammoType="Anna_PowerShotCartridge" armorType="Structure">
+		  <Damage>40</Damage>
+		  <Kinetic>0</Kinetic>
+		  <Piercing>False</Piercing>
+		  <VerticalAim>0.5</VerticalAim>
+		  <VerticalAimHigh>0.5</VerticalAimHigh>
+		</AmmoOnArmorInteraction>
+	  
+		<!--Anna Melee-->
+			<AmmoOnArmorInteraction id="Anna_MeleeOnUnarmored" ammoType="Anna_Melee" armorType="Unarmored" type="melee">
+		  <Damage>10</Damage>
+		  <Kinetic>0.7</Kinetic>
+		</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="Anna_MeleeOnLight" ammoType="Anna_Melee" armorType="Light" type="melee">
+		  <Damage>5</Damage>
+		  <Kinetic>0.5</Kinetic>
+		  <Effectiveness>-1</Effectiveness>
+		</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="Anna_MeleeOnMedium" ammoType="Anna_Melee" armorType="Medium" type="melee">
+		  <Damage>5</Damage>
+		  <Kinetic>0</Kinetic>
+		  <Effectiveness>-1</Effectiveness>
+		</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="Anna_MeleeOnHeavy" ammoType="Anna_Melee" armorType="Heavy" type="melee">
+		  <Damage>1</Damage>
+		  <Kinetic>0</Kinetic>
+		  <Effectiveness>-1</Effectiveness>
+		</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="Anna_MeleeOnStructure" ammoType="Anna_Melee" armorType="Structure" type="melee">
+		  <Damage>5</Damage>
+		  <Kinetic>0</Kinetic>
+		  <Effectiveness>-1</Effectiveness>
+		</AmmoOnArmorInteraction>
+
+		<!--Anna Wojtek Melee-->
+		<AmmoOnArmorInteraction id="Anna_WojtekMeleeOnUnarmored" ammoType="Anna_WojtekMelee" armorType="Unarmored" type="melee">
+			<Damage>40</Damage>
+			<Kinetic>1.1</Kinetic>
+			<Effectiveness>1</Effectiveness>
+		</AmmoOnArmorInteraction>
+		<AmmoOnArmorInteraction id="Anna_WojtekMeleeOnLight" ammoType="Anna_WojtekMelee" armorType="Light" type="melee">
+			<Damage>20</Damage>
+			<Kinetic>0</Kinetic>
+		</AmmoOnArmorInteraction>
+		<AmmoOnArmorInteraction id="Anna_WojtekMeleeOnMedium" ammoType="Anna_WojtekMelee" armorType="Medium" type="melee">
+			<Damage>10</Damage>
+			<Kinetic>0</Kinetic>
+		</AmmoOnArmorInteraction>
+		<AmmoOnArmorInteraction id="Anna_WojtekMeleeOnHeavy" ammoType="Anna_WojtekMelee" armorType="Heavy" type="melee">
+			<Damage>10</Damage>
+			<Kinetic>0</Kinetic>
+		</AmmoOnArmorInteraction>
+		<AmmoOnArmorInteraction id="Anna_WojtekMeleeOnStructure" ammoType="Anna_WojtekMelee" armorType="Structure" type="melee">
+		  <Damage>15</Damage>
+		  <Kinetic>0</Kinetic>
+		</AmmoOnArmorInteraction>
+	  
+	<!--Rebel Leader-->
+		<!--Rebel Cannon-->
+			<AmmoOnArmorInteraction id="Rebel_GunShellOnUnarmored" ammoType="Rebel_GunShell" armorType="Unarmored">
+			  <Damage>100</Damage>
+			  <Kinetic>1.3</Kinetic>
+			  <Piercing>False</Piercing>
+			  <VerticalAim>0.2</VerticalAim>
+			  <VerticalAimHigh>0.7</VerticalAimHigh>
+			</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="Rebel_GunShellOnLight" ammoType="Rebel_GunShell" armorType="Light">
+			  <Damage>100</Damage>
+			  <Kinetic>0.5</Kinetic>
+			  <Piercing>False</Piercing>
+			  <VerticalAim>0.5</VerticalAim>
+			  <VerticalAimHigh>0.5</VerticalAimHigh>
+			</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="Rebel_GunShellOnMedium" ammoType="Rebel_GunShell" armorType="Medium">
+			  <Damage>100</Damage>
+			  <Kinetic>0.5</Kinetic>
+			  <Piercing>False</Piercing>
+			  <VerticalAim>0.5</VerticalAim>
+			  <VerticalAimHigh>0.5</VerticalAimHigh>
+			</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="Rebel_GunShellOnHeavy" ammoType="Rebel_GunShell" armorType="Heavy">
+			  <Damage>100</Damage>
+			  <Kinetic>0.25</Kinetic>
+			  <Piercing>False</Piercing>
+			  <VerticalAim>0.5</VerticalAim>
+			  <VerticalAimHigh>0.5</VerticalAimHigh>
+				<Effectiveness>1</Effectiveness>
+			</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="Rebel_GunShellOnStructure" ammoType="Rebel_GunShell" armorType="Structure">
+			  <Damage>75</Damage>
+			  <Kinetic>0.25</Kinetic>
+			  <Piercing>False</Piercing>
+			  <VerticalAim>0.2</VerticalAim>
+			  <VerticalAimHigh>0.2</VerticalAimHigh>
+			</AmmoOnArmorInteraction>
+
+		<!-- Rebel Melee-->
+		<AmmoOnArmorInteraction id="Rebel_MeleeOnUnarmored" ammoType="Rebel_Melee" armorType="Unarmored" type="melee">
+			<Damage>150</Damage>
+			<Kinetic>1.5</Kinetic>
+		</AmmoOnArmorInteraction>
+		<AmmoOnArmorInteraction id="Rebel_MeleeOnLight" ammoType="Rebel_Melee" armorType="Light" type="melee">
+			<Damage>150</Damage>
+			<Kinetic>15</Kinetic>
+		</AmmoOnArmorInteraction>
+		<AmmoOnArmorInteraction id="Rebel_MeleeOnMedium" ammoType="Rebel_Melee" armorType="Medium" type="melee">
+			<Damage>120</Damage>
+			<Kinetic>15</Kinetic>
+		</AmmoOnArmorInteraction>
+		<AmmoOnArmorInteraction id="Rebel_MeleeOnHeavy" ammoType="Rebel_Melee" armorType="Heavy" type="melee">
+			<Damage>100</Damage>
+			<Kinetic>15</Kinetic>
+			<Effectiveness>1</Effectiveness>
+		</AmmoOnArmorInteraction>
+		<AmmoOnArmorInteraction id="Rebel_MeleeOnStructure" ammoType="Rebel_Melee" armorType="Structure" type="melee">
+		  <Damage>80</Damage>
+		  <Kinetic>15</Kinetic>
+		</AmmoOnArmorInteraction>
+
+		<!-- Rebel Melee Series-->
+			<AmmoOnArmorInteraction id="Rebel_MeleeSOnUnarmored" ammoType="Rebel_MeleeSeries" armorType="Unarmored" type="melee">
+				<Damage>50</Damage>
+				<Kinetic>1.5</Kinetic>
+			</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="Rebel_MeleeSOnLight" ammoType="Rebel_MeleeSeries" armorType="Light" type="melee">
+				<Damage>50</Damage>
+				<Kinetic>15</Kinetic>
+			</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="Rebel_MeleeSOnMedium" ammoType="Rebel_MeleeSeries" armorType="Medium" type="melee">
+				<Damage>40</Damage>
+				<Kinetic>15</Kinetic>
+			</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="Rebel_MeleeSOnHeavy" ammoType="Rebel_MeleeSeries" armorType="Heavy" type="melee">
+				<Damage>35</Damage>
+				<Kinetic>15</Kinetic>
+				<Effectiveness>1</Effectiveness>
+			</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="Rebel_MeleeSOnStructure" ammoType="Rebel_MeleeSeries" armorType="Structure" type="melee">
+				<Damage>30</Damage>
+				<Kinetic>15</Kinetic>
+			</AmmoOnArmorInteraction>
+
+		<!-- Rebel Melee Series Splash-->
+			<AmmoOnArmorInteraction id="Rebel_MeleeSplashSOnUnarmored" ammoType="Rebel_MeleeSeriesSplash" armorType="Unarmored" type="melee">
+				<Damage>150</Damage>
+				<Kinetic>1.5</Kinetic>
+			</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="Rebel_MeleeSplashSOnLight" ammoType="Rebel_MeleeSeriesSplash" armorType="Light" type="melee">
+				<Damage>150</Damage>
+				<Kinetic>15</Kinetic>
+			</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="Rebel_MeleeSplashSOnMedium" ammoType="Rebel_MeleeSeriesSplash" armorType="Medium" type="melee">
+				<Damage>120</Damage>
+				<Kinetic>15</Kinetic>
+			</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="Rebel_MeleeSplashSOnHeavy" ammoType="Rebel_MeleeSeriesSplash" armorType="Heavy" type="melee">
+				<Damage>100</Damage>
+				<Kinetic>15</Kinetic>
+			</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="Rebel_MeleeSplashSOnStructure" ammoType="Rebel_MeleeSeriesSplash" armorType="Structure" type="melee">
+				<Damage>50</Damage>
+				<Kinetic>15</Kinetic>
+			</AmmoOnArmorInteraction>
+
+		<!-- Rebel Dash Impact-->
+			<AmmoOnArmorInteraction id="Rebel_DashDmgOnUnarmored" ammoType="Rebel_DashDmg" armorType="Unarmored" type="melee">
+				<Damage>100</Damage>
+				<Kinetic>1.5</Kinetic>
+			</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="Rebel_DashDmgOnLight" ammoType="Rebel_DashDmg" armorType="Light" type="melee">
+				<Damage>100</Damage>
+				<Kinetic>15</Kinetic>
+			</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="Rebel_DashDmgOnMedium" ammoType="Rebel_DashDmg" armorType="Medium" type="melee">
+				<Damage>75</Damage>
+				<Kinetic>15</Kinetic>
+			</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="Rebel_DashDmgOnHeavy" ammoType="Rebel_DashDmg" armorType="Heavy" type="melee">
+				<Damage>75</Damage>
+				<Kinetic>15</Kinetic>
+			</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="Rebel_DashDmgOnStructure" ammoType="Rebel_DashDmg" armorType="Structure" type="melee">
+				<Damage>50</Damage>
+				<Kinetic>15</Kinetic>
+			</AmmoOnArmorInteraction>
+
+	<!--Cavalry Commander-->
+		<!--Cavalry Rifle-->
+			<AmmoOnArmorInteraction id="CavRifleOnUnarmored" ammoType="Cav_RifleCartridge" armorType="Unarmored">
+		<Effectiveness>1</Effectiveness>
+		<Damage>23</Damage>
+		<Kinetic>1</Kinetic>
+		<Piercing>False</Piercing>
+		<VerticalAim>0.5</VerticalAim>
+		<VerticalAimHigh>0.9</VerticalAimHigh>
+	</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="CavRifleOnLight" ammoType="Cav_RifleCartridge" armorType="Light">
+		<Damage>3</Damage>
+		<Kinetic>0</Kinetic>
+		<Piercing>False</Piercing>
+		<VerticalAim>0.5</VerticalAim>
+		<VerticalAimHigh>0.5</VerticalAimHigh>
+	</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="CavRifleOnMedium" ammoType="Cav_RifleCartridge" armorType="Medium">
+		<Damage>1</Damage>
+		<Kinetic>0</Kinetic>
+		<Piercing>False</Piercing>
+		<VerticalAim>0.5</VerticalAim>
+		<VerticalAimHigh>0.5</VerticalAimHigh>
+    <Effectiveness>-1</Effectiveness>
+	</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="CavRifleOnHeavy" ammoType="Cav_RifleCartridge" armorType="Heavy">
+		<Damage>0.5</Damage>
+		<Kinetic>0</Kinetic>
+		<Piercing>False</Piercing>
+		<VerticalAim>0.5</VerticalAim>
+		<VerticalAimHigh>0.5</VerticalAimHigh>
+    <Effectiveness>-1</Effectiveness>
+	</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="CavRifleOnStructure" ammoType="Cav_RifleCartridge" armorType="Structure">
+		<Damage>1</Damage>
+		<Kinetic>0</Kinetic>
+		<Piercing>False</Piercing>
+		<VerticalAim>0.5</VerticalAim>
+		<VerticalAimHigh>0.5</VerticalAimHigh>
+    <Effectiveness>-1</Effectiveness>
+	</AmmoOnArmorInteraction>
+	  
+	<!--Cavalry Bomb Explosion-->
+	<AmmoOnArmorInteraction id="CavBombOnUnarmored" ammoType="Cav_Bomb" armorType="Unarmored" type="explosive">
+		<Damage>20</Damage>
+		<Kinetic>1.3</Kinetic>
+		<Piercing>False</Piercing>
+	</AmmoOnArmorInteraction>
+	<AmmoOnArmorInteraction id="CavBombOnLight" ammoType="Cav_Bomb" armorType="Light" type="explosive">
+		<Damage>43</Damage>
+		<Kinetic>0.5</Kinetic>
+		<Piercing>False</Piercing>
+	</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="CavBombOnMedium" ammoType="Cav_Bomb" armorType="Medium" type="explosive">
+		<Damage>30</Damage>
+		<Kinetic>0.5</Kinetic>
+		<Piercing>False</Piercing>
+	</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="CavBombOnHeavy" ammoType="Cav_Bomb" armorType="Heavy" type="explosive">
+		<Damage>10</Damage>
+		<Kinetic>0.25</Kinetic>
+		<Piercing>False</Piercing>
+	</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="CavBombOnStructure" ammoType="Cav_Bomb" armorType="Structure" type="explosive">
+		<Damage>10</Damage>
+		<Kinetic>0.25</Kinetic>
+		<Piercing>False</Piercing>
+	</AmmoOnArmorInteraction>
+
+	<!--Cavalry Bomb Projectile-->
+	<AmmoOnArmorInteraction id="CavBombProjectileOnUnarmored" ammoType="Cav_BombProjectile" armorType="Unarmored">
+		<Damage>1</Damage>
+		<Kinetic>0</Kinetic>
+		<Piercing>False</Piercing>
+  	</AmmoOnArmorInteraction>
+	<AmmoOnArmorInteraction id="CavBombProjectileOnLight" ammoType="Cav_BombProjectile" armorType="Light">
+		<Damage>1</Damage>
+		<Kinetic>0</Kinetic>
+		<Piercing>False</Piercing>
+  	</AmmoOnArmorInteraction>
+	<AmmoOnArmorInteraction id="CavBombProjectileOnMedium" ammoType="Cav_BombProjectile" armorType="Medium">
+		<Damage>1</Damage>
+		<Kinetic>0</Kinetic>
+		<Piercing>False</Piercing>
+  	</AmmoOnArmorInteraction>
+	<AmmoOnArmorInteraction id="CavBombProjectileOnHeavy" ammoType="Cav_BombProjectile" armorType="Heavy">
+		<Damage>1</Damage>
+		<Kinetic>0.25</Kinetic>
+		<Piercing>False</Piercing>
+  	</AmmoOnArmorInteraction>
+	<AmmoOnArmorInteraction id="CavBombOnProjectileStructure" ammoType="Cav_BombProjectile" armorType="Structure">
+		<Damage>1</Damage>
+		<Kinetic>0</Kinetic>
+		<Piercing>False</Piercing>
+  	</AmmoOnArmorInteraction>
+
+		<!--Cavalry Charge-->
+			<AmmoOnArmorInteraction id="CavChargeOnUnarmored" ammoType="Cav_ChargeDmg" armorType="Unarmored">
+				<Effectiveness>1</Effectiveness>
+				<Damage>50</Damage>
+				<Kinetic>1</Kinetic>
+				<Piercing>False</Piercing>
+				<VerticalAim>0.5</VerticalAim>
+				<VerticalAimHigh>0.9</VerticalAimHigh>
+			</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="CavChargeOnLight" ammoType="Cav_ChargeDmg" armorType="Light">
+				<Damage>20</Damage>
+				<Kinetic>0</Kinetic>
+				<Piercing>False</Piercing>
+				<VerticalAim>0.5</VerticalAim>
+				<VerticalAimHigh>0.5</VerticalAimHigh>
+			</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="CavChargeOnMedium" ammoType="Cav_ChargeDmg" armorType="Medium">
+				<Damage>10</Damage>
+				<Kinetic>0</Kinetic>
+				<Piercing>False</Piercing>
+				<VerticalAim>0.5</VerticalAim>
+				<VerticalAimHigh>0.5</VerticalAimHigh>
+				<Effectiveness>-1</Effectiveness>
+			</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="CavChargeOnHeavy" ammoType="Cav_ChargeDmg" armorType="Heavy">
+				<Damage>5</Damage>
+				<Kinetic>0</Kinetic>
+				<Piercing>False</Piercing>
+				<VerticalAim>0.5</VerticalAim>
+				<VerticalAimHigh>0.5</VerticalAimHigh>
+				<Effectiveness>-1</Effectiveness>
+			</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="CavChargeOnStructure" ammoType="Cav_ChargeDmg" armorType="Structure">
+				<Damage>5</Damage>
+				<Kinetic>0</Kinetic>
+				<Piercing>False</Piercing>
+				<VerticalAim>0.5</VerticalAim>
+				<VerticalAimHigh>0.5</VerticalAimHigh>
+			</AmmoOnArmorInteraction>
+
+		<!--Cavalry Melee-->
+			<AmmoOnArmorInteraction id="CavMeleeOnUnarmored" ammoType="Cav_Melee" armorType="Unarmored" type="melee">
+		<Damage>40</Damage>
+		<Kinetic>0.7</Kinetic>
+	</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="CavMeleeOnLight" ammoType="Cav_Melee" armorType="Light" type="melee">
+		<Damage>30</Damage>
+		<Kinetic>0</Kinetic>
+	</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="CavMeleeOnMedium" ammoType="Cav_Melee" armorType="Medium" type="melee">
+		<Damage>30</Damage>
+		<Kinetic>0</Kinetic>
+				<Effectiveness>1</Effectiveness>
+	</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="CavMeleeOnHeavy" ammoType="Cav_Melee" armorType="Heavy" type="melee">
+		<Damage>10</Damage>
+		<Kinetic>0</Kinetic>
+	</AmmoOnArmorInteraction>	
+			<AmmoOnArmorInteraction id="CavMeleeOnStructure" ammoType="Cav_Melee" armorType="Structure" type="melee">
+		<Damage>10</Damage>
+		<Kinetic>0</Kinetic>
+	</AmmoOnArmorInteraction>	
+
+<!--Saxony-->	  
+	<!--Gunter-->
+		<!--Gunter Handgun-->
+		<AmmoOnArmorInteraction id="GHandgunOnUnarmored" ammoType="Gunter_HandgunShell" armorType="Unarmored">
+			<Damage>75</Damage>
+			<Kinetic>1.3</Kinetic>
+			<Piercing>False</Piercing>
+			<VerticalAim>0.5</VerticalAim>
+			<VerticalAimHigh>0.9</VerticalAimHigh>
+		</AmmoOnArmorInteraction>
+		<AmmoOnArmorInteraction id="GHandgunOnLight" ammoType="Gunter_HandgunShell" armorType="Light">
+			<Damage>75</Damage>
+			<Kinetic>0.5</Kinetic>
+			<Piercing>False</Piercing>
+			<VerticalAim>0.5</VerticalAim>
+			<VerticalAimHigh>0.5</VerticalAimHigh>
+		</AmmoOnArmorInteraction>
+		<AmmoOnArmorInteraction id="GHandgunOnMedium" ammoType="Gunter_HandgunShell" armorType="Medium">
+			<Damage>75</Damage>
+			<Kinetic>0.5</Kinetic>
+			<Piercing>False</Piercing>
+			<VerticalAim>0.5</VerticalAim>
+			<VerticalAimHigh>0.5</VerticalAimHigh>
+  		</AmmoOnArmorInteraction>
+		<AmmoOnArmorInteraction id="GHandgunOnHeavy" ammoType="Gunter_HandgunShell" armorType="Heavy">
+			<Damage>75</Damage>
+			<Kinetic>0.25</Kinetic>
+			<Piercing>False</Piercing>
+			<VerticalAim>0.5</VerticalAim>
+			<VerticalAimHigh>0.5</VerticalAimHigh>
+			<Effectiveness>1</Effectiveness>
+		</AmmoOnArmorInteraction>
+		<AmmoOnArmorInteraction id="GHandgunOnStructure" ammoType="Gunter_HandgunShell" armorType="Structure">
+			<Damage>35</Damage>
+			<Kinetic>0.25</Kinetic>
+			<Piercing>False</Piercing>
+			<VerticalAim>0.2</VerticalAim>
+			<VerticalAimHigh>0.2</VerticalAimHigh>
+		</AmmoOnArmorInteraction>
+		
+		<!--Gunter Splash-->
+			<AmmoOnArmorInteraction id="GSplashOnUnarmored" ammoType="Gunter_Splash" armorType="Unarmored" type="explosive">
+    <Damage>50</Damage>
+    <Kinetic>1.3</Kinetic>
+				<Effectiveness>1</Effectiveness>
+  </AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="GSplashOnLight" ammoType="Gunter_Splash" armorType="Light" type="explosive">
+    <Damage>30</Damage>
+    <Kinetic>0</Kinetic>
+  </AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="GSplashOnMedium" ammoType="Gunter_Splash" armorType="Medium" type="explosive">
+    <Damage>30</Damage>
+    <Kinetic>0</Kinetic>
+  </AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="GSplashOnHeavy" ammoType="Gunter_Splash" armorType="Heavy" type="explosive">
+    <Damage>30</Damage>
+    <Kinetic>0</Kinetic>
+    <Effectiveness>-1</Effectiveness>
+  </AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="GSplashOnStructure" ammoType="Gunter_Splash" armorType="Structure" type="explosive">
+    <Damage>30</Damage>
+    <Kinetic>0</Kinetic>
+  </AmmoOnArmorInteraction>
+ 
+		<!--Gunter Melee-->
+			<AmmoOnArmorInteraction id="GunterMeleeOnUnarmored" ammoType="Gunter_Melee" armorType="Unarmored" type="melee">
+		  <Damage>50</Damage>
+		  <Kinetic>0.7</Kinetic>
+		</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="GunterMeleeOnLight" ammoType="Gunter_Melee" armorType="Light" type="melee">
+		  <Damage>50</Damage>
+		  <Kinetic>0</Kinetic>
+		</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="GunterMeleeOnMedium" ammoType="Gunter_Melee" armorType="Medium" type="melee">
+		  <Damage>50</Damage>
+		  <Kinetic>0</Kinetic>
+		</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="GunterMeleeOnHeavy" ammoType="Gunter_Melee" armorType="Heavy" type="melee">
+		  <Damage>50</Damage>
+		  <Kinetic>0</Kinetic>
+		</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="GunterMeleeOnStructure" ammoType="Gunter_Melee" armorType="Structure" type="melee">
+		  <Damage>20</Damage>
+		  <Kinetic>0</Kinetic>
+		</AmmoOnArmorInteraction>
+
+		<!--Gunter Stab-->
+			<AmmoOnArmorInteraction id="StabOnUnarmored" ammoType="Gunter_ApStab" armorType="Unarmored" type="melee">
+				<Damage>150</Damage>
+				<Kinetic>1.3</Kinetic>
+				<Piercing>False</Piercing>
+				<VerticalAim>0</VerticalAim>
+				<VerticalAimHigh>0</VerticalAimHigh>
+			</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="StabOnLight" ammoType="Gunter_ApStab" armorType="Light" type="melee">
+				<Damage>150</Damage>
+				<Kinetic>0.5</Kinetic>
+				<Piercing>False</Piercing>
+				<VerticalAim>0</VerticalAim>
+				<VerticalAimHigh>0</VerticalAimHigh>
+			</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="StabOnMedium" ammoType="Gunter_ApStab" armorType="Medium" type="melee">
+				<Damage>150</Damage>
+				<Kinetic>0.5</Kinetic>
+				<Piercing>False</Piercing>
+				<VerticalAim>0</VerticalAim>
+				<VerticalAimHigh>0</VerticalAimHigh>
+			</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="StabOnHeavy" ammoType="Gunter_ApStab" armorType="Heavy" type="melee">
+				<Damage>100</Damage>
+				<Kinetic>0.25</Kinetic>
+				<Piercing>False</Piercing>
+				<VerticalAim>0</VerticalAim>
+				<VerticalAimHigh>0</VerticalAimHigh>
+				<Effectiveness>1</Effectiveness>
+			</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="StabOnStructure" ammoType="Gunter_ApStab" armorType="Structure" type="melee">
+				<Damage>100</Damage>
+				<Kinetic>0.25</Kinetic>
+				<Piercing>False</Piercing>
+				<VerticalAim>0.2</VerticalAim>
+				<VerticalAimHigh>0.2</VerticalAimHigh>
+			</AmmoOnArmorInteraction>
+
+		<!--Gunter TagNacht|Shadowguard-->
+			<AmmoOnArmorInteraction id="ShadowOnUnarmored" ammoType="Gunter_ShadowGuardDmg" armorType="Unarmored" type="explosive">
+				<Damage>50</Damage>
+				<Kinetic>1.3</Kinetic>
+				<Piercing>False</Piercing>
+				<VerticalAim>0</VerticalAim>
+				<VerticalAimHigh>0</VerticalAimHigh>
+				<Effectiveness>1</Effectiveness>
+			</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="ShadowOnLight" ammoType="Gunter_ShadowGuardDmg" armorType="Light" type="explosive">
+				<Damage>20</Damage>
+				<Kinetic>0</Kinetic>
+				<Piercing>False</Piercing>
+				<VerticalAim>0.5</VerticalAim>
+				<VerticalAimHigh>0.5</VerticalAimHigh>
+			</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="ShadowOnMedium" ammoType="Gunter_ShadowGuardDmg" armorType="Medium" type="explosive">
+				<Damage>20</Damage>
+				<Kinetic>0</Kinetic>
+				<Piercing>False</Piercing>
+				<VerticalAim>0.5</VerticalAim>
+				<VerticalAimHigh>0.5</VerticalAimHigh>
+			</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="ShadowOnHeavy" ammoType="Gunter_ShadowGuardDmg" armorType="Heavy" type="explosive">
+				<Damage>10</Damage>
+				<Kinetic>0</Kinetic>
+				<Piercing>False</Piercing>
+				<VerticalAim>0.5</VerticalAim>
+				<VerticalAimHigh>0.5</VerticalAimHigh>
+				<Effectiveness>-1</Effectiveness>
+			</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="ShadowOnStructure" ammoType="Gunter_ShadowGuardDmg" armorType="Structure" type="explosive">
+				<Damage>1</Damage>
+				<Kinetic>0</Kinetic>
+				<Piercing>False</Piercing>
+				<VerticalAim>0.2</VerticalAim>
+				<VerticalAimHigh>0.2</VerticalAimHigh>
+				<Effectiveness>-1</Effectiveness>
+			</AmmoOnArmorInteraction>
+
+	<!--Prince-->
+		<!--Prince Gatling-->
+			<AmmoOnArmorInteraction id="PGCOnUnarmored" ammoType="Prince_GatlingCartridge" armorType="Unarmored">
+		  <Damage>40</Damage>
+		  <Kinetic>0.8</Kinetic>
+		  <Piercing>False</Piercing>
+		  <VerticalAim>0.5</VerticalAim>
+		  <VerticalAimHigh>0.9</VerticalAimHigh>
+		</AmmoOnArmorInteraction>
+		<AmmoOnArmorInteraction id="PGCOnLight" ammoType="Prince_GatlingCartridge" armorType="Light">
+		  <Damage>40</Damage>
+		  <Kinetic>0.5</Kinetic>
+		  <Piercing>False</Piercing>
+		  <VerticalAim>0.5</VerticalAim>
+		  <VerticalAimHigh>0.5</VerticalAimHigh>
+		</AmmoOnArmorInteraction>
+		<AmmoOnArmorInteraction id="PGCOnMedium" ammoType="Prince_GatlingCartridge" armorType="Medium">
+		  <Effectiveness>1</Effectiveness>
+		  <Damage>30</Damage>
+		  <Kinetic>0.3</Kinetic>
+		  <Piercing>False</Piercing>
+		  <VerticalAim>0.5</VerticalAim>
+		  <VerticalAimHigh>0.5</VerticalAimHigh>
+		</AmmoOnArmorInteraction>
+		<AmmoOnArmorInteraction id="PGCOnHeavy" ammoType="Prince_GatlingCartridge" armorType="Heavy">
+		  <Damage>30</Damage>
+		  <Kinetic>0</Kinetic>
+		  <Piercing>False</Piercing>
+		  <VerticalAim>0.5</VerticalAim>
+		  <VerticalAimHigh>0.5</VerticalAimHigh>
+			<Effectiveness>1</Effectiveness>
+		</AmmoOnArmorInteraction>
+		<AmmoOnArmorInteraction id="PGCOnStructure" ammoType="Prince_GatlingCartridge" armorType="Structure">
+		  <Damage>10</Damage>
+		  <Kinetic>0</Kinetic>
+		  <Piercing>False</Piercing>
+		  <VerticalAim>0.5</VerticalAim>
+		  <VerticalAimHigh>0.5</VerticalAimHigh>
+		</AmmoOnArmorInteraction>
+
+		<!--Prince Gatling Sweep-->
+		<AmmoOnArmorInteraction id="PGSCOnUnarmored" ammoType="Prince_GatlingSweepCartridge" armorType="Unarmored" type="explosive">
+		  <Damage>40</Damage>
+		  <Kinetic>0.8</Kinetic>
+		  <Piercing>False</Piercing>
+		  <VerticalAim>0.5</VerticalAim>
+		  <VerticalAimHigh>0.9</VerticalAimHigh>
+		</AmmoOnArmorInteraction>
+		<AmmoOnArmorInteraction id="PGSCOnLight" ammoType="Prince_GatlingSweepCartridge" armorType="Light" type="explosive">
+		  <Damage>20</Damage>
+		  <Kinetic>0.5</Kinetic>
+		  <Piercing>False</Piercing>
+		  <VerticalAim>0.5</VerticalAim>
+		  <VerticalAimHigh>0.5</VerticalAimHigh>
+		</AmmoOnArmorInteraction>
+		<AmmoOnArmorInteraction id="PGSCOnMedium" ammoType="Prince_GatlingSweepCartridge" armorType="Medium" type="explosive">
+		  <Effectiveness>1</Effectiveness>
+		  <Damage>15</Damage>
+		  <Kinetic>0.3</Kinetic>
+		  <Piercing>False</Piercing>
+		  <VerticalAim>0.5</VerticalAim>
+		  <VerticalAimHigh>0.5</VerticalAimHigh>
+		</AmmoOnArmorInteraction>
+		<AmmoOnArmorInteraction id="PGSCOnHeavy" ammoType="Prince_GatlingSweepCartridge" armorType="Heavy" type="explosive">
+		  <Damage>10</Damage>
+		  <Kinetic>0</Kinetic>
+		  <Piercing>False</Piercing>
+		  <VerticalAim>0.5</VerticalAim>
+		  <VerticalAimHigh>0.5</VerticalAimHigh>
+			<Effectiveness>1</Effectiveness>
+		</AmmoOnArmorInteraction>
+		<AmmoOnArmorInteraction id="PGSCOnStructure" ammoType="Prince_GatlingSweepCartridge" armorType="Structure" type="explosive">
+		  <Damage>7</Damage>
+		  <Kinetic>0</Kinetic>
+		  <Piercing>False</Piercing>
+		  <VerticalAim>0.5</VerticalAim>
+		  <VerticalAimHigh>0.5</VerticalAimHigh>
+		</AmmoOnArmorInteraction>
+
+		<!--Prince Gatling Sweep Splash-->
+		<AmmoOnArmorInteraction id="PSwSOnUnarmored" ammoType="PrinceSweepSplash" armorType="Unarmored" type="explosive">
+		  <Damage>50</Damage>
+		  <Kinetic>0.8</Kinetic>
+		  <Piercing>False</Piercing>
+		  <VerticalAim>0.5</VerticalAim>
+		  <VerticalAimHigh>0.9</VerticalAimHigh>
+		</AmmoOnArmorInteraction>
+		<AmmoOnArmorInteraction id="PSwSOnLight" ammoType="PrinceSweepSplash" armorType="Light" type="explosive">
+		  <Damage>30</Damage>
+		  <Kinetic>0.5</Kinetic>
+		  <Piercing>False</Piercing>
+		  <VerticalAim>0.5</VerticalAim>
+		  <VerticalAimHigh>0.5</VerticalAimHigh>
+		</AmmoOnArmorInteraction>
+		<AmmoOnArmorInteraction id="PSwSOnMedium" ammoType="PrinceSweepSplash" armorType="Medium" type="explosive">
+		  <Effectiveness>1</Effectiveness>
+		  <Damage>30</Damage>
+		  <Kinetic>0.3</Kinetic>
+		  <Piercing>False</Piercing>
+		  <VerticalAim>0.5</VerticalAim>
+		  <VerticalAimHigh>0.5</VerticalAimHigh>
+		</AmmoOnArmorInteraction>
+		<AmmoOnArmorInteraction id="PSwSOnHeavy" ammoType="PrinceSweepSplash" armorType="Heavy" type="explosive">
+		  <Damage>20</Damage>
+		  <Kinetic>0</Kinetic>
+		  <Piercing>False</Piercing>
+		  <VerticalAim>0.5</VerticalAim>
+		  <VerticalAimHigh>0.5</VerticalAimHigh>
+			<Effectiveness>1</Effectiveness>
+		</AmmoOnArmorInteraction>
+		<AmmoOnArmorInteraction id="PSwSOnStructure" ammoType="PrinceSweepSplash" armorType="Structure" type="explosive">
+		  <Damage>15</Damage>
+		  <Kinetic>0</Kinetic>
+		  <Piercing>False</Piercing>
+		  <VerticalAim>0.5</VerticalAim>
+		  <VerticalAimHigh>0.5</VerticalAimHigh>
+		</AmmoOnArmorInteraction>
+
+		<!--Prince Rockets-->
+			<AmmoOnArmorInteraction id="PrinceRocketsOnUnarmored" ammoType="Prince_Rocket" armorType="Unarmored" type="explosive">
+		  <Damage>30</Damage>
+		  <Kinetic>0.8</Kinetic>
+		  <Piercing>False</Piercing>
+		</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="PrinceRocketsOnLight" ammoType="Prince_Rocket" armorType="Light" type="explosive">
+		  <Damage>20</Damage>
+		  <Kinetic>0.2</Kinetic>
+		  <Piercing>False</Piercing>
+		</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="PrinceRocketsOnMedium" ammoType="Prince_Rocket" armorType="Medium" type="explosive">
+		  <Damage>20</Damage>
+		  <Kinetic>0</Kinetic>
+		  <Piercing>False</Piercing>
+			<Effectiveness>1</Effectiveness>
+		</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="PrinceRocketsOnHeavy" ammoType="Prince_Rocket" armorType="Heavy" type="explosive">
+		  <Damage>10</Damage>
+		  <Kinetic>0</Kinetic>
+		  <Piercing>False</Piercing>
+		</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="PrinceRocketsOnStructure" ammoType="Prince_Rocket" armorType="Structure" type="explosive">
+		  <Damage>10</Damage>
+		  <Kinetic>0</Kinetic>
+		  <Piercing>False</Piercing>
+		</AmmoOnArmorInteraction>
+	  
+	<!--Brunhilde-->
+		<!--Brunhilde Top Cannon-->
+			<AmmoOnArmorInteraction id="BCSOnUnarmored" ammoType="Brunh_CannonShell" armorType="Unarmored">
+		  <Damage>150</Damage>
+		  <Kinetic>2</Kinetic>
+		  <Piercing>False</Piercing>
+		  <VerticalAim>0.7</VerticalAim>
+		  <VerticalAimHigh>0.9</VerticalAimHigh>
+		</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="BCSOnLight" ammoType="Brunh_CannonShell" armorType="Light">
+		  <Damage>120</Damage>
+		  <Kinetic>0.5</Kinetic>
+		  <Piercing>False</Piercing>
+		  <VerticalAim>0.5</VerticalAim>
+		  <VerticalAimHigh>0.5</VerticalAimHigh>
+		</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="BCSOnMedium" ammoType="Brunh_CannonShell" armorType="Medium">
+		  <Damage>100</Damage>
+		  <Kinetic>0.5</Kinetic>
+		  <Piercing>False</Piercing>
+		  <VerticalAim>0.5</VerticalAim>
+		  <VerticalAimHigh>0.5</VerticalAimHigh>
+		</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="BCSOnHeavy" ammoType="Brunh_CannonShell" armorType="Heavy">
+		  <Damage>80</Damage>
+		  <Kinetic>0.5</Kinetic>
+		  <Piercing>False</Piercing>
+		  <VerticalAim>0.5</VerticalAim>
+		  <VerticalAimHigh>0.5</VerticalAimHigh>
+			<Effectiveness>1</Effectiveness>
+		</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="BCSOnStructure" ammoType="Brunh_CannonShell" armorType="Structure">
+		  <Damage>40</Damage>
+		  <Kinetic>0.5</Kinetic>
+		  <Piercing>False</Piercing>
+		  <VerticalAim>0.5</VerticalAim>
+		  <VerticalAimHigh>0.5</VerticalAimHigh>
+		</AmmoOnArmorInteraction>
+
+		<!--Brunhilde Broadside Shell-->
+			<AmmoOnArmorInteraction id="BBCSOnUnarmored" ammoType="Brunh_BroadsideShell" armorType="Unarmored">
+		  <Damage>20</Damage>
+		  <Kinetic>1.3</Kinetic>
+		  <Piercing>False</Piercing>
+		  <VerticalAim>0.7</VerticalAim>
+		  <VerticalAimHigh>0.7</VerticalAimHigh>
+		</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="BBCSOnLight" ammoType="Brunh_BroadsideShell" armorType="Light">
+		  <Damage>20</Damage>
+		  <Kinetic>0.5</Kinetic>
+		  <Piercing>False</Piercing>
+		  <VerticalAim>0.5</VerticalAim>
+		  <VerticalAimHigh>0.5</VerticalAimHigh>
+		</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="BBCSOnMedium" ammoType="Brunh_BroadsideShell" armorType="Medium">
+		  <Damage>20</Damage>
+		  <Kinetic>0.5</Kinetic>
+		  <Piercing>False</Piercing>
+		  <VerticalAim>0.5</VerticalAim>
+		  <VerticalAimHigh>0.5</VerticalAimHigh>
+		</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="BBCSOnHeavy" ammoType="Brunh_BroadsideShell" armorType="Heavy">
+		  <Damage>15</Damage>
+		  <Kinetic>0.25</Kinetic>
+		  <Piercing>False</Piercing>
+		  <VerticalAim>0.5</VerticalAim>
+		  <VerticalAimHigh>0.5</VerticalAimHigh>
+			<Effectiveness>1</Effectiveness>
+		</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="BBCSOnStructure" ammoType="Brunh_BroadsideShell" armorType="Structure">
+		  <Damage>7</Damage>
+		  <Kinetic>0.25</Kinetic>
+		  <Piercing>False</Piercing>
+		  <VerticalAim>0.2</VerticalAim>
+		  <VerticalAimHigh>0.2</VerticalAimHigh>
+		</AmmoOnArmorInteraction>
+
+		<!--Brunhilde Longshot Grenade-->
+			<AmmoOnArmorInteraction id="BLSGOnUnarmored" ammoType="Brunh_LongShotGrenade" armorType="Unarmored" type="explosive">
+		  <Damage>250</Damage>
+		  <Kinetic>1.3</Kinetic>
+		  <Piercing>False</Piercing>
+		</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="BLSGOnLight" ammoType="Brunh_LongShotGrenade" armorType="Light" type="explosive">
+		  <Damage>200</Damage>
+		  <Kinetic>1.5</Kinetic>
+		  <Piercing>False</Piercing>
+		</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="BLSGOnMedium" ammoType="Brunh_LongShotGrenade" armorType="Medium" type="explosive">
+		  <Damage>150</Damage>
+		  <Kinetic>1</Kinetic>
+		  <Piercing>False</Piercing>
+		</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="BLSGOnHeavy" ammoType="Brunh_LongShotGrenade" armorType="Heavy" type="explosive">
+		  <Damage>100</Damage>
+		  <Kinetic>0.5</Kinetic>
+		  <Piercing>False</Piercing>
+			<Effectiveness>1</Effectiveness>
+		</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="BLSGOnStructure" ammoType="Brunh_LongShotGrenade" armorType="Structure" type="explosive">
+		  <Damage>100</Damage>
+		  <Kinetic>0.5</Kinetic>
+		  <Piercing>False</Piercing>
+		</AmmoOnArmorInteraction>
+
+<!--Rusviet-->
+	<!--Olga-->
+		<!--Olga Melee-->
+			<AmmoOnArmorInteraction id="OlgaMeleeOnUnarmored" ammoType="Olga_Melee" armorType="Unarmored" type="melee">
+		  <Damage>100</Damage>
+		  <Kinetic>0.7</Kinetic>
+		</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="OlgaMeleeOnLight" ammoType="Olga_Melee" armorType="Light" type="melee">
+		  <Damage>40</Damage>
+		  <Kinetic>0</Kinetic>
+		</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="OlgaMeleeOnMedium" ammoType="Olga_Melee" armorType="Medium" type="melee">
+		  <Damage>10</Damage>
+		  <Kinetic>0</Kinetic>
+		  <Effectiveness>-1</Effectiveness>
+		</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="OlgaMeleeOnHeavy" ammoType="Olga_Melee" armorType="Heavy" type="melee">
+		  <Damage>10</Damage>
+		  <Kinetic>0</Kinetic>
+		  <Effectiveness>-1</Effectiveness>
+		</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="OlgaMeleeOnStructure" ammoType="Olga_Melee" armorType="Structure" type="melee">
+		  <Damage>10</Damage>
+		  <Kinetic>0</Kinetic>
+		</AmmoOnArmorInteraction>
+
+		<!--Olga Cartridge-->
+			<AmmoOnArmorInteraction id="OlgaCartridgeOnUnarmored" ammoType="Olga_Cartridge" armorType="Unarmored">
+				<Effectiveness>1</Effectiveness>
+				<Damage>35</Damage>
+				<Kinetic>1</Kinetic>
+				<Piercing>False</Piercing>
+				<VerticalAim>0.5</VerticalAim>
+				<VerticalAimHigh>0.9</VerticalAimHigh>
+			</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="OlgaCartridgeOnLight" ammoType="Olga_Cartridge" armorType="Light">
+				<Damage>10</Damage>
+				<Kinetic>0</Kinetic>
+				<Piercing>False</Piercing>
+				<VerticalAim>0.5</VerticalAim>
+				<VerticalAimHigh>0.5</VerticalAimHigh>
+			</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="OlgaCartridgeOnMedium" ammoType="Olga_Cartridge" armorType="Medium">
+				<Damage>2</Damage>
+				<Kinetic>0</Kinetic>
+				<Piercing>False</Piercing>
+				<VerticalAim>0.5</VerticalAim>
+				<VerticalAimHigh>0.5</VerticalAimHigh>
+				<Effectiveness>-1</Effectiveness>
+			</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="OlgaCartridgeOnHeavy" ammoType="Olga_Cartridge" armorType="Heavy">
+				<Damage>1</Damage>
+				<Kinetic>0</Kinetic>
+				<Piercing>False</Piercing>
+				<VerticalAim>0.5</VerticalAim>
+				<VerticalAimHigh>0.5</VerticalAimHigh>
+			<Effectiveness>-1</Effectiveness>
+			</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="OlgaCartridgeOnStructure" ammoType="Olga_Cartridge" armorType="Structure">
+		<Damage>0.8</Damage>
+		<Kinetic>0</Kinetic>
+		<Piercing>False</Piercing>
+		<VerticalAim>0.5</VerticalAim>
+		<VerticalAimHigh>0.5</VerticalAimHigh>
+	</AmmoOnArmorInteraction>
+
+		<!--Olga Detonator-->
+			<AmmoOnArmorInteraction id="DetonatorOnUnarmored" ammoType="Olga_Detonator" armorType="Unarmored" type="explosive">
+		<Damage>150</Damage>
+		<Kinetic>2</Kinetic>
+		<Piercing>False</Piercing>
+	</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="DetonatorOnLight" ammoType="Olga_Detonator" armorType="Light" type="explosive">
+		<Damage>350</Damage>
+		<Kinetic>1</Kinetic>
+		<Piercing>False</Piercing>
+	</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="DetonatorOnMedium" ammoType="Olga_Detonator" armorType="Medium" type="explosive">
+		<Damage>350</Damage>
+		<Kinetic>0.4</Kinetic>
+		<Piercing>False</Piercing>
+	</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="DetonatorOnHeavy" ammoType="Olga_Detonator" armorType="Heavy" type="explosive">
+		<Damage>250</Damage>
+		<Kinetic>0</Kinetic>
+		<Piercing>False</Piercing>
+				<Effectiveness>1</Effectiveness>
+	</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="DetonatorOnStructure" ammoType="Olga_Detonator" armorType="Structure" type="explosive">
+		<Damage>200</Damage>
+		<Kinetic>0</Kinetic>
+		<Piercing>False</Piercing>
+	</AmmoOnArmorInteraction>
+
+		<!--Changa Melee-->
+			<AmmoOnArmorInteraction id="ChangaOnUnarmored" ammoType="Olga_ChangaMelee" armorType="Unarmored" type="melee">
+			  <Damage>100</Damage>
+			  <Kinetic>0.7</Kinetic>
+				<Effectiveness>1</Effectiveness>
+			</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="ChangaOnLight" ammoType="Olga_ChangaMelee" armorType="Light" type="melee">
+			  <Damage>20</Damage>
+			  <Kinetic>0</Kinetic>
+			</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="ChangaOnMedium" ammoType="Olga_ChangaMelee" armorType="Medium" type="melee">
+			  <Damage>15</Damage>
+			  <Kinetic>0</Kinetic>
+			</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="ChangaOnHeavy" ammoType="Olga_ChangaMelee" armorType="Heavy" type="melee">
+			  <Damage>5</Damage>
+			  <Kinetic>0</Kinetic>
+			  <Effectiveness>-1</Effectiveness>
+			</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="ChangaOnStructure" ammoType="Olga_ChangaMelee" armorType="Structure" type="melee">
+		  <Damage>10</Damage>
+		  <Kinetic>0</Kinetic>
+		</AmmoOnArmorInteraction>
+
+	<!--Brother-->
+		<!--Brother Cartridge-->
+			<AmmoOnArmorInteraction id="BrotherCartridgeOnUnarmored" ammoType="BrotherCartridge" armorType="Unarmored">
+				<Damage>40</Damage>
+				<Kinetic>0.5</Kinetic>
+				<Piercing>False</Piercing>
+				<VerticalAim>0.5</VerticalAim>
+				<VerticalAimHigh>0.9</VerticalAimHigh>
+			</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="BrotherCartridgeOnLight" ammoType="BrotherCartridge" armorType="Light">
+				<Damage>40</Damage>
+				<Kinetic>0.5</Kinetic>
+				<Piercing>False</Piercing>
+				<VerticalAim>0.5</VerticalAim>
+				<VerticalAimHigh>0.5</VerticalAimHigh>
+			</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="BrotherCartridgeOnMedium" ammoType="BrotherCartridge" armorType="Medium">
+				<Damage>40</Damage>
+				<Kinetic>0.5</Kinetic>
+				<Piercing>False</Piercing>
+				<VerticalAim>0.5</VerticalAim>
+				<VerticalAimHigh>0.5</VerticalAimHigh>
+			</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="BrotherCartridgeOnHeavy" ammoType="BrotherCartridge" armorType="Heavy">
+				<Damage>25</Damage>
+				<Kinetic>0.25</Kinetic>
+				<Piercing>False</Piercing>
+				<VerticalAim>0.5</VerticalAim>
+				<VerticalAimHigh>0.5</VerticalAimHigh>
+				<Effectiveness>1</Effectiveness>
+			</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="BrotherCartridgeOnStructure" ammoType="BrotherCartridge" armorType="Structure">
+				<Damage>10</Damage>
+				<Kinetic>0.25</Kinetic>
+				<Piercing>False</Piercing>
+				<VerticalAim>0.2</VerticalAim>
+				<VerticalAimHigh>0.2</VerticalAimHigh>
+			</AmmoOnArmorInteraction>
+  
+  		<!--Brother Melee-->
+			<AmmoOnArmorInteraction id="BrotherMeleeOnUnarmored" ammoType="Brother_Melee" armorType="Unarmored" type="melee">
+		<Damage>50</Damage>
+		<Kinetic>0.7</Kinetic>
+	</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="BrotherMeleeOnLight" ammoType="Brother_Melee" armorType="Light" type="melee">
+		<Damage>50</Damage>
+		<Kinetic>0</Kinetic>
+	</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="BrotherMeleeOnMedium" ammoType="Brother_Melee" armorType="Medium" type="melee">
+		<Damage>50</Damage>
+		<Kinetic>0</Kinetic>
+		<Effectiveness>1</Effectiveness>
+	</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="BrotherMeleeOnHeavy" ammoType="Brother_Melee" armorType="Heavy" type="melee">
+		<Damage>50</Damage>
+		<Kinetic>0</Kinetic>
+	</AmmoOnArmorInteraction>	
+			<AmmoOnArmorInteraction id="BrotherMeleeOnStructure" ammoType="Brother_Melee" armorType="Structure" type="melee">
+		<Damage>50</Damage>
+		<Kinetic>0</Kinetic>
+	</AmmoOnArmorInteraction>	
+  
+		<!--Brother Rocket-->
+			<AmmoOnArmorInteraction id="BrotherRocketOnUnarmored" ammoType="Brother_Rocket" armorType="Unarmored" type="explosive">
+		    <Damage>70</Damage>
+		    <Kinetic>1.5</Kinetic>
+		    <Piercing>False</Piercing>
+	    </AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="BrotherRocketOnLight" ammoType="Brother_Rocket" armorType="Light" type="explosive">
+		    <Damage>150</Damage>
+		    <Kinetic>0.5</Kinetic>
+		    <Piercing>False</Piercing>
+	    </AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="BrotherRocketOnMedium" ammoType="Brother_Rocket" armorType="Medium" type="explosive">
+		    <Damage>150</Damage>
+		    <Kinetic>0.1</Kinetic>
+		    <Piercing>False</Piercing>
+	    </AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="BrotherRocketOnHeavy" ammoType="Brother_Rocket" armorType="Heavy" type="explosive">
+		    <Damage>150</Damage>
+		    <Kinetic>0</Kinetic>
+		    <Piercing>False</Piercing>
+				<Effectiveness>1</Effectiveness>
+	    </AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="BrotherRocketOnStructure" ammoType="Brother_Rocket" armorType="Structure" type="explosive">
+					<Damage>120</Damage>
+					<Kinetic>0</Kinetic>
+					<Piercing>False</Piercing>
+			</AmmoOnArmorInteraction>
+		
+		<!--Brother Chainlightning-->
+			<AmmoOnArmorInteraction id="LightningOnUnarmored" ammoType="Brother_Lightning" armorType="Unarmored">
+		  <Damage>60</Damage>
+		  <Kinetic>1.3</Kinetic>
+		  <Piercing>False</Piercing>
+		  <VerticalAim>0.5</VerticalAim>
+		  <VerticalAimHigh>0.9</VerticalAimHigh>
+		</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="LightningOnLight" ammoType="Brother_Lightning" armorType="Light">
+		  <Damage>50</Damage>
+		  <Kinetic>1</Kinetic>
+		  <Piercing>False</Piercing>
+		  <VerticalAim>0.5</VerticalAim>
+		  <VerticalAimHigh>0.5</VerticalAimHigh>
+		</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="LightningOnMedium" ammoType="Brother_Lightning" armorType="Medium">
+		  <Damage>50</Damage>
+		  <Kinetic>0.5</Kinetic>
+		  <Piercing>False</Piercing>
+		  <VerticalAim>0.5</VerticalAim>
+		  <VerticalAimHigh>0.5</VerticalAimHigh>
+		  <Effectiveness>1</Effectiveness>
+		</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="LightningOnHeavy" ammoType="Brother_Lightning" armorType="Heavy">
+		  <Damage>50</Damage>
+		  <Kinetic>0</Kinetic>
+		  <Piercing>False</Piercing>
+		  <VerticalAim>0.5</VerticalAim>
+		  <VerticalAimHigh>0.5</VerticalAimHigh>
+		</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="LightningOnStructure" ammoType="Brother_Lightning" armorType="Structure">
+		  <Damage>5</Damage>
+		  <Kinetic>0</Kinetic>
+		  <Piercing>False</Piercing>
+		  <VerticalAim>0.5</VerticalAim>
+		  <VerticalAimHigh>0.5</VerticalAimHigh>
+			<Effectiveness>-1</Effectiveness>
+		</AmmoOnArmorInteraction>
+  
+    <!--Brother Uninsulated Rigging-->
+			  <AmmoOnArmorInteraction id="RiggingOnUnarmored" ammoType="Brother_Rigging" armorType="Unarmored">
+		    <Damage>20</Damage>
+		    <Kinetic>1.3</Kinetic>
+		    <Piercing>False</Piercing>
+		    <VerticalAim>0.5</VerticalAim>
+		    <VerticalAimHigh>0.9</VerticalAimHigh>
+		  </AmmoOnArmorInteraction>
+			  <AmmoOnArmorInteraction id="RiggingOnLight" ammoType="Brother_Rigging" armorType="Light">
+		    <Damage>20</Damage>
+		    <Kinetic>1</Kinetic>
+		    <Piercing>False</Piercing>
+		    <VerticalAim>0.5</VerticalAim>
+		    <VerticalAimHigh>0.5</VerticalAimHigh>
+		  </AmmoOnArmorInteraction>
+			  <AmmoOnArmorInteraction id="RiggingOnMedium" ammoType="Brother_Rigging" armorType="Medium">
+		    <Damage>20</Damage>
+		    <Kinetic>0.5</Kinetic>
+		    <Piercing>False</Piercing>
+		    <VerticalAim>0.5</VerticalAim>
+		    <VerticalAimHigh>0.5</VerticalAimHigh>
+		    <Effectiveness>1</Effectiveness>
+		  </AmmoOnArmorInteraction>
+			  <AmmoOnArmorInteraction id="RiggingOnHeavy" ammoType="Brother_Rigging" armorType="Heavy">
+		    <Damage>20</Damage>
+		    <Kinetic>0</Kinetic>
+		    <Piercing>False</Piercing>
+		    <VerticalAim>0.5</VerticalAim>
+		    <VerticalAimHigh>0.5</VerticalAimHigh>
+		  </AmmoOnArmorInteraction>
+			  <AmmoOnArmorInteraction id="RiggingOnStructure" ammoType="Brother_Rigging" armorType="Structure">
+		    <Damage>1</Damage>
+		    <Kinetic>0</Kinetic>
+		    <Piercing>False</Piercing>
+		    <VerticalAim>0.5</VerticalAim>
+		    <VerticalAimHigh>0.5</VerticalAimHigh>
+		  </AmmoOnArmorInteraction>
+
+	<!--General-->
+		<!--General Shell-->
+		<AmmoOnArmorInteraction id="GenShellOnUnarmored" ammoType="Gen_Shell" armorType="Unarmored">
+			<Damage>50</Damage>
+			<Kinetic>1.5</Kinetic>
+			<Piercing>False</Piercing>
+			<VerticalAim>0.35</VerticalAim>
+			<VerticalAimHigh>0.7</VerticalAimHigh>
+		</AmmoOnArmorInteraction>
+		<AmmoOnArmorInteraction id="GenShellOnLight" ammoType="Gen_Shell" armorType="Light">
+			<Damage>50</Damage>
+			<Kinetic>0.5</Kinetic>
+			<Piercing>False</Piercing>
+			<VerticalAim>0.5</VerticalAim>
+			<VerticalAimHigh>0.5</VerticalAimHigh>
+         </AmmoOnArmorInteraction>
+		<AmmoOnArmorInteraction id="GenShellOnMedium" ammoType="Gen_Shell" armorType="Medium">
+			<Damage>30</Damage>
+			<Kinetic>0.5</Kinetic>
+			<Piercing>False</Piercing>
+			<VerticalAim>0.5</VerticalAim>
+			<VerticalAimHigh>0.5</VerticalAimHigh>
+			<Effectiveness>1</Effectiveness>
+        </AmmoOnArmorInteraction>
+	    <AmmoOnArmorInteraction id="GenShellOnHeavy" ammoType="Gen_Shell" armorType="Heavy">
+			<Damage>20</Damage>
+			<Kinetic>0.25</Kinetic>
+			<Piercing>False</Piercing>
+			<VerticalAim>0.5</VerticalAim>
+			<VerticalAimHigh>0.5</VerticalAimHigh>
+		</AmmoOnArmorInteraction>
+	    <AmmoOnArmorInteraction id="GenShellOnStructure" ammoType="Gen_Shell" armorType="Structure">
+			<Damage>20</Damage>
+			<Kinetic>0.25</Kinetic>
+			<Piercing>False</Piercing>
+			<VerticalAim>0.2</VerticalAim>
+			<VerticalAimHigh>0.2</VerticalAimHigh>
+		</AmmoOnArmorInteraction>
+
+		<!--General Splash-->
+		<AmmoOnArmorInteraction id="GenSplashOnUnarmored" ammoType="Gen_Splash" armorType="Unarmored" type="explosive">
+			<Damage>25</Damage>
+			<Kinetic>1.3</Kinetic>
+		</AmmoOnArmorInteraction>
+				<AmmoOnArmorInteraction id="GenSplashOnLight" ammoType="Gen_Splash" armorType="Light" type="explosive">
+			<Damage>20</Damage>
+			<Kinetic>0.5</Kinetic>
+		</AmmoOnArmorInteraction>
+				<AmmoOnArmorInteraction id="GenSplashOnMedium" ammoType="Gen_Splash" armorType="Medium" type="explosive">
+			<Damage>15</Damage>
+			<Kinetic>0.4</Kinetic>
+		</AmmoOnArmorInteraction>
+		<AmmoOnArmorInteraction id="GenSplashOnHeavy" ammoType="Gen_Splash" armorType="Heavy" type="explosive">
+			<Damage>15</Damage>
+			<Kinetic>0</Kinetic>
+		</AmmoOnArmorInteraction>
+		<AmmoOnArmorInteraction id="GenSplashOnStructure" ammoType="Gen_Splash" armorType="Structure" type="explosive">
+			<Damage>10</Damage>
+			<Kinetic>0</Kinetic>
+ 		</AmmoOnArmorInteraction>
+
+		<!--General Melee-->
+			<AmmoOnArmorInteraction id="GenMeleOnUnarmored" ammoType="Gen_Melee" armorType="Unarmored" type="melee">
+		<Damage>100</Damage>
+		<Kinetic>0.7</Kinetic>
+	</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="GenMeleOnLight" ammoType="Gen_Melee" armorType="Light" type="melee">
+		<Damage>100</Damage>
+		<Kinetic>1</Kinetic>
+	</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="GenMeleOnMedium" ammoType="Gen_Melee" armorType="Medium" type="melee">
+		<Damage>100</Damage>
+		<Kinetic>2</Kinetic>
+	</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="GenMeleOnHeavy" ammoType="Gen_Melee" armorType="Heavy" type="melee">
+		<Damage>100</Damage>
+		<Kinetic>2</Kinetic>
+		<Effectiveness>1</Effectiveness>
+	</AmmoOnArmorInteraction>	
+			<AmmoOnArmorInteraction id="GenMeleOnStructure" ammoType="Gen_Melee" armorType="Structure" type="melee">
+		<Damage>50</Damage>
+		<Kinetic>0</Kinetic>
+	</AmmoOnArmorInteraction>
+
+		<!--General Melee Series-->
+			<AmmoOnArmorInteraction id="GenMeleeSOnUnarmored" ammoType="Gen_MeleeSeries" armorType="Unarmored" type="melee">
+				<Damage>25</Damage>
+				<Kinetic>1.5</Kinetic>
+			</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="GenMeleeSOnLight" ammoType="Gen_MeleeSeries" armorType="Light" type="melee">
+				<Damage>25</Damage>
+				<Kinetic>1</Kinetic>
+			</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="GenMeleeSOnMedium" ammoType="Gen_MeleeSeries" armorType="Medium" type="melee">
+				<Damage>25</Damage>
+				<Kinetic>0.7</Kinetic>
+			</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="GenMeleeSOnHeavy" ammoType="Gen_MeleeSeries" armorType="Heavy" type="melee">
+				<Damage>25</Damage>
+				<Kinetic>0.5</Kinetic>
+				<Effectiveness>1</Effectiveness>
+			</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="GenMeleeSOnStructure" ammoType="Gen_MeleeSeries" armorType="Structure" type="melee">
+				<Damage>20</Damage>
+				<Kinetic>0</Kinetic>
+			</AmmoOnArmorInteraction>
+
+		<!--General Melee Series Splash-->
+			<AmmoOnArmorInteraction id="GenMeleeSplashSOnUnarmored" ammoType="Gen_MeleeSeriesSplash" armorType="Unarmored" type="melee">
+				<Damage>20</Damage>
+				<Kinetic>1.5</Kinetic>
+			</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="GenMeleeSplashSOnLight" ammoType="Gen_MeleeSeriesSplash" armorType="Light" type="melee">
+				<Damage>20</Damage>
+				<Kinetic>1</Kinetic>
+			</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="GenMeleeSplashSOnMedium" ammoType="Gen_MeleeSeriesSplash" armorType="Medium" type="melee">
+				<Damage>20</Damage>
+				<Kinetic>0.7</Kinetic>
+			</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="GenMeleeSplashSOnHeavy" ammoType="Gen_MeleeSeriesSplash" armorType="Heavy" type="melee">
+				<Damage>20</Damage>
+				<Kinetic>0.5</Kinetic>
+				<Effectiveness>1</Effectiveness>
+			</AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="GenMeleeSplashSOnStructure" ammoType="Gen_MeleeSeriesSplash" armorType="Structure" type="melee">
+				<Damage>15</Damage>
+				<Kinetic>0</Kinetic>
+			</AmmoOnArmorInteraction>
+
+		<!--General Jump-->
+			<AmmoOnArmorInteraction id="JumpOnUnarmored" ammoType="Gen_Jump" armorType="Unarmored" type="explosive">
+    <Damage>85</Damage>
+    <Kinetic>1.5</Kinetic>
+  </AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="JumpOnLight" ammoType="Gen_Jump" armorType="Light" type="explosive">
+    <Damage>150</Damage>
+    <Kinetic>0</Kinetic>
+  </AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="JumpOnMedium" ammoType="Gen_Jump" armorType="Medium" type="explosive">
+    <Damage>100</Damage>
+    <Kinetic>0</Kinetic>
+			<Effectiveness>1</Effectiveness>
+  </AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="JumpOnHeavy" ammoType="Gen_Jump" armorType="Heavy" type="explosive">
+    <Damage>70</Damage>
+    <Kinetic>0</Kinetic>
+  </AmmoOnArmorInteraction>
+			<AmmoOnArmorInteraction id="JumpOnStructure" ammoType="Gen_Jump" armorType="Structure" type="explosive">
+    <Damage>90</Damage>
+    <Kinetic>0</Kinetic>
+  </AmmoOnArmorInteraction>
+
+<!--End of File-->
+</AmmoOnArmorInteractionRepository>

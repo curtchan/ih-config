@@ -1,0 +1,107 @@
+<StructureConfigurations>
+	<!--Saxony Headquarter-->
+	<StructureConfiguration overrideId="sax_structure_hq" type="defaultproduction">
+		<!--Unit Building-->
+		<BuildOptions>
+			<UnitBuildOption>
+				<UnitId>sax_soldier_engineer</UnitId>
+				<BuildDuration>40</BuildDuration>
+			</UnitBuildOption>
+			<UnitBuildOption>
+				<UnitId>sax_soldier_rifleman</UnitId>
+				<BuildDuration>40</BuildDuration>
+			</UnitBuildOption>
+			<UnitBuildOption>
+				<UnitId>sax_hero_gunter</UnitId>
+				<BuildDuration>30</BuildDuration>
+			</UnitBuildOption>
+			<UnitBuildOption>
+				<UnitId>sax_hero_prince</UnitId>
+				<BuildDuration>30</BuildDuration>
+			</UnitBuildOption>
+			<UnitBuildOption>
+				<UnitId>sax_hero_brunhilde</UnitId>
+				<BuildDuration>30</BuildDuration>
+			</UnitBuildOption>
+			
+			<!--Begin Change: Added Olga, so she can be revived in the HQ on this map-->
+			<UnitBuildOption>
+				<UnitId>rus_hero_olga</UnitId>
+				<BuildDuration>30</BuildDuration>
+			</UnitBuildOption>
+			<!--End Change-->
+			
+			<ReserveBuildOption>
+				<Phase>1</Phase>
+				<BuildDuration>30</BuildDuration>
+			</ReserveBuildOption>
+			<ReserveBuildOption>
+				<Phase>2</Phase>
+				<BuildDuration>30</BuildDuration>
+			</ReserveBuildOption>
+		</BuildOptions>
+	</StructureConfiguration>
+	
+	<!--Saxony Medicbuilding-->
+			<StructureConfiguration overrideId="sax_structure_medicbuilding" type="defaultreinforce">
+				<!--Shape-->
+					<PlacementShape type="rect" x="-4" y="-3" width="8" height="6" shapeheight="0" />
+					<Shape type="convex"><Vertex x="-2.434712" y="1.593368" height="0.2" /><Vertex x="-3.681869" y="-0.8665581" height="0.2" /><Vertex x="-3.523624" y="-1.85434" height="0.2" /><Vertex x="2.165977" y="-1.932731" height="0.2" /><Vertex x="3.114642" y="-1.278295" height="0.2" /><Vertex x="3.089148" y="-0.4957796" height="0.2" /><Vertex x="2.421878" y="1.54186" height="0.2" /><Vertex x="2.215935" y="1.875883" height="0.2" /><Vertex x="-2.127218" y="1.887166" height="0.2" /></Shape>
+				
+				<!--Structure Building-->
+					<BuildCost>
+						<IronCost>0</IronCost>
+						<OilCost>0</OilCost>
+						<PopulationCost>0</PopulationCost>
+					</BuildCost>
+					<ConstructionPoints>50</ConstructionPoints>
+					<RestrictToBuildArea>false</RestrictToBuildArea>
+				
+				<!--Stats-->
+					<Health>150</Health>
+					<VisionRadius>30</VisionRadius>
+				
+				<!--Unit Building-->
+					<ReinforceOptions>
+						<UnitBuildOption>
+							<UnitId>sax_soldier_engineer</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>sax_soldier_medic</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>sax_soldier_rifleman</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>sax_soldier_grenadier</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>sax_soldier_gunner</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>sax_soldier_mg</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>sax_soldier_flamer</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>sax_hero_gunter</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>com_support_mg</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>com_support_cannon</UnitId>
+						</UnitBuildOption>						
+						<UnitBuildOption>
+							<UnitId>com_support_mortar</UnitId>
+						</UnitBuildOption>
+						<!--Begin Change: Added Olga, so she can be retreat and be reinforced to the medicbuilding on this map-->
+						<UnitBuildOption>
+							<UnitId>rus_hero_olga</UnitId>
+						</UnitBuildOption>
+						<!--End Change-->
+					</ReinforceOptions>
+			</StructureConfiguration>
+	
+</StructureConfigurations>

@@ -1,0 +1,424 @@
+{
+    "SimpleAchievements": [
+        {
+            "Name": "Elite",
+            "SteamId": "Elite",
+            "GOGId": "Elite",
+            "EpicId": "Elite",
+            "XboxOneId": "Elite",
+            "PS4Id": "Elite"
+        },
+        {
+            "Name": "BuildGunfort",
+            "SteamId": "BuildGunfort",
+            "GOGId": "BuildGunfort",
+            "EpicId": "BuildGunfort",
+            "XboxOneId": "BuildGunfort",
+            "PS4Id": "BuildGunfort"
+        },
+        {
+            "Name": "FirstMultiplayerMatchFinished",
+            "SteamId": "FirstMultiplayerMatchFinished",
+            "GOGId": "FirstMultiplayerMatchFinished",
+            "EpicId": "FirstMultiplayerMatchFinished",
+            "XboxOneId": "FirstMultiplayerMatchFinished",
+            "PS4Id": "FirstMultiplayerMatchFinished"
+        },
+        {
+            "Name": "WinMatchByDestroyingHQs",
+            "SteamId": "WinMatchByDestroyingHQs",
+            "GOGId": "WinMatchByDestroyingHQs",
+            "EpicId": "WinMatchByDestroyingHQs",
+            "XboxOneId": "WinMatchByDestroyingHQs",
+            "PS4Id": "WinMatchByDestroyingHQs"
+        },
+        {
+            "Name": "WinMatchByVictoryPoints",
+            "SteamId": "WinMatchByVictoryPoints",
+            "GOGId": "WinMatchByVictoryPoints",
+            "EpicId": "WinMatchByVictoryPoints",
+            "XboxOneId": "WinMatchByVictoryPoints",
+            "PS4Id": "WinMatchByVictoryPoints"
+        }
+    ],
+    "StatisticAchievements": [
+        {
+            "Name": "IronAcquired100000",
+            "SteamId": "IronAcquired100000",
+            "GOGId": "IronAcquired100000",
+            "EpicId": "IronAcquired100000",
+            "XboxOneId": "IronAcquired100000",
+            "PS4Id": "IronAcquired100000",
+            "StatisticName": "IronAcquired",
+            "Threshold": 100000
+        },
+        {
+            "Name": "OilAcquired100000",
+            "SteamId": "OilAcquired100000",
+            "GOGId": "OilAcquired100000",
+            "EpicId": "OilAcquired100000",
+            "XboxOneId": "OilAcquired100000",
+            "PS4Id": "OilAcquired100000",
+            "StatisticName": "OilAcquired",
+            "Threshold": 100000
+        },
+        {
+            "Name": "FlamethrowerInfantryKills100",
+            "SteamId": "FlamethrowerInfantryKills100",
+            "GOGId": "FlamethrowerInfantryKills100",
+            "EpicId": "FlamethrowerInfantryKills100",
+            "XboxOneId": "FlamethrowerInfantryKills100",
+            "PS4Id": "FlamethrowerInfantryKills100",
+            "StatisticName": "FlamethrowerInfantryKills",
+            "Threshold": 100
+        },
+        {
+            "Name": "MechsHarvested1",
+            "SteamId": "MechsHarvested1",
+            "GOGId": "MechsHarvested1",
+            "EpicId": "MechsHarvested1",
+            "XboxOneId": "MechsHarvested1",
+            "PS4Id": "MechsHarvested1",
+            "StatisticName": "MechsHarvested",
+            "Threshold": 1
+        },
+        {
+            "Name": "MechsHarvested100",
+            "SteamId": "MechsHarvested100",
+            "GOGId": "MechsHarvested100",
+            "EpicId": "MechsHarvested100",
+            "XboxOneId": "MechsHarvested100",
+            "PS4Id": "MechsHarvested100",
+            "StatisticName": "MechsHarvested",
+            "Threshold": 100
+        },
+        {
+            "Name": "MechsHarvested500",
+            "SteamId": "MechsHarvested500",
+            "GOGId": "MechsHarvested500",
+            "EpicId": "MechsHarvested500",
+            "XboxOneId": "MechsHarvested500",
+            "PS4Id": "MechsHarvested500",
+            "StatisticName": "MechsHarvested",
+            "Threshold": 500
+        },
+        {
+            "Name": "PickedUpEquipment1000",
+            "SteamId": "PickedUpEquipment1000",
+            "GOGId": "PickedUpEquipment1000",
+            "EpicId": "PickedUpEquipment1000",
+            "XboxOneId": "PickedUpEquipment1000",
+            "PS4Id": "PickedUpEquipment1000",
+            "StatisticName": "PickedUpEquipment",
+            "Threshold": 1000
+        },
+        {
+            "Name": "SoldiersReinforced5000",
+            "SteamId": "SoldiersReinforced5000",
+            "GOGId": "SoldiersReinforced5000",
+            "EpicId": "SoldiersReinforced5000",
+            "XboxOneId": "SoldiersReinforced5000",
+            "PS4Id": "SoldiersReinforced5000",
+            "StatisticName": "SoldiersReinforced",
+            "Threshold": 5000
+        },
+        {
+            "Name": "UnitsRetreated1000",
+            "SteamId": "UnitsRetreated1000",
+            "GOGId": "UnitsRetreated1000",
+            "EpicId": "UnitsRetreated1000",
+            "XboxOneId": "UnitsRetreated1000",
+            "PS4Id": "UnitsRetreated1000",
+            "StatisticName": "UnitsRetreated",
+            "Threshold": 1000
+        },
+        {
+            "Name": "ReviveSingleHeroCounter1",
+            "SteamId": "ReviveSingleHeroCounter1",
+            "GOGId": "ReviveSingleHeroCounter1",
+            "EpicId": "ReviveSingleHeroCounter1",
+            "XboxOneId": "ReviveSingleHeroCounter1",
+            "PS4Id": "ReviveSingleHeroCounter1",
+            "StatisticName": "ReviveSingleHeroCounter",
+            "Threshold": 1
+        },
+        {
+            "Name": "ReviveSingleHeroCounter3",
+            "SteamId": "ReviveSingleHeroCounter3",
+            "GOGId": "ReviveSingleHeroCounter3",
+            "EpicId": "ReviveSingleHeroCounter3",
+            "XboxOneId": "ReviveSingleHeroCounter3",
+            "PS4Id": "ReviveSingleHeroCounter3",
+            "StatisticName": "ReviveSingleHeroCounter",
+            "Threshold": 3
+        },
+        {
+            "Name": "EnemyBunkersDestroyed50",
+            "SteamId": "EnemyBunkersDestroyed50",
+            "GOGId": "EnemyBunkersDestroyed50",
+            "EpicId": "EnemyBunkersDestroyed50",
+            "XboxOneId": "EnemyBunkersDestroyed50",
+            "PS4Id": "EnemyBunkersDestroyed50",
+            "StatisticName": "EnemyBunkersDestroyed",
+            "Threshold": 50
+        },
+        {
+            "Name": "MechsBuilt1000",
+            "SteamId": "MechsBuilt1000",
+            "GOGId": "MechsBuilt1000",
+            "EpicId": "MechsBuilt1000",
+            "XboxOneId": "MechsBuilt1000",
+            "PS4Id": "MechsBuilt1000",
+            "StatisticName": "MechsBuilt",
+            "Threshold": 1000
+        },
+        {
+            "Name": "PlayedMatches500",
+            "SteamId": "PlayedMatches500",
+            "GOGId": "PlayedMatches500",
+            "EpicId": "PlayedMatches500",
+            "XboxOneId": "PlayedMatches500",
+            "PS4Id": "PlayedMatches500",
+            "StatisticName": "PlayedMatchesAndMissions",
+            "Threshold": 500
+        },
+        {
+            "Name": "ConqueredResourcePoints1000",
+            "SteamId": "ConqueredResourcePoints1000",
+            "GOGId": "ConqueredResourcePoints1000",
+            "EpicId": "ConqueredResourcePoints1000",
+            "XboxOneId": "ConqueredResourcePoints1000",
+            "PS4Id": "ConqueredResourcePoints1000",
+            "StatisticName": "ConqueredResourcePoints",
+            "Threshold": 1000
+        },
+        {
+            "Name": "ConstructedStructures100",
+            "SteamId": "ConstructedStructures100",
+            "GOGId": "ConstructedStructures100",
+            "EpicId": "ConstructedStructures100",
+            "XboxOneId": "ConstructedStructures100",
+            "PS4Id": "ConstructedStructures100",
+            "StatisticName": "ConstructedStructures",
+            "Threshold": 100
+        },
+        {
+            "Name": "EnemyMechsKilled1000",
+            "SteamId": "EnemyMechsKilled1000",
+            "GOGId": "EnemyMechsKilled1000",
+            "EpicId": "EnemyMechsKilled1000",
+            "XboxOneId": "EnemyMechsKilled1000",
+            "PS4Id": "EnemyMechsKilled1000",
+            "StatisticName": "EnemyMechsKilled",
+            "Threshold": 1000
+        },
+        {
+            "Name": "EnemyHeroesKilled100",
+            "SteamId": "EnemyHeroesKilled100",
+            "GOGId": "EnemyHeroesKilled100",
+            "EpicId": "EnemyHeroesKilled100",
+            "XboxOneId": "EnemyHeroesKilled100",
+            "PS4Id": "EnemyHeroesKilled100",
+            "StatisticName": "EnemyHeroesKilled",
+            "Threshold": 100
+        },
+        {
+            "Name": "CratesOpened1000",
+            "SteamId": "CratesOpened1000",
+            "GOGId": "CratesOpened1000",
+            "EpicId": "CratesOpened1000",
+            "XboxOneId": "CratesOpened1000",
+            "PS4Id": "CratesOpened1000",
+            "StatisticName": "CratesOpened",
+            "Threshold": 1000
+        },
+        {
+            "Name": "SkirmishMatchesWon100",
+            "SteamId": "SkirmishMatchesWon100",
+            "GOGId": "SkirmishMatchesWon100",
+            "EpicId": "SkirmishMatchesWon100",
+            "XboxOneId": "SkirmishMatchesWon100",
+            "PS4Id": "SkirmishMatchesWon100",
+            "StatisticName": "SkirmishMatchesWon",
+            "Threshold": 100
+        }
+    ],
+    "FlagsAchievements": [
+        {
+            "Name": "BuildAllMechsOncePolania",
+			"SteamId": "BuildAllMechsOncePolania",
+            "GOGId": "BuildAllMechsOncePolania",
+            "EpicId": "BuildAllMechsOncePolania",
+            "XboxOneId": "BuildAllMechsOncePolania",
+            "PS4Id": "BuildAllMechsOncePolania",
+            "Flags": [
+                "pol_mech_spider_built",
+                "pol_mech_recon_built",
+                "pol_mech_artillery_built",
+                "pol_mech_stinger_built",
+                "pol_mech_trooptransport_built",
+                "pol_mech_gunfort_built"
+            ]
+        },
+        {
+            "Name": "BuildAllMechsOnceSaxony",
+			"SteamId": "BuildAllMechsOnceSaxony",
+            "GOGId": "BuildAllMechsOnceSaxony",
+            "EpicId": "BuildAllMechsOnceSaxony",
+            "XboxOneId": "BuildAllMechsOnceSaxony",
+            "PS4Id": "BuildAllMechsOnceSaxony",
+			"Flags": [
+                "sax_mech_gatling_built",
+                "sax_mech_tank_built",
+                "sax_mech_artillery_built",
+                "sax_mech_dachs_built",
+                "sax_mech_mother_built",
+                "sax_mech_gunfort_built"
+            ]
+        },
+        {
+            "Name": "BuildAllMechsOnceRusviet",
+			"SteamId": "BuildAllMechsOnceRusviet",
+            "GOGId": "BuildAllMechsOnceRusviet",
+            "EpicId": "BuildAllMechsOnceRusviet",
+            "XboxOneId": "BuildAllMechsOnceRusviet",
+            "PS4Id": "BuildAllMechsOnceRusviet",
+            "Flags": [
+                "rus_mech_flamer_built",
+                "rus_mech_bomber_built",
+                "rus_mech_artillery_built",
+                "rus_mech_revolver_built",
+                "rus_mech_scythe_built",
+                "rus_mech_gunfort_built"
+            ]
+        },
+        {
+            "Name": "BuildAllMechsOnce",
+			"SteamId": "BuildAllMechsOnce",
+            "GOGId": "BuildAllMechsOnce",
+            "EpicId": "BuildAllMechsOnce",
+            "XboxOneId": "BuildAllMechsOnce",
+            "PS4Id": "BuildAllMechsOnce",
+            "Flags": [
+                "pol_mech_spider_built",
+                "pol_mech_recon_built",
+                "pol_mech_artillery_built",
+                "pol_mech_stinger_built",
+                "pol_mech_trooptransport_built",
+                "pol_mech_gunfort_built",
+                "sax_mech_gatling_built",
+                "sax_mech_tank_built",
+                "sax_mech_artillery_built",
+                "sax_mech_dachs_built",
+                "sax_mech_mother_built",
+                "sax_mech_gunfort_built",
+                "rus_mech_flamer_built",
+                "rus_mech_bomber_built",
+                "rus_mech_artillery_built",
+                "rus_mech_revolver_built",
+                "rus_mech_scythe_built",
+                "rus_mech_gunfort_built"
+            ]
+        },
+        {
+            "Name": "FinishCampaignPolania",
+			"SteamId": "FinishCampaignPolania",
+            "GOGId": "FinishCampaignPolania",
+            "EpicId": "FinishCampaignPolania",
+            "XboxOneId": "FinishCampaignPolania",
+            "PS4Id": "FinishCampaignPolania",
+            "Flags": [
+                "sp_pol_01_finished",
+                "sp_pol_02_finished",
+                "sp_pol_03_finished",
+                "sp_pol_04_finished",
+                "sp_pol_05_finished",
+                "sp_pol_06_finished",
+                "sp_pol_07_finished"
+            ]
+        },
+        {
+            "Name": "FinishCampaignSaxony",
+			"SteamId": "FinishCampaignSaxony",
+            "GOGId": "FinishCampaignSaxony",
+            "EpicId": "FinishCampaignSaxony",
+            "XboxOneId": "FinishCampaignSaxony",
+            "PS4Id": "FinishCampaignSaxony",
+            "Flags": [
+                "sp_sax_01_finished",
+                "sp_sax_02_finished",
+                "sp_sax_03_finished",
+                "sp_sax_04_finished",
+                "sp_sax_05_finished",
+                "sp_sax_06_finished",
+                "sp_sax_07_finished"
+            ]
+        },
+        {
+            "Name": "FinishCampaignRusviet",
+			"SteamId": "FinishCampaignRusviet",
+            "GOGId": "FinishCampaignRusviet",
+            "EpicId": "FinishCampaignRusviet",
+            "XboxOneId": "FinishCampaignRusviet",
+            "PS4Id": "FinishCampaignRusviet",
+            "Flags": [
+                "sp_rus_01_finished",
+                "sp_rus_02_finished",
+                "sp_rus_03_finished",
+                "sp_rus_04_finished",
+                "sp_rus_05_finished",
+                "sp_rus_06_finished",
+                "sp_rus_07_finished"
+            ]
+        },
+        {
+            "Name": "FinishCampaigns",
+			"SteamId": "FinishCampaigns",
+            "GOGId": "FinishCampaigns",
+            "EpicId": "FinishCampaigns",
+            "XboxOneId": "FinishCampaigns",
+            "PS4Id": "FinishCampaigns",
+            "Flags": [
+                "sp_pol_01_finished",
+                "sp_pol_02_finished",
+                "sp_pol_03_finished",
+                "sp_pol_04_finished",
+                "sp_pol_05_finished",
+                "sp_pol_06_finished",
+                "sp_pol_07_finished",
+                "sp_sax_01_finished",
+                "sp_sax_02_finished",
+                "sp_sax_03_finished",
+                "sp_sax_04_finished",
+                "sp_sax_05_finished",
+                "sp_sax_06_finished",
+                "sp_sax_07_finished",
+                "sp_rus_01_finished",
+                "sp_rus_02_finished",
+                "sp_rus_03_finished",
+                "sp_rus_04_finished",
+                "sp_rus_05_finished",
+                "sp_rus_06_finished",
+                "sp_rus_07_finished"
+            ]
+        }
+    ],
+    "DenialAchievements": [
+        {
+            "Name": "WinDominant",
+            "SteamId": "WinDominant",
+            "GOGId": "WinDominant",
+            "EpicId": "WinDominant",
+            "XboxOneId": "WinDominant",
+            "PS4Id": "WinDominant"
+        },
+		{
+            "Name": "NoRetreat",
+            "SteamId": "NoRetreat",
+            "GOGId": "NoRetreat",
+            "EpicId": "NoRetreat",
+            "XboxOneId": "NoRetreat",
+            "PS4Id": "NoRetreat"
+        }
+    ]
+}

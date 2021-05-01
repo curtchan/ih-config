@@ -1,0 +1,16 @@
+<StructureConfigurations>
+	<!--Polanian Headquarter-->
+	<StructureConfiguration overrideId="pol_structure_hq" type="defaultproduction">
+		
+		<!--Resource Production-->
+		<ResourceProduction>
+			<!--Begin Change: increased IronProduction fomr 14 to 18, OilProduction from 3 to 5-->
+			<IronAmount>18</IronAmount>
+			<OilAmount>5</OilAmount>
+			<!--End Change-->
+			<GrantToAllies>false</GrantToAllies>
+			<IgnoreMapProductionMultiplier>true</IgnoreMapProductionMultiplier>
+		</ResourceProduction>
+				
+	</StructureConfiguration>
+</StructureConfigurations>

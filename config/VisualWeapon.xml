@@ -1,0 +1,1518 @@
+<VisualWeaponRepository>
+	 <!-- Visual Weapon default -->
+		<VisualWeaponConfiguration id="default">
+			<BulletTravelSpeed>100</BulletTravelSpeed>
+			<BulletPrefabId>effects@Prefabs/Projectiles/weapon_projectile_base.prefab</BulletPrefabId>
+			<WeaponImpactPrefabId></WeaponImpactPrefabId>
+			<ShootSoundId>common@Audio/sfx/combat/rifle_shot/rifle_shot.asset</ShootSoundId>
+			<AbilitySoundId></AbilitySoundId>
+			<ImpactEffectSuffix>Normal</ImpactEffectSuffix>
+			<BulletImpactRadius>0.2</BulletImpactRadius>
+			<BulletImpactPower>5</BulletImpactPower>
+			<ProjectileType>Bullet</ProjectileType>
+			<OnlyOneEvent>False</OnlyOneEvent>
+		</VisualWeaponConfiguration>
+
+	 <!-- Visual Weapon defaultMelee -->
+		<VisualWeaponConfiguration id="defaultMelee">
+			<Weapons>
+				<Weapon>com_soldier_melee</Weapon>
+				<Weapon>com_soldier_melee_weak</Weapon>
+				<Weapon>com_soldier_melee_medium</Weapon>
+				<Weapon>com_soldier_melee_strong</Weapon>
+				<Weapon>com_soldier_melee_superior</Weapon>
+				<Weapon>com_soldier_melee_close</Weapon>
+				<Weapon>com_soldier_no_automelee</Weapon>
+				<Weapon>com_soldier_melee_useless</Weapon>
+			</Weapons>
+			<BulletTravelSpeed>0</BulletTravelSpeed>
+			<BulletPrefabId></BulletPrefabId>
+			<WeaponImpactPrefabId></WeaponImpactPrefabId>
+			<ShootSoundId></ShootSoundId>
+			<AbilitySoundId></AbilitySoundId>
+			<ImpactEffectSuffix>melee_soldier</ImpactEffectSuffix>
+			<BulletImpactRadius>0</BulletImpactRadius>
+			<BulletImpactPower>5</BulletImpactPower>
+			<ProjectileType>Bullet</ProjectileType>
+			<OnlyOneEvent>False</OnlyOneEvent>
+		</VisualWeaponConfiguration>
+		<VisualWeaponConfiguration id="pol_hero_cavalry_melee" parentId="defaultMelee">
+			<Weapons>
+				<Weapon>pol_hero_cavalry_melee</Weapon>
+			</Weapons>
+			<ImpactEffectSuffix>weapon_melee_sword</ImpactEffectSuffix>
+			<WeaponSpriteId>ui@Images/UnitInfo/UnitInfos/UnitWeapons/weapon_cavalry.png</WeaponSpriteId>
+		</VisualWeaponConfiguration>
+		<VisualWeaponConfiguration id="rus_hero_olga_melee" parentId="defaultMelee">
+			<Weapons>
+				<Weapon>rus_hero_olga_melee</Weapon>
+			</Weapons>
+			<ImpactEffectSuffix>weapon_melee_sword</ImpactEffectSuffix>
+			<WeaponSpriteId>ui@Images/UnitInfo/UnitInfos/UnitWeapons/weapon_olga.png</WeaponSpriteId>
+		</VisualWeaponConfiguration>
+		<VisualWeaponConfiguration id="sax_hero_gunter_melee" parentId="defaultMelee">
+			<Weapons>
+				<Weapon>sax_hero_gunter_melee</Weapon>
+			</Weapons>
+			<ImpactEffectSuffix>weapon_exo_melee</ImpactEffectSuffix>
+			<WeaponSpriteId>ui@Images/UnitInfo/UnitInfos/UnitWeapons/weapon_olga.png</WeaponSpriteId>
+		</VisualWeaponConfiguration>
+				
+		<VisualWeaponConfiguration id="sax_hero_gunter_melee_power" parentId="defaultMelee">
+			<Weapons>
+				<Weapon>sax_hero_gunter_stab</Weapon>
+			</Weapons>
+			<WeaponSpriteId>ui@Images/UnitInfo/UnitInfos/UnitWeapons/weapon_olga.png</WeaponSpriteId>
+			<ImpactEffectSuffix>weapon_gunter_melee_power</ImpactEffectSuffix>
+		</VisualWeaponConfiguration>
+
+		<VisualWeaponConfiguration id="rus_hero_general_melee" parentId="defaultMelee">
+			<Weapons>
+				<Weapon>rus_hero_general_melee</Weapon>
+				<Weapon>rus_hero_general_melee1</Weapon>
+				<Weapon>rus_hero_general_melee2</Weapon>
+				<Weapon>rus_hero_general_melee3</Weapon>
+				<Weapon>rus_hero_general_melee4</Weapon>
+			</Weapons>
+			<ImpactEffectSuffix>weapon_mech_melee</ImpactEffectSuffix>
+			<WeaponSpriteId>ui@Images/UnitInfo/UnitInfos/UnitWeapons/weapon_general.png</WeaponSpriteId>
+			<BulletImpactRadius>0.6</BulletImpactRadius>
+			<BulletImpactPower>10</BulletImpactPower>
+		</VisualWeaponConfiguration>
+		<VisualWeaponConfiguration id="com_animal_melee" parentId="defaultMelee">
+			<Weapons>
+				<Weapon>com_animal_melee</Weapon>
+			</Weapons>
+			<WeaponSpriteId>ui@Images/UnitInfo/UnitInfos/UnitWeapons/weapon_animals.png</WeaponSpriteId>
+		</VisualWeaponConfiguration>
+
+		<VisualWeaponConfiguration id="pol_hero_wojtek_melee" parentId="defaultMelee">
+			<Weapons>
+				<Weapon>pol_hero_wojtek_melee</Weapon>
+			</Weapons>
+			<ImpactEffectSuffix>weapon_melee_claw</ImpactEffectSuffix>
+			<BulletImpactRadius>0.6</BulletImpactRadius>
+			<BulletImpactPower>5</BulletImpactPower>
+		</VisualWeaponConfiguration>
+
+		<VisualWeaponConfiguration id="rus_hero_changa_melee" parentId="defaultMelee">
+			<Weapons>
+				<Weapon>rus_hero_changa_melee</Weapon>
+			</Weapons>
+			<ImpactEffectSuffix>weapon_melee_claw</ImpactEffectSuffix>
+			<BulletImpactRadius>0.6</BulletImpactRadius>
+			<BulletImpactPower>10</BulletImpactPower>
+		</VisualWeaponConfiguration>
+
+		<VisualWeaponConfiguration id="rus_soldier_exo_melee" parentId="defaultMelee">
+			<Weapons>
+				<Weapon>rus_soldier_exo_melee</Weapon>
+				<Weapon>rus_soldier_exo_melee1</Weapon>
+				<Weapon>rus_soldier_exo_melee2</Weapon>
+			</Weapons>
+			<ImpactEffectSuffix>weapon_exo_melee</ImpactEffectSuffix>
+			<WeaponSpriteId>ui@Images/UnitInfo/UnitInfos/UnitWeapons/weapon_knife.png</WeaponSpriteId>
+		</VisualWeaponConfiguration>
+
+		 <!-- Visual Weapon defaultMelee -->
+		<VisualWeaponConfiguration id="defaultMechMelee">
+			<Weapons>
+				<Weapon>pol_mech_recon_melee</Weapon>
+				<Weapon>sax_soldier_mortar_melee</Weapon>
+				<Weapon>com_mech_woodcutter_melee</Weapon>
+			</Weapons>
+			<BulletTravelSpeed>0</BulletTravelSpeed>
+			<BulletPrefabId></BulletPrefabId>
+			<WeaponImpactPrefabId></WeaponImpactPrefabId>
+			<ShootSoundId></ShootSoundId>
+			<AbilitySoundId></AbilitySoundId>
+			<ImpactEffectSuffix>weapon_mech_melee</ImpactEffectSuffix>
+			<BulletImpactRadius>5</BulletImpactRadius>
+			<BulletImpactPower>5</BulletImpactPower>
+			<ProjectileType>Bullet</ProjectileType>
+			<OnlyOneEvent>False</OnlyOneEvent>
+			<WeaponSpriteId>ui@Images/UnitInfo/UnitInfos/UnitWeapons/weapon_saber.png</WeaponSpriteId>
+		</VisualWeaponConfiguration>
+
+			<VisualWeaponConfiguration id="pol_hero_rebel_melee" parentId="defaultMechMelee">
+			<Weapons>
+				<Weapon>pol_hero_rebel_melee</Weapon>
+				<Weapon>pol_hero_rebel_melee_swing</Weapon>
+				<Weapon>pol_hero_rebel_melee_swing2</Weapon>
+				<Weapon>pol_hero_rebel_melee_stab</Weapon>
+				<Weapon>pol_hero_rebel_melee_slam</Weapon>
+			</Weapons>
+			<ImpactEffectSuffix>weapon_mech_melee</ImpactEffectSuffix>
+			<WeaponSpriteId>ui@Images/UnitInfo/UnitInfos/UnitWeapons/weapon_rebel.png</WeaponSpriteId>
+			<OnlyOneEvent>True</OnlyOneEvent>
+		</VisualWeaponConfiguration>
+
+		<VisualWeaponConfiguration id="rus_hero_brother_melee" parentId="defaultMechMelee">
+			<Weapons>
+				<Weapon>rus_hero_brother_melee</Weapon>
+			</Weapons>			
+			<BulletImpactRadius>2</BulletImpactRadius>
+			<BulletImpactPower>12</BulletImpactPower>
+		</VisualWeaponConfiguration>
+
+		<VisualWeaponConfiguration id="rus_mech_scythe_melee" parentId="defaultMechMelee">
+			<Weapons>
+				<Weapon>rus_mech_scythe_melee</Weapon>
+			</Weapons>
+			<ImpactEffectSuffix>weapon_mech_melee</ImpactEffectSuffix>
+			<WeaponSpriteId>ui@Images/UnitInfo/UnitInfos/UnitWeapons/weapon_scythe.png</WeaponSpriteId>
+			<OnlyOneEvent>True</OnlyOneEvent>
+		</VisualWeaponConfiguration>
+
+		<VisualWeaponConfiguration id="pol_mech_recon_charge_impact" parentId="defaultMechMelee">
+			<Weapons>
+				<Weapon>pol_mech_recon_charge_impact</Weapon>
+			</Weapons>
+		</VisualWeaponConfiguration>
+		<VisualWeaponConfiguration id="pol_mech_recon_charge_push" parentId="defaultMechMelee">
+			<Weapons>
+				<Weapon>pol_mech_recon_charge_push</Weapon>
+			</Weapons>
+		</VisualWeaponConfiguration>
+
+		<VisualWeaponConfiguration id="pol_soldier_exo_melee" parentId="defaultMelee">
+			<Weapons>
+				<Weapon>pol_soldier_exo_melee</Weapon>
+			</Weapons>
+			<ImpactEffectSuffix>weapon_exo_melee</ImpactEffectSuffix>
+		</VisualWeaponConfiguration>
+
+	<!-- Visual Weapon weapon_grenade -->
+		<VisualWeaponConfiguration id="weapon_grenade" parentId="default">
+			<Weapons>
+				<Weapon>com_frag_hand_grenade</Weapon>
+			</Weapons>
+			<BulletTravelSpeed>15</BulletTravelSpeed>
+			<BulletPrefabId>effects@Prefabs/Projectiles/weapon_projectile_grenade.prefab</BulletPrefabId>
+			<WeaponImpactPrefabId>effects@Prefabs/Explosions/GrenadeImpact.prefab</WeaponImpactPrefabId>
+			<ShootSoundId></ShootSoundId>
+			<WeaponSpriteId>ui@Images/UnitInfo/UnitInfos/UnitWeapons/weapon_grenade.png</WeaponSpriteId>
+			<ImpactEffectSuffix>weapon_grenade</ImpactEffectSuffix>
+			<HasExplosiveSFX>True</HasExplosiveSFX>
+			<BulletImpactRadius>3</BulletImpactRadius>
+			<BulletImpactPower>10</BulletImpactPower>
+			<ProjectileType>Handgrenade</ProjectileType>
+			<ShowDetonationIndicator>True</ShowDetonationIndicator>
+			<FireSlope>0.7</FireSlope>
+		</VisualWeaponConfiguration>
+
+	<!--Visual Weapon rus_hero_general_jump-->
+	<VisualWeaponConfiguration id="rus_hero_general_jump" parentId="default">
+			<Weapons>
+				<Weapon>rus_hero_general_jump</Weapon>
+			</Weapons>
+			<BulletTravelSpeed>15</BulletTravelSpeed>
+			<BulletPrefabId>effects@Prefabs/Projectiles/weapon_projectile_grenade.prefab</BulletPrefabId>
+			<WeaponImpactPrefabId>effects@Prefabs/Explosions/GrenadeImpact.prefab</WeaponImpactPrefabId>
+			<ShootSoundId></ShootSoundId>
+			<WeaponSpriteId>ui@Images/UnitInfo/UnitInfos/UnitWeapons/weapon_grenade.png</WeaponSpriteId>
+			<ImpactEffectSuffix>weapon_ability_general_jump</ImpactEffectSuffix>
+			<BulletImpactRadius>3</BulletImpactRadius>
+			<BulletImpactPower>10</BulletImpactPower>
+			<ProjectileType>Handgrenade</ProjectileType>
+			<FireSlope>0.7</FireSlope>
+		</VisualWeaponConfiguration>
+
+	<VisualWeaponConfiguration id="rus_soldier_exo_jump" parentId="default">
+			<Weapons>
+				<Weapon>rus_soldier_exo_jump</Weapon>
+			</Weapons>
+			<BulletPrefabId>effects@Prefabs/Projectiles/weapon_projectile_grenade.prefab</BulletPrefabId>
+			<WeaponImpactPrefabId>effects@Prefabs/Explosions/GrenadeImpact.prefab</WeaponImpactPrefabId>
+			<ShootSoundId></ShootSoundId>
+			<WeaponSpriteId>ui@Images/UnitInfo/UnitInfos/UnitWeapons/weapon_grenade.png</WeaponSpriteId>
+			<ImpactEffectSuffix>weapon_ability_exo_jump</ImpactEffectSuffix>
+			<BulletImpactRadius>1</BulletImpactRadius>
+			<BulletImpactPower>4</BulletImpactPower>
+			<ProjectileType>ArtilleryGrenade</ProjectileType>
+		</VisualWeaponConfiguration>
+
+	 <!-- Visual Weapon weapon_handgun -->
+	<VisualWeaponConfiguration id="weapon_handgun" parentId="default">
+		<BulletPrefabId>effects@Prefabs/Projectiles/weapon_projectile_handgun.prefab</BulletPrefabId>
+		<WeaponImpactPrefabId></WeaponImpactPrefabId>
+		<ImpactEffectSuffix>weapon_handgun</ImpactEffectSuffix>
+		<WeaponSpriteId>ui@Images/UnitInfo/UnitInfos/UnitWeapons/weapon_pistol.png</WeaponSpriteId>
+	</VisualWeaponConfiguration>
+	<VisualWeaponConfiguration id="pol_engineer_handgun" parentId="weapon_handgun">
+		<Weapons>
+			<Weapon>pol_engineer_handgun</Weapon>
+		</Weapons>
+		<ShootSoundId>common@Audio/sfx/units/pol_soldier_engineer/pol_soldier_engineer_shoot.asset</ShootSoundId>
+	</VisualWeaponConfiguration>
+	<VisualWeaponConfiguration id="sax_engineer_handgun" parentId="weapon_handgun">
+		<Weapons>
+			<Weapon>sax_engineer_handgun</Weapon>
+		</Weapons>
+		<ShootSoundId>common@Audio/sfx/units/sax_soldier_engineer/sax_soldier_engineer_shoot.asset</ShootSoundId>
+	</VisualWeaponConfiguration>
+	<VisualWeaponConfiguration id="rus_engineer_handgun" parentId="weapon_handgun">
+		<Weapons>
+			<Weapon>rus_engineer_handgun</Weapon>
+		</Weapons>
+		<ShootSoundId>common@Audio/sfx/units/rus_soldier_engineer/rus_soldier_engineer_shoot.asset</ShootSoundId>
+	</VisualWeaponConfiguration>
+	<VisualWeaponConfiguration id="pol_medic_handgun" parentId="weapon_handgun">
+		<Weapons>
+			<Weapon>pol_medic_handgun</Weapon>
+		</Weapons>
+		<ShootSoundId>common@Audio/sfx/units/pol_soldier_engineer/pol_soldier_engineer_shoot.asset</ShootSoundId>
+	</VisualWeaponConfiguration>
+	<VisualWeaponConfiguration id="sax_medic_handgun" parentId="weapon_handgun">
+		<Weapons>
+			<Weapon>sax_medic_handgun</Weapon>
+		</Weapons>
+		<ShootSoundId>common@Audio/sfx/units/sax_soldier_engineer/sax_soldier_engineer_shoot.asset</ShootSoundId>
+	</VisualWeaponConfiguration>
+	<VisualWeaponConfiguration id="rus_medic_handgun" parentId="weapon_handgun">
+		<Weapons>
+			<Weapon>rus_medic_handgun</Weapon>
+		</Weapons>
+		<ShootSoundId>common@Audio/sfx/units/rus_soldier_engineer/rus_soldier_engineer_shoot.asset</ShootSoundId>
+	</VisualWeaponConfiguration>
+	<VisualWeaponConfiguration id="com_soldier_tsar_handgun" parentId="weapon_handgun">
+		<Weapons>
+			<Weapon>com_soldier_tsar_handgun</Weapon>
+		</Weapons>
+		<ShootSoundId>common@Audio/sfx/units/rus_soldier_engineer/rus_soldier_engineer_shoot.asset</ShootSoundId>
+	</VisualWeaponConfiguration>
+
+	 <!-- Visual Weapon weapon_rifle_light -->
+	<VisualWeaponConfiguration id="weapon_rifle_light" parentId="default">
+		<Weapons>
+		  <Weapon>pol_soldier_rifleman_rifle</Weapon>
+		</Weapons>
+		<BulletPrefabId>effects@Prefabs/Projectiles/weapon_projectile_rifle_light.prefab</BulletPrefabId>
+		<WeaponImpactPrefabId></WeaponImpactPrefabId>
+		<ImpactEffectSuffix>weapon_rifle_light</ImpactEffectSuffix>
+		<ShootSoundId>common@Audio/sfx/units/pol_soldier_rifleman/pol_soldier_rifleman_shoot.asset</ShootSoundId>
+		<WeaponSpriteId>ui@Images/UnitInfo/UnitInfos/UnitWeapons/weapon_rifle.png</WeaponSpriteId>
+	</VisualWeaponConfiguration>
+       <VisualWeaponConfiguration id="tes_soldier_walker_rifle" parentId="weapon_rifle_light">
+           <Weapons>
+               <Weapon>tes_soldier_walker_rifle</Weapon>
+           </Weapons>
+					<ImpactEffectSuffix>weapon_rifle_gauss_small</ImpactEffectSuffix>
+		<ShootSoundId>common@Audio/sfx/units/tes_soldier_walker/tes_soldier_walker_shoot.asset</ShootSoundId>
+       </VisualWeaponConfiguration>
+	<VisualWeaponConfiguration id="pol_hero_cavalry_rifle" parentId="weapon_rifle_light">
+           <Weapons>
+               <Weapon>pol_hero_cavalry_rifle</Weapon>
+           </Weapons>
+		<WeaponSpriteId>ui@Images/UnitInfo/UnitInfos/UnitWeapons/weapon_cavalry.png</WeaponSpriteId>
+		<ShootSoundId>common@Audio/sfx/units/pol_soldier_rifleman/pol_soldier_rifleman_shoot.asset</ShootSoundId>
+       </VisualWeaponConfiguration>
+
+
+
+	 <!-- Sniper Rifle -->
+	 <VisualWeaponConfiguration id="weapon_sniper_rifle" parentId="default">
+		<Weapons>
+			  <Weapon>pol_hero_anna_rifle</Weapon>
+			  <Weapon>pol_hero_annachild_rifle</Weapon>
+		</Weapons>
+		<ShootSoundId>common@Audio/sfx/units/pol_hero_anna/pol_hero_anna_shot.asset</ShootSoundId>
+		<BulletPrefabId>effects@Prefabs/Projectiles/weapon_projectile_sniper_rifle.prefab</BulletPrefabId>
+		<WeaponSpriteId>ui@Images/UnitInfo/UnitInfos/UnitWeapons/weapon_sniper_rifle.png</WeaponSpriteId>
+		<ImpactEffectSuffix>weapon_sniper_rifle</ImpactEffectSuffix>
+	 </VisualWeaponConfiguration>
+
+	 <VisualWeaponConfiguration id="pol_hero_anna_rifle_power_shot" parentId="weapon_sniper_rifle">
+		<Weapons>
+			  <Weapon>pol_hero_anna_rifle_power_shot</Weapon>
+		</Weapons>
+		<BulletPrefabId>effects@Prefabs/Projectiles/weapon_projectile_pol_hero_anna_rifle_power_shot.prefab</BulletPrefabId>
+		<ShootSoundId>common@Audio/sfx/units/pol_hero_anna/pol_hero_anna_powershot_1.wav</ShootSoundId>
+	 </VisualWeaponConfiguration>
+
+<!-- Visual Weapon weapon_rifle_heavy -->
+		<VisualWeaponConfiguration id="weapon_rifle_heavy" parentId="default">
+			<BulletTravelSpeed>200</BulletTravelSpeed>
+			<BulletPrefabId>effects@Prefabs/Projectiles/weapon_projectile_rifle_heavy.prefab</BulletPrefabId>
+			<WeaponImpactPrefabId>effects@Prefabs/Explosions/AlignedImpact.prefab</WeaponImpactPrefabId>
+			<ShootSoundId>common@Audio/sfx/units/pol_mech_recon/pol_mech_recon_shoot.wav</ShootSoundId>
+			<WeaponSpriteId>ui@Images/UnitInfo/UnitInfos/UnitWeapons/weapon_cannon_medium.png</WeaponSpriteId>
+			<ImpactEffectSuffix>weapon_rifle_heavy</ImpactEffectSuffix>
+			<BulletImpactRadius>0.6</BulletImpactRadius>
+			<BulletImpactPower>10</BulletImpactPower>
+		</VisualWeaponConfiguration>
+
+		<VisualWeaponConfiguration id="pol_mech_recon_rifle" parentId="weapon_rifle_heavy">
+			<Weapons>
+				<Weapon>pol_mech_recon_rifle</Weapon>
+			</Weapons>
+		</VisualWeaponConfiguration>
+
+		<VisualWeaponConfiguration id="rus_hero_brother_rifle" parentId="weapon_rifle_heavy">
+			<Weapons>
+				<Weapon>rus_hero_brother_rifle</Weapon>
+			</Weapons>
+			<BulletTravelSpeed>150</BulletTravelSpeed>
+			<ImpactEffectSuffix>weapon_rifle_gauss_medium</ImpactEffectSuffix>
+			<BulletPrefabId>effects@Prefabs/Projectiles/weapon_projectile_gauss.prefab</BulletPrefabId>
+			<WeaponSpriteId>ui@Images/UnitInfo/UnitInfos/UnitWeapons/weapon_brother.png</WeaponSpriteId>
+			<ShootSoundId>common@Audio/sfx/units/rus_hero_brother/rus_hero_brother_shoot.asset</ShootSoundId>
+			<OnlyOneEvent>True</OnlyOneEvent>
+		</VisualWeaponConfiguration>
+
+	<!-- Visual Weapon weapon_smg -->
+		<VisualWeaponConfiguration id="weapon_smg" parentId="default">
+			<Weapons>
+				<Weapon>sax_soldier_rifleman_rifle</Weapon>
+			</Weapons>
+			<BulletPrefabId>effects@Prefabs/Projectiles/weapon_projectile_smg.prefab</BulletPrefabId>
+			<WeaponImpactPrefabId></WeaponImpactPrefabId>
+			<ImpactEffectSuffix>weapon_smg</ImpactEffectSuffix>
+			<ShootSoundId>common@Audio/sfx/units/sax_soldier_rifleman/sax_soldier_rifleman_shoot.asset</ShootSoundId>
+			<WeaponSpriteId>ui@Images/UnitInfo/UnitInfos/UnitWeapons/weapon_smg.png</WeaponSpriteId>
+			<OnlyOneEvent>True</OnlyOneEvent>
+		</VisualWeaponConfiguration>
+		<VisualWeaponConfiguration id="rus_hero_olga_rifle" parentId="weapon_smg">
+			<Weapons>
+				<Weapon>rus_hero_olga_rifle</Weapon>
+			</Weapons>
+			<WeaponSpriteId>ui@Images/UnitInfo/UnitInfos/UnitWeapons/weapon_olga.png</WeaponSpriteId>
+			<ShootSoundId>common@Audio/sfx/units/rus_hero_olga/rus_hero_olga_shoot.asset</ShootSoundId>
+		</VisualWeaponConfiguration>
+
+		<!-- Visual Weapon weapon_shotgun -->
+		<VisualWeaponConfiguration id="weapon_shotgun" parentId="default">
+			<Weapons>
+				<Weapon>rus_soldier_rifleman_rifle</Weapon>
+			</Weapons>
+
+			 <!-- Copied from SMG -->
+			<BulletPrefabId>effects@Prefabs/Projectiles/weapon_projectile_smg.prefab</BulletPrefabId>
+			<WeaponImpactPrefabId></WeaponImpactPrefabId>
+			<ImpactEffectSuffix>weapon_smg</ImpactEffectSuffix>
+			<ShootSoundId>common@Audio/sfx/units/rus_soldier_rifleman/rus_soldier_rifleman_shoot.asset</ShootSoundId>
+			<WeaponSpriteId>ui@Images/UnitInfo/UnitInfos/UnitWeapons/weapon_shotgun_auto.png</WeaponSpriteId>
+			<OnlyOneEvent>True</OnlyOneEvent>
+		</VisualWeaponConfiguration>
+
+		<!-- Copied from Cannon_Burst -->
+		<VisualWeaponConfiguration id="weapon_grenade_launcher" parentId="default">
+			<Weapons>
+				<Weapon>sax_hero_gunter_handgun</Weapon>
+			</Weapons>
+			<ShootSoundId>common@Audio/sfx/units/sax_hero_gunter/sax_hero_gunter_shoot.asset</ShootSoundId>
+			<BulletTravelSpeed>100</BulletTravelSpeed>
+			<BulletPrefabId>effects@Prefabs/Projectiles/weapon_projectile_cannon_burst.prefab</BulletPrefabId>
+			<WeaponSpriteId>ui@Images/UnitInfo/UnitInfos/UnitWeapons/weapon_gunter.png</WeaponSpriteId>
+			<ImpactEffectSuffix>weapon_grenade_launcher</ImpactEffectSuffix>
+			<HasExplosiveSFX>True</HasExplosiveSFX>
+			<BulletImpactRadius>0.6</BulletImpactRadius>
+			<BulletImpactPower>10</BulletImpactPower>
+		</VisualWeaponConfiguration>
+
+		<VisualWeaponConfiguration id="sax_hero_gunter_tagnacht_shadowguard" parentId="default">
+			<Weapons>
+				<Weapon>sax_hero_tag_shadowguard</Weapon>
+				<Weapon>sax_hero_nacht_shadowguard</Weapon>
+			</Weapons>
+			<ImpactEffectSuffix></ImpactEffectSuffix>
+		</VisualWeaponConfiguration>
+
+
+	<!-- Visual Weapon weapon_mg mg infantry -->
+		<VisualWeaponConfiguration id="weapon_mg_infantry" parentId="default">
+			<BulletPrefabId>effects@Prefabs/Projectiles/weapon_projectile_mg_light.prefab</BulletPrefabId>
+			<WeaponImpactPrefabId></WeaponImpactPrefabId>
+			<WeaponSpriteId>ui@Images/UnitInfo/UnitInfos/UnitWeapons/weapon_mg_infantry.png</WeaponSpriteId>
+			<ImpactEffectSuffix>weapon_mg_light</ImpactEffectSuffix>
+			<OnlyOneEvent>True</OnlyOneEvent>
+		</VisualWeaponConfiguration>
+
+			<VisualWeaponConfiguration id="pol_soldier_mg_mg" parentId="weapon_mg_infantry">			
+			<Weapons>
+				<Weapon>pol_soldier_mg_mg</Weapon>
+			</Weapons>
+			<ShootSoundId>common@Audio/sfx/units/pol_soldier_mg/pol_soldier_mg_shoot.asset</ShootSoundId>
+			</VisualWeaponConfiguration>
+			<VisualWeaponConfiguration id="pol_soldier_garrisonmg" parentId="weapon_mg_infantry">			
+			<Weapons>
+				<Weapon>pol_soldier_garrisonmg</Weapon>
+			</Weapons>
+			<ShootSoundId>common@Audio/sfx/units/pol_mech_spider/pol_mech_spider_shoot.asset</ShootSoundId>
+			<OnlyOneEvent>False</OnlyOneEvent>
+			</VisualWeaponConfiguration>			
+
+			<VisualWeaponConfiguration id="sax_soldier_mg_mg" parentId="weapon_mg_infantry">			
+			<Weapons>
+				<Weapon>sax_soldier_mg_mg</Weapon>
+			</Weapons>
+			<ShootSoundId>common@Audio/sfx/units/sax_soldier_mg/sax_soldier_mg_shoot.asset</ShootSoundId>
+			</VisualWeaponConfiguration>
+
+			<VisualWeaponConfiguration id="sax_soldier_garrisonmg" parentId="weapon_mg_infantry">			
+			<Weapons>
+				<Weapon>sax_soldier_garrisonmg</Weapon>
+			</Weapons>
+			<ShootSoundId>common@Audio/sfx/units/pol_mech_spider/pol_mech_spider_shoot.asset</ShootSoundId>
+			<OnlyOneEvent>False</OnlyOneEvent>
+			</VisualWeaponConfiguration>
+
+			<VisualWeaponConfiguration id="rus_soldier_mg_mg" parentId="weapon_mg_infantry">			
+			<Weapons>
+				<Weapon>rus_soldier_mg_mg</Weapon>
+			</Weapons>
+			<ShootSoundId>common@Audio/sfx/units/rus_soldier_mg/rus_soldier_mg_shoot.asset</ShootSoundId>	
+			</VisualWeaponConfiguration>
+
+			<VisualWeaponConfiguration id="rus_soldier_garrisonmg" parentId="weapon_mg_infantry">			
+			<Weapons>
+				<Weapon>rus_soldier_garrisonmg</Weapon>
+			</Weapons>
+			<ShootSoundId>common@Audio/sfx/units/pol_mech_spider/pol_mech_spider_shoot.asset</ShootSoundId>
+			<OnlyOneEvent>False</OnlyOneEvent>
+		</VisualWeaponConfiguration>
+
+	<!-- Visual Weapon weapon_mg_light -->
+		<VisualWeaponConfiguration id="weapon_mg_light" parentId="default">
+			<Weapons>
+				<Weapon>pol_mech_artillery_mg</Weapon>
+			</Weapons>
+			<BulletPrefabId>effects@Prefabs/Projectiles/weapon_projectile_mg_light.prefab</BulletPrefabId>
+			<WeaponImpactPrefabId></WeaponImpactPrefabId>
+			<ShootSoundId>common@Audio/sfx/units/pol_mech_artillery/pol_mech_artillery_mg_shoot.asset</ShootSoundId>
+			<WeaponSpriteId>ui@Images/UnitInfo/UnitInfos/UnitWeapons/weapon_smg.png</WeaponSpriteId>
+			<ImpactEffectSuffix>weapon_mg_light</ImpactEffectSuffix>
+			<OnlyOneEvent>True</OnlyOneEvent>
+		</VisualWeaponConfiguration>
+		
+		<VisualWeaponConfiguration id="rus_mech_scythe_mg" parentId="weapon_mg_light">
+			<Weapons>
+				<Weapon>rus_mech_scythe_mg</Weapon>
+			</Weapons>
+			<ShootSoundId>common@Audio/sfx/units/rus_mech_scythe/rus_mech_scythe_mg_shoot.asset</ShootSoundId>
+		</VisualWeaponConfiguration>
+
+		<VisualWeaponConfiguration id="weapon_mg_light_spider_cannons" parentId="weapon_mg_light">
+			<Weapons>
+				<Weapon>pol_mech_spider_cannons</Weapon>
+				<Weapon>pol_mech_spider_cannons_overdrive</Weapon>
+			</Weapons>
+			<ShootSoundId>common@Audio/sfx/units/pol_mech_spider/pol_mech_spider_shoot.asset</ShootSoundId>
+			<UnitSpecificWeaponEffectSuffix>weapon_mg_light_spider</UnitSpecificWeaponEffectSuffix>
+			<OnlyOneEvent>False</OnlyOneEvent><!-- we need it set to 'false' because the attack origin component uses the events to switch barrels which we want to do each shot-->
+		</VisualWeaponConfiguration>
+
+	<!-- Visual Weapon weapon_mg_heavy -->
+		<VisualWeaponConfiguration id="weapon_mg_heavy" parentId="default">
+			<Weapons>
+				<Weapon>rus_mech_gunfort_mg_BL</Weapon>
+				<Weapon>rus_mech_gunfort_mg_BR</Weapon>
+			</Weapons>
+			<BulletTravelSpeed>75</BulletTravelSpeed>
+			<BulletPrefabId>effects@Prefabs/Projectiles/weapon_projectile_mg_heavy.prefab</BulletPrefabId>
+			<ImpactEffectSuffix>weapon_mg_heavy</ImpactEffectSuffix>
+			<ShootSoundId>common@Audio/sfx/units/rus_mech_gunfort/rus_mech_gunfort_mg_left_right_shoot.asset</ShootSoundId>
+			<OnlyOneEvent>True</OnlyOneEvent>
+		</VisualWeaponConfiguration>
+
+		<VisualWeaponConfiguration id="sax_mech_gunfort_mg" parentId="default">
+			<Weapons>
+				<Weapon>sax_mech_gunfort_mg_R</Weapon>
+				<Weapon>sax_mech_gunfort_mg_L</Weapon>
+			</Weapons>
+			<BulletTravelSpeed>75</BulletTravelSpeed>
+			<BulletPrefabId>effects@Prefabs/Projectiles/weapon_projectile_mg_heavy.prefab</BulletPrefabId>
+			<ImpactEffectSuffix>weapon_mg_heavy</ImpactEffectSuffix>
+			<ShootSoundId>common@Audio/sfx/units/sax_mech_gunfort/sax_mech_gunfort_mg_left_right_shoot.asset</ShootSoundId>
+			<OnlyOneEvent>False</OnlyOneEvent>
+		</VisualWeaponConfiguration>
+		
+		<VisualWeaponConfiguration id="sax_mech_gunfort_mg_B" parentId="sax_mech_gunfort_mg">
+			<Weapons>
+				<Weapon>sax_mech_gunfort_mg_B</Weapon>
+			</Weapons>
+			<ShootSoundId>common@Audio/sfx/units/sax_mech_gunfort/sax_mech_gunfort_mg_front_rear_shoot.asset</ShootSoundId>
+		</VisualWeaponConfiguration>
+		
+		<VisualWeaponConfiguration id="sax_mech_gunfort_mg_F" parentId="sax_mech_gunfort_mg">
+			<Weapons>
+				<Weapon>sax_mech_gunfort_mg_F</Weapon>
+			</Weapons>
+			<ShootSoundId>common@Audio/sfx/units/sax_mech_gunfort/sax_mech_gunfort_mg_front_rear_shoot.asset</ShootSoundId>
+		</VisualWeaponConfiguration>
+		
+		<VisualWeaponConfiguration id="com_support_mg_mg" parentId="weapon_mg_heavy">
+			<Weapons>
+				<Weapon>com_support_mg_mg</Weapon>
+			</Weapons>
+			<ShootSoundId>common@Audio/sfx/units/com_support_mg/com_support_mg_shoot.asset</ShootSoundId>
+			<WeaponSpriteId>ui@Images/UnitInfo/UnitInfos/UnitWeapons/weapon_gatlin_gun.png</WeaponSpriteId>
+			<OnlyOneEvent>True</OnlyOneEvent>
+			<ShowWeaponCone>True</ShowWeaponCone>
+			<UnitSpecificWeaponEffectSuffix>weapon_mg_gatling_support_mg</UnitSpecificWeaponEffectSuffix>
+		</VisualWeaponConfiguration>
+
+	 	<VisualWeaponConfiguration id="com_structure_bunker" parentId="weapon_mg_heavy">
+			<Weapons>
+				<Weapon>com_structure_bunker</Weapon>
+				<Weapon>rus_structure_t1bunker</Weapon>
+			</Weapons>
+			<BulletTravelSpeed>75</BulletTravelSpeed>
+			<WeaponSpriteId>ui@Images/UnitInfo/UnitInfos/UnitWeapons/weapon_bunker_gatling.png</WeaponSpriteId>
+			<OnlyOneEvent>True</OnlyOneEvent>
+		</VisualWeaponConfiguration>
+
+	 	 <VisualWeaponConfiguration id="sax_structure_bunker" parentId="com_structure_bunker">
+			<Weapons>
+				<Weapon>sax_structure_bunker</Weapon>
+			</Weapons>
+			<AbilitySoundId>common@Audio/sfx/units/sax_structure_bunker/sax_structure_bunker_shoot.wav</AbilitySoundId>
+		</VisualWeaponConfiguration>
+
+	 	<VisualWeaponConfiguration id="pol_structure_bunker" parentId="com_structure_bunker">
+			<Weapons>
+				<Weapon>pol_structure_t1bunker</Weapon>
+			</Weapons>
+			<AbilitySoundId>common@Audio/sfx/units/pol_structure_bunker/pol_structure_bunker_shoot.wav</AbilitySoundId>
+			<WeaponSpriteId>ui@Images/UnitInfo/UnitInfos/UnitWeapons/weapon_bunker_mg.png</WeaponSpriteId>
+		</VisualWeaponConfiguration>
+
+
+	<!-- Visual Weapon weapon_mg_gatling -->
+		<VisualWeaponConfiguration id="weapon_mg_gatling" parentId="default">
+			<BulletTravelSpeed>75</BulletTravelSpeed>
+			<BulletPrefabId>effects@Prefabs/Projectiles/weapon_projectile_mg_gatling.prefab</BulletPrefabId>
+			<WeaponImpactPrefabId>effects@Prefabs/Impacts_Normal/DirtImpact.prefab</WeaponImpactPrefabId>
+			<ImpactEffectSuffix>weapon_mg_gatling</ImpactEffectSuffix>
+			<ShootSoundId></ShootSoundId>
+			<AbilitySoundId>common@Audio/sfx/units/sax_mech_gatling/sax_mech_gatling_shoot.asset</AbilitySoundId>
+			<WeaponSpriteId>ui@Images/UnitInfo/UnitInfos/UnitWeapons/weapon_gatlin_gun.png</WeaponSpriteId>
+			<OnlyOneEvent>True</OnlyOneEvent>
+		</VisualWeaponConfiguration>
+
+	 	<VisualWeaponConfiguration id="sax_mech_gatling_gatling" parentId="weapon_mg_gatling">
+			<Weapons>
+				<Weapon>sax_mech_gatling_gatling</Weapon>
+			</Weapons>
+			<UnitSpecificWeaponEffectSuffix>weapon_mg_gatling_gatling</UnitSpecificWeaponEffectSuffix>
+		</VisualWeaponConfiguration>
+
+	 	<VisualWeaponConfiguration id="sax_mech_gatling_sweep" parentId="weapon_mg_gatling">
+			<Weapons>
+				<Weapon>sax_mech_gatling_sweep</Weapon>
+			</Weapons>
+			<AbilitySoundId>common@Audio/sfx/units/sax_mech_gatling/sax_mech_gatling_sweep.wav</AbilitySoundId>
+			<UnitSpecificWeaponEffectSuffix>weapon_mg_gatling_gatling</UnitSpecificWeaponEffectSuffix>
+		</VisualWeaponConfiguration>
+
+		<VisualWeaponConfiguration id="rus_mech_gunfort_mg_F" parentId="weapon_mg_heavy">
+			<Weapons>
+				<Weapon>rus_mech_gunfort_mg_F</Weapon>
+			</Weapons>
+			<ShootSoundId>common@Audio/sfx/units/rus_mech_gunfort/rus_mech_gunfort_mg_front_shoot.asset</ShootSoundId>
+		</VisualWeaponConfiguration>
+
+		<VisualWeaponConfiguration id="tes_mech_guard_gatling" parentId="weapon_mg_gatling">
+			<Weapons>
+				<Weapon>tes_mech_guard_gatling_L</Weapon>
+				<Weapon>tes_mech_guard_gatling_R</Weapon>
+			</Weapons>
+			<OnlyOneEvent>True</OnlyOneEvent>
+			<AbilitySoundId>common@Audio/sfx/units/tes_mech_guard/tes_mech_guard_gattling_shoot.asset</AbilitySoundId>
+		</VisualWeaponConfiguration>
+
+	<!-- Visual Weapon weapon_cannon_heavy -->
+	 	<VisualWeaponConfiguration id="weapon_cannon_heavy" parentId="default">
+			<BulletTravelSpeed>100</BulletTravelSpeed>
+			<BulletPrefabId>effects@Prefabs/Projectiles/weapon_projectile_cannon_heavy.prefab</BulletPrefabId>
+			<WeaponImpactPrefabId>effects@Prefabs/Explosions/AlignedImpact.prefab</WeaponImpactPrefabId>
+			<ShootSoundId>common@Audio/sfx/units/com_support_cannon/com_support_cannon_shoot.asset</ShootSoundId>
+			<WeaponSpriteId>ui@Images/UnitInfo/UnitInfos/UnitWeapons/weapon_cannon_big.png</WeaponSpriteId>
+			<ImpactEffectSuffix>weapon_cannon_heavy</ImpactEffectSuffix>
+			<BulletImpactRadius>0.6</BulletImpactRadius>
+			<BulletImpactPower>10</BulletImpactPower>
+			<HasExplosiveSFX>True</HasExplosiveSFX>
+		</VisualWeaponConfiguration>
+
+	 	<VisualWeaponConfiguration id="com_support_cannon" parentId="weapon_cannon_heavy">
+			<Weapons>
+				<Weapon>com_support_cannon_cannon</Weapon>
+			</Weapons>
+			<ShootSoundId>common@Audio/sfx/units/com_support_cannon/com_support_cannon_shoot.asset</ShootSoundId>
+			<BulletTravelSpeed>200</BulletTravelSpeed>
+			<WeaponSpriteId>ui@Images/UnitInfo/UnitInfos/UnitWeapons/weapon_cannon_medium.png</WeaponSpriteId>
+		  <ShowWeaponCone>True</ShowWeaponCone>
+		</VisualWeaponConfiguration>
+
+		<VisualWeaponConfiguration id="com_support_destroyer_cannon" parentId="weapon_cannon_heavy">
+			<Weapons>
+				<Weapon>com_support_destroyer_cannon</Weapon>
+			</Weapons>
+			<BulletTravelSpeed>200</BulletTravelSpeed>
+			<WeaponSpriteId>ui@Images/UnitInfo/UnitInfos/UnitWeapons/weapon_cannon_big.png</WeaponSpriteId>
+		  <ShowWeaponCone>True</ShowWeaponCone>
+		  <ConeFollowsWeaponDirection>True</ConeFollowsWeaponDirection>
+		  <ShootSoundId>common@Audio/sfx/units/com_support_destroyer/com_support_destroyer_cannon_shoot.asset</ShootSoundId>
+		</VisualWeaponConfiguration>
+
+	 	<VisualWeaponConfiguration id="pol_mech_artillery_cannon_motion" parentId="weapon_cannon_heavy">
+			<Weapons>
+				<Weapon>pol_mech_artillery_cannon_motion</Weapon>
+			</Weapons>
+			<ShootSoundId>common@Audio/sfx/units/pol_mech_artillery/pol_mech_artillery_shoot.asset</ShootSoundId>
+			<BulletTravelSpeed>200</BulletTravelSpeed>
+			<WeaponSpriteId>ui@Images/UnitInfo/UnitInfos/UnitWeapons/weapon_cannon_medium.png</WeaponSpriteId>
+		  <ShowWeaponCone>True</ShowWeaponCone>
+		  <ImpactEffectSuffix>weapon_cannon_artillery</ImpactEffectSuffix>
+		  <HasExplosiveSFX>True</HasExplosiveSFX>
+		</VisualWeaponConfiguration>
+
+		<VisualWeaponConfiguration id="sax_mech_dachs_cannon" parentId="weapon_cannon_heavy">
+			<Weapons>
+				<Weapon>sax_mech_dachs_cannon</Weapon>
+			</Weapons>
+			<BulletTravelSpeed>100</BulletTravelSpeed>
+			<WeaponSpriteId>ui@Images/UnitInfo/UnitInfos/UnitWeapons/weapon_cannon_medium.png</WeaponSpriteId>
+			<BulletImpactRadius>0.6</BulletImpactRadius>
+			<BulletImpactPower>10</BulletImpactPower>
+			<ShootSoundId>common@Audio/sfx/units/sax_mech_dachs/sax_mech_dachs_shoot.asset</ShootSoundId>
+		</VisualWeaponConfiguration>
+	 	 <VisualWeaponConfiguration id="pol_hero_rebel_cannon" parentId="weapon_cannon_heavy">
+			<Weapons>
+				<Weapon>pol_hero_rebel_cannon</Weapon>
+			</Weapons>
+			<BulletTravelSpeed>100</BulletTravelSpeed>
+			<WeaponSpriteId>ui@Images/UnitInfo/UnitInfos/UnitWeapons/weapon_rebel.png</WeaponSpriteId>
+			<BulletImpactRadius>0.6</BulletImpactRadius>
+			<BulletImpactPower>10</BulletImpactPower>
+			<ShootSoundId>common@Audio/sfx/units/pol_hero_rebel/pol_hero_rebel_cannon_shoot.asset</ShootSoundId>
+		</VisualWeaponConfiguration>
+
+		<VisualWeaponConfiguration id="pol_hero_rebel_charge_impact" parentId="defaultMechMelee">
+			<Weapons>
+				<Weapon>pol_hero_rebel_charge_impact</Weapon>
+			</Weapons>
+			<ImpactEffectSuffix>weapon_rebel_charge_impact</ImpactEffectSuffix>
+		</VisualWeaponConfiguration>
+
+		 <VisualWeaponConfiguration id="sax_hero_brunhilde_cannon" parentId="weapon_cannon_heavy">
+			<Weapons>
+				<Weapon>sax_hero_brunhilde_cannon_LF</Weapon>
+				<Weapon>sax_hero_brunhilde_cannon_LM</Weapon>
+				<Weapon>sax_hero_brunhilde_cannon_LR</Weapon>
+				<Weapon>sax_hero_brunhilde_cannon_RF</Weapon>
+				<Weapon>sax_hero_brunhilde_cannon_RM</Weapon>
+				<Weapon>sax_hero_brunhilde_cannon_RR</Weapon>
+			</Weapons>
+			<BulletTravelSpeed>100</BulletTravelSpeed>
+			<WeaponSpriteId>ui@Images/UnitInfo/UnitInfos/UnitWeapons/weapon_brunhilde.png</WeaponSpriteId>
+			<BulletImpactRadius>0.6</BulletImpactRadius>
+			<BulletImpactPower>10</BulletImpactPower>
+			<ShootSoundId>common@Audio/sfx/units/sax_hero_brunhilde/sax_hero_brunhilde_sidecannon.asset</ShootSoundId>
+		</VisualWeaponConfiguration>
+
+		<VisualWeaponConfiguration id="sax_hero_brunhilde_cannon_large" parentId="weapon_cannon_heavy">
+			<Weapons>
+				<Weapon>sax_hero_brunhilde_cannon</Weapon>
+			</Weapons>
+			<BulletTravelSpeed>100</BulletTravelSpeed>
+			<WeaponSpriteId>ui@Images/UnitInfo/UnitInfos/UnitWeapons/weapon_brunhilde.png</WeaponSpriteId>
+			<BulletImpactRadius>0.6</BulletImpactRadius>
+			<BulletImpactPower>10</BulletImpactPower>
+			<ShootSoundId>common@Audio/sfx/units/sax_hero_brunhilde/sax_hero_brunhilde_primary_shoot.asset</ShootSoundId>
+			<BulletPrefabId>effects@Prefabs/Projectiles/weapon_projectile_cannon_ultra_heavy.prefab</BulletPrefabId>
+			<ImpactEffectSuffix>weapon_cannon_ultra_heavy</ImpactEffectSuffix>
+			<HasExplosiveSFX>True</HasExplosiveSFX>
+		</VisualWeaponConfiguration>
+
+		<VisualWeaponConfiguration id="pol_mech_gunfort_cannon" parentId="weapon_cannon_heavy">
+			<Weapons>
+				<Weapon>pol_mech_gunfort_cannon</Weapon>
+			</Weapons>
+			<BulletPrefabId>effects@Prefabs/Projectiles/weapon_projectile_cannon_ultra_heavy.prefab</BulletPrefabId>
+			<ImpactEffectSuffix>weapon_cannon_ultra_heavy</ImpactEffectSuffix>
+			<ShootSoundId>common@Audio/sfx/units/pol_mech_gunfort/pol_mech_gunfort_shoot.asset</ShootSoundId>
+			<HasExplosiveSFX>True</HasExplosiveSFX>
+		</VisualWeaponConfiguration>
+
+		<VisualWeaponConfiguration id="sax_mech_gunfort_cannon" parentId="weapon_cannon_heavy">
+			<Weapons>
+				<Weapon>sax_mech_gunfort_cannon</Weapon>
+			</Weapons>
+						<ShootSoundId>common@Audio/sfx/units/sax_mech_gunfort/sax_mech_gunfort_cannon_shoot.asset</ShootSoundId>
+			<ImpactEffectSuffix>weapon_cannon_ultra_heavy</ImpactEffectSuffix>
+			<BulletPrefabId>effects@Prefabs/Projectiles/weapon_projectile_cannon_ultra_heavy.prefab</BulletPrefabId>
+			<HasExplosiveSFX>True</HasExplosiveSFX>
+		</VisualWeaponConfiguration>
+
+		<VisualWeaponConfiguration id="rus_mech_gunfort_cannon" parentId="weapon_cannon_heavy">
+			<Weapons>
+				<Weapon>rus_mech_gunfort_cannon</Weapon>
+			</Weapons>
+			<ImpactEffectSuffix>weapon_cannon_ultra_heavy</ImpactEffectSuffix>
+			<BulletPrefabId>effects@Prefabs/Projectiles/weapon_projectile_cannon_ultra_heavy.prefab</BulletPrefabId>
+			<ShootSoundId>common@Audio/sfx/units/rus_mech_gunfort/rus_mech_gunfort_cannon_shoot.asset</ShootSoundId>
+			<HasExplosiveSFX>True</HasExplosiveSFX>
+		</VisualWeaponConfiguration>
+
+		<VisualWeaponConfiguration id="rus_hero_general_cannon" parentId="weapon_cannon_heavy">
+			<Weapons>
+				<Weapon>rus_hero_general_cannon</Weapon>
+				<Weapon>rus_hero_general_cannon_L</Weapon>
+				<Weapon>rus_hero_general_cannon_R</Weapon>
+			</Weapons>
+			<WeaponSpriteId>ui@Images/UnitInfo/UnitInfos/UnitWeapons/weapon_general.png</WeaponSpriteId>
+		</VisualWeaponConfiguration>
+
+		<VisualWeaponConfiguration id="com_structure_bunkercannon" parentId="weapon_cannon_heavy">
+			<Weapons>
+				<Weapon>sax_structure_t2bunker</Weapon>
+				<Weapon>rus_structure_t2bunker</Weapon>
+			</Weapons>
+			<WeaponSpriteId>ui@Images/UnitInfo/UnitInfos/UnitWeapons/weapon_bunker_cannon_big.png</WeaponSpriteId>
+		</VisualWeaponConfiguration>
+
+		<VisualWeaponConfiguration id="pol_structure_bunkercannon" parentId="weapon_cannon_heavy">
+			<Weapons>
+				<Weapon>pol_structure_t2bunker</Weapon>
+			</Weapons>
+			<WeaponSpriteId>ui@Images/UnitInfo/UnitInfos/UnitWeapons/weapon_bunker_cannon_medium.png</WeaponSpriteId>
+		</VisualWeaponConfiguration>
+
+
+		<VisualWeaponConfiguration id="pol_soldier_exo_autocannon" parentId="weapon_cannon_heavy">
+			<Weapons>
+				<Weapon>pol_soldier_exo_autocannon</Weapon>
+			</Weapons>
+			<ShootSoundId>common@Audio/sfx/units/pol_soldier_exo/pol_soldier_exo.asset</ShootSoundId>
+		</VisualWeaponConfiguration>
+
+		<VisualWeaponConfiguration id="tes_mech_guard_railgun" parentId="weapon_cannon_heavy">
+			<Weapons>
+				<Weapon>tes_mech_guard_railgun</Weapon>
+			</Weapons>
+			<ShootSoundId>common@Audio/sfx/units/tes_mech_guard/tes_mech_guard_cannon_shoot.asset</ShootSoundId>
+			<ImpactEffectSuffix>weapon_rifle_gauss_large</ImpactEffectSuffix>
+			<BulletPrefabId>effects@Prefabs/Projectiles/weapon_projectile_gauss_large.prefab</BulletPrefabId>
+			<WeaponSpriteId>ui@Images/UnitInfo/UnitInfos/UnitWeapons/weapon_cannon_medium.png</WeaponSpriteId>
+		  	<ShowWeaponCone>True</ShowWeaponCone>
+		</VisualWeaponConfiguration>
+
+	<!-- Visual Weapon weapon_cannon_artillery -->
+		<VisualWeaponConfiguration id="weapon_cannon_artillery" parentId="default">
+			<BulletTravelSpeed>15</BulletTravelSpeed>
+			<BulletPrefabId>effects@Prefabs/Projectiles/weapon_projectile_cannon_artillery.prefab</BulletPrefabId>
+			<ImpactEffectSuffix>weapon_cannon_artillery</ImpactEffectSuffix>
+			<BulletImpactRadius>5</BulletImpactRadius>
+			<BulletImpactPower>10</BulletImpactPower>
+			<ProjectileType>Mortargrenade</ProjectileType>
+			<ShowWeaponCone>True</ShowWeaponCone>
+			<WeaponSpriteId>ui@Images/UnitInfo/UnitInfos/UnitWeapons/weapon_mortar_heavy.png</WeaponSpriteId>
+			<ShootSoundId>common@Audio/sfx/units/pol_mech_artillery/pol_mech_artillery_shoot.asset</ShootSoundId>
+			<HasExplosiveSFX>True</HasExplosiveSFX>
+		</VisualWeaponConfiguration>
+
+		<VisualWeaponConfiguration id="sax_mech_artillery_cannon" parentId="weapon_cannon_artillery">
+			<Weapons>
+				<Weapon>sax_mech_artillery_cannon</Weapon>
+			</Weapons>
+			<ShootSoundId>common@Audio/sfx/units/sax_mech_artillery/sax_mech_artillery_shoot.asset</ShootSoundId>
+			<WeaponSpriteId>ui@Images/UnitInfo/UnitInfos/UnitWeapons/weapon_mortar_heavy.png</WeaponSpriteId>
+			<ProjectileType>ArtilleryGrenade</ProjectileType>
+			<UnitSpecificWeaponEffectSuffix>weapon_cannon_artillery_pol_artillery</UnitSpecificWeaponEffectSuffix>
+		</VisualWeaponConfiguration>
+
+		<VisualWeaponConfiguration id="sax_mech_artillery_flare" parentId="weapon_cannon_artillery">
+			<Weapons>
+				<Weapon>sax_mech_artillery_flare</Weapon>
+			</Weapons>
+			<ImpactEffectSuffix>weapon_artillery_flare</ImpactEffectSuffix>
+			<BulletImpactRadius>0</BulletImpactRadius>
+			<BulletImpactPower>0</BulletImpactPower>
+			<ShootSoundId>common@Audio/sfx/units/sax_mech_artillery/sax_mech_artillery_flare_1.wav</ShootSoundId>
+			<WeaponSpriteId>ui@Images/UnitInfo/UnitInfos/UnitWeapons/weapon_mortar_heavy.png</WeaponSpriteId>
+			<ProjectileType>ArtilleryGrenade</ProjectileType>
+		</VisualWeaponConfiguration>
+
+		<VisualWeaponConfiguration id="com_mech_traincannon_cannon" parentId="weapon_cannon_artillery">
+			<Weapons>
+				<Weapon>com_mech_traincannon_cannon</Weapon>
+			</Weapons>
+			<ProjectileType>ArtilleryGrenade</ProjectileType>
+		</VisualWeaponConfiguration>
+
+		<VisualWeaponConfiguration id="pol_mech_artillery_cannon_siege" parentId="weapon_cannon_artillery">
+			<Weapons>
+				<Weapon>pol_mech_artillery_cannon_siege</Weapon>
+			</Weapons>
+			<ShootSoundId>common@Audio/sfx/units/pol_mech_artillery/pol_mech_artillery_shoot.asset</ShootSoundId>
+			<ProjectileType>ArtilleryGrenade</ProjectileType>
+			<UnitSpecificWeaponEffectSuffix>weapon_cannon_artillery_sax_artillery</UnitSpecificWeaponEffectSuffix>
+		</VisualWeaponConfiguration>
+		
+		<VisualWeaponConfiguration id="pol_mech_artillery_cannon_smokebarrel" parentId="weapon_cannon_artillery">
+			<Weapons>
+				<Weapon>pol_mech_artillery_smokebarrel</Weapon>
+			</Weapons>
+			<ShootSoundId>common@Audio/sfx/units/pol_mech_artillery/pol_mech_artillery_shoot.asset</ShootSoundId>
+			<ProjectileType>ArtilleryGrenade</ProjectileType>
+			<UnitSpecificWeaponEffectSuffix>weapon_cannon_artillery_sax_artillery</UnitSpecificWeaponEffectSuffix>
+			<ImpactEffectSuffix>weapon_artillery_flare</ImpactEffectSuffix>
+			<BulletPrefabId>effects@Prefabs/Projectiles/weapon_projectile_rocket_smoke.prefab</BulletPrefabId>
+		</VisualWeaponConfiguration>
+		
+		<VisualWeaponConfiguration id="sax_hero_brunhilde_longshot" parentId="weapon_cannon_artillery">
+			<Weapons>
+				<Weapon>sax_hero_brunhilde_longshot</Weapon>
+			</Weapons>
+			<ProjectileType>Mortargrenade</ProjectileType>
+			<UnitSpecificWeaponEffectSuffix>weapon_cannon_brunhilde_longshot</UnitSpecificWeaponEffectSuffix>
+			<ImpactEffectSuffix>weapon_cannon_ultra_heavy</ImpactEffectSuffix>
+			<ShootSoundId>common@Audio/sfx/units/sax_hero_brunhilde/sax_hero_brunhilde_longshot.wav</ShootSoundId>
+			<HasExplosiveSFX>True</HasExplosiveSFX>
+		</VisualWeaponConfiguration>
+
+
+	<!-- Visual Weapon weapon_cannon_burst -->
+	 	<VisualWeaponConfiguration id="weapon_cannon_burst" parentId="default">
+			<BulletTravelSpeed>100</BulletTravelSpeed>
+			<BulletPrefabId>effects@Prefabs/Projectiles/weapon_projectile_cannon_burst.prefab</BulletPrefabId>
+			<WeaponImpactPrefabId>effects@Prefabs/Explosions/AlignedImpact.prefab</WeaponImpactPrefabId>
+			<ShootSoundId>common@Audio/sfx/units/sax_mech_tank/sax_mech_tank_shoot.asset</ShootSoundId>
+			<WeaponSpriteId>ui@Images/UnitInfo/UnitInfos/UnitWeapons/weapon_cannon_light.png</WeaponSpriteId>
+			<ImpactEffectSuffix>weapon_cannon_burst</ImpactEffectSuffix>
+			<BulletImpactRadius>0.6</BulletImpactRadius>
+			<BulletImpactPower>10</BulletImpactPower>
+			<HasExplosiveSFX>True</HasExplosiveSFX>
+		</VisualWeaponConfiguration>
+
+		<VisualWeaponConfiguration id="sax_mech_tank_cannon" parentId="weapon_cannon_burst">
+			<Weapons>
+				<Weapon>sax_mech_tank_cannon</Weapon>
+			</Weapons>
+			<ShootSoundId>common@Audio/sfx/units/sax_mech_tank/sax_mech_tank_shoot.asset</ShootSoundId>
+			<WeaponSpriteId>ui@Images/UnitInfo/UnitInfos/UnitWeapons/weapon_cannon_light.png</WeaponSpriteId>
+		</VisualWeaponConfiguration>
+
+		<VisualWeaponConfiguration id="rus_mech_revolver_volley_gun" parentId="weapon_cannon_burst">
+			<Weapons>
+				<Weapon>rus_mech_revolver_cannon_L</Weapon>
+				<Weapon>rus_mech_revolver_cannon_LM</Weapon>
+				<Weapon>rus_mech_revolver_cannon_RM</Weapon>
+				<Weapon>rus_mech_revolver_cannon_R</Weapon>
+			</Weapons>
+			<UnitSpecificWeaponEffectSuffix>weapon_revolver_volley_gun</UnitSpecificWeaponEffectSuffix>
+			<ShootSoundId>common@Audio/sfx/units/rus_mech_revolver/rus_mech_revolver_shoot_single.asset</ShootSoundId>
+			<WeaponSpriteId>ui@Images/UnitInfo/UnitInfos/UnitWeapons/weapon_cannon_medium.png</WeaponSpriteId>
+		</VisualWeaponConfiguration>
+
+	 	<VisualWeaponConfiguration id="com_soldier_gunner_cannon" parentId="weapon_cannon_burst">
+			<BulletTravelSpeed>100</BulletTravelSpeed>
+			<ShootSoundId>common@Audio/sfx/units/com_soldier_gunner/com_soldier_gunner_shoot.asset</ShootSoundId>
+			<WeaponSpriteId>ui@Images/UnitInfo/UnitInfos/UnitWeapons/weapon_cannon_gunner.png</WeaponSpriteId>
+		</VisualWeaponConfiguration>
+
+		<VisualWeaponConfiguration id="pol_soldier_gunner_cannon" parentId="com_soldier_gunner_cannon">
+			<Weapons>
+				<Weapon>pol_soldier_gunner_cannon</Weapon>
+			</Weapons>
+			<ShootSoundId>common@Audio/sfx/units/pol_soldier_gunner/pol_soldier_gunner_shoot.asset</ShootSoundId>
+		</VisualWeaponConfiguration>
+
+		<VisualWeaponConfiguration id="sax_soldier_gunner_cannon" parentId="com_soldier_gunner_cannon">
+			<Weapons>
+				<Weapon>sax_soldier_gunner_cannon</Weapon>
+			</Weapons>
+			<ShootSoundId>common@Audio/sfx/units/sax_soldier_gunner/sax_soldier_gunner_shoot.asset</ShootSoundId>
+		</VisualWeaponConfiguration>
+
+		<VisualWeaponConfiguration id="rus_soldier_gunner_cannon" parentId="com_soldier_gunner_cannon">
+			<Weapons>
+				<Weapon>rus_soldier_gunner_cannon</Weapon>
+			</Weapons>
+			<ShootSoundId>common@Audio/sfx/units/rus_soldier_gunner/rus_soldier_gunner_shoot.asset</ShootSoundId>
+		</VisualWeaponConfiguration>
+
+	<!-- Visual Weapon weapon_rocket -->
+	 	<VisualWeaponConfiguration id="weapon_rocket" parentId="default">
+			<BulletTravelSpeed>75</BulletTravelSpeed>
+			<BulletPrefabId>effects@Prefabs/Projectiles/weapon_projectile_rocket.prefab</BulletPrefabId>
+			<WeaponImpactPrefabId></WeaponImpactPrefabId>
+			<ShootSoundId>common@Audio/sfx/units/com_soldier_gunner/com_soldier_gunner_shoot.asset</ShootSoundId>
+			<WeaponSpriteId>ui@Images/UnitInfo/UnitInfos/UnitWeapons/weapon_rocket_heavy.png</WeaponSpriteId>
+			<ImpactEffectSuffix>weapon_rocket</ImpactEffectSuffix>
+			<BulletImpactRadius>3</BulletImpactRadius>
+			<BulletImpactPower>10</BulletImpactPower>
+			<HasExplosiveSFX>True</HasExplosiveSFX>
+		</VisualWeaponConfiguration>
+
+		<VisualWeaponConfiguration id="sax_mech_dachs_rockets" parentId="weapon_rocket">
+			<Weapons>
+				<Weapon>sax_mech_dachs_rockets</Weapon>
+			</Weapons>
+			<ShootSoundId>common@Audio/sfx/units/sax_mech_dachs/sax_mech_dachs_rocket_v1.wav</ShootSoundId>
+			<UnitSpecificWeaponEffectSuffix>weapon_rocket_sax_dachs</UnitSpecificWeaponEffectSuffix>
+		</VisualWeaponConfiguration>
+		<VisualWeaponConfiguration id="rus_mech_gunfort_demolisher" parentId="weapon_rocket">
+			<Weapons>
+				<Weapon>rus_mech_gunfort_demolisher</Weapon>
+			</Weapons>
+			<AbilitySoundId>common@Audio/sfx/units/rus_mech_gunfort/rus_mech_gunfort_demolisher_shoot1.wav</AbilitySoundId>
+			<ImpactEffectSuffix>weapon_rocket_devastator</ImpactEffectSuffix>
+			<UnitSpecificWeaponEffectSuffix>weapon_rocket_devastator</UnitSpecificWeaponEffectSuffix>
+			<BulletPrefabId>effects@Prefabs/Projectiles/weapon_projectile_rocket_devastator.prefab</BulletPrefabId>
+			<BulletTravelSpeed>75</BulletTravelSpeed>
+			<HasExplosiveSFX>True</HasExplosiveSFX>
+		</VisualWeaponConfiguration>
+
+		<VisualWeaponConfiguration id="tes_mech_guard_rockets" parentId="weapon_rocket">
+			<Weapons>
+				<Weapon>tes_mech_guard_rockets</Weapon>
+				<Weapon>tes_mech_guard_rockets_LL</Weapon>
+				<Weapon>tes_mech_guard_rockets_LR</Weapon>
+				<Weapon>tes_mech_guard_rockets_RL</Weapon>
+				<Weapon>tes_mech_guard_rockets_RR</Weapon>
+			</Weapons>
+			<BulletPrefabId>effects@Prefabs/Projectiles/weapon_projectile_shocktrap_launcher.prefab</BulletPrefabId>
+			<ShootSoundId>common@Audio/sfx/units/tes_mech_guard/tes_mech_guard_shock_shoot.asset</ShootSoundId>
+			<ImpactEffectSuffix>weapon_rocket_lightning</ImpactEffectSuffix>
+		</VisualWeaponConfiguration>
+
+		<VisualWeaponConfiguration id="rus_hero_brother_rocket" parentId="weapon_rocket">
+			<Weapons>
+				<Weapon>rus_hero_brother_rocket</Weapon>
+			</Weapons>
+			<BulletPrefabId>effects@Prefabs/Projectiles/weapon_projectile_rocket_small.prefab</BulletPrefabId>
+			<UnitSpecificWeaponEffectSuffix>weapon_rocket_brother</UnitSpecificWeaponEffectSuffix>
+			<BulletImpactPower>5</BulletImpactPower>
+			<BulletTravelSpeed>60</BulletTravelSpeed>
+			<ShootSoundId>common@Audio/sfx/units/rus_hero_brother/rus_hero_brother_rocket.asset</ShootSoundId>
+		</VisualWeaponConfiguration>
+
+		<VisualWeaponConfiguration id="rus_hero_brother_chainlightning" parentId="weapon_rocket">
+			<Weapons>
+				<Weapon>rus_hero_brother_chainlightning</Weapon>
+			</Weapons>
+			<BulletPrefabId>effects@Prefabs/Projectiles/weapon_projectile_chainlightning.prefab</BulletPrefabId>
+			<ImpactEffectSuffix>weapon_chainlightning</ImpactEffectSuffix>
+			<ShootSoundId>common@Audio/sfx/units/rus_hero_brother/rus_hero_brother_chainlight_shoot_with_lighting.asset</ShootSoundId>
+			<BulletTravelSpeed>1000</BulletTravelSpeed>
+			<ProjectileType>ChainBullet</ProjectileType>
+		</VisualWeaponConfiguration>
+
+		<VisualWeaponConfiguration id="weapon_ligntning_small" parentId="weapon_rocket">
+			<Weapons>
+				<Weapon>tes_mech_serve_shocker</Weapon>
+			</Weapons>
+			<ImpactEffectSuffix>weapon_ligntning_small</ImpactEffectSuffix>
+			<ShootSoundId>common@Audio/sfx/units/tes_mech_serve/tes_mech_serve_shoot.asset</ShootSoundId>
+			<BulletPrefabId>effects@Prefabs/Projectiles/weapon_projectile_lightning_small.prefab</BulletPrefabId>
+			<WeaponSpriteId>ui@Images/UnitInfo/UnitInfos/UnitWeapons/weapon_shocker.png</WeaponSpriteId>
+			<BulletTravelSpeed>1000</BulletTravelSpeed>
+			<ProjectileType>ChainBullet</ProjectileType>
+		</VisualWeaponConfiguration>
+
+		<VisualWeaponConfiguration id="weapon_charger" parentId="weapon_ligntning_small">
+			<Weapons>
+				<Weapon>tes_mech_serve_charger</Weapon>
+			</Weapons>
+			<WeaponSpriteId>ui@Images/UnitInfo/UnitInfos/UnitWeapons/weapon_serve.png</WeaponSpriteId>
+		</VisualWeaponConfiguration>
+		
+		<VisualWeaponConfiguration id="weapon_ligntning_riggin" parentId="weapon_ligntning_small">
+			<Weapons>
+				<Weapon>rus_hero_brother_rigging</Weapon>
+			</Weapons>
+			<BulletPrefabId>effects@Prefabs/Projectiles/weapon_projectile_lightning_riggin.prefab</BulletPrefabId>
+		</VisualWeaponConfiguration>
+
+
+			<!-- Visual Weapon weapon_prince_rocket -->
+	 	<VisualWeaponConfiguration id="weapon_prince_rocket" parentId="weapon_rocket">
+			<BulletTravelSpeed>45</BulletTravelSpeed>
+			<BulletPrefabId>effects@Prefabs/Projectiles/weapon_projectile_rocket_small.prefab</BulletPrefabId>
+			<ProjectileType>Cannonmissile</ProjectileType>
+			<OnlyOneEvent>False</OnlyOneEvent><!-- Although this is fast firing mech we need it set to 'false' b/c this animation events are generated on the fly for each barrel-->
+		</VisualWeaponConfiguration>
+
+		<VisualWeaponConfiguration id="sax_hero_prince_rockets" parentId="weapon_prince_rocket">
+			<Weapons>
+				<Weapon>sax_hero_prince_rockets</Weapon>
+			</Weapons>
+			<AbilitySoundId>common@Audio/sfx/units/sax_hero_prince/sax_hero_prince_rockets.asset</AbilitySoundId>
+		</VisualWeaponConfiguration>
+
+		<VisualWeaponConfiguration id="rus_mech_artillery_launcher" parentId="weapon_rocket">
+			<Weapons>
+				<Weapon>rus_mech_artillery_launcher</Weapon>
+			</Weapons>
+			<BulletTravelSpeed>75</BulletTravelSpeed>
+			<WeaponSpriteId>ui@Images/UnitInfo/UnitInfos/UnitWeapons/weapon_rocket_light.png</WeaponSpriteId>
+			<BulletPrefabId>effects@Prefabs/Projectiles/weapon_projectile_rocket_medium.prefab</BulletPrefabId>
+			<ShowBulletInFogOfWar>True</ShowBulletInFogOfWar>
+			<ProjectileType>Cannonmissile</ProjectileType>
+			<UnitSpecificWeaponEffectSuffix>weapon_rocket_rus_artillery</UnitSpecificWeaponEffectSuffix>
+			<ShootSoundId>common@Audio/sfx/units/rus_mech_artillery/Katyusha_multiple_rockets_launch_v5.asset</ShootSoundId>
+			<AbilitySoundId></AbilitySoundId>
+		</VisualWeaponConfiguration>
+
+		<VisualWeaponConfiguration id="rus_mech_artillery_sentry_launcher" parentId="weapon_rocket">
+			<Weapons>
+				<Weapon>rus_mech_artillery_sentry_launcher</Weapon>
+			</Weapons>
+			<BulletTravelSpeed>75</BulletTravelSpeed>
+			<WeaponSpriteId>ui@Images/UnitInfo/UnitInfos/UnitWeapons/weapon_rocket_light.png</WeaponSpriteId>
+			<BulletPrefabId>effects@Prefabs/Projectiles/weapon_projectile_rocket_medium.prefab</BulletPrefabId>
+			<ShowBulletInFogOfWar>True</ShowBulletInFogOfWar>
+			<ProjectileType>Cannonmissile</ProjectileType>
+			<UnitSpecificWeaponEffectSuffix>weapon_rocket_rus_artillery</UnitSpecificWeaponEffectSuffix>
+			<ShootSoundId>common@Audio/sfx/units/rus_mech_artillery/Katyusha_single_rocket.asset</ShootSoundId> <!-- This needs a different sound effect to the normal launcher as we need individual rocket sounds -->
+			<AbilitySoundId></AbilitySoundId>
+		</VisualWeaponConfiguration>
+
+	<!-- Visual Weapon weapon_mortar_light -->
+		<VisualWeaponConfiguration id="weapon_mortar_light" parentId="default">
+			<BulletTravelSpeed>15</BulletTravelSpeed>
+			<BulletPrefabId>effects@Prefabs/Projectiles/weapon_projectile_mortar.prefab</BulletPrefabId>
+			<WeaponImpactPrefabId>effects@Prefabs/Explosions/MortarImpact.prefab</WeaponImpactPrefabId>
+			<ShootSoundId>common@Audio/sfx/units/sax_soldier_mortar/mortar_fire.wav</ShootSoundId>
+			<WeaponSpriteId>ui@Images/UnitInfo/UnitInfos/UnitWeapons/weapon_mortar_light.png</WeaponSpriteId>
+			<ImpactEffectSuffix>weapon_mortar_light</ImpactEffectSuffix>
+			<HasExplosiveSFX>True</HasExplosiveSFX>
+			<BulletImpactRadius>3</BulletImpactRadius>
+			<BulletImpactPower>10</BulletImpactPower>
+			<ProjectileType>Mortargrenade</ProjectileType>
+		</VisualWeaponConfiguration>
+
+		<VisualWeaponConfiguration id="sax_soldier_mortar_mortar" parentId="weapon_mortar_light">
+			<Weapons>
+				<Weapon>sax_soldier_mortar_mortar</Weapon>
+			</Weapons>
+			<ShootSoundId>common@Audio/sfx/units/sax_soldier_mortar/sax_soldier_mortar_shoot.asset</ShootSoundId>
+			<UnitSpecificWeaponEffectSuffix>weapon_mortar_light_sax_soldier_mortar</UnitSpecificWeaponEffectSuffix>
+		</VisualWeaponConfiguration>
+		<VisualWeaponConfiguration id="pol_mech_gunfort_mortar" parentId="weapon_mortar_light">
+			<Weapons>
+				<Weapon>pol_mech_gunfort_mortar</Weapon>
+			</Weapons>
+			<ShootSoundId>common@Audio/sfx/units/pol_mech_gunfort/pol_mech_gunfort_mortar_1.wav</ShootSoundId>
+		</VisualWeaponConfiguration>
+
+
+	<!-- Visual Weapon weapon_mortar_heavy -->
+	 	<VisualWeaponConfiguration id="weapon_mortar_heavy" parentId="default">
+			<BulletTravelSpeed>15</BulletTravelSpeed>
+			<BulletPrefabId>effects@Prefabs/Projectiles/weapon_projectile_mortar.prefab</BulletPrefabId>
+			<WeaponImpactPrefabId>effects@Prefabs/Explosions/MortarImpact.prefab</WeaponImpactPrefabId>
+			<ShootSoundId>common@Audio/sfx/units/sax_soldier_mortar/mortar_fire.wav</ShootSoundId>
+			<WeaponSpriteId>ui@Images/UnitInfo/UnitInfos/UnitWeapons/weapon_mortar_light.png</WeaponSpriteId>
+			<ImpactEffectSuffix>weapon_mortar_heavy</ImpactEffectSuffix>
+			<HasExplosiveSFX>True</HasExplosiveSFX>
+			<BulletImpactRadius>3</BulletImpactRadius>
+			<BulletImpactPower>10</BulletImpactPower>
+			<ProjectileType>Mortargrenade</ProjectileType>
+		</VisualWeaponConfiguration>
+		<VisualWeaponConfiguration id="pol_mech_trooptransport_mortar" parentId="weapon_mortar_heavy">
+			<Weapons>
+				<Weapon>pol_mech_trooptransport_mortar</Weapon>
+			</Weapons>
+			<ShootSoundId>common@Audio/sfx/units/pol_mech_trooptransport/pol_mech_trooptransport_shoot.asset</ShootSoundId>
+			<UnitSpecificWeaponEffectSuffix>weapon_mortar_heavy_trooptransport</UnitSpecificWeaponEffectSuffix>
+		</VisualWeaponConfiguration>
+		<VisualWeaponConfiguration id="com_support_mortar_mortar" parentId="weapon_mortar_heavy">
+			<Weapons>
+				<Weapon>com_support_mortar_mortar</Weapon>
+			</Weapons>
+			<ShootSoundId>common@Audio/sfx/units/com_support_mortar/com_support_mortar_mortar_shoot.asset</ShootSoundId>
+			<ProjectileType>Handgrenade</ProjectileType>
+			<ShowWeaponCone>True</ShowWeaponCone>
+		</VisualWeaponConfiguration>
+
+	<!-- Visual Weapon weapon_projectile_bolt -->
+		<VisualWeaponConfiguration id="weapon_projectile_bolt" parentId="default">
+			<BulletTravelSpeed>100</BulletTravelSpeed>
+			<BulletPrefabId>effects@Prefabs/Projectiles/weapon_projectile_bolt.prefab</BulletPrefabId>
+			<WeaponImpactPrefabId>effects@Prefabs/Explosions/AlignedImpact.prefab</WeaponImpactPrefabId>
+			<ShootSoundId>common@Audio/sfx/units/pol_mech_recon/pol_mech_recon_shoot.wav</ShootSoundId>
+			<WeaponSpriteId>ui@Images/UnitInfo/UnitInfos/UnitWeapons/weapon_cannon_medium.png</WeaponSpriteId>
+			<ImpactEffectSuffix>weapon_projectile_bolt</ImpactEffectSuffix>
+			<BulletImpactRadius>0.6</BulletImpactRadius>
+			<BulletImpactPower>10</BulletImpactPower>
+		</VisualWeaponConfiguration>
+
+
+		<VisualWeaponConfiguration id="pol_mech_stinger_bolter" parentId="weapon_projectile_bolt">
+			<Weapons>
+				<Weapon>pol_mech_stinger_bolter</Weapon>
+			</Weapons>
+			<ShootSoundId>common@Audio/sfx/units/pol_mech_stinger/pol_mech_stinger_shoot.asset</ShootSoundId>
+		</VisualWeaponConfiguration>
+
+		<VisualWeaponConfiguration id="sax_hero_prince_gatling" parentId="weapon_rifle_heavy">
+			<Weapons>
+				<Weapon>sax_hero_prince_gatling</Weapon>
+			</Weapons>
+			<ShootSoundId>common@Audio/sfx/units/sax_hero_prince/sax_hero_prince_shoot.asset</ShootSoundId>
+			<WeaponSpriteId>ui@Images/UnitInfo/UnitInfos/UnitWeapons/weapon_prince.png</WeaponSpriteId>
+		</VisualWeaponConfiguration>
+		
+		<VisualWeaponConfiguration id="sax_hero_prince_gatling_sweep" parentId="weapon_cannon_burst">
+			<Weapons>
+				<Weapon>sax_hero_prince_gatling_sweep_L</Weapon>
+				<Weapon>sax_hero_prince_gatling_sweep_R</Weapon>
+			</Weapons>
+			<ShootSoundId>common@Audio/sfx/units/sax_hero_prince/sax_hero_prince_shoot.asset</ShootSoundId>
+			<WeaponSpriteId>ui@Images/UnitInfo/UnitInfos/UnitWeapons/weapon_prince.png</WeaponSpriteId>
+		</VisualWeaponConfiguration>
+
+	<!-- Visual Weapon weapon_projectile_harpoon -->
+		<VisualWeaponConfiguration id="weapon_projectile_harpoon" parentId="default">
+			<Weapons>
+			<Weapon>pol_mech_stinger_harpoon</Weapon>
+			</Weapons>
+			<BulletTravelSpeed>100</BulletTravelSpeed>
+			<BulletPrefabId>effects@Prefabs/Projectiles/weapon_projectile_harpoon.prefab</BulletPrefabId>
+			<WeaponImpactPrefabId>effects@Prefabs/Explosions/AlignedImpact.prefab</WeaponImpactPrefabId>
+			<ShootSoundId>common@Audio/sfx/units/pol_mech_stinger/pol_mech_stinger_harpoon.asset</ShootSoundId>
+			<WeaponSpriteId>ui@Images/UnitInfo/UnitInfos/UnitWeapons/weapon_cannon_medium.png</WeaponSpriteId>
+			<ImpactEffectSuffix>weapon_projectile_harpoon</ImpactEffectSuffix>
+			<BulletImpactRadius>0.6</BulletImpactRadius>
+			<BulletImpactPower>10</BulletImpactPower>
+		</VisualWeaponConfiguration>
+
+		<!-- Visual Weapon rus_mech_bomber_thrower -->
+		<VisualWeaponConfiguration id="weapon_projectile_bomb" parentId="default">
+			<Weapons>
+				<Weapon>rus_mech_bomber_launcher</Weapon>
+			</Weapons>
+			<BulletTravelSpeed>50</BulletTravelSpeed>
+			<BulletPrefabId>effects@Prefabs/Projectiles/weapon_projectile_bomb.prefab</BulletPrefabId>
+			<WeaponImpactPrefabId>effects@Prefabs/Explosions/GrenadeImpact.prefab</WeaponImpactPrefabId>
+			<ShootSoundId>common@Audio/sfx/units/rus_mech_bomber/rus_mech_bomber_shoot.asset</ShootSoundId>
+			<WeaponSpriteId>ui@Images/UnitInfo/UnitInfos/UnitWeapons/weapon_bomber.png</WeaponSpriteId>
+			<ImpactEffectSuffix>weapon_grenade</ImpactEffectSuffix>
+			<HasExplosiveSFX>True</HasExplosiveSFX>
+			<BulletImpactRadius>3</BulletImpactRadius>
+			<BulletImpactPower>10</BulletImpactPower>
+			<ProjectileType>Handgrenade</ProjectileType>
+		</VisualWeaponConfiguration>
+
+		<VisualWeaponConfiguration id="com_structure_bunker_bomb" parentId="weapon_projectile_bomb">
+			<Weapons>
+				<Weapon>sax_structure_t1bunker</Weapon>
+			</Weapons>
+			<BulletTravelSpeed>50</BulletTravelSpeed>
+			<AbilitySoundId>common@Audio/sfx/units/com_support_cannon/com_support_cannon_shoot.asset</AbilitySoundId>
+			<WeaponSpriteId>ui@Images/UnitInfo/UnitInfos/UnitWeapons/weapon_bunker_bomb.png</WeaponSpriteId>
+		</VisualWeaponConfiguration>
+
+<!-- Visual Weapon weapon_flamer -->
+		<VisualWeaponConfiguration id="weapon_flamer" parentId="default">
+			<Weapons>
+				<Weapon>com_soldier_flamer</Weapon>
+			</Weapons>
+			<BulletTravelSpeed>75</BulletTravelSpeed>
+			<BulletPrefabId>effects@Prefabs/Projectiles/weapon_projectile_flamer_dummy.prefab</BulletPrefabId>
+			<AbilitySoundId></AbilitySoundId>
+			<WeaponSpriteId>ui@Images/UnitInfo/UnitInfos/UnitWeapons/weapon_flamethrower.png</WeaponSpriteId>
+			<OnlyOneEvent>True</OnlyOneEvent>
+			<ImpactEffectSuffix></ImpactEffectSuffix>
+		</VisualWeaponConfiguration>
+
+		<VisualWeaponConfiguration id="rus_soldier_flamer" parentId="weapon_flamer">
+			<Weapons>
+				<Weapon>rus_soldier_flamethrower</Weapon>
+			</Weapons>
+			<ShootSoundId>common@Audio/sfx/units/rus_soldier_flamer/rus_soldier_flamer_shoot.asset</ShootSoundId>
+		</VisualWeaponConfiguration>
+
+		<VisualWeaponConfiguration id="sax_soldier_flamer" parentId="weapon_flamer">
+			<Weapons>
+				<Weapon>sax_soldier_flamethrower</Weapon>
+			</Weapons>
+			<ShootSoundId>common@Audio/sfx/units/sax_soldier_flamer/sax_soldier_flamer_shoot.asset</ShootSoundId>
+		</VisualWeaponConfiguration>
+
+		<VisualWeaponConfiguration id="pol_soldier_flamer" parentId="weapon_flamer">
+			<Weapons>
+				<Weapon>pol_soldier_flamethrower</Weapon>
+			</Weapons>
+			<ShootSoundId>common@Audio/sfx/units/pol_soldier_flamer/pol_soldier_flamer_shoot.asset</ShootSoundId>
+		</VisualWeaponConfiguration>
+		
+		<VisualWeaponConfiguration id="com_soldier_flamethrower_garrsion" parentId="weapon_flamer">
+			<Weapons>
+				<Weapon>com_soldier_flamethrower_garrsion</Weapon>
+			</Weapons>
+			<ShootSoundId>common@Audio/sfx/units/pol_soldier_flamer/pol_soldier_flamer_shoot.asset</ShootSoundId>
+		</VisualWeaponConfiguration>
+
+
+	 	<VisualWeaponConfiguration id="rus_mech_flamer_flamer" parentId="weapon_flamer">
+			<Weapons>
+				<Weapon>rus_mech_flamer_flamer</Weapon>
+			</Weapons>
+			<ShootSoundId>common@Audio/sfx/units/rus_mech_flamer/rus_mech_flamer_shoot.asset</ShootSoundId>
+			<AbilitySoundId></AbilitySoundId>
+			<OnlyOneEvent>false</OnlyOneEvent>
+		</VisualWeaponConfiguration>
+		<VisualWeaponConfiguration id="rus_mech_flamer_framing" parentId="weapon_flamer">
+			<Weapons>
+				<Weapon>rus_mech_flamer_framing</Weapon>
+			</Weapons>
+			<ShootSoundId>common@Audio/sfx/units/rus_mech_flamer/rus_mech_flamer_shoot.wav</ShootSoundId>
+			<AbilitySoundId></AbilitySoundId>
+			<OnlyOneEvent>false</OnlyOneEvent>
+		</VisualWeaponConfiguration>
+
+	<!-- Visual Weapon explosions -->
+		<VisualWeaponConfiguration id="com_mech_mine_explosion" parentId="default">
+			<Weapons>
+				<Weapon>com_mech_mine_explosion</Weapon>
+			</Weapons>
+			<WeaponSpriteId>ui@Images/UnitInfo/UnitInfos/UnitWeapons/weapon_mine.png</WeaponSpriteId>
+			<Ammunition>
+				<Ammunition>Mine</Ammunition>
+			</Ammunition>
+			<BulletImpactRadius>3</BulletImpactRadius>
+			<BulletImpactPower>10</BulletImpactPower>
+			<ImpactEffectSuffix>weapon_mine</ImpactEffectSuffix>
+			<HasExplosiveSFX>True</HasExplosiveSFX>
+			<ProjectileType>ArtilleryGrenade</ProjectileType>
+		</VisualWeaponConfiguration>
+
+		<VisualWeaponConfiguration id="weapon_explosive_detonator" parentId="default">
+			<Weapons>
+				<Weapon>rus_hero_olga_detonators</Weapon>
+			</Weapons>
+			<Ammunition>
+				<Ammunition>Olga_Detonator</Ammunition>
+			</Ammunition>
+			<BulletPrefabId></BulletPrefabId>
+			<BulletImpactRadius>5</BulletImpactRadius>
+			<BulletImpactPower>10</BulletImpactPower>
+			<ImpactEffectSuffix>weapon_explosive_detonator</ImpactEffectSuffix>
+			<ProjectileType>ArtilleryGrenade</ProjectileType>
+			<HasExplosiveSFX>True</HasExplosiveSFX>
+		</VisualWeaponConfiguration>
+
+	<!-- Visual Weapon debug_explosion -->
+		<VisualWeaponConfiguration id="com_deadly_explosion" parentId="weapon_cannon_artillery">
+			<Ammunition>
+				<Ammunition>DeadlyExplosion</Ammunition>
+				<WeaponImpactPrefabId></WeaponImpactPrefabId>
+			</Ammunition>
+		</VisualWeaponConfiguration>
+		<VisualWeaponConfiguration id="com_huge_explosion" parentId="weapon_cannon_artillery">
+			<Ammunition>
+				<Ammunition>HugeExplosion</Ammunition>
+				<WeaponImpactPrefabId></WeaponImpactPrefabId>
+			</Ammunition>
+		</VisualWeaponConfiguration>
+		<VisualWeaponConfiguration id="com_explosive_gas_tank" parentId="default">
+			<Ammunition>
+				<Ammunition>GasTank</Ammunition>
+			</Ammunition>
+			<BulletImpactRadius>5</BulletImpactRadius>
+			<BulletImpactPower>10</BulletImpactPower>
+		</VisualWeaponConfiguration>
+		<VisualWeaponConfiguration id="com_explosive_car" parentId="default">
+			<Ammunition>
+				<Ammunition>CarExplosion</Ammunition>
+			</Ammunition>
+			<BulletImpactRadius>5</BulletImpactRadius>
+			<BulletImpactPower>6</BulletImpactPower>
+		</VisualWeaponConfiguration>
+		<VisualWeaponConfiguration id="com_explosive_barrel" parentId="default">
+			<Ammunition>
+				<Ammunition>ExplosiveBarrel</Ammunition>
+			</Ammunition>
+			<BulletImpactRadius>5</BulletImpactRadius>
+			<BulletImpactPower>5</BulletImpactPower>
+		</VisualWeaponConfiguration>
+		<VisualWeaponConfiguration id="com_big_explosion" parentId="default">
+			<Ammunition>
+				<Ammunition>BigExplosion</Ammunition>
+				<WeaponImpactPrefabId></WeaponImpactPrefabId>
+			</Ammunition>
+			<ShootSoundId></ShootSoundId>
+		</VisualWeaponConfiguration>
+
+	<!--Visual Weapon snowball-->
+		<VisualWeaponConfiguration id="snowball" parentId="default">
+			<Weapons>
+				<Weapon>com_npc_farmerboy_snowball</Weapon>
+				<Weapon>pol_hero_annachild_snowball</Weapon>
+			</Weapons>
+			<BulletTravelSpeed>12</BulletTravelSpeed>
+			<BulletPrefabId>effects@Prefabs/Projectiles/weapon_projectile_snowball.prefab</BulletPrefabId>
+			<WeaponSpriteId>ui@Images/UnitInfo/UnitInfos/UnitWeapons/weapon_snowball.png</WeaponSpriteId>
+			<ProjectileType>Snowball</ProjectileType>
+			<ImpactEffectSuffix>weapon_snowball</ImpactEffectSuffix>
+			<FireSlope>0.5</FireSlope>
+			<AbilitySoundId></AbilitySoundId>
+			<ShootSoundId>common@Audio/sfx/units/com_soldier_snowball/Snowball_shot.asset</ShootSoundId>
+		</VisualWeaponConfiguration>
+
+	<!--Visual Weapon snow melee-->
+		<VisualWeaponConfiguration id="snowMelee">
+			<Weapons>
+				<Weapon>pol_hero_annachild_melee</Weapon>
+			</Weapons>
+			<BulletPrefabId>effects@Prefabs/Impacts_Normal/SnowMelee.prefab</BulletPrefabId>
+			<WeaponSpriteId>ui@Images/UnitInfo/UnitInfos/UnitWeapons/weapon_snowball.png</WeaponSpriteId>
+			<ImpactEffectSuffix>weapon_snow_melee</ImpactEffectSuffix>
+			<AbilitySoundId></AbilitySoundId>
+			<ShootSoundId>common@Audio/sfx/units/com_soldier_snowball/Snowball_shot.asset</ShootSoundId>
+		</VisualWeaponConfiguration>
+
+	<!--Visual Weapon mother wheel-->
+		<VisualWeaponConfiguration id="sax_mech_mother_wheel" parentId="default">
+			<Weapons>
+				<Weapon>sax_mech_mother_wheel</Weapon>
+				<Weapon>sax_mech_mother_wheel_F</Weapon>
+				<Weapon>sax_mech_mother_wheel_FL</Weapon>
+				<Weapon>sax_mech_mother_wheel_FR</Weapon>
+				<Weapon>sax_mech_mother_wheel_BL</Weapon>
+				<Weapon>sax_mech_mother_wheel_BR</Weapon>
+			</Weapons>
+			<WeaponSpriteId>ui@Images/UnitInfo/UnitInfos/UnitWeapons/weapon_mother.png</WeaponSpriteId>
+		</VisualWeaponConfiguration>
+
+		<VisualWeaponConfiguration id="sax_mech_mothersdrone_selfdestruct" parentId="default">
+			<Weapons>
+				<Weapon>sax_mech_mothersdrone_selfdestruct</Weapon>
+			</Weapons>
+			<Ammunition>
+				<Ammunition>MotherWheel</Ammunition>
+			</Ammunition>
+			<BulletImpactRadius>3</BulletImpactRadius>
+			<BulletImpactPower>10</BulletImpactPower>
+			<ProjectileType>ArtilleryGrenade</ProjectileType>
+			<ImpactEffectSuffix>weapon_cannon_artillery</ImpactEffectSuffix>
+			<HasExplosiveSFX>True</HasExplosiveSFX>
+		</VisualWeaponConfiguration>
+
+    <VisualWeaponConfiguration id="com_mech_mine_explosion" parentId="default">
+      <Weapons>
+        <Weapon>com_mech_mine_explosion</Weapon>
+      </Weapons>
+	  <WeaponSpriteId>ui@Images/UnitInfo/UnitInfos/UnitWeapons/weapon_mine.png</WeaponSpriteId>
+      <Ammunition>
+        <Ammunition>Mine</Ammunition>
+      </Ammunition>
+      <BulletImpactRadius>3</BulletImpactRadius>
+      <BulletImpactPower>10</BulletImpactPower>
+	  <ImpactEffectSuffix>weapon_mine</ImpactEffectSuffix>
+	  <HasExplosiveSFX>True</HasExplosiveSFX>
+      <ProjectileType>ArtilleryGrenade</ProjectileType>
+    </VisualWeaponConfiguration>
+
+		<VisualWeaponConfiguration id="tes_mech_charger_energy_explosion" parentId="default">
+		  <WeaponSpriteId></WeaponSpriteId>
+		  <Ammunition>
+			<Ammunition>ChargerEnergyExplosion</Ammunition>
+		  </Ammunition>
+		  <BulletImpactRadius>3</BulletImpactRadius>
+		  <BulletImpactPower>10</BulletImpactPower>
+		  <!--ImpactEffectSuffix>weapon_mine</ImpactEffectSuffix>--> <!-- TODO replace with correct effect -->
+		  <ProjectileType>ArtilleryGrenade</ProjectileType>
+		</VisualWeaponConfiguration>
+
+		<VisualWeaponConfiguration id="tesla_coil_shock" parentId="default">
+			<Ammunition>
+				<Ammunition>TeslaCoilShock</Ammunition>
+			</Ammunition>
+			<BulletImpactRadius>50</BulletImpactRadius>
+			<BulletImpactPower>0</BulletImpactPower>
+		<ShootSoundId>common@Audio/sfx/units/tes_mech_serve/tes_mech_serve_shoot.asset</ShootSoundId>
+		</VisualWeaponConfiguration>
+
+	 	<VisualWeaponConfiguration id="sax_mech_gunfort_launcher" parentId="weapon_rocket">
+		 	<Weapons>
+				<Weapon>sax_mech_gunfort_launcher_F</Weapon>
+				<Weapon>sax_mech_gunfort_launcher_L</Weapon>
+				<Weapon>sax_mech_gunfort_launcher_R</Weapon>
+			</Weapons>
+			<BulletTravelSpeed>45</BulletTravelSpeed>
+			<BulletPrefabId>effects@Prefabs/Projectiles/weapon_projectile_rocket_small.prefab</BulletPrefabId>
+			<ProjectileType>Cannonmissile</ProjectileType>
+			<OnlyOneEvent>False</OnlyOneEvent><!-- Although this is fast firing mech we need it set to 'false' b/c this animation events are generated on the fly for each barrel-->
+		</VisualWeaponConfiguration>
+
+		<VisualWeaponConfiguration id="tes_mech_guard_shocktrap" parentId="default">
+			<Ammunition>
+				<Ammunition>GuardShocktrap</Ammunition>
+				<Ammunition>IkarusShocktrap</Ammunition>
+				<Ammunition>IkarusShocktrapDrop</Ammunition>
+			</Ammunition>
+			<BulletImpactRadius>50</BulletImpactRadius>
+			<BulletImpactPower>0</BulletImpactPower>
+			<ImpactEffectSuffix>weapon_ligntning_small</ImpactEffectSuffix>
+			<BulletPrefabId>effects@Prefabs/Projectiles/weapon_projectile_lightning_small.prefab</BulletPrefabId>
+			<ShootSoundId>common@Audio/sfx/units/tes_mech_serve/tes_mech_serve_shoot.asset</ShootSoundId>
+		</VisualWeaponConfiguration>
+
+		<VisualWeaponConfiguration id="pol_hero_cavalry_bomb" parentId="default">
+			<Weapons>
+				<Weapon>pol_hero_cavalry_bomb</Weapon>
+			</Weapons>
+			<BulletTravelSpeed>12</BulletTravelSpeed>
+			<BulletPrefabId>effects@Prefabs/Projectiles/weapon_projectile_sticky_bomb.prefab</BulletPrefabId>
+			<WeaponSpriteId>ui@Images/UnitInfo/UnitInfos/UnitWeapons/weapon_sticky_bomb.png</WeaponSpriteId>
+			<ProjectileType>HomingMissile</ProjectileType>
+			<ImpactEffectSuffix>weapon_sticky_bomb</ImpactEffectSuffix>
+			<FireSlope>1.5</FireSlope>
+			<AbilitySoundId></AbilitySoundId>
+			<ShootSoundId>common@Audio/sfx/units/com_soldier_snowball/Snowball_shot.asset</ShootSoundId>
+		</VisualWeaponConfiguration>
+
+		<VisualWeaponConfiguration id="sticky_bomb_explosion" parentId="default">
+			<Ammunition>
+				<Ammunition>Cav_Bomb</Ammunition>
+			</Ammunition>
+			<ShootSoundId>common@Audio/sfx/combat/grenade_impact/grenade_impact.asset</ShootSoundId>
+		</VisualWeaponConfiguration>
+
+		<VisualWeaponConfiguration id="smokescreen" parentId="default">
+			<Ammunition>
+				<Ammunition>Flare</Ammunition>
+				<Ammunition>Smokescreen</Ammunition>
+			</Ammunition>
+			<BulletImpactRadius>5</BulletImpactRadius>
+			<BulletImpactPower>10</BulletImpactPower>
+			<ImpactEffectSuffix></ImpactEffectSuffix>
+		</VisualWeaponConfiguration>
+
+		<VisualWeaponConfiguration id="tes_mech_ikarus_shocktrap_launcher" parentId="weapon_cannon_artillery">
+			<Weapons>
+				<Weapon>tes_mech_ikarus_shocktrap_launcher</Weapon>
+			</Weapons>
+			<ShootSoundId>common@Audio/sfx/units/tes_mech_ikarus/tes_mech_ikarus_shocktrap_shoot.wav</ShootSoundId>
+			<ImpactEffectSuffix>weapon_rifle_gauss_ikarus</ImpactEffectSuffix>
+			<BulletPrefabId>effects@Prefabs/Projectiles/weapon_projectile_shocktrap_launcher.prefab</BulletPrefabId>
+			<ProjectileType>ArtilleryGrenade</ProjectileType>
+		</VisualWeaponConfiguration>
+
+		<VisualWeaponConfiguration id="tes_mech_ikarus_rockets" parentId="weapon_rocket">
+			<Weapons>
+				<Weapon>tes_mech_ikarus_rockets</Weapon>
+				<Weapon>tes_mech_ikarus_rockets_F</Weapon>
+				<Weapon>tes_mech_ikarus_rockets_L</Weapon>
+				<Weapon>tes_mech_ikarus_rockets_R</Weapon>
+			</Weapons>
+			<ShootSoundId>common@Audio/sfx/units/tes_mech_ikarus/tes_mech_ikarus_rockets_shoot.asset</ShootSoundId>
+			<BulletTravelSpeed>35</BulletTravelSpeed>
+			<BulletPrefabId>effects@Prefabs/Projectiles/weapon_projectile_rocket_lightning.prefab</BulletPrefabId>
+			<ProjectileType>Cannonmissile</ProjectileType>
+			<ImpactEffectSuffix>weapon_rifle_gauss_medium</ImpactEffectSuffix>		
+			<OnlyOneEvent>False</OnlyOneEvent>
+		</VisualWeaponConfiguration>
+
+		<VisualWeaponConfiguration id="weapon_burn" parentId="default">
+			<Ammunition>
+				<Ammunition>Burn</Ammunition>
+			</Ammunition>
+		</VisualWeaponConfiguration>
+		<ImpactEffectSuffix>weapon_burn</ImpactEffectSuffix>
+</VisualWeaponRepository>

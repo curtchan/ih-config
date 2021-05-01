@@ -1,0 +1,3485 @@
+<AIUnits>
+  <AIUnitUsefulnessConfig id="pol_hero_anna_usefulness">
+    <TaskUsefulness>
+      <Usefulness Type="Conquer" Rating="1.0"/>
+      <Usefulness Type="Attack" Rating="0.5"/>
+      <Usefulness Type="Defend" Rating="0.5"/>
+      <Usefulness Type="Support" Rating="0.4"/>
+      <Usefulness Type="Construct" Rating="0.0"/>
+    </TaskUsefulness>
+    <UnitCharacteristics>
+      <Characteristic Type="Mobility" Rating="0.8"/>
+      <Characteristic Type="Defense" Rating="0.5"/>
+      <Characteristic Type="Range" Rating="0.7"/>
+      <Characteristic Type="Damage" Rating="0.6"/>
+      <Characteristic Type="Precision" Rating="0.8"/>
+      <Characteristic Type="RateOfFire" Rating="0.3"/>
+      <Characteristic Type="AreaEffect" Rating="0.1"/>
+    </UnitCharacteristics>
+    <EnemyTypeModifier>
+      <UnitType Type="Squad" Modifier="0.9"/>
+      <UnitType Type="Mech" Modifier="0.3"/>
+    </EnemyTypeModifier>
+    <EnemyArmorModifier>
+      <ArmorType Type="Unarmored" Modifier="1.0"/>
+      <ArmorType Type="Light" Modifier="0.8"/>
+      <ArmorType Type="Medium" Modifier="0.6"/>
+      <ArmorType Type="Heavy" Modifier="0.3"/>
+	  <ArmorType Type="Structure" Modifier="0.3"/>
+    </EnemyArmorModifier>
+    <BattleConditionModifier>
+      <Condition Type="LowOnMechs" Modifier="0.25"/>
+      <Condition Type="VictoryPoints" Modifier="1.0"/>
+    </BattleConditionModifier>
+	<RangeToMeleeEfficiency>20</RangeToMeleeEfficiency>
+  </AIUnitUsefulnessConfig>
+  <AIUnitUsefulnessConfig id="pol_hero_annachild_usefulness">
+    <TaskUsefulness>
+      <Usefulness Type="Conquer" Rating="1.0"/>
+      <Usefulness Type="Attack" Rating="0.5"/>
+      <Usefulness Type="Defend" Rating="0.5"/>
+      <Usefulness Type="Support" Rating="0.4"/>
+      <Usefulness Type="Construct" Rating="0.0"/>
+    </TaskUsefulness>
+    <UnitCharacteristics>
+      <Characteristic Type="Mobility" Rating="0.8"/>
+      <Characteristic Type="Defense" Rating="0.5"/>
+      <Characteristic Type="Range" Rating="0.7"/>
+      <Characteristic Type="Damage" Rating="0.6"/>
+      <Characteristic Type="Precision" Rating="0.8"/>
+      <Characteristic Type="RateOfFire" Rating="0.3"/>
+      <Characteristic Type="AreaEffect" Rating="0.1"/>
+    </UnitCharacteristics>
+    <EnemyTypeModifier>
+      <UnitType Type="Squad" Modifier="0.9"/>
+      <UnitType Type="Mech" Modifier="0.3"/>
+    </EnemyTypeModifier>
+    <EnemyArmorModifier>
+      <ArmorType Type="Unarmored" Modifier="1.0"/>
+      <ArmorType Type="Light" Modifier="0.8"/>
+      <ArmorType Type="Medium" Modifier="0.6"/>
+      <ArmorType Type="Heavy" Modifier="0.3"/>
+	  <ArmorType Type="Structure" Modifier="0.3"/>
+    </EnemyArmorModifier>
+    <BattleConditionModifier>
+      <Condition Type="LowOnMechs" Modifier="0.25"/>
+      <Condition Type="VictoryPoints" Modifier="1.0"/>
+    </BattleConditionModifier>
+  </AIUnitUsefulnessConfig>
+  <AIUnitUsefulnessConfig id="pol_hero_annachildrifle_usefulness">
+    <TaskUsefulness>
+      <Usefulness Type="Conquer" Rating="1.0"/>
+      <Usefulness Type="Attack" Rating="0.5"/>
+      <Usefulness Type="Defend" Rating="0.5"/>
+      <Usefulness Type="Support" Rating="0.4"/>
+      <Usefulness Type="Construct" Rating="0.0"/>
+    </TaskUsefulness>
+    <UnitCharacteristics>
+      <Characteristic Type="Mobility" Rating="0.8"/>
+      <Characteristic Type="Defense" Rating="0.5"/>
+      <Characteristic Type="Range" Rating="0.7"/>
+      <Characteristic Type="Damage" Rating="0.6"/>
+      <Characteristic Type="Precision" Rating="0.8"/>
+      <Characteristic Type="RateOfFire" Rating="0.3"/>
+      <Characteristic Type="AreaEffect" Rating="0.1"/>
+    </UnitCharacteristics>
+    <EnemyTypeModifier>
+      <UnitType Type="Squad" Modifier="0.9"/>
+      <UnitType Type="Mech" Modifier="0.3"/>
+    </EnemyTypeModifier>
+    <EnemyArmorModifier>
+      <ArmorType Type="Unarmored" Modifier="1.0"/>
+      <ArmorType Type="Light" Modifier="0.8"/>
+      <ArmorType Type="Medium" Modifier="0.6"/>
+      <ArmorType Type="Heavy" Modifier="0.3"/>
+	  <ArmorType Type="Structure" Modifier="0.3"/>
+    </EnemyArmorModifier>
+    <BattleConditionModifier>
+      <Condition Type="LowOnMechs" Modifier="0.25"/>
+      <Condition Type="VictoryPoints" Modifier="1.0"/>
+    </BattleConditionModifier>
+  </AIUnitUsefulnessConfig>
+  <AIUnitUsefulnessConfig id="pol_hero_rebel_usefulness">
+    <TaskUsefulness>
+      <Usefulness Type="Conquer" Rating="1.0"/>
+      <Usefulness Type="Attack" Rating="0.5"/>
+      <Usefulness Type="Defend" Rating="0.5"/>
+      <Usefulness Type="Support" Rating="0.4"/>
+      <Usefulness Type="Construct" Rating="0.0"/>
+    </TaskUsefulness>
+    <UnitCharacteristics>
+      <Characteristic Type="Mobility" Rating="0.8"/>
+      <Characteristic Type="Defense" Rating="0.5"/>
+      <Characteristic Type="Range" Rating="0.7"/>
+      <Characteristic Type="Damage" Rating="0.6"/>
+      <Characteristic Type="Precision" Rating="0.8"/>
+      <Characteristic Type="RateOfFire" Rating="0.3"/>
+      <Characteristic Type="AreaEffect" Rating="0.1"/>
+    </UnitCharacteristics>
+    <EnemyTypeModifier>
+      <UnitType Type="Squad" Modifier="0.9"/>
+      <UnitType Type="Mech" Modifier="0.3"/>
+    </EnemyTypeModifier>
+    <EnemyArmorModifier>
+      <ArmorType Type="Unarmored" Modifier="1.0"/>
+      <ArmorType Type="Light" Modifier="0.8"/>
+      <ArmorType Type="Medium" Modifier="0.6"/>
+      <ArmorType Type="Heavy" Modifier="0.3"/>
+	  <ArmorType Type="Structure" Modifier="0.3"/>
+    </EnemyArmorModifier>
+    <BattleConditionModifier>
+      <Condition Type="LowOnMechs" Modifier="0.25"/>
+      <Condition Type="VictoryPoints" Modifier="1.0"/>
+    </BattleConditionModifier>
+  </AIUnitUsefulnessConfig>
+  <AIUnitUsefulnessConfig id="pol_hero_cavalry_usefulness">
+    <TaskUsefulness>
+      <Usefulness Type="Conquer" Rating="1.0"/>
+      <Usefulness Type="Attack" Rating="0.5"/>
+      <Usefulness Type="Defend" Rating="0.5"/>
+      <Usefulness Type="Support" Rating="0.4"/>
+      <Usefulness Type="Construct" Rating="0.0"/>
+    </TaskUsefulness>
+    <UnitCharacteristics>
+      <Characteristic Type="Mobility" Rating="0.8"/>
+      <Characteristic Type="Defense" Rating="0.5"/>
+      <Characteristic Type="Range" Rating="0.7"/>
+      <Characteristic Type="Damage" Rating="0.6"/>
+      <Characteristic Type="Precision" Rating="0.8"/>
+      <Characteristic Type="RateOfFire" Rating="0.3"/>
+      <Characteristic Type="AreaEffect" Rating="0.1"/>
+    </UnitCharacteristics>
+    <EnemyTypeModifier>
+      <UnitType Type="Squad" Modifier="0.9"/>
+      <UnitType Type="Mech" Modifier="0.3"/>
+    </EnemyTypeModifier>
+    <EnemyArmorModifier>
+      <ArmorType Type="Unarmored" Modifier="1.0"/>
+      <ArmorType Type="Light" Modifier="0.8"/>
+      <ArmorType Type="Medium" Modifier="0.6"/>
+      <ArmorType Type="Heavy" Modifier="0.3"/>
+	  <ArmorType Type="Structure" Modifier="0.3"/>
+    </EnemyArmorModifier>
+    <BattleConditionModifier>
+      <Condition Type="LowOnMechs" Modifier="0.25"/>
+      <Condition Type="VictoryPoints" Modifier="1.0"/>
+    </BattleConditionModifier>
+	<RangeToMeleeEfficiency>0.2</RangeToMeleeEfficiency>
+  </AIUnitUsefulnessConfig>
+  <AIUnitUsefulnessConfig id="pol_hero_wojtek_usefulness">
+    <TaskUsefulness>
+      <Usefulness Type="Conquer" Rating="1.0"/>
+      <Usefulness Type="Attack" Rating="0.5"/>
+      <Usefulness Type="Defend" Rating="0.5"/>
+      <Usefulness Type="Support" Rating="0.4"/>
+      <Usefulness Type="Construct" Rating="0.0"/>
+    </TaskUsefulness>
+    <UnitCharacteristics>
+      <Characteristic Type="Mobility" Rating="0.8"/>
+      <Characteristic Type="Defense" Rating="0.5"/>
+      <Characteristic Type="Range" Rating="0.7"/>
+      <Characteristic Type="Damage" Rating="0.6"/>
+      <Characteristic Type="Precision" Rating="0.8"/>
+      <Characteristic Type="RateOfFire" Rating="0.3"/>
+      <Characteristic Type="AreaEffect" Rating="0.1"/>
+    </UnitCharacteristics>
+    <EnemyTypeModifier>
+      <UnitType Type="Squad" Modifier="0.9"/>
+      <UnitType Type="Mech" Modifier="0.3"/>
+    </EnemyTypeModifier>
+    <EnemyArmorModifier>
+      <ArmorType Type="Unarmored" Modifier="1.0"/>
+      <ArmorType Type="Light" Modifier="0.8"/>
+      <ArmorType Type="Medium" Modifier="0.6"/>
+      <ArmorType Type="Heavy" Modifier="0.3"/>
+	  <ArmorType Type="Structure" Modifier="0.3"/>
+    </EnemyArmorModifier>
+    <BattleConditionModifier>
+      <Condition Type="LowOnMechs" Modifier="0.25"/>
+      <Condition Type="VictoryPoints" Modifier="1.0"/>
+    </BattleConditionModifier>
+  </AIUnitUsefulnessConfig>
+  
+  <AIUnitUsefulnessConfig id="rus_hero_brotheradult_usefulness">
+    <TaskUsefulness>
+      <Usefulness Type="Conquer" Rating="1.0"/>
+      <Usefulness Type="Attack" Rating="0.5"/>
+      <Usefulness Type="Defend" Rating="0.5"/>
+      <Usefulness Type="Support" Rating="0.4"/>
+      <Usefulness Type="Construct" Rating="0.0"/>
+    </TaskUsefulness>
+    <UnitCharacteristics>
+      <Characteristic Type="Mobility" Rating="0.8"/>
+      <Characteristic Type="Defense" Rating="0.5"/>
+      <Characteristic Type="Range" Rating="0.7"/>
+      <Characteristic Type="Damage" Rating="0.6"/>
+      <Characteristic Type="Precision" Rating="0.8"/>
+      <Characteristic Type="RateOfFire" Rating="0.3"/>
+      <Characteristic Type="AreaEffect" Rating="0.1"/>
+    </UnitCharacteristics>
+    <EnemyTypeModifier>
+      <UnitType Type="Squad" Modifier="0.9"/>
+      <UnitType Type="Mech" Modifier="0.3"/>
+    </EnemyTypeModifier>
+    <EnemyArmorModifier>
+      <ArmorType Type="Unarmored" Modifier="1.0"/>
+      <ArmorType Type="Light" Modifier="0.8"/>
+      <ArmorType Type="Medium" Modifier="0.6"/>
+      <ArmorType Type="Heavy" Modifier="0.3"/>
+	  <ArmorType Type="Structure" Modifier="0.3"/>
+    </EnemyArmorModifier>
+    <BattleConditionModifier>
+      <Condition Type="LowOnMechs" Modifier="0.25"/>
+      <Condition Type="VictoryPoints" Modifier="1.0"/>
+    </BattleConditionModifier>
+  </AIUnitUsefulnessConfig>
+  <AIUnitUsefulnessConfig id="pol_hero_brotherteen_usefulness">
+    <TaskUsefulness>
+      <Usefulness Type="Conquer" Rating="1.0"/>
+      <Usefulness Type="Attack" Rating="0.5"/>
+      <Usefulness Type="Defend" Rating="0.5"/>
+      <Usefulness Type="Support" Rating="0.4"/>
+      <Usefulness Type="Construct" Rating="0.0"/>
+    </TaskUsefulness>
+    <UnitCharacteristics>
+      <Characteristic Type="Mobility" Rating="0.8"/>
+      <Characteristic Type="Defense" Rating="0.5"/>
+      <Characteristic Type="Range" Rating="0.7"/>
+      <Characteristic Type="Damage" Rating="0.6"/>
+      <Characteristic Type="Precision" Rating="0.8"/>
+      <Characteristic Type="RateOfFire" Rating="0.3"/>
+      <Characteristic Type="AreaEffect" Rating="0.1"/>
+    </UnitCharacteristics>
+    <EnemyTypeModifier>
+      <UnitType Type="Squad" Modifier="0.9"/>
+      <UnitType Type="Mech" Modifier="0.3"/>
+    </EnemyTypeModifier>
+    <EnemyArmorModifier>
+      <ArmorType Type="Unarmored" Modifier="1.0"/>
+      <ArmorType Type="Light" Modifier="0.8"/>
+      <ArmorType Type="Medium" Modifier="0.6"/>
+      <ArmorType Type="Heavy" Modifier="0.3"/>
+	  <ArmorType Type="Structure" Modifier="0.3"/>
+    </EnemyArmorModifier>
+    <BattleConditionModifier>
+      <Condition Type="LowOnMechs" Modifier="0.25"/>
+      <Condition Type="VictoryPoints" Modifier="1.0"/>
+    </BattleConditionModifier>
+  </AIUnitUsefulnessConfig>
+  <AIUnitUsefulnessConfig id="pol_npc_father_usefulness">
+    <TaskUsefulness>
+      <Usefulness Type="Conquer" Rating="1.0"/>
+      <Usefulness Type="Attack" Rating="0.5"/>
+      <Usefulness Type="Defend" Rating="0.5"/>
+      <Usefulness Type="Support" Rating="0.4"/>
+      <Usefulness Type="Construct" Rating="0.0"/>
+    </TaskUsefulness>
+    <UnitCharacteristics>
+      <Characteristic Type="Mobility" Rating="0.8"/>
+      <Characteristic Type="Defense" Rating="0.5"/>
+      <Characteristic Type="Range" Rating="0.7"/>
+      <Characteristic Type="Damage" Rating="0.6"/>
+      <Characteristic Type="Precision" Rating="0.8"/>
+      <Characteristic Type="RateOfFire" Rating="0.3"/>
+      <Characteristic Type="AreaEffect" Rating="0.1"/>
+    </UnitCharacteristics>
+    <EnemyTypeModifier>
+      <UnitType Type="Squad" Modifier="0.9"/>
+      <UnitType Type="Mech" Modifier="0.3"/>
+    </EnemyTypeModifier>
+    <EnemyArmorModifier>
+      <ArmorType Type="Unarmored" Modifier="1.0"/>
+      <ArmorType Type="Light" Modifier="0.8"/>
+      <ArmorType Type="Medium" Modifier="0.6"/>
+      <ArmorType Type="Heavy" Modifier="0.3"/>
+	  <ArmorType Type="Structure" Modifier="0.3"/>
+    </EnemyArmorModifier>
+    <BattleConditionModifier>
+      <Condition Type="LowOnMechs" Modifier="0.25"/>
+      <Condition Type="VictoryPoints" Modifier="1.0"/>
+    </BattleConditionModifier>
+  </AIUnitUsefulnessConfig>
+  <AIUnitUsefulnessConfig id="pol_npc_rebelleader_usefulness">
+    <TaskUsefulness>
+      <Usefulness Type="Conquer" Rating="1.0"/>
+      <Usefulness Type="Attack" Rating="0.5"/>
+      <Usefulness Type="Defend" Rating="0.5"/>
+      <Usefulness Type="Support" Rating="0.4"/>
+      <Usefulness Type="Construct" Rating="0.0"/>
+    </TaskUsefulness>
+    <UnitCharacteristics>
+      <Characteristic Type="Mobility" Rating="0.8"/>
+      <Characteristic Type="Defense" Rating="0.5"/>
+      <Characteristic Type="Range" Rating="0.7"/>
+      <Characteristic Type="Damage" Rating="0.6"/>
+      <Characteristic Type="Precision" Rating="0.8"/>
+      <Characteristic Type="RateOfFire" Rating="0.3"/>
+      <Characteristic Type="AreaEffect" Rating="0.1"/>
+    </UnitCharacteristics>
+    <EnemyTypeModifier>
+      <UnitType Type="Squad" Modifier="0.9"/>
+      <UnitType Type="Mech" Modifier="0.3"/>
+    </EnemyTypeModifier>
+    <EnemyArmorModifier>
+      <ArmorType Type="Unarmored" Modifier="1.0"/>
+      <ArmorType Type="Light" Modifier="0.8"/>
+      <ArmorType Type="Medium" Modifier="0.6"/>
+      <ArmorType Type="Heavy" Modifier="0.3"/>
+	  <ArmorType Type="Structure" Modifier="0.3"/>
+    </EnemyArmorModifier>
+    <BattleConditionModifier>
+      <Condition Type="LowOnMechs" Modifier="0.25"/>
+      <Condition Type="VictoryPoints" Modifier="1.0"/>
+    </BattleConditionModifier>
+  </AIUnitUsefulnessConfig>
+  <AIUnitUsefulnessConfig id="pol_npc_friend_usefulness">
+    <TaskUsefulness>
+      <Usefulness Type="Conquer" Rating="1.0"/>
+      <Usefulness Type="Attack" Rating="0.5"/>
+      <Usefulness Type="Defend" Rating="0.5"/>
+      <Usefulness Type="Support" Rating="0.4"/>
+      <Usefulness Type="Construct" Rating="0.0"/>
+    </TaskUsefulness>
+    <UnitCharacteristics>
+      <Characteristic Type="Mobility" Rating="0.8"/>
+      <Characteristic Type="Defense" Rating="0.5"/>
+      <Characteristic Type="Range" Rating="0.7"/>
+      <Characteristic Type="Damage" Rating="0.6"/>
+      <Characteristic Type="Precision" Rating="0.8"/>
+      <Characteristic Type="RateOfFire" Rating="0.3"/>
+      <Characteristic Type="AreaEffect" Rating="0.1"/>
+    </UnitCharacteristics>
+    <EnemyTypeModifier>
+      <UnitType Type="Squad" Modifier="0.9"/>
+      <UnitType Type="Mech" Modifier="0.3"/>
+    </EnemyTypeModifier>
+    <EnemyArmorModifier>
+      <ArmorType Type="Unarmored" Modifier="1.0"/>
+      <ArmorType Type="Light" Modifier="0.8"/>
+      <ArmorType Type="Medium" Modifier="0.6"/>
+      <ArmorType Type="Heavy" Modifier="0.3"/>
+	  <ArmorType Type="Structure" Modifier="0.3"/>
+    </EnemyArmorModifier>
+    <BattleConditionModifier>
+      <Condition Type="LowOnMechs" Modifier="0.25"/>
+      <Condition Type="VictoryPoints" Modifier="1.0"/>
+    </BattleConditionModifier>
+  </AIUnitUsefulnessConfig>
+  <AIUnitUsefulnessConfig id="pol_npc_leader_usefulness">
+    <TaskUsefulness>
+      <Usefulness Type="Conquer" Rating="1.0"/>
+      <Usefulness Type="Attack" Rating="0.5"/>
+      <Usefulness Type="Defend" Rating="0.5"/>
+      <Usefulness Type="Support" Rating="0.4"/>
+      <Usefulness Type="Construct" Rating="0.0"/>
+    </TaskUsefulness>
+    <UnitCharacteristics>
+      <Characteristic Type="Mobility" Rating="0.8"/>
+      <Characteristic Type="Defense" Rating="0.5"/>
+      <Characteristic Type="Range" Rating="0.7"/>
+      <Characteristic Type="Damage" Rating="0.6"/>
+      <Characteristic Type="Precision" Rating="0.8"/>
+      <Characteristic Type="RateOfFire" Rating="0.3"/>
+      <Characteristic Type="AreaEffect" Rating="0.1"/>
+    </UnitCharacteristics>
+    <EnemyTypeModifier>
+      <UnitType Type="Squad" Modifier="0.9"/>
+      <UnitType Type="Mech" Modifier="0.3"/>
+    </EnemyTypeModifier>
+    <EnemyArmorModifier>
+      <ArmorType Type="Unarmored" Modifier="1.0"/>
+      <ArmorType Type="Light" Modifier="0.8"/>
+      <ArmorType Type="Medium" Modifier="0.6"/>
+      <ArmorType Type="Heavy" Modifier="0.3"/>
+	  <ArmorType Type="Structure" Modifier="0.3"/>
+    </EnemyArmorModifier>
+    <BattleConditionModifier>
+      <Condition Type="LowOnMechs" Modifier="0.25"/>
+      <Condition Type="VictoryPoints" Modifier="1.0"/>
+    </BattleConditionModifier>
+  </AIUnitUsefulnessConfig>
+    
+  <AIUnitUsefulnessConfig id="pol_soldier_rifleman_usefulness">
+    <TaskUsefulness>
+      <Usefulness Type="Conquer" Rating="1.0"/>
+      <Usefulness Type="Attack" Rating="0.5"/>
+      <Usefulness Type="Defend" Rating="0.5"/>
+      <Usefulness Type="Support" Rating="0.4"/>
+      <Usefulness Type="Construct" Rating="0.0"/>
+    </TaskUsefulness>
+    <UnitCharacteristics>
+      <Characteristic Type="Mobility" Rating="0.8"/>
+      <Characteristic Type="Defense" Rating="0.5"/>
+      <Characteristic Type="Range" Rating="0.7"/>
+      <Characteristic Type="Damage" Rating="0.6"/>
+      <Characteristic Type="Precision" Rating="0.8"/>
+      <Characteristic Type="RateOfFire" Rating="0.3"/>
+      <Characteristic Type="AreaEffect" Rating="0.1"/>
+    </UnitCharacteristics>
+    <EnemyTypeModifier>
+      <UnitType Type="Squad" Modifier="0.9"/>
+      <UnitType Type="Mech" Modifier="0.3"/>
+    </EnemyTypeModifier>
+    <EnemyArmorModifier>
+      <ArmorType Type="Unarmored" Modifier="1.0"/>
+      <ArmorType Type="Light" Modifier="0.8"/>
+      <ArmorType Type="Medium" Modifier="0.6"/>
+      <ArmorType Type="Heavy" Modifier="0.3"/>
+	  <ArmorType Type="Structure" Modifier="0.3"/>
+    </EnemyArmorModifier>
+    <BattleConditionModifier>
+      <Condition Type="LowOnMechs" Modifier="0.25"/>
+      <Condition Type="VictoryPoints" Modifier="1.0"/>
+    </BattleConditionModifier>
+	<RangeToMeleeEfficiency>5</RangeToMeleeEfficiency>
+  </AIUnitUsefulnessConfig>
+  <AIUnitUsefulnessConfig id="pol_soldier_engineer_usefulness">
+    <TaskUsefulness>
+      <Usefulness Type="Conquer" Rating="0.5"/>
+      <Usefulness Type="Attack" Rating="0.4"/>
+      <Usefulness Type="Defend" Rating="0.3"/>
+      <Usefulness Type="Support" Rating="0.7"/>
+      <Usefulness Type="Construct" Rating="1.0"/>
+    </TaskUsefulness>
+    <UnitCharacteristics>
+      <Characteristic Type="Mobility" Rating="0.7"/>
+      <Characteristic Type="Defense" Rating="0.5"/>
+      <Characteristic Type="Range" Rating="0.5"/>
+      <Characteristic Type="Damage" Rating="0.5"/>
+      <Characteristic Type="Precision" Rating="0.8"/>
+      <Characteristic Type="RateOfFire" Rating="0.4"/>
+      <Characteristic Type="AreaEffect" Rating="0.2"/>
+    </UnitCharacteristics>
+    <EnemyTypeModifier>
+      <UnitType Type="Squad" Modifier="0.8"/>
+      <UnitType Type="Mech" Modifier="0.3"/>
+    </EnemyTypeModifier>
+    <EnemyArmorModifier>
+      <ArmorType Type="Unarmored" Modifier="1.0"/>
+      <ArmorType Type="Light" Modifier="0.8"/>
+      <ArmorType Type="Medium" Modifier="0.6"/>
+      <ArmorType Type="Heavy" Modifier="0.2"/>
+	  <ArmorType Type="Structure" Modifier="0.2"/>
+    </EnemyArmorModifier>
+    <BattleConditionModifier>
+      <Condition Type="LowOnMechs" Modifier="0.25"/>
+      <Condition Type="VictoryPoints" Modifier="0.7"/>
+    </BattleConditionModifier>
+	<RangeToMeleeEfficiency>2</RangeToMeleeEfficiency>
+  </AIUnitUsefulnessConfig>
+  <AIUnitUsefulnessConfig id="pol_soldier_grenadier_usefulness">
+    <TaskUsefulness>
+      <Usefulness Type="Conquer" Rating="0.9"/>
+      <Usefulness Type="Attack" Rating="0.6"/>
+      <Usefulness Type="Defend" Rating="0.6"/>
+      <Usefulness Type="Support" Rating="0.5"/>
+      <Usefulness Type="Construct" Rating="0.0"/>
+    </TaskUsefulness>
+    <UnitCharacteristics>
+      <Characteristic Type="Mobility" Rating="0.7"/>
+      <Characteristic Type="Defense" Rating="0.5"/>
+      <Characteristic Type="Range" Rating="0.5"/>
+      <Characteristic Type="Damage" Rating="0.6"/>
+      <Characteristic Type="Precision" Rating="0.8"/>
+      <Characteristic Type="RateOfFire" Rating="0.3"/>
+      <Characteristic Type="AreaEffect" Rating="0.4"/>
+    </UnitCharacteristics>
+    <EnemyTypeModifier>
+      <UnitType Type="Squad" Modifier="1.0"/>
+      <UnitType Type="Mech" Modifier="0.5"/>
+    </EnemyTypeModifier>
+    <EnemyArmorModifier>
+      <ArmorType Type="Unarmored" Modifier="1.0"/>
+      <ArmorType Type="Light" Modifier="0.8"/>
+      <ArmorType Type="Medium" Modifier="0.7"/>
+      <ArmorType Type="Heavy" Modifier="0.3"/>
+	  <ArmorType Type="Structure" Modifier="0.3"/>
+    </EnemyArmorModifier>
+    <BattleConditionModifier>
+      <Condition Type="LowOnMechs" Modifier="0.25"/>
+      <Condition Type="VictoryPoints" Modifier="0.9"/>
+    </BattleConditionModifier>
+	<RangeToMeleeEfficiency>7</RangeToMeleeEfficiency>
+  </AIUnitUsefulnessConfig>
+  <AIUnitUsefulnessConfig id="pol_soldier_medic_usefulness">
+    <TaskUsefulness>
+      <Usefulness Type="Conquer" Rating="0.8"/>
+      <Usefulness Type="Attack" Rating="0.4"/>
+      <Usefulness Type="Defend" Rating="0.4"/>
+      <Usefulness Type="Support" Rating="0.8"/>
+      <Usefulness Type="Construct" Rating="0.0"/>
+    </TaskUsefulness>
+    <UnitCharacteristics>
+      <Characteristic Type="Mobility" Rating="0.7"/>
+      <Characteristic Type="Defense" Rating="0.5"/>
+      <Characteristic Type="Range" Rating="0.5"/>
+      <Characteristic Type="Damage" Rating="0.6"/>
+      <Characteristic Type="Precision" Rating="0.8"/>
+      <Characteristic Type="RateOfFire" Rating="0.2"/>
+      <Characteristic Type="AreaEffect" Rating="0.1"/>
+    </UnitCharacteristics>
+    <EnemyTypeModifier>
+      <UnitType Type="Squad" Modifier="0.8"/>
+      <UnitType Type="Mech" Modifier="0.2"/>
+    </EnemyTypeModifier>
+    <EnemyArmorModifier>
+      <ArmorType Type="Unarmored" Modifier="1.0"/>
+      <ArmorType Type="Light" Modifier="0.7"/>
+      <ArmorType Type="Medium" Modifier="0.6"/>
+      <ArmorType Type="Heavy" Modifier="0.2"/>
+	  <ArmorType Type="Structure" Modifier="0.2"/>
+    </EnemyArmorModifier>
+    <BattleConditionModifier>
+      <Condition Type="LowOnMechs" Modifier="0.25"/>
+      <Condition Type="VictoryPoints" Modifier="0.9"/>
+    </BattleConditionModifier>
+	<RangeToMeleeEfficiency>2</RangeToMeleeEfficiency>
+  </AIUnitUsefulnessConfig>
+  <AIUnitUsefulnessConfig id="pol_soldier_flamer_usefulness">
+    <TaskUsefulness>
+      <Usefulness Type="Conquer" Rating="0.6"/>
+      <Usefulness Type="Attack" Rating="0.6"/>
+      <Usefulness Type="Defend" Rating="0.5"/>
+      <Usefulness Type="Support" Rating="0.3"/>
+      <Usefulness Type="Construct" Rating="0.0"/>
+    </TaskUsefulness>
+    <UnitCharacteristics>
+      <Characteristic Type="Mobility" Rating="0.8"/>
+      <Characteristic Type="Defense" Rating="0.5"/>
+      <Characteristic Type="Range" Rating="0.4"/>
+      <Characteristic Type="Damage" Rating="0.6"/>
+      <Characteristic Type="Precision" Rating="0.4"/>
+      <Characteristic Type="RateOfFire" Rating="0.7"/>
+      <Characteristic Type="AreaEffect" Rating="0.4"/>
+    </UnitCharacteristics>
+    <EnemyTypeModifier>
+      <UnitType Type="Squad" Modifier="1.0"/>
+      <UnitType Type="Mech" Modifier="0.4"/>
+    </EnemyTypeModifier>
+    <EnemyArmorModifier>
+      <ArmorType Type="Unarmored" Modifier="1.0"/>
+      <ArmorType Type="Light" Modifier="0.8"/>
+      <ArmorType Type="Medium" Modifier="0.5"/>
+      <ArmorType Type="Heavy" Modifier="0.1"/>
+	  <ArmorType Type="Structure" Modifier="0.1"/>
+    </EnemyArmorModifier>
+    <BattleConditionModifier>
+      <Condition Type="LowOnMechs" Modifier="0.25"/>
+      <Condition Type="VictoryPoints" Modifier="0.6"/>
+    </BattleConditionModifier>
+	<RangeToMeleeEfficiency>50</RangeToMeleeEfficiency>
+  </AIUnitUsefulnessConfig>
+  <AIUnitUsefulnessConfig id="pol_soldier_mg_usefulness">
+    <TaskUsefulness>
+      <Usefulness Type="Conquer" Rating="0.6"/>
+      <Usefulness Type="Attack" Rating="0.7"/>
+      <Usefulness Type="Defend" Rating="0.8"/>
+      <Usefulness Type="Support" Rating="0.4"/>
+      <Usefulness Type="Construct" Rating="0.0"/>
+    </TaskUsefulness>
+    <UnitCharacteristics>
+      <Characteristic Type="Mobility" Rating="0.5"/>
+      <Characteristic Type="Defense" Rating="0.5"/>
+      <Characteristic Type="Range" Rating="0.7"/>
+      <Characteristic Type="Damage" Rating="0.7"/>
+      <Characteristic Type="Precision" Rating="0.6"/>
+      <Characteristic Type="RateOfFire" Rating="0.8"/>
+      <Characteristic Type="AreaEffect" Rating="0.3"/>
+    </UnitCharacteristics>
+    <EnemyTypeModifier>
+      <UnitType Type="Squad" Modifier="1.0"/>
+      <UnitType Type="Mech" Modifier="0.6"/>
+    </EnemyTypeModifier>
+    <EnemyArmorModifier>
+      <ArmorType Type="Unarmored" Modifier="1.0"/>
+      <ArmorType Type="Light" Modifier="0.8"/>
+      <ArmorType Type="Medium" Modifier="0.6"/>
+      <ArmorType Type="Heavy" Modifier="0.3"/>
+	  <ArmorType Type="Structure" Modifier="0.3"/>
+    </EnemyArmorModifier>
+    <BattleConditionModifier>
+      <Condition Type="LowOnMechs" Modifier="0.25"/>
+      <Condition Type="VictoryPoints" Modifier="0.5"/>
+    </BattleConditionModifier>
+	<RangeToMeleeEfficiency>20</RangeToMeleeEfficiency>
+  </AIUnitUsefulnessConfig>
+  <AIUnitUsefulnessConfig id="pol_soldier_gunner_usefulness">
+    <TaskUsefulness>
+      <Usefulness Type="Conquer" Rating="0.6"/>
+      <Usefulness Type="Attack" Rating="0.8"/>
+      <Usefulness Type="Defend" Rating="0.8"/>
+      <Usefulness Type="Support" Rating="0.3"/>
+      <Usefulness Type="Construct" Rating="0.0"/>
+    </TaskUsefulness>
+    <UnitCharacteristics>
+      <Characteristic Type="Mobility" Rating="0.5"/>
+      <Characteristic Type="Defense" Rating="0.5"/>
+      <Characteristic Type="Range" Rating="0.7"/>
+      <Characteristic Type="Damage" Rating="0.7"/>
+      <Characteristic Type="Precision" Rating="0.2"/>
+      <Characteristic Type="RateOfFire" Rating="0.3"/>
+      <Characteristic Type="AreaEffect" Rating="0.6"/>
+    </UnitCharacteristics>
+    <EnemyTypeModifier>
+      <UnitType Type="Squad" Modifier="0.5"/>
+      <UnitType Type="Mech" Modifier="0.8"/>
+    </EnemyTypeModifier>
+    <EnemyArmorModifier>
+      <ArmorType Type="Unarmored" Modifier="0.5"/>
+      <ArmorType Type="Light" Modifier="0.7"/>
+      <ArmorType Type="Medium" Modifier="0.8"/>
+      <ArmorType Type="Heavy" Modifier="0.7"/>
+	  <ArmorType Type="Structure" Modifier="0.7"/>
+    </EnemyArmorModifier>
+    <BattleConditionModifier>
+      <Condition Type="LowOnMechs" Modifier="0.25"/>
+      <Condition Type="VictoryPoints" Modifier="0.4"/>
+    </BattleConditionModifier>
+	<RangeToMeleeEfficiency>5</RangeToMeleeEfficiency>
+  </AIUnitUsefulnessConfig>
+  <AIUnitUsefulnessConfig id="pol_soldier_cavalry_usefulness">
+    <TaskUsefulness>
+      <Usefulness Type="Conquer" Rating="1.0"/>
+      <Usefulness Type="Attack" Rating="0.5"/>
+      <Usefulness Type="Defend" Rating="0.5"/>
+      <Usefulness Type="Support" Rating="0.4"/>
+      <Usefulness Type="Construct" Rating="0.0"/>
+    </TaskUsefulness>
+    <UnitCharacteristics>
+      <Characteristic Type="Mobility" Rating="0.8"/>
+      <Characteristic Type="Defense" Rating="0.5"/>
+      <Characteristic Type="Range" Rating="0.7"/>
+      <Characteristic Type="Damage" Rating="0.6"/>
+      <Characteristic Type="Precision" Rating="0.8"/>
+      <Characteristic Type="RateOfFire" Rating="0.3"/>
+      <Characteristic Type="AreaEffect" Rating="0.1"/>
+    </UnitCharacteristics>
+    <EnemyTypeModifier>
+      <UnitType Type="Squad" Modifier="0.9"/>
+      <UnitType Type="Mech" Modifier="0.3"/>
+    </EnemyTypeModifier>
+    <EnemyArmorModifier>
+      <ArmorType Type="Unarmored" Modifier="1.0"/>
+      <ArmorType Type="Light" Modifier="0.8"/>
+      <ArmorType Type="Medium" Modifier="0.6"/>
+      <ArmorType Type="Heavy" Modifier="0.3"/>
+	  <ArmorType Type="Structure" Modifier="0.3"/>
+    </EnemyArmorModifier>
+    <BattleConditionModifier>
+      <Condition Type="LowOnMechs" Modifier="0.25"/>
+      <Condition Type="VictoryPoints" Modifier="1.0"/>
+    </BattleConditionModifier>
+  </AIUnitUsefulnessConfig>
+  <AIUnitUsefulnessConfig id="pol_soldier_exo_usefulness">
+    <TaskUsefulness>
+      <Usefulness Type="Conquer" Rating="0.5"/>
+      <Usefulness Type="Attack" Rating="0.8"/>
+      <Usefulness Type="Defend" Rating="0.9"/>
+      <Usefulness Type="Support" Rating="0.3"/>
+      <Usefulness Type="Construct" Rating="0.0"/>
+    </TaskUsefulness>
+    <UnitCharacteristics>
+      <Characteristic Type="Mobility" Rating="0.2"/>
+      <Characteristic Type="Defense" Rating="0.5"/>
+      <Characteristic Type="Range" Rating="1.0"/>
+      <Characteristic Type="Damage" Rating="0.9"/>
+      <Characteristic Type="Precision" Rating="0.3"/>
+      <Characteristic Type="RateOfFire" Rating="0.2"/>
+      <Characteristic Type="AreaEffect" Rating="0.8"/>
+    </UnitCharacteristics>
+    <EnemyTypeModifier>
+      <UnitType Type="Squad" Modifier="0.7"/>
+      <UnitType Type="Mech" Modifier="0.9"/>
+    </EnemyTypeModifier>
+    <EnemyArmorModifier>
+      <ArmorType Type="Unarmored" Modifier="0.7"/>
+      <ArmorType Type="Light" Modifier="0.8"/>
+      <ArmorType Type="Medium" Modifier="0.9"/>
+      <ArmorType Type="Heavy" Modifier="0.8"/>
+	  <ArmorType Type="Structure" Modifier="0.8"/>
+    </EnemyArmorModifier>
+    <BattleConditionModifier>
+      <Condition Type="LowOnSquads" Modifier="0.25"/>
+      <Condition Type="VictoryPoints" Modifier="0.1"/>
+    </BattleConditionModifier>
+  </AIUnitUsefulnessConfig>
+  <AIUnitUsefulnessConfig id="pol_mech_recon_usefulness">
+    <TaskUsefulness>
+      <Usefulness Type="Conquer" Rating="0.7"/>
+      <Usefulness Type="Attack" Rating="0.6"/>
+      <Usefulness Type="Defend" Rating="0.7"/>
+      <Usefulness Type="Support" Rating="0.7"/>
+      <Usefulness Type="Construct" Rating="0.0"/>
+    </TaskUsefulness>
+    <UnitCharacteristics>
+      <Characteristic Type="Mobility" Rating="0.9"/>
+      <Characteristic Type="Defense" Rating="0.6"/>
+      <Characteristic Type="Range" Rating="0.8"/>
+      <Characteristic Type="Damage" Rating="0.8"/>
+      <Characteristic Type="Precision" Rating="1.0"/>
+      <Characteristic Type="RateOfFire" Rating="0.2"/>
+      <Characteristic Type="AreaEffect" Rating="0.1"/>
+    </UnitCharacteristics>
+    <EnemyTypeModifier>
+      <UnitType Type="Squad" Modifier="0.5"/>
+      <UnitType Type="Mech" Modifier="0.8"/>
+    </EnemyTypeModifier>
+    <EnemyArmorModifier>
+      <ArmorType Type="Unarmored" Modifier="0.6"/>
+      <ArmorType Type="Light" Modifier="0.7"/>
+      <ArmorType Type="Medium" Modifier="0.8"/>
+      <ArmorType Type="Heavy" Modifier="0.7"/>
+	  <ArmorType Type="Structure" Modifier="0.7"/>
+    </EnemyArmorModifier>
+    <BattleConditionModifier>
+      <Condition Type="LowOnSquads" Modifier="0.25"/>
+      <Condition Type="VictoryPoints" Modifier="0.2"/>
+    </BattleConditionModifier>
+  </AIUnitUsefulnessConfig>
+  <AIUnitUsefulnessConfig id="pol_mech_spider_usefulness">
+    <TaskUsefulness>
+      <Usefulness Type="Conquer" Rating="0.7"/>
+      <Usefulness Type="Attack" Rating="0.7"/>
+      <Usefulness Type="Defend" Rating="0.6"/>
+      <Usefulness Type="Support" Rating="0.6"/>
+      <Usefulness Type="Construct" Rating="0.0"/>
+    </TaskUsefulness>
+    <UnitCharacteristics>
+      <Characteristic Type="Mobility" Rating="1.0"/>
+      <Characteristic Type="Defense" Rating="0.6"/>
+      <Characteristic Type="Range" Rating="0.5"/>
+      <Characteristic Type="Damage" Rating="0.4"/>
+      <Characteristic Type="Precision" Rating="0.8"/>
+      <Characteristic Type="RateOfFire" Rating="1.0"/>
+      <Characteristic Type="AreaEffect" Rating="0.2"/>
+    </UnitCharacteristics>
+    <EnemyTypeModifier>
+      <UnitType Type="Squad" Modifier="1.0"/>
+      <UnitType Type="Mech" Modifier="0.5"/>
+    </EnemyTypeModifier>
+    <EnemyArmorModifier>
+      <ArmorType Type="Unarmored" Modifier="0.9"/>
+      <ArmorType Type="Light" Modifier="0.8"/>
+      <ArmorType Type="Medium" Modifier="0.6"/>
+      <ArmorType Type="Heavy" Modifier="0.5"/>
+	  <ArmorType Type="Structure" Modifier="0.5"/>
+    </EnemyArmorModifier>
+    <BattleConditionModifier>
+      <Condition Type="LowOnSquads" Modifier="0.25"/>
+      <Condition Type="VictoryPoints" Modifier="0.3"/>
+    </BattleConditionModifier>
+  </AIUnitUsefulnessConfig>
+  <AIUnitUsefulnessConfig id="pol_mech_trooptransport_usefulness">
+    <TaskUsefulness>
+      <Usefulness Type="Conquer" Rating="0.8"/>
+      <Usefulness Type="Attack" Rating="0.5"/>
+      <Usefulness Type="Defend" Rating="0.8"/>
+      <Usefulness Type="Support" Rating="0.8"/>
+      <Usefulness Type="Construct" Rating="0.0"/>
+    </TaskUsefulness>
+    <UnitCharacteristics>
+      <Characteristic Type="Mobility" Rating="0.7"/>
+      <Characteristic Type="Defense" Rating="1.0"/>
+      <Characteristic Type="Range" Rating="0.5"/>
+      <Characteristic Type="Damage" Rating="0.4"/>
+      <Characteristic Type="Precision" Rating="0.8"/>
+      <Characteristic Type="RateOfFire" Rating="0.3"/>
+      <Characteristic Type="AreaEffect" Rating="0.2"/>
+    </UnitCharacteristics>
+    <EnemyTypeModifier>
+      <UnitType Type="Squad" Modifier="0.8"/>
+      <UnitType Type="Mech" Modifier="0.4"/>
+    </EnemyTypeModifier>
+    <EnemyArmorModifier>
+      <ArmorType Type="Unarmored" Modifier="0.8"/>
+      <ArmorType Type="Light" Modifier="0.7"/>
+      <ArmorType Type="Medium" Modifier="0.5"/>
+      <ArmorType Type="Heavy" Modifier="0.4"/>
+	  <ArmorType Type="Structure" Modifier="0.4"/>
+    </EnemyArmorModifier>
+    <BattleConditionModifier>
+      <Condition Type="LowOnSquads" Modifier="0.25"/>
+      <Condition Type="VictoryPoints" Modifier="0.3"/>
+    </BattleConditionModifier>
+  </AIUnitUsefulnessConfig>
+  <AIUnitUsefulnessConfig id="pol_mech_artillery_usefulness">
+    <TaskUsefulness>
+      <Usefulness Type="Conquer" Rating="0.5"/>
+      <Usefulness Type="Attack" Rating="0.8"/>
+      <Usefulness Type="Defend" Rating="0.9"/>
+      <Usefulness Type="Support" Rating="0.4"/>
+      <Usefulness Type="Construct" Rating="0.0"/>
+    </TaskUsefulness>
+    <UnitCharacteristics>
+      <Characteristic Type="Mobility" Rating="0.3"/>
+      <Characteristic Type="Defense" Rating="0.3"/>
+      <Characteristic Type="Range" Rating="1.0"/>
+      <Characteristic Type="Damage" Rating="0.9"/>
+      <Characteristic Type="Precision" Rating="0.4"/>
+      <Characteristic Type="RateOfFire" Rating="0.3"/>
+      <Characteristic Type="AreaEffect" Rating="0.6"/>
+    </UnitCharacteristics>
+    <EnemyTypeModifier>
+      <UnitType Type="Squad" Modifier="0.8"/>
+      <UnitType Type="Mech" Modifier="0.8"/>
+    </EnemyTypeModifier>
+    <EnemyArmorModifier>
+      <ArmorType Type="Unarmored" Modifier="0.7"/>
+      <ArmorType Type="Light" Modifier="0.8"/>
+      <ArmorType Type="Medium" Modifier="0.9"/>
+      <ArmorType Type="Heavy" Modifier="0.8"/>
+	  <ArmorType Type="Structure" Modifier="0.8"/>
+    </EnemyArmorModifier>
+    <BattleConditionModifier>
+      <Condition Type="LowOnSquads" Modifier="0.25"/>
+      <Condition Type="VictoryPoints" Modifier="0.1"/>
+    </BattleConditionModifier>
+  </AIUnitUsefulnessConfig>
+  <AIUnitUsefulnessConfig id="pol_mech_stinger_usefulness">
+    <TaskUsefulness>
+      <Usefulness Type="Conquer" Rating="0.7"/>
+      <Usefulness Type="Attack" Rating="0.6"/>
+      <Usefulness Type="Defend" Rating="0.7"/>
+      <Usefulness Type="Support" Rating="0.7"/>
+      <Usefulness Type="Construct" Rating="0.0"/>
+    </TaskUsefulness>
+    <UnitCharacteristics>
+      <Characteristic Type="Mobility" Rating="0.9"/>
+      <Characteristic Type="Defense" Rating="0.6"/>
+      <Characteristic Type="Range" Rating="0.8"/>
+      <Characteristic Type="Damage" Rating="0.8"/>
+      <Characteristic Type="Precision" Rating="1.0"/>
+      <Characteristic Type="RateOfFire" Rating="0.2"/>
+      <Characteristic Type="AreaEffect" Rating="0.1"/>
+    </UnitCharacteristics>
+    <EnemyTypeModifier>
+      <UnitType Type="Squad" Modifier="0.5"/>
+      <UnitType Type="Mech" Modifier="0.8"/>
+    </EnemyTypeModifier>
+    <EnemyArmorModifier>
+      <ArmorType Type="Unarmored" Modifier="0.6"/>
+      <ArmorType Type="Light" Modifier="0.7"/>
+      <ArmorType Type="Medium" Modifier="0.8"/>
+      <ArmorType Type="Heavy" Modifier="0.7"/>
+	  <ArmorType Type="Structure" Modifier="0.7"/>
+    </EnemyArmorModifier>
+    <BattleConditionModifier>
+      <Condition Type="LowOnSquads" Modifier="0.25"/>
+      <Condition Type="VictoryPoints" Modifier="0.2"/>
+    </BattleConditionModifier>
+  </AIUnitUsefulnessConfig>
+  <AIUnitUsefulnessConfig id="pol_mech_gunfort_usefulness"> <!-- Copied from sax_mech_gunfort -->
+    <TaskUsefulness>
+      <Usefulness Type="Conquer" Rating="1.0"/>
+      <Usefulness Type="Attack" Rating="0.5"/>
+      <Usefulness Type="Defend" Rating="0.5"/>
+      <Usefulness Type="Support" Rating="0.4"/>
+      <Usefulness Type="Construct" Rating="0.0"/>
+    </TaskUsefulness>
+    <UnitCharacteristics>
+      <Characteristic Type="Mobility" Rating="0.8"/>
+      <Characteristic Type="Defense" Rating="0.5"/>
+      <Characteristic Type="Range" Rating="0.5"/>
+      <Characteristic Type="Damage" Rating="0.7"/>
+      <Characteristic Type="Precision" Rating="0.7"/>
+      <Characteristic Type="RateOfFire" Rating="0.7"/>
+      <Characteristic Type="AreaEffect" Rating="0.2"/>
+    </UnitCharacteristics>
+    <EnemyTypeModifier>
+      <UnitType Type="Squad" Modifier="1.0"/>
+      <UnitType Type="Mech" Modifier="0.4"/>
+    </EnemyTypeModifier>
+    <EnemyArmorModifier>
+      <ArmorType Type="Unarmored" Modifier="1.0"/>
+      <ArmorType Type="Light" Modifier="0.8"/>
+      <ArmorType Type="Medium" Modifier="0.6"/>
+      <ArmorType Type="Heavy" Modifier="0.3"/>
+	  <ArmorType Type="Structure" Modifier="0.3"/>
+    </EnemyArmorModifier>
+    <BattleConditionModifier>
+      <Condition Type="LowOnMechs" Modifier="0.25"/>
+      <Condition Type="VictoryPoints" Modifier="1.0"/>
+    </BattleConditionModifier>
+  </AIUnitUsefulnessConfig>
+
+  <AIUnitUsefulnessConfig id="sax_hero_brunhilde_usefulness">
+    <TaskUsefulness>
+      <Usefulness Type="Conquer" Rating="1.0"/>
+      <Usefulness Type="Attack" Rating="0.5"/>
+      <Usefulness Type="Defend" Rating="0.5"/>
+      <Usefulness Type="Support" Rating="0.4"/>
+      <Usefulness Type="Construct" Rating="0.0"/>
+    </TaskUsefulness>
+    <UnitCharacteristics>
+      <Characteristic Type="Mobility" Rating="0.8"/>
+      <Characteristic Type="Defense" Rating="0.5"/>
+      <Characteristic Type="Range" Rating="0.5"/>
+      <Characteristic Type="Damage" Rating="0.7"/>
+      <Characteristic Type="Precision" Rating="0.7"/>
+      <Characteristic Type="RateOfFire" Rating="0.7"/>
+      <Characteristic Type="AreaEffect" Rating="0.2"/>
+    </UnitCharacteristics>
+    <EnemyTypeModifier>
+      <UnitType Type="Squad" Modifier="1.0"/>
+      <UnitType Type="Mech" Modifier="0.4"/>
+    </EnemyTypeModifier>
+    <EnemyArmorModifier>
+      <ArmorType Type="Unarmored" Modifier="1.0"/>
+      <ArmorType Type="Light" Modifier="0.8"/>
+      <ArmorType Type="Medium" Modifier="0.6"/>
+      <ArmorType Type="Heavy" Modifier="0.3"/>
+	  <ArmorType Type="Structure" Modifier="0.3"/>
+    </EnemyArmorModifier>
+    <BattleConditionModifier>
+      <Condition Type="LowOnMechs" Modifier="0.25"/>
+      <Condition Type="VictoryPoints" Modifier="1.0"/>
+    </BattleConditionModifier>
+  </AIUnitUsefulnessConfig>
+  <AIUnitUsefulnessConfig id="sax_hero_brunhildegunter_usefulness" parentId="sax_hero_brunhilde_usefulness" />
+  <AIUnitUsefulnessConfig id="sax_hero_gunter_usefulness">
+    <TaskUsefulness>
+      <Usefulness Type="Conquer" Rating="1.0"/>
+      <Usefulness Type="Attack" Rating="0.5"/>
+      <Usefulness Type="Defend" Rating="0.5"/>
+      <Usefulness Type="Support" Rating="0.4"/>
+      <Usefulness Type="Construct" Rating="0.0"/>
+    </TaskUsefulness>
+    <UnitCharacteristics>
+      <Characteristic Type="Mobility" Rating="0.8"/>
+      <Characteristic Type="Defense" Rating="0.5"/>
+      <Characteristic Type="Range" Rating="0.5"/>
+      <Characteristic Type="Damage" Rating="0.7"/>
+      <Characteristic Type="Precision" Rating="0.7"/>
+      <Characteristic Type="RateOfFire" Rating="0.7"/>
+      <Characteristic Type="AreaEffect" Rating="0.2"/>
+    </UnitCharacteristics>
+    <EnemyTypeModifier>
+      <UnitType Type="Squad" Modifier="1.0"/>
+      <UnitType Type="Mech" Modifier="0.4"/>
+    </EnemyTypeModifier>
+    <EnemyArmorModifier>
+      <ArmorType Type="Unarmored" Modifier="1.0"/>
+      <ArmorType Type="Light" Modifier="0.8"/>
+      <ArmorType Type="Medium" Modifier="0.6"/>
+      <ArmorType Type="Heavy" Modifier="0.3"/>
+	  <ArmorType Type="Structure" Modifier="0.3"/>
+    </EnemyArmorModifier>
+    <BattleConditionModifier>
+      <Condition Type="LowOnMechs" Modifier="0.25"/>
+      <Condition Type="VictoryPoints" Modifier="1.0"/>
+    </BattleConditionModifier>
+	<RangeToMeleeEfficiency>0.5</RangeToMeleeEfficiency>
+  </AIUnitUsefulnessConfig>
+  <AIUnitUsefulnessConfig id="sax_hero_tag_usefulness">
+    <TaskUsefulness>
+      <Usefulness Type="Conquer" Rating="1.0"/>
+      <Usefulness Type="Attack" Rating="0.5"/>
+      <Usefulness Type="Defend" Rating="0.5"/>
+      <Usefulness Type="Support" Rating="0.4"/>
+      <Usefulness Type="Construct" Rating="0.0"/>
+    </TaskUsefulness>
+    <UnitCharacteristics>
+      <Characteristic Type="Mobility" Rating="0.8"/>
+      <Characteristic Type="Defense" Rating="0.5"/>
+      <Characteristic Type="Range" Rating="0.5"/>
+      <Characteristic Type="Damage" Rating="0.7"/>
+      <Characteristic Type="Precision" Rating="0.7"/>
+      <Characteristic Type="RateOfFire" Rating="0.7"/>
+      <Characteristic Type="AreaEffect" Rating="0.2"/>
+    </UnitCharacteristics>
+    <EnemyTypeModifier>
+      <UnitType Type="Squad" Modifier="1.0"/>
+      <UnitType Type="Mech" Modifier="0.4"/>
+    </EnemyTypeModifier>
+    <EnemyArmorModifier>
+      <ArmorType Type="Unarmored" Modifier="1.0"/>
+      <ArmorType Type="Light" Modifier="0.8"/>
+      <ArmorType Type="Medium" Modifier="0.6"/>
+      <ArmorType Type="Heavy" Modifier="0.3"/>
+	  <ArmorType Type="Structure" Modifier="0.3"/>
+    </EnemyArmorModifier>
+    <BattleConditionModifier>
+      <Condition Type="LowOnMechs" Modifier="0.25"/>
+      <Condition Type="VictoryPoints" Modifier="1.0"/>
+    </BattleConditionModifier>
+  </AIUnitUsefulnessConfig>
+  <AIUnitUsefulnessConfig id="sax_hero_nacht_usefulness">
+    <TaskUsefulness>
+      <Usefulness Type="Conquer" Rating="1.0"/>
+      <Usefulness Type="Attack" Rating="0.5"/>
+      <Usefulness Type="Defend" Rating="0.5"/>
+      <Usefulness Type="Support" Rating="0.4"/>
+      <Usefulness Type="Construct" Rating="0.0"/>
+    </TaskUsefulness>
+    <UnitCharacteristics>
+      <Characteristic Type="Mobility" Rating="0.8"/>
+      <Characteristic Type="Defense" Rating="0.5"/>
+      <Characteristic Type="Range" Rating="0.5"/>
+      <Characteristic Type="Damage" Rating="0.7"/>
+      <Characteristic Type="Precision" Rating="0.7"/>
+      <Characteristic Type="RateOfFire" Rating="0.7"/>
+      <Characteristic Type="AreaEffect" Rating="0.2"/>
+    </UnitCharacteristics>
+    <EnemyTypeModifier>
+      <UnitType Type="Squad" Modifier="1.0"/>
+      <UnitType Type="Mech" Modifier="0.4"/>
+    </EnemyTypeModifier>
+    <EnemyArmorModifier>
+      <ArmorType Type="Unarmored" Modifier="1.0"/>
+      <ArmorType Type="Light" Modifier="0.8"/>
+      <ArmorType Type="Medium" Modifier="0.6"/>
+      <ArmorType Type="Heavy" Modifier="0.3"/>
+	  <ArmorType Type="Structure" Modifier="0.3"/>
+    </EnemyArmorModifier>
+    <BattleConditionModifier>
+      <Condition Type="LowOnMechs" Modifier="0.25"/>
+      <Condition Type="VictoryPoints" Modifier="1.0"/>
+    </BattleConditionModifier>
+  </AIUnitUsefulnessConfig>
+   
+  <AIUnitUsefulnessConfig id="sax_hero_prince_usefulness">
+    <TaskUsefulness>
+      <Usefulness Type="Conquer" Rating="1.0"/>
+      <Usefulness Type="Attack" Rating="0.5"/>
+      <Usefulness Type="Defend" Rating="0.5"/>
+      <Usefulness Type="Support" Rating="0.4"/>
+      <Usefulness Type="Construct" Rating="0.0"/>
+    </TaskUsefulness>
+    <UnitCharacteristics>
+      <Characteristic Type="Mobility" Rating="0.8"/>
+      <Characteristic Type="Defense" Rating="0.5"/>
+      <Characteristic Type="Range" Rating="0.5"/>
+      <Characteristic Type="Damage" Rating="0.7"/>
+      <Characteristic Type="Precision" Rating="0.7"/>
+      <Characteristic Type="RateOfFire" Rating="0.7"/>
+      <Characteristic Type="AreaEffect" Rating="0.2"/>
+    </UnitCharacteristics>
+    <EnemyTypeModifier>
+      <UnitType Type="Squad" Modifier="1.0"/>
+      <UnitType Type="Mech" Modifier="0.4"/>
+    </EnemyTypeModifier>
+    <EnemyArmorModifier>
+      <ArmorType Type="Unarmored" Modifier="1.0"/>
+      <ArmorType Type="Light" Modifier="0.8"/>
+      <ArmorType Type="Medium" Modifier="0.6"/>
+      <ArmorType Type="Heavy" Modifier="0.3"/>
+	  <ArmorType Type="Structure" Modifier="0.3"/>  
+    </EnemyArmorModifier>
+    <BattleConditionModifier>
+      <Condition Type="LowOnMechs" Modifier="0.25"/>
+      <Condition Type="VictoryPoints" Modifier="1.0"/>
+    </BattleConditionModifier>
+  </AIUnitUsefulnessConfig>
+
+  <AIUnitUsefulnessConfig id="sax_soldier_rifleman_usefulness">
+    <TaskUsefulness>
+      <Usefulness Type="Conquer" Rating="1.0"/>
+      <Usefulness Type="Attack" Rating="0.5"/>
+      <Usefulness Type="Defend" Rating="0.5"/>
+      <Usefulness Type="Support" Rating="0.4"/>
+      <Usefulness Type="Construct" Rating="0.0"/>
+    </TaskUsefulness>
+    <UnitCharacteristics>
+      <Characteristic Type="Mobility" Rating="0.8"/>
+      <Characteristic Type="Defense" Rating="0.5"/>
+      <Characteristic Type="Range" Rating="0.5"/>
+      <Characteristic Type="Damage" Rating="0.7"/>
+      <Characteristic Type="Precision" Rating="0.7"/>
+      <Characteristic Type="RateOfFire" Rating="0.7"/>
+      <Characteristic Type="AreaEffect" Rating="0.2"/>
+    </UnitCharacteristics>
+    <EnemyTypeModifier>
+      <UnitType Type="Squad" Modifier="1.0"/>
+      <UnitType Type="Mech" Modifier="0.4"/>
+    </EnemyTypeModifier>
+    <EnemyArmorModifier>
+      <ArmorType Type="Unarmored" Modifier="1.0"/>
+      <ArmorType Type="Light" Modifier="0.8"/>
+      <ArmorType Type="Medium" Modifier="0.6"/>
+      <ArmorType Type="Heavy" Modifier="0.3"/>
+	  <ArmorType Type="Structure" Modifier="0.3"/>  
+    </EnemyArmorModifier>
+    <BattleConditionModifier>
+      <Condition Type="LowOnMechs" Modifier="0.25"/>
+      <Condition Type="VictoryPoints" Modifier="1.0"/>
+    </BattleConditionModifier>
+	<RangeToMeleeEfficiency>7</RangeToMeleeEfficiency>
+  </AIUnitUsefulnessConfig>
+  <AIUnitUsefulnessConfig id="sax_soldier_engineer_usefulness">
+    <TaskUsefulness>
+      <Usefulness Type="Conquer" Rating="0.5"/>
+      <Usefulness Type="Attack" Rating="0.4"/>
+      <Usefulness Type="Defend" Rating="0.3"/>
+      <Usefulness Type="Support" Rating="0.7"/>
+      <Usefulness Type="Construct" Rating="1.0"/>
+    </TaskUsefulness>
+    <UnitCharacteristics>
+      <Characteristic Type="Mobility" Rating="0.7"/>
+      <Characteristic Type="Defense" Rating="0.5"/>
+      <Characteristic Type="Range" Rating="0.5"/>
+      <Characteristic Type="Damage" Rating="0.5"/>
+      <Characteristic Type="Precision" Rating="0.8"/>
+      <Characteristic Type="RateOfFire" Rating="0.4"/>
+      <Characteristic Type="AreaEffect" Rating="0.2"/>
+    </UnitCharacteristics>
+    <EnemyTypeModifier>
+      <UnitType Type="Squad" Modifier="0.8"/>
+      <UnitType Type="Mech" Modifier="0.3"/>
+    </EnemyTypeModifier>
+    <EnemyArmorModifier>
+      <ArmorType Type="Unarmored" Modifier="1.0"/>
+      <ArmorType Type="Light" Modifier="0.8"/>
+      <ArmorType Type="Medium" Modifier="0.6"/>
+      <ArmorType Type="Heavy" Modifier="0.2"/>
+	  <ArmorType Type="Structure" Modifier="0.2"/>  
+    </EnemyArmorModifier>
+    <BattleConditionModifier>
+      <Condition Type="LowOnMechs" Modifier="0.25"/>
+      <Condition Type="VictoryPoints" Modifier="0.7"/>
+    </BattleConditionModifier>
+	<RangeToMeleeEfficiency>2</RangeToMeleeEfficiency>
+  </AIUnitUsefulnessConfig>
+  <AIUnitUsefulnessConfig id="sax_soldier_grenadier_usefulness">
+    <TaskUsefulness>
+      <Usefulness Type="Conquer" Rating="0.9"/>
+      <Usefulness Type="Attack" Rating="0.6"/>
+      <Usefulness Type="Defend" Rating="0.6"/>
+      <Usefulness Type="Support" Rating="0.5"/>
+      <Usefulness Type="Construct" Rating="0.0"/>
+    </TaskUsefulness>
+    <UnitCharacteristics>
+      <Characteristic Type="Mobility" Rating="0.7"/>
+      <Characteristic Type="Defense" Rating="0.5"/>
+      <Characteristic Type="Range" Rating="0.5"/>
+      <Characteristic Type="Damage" Rating="0.6"/>
+      <Characteristic Type="Precision" Rating="0.8"/>
+      <Characteristic Type="RateOfFire" Rating="0.3"/>
+      <Characteristic Type="AreaEffect" Rating="0.4"/>
+    </UnitCharacteristics>
+    <EnemyTypeModifier>
+      <UnitType Type="Squad" Modifier="1.0"/>
+      <UnitType Type="Mech" Modifier="0.5"/>
+    </EnemyTypeModifier>
+    <EnemyArmorModifier>
+      <ArmorType Type="Unarmored" Modifier="1.0"/>
+      <ArmorType Type="Light" Modifier="0.8"/>
+      <ArmorType Type="Medium" Modifier="0.7"/>
+      <ArmorType Type="Heavy" Modifier="0.3"/>
+	  <ArmorType Type="Structure" Modifier="0.3"/>  
+    </EnemyArmorModifier>
+    <BattleConditionModifier>
+      <Condition Type="LowOnMechs" Modifier="0.25"/>
+      <Condition Type="VictoryPoints" Modifier="0.9"/>
+    </BattleConditionModifier>
+	<RangeToMeleeEfficiency>9</RangeToMeleeEfficiency>
+  </AIUnitUsefulnessConfig>
+  <AIUnitUsefulnessConfig id="sax_soldier_medic_usefulness">
+    <TaskUsefulness>
+      <Usefulness Type="Conquer" Rating="0.8"/>
+      <Usefulness Type="Attack" Rating="0.4"/>
+      <Usefulness Type="Defend" Rating="0.4"/>
+      <Usefulness Type="Support" Rating="0.8"/>
+      <Usefulness Type="Construct" Rating="0.0"/>
+    </TaskUsefulness>
+    <UnitCharacteristics>
+      <Characteristic Type="Mobility" Rating="0.7"/>
+      <Characteristic Type="Defense" Rating="0.5"/>
+      <Characteristic Type="Range" Rating="0.5"/>
+      <Characteristic Type="Damage" Rating="0.6"/>
+      <Characteristic Type="Precision" Rating="0.8"/>
+      <Characteristic Type="RateOfFire" Rating="0.2"/>
+      <Characteristic Type="AreaEffect" Rating="0.1"/>
+    </UnitCharacteristics>
+    <EnemyTypeModifier>
+      <UnitType Type="Squad" Modifier="0.8"/>
+      <UnitType Type="Mech" Modifier="0.2"/>
+    </EnemyTypeModifier>
+    <EnemyArmorModifier>
+      <ArmorType Type="Unarmored" Modifier="1.0"/>
+      <ArmorType Type="Light" Modifier="0.7"/>
+      <ArmorType Type="Medium" Modifier="0.6"/>
+      <ArmorType Type="Heavy" Modifier="0.2"/>
+	  <ArmorType Type="Structure" Modifier="0.2"/>  
+    </EnemyArmorModifier>
+    <BattleConditionModifier>
+      <Condition Type="LowOnMechs" Modifier="0.25"/>
+      <Condition Type="VictoryPoints" Modifier="0.9"/>
+    </BattleConditionModifier>
+	<RangeToMeleeEfficiency>2</RangeToMeleeEfficiency>
+  </AIUnitUsefulnessConfig>
+  <AIUnitUsefulnessConfig id="sax_soldier_flamer_usefulness">
+    <TaskUsefulness>
+      <Usefulness Type="Conquer" Rating="0.6"/>
+      <Usefulness Type="Attack" Rating="0.6"/>
+      <Usefulness Type="Defend" Rating="0.5"/>
+      <Usefulness Type="Support" Rating="0.3"/>
+      <Usefulness Type="Construct" Rating="0.0"/>
+    </TaskUsefulness>
+    <UnitCharacteristics>
+      <Characteristic Type="Mobility" Rating="0.8"/>
+      <Characteristic Type="Defense" Rating="0.5"/>
+      <Characteristic Type="Range" Rating="0.4"/>
+      <Characteristic Type="Damage" Rating="0.6"/>
+      <Characteristic Type="Precision" Rating="0.4"/>
+      <Characteristic Type="RateOfFire" Rating="0.7"/>
+      <Characteristic Type="AreaEffect" Rating="0.4"/>
+    </UnitCharacteristics>
+    <EnemyTypeModifier>
+      <UnitType Type="Squad" Modifier="1.0"/>
+      <UnitType Type="Mech" Modifier="0.4"/>
+    </EnemyTypeModifier>
+    <EnemyArmorModifier>
+      <ArmorType Type="Unarmored" Modifier="1.0"/>
+      <ArmorType Type="Light" Modifier="0.8"/>
+      <ArmorType Type="Medium" Modifier="0.5"/>
+      <ArmorType Type="Heavy" Modifier="0.1"/>
+	  <ArmorType Type="Structure" Modifier="0.1"/>  
+    </EnemyArmorModifier>
+    <BattleConditionModifier>
+      <Condition Type="LowOnMechs" Modifier="0.25"/>
+      <Condition Type="VictoryPoints" Modifier="0.6"/>
+    </BattleConditionModifier>
+	<RangeToMeleeEfficiency>50</RangeToMeleeEfficiency>
+  </AIUnitUsefulnessConfig>
+  <AIUnitUsefulnessConfig id="sax_soldier_mg_usefulness">
+    <TaskUsefulness>
+      <Usefulness Type="Conquer" Rating="0.6"/>
+      <Usefulness Type="Attack" Rating="0.7"/>
+      <Usefulness Type="Defend" Rating="0.8"/>
+      <Usefulness Type="Support" Rating="0.4"/>
+      <Usefulness Type="Construct" Rating="0.0"/>
+    </TaskUsefulness>
+    <UnitCharacteristics>
+      <Characteristic Type="Mobility" Rating="0.5"/>
+      <Characteristic Type="Defense" Rating="0.5"/>
+      <Characteristic Type="Range" Rating="0.7"/>
+      <Characteristic Type="Damage" Rating="0.7"/>
+      <Characteristic Type="Precision" Rating="0.6"/>
+      <Characteristic Type="RateOfFire" Rating="0.8"/>
+      <Characteristic Type="AreaEffect" Rating="0.3"/>
+    </UnitCharacteristics>
+    <EnemyTypeModifier>
+      <UnitType Type="Squad" Modifier="1.0"/>
+      <UnitType Type="Mech" Modifier="0.6"/>
+    </EnemyTypeModifier>
+    <EnemyArmorModifier>
+      <ArmorType Type="Unarmored" Modifier="1.0"/>
+      <ArmorType Type="Light" Modifier="0.8"/>
+      <ArmorType Type="Medium" Modifier="0.6"/>
+      <ArmorType Type="Heavy" Modifier="0.3"/>
+	  <ArmorType Type="Structure" Modifier="0.3"/>  
+    </EnemyArmorModifier>
+    <BattleConditionModifier>
+      <Condition Type="LowOnMechs" Modifier="0.25"/>
+      <Condition Type="VictoryPoints" Modifier="0.5"/>
+    </BattleConditionModifier>
+	<RangeToMeleeEfficiency>20</RangeToMeleeEfficiency>
+  </AIUnitUsefulnessConfig>
+  <AIUnitUsefulnessConfig id="sax_soldier_gunner_usefulness">
+    <TaskUsefulness>
+      <Usefulness Type="Conquer" Rating="0.6"/>
+      <Usefulness Type="Attack" Rating="0.8"/>
+      <Usefulness Type="Defend" Rating="0.8"/>
+      <Usefulness Type="Support" Rating="0.3"/>
+      <Usefulness Type="Construct" Rating="0.0"/>
+    </TaskUsefulness>
+    <UnitCharacteristics>
+      <Characteristic Type="Mobility" Rating="0.5"/>
+      <Characteristic Type="Defense" Rating="0.5"/>
+      <Characteristic Type="Range" Rating="0.7"/>
+      <Characteristic Type="Damage" Rating="0.7"/>
+      <Characteristic Type="Precision" Rating="0.2"/>
+      <Characteristic Type="RateOfFire" Rating="0.3"/>
+      <Characteristic Type="AreaEffect" Rating="0.6"/>
+    </UnitCharacteristics>
+    <EnemyTypeModifier>
+      <UnitType Type="Squad" Modifier="0.5"/>
+      <UnitType Type="Mech" Modifier="0.8"/>
+    </EnemyTypeModifier>
+    <EnemyArmorModifier>
+      <ArmorType Type="Unarmored" Modifier="0.5"/>
+      <ArmorType Type="Light" Modifier="0.7"/>
+      <ArmorType Type="Medium" Modifier="0.8"/>
+      <ArmorType Type="Heavy" Modifier="0.7"/>
+	  <ArmorType Type="Structure" Modifier="0.7"/>  
+    </EnemyArmorModifier>
+    <BattleConditionModifier>
+      <Condition Type="LowOnMechs" Modifier="0.25"/>
+      <Condition Type="VictoryPoints" Modifier="0.4"/>
+    </BattleConditionModifier>
+	<RangeToMeleeEfficiency>5</RangeToMeleeEfficiency>
+  </AIUnitUsefulnessConfig>
+
+  <AIUnitUsefulnessConfig id="sax_soldier_mortar_usefulness">
+    <TaskUsefulness>
+      <Usefulness Type="Conquer" Rating="0.5"/>
+      <Usefulness Type="Attack" Rating="0.8"/>
+      <Usefulness Type="Defend" Rating="0.9"/>
+      <Usefulness Type="Support" Rating="0.3"/>
+      <Usefulness Type="Construct" Rating="0.0"/>
+    </TaskUsefulness>
+    <UnitCharacteristics>
+      <Characteristic Type="Mobility" Rating="0.2"/>
+      <Characteristic Type="Defense" Rating="0.5"/>
+      <Characteristic Type="Range" Rating="1.0"/>
+      <Characteristic Type="Damage" Rating="0.9"/>
+      <Characteristic Type="Precision" Rating="0.3"/>
+      <Characteristic Type="RateOfFire" Rating="0.2"/>
+      <Characteristic Type="AreaEffect" Rating="0.8"/>
+    </UnitCharacteristics>
+    <EnemyTypeModifier>
+      <UnitType Type="Squad" Modifier="0.7"/>
+      <UnitType Type="Mech" Modifier="0.9"/>
+    </EnemyTypeModifier>
+    <EnemyArmorModifier>
+      <ArmorType Type="Unarmored" Modifier="0.7"/>
+      <ArmorType Type="Light" Modifier="0.8"/>
+      <ArmorType Type="Medium" Modifier="0.9"/>
+      <ArmorType Type="Heavy" Modifier="0.8"/>
+	  <ArmorType Type="Structure" Modifier="0.8"/>  
+    </EnemyArmorModifier>
+    <BattleConditionModifier>
+      <Condition Type="LowOnSquads" Modifier="0.25"/>
+      <Condition Type="VictoryPoints" Modifier="0.1"/>
+    </BattleConditionModifier>
+  </AIUnitUsefulnessConfig>
+  <AIUnitUsefulnessConfig id="sax_mech_gatling_usefulness">
+    <TaskUsefulness>
+      <Usefulness Type="Conquer" Rating="0.5"/>
+      <Usefulness Type="Attack" Rating="0.8"/>
+      <Usefulness Type="Defend" Rating="0.9"/>
+      <Usefulness Type="Support" Rating="0.6"/>
+      <Usefulness Type="Construct" Rating="0.0"/>
+    </TaskUsefulness>
+    <UnitCharacteristics>
+      <Characteristic Type="Mobility" Rating="0.4"/>
+      <Characteristic Type="Defense" Rating="0.9"/>
+      <Characteristic Type="Range" Rating="0.5"/>
+      <Characteristic Type="Damage" Rating="0.6"/>
+      <Characteristic Type="Precision" Rating="0.7"/>
+      <Characteristic Type="RateOfFire" Rating="0.8"/>
+      <Characteristic Type="AreaEffect" Rating="0.4"/>
+    </UnitCharacteristics>
+    <EnemyTypeModifier>
+      <UnitType Type="Squad" Modifier="0.9"/>
+      <UnitType Type="Mech" Modifier="0.6"/>
+    </EnemyTypeModifier>
+    <EnemyArmorModifier>
+      <ArmorType Type="Unarmored" Modifier="0.9"/>
+      <ArmorType Type="Light" Modifier="0.8"/>
+      <ArmorType Type="Medium" Modifier="0.6"/>
+      <ArmorType Type="Heavy" Modifier="0.5"/>
+	  <ArmorType Type="Structure" Modifier="0.5"/>  
+    </EnemyArmorModifier>
+    <BattleConditionModifier>
+      <Condition Type="LowOnSquads" Modifier="0.25"/>
+      <Condition Type="VictoryPoints" Modifier="0.2"/>
+    </BattleConditionModifier>
+  </AIUnitUsefulnessConfig>
+  <AIUnitUsefulnessConfig id="sax_mech_tank_usefulness">
+    <TaskUsefulness>
+      <Usefulness Type="Conquer" Rating="0.7"/>
+      <Usefulness Type="Attack" Rating="0.6"/>
+      <Usefulness Type="Defend" Rating="0.7"/>
+      <Usefulness Type="Support" Rating="0.7"/>
+      <Usefulness Type="Construct" Rating="0.0"/>
+    </TaskUsefulness>
+    <UnitCharacteristics>
+      <Characteristic Type="Mobility" Rating="0.4"/>
+      <Characteristic Type="Defense" Rating="0.7"/>
+      <Characteristic Type="Range" Rating="0.7"/>
+      <Characteristic Type="Damage" Rating="0.7"/>
+      <Characteristic Type="Precision" Rating="0.7"/>
+      <Characteristic Type="RateOfFire" Rating="0.5"/>
+      <Characteristic Type="AreaEffect" Rating="0.4"/>
+    </UnitCharacteristics>
+    <EnemyTypeModifier>
+      <UnitType Type="Squad" Modifier="0.4"/>
+      <UnitType Type="Mech" Modifier="0.9"/>
+    </EnemyTypeModifier>
+    <EnemyArmorModifier>
+      <ArmorType Type="Unarmored" Modifier="0.5"/>
+      <ArmorType Type="Light" Modifier="0.7"/>
+      <ArmorType Type="Medium" Modifier="0.9"/>
+      <ArmorType Type="Heavy" Modifier="0.8"/>
+	  <ArmorType Type="Structure" Modifier="0.8"/>  
+    </EnemyArmorModifier>
+    <BattleConditionModifier>
+      <Condition Type="LowOnSquads" Modifier="0.25"/>
+      <Condition Type="VictoryPoints" Modifier="0.1"/>
+    </BattleConditionModifier>
+  </AIUnitUsefulnessConfig>
+  <AIUnitUsefulnessConfig id="sax_mech_dachs_usefulness">
+    <TaskUsefulness>
+      <Usefulness Type="Conquer" Rating="0.7"/>
+      <Usefulness Type="Attack" Rating="0.6"/>
+      <Usefulness Type="Defend" Rating="0.7"/>
+      <Usefulness Type="Support" Rating="0.7"/>
+      <Usefulness Type="Construct" Rating="0.0"/>
+    </TaskUsefulness>
+    <UnitCharacteristics>
+      <Characteristic Type="Mobility" Rating="0.4"/>
+      <Characteristic Type="Defense" Rating="0.8"/>
+      <Characteristic Type="Range" Rating="0.8"/>
+      <Characteristic Type="Damage" Rating="0.6"/>
+      <Characteristic Type="Precision" Rating="0.8"/>
+      <Characteristic Type="RateOfFire" Rating="0.4"/>
+      <Characteristic Type="AreaEffect" Rating="0.3"/>
+    </UnitCharacteristics>
+    <EnemyTypeModifier>
+      <UnitType Type="Squad" Modifier="0.5"/>
+      <UnitType Type="Mech" Modifier="0.8"/>
+    </EnemyTypeModifier>
+    <EnemyArmorModifier>
+      <ArmorType Type="Unarmored" Modifier="0.6"/>
+      <ArmorType Type="Light" Modifier="0.7"/>
+      <ArmorType Type="Medium" Modifier="0.8"/>
+      <ArmorType Type="Heavy" Modifier="0.7"/>
+	  <ArmorType Type="Structure" Modifier="0.7"/>  
+    </EnemyArmorModifier>
+    <BattleConditionModifier>
+      <Condition Type="LowOnSquads" Modifier="0.25"/>
+      <Condition Type="VictoryPoints" Modifier="0.2"/>
+    </BattleConditionModifier>
+  </AIUnitUsefulnessConfig>
+  <AIUnitUsefulnessConfig id="sax_mech_artillery_usefulness">
+    <TaskUsefulness>
+      <Usefulness Type="Conquer" Rating="0.5"/>
+      <Usefulness Type="Attack" Rating="0.8"/>
+      <Usefulness Type="Defend" Rating="0.9"/>
+      <Usefulness Type="Support" Rating="0.4"/>
+      <Usefulness Type="Construct" Rating="0.0"/>
+    </TaskUsefulness>
+    <UnitCharacteristics>
+      <Characteristic Type="Mobility" Rating="0.3"/>
+      <Characteristic Type="Defense" Rating="0.3"/>
+      <Characteristic Type="Range" Rating="1.0"/>
+      <Characteristic Type="Damage" Rating="0.9"/>
+      <Characteristic Type="Precision" Rating="0.4"/>
+      <Characteristic Type="RateOfFire" Rating="0.3"/>
+      <Characteristic Type="AreaEffect" Rating="0.6"/>
+    </UnitCharacteristics>
+    <EnemyTypeModifier>
+      <UnitType Type="Squad" Modifier="0.8"/>
+      <UnitType Type="Mech" Modifier="0.8"/>
+    </EnemyTypeModifier>
+    <EnemyArmorModifier>
+      <ArmorType Type="Unarmored" Modifier="0.7"/>
+      <ArmorType Type="Light" Modifier="0.8"/>
+      <ArmorType Type="Medium" Modifier="0.9"/>
+      <ArmorType Type="Heavy" Modifier="0.8"/>
+	  <ArmorType Type="Structure" Modifier="0.8"/>  
+    </EnemyArmorModifier>
+    <BattleConditionModifier>
+      <Condition Type="LowOnSquads" Modifier="0.25"/>
+      <Condition Type="VictoryPoints" Modifier="0.1"/>
+    </BattleConditionModifier>
+  </AIUnitUsefulnessConfig>
+  <AIUnitUsefulnessConfig id="sax_mech_gunfort_usefulness">
+    <TaskUsefulness>
+      <Usefulness Type="Conquer" Rating="1.0"/>
+      <Usefulness Type="Attack" Rating="0.5"/>
+      <Usefulness Type="Defend" Rating="0.5"/>
+      <Usefulness Type="Support" Rating="0.4"/>
+      <Usefulness Type="Construct" Rating="0.0"/>
+    </TaskUsefulness>
+    <UnitCharacteristics>
+      <Characteristic Type="Mobility" Rating="0.8"/>
+      <Characteristic Type="Defense" Rating="0.5"/>
+      <Characteristic Type="Range" Rating="0.5"/>
+      <Characteristic Type="Damage" Rating="0.7"/>
+      <Characteristic Type="Precision" Rating="0.7"/>
+      <Characteristic Type="RateOfFire" Rating="0.7"/>
+      <Characteristic Type="AreaEffect" Rating="0.2"/>
+    </UnitCharacteristics>
+    <EnemyTypeModifier>
+      <UnitType Type="Squad" Modifier="1.0"/>
+      <UnitType Type="Mech" Modifier="0.4"/>
+    </EnemyTypeModifier>
+    <EnemyArmorModifier>
+      <ArmorType Type="Unarmored" Modifier="1.0"/>
+      <ArmorType Type="Light" Modifier="0.8"/>
+      <ArmorType Type="Medium" Modifier="0.6"/>
+      <ArmorType Type="Heavy" Modifier="0.3"/>
+	  <ArmorType Type="Structure" Modifier="0.3"/>  
+    </EnemyArmorModifier>
+    <BattleConditionModifier>
+      <Condition Type="LowOnMechs" Modifier="0.25"/>
+      <Condition Type="VictoryPoints" Modifier="1.0"/>
+    </BattleConditionModifier>
+  </AIUnitUsefulnessConfig>
+  <AIUnitUsefulnessConfig id="sax_mech_mother_usefulness">
+    <TaskUsefulness>
+      <Usefulness Type="Conquer" Rating="1.0"/>
+      <Usefulness Type="Attack" Rating="0.5"/>
+      <Usefulness Type="Defend" Rating="0.5"/>
+      <Usefulness Type="Support" Rating="0.4"/>
+      <Usefulness Type="Construct" Rating="0.0"/>
+    </TaskUsefulness>
+    <UnitCharacteristics>
+      <Characteristic Type="Mobility" Rating="0.8"/>
+      <Characteristic Type="Defense" Rating="0.5"/>
+      <Characteristic Type="Range" Rating="0.5"/>
+      <Characteristic Type="Damage" Rating="0.7"/>
+      <Characteristic Type="Precision" Rating="0.7"/>
+      <Characteristic Type="RateOfFire" Rating="0.7"/>
+      <Characteristic Type="AreaEffect" Rating="0.2"/>
+    </UnitCharacteristics>
+    <EnemyTypeModifier>
+      <UnitType Type="Squad" Modifier="1.0"/>
+      <UnitType Type="Mech" Modifier="0.4"/>
+    </EnemyTypeModifier>
+    <EnemyArmorModifier>
+      <ArmorType Type="Unarmored" Modifier="1.0"/>
+      <ArmorType Type="Light" Modifier="0.8"/>
+      <ArmorType Type="Medium" Modifier="0.6"/>
+      <ArmorType Type="Heavy" Modifier="0.3"/>
+	  <ArmorType Type="Structure" Modifier="0.3"/>  
+    </EnemyArmorModifier>
+    <BattleConditionModifier>
+      <Condition Type="LowOnMechs" Modifier="0.25"/>
+      <Condition Type="VictoryPoints" Modifier="1.0"/>
+    </BattleConditionModifier>
+  </AIUnitUsefulnessConfig>
+
+  <AIUnitUsefulnessConfig id="rus_hero_brother_usefulness">
+    <TaskUsefulness>
+      <Usefulness Type="Conquer" Rating="1.0"/>
+      <Usefulness Type="Attack" Rating="0.5"/>
+      <Usefulness Type="Defend" Rating="0.5"/>
+      <Usefulness Type="Support" Rating="0.4"/>
+      <Usefulness Type="Construct" Rating="0.0"/>
+    </TaskUsefulness>
+    <UnitCharacteristics>
+      <Characteristic Type="Mobility" Rating="0.8"/>
+      <Characteristic Type="Defense" Rating="0.5"/>
+      <Characteristic Type="Range" Rating="0.7"/>
+      <Characteristic Type="Damage" Rating="0.6"/>
+      <Characteristic Type="Precision" Rating="0.8"/>
+      <Characteristic Type="RateOfFire" Rating="0.3"/>
+      <Characteristic Type="AreaEffect" Rating="0.1"/>
+    </UnitCharacteristics>
+    <EnemyTypeModifier>
+      <UnitType Type="Squad" Modifier="0.9"/>
+      <UnitType Type="Mech" Modifier="0.3"/>
+    </EnemyTypeModifier>
+    <EnemyArmorModifier>
+      <ArmorType Type="Unarmored" Modifier="1.0"/>
+      <ArmorType Type="Light" Modifier="0.8"/>
+      <ArmorType Type="Medium" Modifier="0.6"/>
+      <ArmorType Type="Heavy" Modifier="0.3"/>
+	  <ArmorType Type="Structure" Modifier="0.3"/>  
+    </EnemyArmorModifier>
+    <BattleConditionModifier>
+      <Condition Type="LowOnMechs" Modifier="0.25"/>
+      <Condition Type="VictoryPoints" Modifier="1.0"/>
+    </BattleConditionModifier>
+  </AIUnitUsefulnessConfig>
+  <AIUnitUsefulnessConfig id="rus_hero_general_usefulness">
+    <TaskUsefulness>
+      <Usefulness Type="Conquer" Rating="1.0"/>
+      <Usefulness Type="Attack" Rating="0.5"/>
+      <Usefulness Type="Defend" Rating="0.5"/>
+      <Usefulness Type="Support" Rating="0.4"/>
+      <Usefulness Type="Construct" Rating="0.0"/>
+    </TaskUsefulness>
+    <UnitCharacteristics>
+      <Characteristic Type="Mobility" Rating="0.8"/>
+      <Characteristic Type="Defense" Rating="0.5"/>
+      <Characteristic Type="Range" Rating="0.7"/>
+      <Characteristic Type="Damage" Rating="0.6"/>
+      <Characteristic Type="Precision" Rating="0.8"/>
+      <Characteristic Type="RateOfFire" Rating="0.3"/>
+      <Characteristic Type="AreaEffect" Rating="0.1"/>
+    </UnitCharacteristics>
+    <EnemyTypeModifier>
+      <UnitType Type="Squad" Modifier="0.9"/>
+      <UnitType Type="Mech" Modifier="0.3"/>
+    </EnemyTypeModifier>
+    <EnemyArmorModifier>
+      <ArmorType Type="Unarmored" Modifier="1.0"/>
+      <ArmorType Type="Light" Modifier="0.8"/>
+      <ArmorType Type="Medium" Modifier="0.6"/>
+      <ArmorType Type="Heavy" Modifier="0.3"/>
+	  <ArmorType Type="Structure" Modifier="0.3"/>  
+    </EnemyArmorModifier>
+    <BattleConditionModifier>
+      <Condition Type="LowOnMechs" Modifier="0.25"/>
+      <Condition Type="VictoryPoints" Modifier="1.0"/>
+    </BattleConditionModifier>
+  </AIUnitUsefulnessConfig>
+  <AIUnitUsefulnessConfig id="rus_hero_olga_usefulness">
+    <TaskUsefulness>
+      <Usefulness Type="Conquer" Rating="1.0"/>
+      <Usefulness Type="Attack" Rating="0.5"/>
+      <Usefulness Type="Defend" Rating="0.5"/>
+      <Usefulness Type="Support" Rating="0.4"/>
+      <Usefulness Type="Construct" Rating="0.0"/>
+    </TaskUsefulness>
+    <UnitCharacteristics>
+      <Characteristic Type="Mobility" Rating="0.8"/>
+      <Characteristic Type="Defense" Rating="0.5"/>
+      <Characteristic Type="Range" Rating="0.7"/>
+      <Characteristic Type="Damage" Rating="0.6"/>
+      <Characteristic Type="Precision" Rating="0.8"/>
+      <Characteristic Type="RateOfFire" Rating="0.3"/>
+      <Characteristic Type="AreaEffect" Rating="0.1"/>
+    </UnitCharacteristics>
+    <EnemyTypeModifier>
+      <UnitType Type="Squad" Modifier="0.9"/>
+      <UnitType Type="Mech" Modifier="0.3"/>
+    </EnemyTypeModifier>
+    <EnemyArmorModifier>
+      <ArmorType Type="Unarmored" Modifier="1.0"/>
+      <ArmorType Type="Light" Modifier="0.8"/>
+      <ArmorType Type="Medium" Modifier="0.6"/>
+      <ArmorType Type="Heavy" Modifier="0.3"/>
+	  <ArmorType Type="Structure" Modifier="0.3"/>  
+    </EnemyArmorModifier>
+    <BattleConditionModifier>
+      <Condition Type="LowOnMechs" Modifier="0.25"/>
+      <Condition Type="VictoryPoints" Modifier="1.0"/>
+    </BattleConditionModifier>
+	<RangeToMeleeEfficiency>0.5</RangeToMeleeEfficiency>
+  </AIUnitUsefulnessConfig>
+  <AIUnitUsefulnessConfig id="rus_hero_olgachanga_usefulness">
+    <TaskUsefulness>
+      <Usefulness Type="Conquer" Rating="1.0"/>
+      <Usefulness Type="Attack" Rating="0.5"/>
+      <Usefulness Type="Defend" Rating="0.5"/>
+      <Usefulness Type="Support" Rating="0.4"/>
+      <Usefulness Type="Construct" Rating="0.0"/>
+    </TaskUsefulness>
+    <UnitCharacteristics>
+      <Characteristic Type="Mobility" Rating="0.8"/>
+      <Characteristic Type="Defense" Rating="0.5"/>
+      <Characteristic Type="Range" Rating="0.7"/>
+      <Characteristic Type="Damage" Rating="0.6"/>
+      <Characteristic Type="Precision" Rating="0.8"/>
+      <Characteristic Type="RateOfFire" Rating="0.3"/>
+      <Characteristic Type="AreaEffect" Rating="0.1"/>
+    </UnitCharacteristics>
+    <EnemyTypeModifier>
+      <UnitType Type="Squad" Modifier="0.9"/>
+      <UnitType Type="Mech" Modifier="0.3"/>
+    </EnemyTypeModifier>
+    <EnemyArmorModifier>
+      <ArmorType Type="Unarmored" Modifier="1.0"/>
+      <ArmorType Type="Light" Modifier="0.8"/>
+      <ArmorType Type="Medium" Modifier="0.6"/>
+      <ArmorType Type="Heavy" Modifier="0.3"/>
+	  <ArmorType Type="Structure" Modifier="0.3"/>  
+    </EnemyArmorModifier>
+    <BattleConditionModifier>
+      <Condition Type="LowOnMechs" Modifier="0.25"/>
+      <Condition Type="VictoryPoints" Modifier="1.0"/>
+    </BattleConditionModifier>
+	<RangeToMeleeEfficiency>0.5</RangeToMeleeEfficiency>
+  </AIUnitUsefulnessConfig>
+  <AIUnitUsefulnessConfig id="rus_hero_changa_usefulness">
+    <TaskUsefulness>
+      <Usefulness Type="Conquer" Rating="1.0"/>
+      <Usefulness Type="Attack" Rating="0.5"/>
+      <Usefulness Type="Defend" Rating="0.5"/>
+      <Usefulness Type="Support" Rating="0.4"/>
+      <Usefulness Type="Construct" Rating="0.0"/>
+    </TaskUsefulness>
+    <UnitCharacteristics>
+      <Characteristic Type="Mobility" Rating="0.8"/>
+      <Characteristic Type="Defense" Rating="0.5"/>
+      <Characteristic Type="Range" Rating="0.7"/>
+      <Characteristic Type="Damage" Rating="0.6"/>
+      <Characteristic Type="Precision" Rating="0.8"/>
+      <Characteristic Type="RateOfFire" Rating="0.3"/>
+      <Characteristic Type="AreaEffect" Rating="0.1"/>
+    </UnitCharacteristics>
+    <EnemyTypeModifier>
+      <UnitType Type="Squad" Modifier="0.9"/>
+      <UnitType Type="Mech" Modifier="0.3"/>
+    </EnemyTypeModifier>
+    <EnemyArmorModifier>
+      <ArmorType Type="Unarmored" Modifier="1.0"/>
+      <ArmorType Type="Light" Modifier="0.8"/>
+      <ArmorType Type="Medium" Modifier="0.6"/>
+      <ArmorType Type="Heavy" Modifier="0.3"/>
+	  <ArmorType Type="Structure" Modifier="0.3"/>  
+    </EnemyArmorModifier>
+    <BattleConditionModifier>
+      <Condition Type="LowOnMechs" Modifier="0.25"/>
+      <Condition Type="VictoryPoints" Modifier="1.0"/>
+    </BattleConditionModifier>
+  </AIUnitUsefulnessConfig>
+  <AIUnitUsefulnessConfig id="rus_npc_general_usefulness">
+    <TaskUsefulness>
+      <Usefulness Type="Conquer" Rating="1.0"/>
+      <Usefulness Type="Attack" Rating="0.5"/>
+      <Usefulness Type="Defend" Rating="0.5"/>
+      <Usefulness Type="Support" Rating="0.4"/>
+      <Usefulness Type="Construct" Rating="0.0"/>
+    </TaskUsefulness>
+    <UnitCharacteristics>
+      <Characteristic Type="Mobility" Rating="0.8"/>
+      <Characteristic Type="Defense" Rating="0.5"/>
+      <Characteristic Type="Range" Rating="0.7"/>
+      <Characteristic Type="Damage" Rating="0.6"/>
+      <Characteristic Type="Precision" Rating="0.8"/>
+      <Characteristic Type="RateOfFire" Rating="0.3"/>
+      <Characteristic Type="AreaEffect" Rating="0.1"/>
+    </UnitCharacteristics>
+    <EnemyTypeModifier>
+      <UnitType Type="Squad" Modifier="0.9"/>
+      <UnitType Type="Mech" Modifier="0.3"/>
+    </EnemyTypeModifier>
+    <EnemyArmorModifier>
+      <ArmorType Type="Unarmored" Modifier="1.0"/>
+      <ArmorType Type="Light" Modifier="0.8"/>
+      <ArmorType Type="Medium" Modifier="0.6"/>
+      <ArmorType Type="Heavy" Modifier="0.3"/>
+	  <ArmorType Type="Structure" Modifier="0.3"/>  
+    </EnemyArmorModifier>
+    <BattleConditionModifier>
+      <Condition Type="LowOnMechs" Modifier="0.25"/>
+      <Condition Type="VictoryPoints" Modifier="1.0"/>
+    </BattleConditionModifier>
+  </AIUnitUsefulnessConfig>
+  
+  <AIUnitUsefulnessConfig id="rus_soldier_rifleman_usefulness">
+    <TaskUsefulness>
+      <Usefulness Type="Conquer" Rating="1.0"/>
+      <Usefulness Type="Attack" Rating="0.5"/>
+      <Usefulness Type="Defend" Rating="0.5"/>
+      <Usefulness Type="Support" Rating="0.4"/>
+      <Usefulness Type="Construct" Rating="0.0"/>
+    </TaskUsefulness>
+    <UnitCharacteristics>
+      <Characteristic Type="Mobility" Rating="0.8"/>
+      <Characteristic Type="Defense" Rating="0.5"/>
+      <Characteristic Type="Range" Rating="0.7"/>
+      <Characteristic Type="Damage" Rating="0.6"/>
+      <Characteristic Type="Precision" Rating="0.8"/>
+      <Characteristic Type="RateOfFire" Rating="0.3"/>
+      <Characteristic Type="AreaEffect" Rating="0.1"/>
+    </UnitCharacteristics>
+    <EnemyTypeModifier>
+      <UnitType Type="Squad" Modifier="0.9"/>
+      <UnitType Type="Mech" Modifier="0.3"/>
+    </EnemyTypeModifier>
+    <EnemyArmorModifier>
+      <ArmorType Type="Unarmored" Modifier="1.0"/>
+      <ArmorType Type="Light" Modifier="0.8"/>
+      <ArmorType Type="Medium" Modifier="0.6"/>
+      <ArmorType Type="Heavy" Modifier="0.3"/>
+	  <ArmorType Type="Structure" Modifier="0.3"/>  
+    </EnemyArmorModifier>
+    <BattleConditionModifier>
+      <Condition Type="LowOnMechs" Modifier="0.25"/>
+      <Condition Type="VictoryPoints" Modifier="1.0"/>
+    </BattleConditionModifier>
+	<RangeToMeleeEfficiency>10</RangeToMeleeEfficiency>
+  </AIUnitUsefulnessConfig>
+  <AIUnitUsefulnessConfig id="rus_soldier_engineer_usefulness">
+    <TaskUsefulness>
+      <Usefulness Type="Conquer" Rating="0.5"/>
+      <Usefulness Type="Attack" Rating="0.4"/>
+      <Usefulness Type="Defend" Rating="0.3"/>
+      <Usefulness Type="Support" Rating="0.7"/>
+      <Usefulness Type="Construct" Rating="1.0"/>
+    </TaskUsefulness>
+    <UnitCharacteristics>
+      <Characteristic Type="Mobility" Rating="0.7"/>
+      <Characteristic Type="Defense" Rating="0.5"/>
+      <Characteristic Type="Range" Rating="0.5"/>
+      <Characteristic Type="Damage" Rating="0.5"/>
+      <Characteristic Type="Precision" Rating="0.8"/>
+      <Characteristic Type="RateOfFire" Rating="0.4"/>
+      <Characteristic Type="AreaEffect" Rating="0.2"/>
+    </UnitCharacteristics>
+    <EnemyTypeModifier>
+      <UnitType Type="Squad" Modifier="0.8"/>
+      <UnitType Type="Mech" Modifier="0.3"/>
+    </EnemyTypeModifier>
+    <EnemyArmorModifier>
+      <ArmorType Type="Unarmored" Modifier="1.0"/>
+      <ArmorType Type="Light" Modifier="0.8"/>
+      <ArmorType Type="Medium" Modifier="0.6"/>
+      <ArmorType Type="Heavy" Modifier="0.2"/>
+	  <ArmorType Type="Structure" Modifier="0.2"/>  
+    </EnemyArmorModifier>
+    <BattleConditionModifier>
+      <Condition Type="LowOnMechs" Modifier="0.25"/>
+      <Condition Type="VictoryPoints" Modifier="0.7"/>
+    </BattleConditionModifier>
+	<RangeToMeleeEfficiency>2</RangeToMeleeEfficiency>
+  </AIUnitUsefulnessConfig>
+  <AIUnitUsefulnessConfig id="rus_soldier_grenadier_usefulness">
+    <TaskUsefulness>
+      <Usefulness Type="Conquer" Rating="0.9"/>
+      <Usefulness Type="Attack" Rating="0.6"/>
+      <Usefulness Type="Defend" Rating="0.6"/>
+      <Usefulness Type="Support" Rating="0.5"/>
+      <Usefulness Type="Construct" Rating="0.0"/>
+    </TaskUsefulness>
+    <UnitCharacteristics>
+      <Characteristic Type="Mobility" Rating="0.7"/>
+      <Characteristic Type="Defense" Rating="0.5"/>
+      <Characteristic Type="Range" Rating="0.5"/>
+      <Characteristic Type="Damage" Rating="0.6"/>
+      <Characteristic Type="Precision" Rating="0.8"/>
+      <Characteristic Type="RateOfFire" Rating="0.3"/>
+      <Characteristic Type="AreaEffect" Rating="0.4"/>
+    </UnitCharacteristics>
+    <EnemyTypeModifier>
+      <UnitType Type="Squad" Modifier="1.0"/>
+      <UnitType Type="Mech" Modifier="0.5"/>
+    </EnemyTypeModifier>
+    <EnemyArmorModifier>
+      <ArmorType Type="Unarmored" Modifier="1.0"/>
+      <ArmorType Type="Light" Modifier="0.8"/>
+      <ArmorType Type="Medium" Modifier="0.7"/>
+      <ArmorType Type="Heavy" Modifier="0.3"/>
+	  <ArmorType Type="Structure" Modifier="0.3"/>  
+    </EnemyArmorModifier>
+    <BattleConditionModifier>
+      <Condition Type="LowOnMechs" Modifier="0.25"/>
+      <Condition Type="VictoryPoints" Modifier="0.9"/>
+    </BattleConditionModifier>
+	<RangeToMeleeEfficiency>12</RangeToMeleeEfficiency>
+  </AIUnitUsefulnessConfig>
+  <AIUnitUsefulnessConfig id="rus_soldier_medic_usefulness">
+    <TaskUsefulness>
+      <Usefulness Type="Conquer" Rating="0.8"/>
+      <Usefulness Type="Attack" Rating="0.4"/>
+      <Usefulness Type="Defend" Rating="0.4"/>
+      <Usefulness Type="Support" Rating="0.8"/>
+      <Usefulness Type="Construct" Rating="0.0"/>
+    </TaskUsefulness>
+    <UnitCharacteristics>
+      <Characteristic Type="Mobility" Rating="0.7"/>
+      <Characteristic Type="Defense" Rating="0.5"/>
+      <Characteristic Type="Range" Rating="0.5"/>
+      <Characteristic Type="Damage" Rating="0.6"/>
+      <Characteristic Type="Precision" Rating="0.8"/>
+      <Characteristic Type="RateOfFire" Rating="0.2"/>
+      <Characteristic Type="AreaEffect" Rating="0.1"/>
+    </UnitCharacteristics>
+    <EnemyTypeModifier>
+      <UnitType Type="Squad" Modifier="0.8"/>
+      <UnitType Type="Mech" Modifier="0.2"/>
+    </EnemyTypeModifier>
+    <EnemyArmorModifier>
+      <ArmorType Type="Unarmored" Modifier="1.0"/>
+      <ArmorType Type="Light" Modifier="0.7"/>
+      <ArmorType Type="Medium" Modifier="0.6"/>
+      <ArmorType Type="Heavy" Modifier="0.2"/>
+	  <ArmorType Type="Structure" Modifier="0.2"/>  
+    </EnemyArmorModifier>
+    <BattleConditionModifier>
+      <Condition Type="LowOnMechs" Modifier="0.25"/>
+      <Condition Type="VictoryPoints" Modifier="0.9"/>
+    </BattleConditionModifier>
+	<RangeToMeleeEfficiency>2</RangeToMeleeEfficiency>
+  </AIUnitUsefulnessConfig>
+  <AIUnitUsefulnessConfig id="rus_soldier_flamer_usefulness">
+    <TaskUsefulness>
+      <Usefulness Type="Conquer" Rating="0.6"/>
+      <Usefulness Type="Attack" Rating="0.6"/>
+      <Usefulness Type="Defend" Rating="0.5"/>
+      <Usefulness Type="Support" Rating="0.3"/>
+      <Usefulness Type="Construct" Rating="0.0"/>
+    </TaskUsefulness>
+    <UnitCharacteristics>
+      <Characteristic Type="Mobility" Rating="0.8"/>
+      <Characteristic Type="Defense" Rating="0.5"/>
+      <Characteristic Type="Range" Rating="0.4"/>
+      <Characteristic Type="Damage" Rating="0.6"/>
+      <Characteristic Type="Precision" Rating="0.4"/>
+      <Characteristic Type="RateOfFire" Rating="0.7"/>
+      <Characteristic Type="AreaEffect" Rating="0.4"/>
+    </UnitCharacteristics>
+    <EnemyTypeModifier>
+      <UnitType Type="Squad" Modifier="1.0"/>
+      <UnitType Type="Mech" Modifier="0.4"/>
+    </EnemyTypeModifier>
+    <EnemyArmorModifier>
+      <ArmorType Type="Unarmored" Modifier="1.0"/>
+      <ArmorType Type="Light" Modifier="0.8"/>
+      <ArmorType Type="Medium" Modifier="0.5"/>
+      <ArmorType Type="Heavy" Modifier="0.1"/>
+	  <ArmorType Type="Structure" Modifier="0.1"/>  
+    </EnemyArmorModifier>
+    <BattleConditionModifier>
+      <Condition Type="LowOnMechs" Modifier="0.25"/>
+      <Condition Type="VictoryPoints" Modifier="0.6"/>
+    </BattleConditionModifier>
+	<RangeToMeleeEfficiency>50</RangeToMeleeEfficiency>
+  </AIUnitUsefulnessConfig>
+  <AIUnitUsefulnessConfig id="rus_soldier_mg_usefulness">
+    <TaskUsefulness>
+      <Usefulness Type="Conquer" Rating="0.6"/>
+      <Usefulness Type="Attack" Rating="0.7"/>
+      <Usefulness Type="Defend" Rating="0.8"/>
+      <Usefulness Type="Support" Rating="0.4"/>
+      <Usefulness Type="Construct" Rating="0.0"/>
+    </TaskUsefulness>
+    <UnitCharacteristics>
+      <Characteristic Type="Mobility" Rating="0.5"/>
+      <Characteristic Type="Defense" Rating="0.5"/>
+      <Characteristic Type="Range" Rating="0.7"/>
+      <Characteristic Type="Damage" Rating="0.7"/>
+      <Characteristic Type="Precision" Rating="0.6"/>
+      <Characteristic Type="RateOfFire" Rating="0.8"/>
+      <Characteristic Type="AreaEffect" Rating="0.3"/>
+    </UnitCharacteristics>
+    <EnemyTypeModifier>
+      <UnitType Type="Squad" Modifier="1.0"/>
+      <UnitType Type="Mech" Modifier="0.6"/>
+    </EnemyTypeModifier>
+    <EnemyArmorModifier>
+      <ArmorType Type="Unarmored" Modifier="1.0"/>
+      <ArmorType Type="Light" Modifier="0.8"/>
+      <ArmorType Type="Medium" Modifier="0.6"/>
+      <ArmorType Type="Heavy" Modifier="0.3"/>
+	  <ArmorType Type="Structure" Modifier="0.3"/>  
+    </EnemyArmorModifier>
+    <BattleConditionModifier>
+      <Condition Type="LowOnMechs" Modifier="0.25"/>
+      <Condition Type="VictoryPoints" Modifier="0.5"/>
+    </BattleConditionModifier>
+	<RangeToMeleeEfficiency>20</RangeToMeleeEfficiency>
+  </AIUnitUsefulnessConfig>
+  <AIUnitUsefulnessConfig id="rus_soldier_gunner_usefulness">
+    <TaskUsefulness>
+      <Usefulness Type="Conquer" Rating="0.6"/>
+      <Usefulness Type="Attack" Rating="0.8"/>
+      <Usefulness Type="Defend" Rating="0.8"/>
+      <Usefulness Type="Support" Rating="0.3"/>
+      <Usefulness Type="Construct" Rating="0.0"/>
+    </TaskUsefulness>
+    <UnitCharacteristics>
+      <Characteristic Type="Mobility" Rating="0.5"/>
+      <Characteristic Type="Defense" Rating="0.5"/>
+      <Characteristic Type="Range" Rating="0.7"/>
+      <Characteristic Type="Damage" Rating="0.7"/>
+      <Characteristic Type="Precision" Rating="0.2"/>
+      <Characteristic Type="RateOfFire" Rating="0.3"/>
+      <Characteristic Type="AreaEffect" Rating="0.6"/>
+    </UnitCharacteristics>
+    <EnemyTypeModifier>
+      <UnitType Type="Squad" Modifier="0.5"/>
+      <UnitType Type="Mech" Modifier="0.8"/>
+    </EnemyTypeModifier>
+    <EnemyArmorModifier>
+      <ArmorType Type="Unarmored" Modifier="0.5"/>
+      <ArmorType Type="Light" Modifier="0.7"/>
+      <ArmorType Type="Medium" Modifier="0.8"/>
+      <ArmorType Type="Heavy" Modifier="0.7"/>
+	  <ArmorType Type="Structure" Modifier="0.7"/>  
+    </EnemyArmorModifier>
+    <BattleConditionModifier>
+      <Condition Type="LowOnMechs" Modifier="0.25"/>
+      <Condition Type="VictoryPoints" Modifier="0.4"/>
+    </BattleConditionModifier>
+	<RangeToMeleeEfficiency>5</RangeToMeleeEfficiency>
+  </AIUnitUsefulnessConfig>
+  
+  <AIUnitUsefulnessConfig id="rus_mech_artillery_usefulness">
+    <TaskUsefulness>
+      <Usefulness Type="Conquer" Rating="1.0"/>
+      <Usefulness Type="Attack" Rating="0.5"/>
+      <Usefulness Type="Defend" Rating="0.5"/>
+      <Usefulness Type="Support" Rating="0.4"/>
+      <Usefulness Type="Construct" Rating="0.0"/>
+    </TaskUsefulness>
+    <UnitCharacteristics>
+      <Characteristic Type="Mobility" Rating="0.8"/>
+      <Characteristic Type="Defense" Rating="0.5"/>
+      <Characteristic Type="Range" Rating="0.7"/>
+      <Characteristic Type="Damage" Rating="0.6"/>
+      <Characteristic Type="Precision" Rating="0.8"/>
+      <Characteristic Type="RateOfFire" Rating="0.3"/>
+      <Characteristic Type="AreaEffect" Rating="0.1"/>
+    </UnitCharacteristics>
+    <EnemyTypeModifier>
+      <UnitType Type="Squad" Modifier="0.9"/>
+      <UnitType Type="Mech" Modifier="0.3"/>
+    </EnemyTypeModifier>
+    <EnemyArmorModifier>
+      <ArmorType Type="Unarmored" Modifier="1.0"/>
+      <ArmorType Type="Light" Modifier="0.8"/>
+      <ArmorType Type="Medium" Modifier="0.6"/>
+      <ArmorType Type="Heavy" Modifier="0.3"/>
+	  <ArmorType Type="Structure" Modifier="0.3"/>  
+    </EnemyArmorModifier>
+    <BattleConditionModifier>
+      <Condition Type="LowOnMechs" Modifier="0.25"/>
+      <Condition Type="VictoryPoints" Modifier="1.0"/>
+    </BattleConditionModifier>
+  </AIUnitUsefulnessConfig>
+  <AIUnitUsefulnessConfig id="rus_soldier_exo_usefulness">
+    <TaskUsefulness>
+      <Usefulness Type="Conquer" Rating="0.5"/>
+      <Usefulness Type="Attack" Rating="0.8"/>
+      <Usefulness Type="Defend" Rating="0.9"/>
+      <Usefulness Type="Support" Rating="0.3"/>
+      <Usefulness Type="Construct" Rating="0.0"/>
+    </TaskUsefulness>
+    <UnitCharacteristics>
+      <Characteristic Type="Mobility" Rating="0.2"/>
+      <Characteristic Type="Defense" Rating="0.5"/>
+      <Characteristic Type="Range" Rating="1.0"/>
+      <Characteristic Type="Damage" Rating="0.9"/>
+      <Characteristic Type="Precision" Rating="0.3"/>
+      <Characteristic Type="RateOfFire" Rating="0.2"/>
+      <Characteristic Type="AreaEffect" Rating="0.8"/>
+    </UnitCharacteristics>
+    <EnemyTypeModifier>
+      <UnitType Type="Squad" Modifier="0.7"/>
+      <UnitType Type="Mech" Modifier="0.9"/>
+    </EnemyTypeModifier>
+    <EnemyArmorModifier>
+      <ArmorType Type="Unarmored" Modifier="0.7"/>
+      <ArmorType Type="Light" Modifier="0.8"/>
+      <ArmorType Type="Medium" Modifier="0.9"/>
+      <ArmorType Type="Heavy" Modifier="0.8"/>
+	  <ArmorType Type="Structure" Modifier="0.8"/>  
+    </EnemyArmorModifier>
+    <BattleConditionModifier>
+      <Condition Type="LowOnSquads" Modifier="0.25"/>
+      <Condition Type="VictoryPoints" Modifier="0.1"/>
+    </BattleConditionModifier>
+  </AIUnitUsefulnessConfig>
+  <AIUnitUsefulnessConfig id="rus_mech_bomber_usefulness">
+    <TaskUsefulness>
+      <Usefulness Type="Conquer" Rating="1.0"/>
+      <Usefulness Type="Attack" Rating="0.5"/>
+      <Usefulness Type="Defend" Rating="0.5"/>
+      <Usefulness Type="Support" Rating="0.4"/>
+      <Usefulness Type="Construct" Rating="0.0"/>
+    </TaskUsefulness>
+    <UnitCharacteristics>
+      <Characteristic Type="Mobility" Rating="0.8"/>
+      <Characteristic Type="Defense" Rating="0.5"/>
+      <Characteristic Type="Range" Rating="0.7"/>
+      <Characteristic Type="Damage" Rating="0.6"/>
+      <Characteristic Type="Precision" Rating="0.8"/>
+      <Characteristic Type="RateOfFire" Rating="0.3"/>
+      <Characteristic Type="AreaEffect" Rating="0.1"/>
+    </UnitCharacteristics>
+    <EnemyTypeModifier>
+      <UnitType Type="Squad" Modifier="0.9"/>
+      <UnitType Type="Mech" Modifier="0.3"/>
+    </EnemyTypeModifier>
+    <EnemyArmorModifier>
+      <ArmorType Type="Unarmored" Modifier="1.0"/>
+      <ArmorType Type="Light" Modifier="0.8"/>
+      <ArmorType Type="Medium" Modifier="0.6"/>
+      <ArmorType Type="Heavy" Modifier="0.3"/>
+	  <ArmorType Type="Structure" Modifier="0.3"/>  
+    </EnemyArmorModifier>
+    <BattleConditionModifier>
+      <Condition Type="LowOnMechs" Modifier="0.25"/>
+      <Condition Type="VictoryPoints" Modifier="1.0"/>
+    </BattleConditionModifier>
+  </AIUnitUsefulnessConfig>
+  <AIUnitUsefulnessConfig id="rus_mech_flamer_usefulness">
+    <TaskUsefulness>
+      <Usefulness Type="Conquer" Rating="1.0"/>
+      <Usefulness Type="Attack" Rating="0.5"/>
+      <Usefulness Type="Defend" Rating="0.5"/>
+      <Usefulness Type="Support" Rating="0.4"/>
+      <Usefulness Type="Construct" Rating="0.0"/>
+    </TaskUsefulness>
+    <UnitCharacteristics>
+      <Characteristic Type="Mobility" Rating="0.8"/>
+      <Characteristic Type="Defense" Rating="0.5"/>
+      <Characteristic Type="Range" Rating="0.7"/>
+      <Characteristic Type="Damage" Rating="0.6"/>
+      <Characteristic Type="Precision" Rating="0.8"/>
+      <Characteristic Type="RateOfFire" Rating="0.3"/>
+      <Characteristic Type="AreaEffect" Rating="0.1"/>
+    </UnitCharacteristics>
+    <EnemyTypeModifier>
+      <UnitType Type="Squad" Modifier="0.9"/>
+      <UnitType Type="Mech" Modifier="0.3"/>
+    </EnemyTypeModifier>
+    <EnemyArmorModifier>
+      <ArmorType Type="Unarmored" Modifier="1.0"/>
+      <ArmorType Type="Light" Modifier="0.8"/>
+      <ArmorType Type="Medium" Modifier="0.6"/>
+      <ArmorType Type="Heavy" Modifier="0.3"/>
+	  <ArmorType Type="Structure" Modifier="0.3"/>  
+    </EnemyArmorModifier>
+    <BattleConditionModifier>
+      <Condition Type="LowOnMechs" Modifier="0.25"/>
+      <Condition Type="VictoryPoints" Modifier="1.0"/>
+    </BattleConditionModifier>
+  </AIUnitUsefulnessConfig>
+  <AIUnitUsefulnessConfig id="rus_mech_gunfort_usefulness">
+    <TaskUsefulness>
+      <Usefulness Type="Conquer" Rating="1.0"/>
+      <Usefulness Type="Attack" Rating="0.5"/>
+      <Usefulness Type="Defend" Rating="0.5"/>
+      <Usefulness Type="Support" Rating="0.4"/>
+      <Usefulness Type="Construct" Rating="0.0"/>
+    </TaskUsefulness>
+    <UnitCharacteristics>
+      <Characteristic Type="Mobility" Rating="0.8"/>
+      <Characteristic Type="Defense" Rating="0.5"/>
+      <Characteristic Type="Range" Rating="0.7"/>
+      <Characteristic Type="Damage" Rating="0.6"/>
+      <Characteristic Type="Precision" Rating="0.8"/>
+      <Characteristic Type="RateOfFire" Rating="0.3"/>
+      <Characteristic Type="AreaEffect" Rating="0.1"/>
+    </UnitCharacteristics>
+    <EnemyTypeModifier>
+      <UnitType Type="Squad" Modifier="0.9"/>
+      <UnitType Type="Mech" Modifier="0.3"/>
+    </EnemyTypeModifier>
+    <EnemyArmorModifier>
+      <ArmorType Type="Unarmored" Modifier="1.0"/>
+      <ArmorType Type="Light" Modifier="0.8"/>
+      <ArmorType Type="Medium" Modifier="0.6"/>
+      <ArmorType Type="Heavy" Modifier="0.3"/>
+	  <ArmorType Type="Structure" Modifier="0.3"/>  
+    </EnemyArmorModifier>
+    <BattleConditionModifier>
+      <Condition Type="LowOnMechs" Modifier="0.25"/>
+      <Condition Type="VictoryPoints" Modifier="1.0"/>
+    </BattleConditionModifier>
+  </AIUnitUsefulnessConfig>
+  <AIUnitUsefulnessConfig id="rus_mech_revolver_usefulness">
+    <TaskUsefulness>
+      <Usefulness Type="Conquer" Rating="1.0"/>
+      <Usefulness Type="Attack" Rating="0.5"/>
+      <Usefulness Type="Defend" Rating="0.5"/>
+      <Usefulness Type="Support" Rating="0.4"/>
+      <Usefulness Type="Construct" Rating="0.0"/>
+    </TaskUsefulness>
+    <UnitCharacteristics>
+      <Characteristic Type="Mobility" Rating="0.8"/>
+      <Characteristic Type="Defense" Rating="0.5"/>
+      <Characteristic Type="Range" Rating="0.7"/>
+      <Characteristic Type="Damage" Rating="0.6"/>
+      <Characteristic Type="Precision" Rating="0.8"/>
+      <Characteristic Type="RateOfFire" Rating="0.3"/>
+      <Characteristic Type="AreaEffect" Rating="0.1"/>
+    </UnitCharacteristics>
+    <EnemyTypeModifier>
+      <UnitType Type="Squad" Modifier="0.9"/>
+      <UnitType Type="Mech" Modifier="0.3"/>
+    </EnemyTypeModifier>
+    <EnemyArmorModifier>
+      <ArmorType Type="Unarmored" Modifier="1.0"/>
+      <ArmorType Type="Light" Modifier="0.8"/>
+      <ArmorType Type="Medium" Modifier="0.6"/>
+      <ArmorType Type="Heavy" Modifier="0.3"/>
+	  <ArmorType Type="Structure" Modifier="0.3"/>  
+    </EnemyArmorModifier>
+    <BattleConditionModifier>
+      <Condition Type="LowOnMechs" Modifier="0.25"/>
+      <Condition Type="VictoryPoints" Modifier="1.0"/>
+    </BattleConditionModifier>
+  </AIUnitUsefulnessConfig>
+  <AIUnitUsefulnessConfig id="rus_mech_scythe_usefulness">
+    <TaskUsefulness>
+      <Usefulness Type="Conquer" Rating="1.0"/>
+      <Usefulness Type="Attack" Rating="0.5"/>
+      <Usefulness Type="Defend" Rating="0.5"/>
+      <Usefulness Type="Support" Rating="0.4"/>
+      <Usefulness Type="Construct" Rating="0.0"/>
+    </TaskUsefulness>
+    <UnitCharacteristics>
+      <Characteristic Type="Mobility" Rating="0.8"/>
+      <Characteristic Type="Defense" Rating="0.5"/>
+      <Characteristic Type="Range" Rating="0.7"/>
+      <Characteristic Type="Damage" Rating="0.6"/>
+      <Characteristic Type="Precision" Rating="0.8"/>
+      <Characteristic Type="RateOfFire" Rating="0.3"/>
+      <Characteristic Type="AreaEffect" Rating="0.1"/>
+    </UnitCharacteristics>
+    <EnemyTypeModifier>
+      <UnitType Type="Squad" Modifier="0.9"/>
+      <UnitType Type="Mech" Modifier="0.3"/>
+    </EnemyTypeModifier>
+    <EnemyArmorModifier>
+      <ArmorType Type="Unarmored" Modifier="1.0"/>
+      <ArmorType Type="Light" Modifier="0.8"/>
+      <ArmorType Type="Medium" Modifier="0.6"/>
+      <ArmorType Type="Heavy" Modifier="0.3"/>
+	  <ArmorType Type="Structure" Modifier="0.3"/>  
+    </EnemyArmorModifier>
+    <BattleConditionModifier>
+      <Condition Type="LowOnMechs" Modifier="0.25"/>
+      <Condition Type="VictoryPoints" Modifier="1.0"/>
+    </BattleConditionModifier>
+  </AIUnitUsefulnessConfig>
+  
+  <AIUnitUsefulnessConfig id="tes_mech_charger_usefulness">
+    <TaskUsefulness>
+      <Usefulness Type="Conquer" Rating="0.5"/>
+      <Usefulness Type="Attack" Rating="0.8"/>
+      <Usefulness Type="Defend" Rating="0.9"/>
+      <Usefulness Type="Support" Rating="0.6"/>
+      <Usefulness Type="Construct" Rating="0.0"/>
+    </TaskUsefulness>
+    <UnitCharacteristics>
+      <Characteristic Type="Mobility" Rating="0.4"/>
+      <Characteristic Type="Defense" Rating="0.9"/>
+      <Characteristic Type="Range" Rating="0.5"/>
+      <Characteristic Type="Damage" Rating="0.6"/>
+      <Characteristic Type="Precision" Rating="0.7"/>
+      <Characteristic Type="RateOfFire" Rating="0.8"/>
+      <Characteristic Type="AreaEffect" Rating="0.4"/>
+    </UnitCharacteristics>
+    <EnemyTypeModifier>
+      <UnitType Type="Squad" Modifier="0.9"/>
+      <UnitType Type="Mech" Modifier="0.6"/>
+    </EnemyTypeModifier>
+    <EnemyArmorModifier>
+      <ArmorType Type="Unarmored" Modifier="0.9"/>
+      <ArmorType Type="Light" Modifier="0.8"/>
+      <ArmorType Type="Medium" Modifier="0.6"/>
+      <ArmorType Type="Heavy" Modifier="0.5"/>
+	  <ArmorType Type="Structure" Modifier="0.5"/>  
+    </EnemyArmorModifier>
+    <BattleConditionModifier>
+      <Condition Type="LowOnSquads" Modifier="0.25"/>
+      <Condition Type="VictoryPoints" Modifier="0.2"/>
+    </BattleConditionModifier>
+  </AIUnitUsefulnessConfig>
+  <AIUnitUsefulnessConfig id="tes_mech_guard_usefulness">
+    <TaskUsefulness>
+      <Usefulness Type="Conquer" Rating="0.5"/>
+      <Usefulness Type="Attack" Rating="0.8"/>
+      <Usefulness Type="Defend" Rating="0.9"/>
+      <Usefulness Type="Support" Rating="0.6"/>
+      <Usefulness Type="Construct" Rating="0.0"/>
+    </TaskUsefulness>
+    <UnitCharacteristics>
+      <Characteristic Type="Mobility" Rating="0.4"/>
+      <Characteristic Type="Defense" Rating="0.9"/>
+      <Characteristic Type="Range" Rating="0.5"/>
+      <Characteristic Type="Damage" Rating="0.6"/>
+      <Characteristic Type="Precision" Rating="0.7"/>
+      <Characteristic Type="RateOfFire" Rating="0.8"/>
+      <Characteristic Type="AreaEffect" Rating="0.4"/>
+    </UnitCharacteristics>
+    <EnemyTypeModifier>
+      <UnitType Type="Squad" Modifier="0.9"/>
+      <UnitType Type="Mech" Modifier="0.6"/>
+    </EnemyTypeModifier>
+    <EnemyArmorModifier>
+      <ArmorType Type="Unarmored" Modifier="0.9"/>
+      <ArmorType Type="Light" Modifier="0.8"/>
+      <ArmorType Type="Medium" Modifier="0.6"/>
+      <ArmorType Type="Heavy" Modifier="0.5"/>
+	  <ArmorType Type="Structure" Modifier="0.5"/>  
+    </EnemyArmorModifier>
+    <BattleConditionModifier>
+      <Condition Type="LowOnSquads" Modifier="0.25"/>
+      <Condition Type="VictoryPoints" Modifier="0.2"/>
+    </BattleConditionModifier>
+  </AIUnitUsefulnessConfig>
+  <AIUnitUsefulnessConfig id="tes_mech_serve_usefulness">
+    <TaskUsefulness>
+      <Usefulness Type="Conquer" Rating="0.5"/>
+      <Usefulness Type="Attack" Rating="0.8"/>
+      <Usefulness Type="Defend" Rating="0.9"/>
+      <Usefulness Type="Support" Rating="0.6"/>
+      <Usefulness Type="Construct" Rating="0.0"/>
+    </TaskUsefulness>
+    <UnitCharacteristics>
+      <Characteristic Type="Mobility" Rating="0.4"/>
+      <Characteristic Type="Defense" Rating="0.9"/>
+      <Characteristic Type="Range" Rating="0.5"/>
+      <Characteristic Type="Damage" Rating="0.6"/>
+      <Characteristic Type="Precision" Rating="0.7"/>
+      <Characteristic Type="RateOfFire" Rating="0.8"/>
+      <Characteristic Type="AreaEffect" Rating="0.4"/>
+    </UnitCharacteristics>
+    <EnemyTypeModifier>
+      <UnitType Type="Squad" Modifier="0.9"/>
+      <UnitType Type="Mech" Modifier="0.6"/>
+    </EnemyTypeModifier>
+    <EnemyArmorModifier>
+      <ArmorType Type="Unarmored" Modifier="0.9"/>
+      <ArmorType Type="Light" Modifier="0.8"/>
+      <ArmorType Type="Medium" Modifier="0.6"/>
+      <ArmorType Type="Heavy" Modifier="0.5"/>
+	  <ArmorType Type="Structure" Modifier="0.5"/>  
+    </EnemyArmorModifier>
+    <BattleConditionModifier>
+      <Condition Type="LowOnSquads" Modifier="0.25"/>
+      <Condition Type="VictoryPoints" Modifier="0.2"/>
+    </BattleConditionModifier>
+  </AIUnitUsefulnessConfig>
+  <AIUnitUsefulnessConfig id="tes_mech_ikarus_usefulness">
+	<!-- Copied from pol_mech_trooptransport -->
+		<TaskUsefulness>
+		  <Usefulness Type="Conquer" Rating="0.8"/>
+		  <Usefulness Type="Attack" Rating="0.5"/>
+		  <Usefulness Type="Defend" Rating="0.8"/>
+		  <Usefulness Type="Support" Rating="0.8"/>
+		  <Usefulness Type="Construct" Rating="0.0"/>
+		</TaskUsefulness>
+		<UnitCharacteristics>
+		  <Characteristic Type="Mobility" Rating="0.7"/>
+		  <Characteristic Type="Defense" Rating="1.0"/>
+		  <Characteristic Type="Range" Rating="0.5"/>
+		  <Characteristic Type="Damage" Rating="0.4"/>
+		  <Characteristic Type="Precision" Rating="0.8"/>
+		  <Characteristic Type="RateOfFire" Rating="0.3"/>
+		  <Characteristic Type="AreaEffect" Rating="0.2"/>
+		</UnitCharacteristics>
+		<EnemyTypeModifier>
+		  <UnitType Type="Squad" Modifier="0.8"/>
+		  <UnitType Type="Mech" Modifier="0.4"/>
+		</EnemyTypeModifier>
+		<EnemyArmorModifier>
+		  <ArmorType Type="Unarmored" Modifier="0.8"/>
+		  <ArmorType Type="Light" Modifier="0.7"/>
+		  <ArmorType Type="Medium" Modifier="0.5"/>
+		  <ArmorType Type="Heavy" Modifier="0.4"/>
+		  <ArmorType Type="Structure" Modifier="0.4"/>
+		</EnemyArmorModifier>
+		<BattleConditionModifier>
+		  <Condition Type="LowOnSquads" Modifier="0.25"/>
+		  <Condition Type="VictoryPoints" Modifier="0.3"/>
+		</BattleConditionModifier>
+	 </AIUnitUsefulnessConfig>
+  
+  <AIUnitUsefulnessConfig id="com_support_cannon_usefulness">
+    <TaskUsefulness>
+      <Usefulness Type="Conquer" Rating="0.2"/>
+      <Usefulness Type="Attack" Rating="0.7"/>
+      <Usefulness Type="Defend" Rating="0.8"/>
+      <Usefulness Type="Support" Rating="0.6"/>
+      <Usefulness Type="Construct" Rating="0.0"/>
+    </TaskUsefulness>
+    <UnitCharacteristics>
+      <Characteristic Type="Mobility" Rating="0.1"/>
+      <Characteristic Type="Defense" Rating="0.6"/>
+      <Characteristic Type="Range" Rating="1.0"/>
+      <Characteristic Type="Damage" Rating="0.9"/>
+      <Characteristic Type="Precision" Rating="1.0"/>
+      <Characteristic Type="RateOfFire" Rating="0.2"/>
+      <Characteristic Type="AreaEffect" Rating="0.1"/>
+    </UnitCharacteristics>
+    <EnemyTypeModifier>
+      <UnitType Type="Squad" Modifier="0.2"/>
+      <UnitType Type="Mech" Modifier="1.0"/>
+    </EnemyTypeModifier>
+    <EnemyArmorModifier>
+      <ArmorType Type="Unarmored" Modifier="0.3"/>
+      <ArmorType Type="Light" Modifier="0.5"/>
+      <ArmorType Type="Medium" Modifier="0.8"/>
+      <ArmorType Type="Heavy" Modifier="0.9"/>
+	  <ArmorType Type="Structure" Modifier="0.9"/>
+    </EnemyArmorModifier>
+    <BattleConditionModifier>
+      <Condition Type="LowOnSquads" Modifier="0.25"/>
+      <Condition Type="VictoryPoints" Modifier="0.1"/>
+    </BattleConditionModifier>
+  </AIUnitUsefulnessConfig>
+  <AIUnitUsefulnessConfig id="com_support_mg_usefulness">
+    <TaskUsefulness>
+      <Usefulness Type="Conquer" Rating="0.2"/>
+      <Usefulness Type="Attack" Rating="0.7"/>
+      <Usefulness Type="Defend" Rating="0.8"/>
+      <Usefulness Type="Support" Rating="0.6"/>
+      <Usefulness Type="Construct" Rating="0.0"/>
+    </TaskUsefulness>
+    <UnitCharacteristics>
+      <Characteristic Type="Mobility" Rating="0.2"/>
+      <Characteristic Type="Defense" Rating="0.6"/>
+      <Characteristic Type="Range" Rating="0.6"/>
+      <Characteristic Type="Damage" Rating="0.7"/>
+      <Characteristic Type="Precision" Rating="0.5"/>
+      <Characteristic Type="RateOfFire" Rating="1.0"/>
+      <Characteristic Type="AreaEffect" Rating="0.3"/>
+    </UnitCharacteristics>
+    <EnemyTypeModifier>
+      <UnitType Type="Squad" Modifier="1.0"/>
+      <UnitType Type="Mech" Modifier="0.5"/>
+    </EnemyTypeModifier>
+    <EnemyArmorModifier>
+      <ArmorType Type="Unarmored" Modifier="1.0"/>
+      <ArmorType Type="Light" Modifier="0.8"/>
+      <ArmorType Type="Medium" Modifier="0.5"/>
+      <ArmorType Type="Heavy" Modifier="0.3"/>
+	  <ArmorType Type="Structure" Modifier="0.3"/>
+    </EnemyArmorModifier>
+    <BattleConditionModifier>
+      <Condition Type="LowOnSquads" Modifier="0.25"/>
+      <Condition Type="VictoryPoints" Modifier="0.1"/>
+    </BattleConditionModifier>
+  </AIUnitUsefulnessConfig>
+  <AIUnitUsefulnessConfig id="com_support_mortar_usefulness">
+    <TaskUsefulness>
+      <Usefulness Type="Conquer" Rating="0.2"/>
+      <Usefulness Type="Attack" Rating="0.7"/>
+      <Usefulness Type="Defend" Rating="0.8"/>
+      <Usefulness Type="Support" Rating="0.6"/>
+      <Usefulness Type="Construct" Rating="0.0"/>
+    </TaskUsefulness>
+    <UnitCharacteristics>
+      <Characteristic Type="Mobility" Rating="0.2"/>
+      <Characteristic Type="Defense" Rating="0.6"/>
+      <Characteristic Type="Range" Rating="0.6"/>
+      <Characteristic Type="Damage" Rating="0.7"/>
+      <Characteristic Type="Precision" Rating="0.5"/>
+      <Characteristic Type="RateOfFire" Rating="1.0"/>
+      <Characteristic Type="AreaEffect" Rating="0.3"/>
+    </UnitCharacteristics>
+    <EnemyTypeModifier>
+      <UnitType Type="Squad" Modifier="1.0"/>
+      <UnitType Type="Mech" Modifier="0.5"/>
+    </EnemyTypeModifier>
+    <EnemyArmorModifier>
+      <ArmorType Type="Unarmored" Modifier="1.0"/>
+      <ArmorType Type="Light" Modifier="0.8"/>
+      <ArmorType Type="Medium" Modifier="0.5"/>
+      <ArmorType Type="Heavy" Modifier="0.3"/>
+	  <ArmorType Type="Structure" Modifier="0.3"/>
+    </EnemyArmorModifier>
+    <BattleConditionModifier>
+      <Condition Type="LowOnSquads" Modifier="0.25"/>
+      <Condition Type="VictoryPoints" Modifier="0.1"/>
+    </BattleConditionModifier>
+  </AIUnitUsefulnessConfig>
+  <AIUnitUsefulnessConfig id="com_support_destroyer_usefulness">
+    <TaskUsefulness>
+      <Usefulness Type="Conquer" Rating="0.2"/>
+      <Usefulness Type="Attack" Rating="0.7"/>
+      <Usefulness Type="Defend" Rating="0.8"/>
+      <Usefulness Type="Support" Rating="0.6"/>
+      <Usefulness Type="Construct" Rating="0.0"/>
+    </TaskUsefulness>
+    <UnitCharacteristics>
+      <Characteristic Type="Mobility" Rating="0.2"/>
+      <Characteristic Type="Defense" Rating="0.6"/>
+      <Characteristic Type="Range" Rating="0.6"/>
+      <Characteristic Type="Damage" Rating="0.7"/>
+      <Characteristic Type="Precision" Rating="0.5"/>
+      <Characteristic Type="RateOfFire" Rating="1.0"/>
+      <Characteristic Type="AreaEffect" Rating="0.3"/>
+    </UnitCharacteristics>
+    <EnemyTypeModifier>
+      <UnitType Type="Squad" Modifier="1.0"/>
+      <UnitType Type="Mech" Modifier="0.5"/>
+    </EnemyTypeModifier>
+    <EnemyArmorModifier>
+      <ArmorType Type="Unarmored" Modifier="1.0"/>
+      <ArmorType Type="Light" Modifier="0.8"/>
+      <ArmorType Type="Medium" Modifier="0.5"/>
+      <ArmorType Type="Heavy" Modifier="0.3"/>
+	  <ArmorType Type="Structure" Modifier="0.3"/>
+    </EnemyArmorModifier>
+    <BattleConditionModifier>
+      <Condition Type="LowOnSquads" Modifier="0.25"/>
+      <Condition Type="VictoryPoints" Modifier="0.1"/>
+    </BattleConditionModifier>
+  </AIUnitUsefulnessConfig>
+
+  <AIUnitUsefulnessConfig id="com_npc_farmermale_usefulness">
+    <TaskUsefulness>
+      <Usefulness Type="Conquer" Rating="1.0"/>
+      <Usefulness Type="Attack" Rating="0.5"/>
+      <Usefulness Type="Defend" Rating="0.5"/>
+      <Usefulness Type="Support" Rating="0.4"/>
+      <Usefulness Type="Construct" Rating="0.0"/>
+    </TaskUsefulness>
+    <UnitCharacteristics>
+      <Characteristic Type="Mobility" Rating="0.8"/>
+      <Characteristic Type="Defense" Rating="0.5"/>
+      <Characteristic Type="Range" Rating="0.7"/>
+      <Characteristic Type="Damage" Rating="0.6"/>
+      <Characteristic Type="Precision" Rating="0.8"/>
+      <Characteristic Type="RateOfFire" Rating="0.3"/>
+      <Characteristic Type="AreaEffect" Rating="0.1"/>
+    </UnitCharacteristics>
+    <EnemyTypeModifier>
+      <UnitType Type="Squad" Modifier="0.9"/>
+      <UnitType Type="Mech" Modifier="0.3"/>
+    </EnemyTypeModifier>
+    <EnemyArmorModifier>
+      <ArmorType Type="Unarmored" Modifier="1.0"/>
+      <ArmorType Type="Light" Modifier="0.8"/>
+      <ArmorType Type="Medium" Modifier="0.6"/>
+      <ArmorType Type="Heavy" Modifier="0.3"/>
+	  <ArmorType Type="Structure" Modifier="0.3"/>
+    </EnemyArmorModifier>
+    <BattleConditionModifier>
+      <Condition Type="LowOnMechs" Modifier="0.25"/>
+      <Condition Type="VictoryPoints" Modifier="1.0"/>
+    </BattleConditionModifier>
+  </AIUnitUsefulnessConfig>
+  <AIUnitUsefulnessConfig id="com_npc_farmerfemale_usefulness">
+    <TaskUsefulness>
+      <Usefulness Type="Conquer" Rating="1.0"/>
+      <Usefulness Type="Attack" Rating="0.5"/>
+      <Usefulness Type="Defend" Rating="0.5"/>
+      <Usefulness Type="Support" Rating="0.4"/>
+      <Usefulness Type="Construct" Rating="0.0"/>
+    </TaskUsefulness>
+    <UnitCharacteristics>
+      <Characteristic Type="Mobility" Rating="0.8"/>
+      <Characteristic Type="Defense" Rating="0.5"/>
+      <Characteristic Type="Range" Rating="0.7"/>
+      <Characteristic Type="Damage" Rating="0.6"/>
+      <Characteristic Type="Precision" Rating="0.8"/>
+      <Characteristic Type="RateOfFire" Rating="0.3"/>
+      <Characteristic Type="AreaEffect" Rating="0.1"/>
+    </UnitCharacteristics>
+    <EnemyTypeModifier>
+      <UnitType Type="Squad" Modifier="0.9"/>
+      <UnitType Type="Mech" Modifier="0.3"/>
+    </EnemyTypeModifier>
+    <EnemyArmorModifier>
+      <ArmorType Type="Unarmored" Modifier="1.0"/>
+      <ArmorType Type="Light" Modifier="0.8"/>
+      <ArmorType Type="Medium" Modifier="0.6"/>
+      <ArmorType Type="Heavy" Modifier="0.3"/>
+	  <ArmorType Type="Structure" Modifier="0.3"/>
+    </EnemyArmorModifier>
+    <BattleConditionModifier>
+      <Condition Type="LowOnMechs" Modifier="0.25"/>
+      <Condition Type="VictoryPoints" Modifier="1.0"/>
+    </BattleConditionModifier>
+  </AIUnitUsefulnessConfig>
+  <AIUnitUsefulnessConfig id="com_npc_farmerboy_usefulness">
+    <TaskUsefulness>
+      <Usefulness Type="Conquer" Rating="1.0"/>
+      <Usefulness Type="Attack" Rating="0.5"/>
+      <Usefulness Type="Defend" Rating="0.5"/>
+      <Usefulness Type="Support" Rating="0.4"/>
+      <Usefulness Type="Construct" Rating="0.0"/>
+    </TaskUsefulness>
+    <UnitCharacteristics>
+      <Characteristic Type="Mobility" Rating="0.8"/>
+      <Characteristic Type="Defense" Rating="0.5"/>
+      <Characteristic Type="Range" Rating="0.7"/>
+      <Characteristic Type="Damage" Rating="0.6"/>
+      <Characteristic Type="Precision" Rating="0.8"/>
+      <Characteristic Type="RateOfFire" Rating="0.3"/>
+      <Characteristic Type="AreaEffect" Rating="0.1"/>
+    </UnitCharacteristics>
+    <EnemyTypeModifier>
+      <UnitType Type="Squad" Modifier="0.9"/>
+      <UnitType Type="Mech" Modifier="0.3"/>
+    </EnemyTypeModifier>
+    <EnemyArmorModifier>
+      <ArmorType Type="Unarmored" Modifier="1.0"/>
+      <ArmorType Type="Light" Modifier="0.8"/>
+      <ArmorType Type="Medium" Modifier="0.6"/>
+      <ArmorType Type="Heavy" Modifier="0.3"/>
+	  <ArmorType Type="Structure" Modifier="0.3"/>
+    </EnemyArmorModifier>
+    <BattleConditionModifier>
+      <Condition Type="LowOnMechs" Modifier="0.25"/>
+      <Condition Type="VictoryPoints" Modifier="1.0"/>
+    </BattleConditionModifier>
+  </AIUnitUsefulnessConfig>
+  <AIUnitUsefulnessConfig id="com_npc_farmerboysnow_usefulness">
+    <TaskUsefulness>
+      <Usefulness Type="Conquer" Rating="1.0"/>
+      <Usefulness Type="Attack" Rating="0.5"/>
+      <Usefulness Type="Defend" Rating="0.5"/>
+      <Usefulness Type="Support" Rating="0.4"/>
+      <Usefulness Type="Construct" Rating="0.0"/>
+    </TaskUsefulness>
+    <UnitCharacteristics>
+      <Characteristic Type="Mobility" Rating="0.8"/>
+      <Characteristic Type="Defense" Rating="0.5"/>
+      <Characteristic Type="Range" Rating="0.7"/>
+      <Characteristic Type="Damage" Rating="0.6"/>
+      <Characteristic Type="Precision" Rating="0.8"/>
+      <Characteristic Type="RateOfFire" Rating="0.3"/>
+      <Characteristic Type="AreaEffect" Rating="0.1"/>
+    </UnitCharacteristics>
+    <EnemyTypeModifier>
+      <UnitType Type="Squad" Modifier="0.9"/>
+      <UnitType Type="Mech" Modifier="0.3"/>
+    </EnemyTypeModifier>
+    <EnemyArmorModifier>
+      <ArmorType Type="Unarmored" Modifier="1.0"/>
+      <ArmorType Type="Light" Modifier="0.8"/>
+      <ArmorType Type="Medium" Modifier="0.6"/>
+      <ArmorType Type="Heavy" Modifier="0.3"/>
+	  <ArmorType Type="Structure" Modifier="0.3"/>
+    </EnemyArmorModifier>
+    <BattleConditionModifier>
+      <Condition Type="LowOnMechs" Modifier="0.25"/>
+      <Condition Type="VictoryPoints" Modifier="1.0"/>
+    </BattleConditionModifier>
+  </AIUnitUsefulnessConfig>
+  <AIUnitUsefulnessConfig id="com_npc_cityfemale_usefulness">
+    <TaskUsefulness>
+      <Usefulness Type="Conquer" Rating="1.0"/>
+      <Usefulness Type="Attack" Rating="0.5"/>
+      <Usefulness Type="Defend" Rating="0.5"/>
+      <Usefulness Type="Support" Rating="0.4"/>
+      <Usefulness Type="Construct" Rating="0.0"/>
+    </TaskUsefulness>
+    <UnitCharacteristics>
+      <Characteristic Type="Mobility" Rating="0.8"/>
+      <Characteristic Type="Defense" Rating="0.5"/>
+      <Characteristic Type="Range" Rating="0.7"/>
+      <Characteristic Type="Damage" Rating="0.6"/>
+      <Characteristic Type="Precision" Rating="0.8"/>
+      <Characteristic Type="RateOfFire" Rating="0.3"/>
+      <Characteristic Type="AreaEffect" Rating="0.1"/>
+    </UnitCharacteristics>
+    <EnemyTypeModifier>
+      <UnitType Type="Squad" Modifier="0.9"/>
+      <UnitType Type="Mech" Modifier="0.3"/>
+    </EnemyTypeModifier>
+    <EnemyArmorModifier>
+      <ArmorType Type="Unarmored" Modifier="1.0"/>
+      <ArmorType Type="Light" Modifier="0.8"/>
+      <ArmorType Type="Medium" Modifier="0.6"/>
+      <ArmorType Type="Heavy" Modifier="0.3"/>
+	  <ArmorType Type="Structure" Modifier="0.3"/>
+    </EnemyArmorModifier>
+    <BattleConditionModifier>
+      <Condition Type="LowOnMechs" Modifier="0.25"/>
+      <Condition Type="VictoryPoints" Modifier="1.0"/>
+    </BattleConditionModifier>
+  </AIUnitUsefulnessConfig>
+  <AIUnitUsefulnessConfig id="com_npc_citymale_usefulness">
+    <TaskUsefulness>
+      <Usefulness Type="Conquer" Rating="1.0"/>
+      <Usefulness Type="Attack" Rating="0.5"/>
+      <Usefulness Type="Defend" Rating="0.5"/>
+      <Usefulness Type="Support" Rating="0.4"/>
+      <Usefulness Type="Construct" Rating="0.0"/>
+    </TaskUsefulness>
+    <UnitCharacteristics>
+      <Characteristic Type="Mobility" Rating="0.8"/>
+      <Characteristic Type="Defense" Rating="0.5"/>
+      <Characteristic Type="Range" Rating="0.7"/>
+      <Characteristic Type="Damage" Rating="0.6"/>
+      <Characteristic Type="Precision" Rating="0.8"/>
+      <Characteristic Type="RateOfFire" Rating="0.3"/>
+      <Characteristic Type="AreaEffect" Rating="0.1"/>
+    </UnitCharacteristics>
+    <EnemyTypeModifier>
+      <UnitType Type="Squad" Modifier="0.9"/>
+      <UnitType Type="Mech" Modifier="0.3"/>
+    </EnemyTypeModifier>
+    <EnemyArmorModifier>
+      <ArmorType Type="Unarmored" Modifier="1.0"/>
+      <ArmorType Type="Light" Modifier="0.8"/>
+      <ArmorType Type="Medium" Modifier="0.6"/>
+      <ArmorType Type="Heavy" Modifier="0.3"/>
+	  <ArmorType Type="Structure" Modifier="0.3"/>
+    </EnemyArmorModifier>
+    <BattleConditionModifier>
+      <Condition Type="LowOnMechs" Modifier="0.25"/>
+      <Condition Type="VictoryPoints" Modifier="1.0"/>
+    </BattleConditionModifier>
+  </AIUnitUsefulnessConfig>
+
+  <AIUnitUsefulnessConfig id="com_npc_citymalerifleman_usefulness">
+	<TaskUsefulness>
+	  <Usefulness Type="Conquer" Rating="1.0"/>
+	  <Usefulness Type="Attack" Rating="0.5"/>
+	  <Usefulness Type="Defend" Rating="0.5"/>
+	  <Usefulness Type="Support" Rating="0.4"/>
+	  <Usefulness Type="Construct" Rating="0.0"/>
+	</TaskUsefulness>
+	<UnitCharacteristics>
+	  <Characteristic Type="Mobility" Rating="0.8"/>
+	  <Characteristic Type="Defense" Rating="0.5"/>
+	  <Characteristic Type="Range" Rating="0.7"/>
+	  <Characteristic Type="Damage" Rating="0.6"/>
+	  <Characteristic Type="Precision" Rating="0.8"/>
+	  <Characteristic Type="RateOfFire" Rating="0.3"/>
+	  <Characteristic Type="AreaEffect" Rating="0.1"/>
+	</UnitCharacteristics>
+	<EnemyTypeModifier>
+	  <UnitType Type="Squad" Modifier="0.9"/>
+	  <UnitType Type="Mech" Modifier="0.3"/>
+	</EnemyTypeModifier>
+	<EnemyArmorModifier>
+	  <ArmorType Type="Unarmored" Modifier="1.0"/>
+	  <ArmorType Type="Light" Modifier="0.8"/>
+	  <ArmorType Type="Medium" Modifier="0.6"/>
+	  <ArmorType Type="Heavy" Modifier="0.3"/>
+	  <ArmorType Type="Structure" Modifier="0.3"/>
+	</EnemyArmorModifier>
+	<BattleConditionModifier>
+	  <Condition Type="LowOnMechs" Modifier="0.25"/>
+	  <Condition Type="VictoryPoints" Modifier="1.0"/>
+	</BattleConditionModifier>
+  </AIUnitUsefulnessConfig>
+  <AIUnitUsefulnessConfig id="com_npc_citymalegunner_usefulness">
+	<TaskUsefulness>
+	  <Usefulness Type="Conquer" Rating="1.0"/>
+	  <Usefulness Type="Attack" Rating="0.5"/>
+	  <Usefulness Type="Defend" Rating="0.5"/>
+	  <Usefulness Type="Support" Rating="0.4"/>
+	  <Usefulness Type="Construct" Rating="0.0"/>
+	</TaskUsefulness>
+	<UnitCharacteristics>
+	  <Characteristic Type="Mobility" Rating="0.8"/>
+	  <Characteristic Type="Defense" Rating="0.5"/>
+	  <Characteristic Type="Range" Rating="0.7"/>
+	  <Characteristic Type="Damage" Rating="0.6"/>
+	  <Characteristic Type="Precision" Rating="0.8"/>
+	  <Characteristic Type="RateOfFire" Rating="0.3"/>
+	  <Characteristic Type="AreaEffect" Rating="0.1"/>
+	</UnitCharacteristics>
+	<EnemyTypeModifier>
+	  <UnitType Type="Squad" Modifier="0.9"/>
+	  <UnitType Type="Mech" Modifier="0.3"/>
+	</EnemyTypeModifier>
+	<EnemyArmorModifier>
+	  <ArmorType Type="Unarmored" Modifier="1.0"/>
+	  <ArmorType Type="Light" Modifier="0.8"/>
+	  <ArmorType Type="Medium" Modifier="0.6"/>
+	  <ArmorType Type="Heavy" Modifier="0.3"/>
+	  <ArmorType Type="Structure" Modifier="0.3"/>
+	</EnemyArmorModifier>
+	<BattleConditionModifier>
+	  <Condition Type="LowOnMechs" Modifier="0.25"/>
+	  <Condition Type="VictoryPoints" Modifier="1.0"/>
+	</BattleConditionModifier>
+  </AIUnitUsefulnessConfig>
+  <AIUnitUsefulnessConfig id="com_npc_citymalegrenadier_usefulness">
+	<TaskUsefulness>
+	  <Usefulness Type="Conquer" Rating="1.0"/>
+	  <Usefulness Type="Attack" Rating="0.5"/>
+	  <Usefulness Type="Defend" Rating="0.5"/>
+	  <Usefulness Type="Support" Rating="0.4"/>
+	  <Usefulness Type="Construct" Rating="0.0"/>
+	</TaskUsefulness>
+	<UnitCharacteristics>
+	  <Characteristic Type="Mobility" Rating="0.8"/>
+	  <Characteristic Type="Defense" Rating="0.5"/>
+	  <Characteristic Type="Range" Rating="0.7"/>
+	  <Characteristic Type="Damage" Rating="0.6"/>
+	  <Characteristic Type="Precision" Rating="0.8"/>
+	  <Characteristic Type="RateOfFire" Rating="0.3"/>
+	  <Characteristic Type="AreaEffect" Rating="0.1"/>
+	</UnitCharacteristics>
+	<EnemyTypeModifier>
+	  <UnitType Type="Squad" Modifier="0.9"/>
+	  <UnitType Type="Mech" Modifier="0.3"/>
+	</EnemyTypeModifier>
+	<EnemyArmorModifier>
+	  <ArmorType Type="Unarmored" Modifier="1.0"/>
+	  <ArmorType Type="Light" Modifier="0.8"/>
+	  <ArmorType Type="Medium" Modifier="0.6"/>
+	  <ArmorType Type="Heavy" Modifier="0.3"/>
+	  <ArmorType Type="Structure" Modifier="0.3"/>
+	</EnemyArmorModifier>
+	<BattleConditionModifier>
+	  <Condition Type="LowOnMechs" Modifier="0.25"/>
+	  <Condition Type="VictoryPoints" Modifier="1.0"/>
+	</BattleConditionModifier>
+  </AIUnitUsefulnessConfig>
+
+  <AIUnitUsefulnessConfig id="com_npc_farmermalerifleman_usefulness">
+	<TaskUsefulness>
+	  <Usefulness Type="Conquer" Rating="1.0"/>
+	  <Usefulness Type="Attack" Rating="0.5"/>
+	  <Usefulness Type="Defend" Rating="0.5"/>
+	  <Usefulness Type="Support" Rating="0.4"/>
+	  <Usefulness Type="Construct" Rating="0.0"/>
+	</TaskUsefulness>
+	<UnitCharacteristics>
+	  <Characteristic Type="Mobility" Rating="0.8"/>
+	  <Characteristic Type="Defense" Rating="0.5"/>
+	  <Characteristic Type="Range" Rating="0.7"/>
+	  <Characteristic Type="Damage" Rating="0.6"/>
+	  <Characteristic Type="Precision" Rating="0.8"/>
+	  <Characteristic Type="RateOfFire" Rating="0.3"/>
+	  <Characteristic Type="AreaEffect" Rating="0.1"/>
+	</UnitCharacteristics>
+	<EnemyTypeModifier>
+	  <UnitType Type="Squad" Modifier="0.9"/>
+	  <UnitType Type="Mech" Modifier="0.3"/>
+	</EnemyTypeModifier>
+	<EnemyArmorModifier>
+	  <ArmorType Type="Unarmored" Modifier="1.0"/>
+	  <ArmorType Type="Light" Modifier="0.8"/>
+	  <ArmorType Type="Medium" Modifier="0.6"/>
+	  <ArmorType Type="Heavy" Modifier="0.3"/>
+	  <ArmorType Type="Structure" Modifier="0.3"/>
+	</EnemyArmorModifier>
+	<BattleConditionModifier>
+	  <Condition Type="LowOnMechs" Modifier="0.25"/>
+	  <Condition Type="VictoryPoints" Modifier="1.0"/>
+	</BattleConditionModifier>
+  </AIUnitUsefulnessConfig>
+  <AIUnitUsefulnessConfig id="com_npc_farmermalegunner_usefulness">
+	<TaskUsefulness>
+	  <Usefulness Type="Conquer" Rating="1.0"/>
+	  <Usefulness Type="Attack" Rating="0.5"/>
+	  <Usefulness Type="Defend" Rating="0.5"/>
+	  <Usefulness Type="Support" Rating="0.4"/>
+	  <Usefulness Type="Construct" Rating="0.0"/>
+	</TaskUsefulness>
+	<UnitCharacteristics>
+	  <Characteristic Type="Mobility" Rating="0.8"/>
+	  <Characteristic Type="Defense" Rating="0.5"/>
+	  <Characteristic Type="Range" Rating="0.7"/>
+	  <Characteristic Type="Damage" Rating="0.6"/>
+	  <Characteristic Type="Precision" Rating="0.8"/>
+	  <Characteristic Type="RateOfFire" Rating="0.3"/>
+	  <Characteristic Type="AreaEffect" Rating="0.1"/>
+	</UnitCharacteristics>
+	<EnemyTypeModifier>
+	  <UnitType Type="Squad" Modifier="0.9"/>
+	  <UnitType Type="Mech" Modifier="0.3"/>
+	</EnemyTypeModifier>
+	<EnemyArmorModifier>
+	  <ArmorType Type="Unarmored" Modifier="1.0"/>
+	  <ArmorType Type="Light" Modifier="0.8"/>
+	  <ArmorType Type="Medium" Modifier="0.6"/>
+	  <ArmorType Type="Heavy" Modifier="0.3"/>
+	  <ArmorType Type="Structure" Modifier="0.3"/>
+	</EnemyArmorModifier>
+	<BattleConditionModifier>
+	  <Condition Type="LowOnMechs" Modifier="0.25"/>
+	  <Condition Type="VictoryPoints" Modifier="1.0"/>
+	</BattleConditionModifier>
+  </AIUnitUsefulnessConfig>
+  <AIUnitUsefulnessConfig id="com_npc_farmermalegrenadier_usefulness">
+	<TaskUsefulness>
+	  <Usefulness Type="Conquer" Rating="1.0"/>
+	  <Usefulness Type="Attack" Rating="0.5"/>
+	  <Usefulness Type="Defend" Rating="0.5"/>
+	  <Usefulness Type="Support" Rating="0.4"/>
+	  <Usefulness Type="Construct" Rating="0.0"/>
+	</TaskUsefulness>
+	<UnitCharacteristics>
+	  <Characteristic Type="Mobility" Rating="0.8"/>
+	  <Characteristic Type="Defense" Rating="0.5"/>
+	  <Characteristic Type="Range" Rating="0.7"/>
+	  <Characteristic Type="Damage" Rating="0.6"/>
+	  <Characteristic Type="Precision" Rating="0.8"/>
+	  <Characteristic Type="RateOfFire" Rating="0.3"/>
+	  <Characteristic Type="AreaEffect" Rating="0.1"/>
+	</UnitCharacteristics>
+	<EnemyTypeModifier>
+	  <UnitType Type="Squad" Modifier="0.9"/>
+	  <UnitType Type="Mech" Modifier="0.3"/>
+	</EnemyTypeModifier>
+	<EnemyArmorModifier>
+	  <ArmorType Type="Unarmored" Modifier="1.0"/>
+	  <ArmorType Type="Light" Modifier="0.8"/>
+	  <ArmorType Type="Medium" Modifier="0.6"/>
+	  <ArmorType Type="Heavy" Modifier="0.3"/>
+	  <ArmorType Type="Structure" Modifier="0.3"/>
+	</EnemyArmorModifier>
+	<BattleConditionModifier>
+	  <Condition Type="LowOnMechs" Modifier="0.25"/>
+	  <Condition Type="VictoryPoints" Modifier="1.0"/>
+	</BattleConditionModifier>
+  </AIUnitUsefulnessConfig>
+
+  <AIUnitUsefulnessConfig id="pol_npc_farmermale_usefulness" parentId="com_npc_farmermale_usefulness" />
+  <AIUnitUsefulnessConfig id="pol_npc_farmerfemale_usefulness" parentId="com_npc_farmerfemale_usefulness" />
+  <AIUnitUsefulnessConfig id="pol_npc_farmerboy_usefulness" parentId="com_npc_farmerboy_usefulness" />
+  <AIUnitUsefulnessConfig id="pol_npc_farmerboysnow_usefulness" parentId="com_npc_farmerboysnow_usefulness" />
+  
+  <AIUnitUsefulnessConfig id="pol_npc_citymale_usefulness" parentId="com_npc_citymale_usefulness" />
+  <AIUnitUsefulnessConfig id="rus_npc_citymale_usefulness" parentId="com_npc_citymale_usefulness" />
+  <AIUnitUsefulnessConfig id="sax_npc_citymale_usefulness" parentId="com_npc_citymale_usefulness" />  
+  <AIUnitUsefulnessConfig id="tes_npc_citymale_usefulness" parentId="com_npc_citymale_usefulness" />  
+  
+  <AIUnitUsefulnessConfig id="pol_npc_cityfemale_usefulness" parentId="com_npc_cityfemale_usefulness" />
+  <AIUnitUsefulnessConfig id="rus_npc_cityfemale_usefulness" parentId="com_npc_cityfemale_usefulness" />
+  <AIUnitUsefulnessConfig id="sax_npc_cityfemale_usefulness" parentId="com_npc_cityfemale_usefulness" />
+  <AIUnitUsefulnessConfig id="tes_npc_cityfemale_usefulness" parentId="com_npc_cityfemale_usefulness" />
+
+  <AIUnitUsefulnessConfig id="pol_npc_farmermalerifleman_usefulness" parentId="com_npc_farmermalerifleman_usefulness" />
+  <AIUnitUsefulnessConfig id="pol_npc_farmermalegunner_usefulness" parentId="com_npc_farmermalegunner_usefulness" />
+  <AIUnitUsefulnessConfig id="pol_npc_farmermalegrenadier_usefulness" parentId="com_npc_farmermalegrenadier_usefulness" />
+
+  <AIUnitUsefulnessConfig id="rus_npc_farmermale_usefulness" parentId="com_npc_farmermale_usefulness" />
+  <AIUnitUsefulnessConfig id="rus_npc_farmermalerifleman_usefulness" parentId="com_npc_farmermalerifleman_usefulness" />
+  <AIUnitUsefulnessConfig id="rus_npc_farmermalegunner_usefulness" parentId="com_npc_farmermalegunner_usefulness" />
+  <AIUnitUsefulnessConfig id="rus_npc_farmermalegrenadier_usefulness" parentId="com_npc_farmermalegrenadier_usefulness" />
+
+  <AIUnitUsefulnessConfig id="pol_npc_citymalerifleman_usefulness" parentId="com_npc_citymalerifleman_usefulness" />
+  <AIUnitUsefulnessConfig id="rus_npc_citymalerifleman_usefulness" parentId="com_npc_citymalerifleman_usefulness" />
+  <AIUnitUsefulnessConfig id="sax_npc_citymalerifleman_usefulness" parentId="com_npc_citymalerifleman_usefulness" />  
+  <AIUnitUsefulnessConfig id="tes_npc_citymalerifleman_usefulness" parentId="com_npc_citymalerifleman_usefulness" />  
+  
+  <AIUnitUsefulnessConfig id="pol_npc_citymalegunner_usefulness" parentId="com_npc_citymalegunner_usefulness" />
+  <AIUnitUsefulnessConfig id="rus_npc_citymalegunner_usefulness" parentId="com_npc_citymalegunner_usefulness" />
+  <AIUnitUsefulnessConfig id="sax_npc_citymalegunner_usefulness" parentId="com_npc_citymalegunner_usefulness" />  
+  <AIUnitUsefulnessConfig id="tes_npc_citymalegunner_usefulness" parentId="com_npc_citymalegunner_usefulness" />  
+  
+  <AIUnitUsefulnessConfig id="pol_npc_citymalegrenadier_usefulness" parentId="com_npc_citymalegrenadier_usefulness" />
+  <AIUnitUsefulnessConfig id="rus_npc_citymalegrenadier_usefulness" parentId="com_npc_citymalegrenadier_usefulness" />
+  <AIUnitUsefulnessConfig id="sax_npc_citymalegrenadier_usefulness" parentId="com_npc_citymalegrenadier_usefulness" />  
+  <AIUnitUsefulnessConfig id="tes_npc_citymalegrenadier_usefulness" parentId="com_npc_citymalegrenadier_usefulness" />  
+
+  <AIUnitUsefulnessConfig id="com_mech_fieldworker_usefulness">
+    <TaskUsefulness>
+      <Usefulness Type="Conquer" Rating="1.0"/>
+      <Usefulness Type="Attack" Rating="0.5"/>
+      <Usefulness Type="Defend" Rating="0.5"/>
+      <Usefulness Type="Support" Rating="0.4"/>
+      <Usefulness Type="Construct" Rating="0.0"/>
+    </TaskUsefulness>
+    <UnitCharacteristics>
+      <Characteristic Type="Mobility" Rating="0.8"/>
+      <Characteristic Type="Defense" Rating="0.5"/>
+      <Characteristic Type="Range" Rating="0.7"/>
+      <Characteristic Type="Damage" Rating="0.6"/>
+      <Characteristic Type="Precision" Rating="0.8"/>
+      <Characteristic Type="RateOfFire" Rating="0.3"/>
+      <Characteristic Type="AreaEffect" Rating="0.1"/>
+    </UnitCharacteristics>
+    <EnemyTypeModifier>
+      <UnitType Type="Squad" Modifier="0.9"/>
+      <UnitType Type="Mech" Modifier="0.3"/>
+    </EnemyTypeModifier>
+    <EnemyArmorModifier>
+      <ArmorType Type="Unarmored" Modifier="1.0"/>
+      <ArmorType Type="Light" Modifier="0.8"/>
+      <ArmorType Type="Medium" Modifier="0.6"/>
+      <ArmorType Type="Heavy" Modifier="0.3"/>
+	  <ArmorType Type="Structure" Modifier="0.3"/>
+    </EnemyArmorModifier>
+    <BattleConditionModifier>
+      <Condition Type="LowOnMechs" Modifier="0.25"/>
+      <Condition Type="VictoryPoints" Modifier="1.0"/>
+    </BattleConditionModifier>
+  </AIUnitUsefulnessConfig>
+  <AIUnitUsefulnessConfig id="com_mech_woodcutter_usefulness">
+    <TaskUsefulness>
+      <Usefulness Type="Conquer" Rating="1.0"/>
+      <Usefulness Type="Attack" Rating="0.5"/>
+      <Usefulness Type="Defend" Rating="0.5"/>
+      <Usefulness Type="Support" Rating="0.4"/>
+      <Usefulness Type="Construct" Rating="0.0"/>
+    </TaskUsefulness>
+    <UnitCharacteristics>
+      <Characteristic Type="Mobility" Rating="0.8"/>
+      <Characteristic Type="Defense" Rating="0.5"/>
+      <Characteristic Type="Range" Rating="0.7"/>
+      <Characteristic Type="Damage" Rating="0.6"/>
+      <Characteristic Type="Precision" Rating="0.8"/>
+      <Characteristic Type="RateOfFire" Rating="0.3"/>
+      <Characteristic Type="AreaEffect" Rating="0.1"/>
+    </UnitCharacteristics>
+    <EnemyTypeModifier>
+      <UnitType Type="Squad" Modifier="0.9"/>
+      <UnitType Type="Mech" Modifier="0.3"/>
+    </EnemyTypeModifier>
+    <EnemyArmorModifier>
+      <ArmorType Type="Unarmored" Modifier="1.0"/>
+      <ArmorType Type="Light" Modifier="0.8"/>
+      <ArmorType Type="Medium" Modifier="0.6"/>
+      <ArmorType Type="Heavy" Modifier="0.3"/>
+	  <ArmorType Type="Structure" Modifier="0.3"/>
+    </EnemyArmorModifier>
+    <BattleConditionModifier>
+      <Condition Type="LowOnMechs" Modifier="0.25"/>
+      <Condition Type="VictoryPoints" Modifier="1.0"/>
+    </BattleConditionModifier>
+  </AIUnitUsefulnessConfig>
+  <AIUnitUsefulnessConfig id="com_mech_transport_usefulness">
+    <TaskUsefulness>
+      <Usefulness Type="Conquer" Rating="1.0"/>
+      <Usefulness Type="Attack" Rating="0.5"/>
+      <Usefulness Type="Defend" Rating="0.5"/>
+      <Usefulness Type="Support" Rating="0.4"/>
+      <Usefulness Type="Construct" Rating="0.0"/>
+    </TaskUsefulness>
+    <UnitCharacteristics>
+      <Characteristic Type="Mobility" Rating="0.8"/>
+      <Characteristic Type="Defense" Rating="0.5"/>
+      <Characteristic Type="Range" Rating="0.7"/>
+      <Characteristic Type="Damage" Rating="0.6"/>
+      <Characteristic Type="Precision" Rating="0.8"/>
+      <Characteristic Type="RateOfFire" Rating="0.3"/>
+      <Characteristic Type="AreaEffect" Rating="0.1"/>
+    </UnitCharacteristics>
+    <EnemyTypeModifier>
+      <UnitType Type="Squad" Modifier="0.9"/>
+      <UnitType Type="Mech" Modifier="0.3"/>
+    </EnemyTypeModifier>
+    <EnemyArmorModifier>
+      <ArmorType Type="Unarmored" Modifier="1.0"/>
+      <ArmorType Type="Light" Modifier="0.8"/>
+      <ArmorType Type="Medium" Modifier="0.6"/>
+      <ArmorType Type="Heavy" Modifier="0.3"/>
+	  <ArmorType Type="Structure" Modifier="0.3"/>
+    </EnemyArmorModifier>
+    <BattleConditionModifier>
+      <Condition Type="LowOnMechs" Modifier="0.25"/>
+      <Condition Type="VictoryPoints" Modifier="1.0"/>
+    </BattleConditionModifier>
+  </AIUnitUsefulnessConfig>
+
+  <AIUnitUsefulnessConfig id="com_mech_trainarmored_usefulness">
+    <TaskUsefulness>
+      <Usefulness Type="Conquer" Rating="1.0"/>
+      <Usefulness Type="Attack" Rating="0.5"/>
+      <Usefulness Type="Defend" Rating="0.5"/>
+      <Usefulness Type="Support" Rating="0.4"/>
+      <Usefulness Type="Construct" Rating="0.0"/>
+    </TaskUsefulness>
+    <UnitCharacteristics>
+      <Characteristic Type="Mobility" Rating="0.8"/>
+      <Characteristic Type="Defense" Rating="0.5"/>
+      <Characteristic Type="Range" Rating="0.7"/>
+      <Characteristic Type="Damage" Rating="0.6"/>
+      <Characteristic Type="Precision" Rating="0.8"/>
+      <Characteristic Type="RateOfFire" Rating="0.3"/>
+      <Characteristic Type="AreaEffect" Rating="0.1"/>
+    </UnitCharacteristics>
+    <EnemyTypeModifier>
+      <UnitType Type="Squad" Modifier="0.9"/>
+      <UnitType Type="Mech" Modifier="0.3"/>
+    </EnemyTypeModifier>
+    <EnemyArmorModifier>
+      <ArmorType Type="Unarmored" Modifier="1.0"/>
+      <ArmorType Type="Light" Modifier="0.8"/>
+      <ArmorType Type="Medium" Modifier="0.6"/>
+      <ArmorType Type="Heavy" Modifier="0.3"/>
+	  <ArmorType Type="Structure" Modifier="0.3"/>
+    </EnemyArmorModifier>
+    <BattleConditionModifier>
+      <Condition Type="LowOnMechs" Modifier="0.25"/>
+      <Condition Type="VictoryPoints" Modifier="1.0"/>
+    </BattleConditionModifier>
+  </AIUnitUsefulnessConfig>
+  <AIUnitUsefulnessConfig id="com_mech_traincannonsupport_usefulness">
+    <TaskUsefulness>
+      <Usefulness Type="Conquer" Rating="1.0"/>
+      <Usefulness Type="Attack" Rating="0.5"/>
+      <Usefulness Type="Defend" Rating="0.5"/>
+      <Usefulness Type="Support" Rating="0.4"/>
+      <Usefulness Type="Construct" Rating="0.0"/>
+    </TaskUsefulness>
+    <UnitCharacteristics>
+      <Characteristic Type="Mobility" Rating="0.8"/>
+      <Characteristic Type="Defense" Rating="0.5"/>
+      <Characteristic Type="Range" Rating="0.7"/>
+      <Characteristic Type="Damage" Rating="0.6"/>
+      <Characteristic Type="Precision" Rating="0.8"/>
+      <Characteristic Type="RateOfFire" Rating="0.3"/>
+      <Characteristic Type="AreaEffect" Rating="0.1"/>
+    </UnitCharacteristics>
+    <EnemyTypeModifier>
+      <UnitType Type="Squad" Modifier="0.9"/>
+      <UnitType Type="Mech" Modifier="0.3"/>
+    </EnemyTypeModifier>
+    <EnemyArmorModifier>
+      <ArmorType Type="Unarmored" Modifier="1.0"/>
+      <ArmorType Type="Light" Modifier="0.8"/>
+      <ArmorType Type="Medium" Modifier="0.6"/>
+      <ArmorType Type="Heavy" Modifier="0.3"/>
+	  <ArmorType Type="Structure" Modifier="0.3"/>
+    </EnemyArmorModifier>
+    <BattleConditionModifier>
+      <Condition Type="LowOnMechs" Modifier="0.25"/>
+      <Condition Type="VictoryPoints" Modifier="1.0"/>
+    </BattleConditionModifier>
+  </AIUnitUsefulnessConfig>
+  <AIUnitUsefulnessConfig id="com_mech_traincannon_usefulness">
+    <TaskUsefulness>
+      <Usefulness Type="Conquer" Rating="1.0"/>
+      <Usefulness Type="Attack" Rating="0.5"/>
+      <Usefulness Type="Defend" Rating="0.5"/>
+      <Usefulness Type="Support" Rating="0.4"/>
+      <Usefulness Type="Construct" Rating="0.0"/>
+    </TaskUsefulness>
+    <UnitCharacteristics>
+      <Characteristic Type="Mobility" Rating="0.8"/>
+      <Characteristic Type="Defense" Rating="0.5"/>
+      <Characteristic Type="Range" Rating="0.7"/>
+      <Characteristic Type="Damage" Rating="0.6"/>
+      <Characteristic Type="Precision" Rating="0.8"/>
+      <Characteristic Type="RateOfFire" Rating="0.3"/>
+      <Characteristic Type="AreaEffect" Rating="0.1"/>
+    </UnitCharacteristics>
+    <EnemyTypeModifier>
+      <UnitType Type="Squad" Modifier="0.9"/>
+      <UnitType Type="Mech" Modifier="0.3"/>
+    </EnemyTypeModifier>
+    <EnemyArmorModifier>
+      <ArmorType Type="Unarmored" Modifier="1.0"/>
+      <ArmorType Type="Light" Modifier="0.8"/>
+      <ArmorType Type="Medium" Modifier="0.6"/>
+      <ArmorType Type="Heavy" Modifier="0.3"/>
+	  <ArmorType Type="Structure" Modifier="0.3"/>
+    </EnemyArmorModifier>
+    <BattleConditionModifier>
+      <Condition Type="LowOnMechs" Modifier="0.25"/>
+      <Condition Type="VictoryPoints" Modifier="1.0"/>
+    </BattleConditionModifier>
+  </AIUnitUsefulnessConfig>
+  <AIUnitUsefulnessConfig id="com_mech_trainflatbed_usefulness">
+    <TaskUsefulness>
+      <Usefulness Type="Conquer" Rating="1.0"/>
+      <Usefulness Type="Attack" Rating="0.5"/>
+      <Usefulness Type="Defend" Rating="0.5"/>
+      <Usefulness Type="Support" Rating="0.4"/>
+      <Usefulness Type="Construct" Rating="0.0"/>
+    </TaskUsefulness>
+    <UnitCharacteristics>
+      <Characteristic Type="Mobility" Rating="0.8"/>
+      <Characteristic Type="Defense" Rating="0.5"/>
+      <Characteristic Type="Range" Rating="0.7"/>
+      <Characteristic Type="Damage" Rating="0.6"/>
+      <Characteristic Type="Precision" Rating="0.8"/>
+      <Characteristic Type="RateOfFire" Rating="0.3"/>
+      <Characteristic Type="AreaEffect" Rating="0.1"/>
+    </UnitCharacteristics>
+    <EnemyTypeModifier>
+      <UnitType Type="Squad" Modifier="0.9"/>
+      <UnitType Type="Mech" Modifier="0.3"/>
+    </EnemyTypeModifier>
+    <EnemyArmorModifier>
+      <ArmorType Type="Unarmored" Modifier="1.0"/>
+      <ArmorType Type="Light" Modifier="0.8"/>
+      <ArmorType Type="Medium" Modifier="0.6"/>
+      <ArmorType Type="Heavy" Modifier="0.3"/>
+	  <ArmorType Type="Structure" Modifier="0.3"/>
+    </EnemyArmorModifier>
+    <BattleConditionModifier>
+      <Condition Type="LowOnMechs" Modifier="0.25"/>
+      <Condition Type="VictoryPoints" Modifier="1.0"/>
+    </BattleConditionModifier>
+  </AIUnitUsefulnessConfig>
+  <AIUnitUsefulnessConfig id="com_mech_trainfreight_usefulness">
+    <TaskUsefulness>
+      <Usefulness Type="Conquer" Rating="1.0"/>
+      <Usefulness Type="Attack" Rating="0.5"/>
+      <Usefulness Type="Defend" Rating="0.5"/>
+      <Usefulness Type="Support" Rating="0.4"/>
+      <Usefulness Type="Construct" Rating="0.0"/>
+    </TaskUsefulness>
+    <UnitCharacteristics>
+      <Characteristic Type="Mobility" Rating="0.8"/>
+      <Characteristic Type="Defense" Rating="0.5"/>
+      <Characteristic Type="Range" Rating="0.7"/>
+      <Characteristic Type="Damage" Rating="0.6"/>
+      <Characteristic Type="Precision" Rating="0.8"/>
+      <Characteristic Type="RateOfFire" Rating="0.3"/>
+      <Characteristic Type="AreaEffect" Rating="0.1"/>
+    </UnitCharacteristics>
+    <EnemyTypeModifier>
+      <UnitType Type="Squad" Modifier="0.9"/>
+      <UnitType Type="Mech" Modifier="0.3"/>
+    </EnemyTypeModifier>
+    <EnemyArmorModifier>
+      <ArmorType Type="Unarmored" Modifier="1.0"/>
+      <ArmorType Type="Light" Modifier="0.8"/>
+      <ArmorType Type="Medium" Modifier="0.6"/>
+      <ArmorType Type="Heavy" Modifier="0.3"/>
+	  <ArmorType Type="Structure" Modifier="0.3"/>
+    </EnemyArmorModifier>
+    <BattleConditionModifier>
+      <Condition Type="LowOnMechs" Modifier="0.25"/>
+      <Condition Type="VictoryPoints" Modifier="1.0"/>
+    </BattleConditionModifier>
+  </AIUnitUsefulnessConfig>
+  <AIUnitUsefulnessConfig id="com_mech_locomotive_usefulness">
+  <TaskUsefulness>
+    <Usefulness Type="Conquer" Rating="1.0"/>
+    <Usefulness Type="Attack" Rating="0.5"/>
+    <Usefulness Type="Defend" Rating="0.5"/>
+    <Usefulness Type="Support" Rating="0.4"/>
+    <Usefulness Type="Construct" Rating="0.0"/>
+  </TaskUsefulness>
+  <UnitCharacteristics>
+    <Characteristic Type="Mobility" Rating="0.8"/>
+    <Characteristic Type="Defense" Rating="0.5"/>
+    <Characteristic Type="Range" Rating="0.7"/>
+    <Characteristic Type="Damage" Rating="0.6"/>
+    <Characteristic Type="Precision" Rating="0.8"/>
+    <Characteristic Type="RateOfFire" Rating="0.3"/>
+    <Characteristic Type="AreaEffect" Rating="0.1"/>
+  </UnitCharacteristics>
+  <EnemyTypeModifier>
+    <UnitType Type="Squad" Modifier="0.9"/>
+    <UnitType Type="Mech" Modifier="0.3"/>
+  </EnemyTypeModifier>
+  <EnemyArmorModifier>
+    <ArmorType Type="Unarmored" Modifier="1.0"/>
+    <ArmorType Type="Light" Modifier="0.8"/>
+    <ArmorType Type="Medium" Modifier="0.6"/>
+    <ArmorType Type="Heavy" Modifier="0.3"/>
+	<ArmorType Type="Structure" Modifier="0.3"/>
+  </EnemyArmorModifier>
+  <BattleConditionModifier>
+    <Condition Type="LowOnMechs" Modifier="0.25"/>
+    <Condition Type="VictoryPoints" Modifier="1.0"/>
+  </BattleConditionModifier>
+  </AIUnitUsefulnessConfig>
+  <AIUnitUsefulnessConfig id="com_mech_trainlocomotive_usefulness">
+  <TaskUsefulness>
+    <Usefulness Type="Conquer" Rating="1.0"/>
+    <Usefulness Type="Attack" Rating="0.5"/>
+    <Usefulness Type="Defend" Rating="0.5"/>
+    <Usefulness Type="Support" Rating="0.4"/>
+    <Usefulness Type="Construct" Rating="0.0"/>
+  </TaskUsefulness>
+  <UnitCharacteristics>
+    <Characteristic Type="Mobility" Rating="0.8"/>
+    <Characteristic Type="Defense" Rating="0.5"/>
+    <Characteristic Type="Range" Rating="0.7"/>
+    <Characteristic Type="Damage" Rating="0.6"/>
+    <Characteristic Type="Precision" Rating="0.8"/>
+    <Characteristic Type="RateOfFire" Rating="0.3"/>
+    <Characteristic Type="AreaEffect" Rating="0.1"/>
+  </UnitCharacteristics>
+  <EnemyTypeModifier>
+    <UnitType Type="Squad" Modifier="0.9"/>
+    <UnitType Type="Mech" Modifier="0.3"/>
+  </EnemyTypeModifier>
+  <EnemyArmorModifier>
+    <ArmorType Type="Unarmored" Modifier="1.0"/>
+    <ArmorType Type="Light" Modifier="0.8"/>
+    <ArmorType Type="Medium" Modifier="0.6"/>
+    <ArmorType Type="Heavy" Modifier="0.3"/>
+	<ArmorType Type="Structure" Modifier="0.3"/>
+  </EnemyArmorModifier>
+  <BattleConditionModifier>
+    <Condition Type="LowOnMechs" Modifier="0.25"/>
+    <Condition Type="VictoryPoints" Modifier="1.0"/>
+  </BattleConditionModifier>
+  </AIUnitUsefulnessConfig>
+  <AIUnitUsefulnessConfig id="com_mech_trainlocomotivetender_usefulness">
+  <TaskUsefulness>
+    <Usefulness Type="Conquer" Rating="1.0"/>
+    <Usefulness Type="Attack" Rating="0.5"/>
+    <Usefulness Type="Defend" Rating="0.5"/>
+    <Usefulness Type="Support" Rating="0.4"/>
+    <Usefulness Type="Construct" Rating="0.0"/>
+  </TaskUsefulness>
+  <UnitCharacteristics>
+    <Characteristic Type="Mobility" Rating="0.8"/>
+    <Characteristic Type="Defense" Rating="0.5"/>
+    <Characteristic Type="Range" Rating="0.7"/>
+    <Characteristic Type="Damage" Rating="0.6"/>
+    <Characteristic Type="Precision" Rating="0.8"/>
+    <Characteristic Type="RateOfFire" Rating="0.3"/>
+    <Characteristic Type="AreaEffect" Rating="0.1"/>
+  </UnitCharacteristics>
+  <EnemyTypeModifier>
+    <UnitType Type="Squad" Modifier="0.9"/>
+    <UnitType Type="Mech" Modifier="0.3"/>
+  </EnemyTypeModifier>
+  <EnemyArmorModifier>
+    <ArmorType Type="Unarmored" Modifier="1.0"/>
+    <ArmorType Type="Light" Modifier="0.8"/>
+    <ArmorType Type="Medium" Modifier="0.6"/>
+    <ArmorType Type="Heavy" Modifier="0.3"/>
+	<ArmorType Type="Structure" Modifier="0.3"/>
+  </EnemyArmorModifier>
+  <BattleConditionModifier>
+    <Condition Type="LowOnMechs" Modifier="0.25"/>
+    <Condition Type="VictoryPoints" Modifier="1.0"/>
+  </BattleConditionModifier>
+  </AIUnitUsefulnessConfig>
+
+  <AIUnitUsefulnessConfig id="com_animal_sheep_usefulness">
+    <TaskUsefulness>
+      <Usefulness Type="Conquer" Rating="1.0"/>
+      <Usefulness Type="Attack" Rating="0.5"/>
+      <Usefulness Type="Defend" Rating="0.5"/>
+      <Usefulness Type="Support" Rating="0.4"/>
+      <Usefulness Type="Construct" Rating="0.0"/>
+    </TaskUsefulness>
+    <UnitCharacteristics>
+      <Characteristic Type="Mobility" Rating="0.8"/>
+      <Characteristic Type="Defense" Rating="0.5"/>
+      <Characteristic Type="Range" Rating="0.7"/>
+      <Characteristic Type="Damage" Rating="0.6"/>
+      <Characteristic Type="Precision" Rating="0.8"/>
+      <Characteristic Type="RateOfFire" Rating="0.3"/>
+      <Characteristic Type="AreaEffect" Rating="0.1"/>
+    </UnitCharacteristics>
+    <EnemyTypeModifier>
+      <UnitType Type="Squad" Modifier="0.9"/>
+      <UnitType Type="Mech" Modifier="0.3"/>
+    </EnemyTypeModifier>
+    <EnemyArmorModifier>
+      <ArmorType Type="Unarmored" Modifier="1.0"/>
+      <ArmorType Type="Light" Modifier="0.8"/>
+      <ArmorType Type="Medium" Modifier="0.6"/>
+      <ArmorType Type="Heavy" Modifier="0.3"/>
+	  <ArmorType Type="Structure" Modifier="0.3"/>
+    </EnemyArmorModifier>
+    <BattleConditionModifier>
+      <Condition Type="LowOnMechs" Modifier="0.25"/>
+      <Condition Type="VictoryPoints" Modifier="1.0"/>
+    </BattleConditionModifier>
+  </AIUnitUsefulnessConfig>
+  <AIUnitUsefulnessConfig id="com_animal_piglet_usefulness">
+    <TaskUsefulness>
+      <Usefulness Type="Conquer" Rating="1.0"/>
+      <Usefulness Type="Attack" Rating="0.5"/>
+      <Usefulness Type="Defend" Rating="0.5"/>
+      <Usefulness Type="Support" Rating="0.4"/>
+      <Usefulness Type="Construct" Rating="0.0"/>
+    </TaskUsefulness>
+    <UnitCharacteristics>
+      <Characteristic Type="Mobility" Rating="0.8"/>
+      <Characteristic Type="Defense" Rating="0.5"/>
+      <Characteristic Type="Range" Rating="0.7"/>
+      <Characteristic Type="Damage" Rating="0.6"/>
+      <Characteristic Type="Precision" Rating="0.8"/>
+      <Characteristic Type="RateOfFire" Rating="0.3"/>
+      <Characteristic Type="AreaEffect" Rating="0.1"/>
+    </UnitCharacteristics>
+    <EnemyTypeModifier>
+      <UnitType Type="Squad" Modifier="0.9"/>
+      <UnitType Type="Mech" Modifier="0.3"/>
+    </EnemyTypeModifier>
+    <EnemyArmorModifier>
+      <ArmorType Type="Unarmored" Modifier="1.0"/>
+      <ArmorType Type="Light" Modifier="0.8"/>
+      <ArmorType Type="Medium" Modifier="0.6"/>
+      <ArmorType Type="Heavy" Modifier="0.3"/>
+	  <ArmorType Type="Structure" Modifier="0.3"/>
+    </EnemyArmorModifier>
+    <BattleConditionModifier>
+      <Condition Type="LowOnMechs" Modifier="0.25"/>
+      <Condition Type="VictoryPoints" Modifier="1.0"/>
+    </BattleConditionModifier>
+  </AIUnitUsefulnessConfig>
+  <AIUnitUsefulnessConfig id="com_animal_chicken_usefulness">
+    <TaskUsefulness>
+      <Usefulness Type="Conquer" Rating="1.0"/>
+      <Usefulness Type="Attack" Rating="0.5"/>
+      <Usefulness Type="Defend" Rating="0.5"/>
+      <Usefulness Type="Support" Rating="0.4"/>
+      <Usefulness Type="Construct" Rating="0.0"/>
+    </TaskUsefulness>
+    <UnitCharacteristics>
+      <Characteristic Type="Mobility" Rating="0.8"/>
+      <Characteristic Type="Defense" Rating="0.5"/>
+      <Characteristic Type="Range" Rating="0.7"/>
+      <Characteristic Type="Damage" Rating="0.6"/>
+      <Characteristic Type="Precision" Rating="0.8"/>
+      <Characteristic Type="RateOfFire" Rating="0.3"/>
+      <Characteristic Type="AreaEffect" Rating="0.1"/>
+    </UnitCharacteristics>
+    <EnemyTypeModifier>
+      <UnitType Type="Squad" Modifier="0.9"/>
+      <UnitType Type="Mech" Modifier="0.3"/>
+    </EnemyTypeModifier>
+    <EnemyArmorModifier>
+      <ArmorType Type="Unarmored" Modifier="1.0"/>
+      <ArmorType Type="Light" Modifier="0.8"/>
+      <ArmorType Type="Medium" Modifier="0.6"/>
+      <ArmorType Type="Heavy" Modifier="0.3"/>
+	  <ArmorType Type="Structure" Modifier="0.3"/>
+    </EnemyArmorModifier>
+    <BattleConditionModifier>
+      <Condition Type="LowOnMechs" Modifier="0.25"/>
+      <Condition Type="VictoryPoints" Modifier="1.0"/>
+    </BattleConditionModifier>
+  </AIUnitUsefulnessConfig>
+  <AIUnitUsefulnessConfig id="com_animal_deer_usefulness">
+    <TaskUsefulness>
+      <Usefulness Type="Conquer" Rating="1.0"/>
+      <Usefulness Type="Attack" Rating="0.5"/>
+      <Usefulness Type="Defend" Rating="0.5"/>
+      <Usefulness Type="Support" Rating="0.4"/>
+      <Usefulness Type="Construct" Rating="0.0"/>
+    </TaskUsefulness>
+    <UnitCharacteristics>
+      <Characteristic Type="Mobility" Rating="0.8"/>
+      <Characteristic Type="Defense" Rating="0.5"/>
+      <Characteristic Type="Range" Rating="0.7"/>
+      <Characteristic Type="Damage" Rating="0.6"/>
+      <Characteristic Type="Precision" Rating="0.8"/>
+      <Characteristic Type="RateOfFire" Rating="0.3"/>
+      <Characteristic Type="AreaEffect" Rating="0.1"/>
+    </UnitCharacteristics>
+    <EnemyTypeModifier>
+      <UnitType Type="Squad" Modifier="0.9"/>
+      <UnitType Type="Mech" Modifier="0.3"/>
+    </EnemyTypeModifier>
+    <EnemyArmorModifier>
+      <ArmorType Type="Unarmored" Modifier="1.0"/>
+      <ArmorType Type="Light" Modifier="0.8"/>
+      <ArmorType Type="Medium" Modifier="0.6"/>
+      <ArmorType Type="Heavy" Modifier="0.3"/>
+	  <ArmorType Type="Structure" Modifier="0.3"/>
+    </EnemyArmorModifier>
+    <BattleConditionModifier>
+      <Condition Type="LowOnMechs" Modifier="0.25"/>
+      <Condition Type="VictoryPoints" Modifier="1.0"/>
+    </BattleConditionModifier>
+  </AIUnitUsefulnessConfig>
+  <AIUnitUsefulnessConfig id="com_animal_bear_usefulness">
+    <TaskUsefulness>
+      <Usefulness Type="Conquer" Rating="1.0"/>
+      <Usefulness Type="Attack" Rating="0.5"/>
+      <Usefulness Type="Defend" Rating="0.5"/>
+      <Usefulness Type="Support" Rating="0.4"/>
+      <Usefulness Type="Construct" Rating="0.0"/>
+    </TaskUsefulness>
+    <UnitCharacteristics>
+      <Characteristic Type="Mobility" Rating="0.8"/>
+      <Characteristic Type="Defense" Rating="0.5"/>
+      <Characteristic Type="Range" Rating="0.7"/>
+      <Characteristic Type="Damage" Rating="0.6"/>
+      <Characteristic Type="Precision" Rating="0.8"/>
+      <Characteristic Type="RateOfFire" Rating="0.3"/>
+      <Characteristic Type="AreaEffect" Rating="0.1"/>
+    </UnitCharacteristics>
+    <EnemyTypeModifier>
+      <UnitType Type="Squad" Modifier="0.9"/>
+      <UnitType Type="Mech" Modifier="0.3"/>
+    </EnemyTypeModifier>
+    <EnemyArmorModifier>
+      <ArmorType Type="Unarmored" Modifier="1.0"/>
+      <ArmorType Type="Light" Modifier="0.8"/>
+      <ArmorType Type="Medium" Modifier="0.6"/>
+      <ArmorType Type="Heavy" Modifier="0.3"/>
+	  <ArmorType Type="Structure" Modifier="0.3"/>
+    </EnemyArmorModifier>
+    <BattleConditionModifier>
+      <Condition Type="LowOnMechs" Modifier="0.25"/>
+      <Condition Type="VictoryPoints" Modifier="1.0"/>
+    </BattleConditionModifier>
+  </AIUnitUsefulnessConfig>
+	<AIUnitUsefulnessConfig id="fallback_usefulness">
+		<TaskUsefulness>
+		  <Usefulness Type="Conquer" Rating="1.0"/>
+		  <Usefulness Type="Attack" Rating="0.5"/>
+		  <Usefulness Type="Defend" Rating="0.5"/>
+		  <Usefulness Type="Support" Rating="0.4"/>
+		  <Usefulness Type="Construct" Rating="0.0"/>
+		</TaskUsefulness>
+		<UnitCharacteristics>
+		  <Characteristic Type="Mobility" Rating="0.8"/>
+		  <Characteristic Type="Defense" Rating="0.5"/>
+		  <Characteristic Type="Range" Rating="0.7"/>
+		  <Characteristic Type="Damage" Rating="0.6"/>
+		  <Characteristic Type="Precision" Rating="0.8"/>
+		  <Characteristic Type="RateOfFire" Rating="0.3"/>
+		  <Characteristic Type="AreaEffect" Rating="0.1"/>
+		</UnitCharacteristics>
+		<EnemyTypeModifier>
+		  <UnitType Type="Squad" Modifier="0.9"/>
+		  <UnitType Type="Mech" Modifier="0.3"/>
+		</EnemyTypeModifier>
+		<EnemyArmorModifier>
+		  <ArmorType Type="Unarmored" Modifier="1.0"/>
+		  <ArmorType Type="Light" Modifier="0.8"/>
+		  <ArmorType Type="Medium" Modifier="0.6"/>
+		  <ArmorType Type="Heavy" Modifier="0.3"/>
+		  <ArmorType Type="Structure" Modifier="0.3"/>
+		</EnemyArmorModifier>
+		<BattleConditionModifier>
+		  <Condition Type="LowOnMechs" Modifier="0.25"/>
+		  <Condition Type="VictoryPoints" Modifier="1.0"/>
+		</BattleConditionModifier>
+	</AIUnitUsefulnessConfig>
+</AIUnits>

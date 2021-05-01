@@ -1,0 +1,3876 @@
+<!-- Weapon Configurations-->
+<WeaponConfigurations>
+
+<!--Common Weapons-->
+	<!--Ranged-->
+		<!--Infantry-->
+			<!--Handgun-->
+			
+				<!--Common Soldier|Handgun-->
+				<WeaponConfiguration id="com_soldier_handgun">
+					<!--Shot Information-->
+						<AmmoConfigurationId>HandgunCartridge</AmmoConfigurationId>
+						<Height>1.5</Height>
+						<BurstSize>3</BurstSize>
+						<BurstDelay>2</BurstDelay>
+						<ConeAngleDegree>90</ConeAngleDegree>
+						
+					<!--Hitsystem-->
+						<SpreadWidth>2</SpreadWidth>
+						<SpreadHeight>2</SpreadHeight>
+					
+					<!--Cooldowns-->
+						<Cooldown>32</Cooldown>
+						<BoostedCooldown>8</BoostedCooldown>
+						<SuppressedCooldown>80</SuppressedCooldown>
+					
+					<!--Ranges-->
+						<Range>16</Range>
+						<AttackRange>15.5</AttackRange>
+						<ProjectileRange>21</ProjectileRange>
+						<MeleeRange>2</MeleeRange>	
+					
+					<!--Supression-->
+						<Suppression>3</Suppression>
+						<SuppressionZoneFull>1</SuppressionZoneFull>
+						<SuppressionZoneZero>3</SuppressionZoneZero>
+					
+					<!--Delay-->
+						<AttackDelay>0</AttackDelay>
+
+					<!--Noise-->
+						<ShotNoiseRange>40</ShotNoiseRange>
+						<ImpactNoiseRange>20</ImpactNoiseRange>
+				</WeaponConfiguration>
+				
+				<!--Polania Engineer|Handgun-->
+				<WeaponConfiguration id="pol_engineer_handgun" parentId="com_soldier_handgun">
+				</WeaponConfiguration>
+				
+				<!--Polania Medic|Handgun-->
+				<WeaponConfiguration id="pol_medic_handgun" parentId="com_soldier_handgun">
+				</WeaponConfiguration>
+				
+				<!--Saxony Engineer|Handgun-->
+				<WeaponConfiguration id="sax_engineer_handgun" parentId="com_soldier_handgun">
+				</WeaponConfiguration>
+				
+				<!--Saxony Medic|Handgun-->
+				<WeaponConfiguration id="sax_medic_handgun" parentId="com_soldier_handgun">
+				</WeaponConfiguration>
+		
+				<!--Rusviet Engineer|Handgun-->
+				<WeaponConfiguration id="rus_engineer_handgun" parentId="com_soldier_handgun">
+				</WeaponConfiguration>
+				
+				<!--Rusviet Medic|Handgun-->
+				<WeaponConfiguration id="rus_medic_handgun" parentId="com_soldier_handgun">
+				</WeaponConfiguration>	
+			
+			<!--Cannon-->	
+			
+				<!--Common Gunner|Cannon-->
+				<WeaponConfiguration id="com_soldier_gunner_cannon">
+				
+					<!--Shot Information-->
+						<AmmoConfigurationId>GunShell</AmmoConfigurationId>
+						<Height>1.5</Height>
+						<BurstSize>1</BurstSize>
+						<BurstDelay>0</BurstDelay>
+						
+					<!--Hitsystem-->
+						<SpreadWidth>5</SpreadWidth>
+						<SpreadHeight>6</SpreadHeight>
+						
+					<!--Cooldowns-->
+						<Cooldown>48</Cooldown>
+						<BoostedCooldown>28</BoostedCooldown>
+						<SuppressedCooldown>160</SuppressedCooldown>
+					
+					<!--Ranges-->
+						<Range>28</Range>
+						<AttackRange>27</AttackRange>
+						<ProjectileRange>38</ProjectileRange>
+						<MeleeRange>2</MeleeRange>	
+					
+					<!--Splash-->
+						<SplashRadius>1.5</SplashRadius>
+						<SplashAmmoConfigurationId>APSplash</SplashAmmoConfigurationId>
+					
+					<!--Supression-->
+						<Suppression>10</Suppression>
+						<SuppressionZoneFull>1</SuppressionZoneFull>
+						<SuppressionZoneZero>2</SuppressionZoneZero>
+					
+					<!--Delay-->
+						<AttackDelay>0</AttackDelay>
+
+					<!--Noise-->
+						<ShotNoiseRange>45</ShotNoiseRange>
+						<ImpactNoiseRange>45</ImpactNoiseRange>
+					
+				</WeaponConfiguration>
+
+				<!--Polania Gunner|Cannon-->
+				<WeaponConfiguration id="pol_soldier_gunner_cannon" parentId="com_soldier_gunner_cannon">
+				</WeaponConfiguration>
+				
+				<!--Saxony Gunner|Cannon-->
+				<WeaponConfiguration id="sax_soldier_gunner_cannon" parentId="com_soldier_gunner_cannon">
+				</WeaponConfiguration>
+				
+				<!--Rusviet Gunner|Cannon-->
+				<WeaponConfiguration id="rus_soldier_gunner_cannon" parentId="com_soldier_gunner_cannon">
+				</WeaponConfiguration>
+				
+			<!--MG-->
+				
+				<!--Common Soldier|MG |mg Infantry-->
+				<WeaponConfiguration id="com_soldier_mg">	
+
+					<!--Shot Information-->
+						<AmmoConfigurationId>LMGCartridge</AmmoConfigurationId>
+						<Height>1.5</Height>	
+						<BurstSize>15</BurstSize>
+						<BurstDelay>1</BurstDelay>
+					
+					<!--Hitsystem-->
+						<ConeAngleDegree>60</ConeAngleDegree>
+						<SpreadWidth>3.5</SpreadWidth>
+						<SpreadHeight>1.5</SpreadHeight>
+					
+					<!--Cooldowns-->
+						<Cooldown>24</Cooldown>
+						<BoostedCooldown>16</BoostedCooldown>
+						<SuppressedCooldown>64</SuppressedCooldown>
+					
+					<!--Ranges-->
+						<Range>25</Range>
+						<AttackRange>25</AttackRange>
+						<ProjectileRange>30</ProjectileRange>
+						<MeleeRange>2</MeleeRange>
+						<NearSuppressionDistance>10</NearSuppressionDistance>
+										
+					<!--Supression-->
+						<Suppression>1.5</Suppression>
+						<SuppressionZoneFull>4</SuppressionZoneFull>
+						<SuppressionZoneZero>5</SuppressionZoneZero>
+						<NearSuppression>2</NearSuppression>
+					
+					<!--Delay-->
+						<AttackDelay>0</AttackDelay>
+
+					<!--Noise-->
+						<ShotNoiseRange>40</ShotNoiseRange>
+						<ImpactNoiseRange>20</ImpactNoiseRange>
+				</WeaponConfiguration>
+
+				<!--Polania LMG-->
+				<WeaponConfiguration id="pol_soldier_mg_mg" parentId="com_soldier_mg">
+				</WeaponConfiguration>
+
+				<!--Saxony LMG-->
+				<WeaponConfiguration id="sax_soldier_mg_mg" parentId="com_soldier_mg">
+				</WeaponConfiguration>
+
+				<!--Rusviet LMG-->
+				<WeaponConfiguration id="rus_soldier_mg_mg" parentId="com_soldier_mg">
+				</WeaponConfiguration>				
+
+				<!--Common Soldier|Garrison MG |Garrison mg Infantry-->
+				<WeaponConfiguration id="com_soldier_garrisonmg">
+
+					<!--Shot Information-->
+					<AmmoConfigurationId>GarrisonLMGCartridge</AmmoConfigurationId>
+					<Height>1.5</Height>
+					<BurstSize>15</BurstSize>
+					<BurstDelay>1</BurstDelay>
+
+					<!--Hitsystem-->
+					<ConeAngleDegree>60</ConeAngleDegree>
+					<SpreadWidth>3.5</SpreadWidth>
+					<SpreadHeight>1.5</SpreadHeight>
+
+					<!--Cooldowns-->
+					<Cooldown>32</Cooldown>
+					<BoostedCooldown>24</BoostedCooldown>
+					<SuppressedCooldown>64</SuppressedCooldown>
+
+					<!--Ranges-->
+					<Range>25</Range>
+					<AttackRange>25</AttackRange>
+					<ProjectileRange>30</ProjectileRange>
+					<MeleeRange>2</MeleeRange>
+					<NearSuppressionDistance>7</NearSuppressionDistance>
+
+					<!--Supression-->
+					<Suppression>1</Suppression>
+					<SuppressionZoneFull>4</SuppressionZoneFull>
+					<SuppressionZoneZero>5</SuppressionZoneZero>
+					<NearSuppression>1.5</NearSuppression>
+
+					<!--Delay-->
+					<AttackDelay>0</AttackDelay>
+
+					<!--Noise-->
+					<ShotNoiseRange>40</ShotNoiseRange>
+					<ImpactNoiseRange>20</ImpactNoiseRange>
+
+				</WeaponConfiguration>
+
+				<!--Polania Garrison LMG-->
+				<WeaponConfiguration id="pol_soldier_garrisonmg" parentId="com_soldier_garrisonmg">
+				</WeaponConfiguration>
+
+				<!--Saxony Garrison LMG-->
+				<WeaponConfiguration id="sax_soldier_garrisonmg" parentId="com_soldier_garrisonmg">
+				</WeaponConfiguration>
+
+				<!--Rusviet Garrison LMG-->
+				<WeaponConfiguration id="rus_soldier_garrisonmg" parentId="com_soldier_garrisonmg">
+				</WeaponConfiguration>				
+
+			<!--Flamethrower-->
+			
+				<!--Common Soldier|Flamethrower-->
+				<WeaponConfiguration id="com_soldier_flamer">
+
+					<!--Shot Information-->
+						<AmmoConfigurationId>TestFlames</AmmoConfigurationId>
+						<Height>1.5</Height>
+						<BurstSize>15</BurstSize>
+						<BurstDelay>1</BurstDelay>
+					
+					<!--Hitsystem-->
+						<IgnoreLOS>False</IgnoreLOS>
+						<ConeAngleDegree>100</ConeAngleDegree>
+					
+					<!--Cooldowns-->
+						<Cooldown>64</Cooldown>
+						<BoostedCooldown>32</BoostedCooldown>
+						<SuppressedCooldown>160</SuppressedCooldown>
+
+					<!--Ranges-->
+						<Range>17</Range>
+						<AttackRange>16.5</AttackRange>
+						<MeleeRange>2</MeleeRange>
+						<ProjectileRange>20</ProjectileRange>
+
+					<!--Delay-->
+						<AttackDelay>0</AttackDelay>
+						<PostAttackDelay>0</PostAttackDelay>
+
+					<!--Noise-->
+						<ShotNoiseRange>40</ShotNoiseRange>
+						<ImpactNoiseRange>20</ImpactNoiseRange>
+						
+			</WeaponConfiguration>
+      
+	  			<!--Polania Flamer|Flamethrower-->
+				<WeaponConfiguration id="pol_soldier_flamethrower" parentId="com_soldier_flamer">
+				</WeaponConfiguration>
+							
+				<!--Saxony Flamer|Flamethrower-->
+				<WeaponConfiguration id="sax_soldier_flamethrower" parentId="com_soldier_flamer">
+				</WeaponConfiguration>
+
+				<!--Rusviet Flamer|Flamethrower-->
+				<WeaponConfiguration id="rus_soldier_flamethrower" parentId="com_soldier_flamer">
+				</WeaponConfiguration>
+				
+				<!--Garrison Flamer|Flamethrower-->
+				<WeaponConfiguration id="com_soldier_flamethrower_garrsion" parentId="com_soldier_flamer">
+				</WeaponConfiguration>
+
+      <!--Misc-->
+        <!--Mine Explosion-->
+        <WeaponConfiguration id="com_mech_mine_explosion">
+          <!--Shot Information-->
+          <AmmoConfigurationId>Mine</AmmoConfigurationId>
+          <BurstSize>1</BurstSize>
+          <BurstDelay>0</BurstDelay>
+
+          <!--Hitsystem-->
+          <ConeAngleDegree>360</ConeAngleDegree>
+          <IgnoreLOS>True</IgnoreLOS>
+
+          <!--Cooldowns-->
+          <Cooldown>10</Cooldown>
+
+          <!--Ranges-->
+          <AttackRange>1</AttackRange>
+          <Range>1</Range>
+
+          <!--Noise-->
+          <ShotNoiseRange>10</ShotNoiseRange>
+          <ImpactNoiseRange>45</ImpactNoiseRange>
+        </WeaponConfiguration>
+
+		<!--Melee-->
+
+				<!--Common Soldier|Melee-->
+				<WeaponConfiguration id="com_soldier_melee">
+					<AmmoConfigurationId>ComSoldierMelee</AmmoConfigurationId>
+					
+					<!--Cooldowns-->
+						<Cooldown>8</Cooldown>
+						<BoostedCooldown>5</BoostedCooldown>
+					
+					<!--Ranges-->
+						<Range>2</Range>
+
+					<!--Noise-->
+						<ShotNoiseRange>10</ShotNoiseRange>
+						<ImpactNoiseRange>10</ImpactNoiseRange>
+				  
+				</WeaponConfiguration>
+
+				<!--Common Soldier|Melee at close range only-->
+				<WeaponConfiguration id="com_soldier_melee_close" parentId="com_soldier_melee">
+					<AmmoConfigurationId>ComSoldierMeleeCloseRange</AmmoConfigurationId>
+					<!--Ranges-->
+						<Range>2</Range>
+				</WeaponConfiguration>
+
+				<!--No auto melee-->
+				<WeaponConfiguration id="com_soldier_no_automelee" parentId="com_soldier_melee">
+					<AmmoConfigurationId>ComSoldierMeleeUseless</AmmoConfigurationId>
+					<!--Ranges-->
+						<Range>2</Range>
+				</WeaponConfiguration>
+
+				<!--Common Soldier|Useless Melee-->
+				<WeaponConfiguration id="com_soldier_melee_useless" parentId="com_soldier_melee">
+						<AmmoConfigurationId>ComSoldierMeleeUseless</AmmoConfigurationId>
+				</WeaponConfiguration>
+	
+				<!--Common Soldier|Weak Melee-->
+				<WeaponConfiguration id="com_soldier_melee_weak" parentId="com_soldier_melee">
+						<AmmoConfigurationId>ComSoldierMeleeWeak</AmmoConfigurationId>
+				</WeaponConfiguration>
+	
+				<!--Common Soldier|Medium Melee-->
+				<WeaponConfiguration id="com_soldier_melee_medium" parentId="com_soldier_melee">
+						<AmmoConfigurationId>ComSoldierMeleeMedium</AmmoConfigurationId>
+				</WeaponConfiguration>
+	
+				<!--Common Soldier|Strong Melee-->
+				<WeaponConfiguration id="com_soldier_melee_strong" parentId="com_soldier_melee">
+						<AmmoConfigurationId>ComSoldierMeleeStrong</AmmoConfigurationId>
+				</WeaponConfiguration>
+	
+				<!--Common Soldier|Superior Melee-->
+				<WeaponConfiguration id="com_soldier_melee_superior" parentId="com_soldier_melee">
+						<AmmoConfigurationId>ComSoldierMeleeSuperior</AmmoConfigurationId>
+				</WeaponConfiguration>
+	
+				<!--Common Mech|Melee-->
+				<WeaponConfiguration id="com_mech_melee">
+					<!--Shot Information-->
+						<AmmoConfigurationId>MechMelee</AmmoConfigurationId>
+						<Height>4</Height>
+						<BurstSize>1</BurstSize>
+						<BurstDelay>0</BurstDelay>
+						
+					<!--Hitsystem-->
+						<ConeAngleDegree>30</ConeAngleDegree>
+						<SpreadWidth>2</SpreadWidth>
+						<SpreadHeight>2</SpreadHeight>
+						
+					<!--Cooldowns-->
+						<Cooldown>40</Cooldown>
+						
+					<!--Ranges-->
+						<Range>10</Range>
+					
+					<!--Supression-->
+						<Suppression>25</Suppression>
+						<SuppressionZoneFull>1</SuppressionZoneFull>
+						<SuppressionZoneZero>2</SuppressionZoneZero>
+					
+					<!--Delay-->
+						<AttackDelay>0</AttackDelay>
+
+					<!--Noise-->
+						<ShotNoiseRange>10</ShotNoiseRange>
+						<ImpactNoiseRange>10</ImpactNoiseRange>
+				
+				</WeaponConfiguration>
+
+				<!--Woodcutter Melee-->
+				<WeaponConfiguration id="com_mech_woodcutter_melee" parentId="com_mech_melee" />
+	<!--Abilities-->
+				
+				<!--Grenadier|Grenade-->
+				<WeaponConfiguration id="com_frag_hand_grenade">
+				
+					<!--Shot Information-->
+						<AmmoConfigurationId>HandGrenade</AmmoConfigurationId>
+						<Height>1.5</Height>
+						<BurstSize>1</BurstSize>
+						<BurstDelay>0</BurstDelay>
+							
+					<!--Hitsystem-->
+						<SpreadWidth>1</SpreadWidth>
+						<SpreadHeight>1</SpreadHeight>
+							
+					<!--Cooldowns-->
+						<Cooldown>960</Cooldown>
+						
+					<!--Ranges-->
+						<Range>15</Range>
+						<MeleeRange>2</MeleeRange>
+						
+					<!--Delay-->
+						<AttackDelay>0</AttackDelay>
+
+					<!--Noise-->
+					  <ShotNoiseRange>5</ShotNoiseRange>
+					  <ImpactNoiseRange>45</ImpactNoiseRange>
+					  
+			</WeaponConfiguration>
+
+<!-- Polania Weapons-->
+	<!--Ranged-->
+		<!--Infantry-->
+				
+				<!--Polania Rifleman|Rifle-->
+				<WeaponConfiguration id="pol_soldier_rifleman_rifle">
+						<!--Shot Information-->
+							<AmmoConfigurationId>RifleCartridge</AmmoConfigurationId>
+							<Height>1.5</Height>
+							<BurstSize>1</BurstSize>
+							<BurstDelay>0</BurstDelay>
+							<ConeAngleDegree>160</ConeAngleDegree>
+						<!--Hitsystem-->
+							<SpreadWidth>1.3</SpreadWidth>
+							<SpreadHeight>1.2</SpreadHeight>
+						
+						<!--Cooldowns-->
+							<Cooldown>20</Cooldown>
+							<BoostedCooldown>6</BoostedCooldown>
+							<SuppressedCooldown>64</SuppressedCooldown>
+							
+						<!--Ranges-->
+							<Range>26</Range>
+							<AttackRange>25.5</AttackRange>
+							<ProjectileRange>32</ProjectileRange>
+							<MeleeRange>2</MeleeRange>
+						<!--Splash-->
+						
+						<!--Supression-->
+							<Suppression>6</Suppression>
+							<SuppressionZoneFull>2</SuppressionZoneFull>
+							<SuppressionZoneZero>3</SuppressionZoneZero>
+						<!--Delay-->
+							<AttackDelay>0</AttackDelay>
+
+						<!--Noise-->
+							<ShotNoiseRange>40</ShotNoiseRange>
+							<ImpactNoiseRange>20</ImpactNoiseRange>
+					
+					</WeaponConfiguration>
+				
+		<!--Mechs & Exo-Skeletons-->
+					
+				<!--SpecOps|AutoCannon-->
+				<WeaponConfiguration id="pol_soldier_exo_autocannon">
+					<!--Shot Information-->
+						<AmmoConfigurationId>AutoCannonCartridge</AmmoConfigurationId>
+						<Height>1.5</Height>
+						<BurstSize>1</BurstSize>
+						<BurstDelay>0</BurstDelay>
+						
+					<!--Hitsystem-->
+						<ConeAngleDegree>30</ConeAngleDegree>
+						<SpreadWidth>1</SpreadWidth>
+						<SpreadHeight>1</SpreadHeight>
+					
+					<!--Cooldowns-->
+						<Cooldown>14</Cooldown>
+					
+					<!--Ranges-->
+						<Range>24</Range>
+						<ProjectileRange>34</ProjectileRange>
+						<AttackRange>22</AttackRange>
+						<MeleeRange>2</MeleeRange>
+											
+					<!--Supression-->
+						<Suppression>5</Suppression>
+						<SuppressionZoneFull>1</SuppressionZoneFull>
+						<SuppressionZoneZero>2</SuppressionZoneZero>
+					
+					<!--Delay-->
+						<AttackDelay>0</AttackDelay>
+
+					<!--Noise-->
+						<ShotNoiseRange>40</ShotNoiseRange>
+						<ImpactNoiseRange>20</ImpactNoiseRange>
+				
+				</WeaponConfiguration>
+				
+				<!--Recon|Heavy Rifle-->
+				<WeaponConfiguration id="pol_mech_recon_rifle">
+					<!--Shot Information-->
+						<AmmoConfigurationId>HeavyRifleShell</AmmoConfigurationId>
+						<Height>2</Height>
+						<BurstSize>1</BurstSize>
+						<BurstDelay>0</BurstDelay>
+						
+					<!--Hitsystem-->
+						<ConeAngleDegree>30</ConeAngleDegree>
+						<SpreadWidth>0.5</SpreadWidth>
+						<SpreadHeight>0.5</SpreadHeight>
+					
+					<!--Cooldowns-->
+					<Cooldown>48</Cooldown>
+					
+					<!--Ranges-->
+						<Range>35</Range>
+						<AttackRange>33</AttackRange>
+						<ProjectileRange>42</ProjectileRange>
+						<MeleeRange>10</MeleeRange>	
+						
+					<!--Splash-->
+						<SplashRadius>3</SplashRadius>
+						<SplashAmmoConfigurationId>APSplash</SplashAmmoConfigurationId>
+						
+					<!--Supression-->
+						<Suppression>50</Suppression>
+						<SuppressionZoneFull>1</SuppressionZoneFull>
+						<SuppressionZoneZero>2</SuppressionZoneZero>
+					
+					<!--Delay-->
+						<AttackDelay>0</AttackDelay>
+
+					<!--Noise-->
+						<ShotNoiseRange>45</ShotNoiseRange>
+						<ImpactNoiseRange>30</ImpactNoiseRange>
+						
+					<!--Show an indicator for when the weapon can fire again-->
+					<ShowReloadIndicator>True</ShowReloadIndicator>
+				</WeaponConfiguration>	
+				
+				<!--Stinger|Bolter|Harpoon-->
+				<WeaponConfiguration id="pol_mech_stinger_bolter">
+					<!--Shot Information-->
+						<AmmoConfigurationId>StingerBolt</AmmoConfigurationId>
+						<Height>2.5</Height>
+						<BurstSize>1</BurstSize>
+						<BurstDelay>0</BurstDelay>
+						
+					<!--Hitsystem-->
+						<ConeAngleDegree>5</ConeAngleDegree>
+						<SpreadWidth>0.5</SpreadWidth>
+						<SpreadHeight>0.5</SpreadHeight>
+						
+					<!--Cooldowns-->
+						<!--Attention: lowering this value might lead to "skipping" attacks since the used weapon-arm might not be ready to shoot yet-->
+						<Cooldown>24</Cooldown>
+						
+					<!--Ranges-->
+						<Range>26</Range>
+						<AttackRange>25</AttackRange>
+						<ProjectileRange>33</ProjectileRange>
+						
+					<!--Supression-->
+						<Suppression>30</Suppression>
+						<SuppressionZoneFull>1</SuppressionZoneFull>
+						<SuppressionZoneZero>2</SuppressionZoneZero>
+					
+					<!--Delay-->
+						<AttackDelay>0</AttackDelay>
+
+					<!--Noise-->
+						<ShotNoiseRange>45</ShotNoiseRange>
+						<ImpactNoiseRange>30</ImpactNoiseRange>
+						
+					<!--Show an indicator for when the weapon can fire again-->
+					<ShowReloadIndicator>True</ShowReloadIndicator>
+					
+				</WeaponConfiguration>
+				
+				<!--Spider|Cannons-->
+				<WeaponConfiguration id="pol_mech_spider_cannons">
+					<!--Shot Information-->
+						<AmmoConfigurationId>SpiderCartridge</AmmoConfigurationId>
+						<Height>2</Height>
+						<BurstSize>32</BurstSize>
+						<BurstDelay>0.25</BurstDelay>
+						
+					<!--Hitsystem-->
+						<ConeAngleDegree>15</ConeAngleDegree>
+						<SpreadWidth>2.5</SpreadWidth>
+						<SpreadHeight>1</SpreadHeight>
+						
+					<!--Cooldowns-->
+						<Cooldown>0</Cooldown>
+					
+					<!--Ranges-->
+						<Range>24</Range>
+						<AttackRange>22</AttackRange>
+						<ProjectileRange>28</ProjectileRange>
+					<!--Splash-->
+					
+					<!--Supression-->
+						<Suppression>0.6</Suppression>
+						<SuppressionZoneFull>3</SuppressionZoneFull>
+						<SuppressionZoneZero>5</SuppressionZoneZero>
+					
+					<!--Delay-->
+						<AttackDelay>0</AttackDelay>
+
+					<!--Noise-->
+						<ShotNoiseRange>40</ShotNoiseRange>
+						<ImpactNoiseRange>20</ImpactNoiseRange>
+	
+
+				</WeaponConfiguration>
+				
+				<WeaponConfiguration id="pol_mech_spider_cannons_overdrive" parentId="pol_mech_spider_cannons">
+					<AmmoConfigurationId>SpiderOverdriveCartridge</AmmoConfigurationId>
+					<BurstSize>12</BurstSize>
+						<SpreadWidth>1</SpreadWidth>
+						<SpreadHeight>1</SpreadHeight>
+				</WeaponConfiguration>
+
+				<!--Siege Tank|Cannon|Motion-->
+				<WeaponConfiguration id="pol_mech_artillery_cannon_motion">
+					<!--Shot Information-->
+						<AmmoConfigurationId>PolArtShell</AmmoConfigurationId>
+						<Height>4.5</Height>
+						<BurstSize>1</BurstSize>
+						<BurstDelay>0</BurstDelay>
+						
+					<!--Hitsystem-->
+						<ConeAngleDegree>90</ConeAngleDegree>
+						<SpreadWidth>4.5</SpreadWidth>
+						<SpreadHeight>2.5</SpreadHeight>
+					
+					<!--Cooldowns-->
+						<Cooldown>40</Cooldown>
+						
+					<!--Ranges-->
+						<Range>50</Range> 
+						<AttackRange>48</AttackRange>
+						<ProjectileRange>60</ProjectileRange>
+						
+					<!--Splash-->
+						<SplashRadius>3</SplashRadius>
+						<SplashAmmoConfigurationId>MediumSplash</SplashAmmoConfigurationId>
+						
+					<!--Supression-->
+						<Suppression>25</Suppression>
+						<SuppressionZoneFull>1</SuppressionZoneFull>
+						<SuppressionZoneZero>2</SuppressionZoneZero>
+					
+					<!--Delay-->
+						<AttackDelay>0</AttackDelay>				
+						<BehaviourType>Motion</BehaviourType>
+						<LeadingTime>1.5</LeadingTime>
+
+					<!--Noise-->
+						<ShotNoiseRange>45</ShotNoiseRange>
+						<ImpactNoiseRange>45</ImpactNoiseRange>
+					
+					<!--Show an indicator for when the weapon can fire again-->
+					<ShowReloadIndicator>True</ShowReloadIndicator>
+				
+				</WeaponConfiguration>
+				
+				<!--Siege Tank|Cannon|Siege-->
+				<WeaponConfiguration id="pol_mech_artillery_cannon_siege">
+					<!--Shot Information-->
+						<AmmoConfigurationId>PolArtilleryGrenade</AmmoConfigurationId>
+						<Height>1</Height>
+						<BurstSize>1</BurstSize>
+						<BurstDelay>0</BurstDelay>
+						
+					<!--Hitsystem-->
+						<IgnoreLOS>True</IgnoreLOS>
+						<ConeAngleDegree>70</ConeAngleDegree>
+						
+					<!--Cooldowns-->
+						<Cooldown>76</Cooldown>
+						
+					<!--Ranges-->
+						<Range>65</Range>
+						<MinimumRange>10</MinimumRange>
+						
+					<!--Delay-->
+						<AttackDelay>0</AttackDelay>					
+						<BehaviourType>Stationary</BehaviourType>
+
+					<!--Noise-->
+						<ShotNoiseRange>45</ShotNoiseRange>
+						<ImpactNoiseRange>45</ImpactNoiseRange>
+						
+					<!--Show an indicator for when the weapon can fire again-->
+					<ShowReloadIndicator>True</ShowReloadIndicator>
+				</WeaponConfiguration>
+
+				<!--Siege Tank|Cannon|SmokeBarrel-->
+				<WeaponConfiguration id="pol_mech_artillery_smokebarrel">
+					<!--Shot Information-->
+						<AmmoConfigurationId>Smokebarrel</AmmoConfigurationId>
+						<Height>1</Height>
+						<BurstSize>1</BurstSize>
+						<BurstDelay>0</BurstDelay>
+						
+					<!--Hitsystem-->
+						<IgnoreLOS>True</IgnoreLOS>
+						<ConeAngleDegree>70</ConeAngleDegree>
+						
+					<!--Cooldowns-->
+						<Cooldown>76</Cooldown>
+						
+					<!--Ranges-->
+						<Range>65</Range>
+						<MinimumRange>10</MinimumRange>
+						
+					<!--Delay-->
+						<AttackDelay>0</AttackDelay>					
+						<BehaviourType>Stationary</BehaviourType>
+
+					<!--Noise-->
+						<ShotNoiseRange>45</ShotNoiseRange>
+						<ImpactNoiseRange>45</ImpactNoiseRange>
+				
+				</WeaponConfiguration>
+				
+				<!--Siege Tank|MG-->
+				<WeaponConfiguration id="pol_mech_artillery_mg">	
+
+					<!--Shot Information-->
+						<AmmoConfigurationId>SiegeTankMGCartridge</AmmoConfigurationId>
+						<Height>1.5</Height>	
+						<BurstSize>15</BurstSize>
+						<BurstDelay>1</BurstDelay>
+					
+					<!--Hitsystem-->
+						<ConeAngleDegree>45</ConeAngleDegree>
+						<SpreadWidth>3.5</SpreadWidth>
+						<SpreadHeight>1.5</SpreadHeight>
+					
+					<!--Cooldowns-->
+						<Cooldown>24</Cooldown>
+					
+					<!--Ranges-->
+						<Range>20</Range>
+						<AttackRange>20</AttackRange>
+						<ProjectileRange>25</ProjectileRange>
+										
+					<!--Supression-->
+						<Suppression>2</Suppression>
+						<SuppressionZoneFull>2</SuppressionZoneFull>
+						<SuppressionZoneZero>5</SuppressionZoneZero>
+					
+					<!--Delay-->
+						<AttackDelay>0</AttackDelay>
+
+					<!--Noise-->
+						<ShotNoiseRange>40</ShotNoiseRange>
+						<ImpactNoiseRange>20</ImpactNoiseRange>
+				  
+				</WeaponConfiguration>
+				
+				<!--Trooptransport|Mortar-->
+				<WeaponConfiguration id="pol_mech_trooptransport_mortar">
+					<!--Shot Information-->
+						<AmmoConfigurationId>TransportMortarGrenade</AmmoConfigurationId>
+						<Height>1.5</Height>	
+						<BurstSize>1</BurstSize>
+						<BurstDelay>0</BurstDelay>
+					<!--Hitsystem-->
+						<IgnoreLOS>True</IgnoreLOS>
+						<ConeAngleDegree>360</ConeAngleDegree>
+					<!--Cooldowns-->
+						<Cooldown>64</Cooldown>
+				
+					<!--Ranges-->
+						<Range>40</Range>
+						<AttackRange>39</AttackRange>
+
+					<!--Delay-->
+						<AttackDelay>0</AttackDelay>					
+						<TurretRotationSpeed>180</TurretRotationSpeed>
+
+					<!--Noise-->
+						<ShotNoiseRange>45</ShotNoiseRange>
+						<ImpactNoiseRange>30</ImpactNoiseRange>
+					
+					<!--Show an indicator for when the weapon can fire again-->
+					<ShowReloadIndicator>True</ShowReloadIndicator>
+				</WeaponConfiguration>
+					
+				<!--Tur|Cannon-->
+				<WeaponConfiguration id="pol_mech_gunfort_cannon">
+						<!--Shot Information-->
+							<AmmoConfigurationId>TurShell</AmmoConfigurationId>
+							<Height>5.5</Height>
+							<BurstSize>1</BurstSize>
+							<BurstDelay>0</BurstDelay>
+							
+						<!--Hitsystem-->
+							<ConeAngleDegree>60</ConeAngleDegree>
+							<SpreadWidth>7</SpreadWidth>
+							<SpreadHeight>4</SpreadHeight>
+							
+						<!--Cooldowns-->
+							<Cooldown>44</Cooldown>
+							
+						<!--Ranges-->
+							<Range>40</Range>
+							<AttackRange>39</AttackRange>
+							<ProjectileRange>50</ProjectileRange>
+							
+						<!--Splash-->
+							<SplashRadius>7</SplashRadius>
+							<SplashAmmoConfigurationId>HeavySplash</SplashAmmoConfigurationId>
+						
+						<!--Supression-->
+							<Suppression>20</Suppression>
+							<SuppressionZoneFull>1</SuppressionZoneFull>
+							<SuppressionZoneZero>2</SuppressionZoneZero>
+						
+						<!--Delay-->
+							<AttackDelay>0</AttackDelay>
+
+						<!--Noise-->
+							<ShotNoiseRange>55</ShotNoiseRange>
+							<ImpactNoiseRange>45</ImpactNoiseRange>
+						
+						<!--Show an indicator for when the weapon can fire again-->
+						<ShowReloadIndicator>True</ShowReloadIndicator>
+					</WeaponConfiguration>
+
+				<!--Tur|Mortar-->
+				<WeaponConfiguration id="pol_mech_gunfort_mortar">
+					<!--Shot Information-->
+						<AmmoConfigurationId>TurGrenade</AmmoConfigurationId>
+						<Height>4</Height>					
+						<BurstSize>16</BurstSize>
+						<BurstDelay>3</BurstDelay>
+						
+					<!--Hitsystem-->
+						<IgnoreLOS>True</IgnoreLOS>		
+						<ConeAngleDegree>360</ConeAngleDegree>
+						
+					<!--Cooldowns-->
+						<Cooldown>360</Cooldown>
+						
+					<!--Ranges-->
+						<Range>8</Range>
+					
+					<!--Delay-->
+						<AttackDelay>0</AttackDelay>
+						
+					<!--Noise-->
+						<ShotNoiseRange>55</ShotNoiseRange>
+						<ImpactNoiseRange>45</ImpactNoiseRange>
+				  
+				</WeaponConfiguration>
+
+	  <!--Melee-->
+	
+				<!--Recon|Melee-->
+				<WeaponConfiguration id="pol_mech_recon_melee">
+					<!--Shot Information-->
+						<AmmoConfigurationId>MechMelee</AmmoConfigurationId>
+						<Height>4</Height>
+						<BurstSize>1</BurstSize>
+						<BurstDelay>0</BurstDelay>
+						
+					<!--Hitsystem-->
+						<ConeAngleDegree>30</ConeAngleDegree>
+						<SpreadWidth>2</SpreadWidth>
+						<SpreadHeight>2</SpreadHeight>
+						
+					<!--Cooldowns-->
+						<Cooldown>40</Cooldown>
+						
+					<!--Ranges-->
+						<Range>10</Range>
+					
+					<!--Supression-->
+						<Suppression>0</Suppression>
+						<SuppressionZoneFull>1</SuppressionZoneFull>
+						<SuppressionZoneZero>2</SuppressionZoneZero>
+					
+					<!--Delay-->
+						<AttackDelay>0</AttackDelay>
+
+					<!--Noise-->
+						<ShotNoiseRange>10</ShotNoiseRange>
+						<ImpactNoiseRange>10</ImpactNoiseRange>
+				
+				</WeaponConfiguration>
+				
+				<!--Recon|Melee-->
+				<WeaponConfiguration id="pol_mech_recon_charge_impact">
+					<!--Shot Information-->
+						<AmmoConfigurationId>MechMelee</AmmoConfigurationId>
+						<Height>4</Height>
+						<BurstSize>1</BurstSize>
+						<BurstDelay>0</BurstDelay>
+						
+					<!--Hitsystem-->
+						<ConeAngleDegree>30</ConeAngleDegree>
+						<SpreadWidth>2</SpreadWidth>
+						<SpreadHeight>2</SpreadHeight>
+						
+					<!--Cooldowns-->
+						<Cooldown>8</Cooldown>
+						
+					<!--Ranges-->
+						<Range>10</Range>
+					
+					<!--Supression-->
+						<Suppression>25</Suppression>
+						<SuppressionZoneFull>1</SuppressionZoneFull>
+						<SuppressionZoneZero>2</SuppressionZoneZero>
+					
+					<!--Delay-->
+						<AttackDelay>0</AttackDelay>
+
+					<!--Noise-->
+						<ShotNoiseRange>10</ShotNoiseRange>
+						<ImpactNoiseRange>10</ImpactNoiseRange>
+				
+				</WeaponConfiguration>
+				<WeaponConfiguration id="pol_mech_recon_charge_push">
+					<!--Shot Information-->
+						<AmmoConfigurationId>MechMelee</AmmoConfigurationId>
+						<Height>4</Height>
+						<BurstSize>1</BurstSize>
+						<BurstDelay>0</BurstDelay>
+						
+					<!--Hitsystem-->
+						<ConeAngleDegree>30</ConeAngleDegree>
+						<SpreadWidth>2</SpreadWidth>
+						<SpreadHeight>2</SpreadHeight>
+						
+					<!--Cooldowns-->
+						<Cooldown>8</Cooldown>
+						
+					<!--Ranges-->
+						<Range>10</Range>
+					
+					<!--Supression-->
+						<Suppression>25</Suppression>
+						<SuppressionZoneFull>1</SuppressionZoneFull>
+						<SuppressionZoneZero>2</SuppressionZoneZero>
+					
+					<!--Delay-->
+						<AttackDelay>0</AttackDelay>
+
+					<!--Noise-->
+						<ShotNoiseRange>10</ShotNoiseRange>
+						<ImpactNoiseRange>10</ImpactNoiseRange>
+				
+				</WeaponConfiguration>
+	
+				<!--SpecOps|Melee-->
+				<WeaponConfiguration id="pol_soldier_exo_melee" parentId="com_mech_melee">
+					<AmmoConfigurationId>ComSoldierMeleeSuperior</AmmoConfigurationId>
+					<Range>2</Range>
+					<Cooldown>20</Cooldown>
+				</WeaponConfiguration>
+
+	
+	<!--Abilities-->
+				
+				<!--Stinger|Harpoon-->
+				<WeaponConfiguration id="pol_mech_stinger_harpoon">
+					<!--Shot Information-->
+						<AmmoConfigurationId>StingerAbilityBolt</AmmoConfigurationId>
+						<Height>3</Height>
+						<BurstSize>1</BurstSize>
+						<BurstDelay>0</BurstDelay>
+					
+					<!--Hitsystem-->
+						<ConeAngleDegree>10</ConeAngleDegree>
+					
+					<!--Cooldowns-->
+						<Cooldown>580</Cooldown>
+						
+					<!--Ranges-->
+						<Range>12</Range>
+						<ProjectileRange>25</ProjectileRange>
+										
+					<!--Delay-->
+					<AttackDelay>4</AttackDelay>
+
+				  <!--Noise-->
+				  <ShotNoiseRange>10</ShotNoiseRange>
+				  <ImpactNoiseRange>10</ImpactNoiseRange>
+				</WeaponConfiguration>
+	
+	
+<!-- Saxony Weapons-->
+	<!--Ranged-->
+		<!--Infantry-->
+	
+				<!--Saxony Rifleman|Rifle-->
+				<WeaponConfiguration id="sax_soldier_rifleman_rifle">
+					<!--Shot Information-->
+						<AmmoConfigurationId>SmgCartridge</AmmoConfigurationId>
+						<Height>1.5</Height>
+						<BurstSize>8</BurstSize>
+						<BurstDelay>1</BurstDelay>
+						<ConeAngleDegree>160</ConeAngleDegree>
+
+					<!--Hitsystem-->
+						<SpreadWidth>1.3</SpreadWidth>
+						<SpreadHeight>1.2</SpreadHeight>
+
+					<!--Cooldowns-->
+						<Cooldown>24</Cooldown>
+						<BoostedCooldown>8</BoostedCooldown>	
+						<SuppressedCooldown>64</SuppressedCooldown>
+				
+					<!--Ranges-->
+						<Range>20</Range>
+						<AttackRange>19.5</AttackRange>
+						<ProjectileRange>25</ProjectileRange>
+						<MeleeRange>2</MeleeRange>
+				
+					<!--Supression-->
+						<Suppression>0.9</Suppression>
+						<SuppressionZoneFull>3</SuppressionZoneFull>
+						<SuppressionZoneZero>4</SuppressionZoneZero>
+					
+					<!--Delay-->
+						<AttackDelay>0</AttackDelay>
+
+				  <!--Noise-->
+				  <ShotNoiseRange>40</ShotNoiseRange>
+				  <ImpactNoiseRange>20</ImpactNoiseRange>
+				</WeaponConfiguration>
+				
+		<!--Mechs & Exo-Skeletons-->
+	
+				<!--Breacher|Mortar-->
+				<WeaponConfiguration id="sax_soldier_mortar_mortar">
+					<!--Shot Information-->
+						<AmmoConfigurationId>MortarGrenade</AmmoConfigurationId>
+						<Height>1</Height>					
+						<BurstSize>2</BurstSize>
+						<BurstDelay>3</BurstDelay>
+					<!--Hitsystem-->
+						<IgnoreLOS>True</IgnoreLOS>		
+						<ConeAngleDegree>30</ConeAngleDegree>
+					<!--Cooldowns-->
+						<Cooldown>72</Cooldown>
+					<!--Ranges-->
+						<Range>45</Range>
+           				<MinimumRange>10</MinimumRange>
+						<AttackRange>41</AttackRange>
+						<MeleeRange>2</MeleeRange>
+					
+					<!--Delay-->
+						<AttackDelay>0</AttackDelay>
+
+				  <!--Noise-->
+				  <ShotNoiseRange>45</ShotNoiseRange>
+				  <ImpactNoiseRange>45</ImpactNoiseRange>
+				</WeaponConfiguration>
+						
+				<!--Gatling|Gatling-->
+				<WeaponConfiguration id="sax_mech_gatling_gatling">
+					<!--Shot Information-->
+						<AmmoConfigurationId>GatlingCartridge</AmmoConfigurationId>
+						<Height>1.5</Height>
+						<BurstSize>10</BurstSize>
+						<BurstDelay>1</BurstDelay>
+						
+					<!--Hitsystem-->
+						<ConeAngleDegree>60</ConeAngleDegree>
+						<SpreadWidth>2</SpreadWidth>
+						<SpreadHeight>1</SpreadHeight>
+						
+					<!--Cooldowns-->
+						<Cooldown>12</Cooldown><!--32-->
+						
+					<!--Ranges-->
+						<Range>26</Range>
+						<ProjectileRange>33</ProjectileRange>
+						<AttackRange>24</AttackRange>
+						
+					<!--Supression-->
+						<Suppression>0</Suppression>
+						<SuppressionZoneFull>2</SuppressionZoneFull>
+						<SuppressionZoneZero>4</SuppressionZoneZero>
+					
+					<!--Delay-->
+						<AttackDelay>0</AttackDelay>
+
+					<!--Noise-->
+					<ShotNoiseRange>40</ShotNoiseRange>
+					<ImpactNoiseRange>20</ImpactNoiseRange>
+	  
+
+				  
+				</WeaponConfiguration>
+				
+				<!--Tank|Cannon-->
+				<WeaponConfiguration id="sax_mech_tank_cannon">
+					<!--Shot Information-->
+						<AmmoConfigurationId>TankShell</AmmoConfigurationId>
+						<Height>3</Height>
+						<BurstSize>4</BurstSize>
+						<BurstDelay>4</BurstDelay>
+					<!--Hitsystem-->
+						<ConeAngleDegree>70</ConeAngleDegree>
+						<SpreadWidth>3.5</SpreadWidth>
+						<SpreadHeight>3</SpreadHeight>
+					
+					<!--Cooldowns-->
+						<Cooldown>40</Cooldown>
+					<!--Ranges-->
+						<Range>28</Range>
+						<ProjectileRange>38</ProjectileRange>
+						<AttackRange>26</AttackRange>
+
+					<!--Splash-->
+						<SplashRadius>2.5</SplashRadius>
+						<SplashAmmoConfigurationId>TankSplash</SplashAmmoConfigurationId>
+					
+					<!--Supression-->
+						<Suppression>1</Suppression>
+						<SuppressionZoneFull>2</SuppressionZoneFull>
+						<SuppressionZoneZero>3</SuppressionZoneZero>
+						
+					<!--Delay-->
+						<AttackDelay>0</AttackDelay>
+						<TurretRotationSpeed>180</TurretRotationSpeed>
+
+				  <!--Noise-->
+				  <ShotNoiseRange>45</ShotNoiseRange>
+				  <ImpactNoiseRange>30</ImpactNoiseRange>
+				  
+				  <!--Show an indicator for when the weapon can fire again-->
+				  <ShowReloadIndicator>True</ShowReloadIndicator>
+				</WeaponConfiguration>
+				
+				<!--Dachs|Cannon-->
+				<WeaponConfiguration id="sax_mech_dachs_cannon">
+					<!--Shot Information-->
+						<AmmoConfigurationId>DachsShell</AmmoConfigurationId>
+						<Height>4</Height>
+						<BurstSize>2</BurstSize>
+						<BurstDelay>2</BurstDelay>
+						
+					<!--Hitsystem-->
+						<ConeAngleDegree>5</ConeAngleDegree>
+						<SpreadWidth>5</SpreadWidth>
+						<SpreadHeight>3</SpreadHeight>
+						
+					<!--Cooldowns-->
+						<Cooldown>40</Cooldown>
+						
+					<!--Ranges-->
+						<Range>45</Range>
+						<ProjectileRange>55</ProjectileRange>
+						<AttackRange>42</AttackRange>
+					
+					<!--Splash-->
+					<SplashRadius>3</SplashRadius>
+						<SplashAmmoConfigurationId>MediumSplash</SplashAmmoConfigurationId>
+					
+					<!--Supression-->
+						<Suppression>25</Suppression>
+						<SuppressionZoneFull>1</SuppressionZoneFull>
+						<SuppressionZoneZero>2</SuppressionZoneZero>
+					
+					<!--Delay-->
+						<AttackDelay>0</AttackDelay>
+
+				  <!--Noise-->
+				  <ShotNoiseRange>45</ShotNoiseRange>
+				  <ImpactNoiseRange>30</ImpactNoiseRange>
+				  
+				  <!--Show an indicator for when the weapon can fire again-->
+				  <ShowReloadIndicator>True</ShowReloadIndicator>
+				</WeaponConfiguration>
+				
+				<!--Artillery|Cannon-->
+				<WeaponConfiguration id="sax_mech_artillery_cannon">
+					<!--Shot Information-->
+						<AmmoConfigurationId>SaxArtilleryGrenade</AmmoConfigurationId>
+						<Height>1</Height>
+						<BurstSize>1</BurstSize>
+						<BurstDelay>0</BurstDelay>
+					
+					<!--Hitsystem-->
+						<IgnoreLOS>True</IgnoreLOS>
+						<ConeAngleDegree>90</ConeAngleDegree>
+					
+					<!--Cooldowns-->
+						<Cooldown>72</Cooldown>
+					
+					<!--Ranges-->
+						<Range>80</Range>
+						<MinimumRange>15</MinimumRange>
+						<AttackRange>75</AttackRange>
+					
+					<!--Delay-->
+						<AttackDelay>0</AttackDelay>
+
+				  <!--Noise-->
+				  <ShotNoiseRange>45</ShotNoiseRange>
+				  <ImpactNoiseRange>45</ImpactNoiseRange>
+				  
+				  <!--Show an indicator for when the weapon can fire again-->
+				  <ShowReloadIndicator>True</ShowReloadIndicator>
+				</WeaponConfiguration>
+
+				<WeaponConfiguration id="sax_mech_artillery_flare">
+					<!--Shot Information-->
+						<AmmoConfigurationId>Flare</AmmoConfigurationId>
+						<Height>1</Height>
+						<BurstSize>1</BurstSize>
+						<BurstDelay>0</BurstDelay>
+					
+					<!--Hitsystem-->
+						<IgnoreLOS>True</IgnoreLOS>
+						<ConeAngleDegree>90</ConeAngleDegree>
+					
+					<!--Cooldowns-->
+						<Cooldown>360</Cooldown>
+					
+					<!--Ranges-->
+						<Range>100</Range>
+						<MinimumRange>15</MinimumRange>
+					
+					<!--Delay-->
+						<AttackDelay>0</AttackDelay>
+
+				  <!--Noise-->
+				  <ShotNoiseRange>10</ShotNoiseRange>
+				  <ImpactNoiseRange>10</ImpactNoiseRange>
+				</WeaponConfiguration>
+							
+				<!--Kaiser|Cannon-->
+				<WeaponConfiguration id="sax_mech_gunfort_cannon">
+					<!--Shot Information-->
+					<AmmoConfigurationId>KaiserShell</AmmoConfigurationId>
+					<Height>5.0</Height>
+					<BurstSize>1</BurstSize>
+					<BurstDelay>0</BurstDelay>
+
+					<!--Hitsystem-->
+					<ConeAngleDegree>30</ConeAngleDegree>
+					<SpreadWidth>5</SpreadWidth>
+					<SpreadHeight>3</SpreadHeight>
+
+					<!--Cooldowns-->
+					<Cooldown>56</Cooldown>
+
+					<!--Ranges-->
+					<AttackRange>35</AttackRange>
+					<Range>40</Range>
+					<ProjectileRange>75</ProjectileRange>
+
+					<!--Splash-->
+					<SplashRadius>4</SplashRadius>
+					<SplashAmmoConfigurationId>KaiserSplash</SplashAmmoConfigurationId>
+
+					<!--Supression-->
+					<Suppression>25</Suppression>
+					<SuppressionZoneFull>1</SuppressionZoneFull>
+					<SuppressionZoneZero>2</SuppressionZoneZero>
+
+					<!--Delay-->
+					<AttackDelay>0</AttackDelay>
+					<LeadingTime>1.5</LeadingTime>
+
+				  <!--Noise-->
+				  <ShotNoiseRange>55</ShotNoiseRange>
+				  <ImpactNoiseRange>45</ImpactNoiseRange>
+				  
+				  <!--Show an indicator for when the weapon can fire again-->
+				  <ShowReloadIndicator>True</ShowReloadIndicator>
+				</WeaponConfiguration>
+
+				<!--Kaiser|MG-->
+				<WeaponConfiguration id="sax_mech_gunfort_mg">
+					<!--Shot Information-->
+					<AmmoConfigurationId>KaiserMgCartridge</AmmoConfigurationId>
+					<Height>1.5</Height>
+					<BurstSize>15</BurstSize>
+					<BurstDelay>1</BurstDelay>
+
+					<!--Hitsystem-->
+					<ConeAngleDegree>80</ConeAngleDegree>
+					<SpreadWidth>2.5</SpreadWidth>
+					<SpreadHeight>1.5</SpreadHeight>
+
+					<!--Cooldowns-->
+					<Cooldown>32</Cooldown>
+
+					<!--Ranges-->
+					<Range>20</Range>
+					<AttackRange>20</AttackRange>
+					<ProjectileRange>25</ProjectileRange>
+
+					<!--Supression-->
+					<Suppression>2</Suppression>
+					<SuppressionZoneFull>2</SuppressionZoneFull>
+					<SuppressionZoneZero>4</SuppressionZoneZero>
+
+					<!--Delay-->
+					<AttackDelay>0</AttackDelay>
+					<LeadingTime>1.5</LeadingTime>
+
+				  <!--Noise-->
+				  <ShotNoiseRange>40</ShotNoiseRange>
+				  <ImpactNoiseRange>20</ImpactNoiseRange>
+				  </WeaponConfiguration>
+				
+				<WeaponConfiguration id="sax_mech_gunfort_mg_F" parentId="sax_mech_gunfort_mg"></WeaponConfiguration>
+				<WeaponConfiguration id="sax_mech_gunfort_mg_R" parentId="sax_mech_gunfort_mg">
+					<!--Shot Information-->
+					<AmmoConfigurationId>KaiserSideMgCartridge</AmmoConfigurationId>
+					<Height>1.5</Height>
+					<BurstSize>10</BurstSize>
+					<BurstDelay>2</BurstDelay>
+
+					<!--Hitsystem-->
+					<ConeAngleDegree>80</ConeAngleDegree>
+					<SpreadWidth>2</SpreadWidth>
+					<SpreadHeight>1.5</SpreadHeight>
+
+					<!--Cooldowns-->
+					<Cooldown>24</Cooldown>
+
+					<!--Ranges-->
+					<Range>20</Range>
+					<AttackRange>20</AttackRange>
+					<ProjectileRange>25</ProjectileRange>
+
+					<!--Supression-->
+					<Suppression>2</Suppression>
+					<SuppressionZoneFull>2</SuppressionZoneFull>
+					<SuppressionZoneZero>2.5</SuppressionZoneZero>
+				</WeaponConfiguration>
+	
+				<WeaponConfiguration id="sax_mech_gunfort_mg_B" parentId="sax_mech_gunfort_mg">
+					<!--Shot Information-->
+					<AmmoConfigurationId>KaiserRearMgCartridge</AmmoConfigurationId>
+					<Height>1.5</Height>
+					<BurstSize>10</BurstSize>
+					<BurstDelay>1</BurstDelay>
+
+					<!--Hitsystem-->
+					<ConeAngleDegree>80</ConeAngleDegree>
+					<SpreadWidth>2.5</SpreadWidth>
+					<SpreadHeight>1.5</SpreadHeight>
+
+					<!--Cooldowns-->
+					<Cooldown>24</Cooldown>
+
+					<!--Ranges-->
+					<Range>20</Range>
+					<AttackRange>20</AttackRange>
+					<ProjectileRange>25</ProjectileRange>
+
+					<!--Supression-->
+					<Suppression>2</Suppression>
+					<SuppressionZoneFull>2</SuppressionZoneFull>
+					<SuppressionZoneZero>4</SuppressionZoneZero>
+				</WeaponConfiguration>
+				<WeaponConfiguration id="sax_mech_gunfort_mg_L" parentId="sax_mech_gunfort_mg_R"></WeaponConfiguration>
+				
+				<!--Mother|Wheel-->
+				<WeaponConfiguration id="sax_mech_mother_wheel" type="spawner">
+					<SpawningUnitConfigurationId>sax_mech_mothersdrone</SpawningUnitConfigurationId>
+					<DirectionOffset>0</DirectionOffset>
+					<!--Shot Information-->
+					<AmmoConfigurationId>MotherWheel</AmmoConfigurationId>
+					<BurstSize>1</BurstSize>
+					<BurstDelay>0</BurstDelay>
+
+					<!--Hitsystem-->
+					<ConeAngleDegree>360</ConeAngleDegree>
+					<IgnoreLOS>True</IgnoreLOS>
+
+					<!--Cooldowns-->
+					<Cooldown>14</Cooldown>
+					<AttackDelay>6</AttackDelay>
+					<ReloadDuration>4</ReloadDuration>
+					<DistanceOffset>0.5</DistanceOffset>
+
+					<!--Ranges-->
+					<AttackRange>40</AttackRange>
+					<Range>40</Range>
+					<ProjectileRange>54</ProjectileRange>
+
+				  <!--Noise-->
+				  <ShotNoiseRange>10</ShotNoiseRange>
+				  <ImpactNoiseRange>45</ImpactNoiseRange>
+				</WeaponConfiguration>
+				
+				<WeaponConfiguration id="sax_mech_mother_wheel_F" parentId="sax_mech_mother_wheel" type="spawner">
+					<DirectionOffset>0</DirectionOffset>
+				</WeaponConfiguration>
+				<WeaponConfiguration id="sax_mech_mother_wheel_FL" parentId="sax_mech_mother_wheel" type="spawner">
+					<DirectionOffset>-72</DirectionOffset>
+				</WeaponConfiguration>
+				<WeaponConfiguration id="sax_mech_mother_wheel_FR" parentId="sax_mech_mother_wheel" type="spawner">
+					<DirectionOffset>72</DirectionOffset>
+				</WeaponConfiguration>
+				<WeaponConfiguration id="sax_mech_mother_wheel_BL" parentId="sax_mech_mother_wheel" type="spawner">
+					<DirectionOffset>-144</DirectionOffset>
+				</WeaponConfiguration>
+				<WeaponConfiguration id="sax_mech_mother_wheel_BR" parentId="sax_mech_mother_wheel" type="spawner">
+					<DirectionOffset>144</DirectionOffset>
+				</WeaponConfiguration>
+				
+				<!--MothersDrone|SelfDestruct-->
+				<WeaponConfiguration id="sax_mech_mothersdrone_selfdestruct">
+					<!--Shot Information-->
+					<AmmoConfigurationId>MotherWheel</AmmoConfigurationId>
+					<BurstSize>1</BurstSize>
+					<BurstDelay>0</BurstDelay>
+
+					<!--Hitsystem-->
+					<ConeAngleDegree>360</ConeAngleDegree>
+					<IgnoreLOS>True</IgnoreLOS>
+
+					<!--Cooldowns-->
+					<Cooldown>10</Cooldown>
+
+					<!--Ranges-->
+					<AttackRange>3</AttackRange>
+					<Range>3</Range>
+
+				  <!--Noise-->
+				  <ShotNoiseRange>10</ShotNoiseRange>
+				  <ImpactNoiseRange>45</ImpactNoiseRange>
+				</WeaponConfiguration>
+				
+	<!--Melee-->
+	
+				<!--Breacher|Melee-->
+				<WeaponConfiguration id="sax_soldier_mortar_melee">
+				<!--Shot Information-->
+					<AmmoConfigurationId>BreacherMelee</AmmoConfigurationId>
+					<Height>4</Height>
+					<BurstSize>1</BurstSize>
+					<BurstDelay>0</BurstDelay>
+					
+				<!--Hitsystem-->
+					<ConeAngleDegree>30</ConeAngleDegree>
+					<SpreadWidth>2</SpreadWidth>
+					<SpreadHeight>2</SpreadHeight>
+					
+				<!--Cooldowns-->
+					<Cooldown>40</Cooldown>
+					
+				<!--Ranges-->
+					<Range>2</Range>
+				
+				<!--Supression-->
+					<Suppression>25</Suppression>
+					<SuppressionZoneFull>1</SuppressionZoneFull>
+					<SuppressionZoneZero>2</SuppressionZoneZero>
+				
+				<!--Delay-->
+					<AttackDelay>0</AttackDelay>
+
+				  <!--Noise-->
+				  <ShotNoiseRange>10</ShotNoiseRange>
+				  <ImpactNoiseRange>10</ImpactNoiseRange>
+			</WeaponConfiguration>
+
+	<!--Abilities-->		
+
+				<!--Gatling|Sweep-->
+				<WeaponConfiguration id="sax_mech_gatling_sweep">
+					<!--Shot Information-->
+						<AmmoConfigurationId>GatlingCartridge</AmmoConfigurationId>
+						<Height>1.5</Height>
+						<BurstSize>50</BurstSize>
+						<BurstDelay>0.45</BurstDelay>
+					
+					<!--Hitsystem-->
+						<ConeAngleDegree>90</ConeAngleDegree>
+						<SpreadWidth>1</SpreadWidth>
+						<SpreadHeight>1</SpreadHeight>
+					
+					<!--Cooldowns-->
+						<Cooldown>480</Cooldown>
+					
+					<!--Ranges-->
+						<Range>26</Range>
+						<AttackRange>10</AttackRange>
+					
+					<!--Supression-->
+						<Suppression>1</Suppression>
+						<SuppressionZoneFull>1</SuppressionZoneFull>
+						<SuppressionZoneZero>2</SuppressionZoneZero>
+					
+					<!--Delay-->
+						<AttackDelay>0</AttackDelay>
+
+				  <!--Noise-->
+				  <ShotNoiseRange>40</ShotNoiseRange>
+				  <ImpactNoiseRange>20</ImpactNoiseRange>
+				</WeaponConfiguration>
+				
+				<!--Dachs|Rockets-->				
+				<WeaponConfiguration id="sax_mech_dachs_rockets">
+					<!--Shot Information-->
+						<AmmoConfigurationId>DachsRockets</AmmoConfigurationId>
+						<Height>1</Height>	
+						<BurstSize>2</BurstSize>
+						<BurstDelay>4</BurstDelay>
+					
+					<!--Hitsystem-->
+						<IgnoreLOS>True</IgnoreLOS>
+						<ConeAngleDegree>5</ConeAngleDegree>
+					
+					<!--Cooldowns-->
+						<Cooldown>720</Cooldown>
+					
+					<!--Ranges-->
+						<Range>50</Range>
+						<ProjectileRange>60</ProjectileRange>
+						<AttackRange>50</AttackRange>
+					
+					<!--Delay-->
+						<AttackDelay>0</AttackDelay>
+
+				  <!--Noise-->
+				  <ShotNoiseRange>55</ShotNoiseRange>
+				  <ImpactNoiseRange>45</ImpactNoiseRange>
+				</WeaponConfiguration>
+
+				<!--Kaiser|Launcher-->
+				<WeaponConfiguration id="sax_mech_gunfort_launcher">
+					<!--Shot Information-->
+						<AmmoConfigurationId>KaiserRockets</AmmoConfigurationId>
+						<Height>3</Height>
+						<BurstSize>5</BurstSize>
+						<BurstDelay>4</BurstDelay>
+					
+					<!--Hitsystem-->
+						<ConeAngleDegree>30</ConeAngleDegree>
+						<SpreadWidth>1</SpreadWidth>
+						<SpreadHeight>1</SpreadHeight>
+					
+					<!--Cooldowns-->
+						<Cooldown>30</Cooldown>
+					
+					<!--Ranges-->
+						<Range>32</Range>
+						<MinimumRange>3</MinimumRange>	
+						<MeleeRange>5</MeleeRange>
+						<ProjectileRange>42</ProjectileRange>
+						<AttackRange>30</AttackRange>
+					
+					<!--Delay-->
+						<AttackDelay>0</AttackDelay>
+
+				  <!--Noise-->
+				  <ShotNoiseRange>55</ShotNoiseRange>
+				  <ImpactNoiseRange>45</ImpactNoiseRange>
+				</WeaponConfiguration>
+				
+				<WeaponConfiguration id="sax_mech_gunfort_launcher_F" parentId="sax_mech_gunfort_launcher"></WeaponConfiguration>
+				<WeaponConfiguration id="sax_mech_gunfort_launcher_L" parentId="sax_mech_gunfort_launcher"></WeaponConfiguration>
+				<WeaponConfiguration id="sax_mech_gunfort_launcher_R" parentId="sax_mech_gunfort_launcher"></WeaponConfiguration>
+
+				<!--Mother|Grenaderain-->
+				<WeaponConfiguration id="sax_mech_mother_grenaderain">
+					<!--Shot Information-->
+						<AmmoConfigurationId>MotherGrenade</AmmoConfigurationId>
+						<Height>1.5</Height>
+						<BurstSize>20</BurstSize>
+						<BurstDelay>1</BurstDelay>
+					
+					<!--Hitsystem-->
+						<ConeAngleDegree>10</ConeAngleDegree>
+						<SpreadWidth>1</SpreadWidth>
+						<SpreadHeight>1</SpreadHeight>
+					
+					<!--Cooldowns-->
+						<Cooldown>160</Cooldown>
+					
+					<!--Ranges-->
+						<Range>24</Range>
+						<MinimumRange>10</MinimumRange>	
+						<MeleeRange>5</MeleeRange>
+						<AttackRange>22</AttackRange>
+					
+					<!--Delay-->
+						<AttackDelay>0</AttackDelay>
+
+				  <!--Noise-->
+				  <ShotNoiseRange>10</ShotNoiseRange>
+				  <ImpactNoiseRange>45</ImpactNoiseRange>
+				</WeaponConfiguration>
+
+<!-- Rusviet Weapons-->			
+	<!--Ranged-->
+		<!--Infantry-->
+			
+			<!--Rusviet Rifleman|Rifle-->
+			<WeaponConfiguration id="rus_soldier_rifleman_rifle">
+					<!--Shot Information-->
+						<AmmoConfigurationId>ShotgunCartridge</AmmoConfigurationId>
+						<Height>1.5</Height>
+						<BurstSize>10</BurstSize>
+						<BurstDelay>0</BurstDelay>
+						<ConeAngleDegree>160</ConeAngleDegree>
+					
+					<!--Hitsystem-->
+						<SpreadWidth>1</SpreadWidth>
+						<SpreadHeight>1</SpreadHeight>
+					
+					<!--Cooldowns-->
+						<Cooldown>24</Cooldown>
+						<BoostedCooldown>14</BoostedCooldown>
+						<SuppressedCooldown>64</SuppressedCooldown>
+					
+					<!--Ranges-->
+						<Range>16</Range>
+						<AttackRange>12</AttackRange>
+						<MeleeRange>2</MeleeRange>
+						<ProjectileRange>20</ProjectileRange>
+					
+					<!--Splash-->
+					
+					<!--Supression-->
+						<Suppression>1</Suppression>
+						<SuppressionZoneFull>2</SuppressionZoneFull>
+						<SuppressionZoneZero>3</SuppressionZoneZero>
+					
+					<!--Delay-->
+						<AttackDelay>0</AttackDelay>
+
+					<!--Noise-->
+						<ShotNoiseRange>40</ShotNoiseRange>
+						<ImpactNoiseRange>20</ImpactNoiseRange>
+				
+				</WeaponConfiguration>
+			
+		<!--Mechs & Exo-Skeletons-->
+
+			<!--Flamer Mech|Flamer-->
+			<WeaponConfiguration id="rus_mech_flamer_flamer">
+				<!--Shot Information-->
+				<AmmoConfigurationId>MechFlames</AmmoConfigurationId>
+				<Height>2.0</Height>
+				<BurstSize>30</BurstSize>
+				<BurstDelay>1</BurstDelay>
+
+				<!--Hitsystem-->
+				<IgnoreLOS>false</IgnoreLOS>
+				<ConeAngleDegree>45</ConeAngleDegree>	<!--animation support: 50°-->
+
+				<!--Cooldowns-->
+				<Cooldown>40</Cooldown>	<!--Balancing: take special care-->
+
+				<!--Ranges-->
+				<Range>14</Range>
+				<MeleeRange>2</MeleeRange>
+				<AttackRange>12</AttackRange>
+
+				<!--Delay-->
+				<AttackDelay>0</AttackDelay>
+
+				<!--Noise-->
+				<ShotNoiseRange>40</ShotNoiseRange>
+				<ImpactNoiseRange>20</ImpactNoiseRange>
+			
+
+			</WeaponConfiguration>
+				
+			<!--Bomber|Thrower-->
+			<WeaponConfiguration id="rus_mech_bomber_launcher">
+				<!--Shot Information-->
+					<AmmoConfigurationId>BomberGrenade</AmmoConfigurationId>
+					<Height>3.5</Height>
+					<BurstSize>1</BurstSize>
+					<BurstDelay>0</BurstDelay>
+				
+				<!--Hitsystem-->
+					<ConeAngleDegree>120</ConeAngleDegree> <!--animation support: 110°-->
+					<SpreadWidth>1</SpreadWidth>
+					<SpreadHeight>1</SpreadHeight>
+				
+				<!--Cooldowns-->
+					<Cooldown>24</Cooldown>
+				
+				<!--Ranges-->
+					<Range>24</Range>
+					<MeleeRange>5</MeleeRange>
+					<AttackRange>21</AttackRange>
+				
+				<!--Delay-->
+					<AttackDelay>0</AttackDelay>
+
+			  <!--Noise-->
+			  <ShotNoiseRange>45</ShotNoiseRange>
+			  <ImpactNoiseRange>45</ImpactNoiseRange>
+			  
+			  <!--Show an indicator for when the weapon can fire again-->
+			  <ShowReloadIndicator>True</ShowReloadIndicator>
+			</WeaponConfiguration>
+			
+			<!--Revolver|Cannon-->
+			<WeaponConfiguration id="rus_mech_revolver_cannon">
+				<!--Shot Information-->
+					<AmmoConfigurationId>RevolverShell</AmmoConfigurationId>
+					<Height>3</Height>
+					<BurstSize>1</BurstSize>
+					<BurstDelay>0</BurstDelay>
+					
+				<!--Hitsystem-->
+					<ConeAngleDegree>12</ConeAngleDegree> <!--animation support: 14°-->
+					<SpreadWidth>10</SpreadWidth>
+					<SpreadHeight>5</SpreadHeight>
+					
+				<!--Cooldowns-->
+					<Cooldown>0</Cooldown> <!-- Cooldown is handled by ability in Units_01_core "shotDelay" and "abilityShotDelay" in RevolverMechAttackDefinition-->
+				
+				<!--Ranges-->
+					<Range>28</Range>
+					<AttackRange>26</AttackRange>
+					<ProjectileRange>42</ProjectileRange>
+					
+				<!--Splash-->
+					<SplashRadius>3</SplashRadius>
+					<SplashAmmoConfigurationId>RevolverSplash</SplashAmmoConfigurationId>
+			
+				<!--Delay-->
+					<AttackDelay>0</AttackDelay>
+
+			  <!--Noise-->
+			  <ShotNoiseRange>45</ShotNoiseRange>
+			  <ImpactNoiseRange>30</ImpactNoiseRange>
+  
+
+			</WeaponConfiguration>
+
+			<WeaponConfiguration id="rus_mech_revolver_cannon_L" parentId="rus_mech_revolver_cannon"></WeaponConfiguration>
+			<WeaponConfiguration id="rus_mech_revolver_cannon_LM" parentId="rus_mech_revolver_cannon"></WeaponConfiguration>
+			<WeaponConfiguration id="rus_mech_revolver_cannon_RM" parentId="rus_mech_revolver_cannon"></WeaponConfiguration>
+			<WeaponConfiguration id="rus_mech_revolver_cannon_R" parentId="rus_mech_revolver_cannon"></WeaponConfiguration>
+			
+			<!--Rocket Artillery|Launcher-->
+			<WeaponConfiguration id="rus_mech_artillery_launcher">
+				<!--Shot Information-->
+					<AmmoConfigurationId>RusArtilleryRocket</AmmoConfigurationId>
+					<Height>3.5</Height>
+					<BurstSize>16</BurstSize>
+					<BurstDelay>3</BurstDelay>
+					<ContinueShotAfterTargetDeath>True</ContinueShotAfterTargetDeath>
+				
+				<!--Hitsystem-->
+					<ConeAngleDegree>10</ConeAngleDegree>
+					<SpreadWidth>1</SpreadWidth>
+					<SpreadHeight>1</SpreadHeight>
+					<IgnoreLOS>true</IgnoreLOS>					
+				
+				<!--Cooldowns-->
+					<Cooldown>240</Cooldown>
+				
+				<!--Ranges-->
+					<Range>60</Range>
+					<MinimumRange>10</MinimumRange>	
+					<MeleeRange>5</MeleeRange>
+					<AttackRange>57</AttackRange>
+				
+				<!--Delay-->
+					<AttackDelay>0</AttackDelay>
+
+			  <!--Noise-->
+			  <ShotNoiseRange>45</ShotNoiseRange>
+			  <ImpactNoiseRange>45</ImpactNoiseRange>
+			  
+			  <!--Show an indicator for when the weapon can fire again-->
+			  <ShowReloadIndicator>True</ShowReloadIndicator>
+			</WeaponConfiguration>
+
+			<!--Rocket Artillery|Launcher-->
+			<WeaponConfiguration id="rus_mech_artillery_sentry_launcher">
+				<!--Shot Information-->
+					<AmmoConfigurationId>RusArtillerySentryRocket</AmmoConfigurationId>
+					<Height>3.5</Height>
+					<BurstSize>1</BurstSize>
+				
+				<!--Hitsystem-->
+					<ConeAngleDegree>10</ConeAngleDegree>
+					<SpreadWidth>1</SpreadWidth>
+					<SpreadHeight>1</SpreadHeight>
+					<IgnoreLOS>true</IgnoreLOS>					
+				
+				<!--Cooldowns-->
+					<Cooldown>4</Cooldown>
+				
+				<!--Ranges-->
+					<Range>60</Range>
+					<MinimumRange>10</MinimumRange>	
+					<MeleeRange>5</MeleeRange>
+					<AttackRange>57</AttackRange>
+				
+				<!--Delay-->
+					<AttackDelay>0</AttackDelay>
+
+			  <!--Noise-->
+			  <ShotNoiseRange>45</ShotNoiseRange>
+			  <ImpactNoiseRange>45</ImpactNoiseRange>
+			</WeaponConfiguration>
+
+			<!--Scythe|MG-->
+			<WeaponConfiguration id="rus_mech_scythe_mg">
+
+				<!--Shot Information-->
+				<AmmoConfigurationId>LMGCartridge</AmmoConfigurationId>
+				<Height>3.5</Height>
+				<BurstSize>15</BurstSize>
+				<BurstDelay>1</BurstDelay>
+
+				<!--Hitsystem-->
+				<ConeAngleDegree>140</ConeAngleDegree> <!--animation support: 140°-->
+				<SpreadWidth>3.5</SpreadWidth>
+				<SpreadHeight>1.5</SpreadHeight>
+
+				<!--Cooldowns-->
+				<Cooldown>24</Cooldown>
+				<BoostedCooldown>16</BoostedCooldown>
+
+				<!--Ranges-->
+				<AttackRange>20</AttackRange>
+				<Range>20</Range>
+				<ProjectileRange>25</ProjectileRange>
+
+				<!--Supression-->
+				<Suppression>0.5</Suppression>
+				<SuppressionZoneFull>2</SuppressionZoneFull>
+				<SuppressionZoneZero>4</SuppressionZoneZero>
+
+				<!--Delay-->
+				<AttackDelay>0</AttackDelay>
+
+				<!--Noise-->
+				<ShotNoiseRange>40</ShotNoiseRange>
+				<ImpactNoiseRange>20</ImpactNoiseRange>
+				
+			</WeaponConfiguration>
+
+			<WeaponConfiguration id="rus_mech_scythe_warcry">
+				<Suppression>100</Suppression>
+				<SuppressionZoneFull>1</SuppressionZoneFull>
+				<SuppressionZoneZero>2</SuppressionZoneZero>
+			</WeaponConfiguration>
+			
+			<!--Gunfort|Cannon-->
+			<WeaponConfiguration id="rus_mech_gunfort_cannon">
+				<!--Shot Information-->
+				<AmmoConfigurationId>GunfortShell</AmmoConfigurationId>
+				<Height>5</Height>
+				<BurstSize>1</BurstSize>
+				<BurstDelay>0</BurstDelay>
+
+				<!--Hitsystem-->
+				<ConeAngleDegree>90</ConeAngleDegree> <!--animation support: 90°-->
+				<SpreadWidth>7.5</SpreadWidth>
+				<SpreadHeight>3.5</SpreadHeight>
+
+				<!--Cooldowns-->
+				<Cooldown>20</Cooldown>
+
+				<!--Ranges-->
+				<AttackRange>35</AttackRange>
+				<Range>40</Range>
+				<ProjectileRange>52</ProjectileRange>
+
+				<!--Splash-->
+				<SplashRadius>3</SplashRadius>
+				<SplashAmmoConfigurationId>MediumSplash</SplashAmmoConfigurationId>
+
+				<!--Supression-->
+				<Suppression>25</Suppression>
+				<SuppressionZoneFull>1</SuppressionZoneFull>
+				<SuppressionZoneZero>2</SuppressionZoneZero>
+
+				<!--Delay-->
+				<AttackDelay>0</AttackDelay>
+				<LeadingTime>1.5</LeadingTime>
+
+			  <!--Noise-->
+			  <ShotNoiseRange>55</ShotNoiseRange>
+			  <ImpactNoiseRange>45</ImpactNoiseRange>
+			  
+			  <!--Show an indicator for when the weapon can fire again-->
+			  <ShowReloadIndicator>True</ShowReloadIndicator>
+		  </WeaponConfiguration>
+
+			<!--Gunfort|MG-->
+			<WeaponConfiguration id="rus_mech_gunfort_mg">
+				<!--Shot Information-->
+				<AmmoConfigurationId>GunfortMgCartridge</AmmoConfigurationId>
+				<Height>1.5</Height>
+				<BurstSize>15</BurstSize>
+				<BurstDelay>1</BurstDelay>
+
+				<!--Hitsystem-->
+				<ConeAngleDegree>80</ConeAngleDegree>
+				<SpreadWidth>2.5</SpreadWidth>
+				<SpreadHeight>1.5</SpreadHeight>
+
+				<!--Cooldowns-->
+				<Cooldown>24</Cooldown>
+
+				<!--Ranges-->
+				<AttackRange>20</AttackRange>
+				<Range>20</Range>
+				<ProjectileRange>25</ProjectileRange>
+
+				<!--Supression-->
+				<Suppression>2</Suppression>
+				<SuppressionZoneFull>2</SuppressionZoneFull>
+				<SuppressionZoneZero>4</SuppressionZoneZero>
+
+				<!--Delay-->
+				<AttackDelay>0</AttackDelay>
+				<LeadingTime>1.5</LeadingTime>
+
+			  <!--Noise-->
+			  <ShotNoiseRange>40</ShotNoiseRange>
+			  <ImpactNoiseRange>20</ImpactNoiseRange>
+		  </WeaponConfiguration>
+
+			<WeaponConfiguration id="rus_mech_gunfort_mg_F" parentId="rus_mech_gunfort_mg"></WeaponConfiguration>
+			<WeaponConfiguration id="rus_mech_gunfort_mg_BL" parentId="rus_mech_gunfort_mg"></WeaponConfiguration>
+			<WeaponConfiguration id="rus_mech_gunfort_mg_BR" parentId="rus_mech_gunfort_mg"></WeaponConfiguration>
+
+	<!--Melee-->
+	
+		<!--Shock Troops|Blade-->
+		<WeaponConfiguration id="rus_soldier_exo_melee">
+			<AmmoConfigurationId>ShockTroopBlade</AmmoConfigurationId>
+			<Height>1</Height>
+			<BurstSize>1</BurstSize>
+			<BurstDelay>0</BurstDelay>
+
+			<!--Cooldowns-->
+			<Cooldown>24</Cooldown>
+				
+			<!--Ranges-->
+			<Range>2</Range>
+
+			<!--Hitsystem-->
+			<ConeAngleDegree>30</ConeAngleDegree>
+			<SpreadWidth>2</SpreadWidth>
+			<SpreadHeight>2</SpreadHeight>
+
+			<!--Noise-->
+			<ShotNoiseRange>10</ShotNoiseRange>
+			<ImpactNoiseRange>10</ImpactNoiseRange>
+   		 </WeaponConfiguration>
+		 <WeaponConfiguration id="rus_soldier_exo_melee1" parentId="rus_soldier_exo_melee"></WeaponConfiguration>
+		 <WeaponConfiguration id="rus_soldier_exo_melee2" parentId="rus_soldier_exo_melee"></WeaponConfiguration>
+
+		<!--Scythe|Melee-->
+		<WeaponConfiguration id="rus_mech_scythe_melee">
+				<!--Shot Information-->
+					<AmmoConfigurationId>ScytheMelee</AmmoConfigurationId>
+					<Height>4</Height>
+					<BurstSize>1</BurstSize>
+					<BurstDelay>0</BurstDelay>
+						
+				<!--Hitsystem-->
+					<ConeAngleDegree>30</ConeAngleDegree>
+					<SpreadWidth>2</SpreadWidth>
+					<SpreadHeight>2</SpreadHeight>
+
+				<!--Splash-->
+					<SplashRadius>1.5</SplashRadius>
+					<SplashAmmoConfigurationId>ScytheMelee</SplashAmmoConfigurationId>
+						
+				<!--Cooldowns-->
+					<Cooldown>24</Cooldown>
+						
+				<!--Ranges-->
+					<Range>10</Range>
+					
+				<!--Supression-->
+					<Suppression>25</Suppression>
+					<SuppressionZoneFull>1</SuppressionZoneFull>
+					<SuppressionZoneZero>2</SuppressionZoneZero>
+					
+				<!--Delay-->
+					<AttackDelay>0</AttackDelay>
+
+			<!--Noise-->
+			<ShotNoiseRange>10</ShotNoiseRange>
+			<ImpactNoiseRange>10</ImpactNoiseRange>
+			</WeaponConfiguration>
+
+	
+	<!--Abilities-->
+
+			<!--Shock Troop Jump-->
+			<WeaponConfiguration id="rus_soldier_exo_jump">
+				<!--Shot Information-->
+				<AmmoConfigurationId>JumpPack</AmmoConfigurationId>
+				<Height>4</Height>
+				<BurstSize>1</BurstSize>
+				<BurstDelay>0</BurstDelay>
+
+				<!--Hitsystem-->
+				<ConeAngleDegree>1</ConeAngleDegree>
+				<SpreadWidth>2</SpreadWidth>
+				<SpreadHeight>2</SpreadHeight>
+
+				<!--Cooldowns-->
+				<!--cd can be set in ability config in Units_01_Core.xml-->
+
+				<!--Ranges-->
+				<Range>20</Range>
+
+				<!--Delay-->
+				<AttackDelay>0</AttackDelay>
+
+				<!--Noise-->
+				<ShotNoiseRange>55</ShotNoiseRange>
+				<ImpactNoiseRange>45</ImpactNoiseRange>
+			</WeaponConfiguration>
+	
+			<!--Bomber|Axial-->
+			<WeaponConfiguration id="rus_mech_bomber_axial">
+				<!--Shot Information-->
+					<AmmoConfigurationId>BomberGrenade</AmmoConfigurationId>
+					<Height>1.5</Height>
+					<BurstSize>1</BurstSize>
+					<BurstDelay>0</BurstDelay>
+				
+				<!--Hitsystem-->
+					<ConeAngleDegree>120</ConeAngleDegree> <!--animation support: 110°-->
+					<SpreadWidth>1</SpreadWidth>
+					<SpreadHeight>1</SpreadHeight>
+				
+				<!--Cooldowns-->
+					<Cooldown>32</Cooldown>
+				
+				<!--Ranges-->
+					<Range>34</Range>
+					<MeleeRange>5</MeleeRange>
+					<AttackRange>33</AttackRange>
+					<ProjectileRange>38</ProjectileRange>
+				
+				<!--Delay-->
+					<AttackDelay>0</AttackDelay>
+
+			  <!--Noise-->
+			  <ShotNoiseRange>45</ShotNoiseRange>
+			  <ImpactNoiseRange>45</ImpactNoiseRange>
+			</WeaponConfiguration>
+			
+			<!--Flamer Mech|Framing-->	
+			<WeaponConfiguration id="rus_mech_flamer_framing">
+				<!--Shot Information-->
+					<AmmoConfigurationId>MechFrameFlames</AmmoConfigurationId>
+					<Height>1.5</Height>	
+					<BurstSize>30</BurstSize>
+					<BurstDelay>1</BurstDelay>
+					
+				<!--Hitsystem-->
+					<IgnoreLOS>false</IgnoreLOS>
+					<ConeAngleDegree>50</ConeAngleDegree> <!--animation support: 50° probably-->
+					
+				<!--Cooldowns-->
+					<Cooldown>40</Cooldown>  <!--Balancing: take special care-->
+					
+				<!--Ranges-->
+					<Range>24</Range>
+					<AttackRange>23</AttackRange>
+					<MeleeRange>2</MeleeRange>
+								
+				<!--Delay-->
+					<AttackDelay>0</AttackDelay>
+
+			  <!--Noise-->
+			  <ShotNoiseRange>40</ShotNoiseRange>
+			  <ImpactNoiseRange>20</ImpactNoiseRange>
+			</WeaponConfiguration>
+			
+			<!--Revolver|Barrage-->
+			<WeaponConfiguration id="rus_mech_revolver_barrage">
+					<!--Shot Information-->
+						<AmmoConfigurationId>RevolverShell</AmmoConfigurationId>
+						<Height>1.5</Height>
+						<BurstSize>4</BurstSize> <!--or the amount of loaded shells if it gets implemented that way-->
+						<BurstDelay>0</BurstDelay>
+
+					<!--Hitsystem-->
+						<ConeAngleDegree>12</ConeAngleDegree> <!--animation support: 14°-->
+						<SpreadWidth>1.8</SpreadWidth>
+						<SpreadHeight>1.8</SpreadHeight>
+
+					<!--Cooldowns-->
+						<Cooldown>240</Cooldown>
+
+					<!--Ranges-->
+						<Range>32</Range>
+						<AttackRange>30</AttackRange>
+						<ProjectileRange>42</ProjectileRange>
+		
+					<!--Splash-->
+						<SplashRadius>2</SplashRadius>
+						<SplashAmmoConfigurationId>TankSplash</SplashAmmoConfigurationId>
+		
+					<!--Delay-->
+						<AttackDelay>0</AttackDelay>
+
+			    <!--Noise-->
+			    <ShotNoiseRange>45</ShotNoiseRange>
+			    <ImpactNoiseRange>30</ImpactNoiseRange>
+				</WeaponConfiguration>
+				
+			<!--Gunfort|Demolisher-->				
+			<WeaponConfiguration id="rus_mech_gunfort_demolisher">
+					<!--Shot Information-->
+						<AmmoConfigurationId>GunfortDemolisherGrenade</AmmoConfigurationId>
+						<Height>5.5</Height>	
+						<BurstSize>1</BurstSize>
+						<BurstDelay>0</BurstDelay>
+					
+					<!--Hitsystem-->
+						<IgnoreLOS>True</IgnoreLOS>
+						<ConeAngleDegree>5</ConeAngleDegree> <!--animation support: 0°-->
+					
+					<!--Cooldowns-->
+						<Cooldown>720</Cooldown>
+					
+					<!--Ranges-->
+						<Range>28</Range>
+						<AttackRange>28</AttackRange>
+						<ProjectileRange>38</ProjectileRange>
+					
+					<!--Delay-->
+						<AttackDelay>6</AttackDelay>
+
+			    <!--Noise-->
+			    <ShotNoiseRange>55</ShotNoiseRange>
+			    <ImpactNoiseRange>45</ImpactNoiseRange>
+				</WeaponConfiguration>	
+
+<!--Weapon Systems-->
+      
+			<!--Weapon System Cannon|Cannon System-->
+			<WeaponConfiguration id="com_support_cannon_cannon">
+				<!--Shot Information-->
+				<AmmoConfigurationId>HeavyCannonShell</AmmoConfigurationId>
+				<Height>1.5</Height>
+				<BurstSize>1</BurstSize>
+				<BurstDelay>0</BurstDelay>
+
+				<!--Hitsystem-->
+				<ConeAngleDegree>60</ConeAngleDegree>
+				<SpreadWidth>4.5</SpreadWidth>
+				<SpreadHeight>3.5</SpreadHeight>
+
+				<!--Cooldowns-->
+				<Cooldown>48</Cooldown>
+
+				<!--Ranges-->
+				<AttackRange>40</AttackRange>
+				<ProjectileRange>55</ProjectileRange>
+				<Range>45</Range>
+
+				<!--Splash-->
+				<SplashRadius>2</SplashRadius>
+				<SplashAmmoConfigurationId>MediumSplash</SplashAmmoConfigurationId>
+
+				<!--Supression-->
+				<Suppression>25</Suppression>
+				<SuppressionZoneFull>1</SuppressionZoneFull>
+				<SuppressionZoneZero>2</SuppressionZoneZero>
+
+				<!--Delay-->
+				<AttackDelay>0</AttackDelay>
+				<LeadingTime>1.5</LeadingTime>
+
+			  <!--Noise-->
+			  <ShotNoiseRange>45</ShotNoiseRange>
+			  <ImpactNoiseRange>30</ImpactNoiseRange>
+			  <!--Show an indicator for when the weapon can fire again-->
+			  <ShowReloadIndicator>True</ShowReloadIndicator>
+			  
+			</WeaponConfiguration>
+
+			<!--Weapon System MG || mg system-->
+			<WeaponConfiguration id="com_support_mg_mg">
+				<!--Shot Information-->
+				<AmmoConfigurationId>HMGCartridge</AmmoConfigurationId>
+				<Height>1.5</Height>
+				<BurstSize>15</BurstSize>
+				<BurstDelay>1</BurstDelay>
+
+				<!--Hitsystem-->
+				<ConeAngleDegree>80</ConeAngleDegree>
+				<SpreadWidth>2.5</SpreadWidth>
+				<SpreadHeight>1.5</SpreadHeight>
+
+				<!--Cooldowns-->
+				<Cooldown>18</Cooldown>
+
+				<!--Ranges-->
+				<AttackRange>28</AttackRange>
+				<Range>34</Range>
+				<ProjectileRange>45</ProjectileRange>
+				<NearSuppressionDistance>13</NearSuppressionDistance>
+
+				<!--Supression-->
+				<Suppression>10</Suppression>
+				<SuppressionZoneFull>3</SuppressionZoneFull>
+				<SuppressionZoneZero>5</SuppressionZoneZero>
+				<NearSuppression>15</NearSuppression>
+
+				<!--Delay-->
+				<AttackDelay>0</AttackDelay>
+				<LeadingTime>1.5</LeadingTime>
+				
+				<!--Noise-->
+					<ShotNoiseRange>40</ShotNoiseRange>
+					<ImpactNoiseRange>20</ImpactNoiseRange>
+			  </WeaponConfiguration>
+
+			<!--Weapon System Mortar-->
+			<WeaponConfiguration id="com_support_mortar_mortar">
+			
+				<!--Shot Information-->
+					<AmmoConfigurationId>MortarSystemGrenade</AmmoConfigurationId>
+					<Height>1</Height>
+					<BurstSize>1</BurstSize>
+					<BurstDelay>0</BurstDelay>
+
+				<!--Hitsystem-->
+					<IgnoreLOS>True</IgnoreLOS>
+					<ConeAngleDegree>90</ConeAngleDegree>
+
+				<!--Cooldowns-->
+					<Cooldown>64</Cooldown>
+
+				<!--Ranges-->
+					<Range>50</Range>
+					<AttackRange>45</AttackRange>
+					<MinimumRange>12</MinimumRange>
+
+				<!--Delay-->
+					<AttackDelay>0</AttackDelay>
+
+				<!--Noise-->
+					<ShotNoiseRange>45</ShotNoiseRange>
+					<ImpactNoiseRange>45</ImpactNoiseRange>
+					
+				<!--Show an indicator for when the weapon can fire again-->
+				<ShowReloadIndicator>True</ShowReloadIndicator>
+		  </WeaponConfiguration>
+			
+			<!--Weapon System 88-->
+			<WeaponConfiguration id="com_support_destroyer_cannon">
+				<!--Shot Information-->
+				<AmmoConfigurationId>UltraHeavyCannonShell</AmmoConfigurationId>
+				<Height>2.5</Height>
+				<BurstSize>1</BurstSize>
+				<BurstDelay>0</BurstDelay>
+				<IgnoreLOS>True</IgnoreLOS> <!--this is a very hacky way to configure this, since the ammunition does not actually ignore LineOfSight. But is was the current desired Behaviour...-->
+
+				<!--Hitsystem-->
+				<ConeAngleDegree>30</ConeAngleDegree>
+				<SpreadWidth>3.5</SpreadWidth>
+				<SpreadHeight>3.5</SpreadHeight>
+				<TurretRotationSpeed>15</TurretRotationSpeed>
+				<MaxRotationAngleDegree>90</MaxRotationAngleDegree>
+
+				<!--Cooldowns-->
+				<Cooldown>72</Cooldown>
+
+				<!--Ranges-->
+				<AttackRange>120</AttackRange>
+				<Range>120</Range>
+				<MinimumRange>30</MinimumRange>
+				<ProjectileRange>130</ProjectileRange>
+
+				<!--Splash-->
+				<SplashRadius>7</SplashRadius>
+				<SplashAmmoConfigurationId>UltraHeavySplash</SplashAmmoConfigurationId>
+
+				<!--Supression-->
+				<Suppression>25</Suppression>
+				<SuppressionZoneFull>1</SuppressionZoneFull>
+				<SuppressionZoneZero>2</SuppressionZoneZero>
+
+				<!--Delay-->
+				<AttackDelay>0</AttackDelay>
+				<LeadingTime>1.5</LeadingTime>
+
+			  <!--Noise-->
+			  <ShotNoiseRange>45</ShotNoiseRange>
+			  <ImpactNoiseRange>30</ImpactNoiseRange>
+			  
+			  <!--Show an indicator for when the weapon can fire again-->
+			  <ShowReloadIndicator>True</ShowReloadIndicator>
+			  </WeaponConfiguration>
+			
+<!-- Tesla Weapons-->
+	<!--Ranged-->
+		<!--Infantry-->
+			
+			<!--Tesla Walker|Rifle-->
+			<WeaponConfiguration id="tes_soldier_walker_rifle">
+				<!--Shot Information-->
+					<AmmoConfigurationId>WalkerRifleCartridge</AmmoConfigurationId>
+					<Height>2</Height>
+					<BurstSize>1</BurstSize>
+					<BurstDelay>0</BurstDelay>
+
+				<!--Hitsystem-->
+					<SpreadWidth>1.0</SpreadWidth>
+					<SpreadHeight>1.0</SpreadHeight>
+					<ConeAngleDegree>5</ConeAngleDegree>
+
+				<!--Cooldowns-->
+					<Cooldown>16</Cooldown>
+
+				<!--Ranges-->
+					<Range>26</Range>
+					<AttackRange>23</AttackRange>
+					<ProjectileRange>32</ProjectileRange>
+					<MeleeRange>2</MeleeRange>
+					
+				<!--Supression-->
+					<Suppression>15</Suppression>
+					<SuppressionZoneFull>1</SuppressionZoneFull>
+					<SuppressionZoneZero>2</SuppressionZoneZero>
+						
+				<!--Delay-->
+					<AttackDelay>0</AttackDelay>
+
+			  <!--Noise-->
+			  <ShotNoiseRange>40</ShotNoiseRange>
+			  <ImpactNoiseRange>20</ImpactNoiseRange>
+			  
+			</WeaponConfiguration>
+
+    <!--Mechs-->
+      <!--Guard Gatling | Mg-->
+      <WeaponConfiguration id="tes_mech_guard_gatling">
+        <!--Shot Information-->
+        <AmmoConfigurationId>GuardGatlingCartridge</AmmoConfigurationId>
+        <Height>1.5</Height>
+        <BurstSize>15</BurstSize>
+        <BurstDelay>1</BurstDelay>
+
+        <!--Hitsystem-->
+        <SpreadWidth>2.5</SpreadWidth>
+        <SpreadHeight>2</SpreadHeight>
+		<ConeAngleDegree>60</ConeAngleDegree>
+
+        <!--Cooldowns-->
+        <Cooldown>24</Cooldown>
+
+        <!--Ranges-->
+        <Range>28</Range>
+        <MeleeRange>5</MeleeRange>
+		<AttackRange>25</AttackRange>
+		<ProjectileRange>40</ProjectileRange>
+
+        <!--Supression-->
+        <Suppression>5</Suppression>
+        <SuppressionZoneFull>1</SuppressionZoneFull>
+        <SuppressionZoneZero>2</SuppressionZoneZero>
+
+        <!--Delay-->
+        <AttackDelay>0</AttackDelay>
+
+        <!--Noise-->
+        <ShotNoiseRange>40</ShotNoiseRange>
+        <ImpactNoiseRange>20</ImpactNoiseRange>
+
+      </WeaponConfiguration>
+  
+	  <WeaponConfiguration id="tes_mech_guard_gatling_L" parentId="tes_mech_guard_gatling"/>
+	  <WeaponConfiguration id="tes_mech_guard_gatling_R" parentId="tes_mech_guard_gatling"/>
+
+      <!--Tesla Guard Rockets | Shocktrap-->
+      <WeaponConfiguration id="tes_mech_guard_rockets">
+        <!--Shot Information-->
+        <AmmoConfigurationId>GuardShocktrapRocket</AmmoConfigurationId>
+        <Height>1.5</Height>
+        <BurstSize>1</BurstSize>
+        <BurstDelay>0</BurstDelay>
+
+        <!--Hitsystem-->
+        <IgnoreLOS>True</IgnoreLOS>
+        <ConeAngleDegree>40</ConeAngleDegree> <!--Can be changed to the value that is possible animation wise-->
+
+        <!--Cooldowns-->
+        <Cooldown>8</Cooldown>
+
+        <!--Ranges-->
+        <Range>25</Range>
+        <MeleeRange>5</MeleeRange>	
+		<AttackRange>25</AttackRange>
+		<ProjectileRange>40</ProjectileRange>
+
+        <!--Supression-->
+        <Suppression>15</Suppression>
+        <SuppressionZoneFull>1</SuppressionZoneFull>
+        <SuppressionZoneZero>2</SuppressionZoneZero>
+
+        <!--Delay-->
+        <AttackDelay>1</AttackDelay>
+
+        <!--Noise-->
+        <ShotNoiseRange>40</ShotNoiseRange>
+        <ImpactNoiseRange>20</ImpactNoiseRange>
+
+      </WeaponConfiguration>
+
+	  <WeaponConfiguration id="tes_mech_guard_rockets_LL" parentId="tes_mech_guard_rockets"/>
+	  <WeaponConfiguration id="tes_mech_guard_rockets_LR" parentId="tes_mech_guard_rockets"/>
+	  <WeaponConfiguration id="tes_mech_guard_rockets_RL" parentId="tes_mech_guard_rockets"/>
+	  <WeaponConfiguration id="tes_mech_guard_rockets_RR" parentId="tes_mech_guard_rockets"/>
+
+      <!--Tesla Guard Lightning| Kugelblitz | Balllightning-->
+      <WeaponConfiguration id="tes_mech_guard_railgun">
+        <!--Shot Information-->
+        <AmmoConfigurationId>GuardRailgunShell</AmmoConfigurationId>
+        <Height>1.5</Height>
+        <BurstSize>1</BurstSize>
+        <BurstDelay>0</BurstDelay>
+
+        <!--Hitsystem-->  <!--Probably receives a special firing pattern-->
+		<IgnoreLOS>False</IgnoreLOS>
+        <ConeAngleDegree>5</ConeAngleDegree>
+        <SpreadWidth>2</SpreadWidth>
+        <SpreadHeight>2</SpreadHeight>
+
+        <!--Cooldowns-->
+        <Cooldown>80</Cooldown>
+
+        <!--Ranges-->
+        <AttackRange>32</AttackRange>
+        <Range>32</Range>
+		<ProjectileRange>40</ProjectileRange>
+
+        <!--Splash-->
+        <SplashRadius>2</SplashRadius>
+        <SplashAmmoConfigurationId>GuardRailgunSplash</SplashAmmoConfigurationId>
+
+        <!--Supression-->
+        <Suppression>25</Suppression>
+        <SuppressionZoneFull>1</SuppressionZoneFull>
+        <SuppressionZoneZero>2</SuppressionZoneZero>
+
+        <!--Delay-->
+        <AttackDelay>1</AttackDelay>
+        <LeadingTime>1.5</LeadingTime>
+
+        <!--Noise-->
+        <ShotNoiseRange>55</ShotNoiseRange>
+        <ImpactNoiseRange>45</ImpactNoiseRange>
+
+      </WeaponConfiguration>
+		
+	<!--Melee-->
+      <!--Tesla Serve Melee | Shocker-->
+      <WeaponConfiguration id="tes_mech_serve_shocker">
+        <AmmoConfigurationId>TesServeMelee</AmmoConfigurationId>
+        <Cooldown>8</Cooldown>
+        <Range>4</Range>
+		<BurstSize>1</BurstSize>
+        <BurstDelay>0</BurstDelay>
+		<ConeAngleDegree>5</ConeAngleDegree>
+		<Height>1.5</Height>
+      </WeaponConfiguration>
+	  
+	  <WeaponConfiguration id="tes_mech_serve_charger" parentId="tes_mech_serve_shocker"/>
+
+	<!--Abilities-->
+
+	<!--Tesla Ikarus Rockets -->
+	<WeaponConfiguration id="tes_mech_ikarus_rockets">
+		<!--Shot Information-->
+			<AmmoConfigurationId>KaiserRockets</AmmoConfigurationId>
+			<Height>3</Height>
+			<BurstSize>14</BurstSize>
+			<BurstDelay>2</BurstDelay>
+		
+		<!--Hitsystem-->
+			<ConeAngleDegree>100</ConeAngleDegree>
+			<SpreadWidth>1</SpreadWidth>
+			<SpreadHeight>1</SpreadHeight>
+		
+		<!--Cooldowns-->
+			<Cooldown>80</Cooldown>
+		
+		<!--Ranges-->
+			<Range>32</Range>
+			<MinimumRange>3</MinimumRange>	
+			<MeleeRange>5</MeleeRange>
+			<ProjectileRange>42</ProjectileRange>
+			<AttackRange>30</AttackRange>
+		
+		<!--Delay-->
+			<AttackDelay>48</AttackDelay>
+
+		<!--Noise-->
+		<ShotNoiseRange>55</ShotNoiseRange>
+		<ImpactNoiseRange>45</ImpactNoiseRange>
+	</WeaponConfiguration>
+
+	<WeaponConfiguration id="tes_mech_ikarus_rockets_F" parentId="tes_mech_ikarus_rockets"/>
+	<WeaponConfiguration id="tes_mech_ikarus_rockets_L" parentId="tes_mech_ikarus_rockets"/>
+	<WeaponConfiguration id="tes_mech_ikarus_rockets_R" parentId="tes_mech_ikarus_rockets"/>
+		
+	<!--Tesla Ikarus Shocktraps -->
+	<WeaponConfiguration id="tes_mech_ikarus_shocktrap_launcher" parentId ="pol_mech_artillery_cannon_siege">
+		<!--Shot Information-->
+			<AmmoConfigurationId>IkarusShocktrapShell</AmmoConfigurationId>
+			<BurstSize>3</BurstSize>
+			<BurstDelay>4</BurstDelay>
+
+		<!--Hitsystem-->
+			<IgnoreLOS>True</IgnoreLOS>
+			<ConeAngleDegree>360</ConeAngleDegree>
+		<!--Cooldowns-->
+			<Cooldown>64</Cooldown>
+
+		<!--Delay-->
+			<AttackDelay>48</AttackDelay>
+
+		<!--Ranges-->
+			<Range>50</Range>
+			<MinimumRange>5</MinimumRange>
+	</WeaponConfiguration>
+
+<!-- Structure Weapons-->
+	<!--Polalia Tier1 Bunker-->
+	<WeaponConfiguration id="pol_structure_t1bunker">
+		<!--Shot Information-->
+			<AmmoConfigurationId>PolBunkerMGCartridge</AmmoConfigurationId>
+			<Height>1.5</Height>
+			<BurstSize>15</BurstSize>
+			<BurstDelay>1</BurstDelay>
+				
+		<!--Hitsystem-->
+			<ConeAngleDegree>70</ConeAngleDegree>	<!--for bunkers, this angle is !only! used to display the attack cone but only when the bunker is built. The construction ghost uses the weapon module angle !times 2! so make sure those values match-->
+			<SpreadWidth>1.5</SpreadWidth>
+			<SpreadHeight>1.5</SpreadHeight>
+				
+		<!--Cooldowns-->
+			<Cooldown>18</Cooldown>
+				
+		<!--Ranges-->
+			<Range>30</Range>
+			<ProjectileRange>38</ProjectileRange>
+			<NearSuppressionDistance>10</NearSuppressionDistance>
+								
+		<!--Supression-->
+			<Suppression>5</Suppression>
+			<SuppressionZoneFull>4</SuppressionZoneFull>
+			<SuppressionZoneZero>6</SuppressionZoneZero>
+			<NearSuppression>7</NearSuppression>
+				
+		<!--Delay-->
+			<AttackDelay>0</AttackDelay>
+
+		<!--Noise-->
+		<ShotNoiseRange>40</ShotNoiseRange>
+		<ImpactNoiseRange>20</ImpactNoiseRange>
+			  
+	</WeaponConfiguration>
+	
+	<!--Saxony Tier 1 Bunker-->
+	<WeaponConfiguration id="sax_structure_t1bunker">
+		<!--Shot Information-->
+		<AmmoConfigurationId>SaxT1BunkerGrenade</AmmoConfigurationId>
+		<Height>1.5</Height>
+		<BurstSize>1</BurstSize>
+		<BurstDelay>0</BurstDelay>
+
+		<!--Hitsystem-->
+		<ConeAngleDegree>70</ConeAngleDegree>	<!--for bunkers, this angle is !only! used to display the attack cone but only when the bunker is built. The construction ghost uses the weapon module angle !times 2! so make sure those values match-->
+		<SpreadWidth>1.5</SpreadWidth>
+		<SpreadHeight>1.5</SpreadHeight>
+
+		<!--Cooldowns-->
+		<Cooldown>8</Cooldown>
+
+		<!--Ranges-->
+		<Range>30</Range>
+		<ProjectileRange>38</ProjectileRange>
+
+		<!--Supression--><!--
+		<Suppression>5</Suppression>
+		<SuppressionZoneFull>4</SuppressionZoneFull>
+		<SuppressionZoneZero>6</SuppressionZoneZero>
+		<NearSuppression>7</NearSuppression>-->
+
+		<!--Delay-->
+		<AttackDelay>0</AttackDelay>
+
+		<!--Noise-->
+		<ShotNoiseRange>40</ShotNoiseRange>
+		<ImpactNoiseRange>20</ImpactNoiseRange>
+
+	</WeaponConfiguration>
+	
+	<!--Rusviet Tier1 Bunker-->
+	<WeaponConfiguration id="rus_structure_t1bunker">
+		<!--Shot Information-->
+		<AmmoConfigurationId>RusBunkerMGCartridge</AmmoConfigurationId>
+		<Height>1.5</Height>
+		<BurstSize>15</BurstSize>
+		<BurstDelay>1</BurstDelay>
+
+		<!--Hitsystem-->
+		<ConeAngleDegree>120</ConeAngleDegree> <!--for bunkers, this angle is !only! used to display the attack cone but only when the bunker is built. The construction ghost uses the weapon module angle !times 2! so make sure those values match-->
+		<SpreadWidth>1.5</SpreadWidth>
+		<SpreadHeight>1.5</SpreadHeight>
+
+		<!--Cooldowns-->
+		<Cooldown>16</Cooldown>
+
+		<!--Ranges-->
+		<Range>30</Range>
+		<ProjectileRange>38</ProjectileRange>
+		<NearSuppressionDistance>10</NearSuppressionDistance>
+
+		<!--Supression-->
+		<Suppression>5</Suppression>
+		<SuppressionZoneFull>4</SuppressionZoneFull>
+		<SuppressionZoneZero>6</SuppressionZoneZero>
+		<NearSuppression>7</NearSuppression>
+
+		<!--Delay-->
+		<AttackDelay>0</AttackDelay>
+
+		<!--Noise-->
+		<ShotNoiseRange>40</ShotNoiseRange>
+		<ImpactNoiseRange>20</ImpactNoiseRange>
+
+	</WeaponConfiguration>
+
+	<!--Polania T2 Bunker Cannon-->
+	<WeaponConfiguration id="pol_structure_t2bunker" parentId="com_support_cannon_cannon">
+		<!--Shot Information-->
+		<AmmoConfigurationId>PolBunkerShell</AmmoConfigurationId>
+		<Height>1.5</Height>
+		<BurstSize>1</BurstSize>
+		<BurstDelay>0</BurstDelay>
+
+		<!--Hitsystem-->
+		<ConeAngleDegree>90</ConeAngleDegree> <!--for bunkers, this angle is !only! used to display the attack cone but only when the bunker is built. The construction ghost uses the weapon module angle !times 2! so make sure those values match-->
+		<SpreadWidth>3.5</SpreadWidth>
+		<SpreadHeight>3.5</SpreadHeight>
+		<TurretRotationSpeed>30</TurretRotationSpeed>
+
+		<!--Cooldowns-->
+		<Cooldown>48</Cooldown>
+
+		<!--Ranges-->
+		<AttackRange>35</AttackRange>
+		<Range>35</Range>
+		<ProjectileRange>47</ProjectileRange>
+
+		<!--Splash-->
+		<SplashRadius>2</SplashRadius>
+		<SplashAmmoConfigurationId>MediumSplash</SplashAmmoConfigurationId>
+	</WeaponConfiguration>
+
+	<!--Saxony T2 Bunker Cannon-->
+	<WeaponConfiguration id="sax_structure_t2bunker" parentId="com_support_cannon_cannon">
+		<!--Shot Information-->
+		<AmmoConfigurationId>SaxT2BunkerGrenade</AmmoConfigurationId>
+		<Height>1.5</Height>
+		<BurstSize>1</BurstSize>
+		<BurstDelay>0</BurstDelay>
+
+		<!--Hitsystem-->
+		<ConeAngleDegree>60</ConeAngleDegree>	<!--for bunkers, this angle is !only! used to display the attack cone but only when the bunker is built. The construction ghost uses the weapon module angle !times 2! so make sure those values match-->
+		<SpreadWidth>3.5</SpreadWidth>
+		<SpreadHeight>3.5</SpreadHeight>
+		<TurretRotationSpeed>30</TurretRotationSpeed>
+
+		<!--Cooldowns-->
+		<Cooldown>40</Cooldown>
+
+		<!--Ranges-->
+		<AttackRange>37</AttackRange>
+		<Range>37</Range>
+		<ProjectileRange>47</ProjectileRange>
+
+		<!--Splash-->
+		<SplashRadius>2</SplashRadius>
+		<SplashAmmoConfigurationId>MediumSplash</SplashAmmoConfigurationId>
+	</WeaponConfiguration>
+
+	<!--Rusviet T2 Bunker Cannon-->
+	<WeaponConfiguration id="rus_structure_t2bunker" parentId="com_support_cannon_cannon">
+		<!--Shot Information-->
+		<AmmoConfigurationId>RusBunkerShell</AmmoConfigurationId>
+		<Height>1.5</Height>
+		<BurstSize>1</BurstSize>
+		<BurstDelay>0</BurstDelay>
+
+		<!--Hitsystem-->
+		<ConeAngleDegree>100</ConeAngleDegree> <!--for bunkers, this angle is !only! used to display the attack cone but only when the bunker is built. The construction ghost uses the weapon module angle !times 2! so make sure those values match-->
+		<SpreadWidth>3.5</SpreadWidth>
+		<SpreadHeight>3.5</SpreadHeight>
+		<TurretRotationSpeed>30</TurretRotationSpeed>
+
+		<!--Cooldowns-->
+		<Cooldown>40</Cooldown>
+
+		<!--Ranges-->
+		<AttackRange>35</AttackRange>
+		<Range>35</Range>
+		<ProjectileRange>47</ProjectileRange>
+
+		<!--Splash-->
+		<SplashRadius>3</SplashRadius>
+		<SplashAmmoConfigurationId>MediumSplash</SplashAmmoConfigurationId>
+	</WeaponConfiguration>
+	
+	
+<!--Hero Weapons-->	
+	<!-- Polania Heroes-->
+		<!--Anna-->
+			
+			<!--Anna|Rifle-->
+			<WeaponConfiguration id="pol_hero_anna_rifle">
+					<!--Shot Information-->
+						<AmmoConfigurationId>Anna_RifleCartridge</AmmoConfigurationId>
+						<Height>1.5</Height>
+						<BurstSize>1</BurstSize>
+						<BurstDelay>0</BurstDelay>
+					
+					<!--Hitsystem-->
+						<ConeAngleDegree>90</ConeAngleDegree>
+						<SpreadWidth>0.5</SpreadWidth>
+						<SpreadHeight>0.5</SpreadHeight>
+					
+					<!--Cooldowns-->
+						<Cooldown>24</Cooldown>
+						<BoostedCooldown>24</BoostedCooldown>
+					
+					<!--Ranges-->
+						<Range>32</Range>
+						<MeleeRange>2</MeleeRange>
+						<AttackRange>30</AttackRange>
+						<ProjectileRange>40</ProjectileRange>
+					
+					<!--Supression-->
+						<Suppression>30</Suppression>
+						<SuppressionZoneFull>1</SuppressionZoneFull>
+						<SuppressionZoneZero>2</SuppressionZoneZero>
+					
+					<!--Delay-->
+						<AttackDelay>0</AttackDelay>
+
+			  <!--Noise-->
+			  <ShotNoiseRange>40</ShotNoiseRange>
+			  <ImpactNoiseRange>20</ImpactNoiseRange>
+			  
+			  <!--Show an indicator for when the weapon can fire again-->
+			  <ShowReloadIndicator>True</ShowReloadIndicator>
+			</WeaponConfiguration>
+			
+  
+			<!--Anna|PowerShot-->
+			<WeaponConfiguration id="pol_hero_anna_rifle_power_shot">
+					<!--Shot Information-->
+						<AmmoConfigurationId>Anna_PowerShotCartridge</AmmoConfigurationId>
+						<Height>1.5</Height>
+						<BurstSize>1</BurstSize>
+						<BurstDelay>0</BurstDelay>
+					
+					<!--Hitsystem-->
+						<ConeAngleDegree>90</ConeAngleDegree>
+						<SpreadWidth>0.1</SpreadWidth>
+						<SpreadHeight>0.1</SpreadHeight>
+					
+					<!--Cooldowns-->
+						<Cooldown>320</Cooldown>
+					
+					<!--Ranges-->
+						<Range>40</Range>
+						<AttackRange>38</AttackRange>
+						<ProjectileRange>50</ProjectileRange>
+						<MeleeRange>2</MeleeRange>
+					
+					<!--Supression-->
+						<Suppression>50</Suppression>
+						<SuppressionZoneFull>1</SuppressionZoneFull>
+						<SuppressionZoneZero>2</SuppressionZoneZero>
+					
+					<!--Delay-->
+						<AttackDelay>0</AttackDelay>
+
+					<!--Noise-->
+						<ShotNoiseRange>40</ShotNoiseRange>
+						<ImpactNoiseRange>20</ImpactNoiseRange>
+			  
+			</WeaponConfiguration>
+
+			<!--Anna|Melee-->
+			<WeaponConfiguration id="pol_hero_anna_melee">
+				<AmmoConfigurationId>Anna_Melee</AmmoConfigurationId>
+				<Cooldown>8</Cooldown>
+				<Range>2</Range>
+
+				<!--Noise-->
+					<ShotNoiseRange>10</ShotNoiseRange>
+					<ImpactNoiseRange>10</ImpactNoiseRange>
+			  
+			  </WeaponConfiguration>
+			
+			<!--Wojtek|Melee-->
+			<WeaponConfiguration id="pol_hero_wojtek_melee">
+				<AmmoConfigurationId>Anna_WojtekMelee</AmmoConfigurationId>
+				<Cooldown>16</Cooldown>
+				<Range>2</Range>
+
+			  <!--Noise-->
+				<ShotNoiseRange>10</ShotNoiseRange>
+			  <ImpactNoiseRange>10</ImpactNoiseRange>
+			  </WeaponConfiguration>
+		
+		<!--Rebel Leader-->
+			
+			<!--Polania Rebel Leader|Cannon-->
+			<WeaponConfiguration id="pol_hero_rebel_cannon">
+				<!--Shot Information-->
+					<AmmoConfigurationId>Rebel_GunShell</AmmoConfigurationId>
+					<Height>4</Height>
+					<BurstSize>1</BurstSize>
+					<BurstDelay>0</BurstDelay>
+							
+				<!--Hitsystem-->
+					<ConeAngleDegree>5</ConeAngleDegree>
+					<SpreadWidth>2</SpreadWidth>
+					<SpreadHeight>2</SpreadHeight>
+							
+				<!--Cooldowns-->
+					<Cooldown>400</Cooldown>
+							
+				<!--Ranges-->
+					<Range>19</Range>
+					<AttackRange>19</AttackRange>
+					<ProjectileRange>22</ProjectileRange>
+							
+				<!--Splash-->
+					<SplashRadius>1</SplashRadius>
+					<SplashAmmoConfigurationId>MediumSplash</SplashAmmoConfigurationId> <!--needs to get its own splash eventually-->
+
+				<!--Supression-->
+					<Suppression>25</Suppression>
+					<SuppressionZoneFull>1</SuppressionZoneFull>
+					<SuppressionZoneZero>2</SuppressionZoneZero>
+							
+				<!--Delay-->
+					<AttackDelay>0</AttackDelay>
+
+				<!--Noise-->
+				  <ShotNoiseRange>45</ShotNoiseRange>
+				  <ImpactNoiseRange>30</ImpactNoiseRange>
+			
+			</WeaponConfiguration>
+
+			<!--Polania Rebel Leader|Melee-->
+			<WeaponConfiguration id="pol_hero_rebel_melee">
+        <!--Shot Information-->
+        <AmmoConfigurationId>Rebel_Melee</AmmoConfigurationId>
+        <Height>4</Height>
+        <BurstSize>1</BurstSize>
+        <BurstDelay>0</BurstDelay>
+		
+        <!--Hitsystem-->
+        <ConeAngleDegree>30</ConeAngleDegree>
+        <SpreadWidth>2</SpreadWidth>
+        <SpreadHeight>2</SpreadHeight>
+
+        <!--Cooldowns-->
+        <Cooldown>32</Cooldown>
+
+        <!--Ranges-->
+				<AttackRange>5</AttackRange>
+        <Range>6</Range>
+
+        <!--Supression-->
+        <Suppression>25</Suppression>
+        <SuppressionZoneFull>1</SuppressionZoneFull>
+        <SuppressionZoneZero>2</SuppressionZoneZero>
+
+        <!--Delay-->
+        <AttackDelay>0</AttackDelay>
+        <PostAttackDelay>0</PostAttackDelay>
+
+			  <!--Noise-->
+			  <ShotNoiseRange>10</ShotNoiseRange>
+			  <ImpactNoiseRange>10</ImpactNoiseRange>
+			  
+      </WeaponConfiguration>
+		<WeaponConfiguration id="pol_hero_rebel_melee_slam" parentId="pol_hero_rebel_melee"><!-- slam -->
+			<ConeAngleDegree>30</ConeAngleDegree>
+			<Range>6</Range>
+			
+			<!--Splash-->
+			<SplashRadius>1.5</SplashRadius>
+			<SplashAmmoConfigurationId>Rebel_Melee</SplashAmmoConfigurationId>
+		</WeaponConfiguration>
+		<WeaponConfiguration id="pol_hero_rebel_melee_stab" parentId="pol_hero_rebel_melee"><!-- stab -->
+			<ConeAngleDegree>30</ConeAngleDegree>
+			<Range>6</Range>
+		</WeaponConfiguration>
+		<WeaponConfiguration id="pol_hero_rebel_melee_swing" parentId="pol_hero_rebel_melee"><!-- swing -->
+			<ConeAngleDegree>90</ConeAngleDegree>
+			<Range>6</Range>
+			<AmmoConfigurationId>Rebel_Melee</AmmoConfigurationId>
+			<!--Splash-->
+			<SplashRadius>1.5</SplashRadius>
+			<SplashAmmoConfigurationId>Rebel_Melee</SplashAmmoConfigurationId>
+		</WeaponConfiguration>
+
+		<WeaponConfiguration id="pol_hero_rebel_melee_swing2" parentId="pol_hero_rebel_melee"><!-- swing -->
+			<ConeAngleDegree>90</ConeAngleDegree>
+			<Range>6</Range>
+			<AmmoConfigurationId>Rebel_Melee</AmmoConfigurationId>
+			<!--Splash-->
+			<SplashRadius>1.5</SplashRadius>
+			<SplashAmmoConfigurationId>Rebel_Melee</SplashAmmoConfigurationId>
+		</WeaponConfiguration>
+
+		<!--Polania Rebel Leader|Charge-->
+		<WeaponConfiguration id="pol_hero_rebel_charge_impact">
+			<!--Shot Information-->
+				<AmmoConfigurationId>Rebel_DashDmg</AmmoConfigurationId>
+				<Height>4</Height>
+				<BurstSize>1</BurstSize>
+				<BurstDelay>0</BurstDelay>
+				
+			<!--Hitsystem-->
+				<ConeAngleDegree>30</ConeAngleDegree>
+				<SpreadWidth>2</SpreadWidth>
+				<SpreadHeight>2</SpreadHeight>
+				
+			<!--Cooldowns-->
+				<Cooldown>400</Cooldown>
+				
+			<!--Ranges-->
+				<Range>10</Range>
+			
+			<!--Supression-->
+				<Suppression>25</Suppression>
+				<SuppressionZoneFull>1</SuppressionZoneFull>
+				<SuppressionZoneZero>2</SuppressionZoneZero>
+			
+			<!--Delay-->
+				<AttackDelay>0</AttackDelay>
+
+			<!--Noise-->
+				<ShotNoiseRange>10</ShotNoiseRange>
+				<ImpactNoiseRange>10</ImpactNoiseRange>
+		
+		</WeaponConfiguration>
+
+		<!--Cavalry Commander-->
+			
+			<!--Cavalry|Rifle-->
+  			<WeaponConfiguration id="pol_hero_cavalry_rifle">
+					<!--Shot Information-->
+						<AmmoConfigurationId>Cav_RifleCartridge</AmmoConfigurationId>
+						<Height>2.0</Height>
+						<BurstSize>1</BurstSize>
+						<BurstDelay>0</BurstDelay>
+					<!--Hitsystem-->
+						<ConeAngleDegree>120</ConeAngleDegree>
+						<SpreadWidth>1.3</SpreadWidth>
+						<SpreadHeight>1.2</SpreadHeight>
+					<!--Cooldowns-->
+						<Cooldown>24</Cooldown>
+						<BoostedCooldown>2</BoostedCooldown>
+					<!--Ranges-->
+						<Range>26</Range>
+						<MeleeRange>2</MeleeRange>
+						<AttackRange>24</AttackRange>
+						<ProjectileRange>32</ProjectileRange>
+					<!--Splash-->
+					
+					<!--Supression-->
+						<Suppression>5</Suppression>
+						<SuppressionZoneFull>1</SuppressionZoneFull>
+						<SuppressionZoneZero>2</SuppressionZoneZero>
+					<!--Delay-->
+						<AttackDelay>0</AttackDelay>
+
+			    <!--Noise-->
+			    <ShotNoiseRange>40</ShotNoiseRange>
+			    <ImpactNoiseRange>20</ImpactNoiseRange>
+				</WeaponConfiguration>
+  
+			<!--Cavalry|Melee-->
+			<WeaponConfiguration id="pol_hero_cavalry_melee">
+				<AmmoConfigurationId>Cav_Melee</AmmoConfigurationId>
+				<Cooldown>8</Cooldown>
+				<Range>2</Range>
+
+			  <!--Noise-->
+			  <ShotNoiseRange>10</ShotNoiseRange>
+			  <ImpactNoiseRange>10</ImpactNoiseRange>
+			  </WeaponConfiguration>
+  
+  			<!--Cavalry|Charge-->
+			<WeaponConfiguration id="pol_hero_cavalry_charge">
+				<AmmoConfigurationId>Cav_ChargeDmg</AmmoConfigurationId>
+				<Cooldown>360</Cooldown>
+				<Range>12</Range>
+
+			  <!--Noise-->
+			  <ShotNoiseRange>10</ShotNoiseRange>
+			  <ImpactNoiseRange>10</ImpactNoiseRange>
+			  </WeaponConfiguration>
+  
+		  	<!--Cavalry|Bomb-->
+			<WeaponConfiguration id="pol_hero_cavalry_bomb">
+				<AmmoConfigurationId>Cav_BombProjectile</AmmoConfigurationId>
+				<Height>1.5</Height>
+				<BurstSize>1</BurstSize>
+				<BurstDelay>0</BurstDelay>
+				<!--Hitsystem-->
+				<ConeAngleDegree>20</ConeAngleDegree>
+				<SpreadWidth>0</SpreadWidth>
+				<SpreadHeight>0</SpreadHeight>
+				<Cooldown>360</Cooldown>
+				<Range>10</Range>			
+
+			  <!--Noise-->
+			  <ShotNoiseRange>10</ShotNoiseRange>
+			  <ImpactNoiseRange>45</ImpactNoiseRange>
+			  </WeaponConfiguration>
+  
+	<!-- Saxony Heroes-->
+		<!--Gunter-->
+		
+		<!--Gunter|Handgun-->
+			<WeaponConfiguration id="sax_hero_gunter_handgun">
+				<!--Shot Information-->
+					<AmmoConfigurationId>Gunter_HandgunShell</AmmoConfigurationId>
+					<Height>1.5</Height>
+					<BurstSize>1</BurstSize>
+					<BurstDelay>0</BurstDelay>
+					
+				<!--Hitsystem-->
+					<ConeAngleDegree>30</ConeAngleDegree>
+					<SpreadWidth>1.5</SpreadWidth>
+					<SpreadHeight>1.5</SpreadHeight>
+				
+				<!--Cooldowns-->
+						<Cooldown>28</Cooldown>
+				
+				<!--Ranges-->
+					<Range>20</Range>
+					<MeleeRange>2</MeleeRange>
+					<ProjectileRange>27</ProjectileRange>
+					
+				<!--Splash-->
+					<SplashRadius>1.5</SplashRadius>
+					<SplashAmmoConfigurationId>Gunter_Splash</SplashAmmoConfigurationId>
+					
+				<!--Supression-->
+					<Suppression>30</Suppression>
+					<SuppressionZoneFull>1</SuppressionZoneFull>
+					<SuppressionZoneZero>2</SuppressionZoneZero>
+				
+				<!--Delay-->
+					<AttackDelay>0</AttackDelay>
+
+			  <!--Noise-->
+			  <ShotNoiseRange>45</ShotNoiseRange>
+			  <ImpactNoiseRange>30</ImpactNoiseRange>
+			  
+			  <!--Show an indicator for when the weapon can fire again-->
+			  <ShowReloadIndicator>True</ShowReloadIndicator>
+				</WeaponConfiguration>	
+		
+			<!--Gunter|Melee-->
+			<WeaponConfiguration id="sax_hero_gunter_melee">
+				<AmmoConfigurationId>Gunter_Melee</AmmoConfigurationId>
+				<Cooldown>8</Cooldown>
+				<Range>2</Range>
+
+			  <!--Noise-->
+			  <ShotNoiseRange>10</ShotNoiseRange>
+			  <ImpactNoiseRange>10</ImpactNoiseRange>
+			  </WeaponConfiguration>
+		
+			<!--Gunter|Stab-->
+			<WeaponConfiguration id="sax_hero_gunter_stab">
+				<AmmoConfigurationId>Gunter_ApStab</AmmoConfigurationId>
+				<Cooldown>360</Cooldown>
+				<Range>2</Range>
+
+			  <!--Noise-->
+			  <ShotNoiseRange>10</ShotNoiseRange>
+			  <ImpactNoiseRange>10</ImpactNoiseRange>
+			  </WeaponConfiguration>
+		
+			<!--Gunter|TagNacht|Shadowguard-->
+			<WeaponConfiguration id="sax_hero_gunter_tagnacht_shadowguard">
+				<AmmoConfigurationId>Gunter_ShadowGuardDmg</AmmoConfigurationId>
+				<Cooldown>40</Cooldown> <!--Effective for each wolf respectively-->
+				<Range>12</Range>
+
+			  <!--Noise-->
+			  <ShotNoiseRange>10</ShotNoiseRange>
+			  <ImpactNoiseRange>10</ImpactNoiseRange>
+			  </WeaponConfiguration>
+
+			<WeaponConfiguration id="sax_hero_tag_shadowguard" parentId="sax_hero_gunter_tagnacht_shadowguard"/>
+			<WeaponConfiguration id="sax_hero_nacht_shadowguard" parentId="sax_hero_gunter_tagnacht_shadowguard"/>
+		<!--Prince-->
+
+			<!--Prince|Gatling-->
+			<WeaponConfiguration id="sax_hero_prince_gatling">
+				<!--Shot Information-->
+					<AmmoConfigurationId>Prince_GatlingCartridge</AmmoConfigurationId>
+					<Height>2.5</Height>
+					<BurstSize>1</BurstSize>
+					<BurstDelay>10</BurstDelay>
+				
+				<!--Hitsystem-->
+					<ConeAngleDegree>90</ConeAngleDegree>
+					<SpreadWidth>1.5</SpreadWidth>
+					<SpreadHeight>1.5</SpreadHeight>
+				
+				<!--Cooldowns-->
+         			 <Cooldown>12</Cooldown>
+					
+				<!--Ranges-->
+					<Range>25</Range>
+					<AttackRange>23</AttackRange>
+					<ProjectileRange>32</ProjectileRange>
+					
+				<!--Supression-->
+					<Suppression>5</Suppression>
+					<SuppressionZoneFull>1</SuppressionZoneFull>
+					<SuppressionZoneZero>2</SuppressionZoneZero>
+					
+				<!--Delay-->
+					<AttackDelay>0</AttackDelay>
+					<PostAttackDelay>3</PostAttackDelay>
+
+			 	<!--Noise-->
+					<ShotNoiseRange>40</ShotNoiseRange>
+					<ImpactNoiseRange>20</ImpactNoiseRange>
+	
+
+        	</WeaponConfiguration>
+
+			<!--Prince|Gatling Sweep-->
+			<WeaponConfiguration id="sax_hero_prince_gatling_sweep">
+				<!--Shot Information-->
+					<AmmoConfigurationId>Prince_GatlingSweepCartridge</AmmoConfigurationId>
+					<Height>2.5</Height>
+					<BurstSize>10</BurstSize>
+					<BurstDelay>3</BurstDelay>
+
+				<!--Splash-->
+					<SplashRadius>1.5</SplashRadius>
+					<SplashAmmoConfigurationId>Prince_GatlingSweepCartridge</SplashAmmoConfigurationId>
+
+				<!--Hitsystem-->
+					<ConeAngleDegree>20</ConeAngleDegree>
+					<SpreadWidth>1.5</SpreadWidth>
+					<SpreadHeight>1.5</SpreadHeight>
+
+				<!--Cooldowns-->
+				<!--Attention: lowering this value(24) might lead to "skipping" attacks since the used weapon-arm might not be ready to shoot yet-->
+					<Cooldown>480</Cooldown>
+
+				<!--Ranges-->
+					<Range>25</Range>
+					<ProjectileRange>32</ProjectileRange>
+
+				<!--Supression-->
+					<Suppression>0</Suppression>
+					<SuppressionZoneFull>1</SuppressionZoneFull>
+					<SuppressionZoneZero>2</SuppressionZoneZero>
+					
+				<!--Delay-->
+					<AttackDelay>0</AttackDelay>
+					<PostAttackDelay>3</PostAttackDelay>
+
+			  	<!--Noise-->
+					<ShotNoiseRange>40</ShotNoiseRange>
+					<ImpactNoiseRange>20</ImpactNoiseRange>
+			</WeaponConfiguration>
+
+			<WeaponConfiguration id="sax_hero_prince_gatling_sweep_R" parentId="sax_hero_prince_gatling_sweep">
+				<!--Delay-->
+					<AttackDelay>1</AttackDelay>
+			</WeaponConfiguration>
+			<WeaponConfiguration id="sax_hero_prince_gatling_sweep_L" parentId="sax_hero_prince_gatling_sweep"/>
+
+			<!--Prince|Rockets-->
+			<WeaponConfiguration id="sax_hero_prince_rockets">
+				<!--Shot Information-->
+					<AmmoConfigurationId>Prince_Rocket</AmmoConfigurationId>
+					<Height>1</Height>
+					<BurstSize>20</BurstSize>
+					<BurstDelay>1</BurstDelay>
+
+				<!--Hitsystem-->
+					<IgnoreLOS>True</IgnoreLOS>
+					<ConeAngleDegree>45</ConeAngleDegree>
+
+				<!--Cooldowns-->
+					<Cooldown>480</Cooldown>
+
+				<!--Ranges-->
+					<Range>45</Range>
+					<AttackRange>43</AttackRange>
+
+				<!--Delay-->
+					<AttackDelay>0</AttackDelay>
+					<PostAttackDelay>0</PostAttackDelay>
+
+				<!--Noise-->
+					<ShotNoiseRange>55</ShotNoiseRange>
+					<ImpactNoiseRange>45</ImpactNoiseRange>
+					<ContinueShotAfterTargetDeath>True</ContinueShotAfterTargetDeath>
+        	</WeaponConfiguration>
+  
+		<!--Brunhilde-->
+			
+			<!--Brunhilde|Cannon-->
+			<WeaponConfiguration id="sax_hero_brunhilde_cannon">
+					<!--Shot Information-->
+						<AmmoConfigurationId>Brunh_CannonShell</AmmoConfigurationId>
+						<Height>8</Height>
+						<BurstSize>1</BurstSize>
+						<BurstDelay>0</BurstDelay>
+					<!--Hitsystem-->
+						<ConeAngleDegree>360</ConeAngleDegree>
+						<SpreadWidth>3.5</SpreadWidth>
+						<SpreadHeight>3.5</SpreadHeight>
+					
+					<!--Cooldowns-->
+						<Cooldown>56</Cooldown>
+						<BoostedCooldown>40</BoostedCooldown>
+					<!--Ranges-->
+						<Range>32</Range>
+						<AttackRange>31</AttackRange>
+						<ProjectileRange>42</ProjectileRange>
+				
+					<!--Splash-->
+						<SplashRadius>2.5</SplashRadius>
+						<SplashAmmoConfigurationId>MediumSplash</SplashAmmoConfigurationId> <!--Needs its own SplashAmmo eventually-->
+					
+					<!--Supression-->
+						<Suppression>40</Suppression>
+						<SuppressionZoneFull>2</SuppressionZoneFull>
+						<SuppressionZoneZero>3</SuppressionZoneZero>
+						
+					<!--Delay-->
+						<AttackDelay>0</AttackDelay>
+						<PostAttackDelay>0</PostAttackDelay>
+						<TurretRotationSpeed>180</TurretRotationSpeed>
+
+			  <!--Noise-->
+			  <ShotNoiseRange>55</ShotNoiseRange>
+			  <ImpactNoiseRange>45</ImpactNoiseRange>
+			  
+			  <!--Show an indicator for when the weapon can fire again-->
+			  <ShowReloadIndicator>True</ShowReloadIndicator>
+				</WeaponConfiguration>
+  
+			<!--Brunhilde| Broadside Cannon Base-->
+			<WeaponConfiguration id="sax_hero_brunhilde_secondary_cannon" parentId="sax_hero_brunhilde_cannon">
+					
+						<ConeAngleDegree>90</ConeAngleDegree>
+						<AmmoConfigurationId>Brunh_BroadsideShell</AmmoConfigurationId>
+						<Height>5</Height>
+						<Cooldown>24</Cooldown>
+						<BoostedCooldown>18</BoostedCooldown>
+						<Range>24</Range>
+						<ProjectileRange>32</ProjectileRange>
+        
+        <!--Hitsystem-->
+						<SpreadWidth>3.5</SpreadWidth>
+						<SpreadHeight>3.5</SpreadHeight>
+
+          <!--Supression-->
+          <Suppression>3</Suppression>
+          <SuppressionZoneFull>2</SuppressionZoneFull>
+          <SuppressionZoneZero>3</SuppressionZoneZero>
+
+          <!--Splash-->
+          <SplashRadius>1</SplashRadius>
+          <SplashAmmoConfigurationId>TankSplash</SplashAmmoConfigurationId>
+
+			  <!--Noise-->
+			  <ShotNoiseRange>55</ShotNoiseRange>
+			  <ImpactNoiseRange>45</ImpactNoiseRange>
+				</WeaponConfiguration>
+  
+			<!--Brunhilde Broadside Cannons-->
+			<WeaponConfiguration id="sax_hero_brunhilde_cannon_LF" parentId="sax_hero_brunhilde_secondary_cannon"></WeaponConfiguration>
+			<WeaponConfiguration id="sax_hero_brunhilde_cannon_LM" parentId="sax_hero_brunhilde_secondary_cannon"></WeaponConfiguration>
+			<WeaponConfiguration id="sax_hero_brunhilde_cannon_LR" parentId="sax_hero_brunhilde_secondary_cannon"></WeaponConfiguration>
+			<WeaponConfiguration id="sax_hero_brunhilde_cannon_RF" parentId="sax_hero_brunhilde_secondary_cannon"></WeaponConfiguration>
+			<WeaponConfiguration id="sax_hero_brunhilde_cannon_RM" parentId="sax_hero_brunhilde_secondary_cannon"></WeaponConfiguration>
+			<WeaponConfiguration id="sax_hero_brunhilde_cannon_RR" parentId="sax_hero_brunhilde_secondary_cannon"></WeaponConfiguration>
+
+			<!--Saxony Brunhilde|ArtillerySkill-->
+			<WeaponConfiguration id="sax_hero_brunhilde_longshot">
+          <!--Shot Information-->
+          <AmmoConfigurationId>Brunh_LongShotGrenade</AmmoConfigurationId>
+          <Height>1.5</Height>
+          <BurstSize>1</BurstSize>
+          <BurstDelay>0</BurstDelay>
+          
+          <!--Hitsystem-->
+          <ConeAngleDegree>360</ConeAngleDegree>  <!--360 probably won't work due to animation gimble - 180° is ok temporarily-->
+          <IgnoreLOS>True</IgnoreLOS>
+
+          <!--Cooldowns-->
+          <Cooldown>720</Cooldown>
+					<BoostedCooldown>720</BoostedCooldown>
+          <!--Ranges-->
+         	<Range>60</Range>
+			<AttackRange>60</AttackRange>
+         	<MinimumRange>20</MinimumRange>
+
+          <!--Supression-->
+          <Suppression>80</Suppression>
+          <SuppressionZoneFull>2</SuppressionZoneFull>
+          <SuppressionZoneZero>3</SuppressionZoneZero>
+
+          <!--Delay-->
+          <AttackDelay>0</AttackDelay>
+          <PostAttackDelay>0</PostAttackDelay>
+          <TurretRotationSpeed>60</TurretRotationSpeed>
+
+			  <!--Noise-->
+			  <ShotNoiseRange>55</ShotNoiseRange>
+			  <ImpactNoiseRange>45</ImpactNoiseRange>
+        </WeaponConfiguration>
+		
+	<!-- Rusviet Heroes-->
+		<!--Olga-->
+		
+			<!--Olga|Rifle-->
+			<WeaponConfiguration id="rus_hero_olga_rifle">
+					<!--Shot Information-->
+						<AmmoConfigurationId>Olga_Cartridge</AmmoConfigurationId>
+						<Height>1.5</Height>
+						<BurstSize>8</BurstSize>
+						<BurstDelay>1</BurstDelay>
+						<ConeAngleDegree>160</ConeAngleDegree>
+
+					<!--Hitsystem-->
+						<SpreadWidth>2</SpreadWidth>
+						<SpreadHeight>1.5</SpreadHeight>
+
+					<!--Cooldowns-->
+						<Cooldown>24</Cooldown>
+						<BoostedCooldown>14</BoostedCooldown>	
+				
+					<!--Ranges-->
+						<Range>17</Range>
+						<MeleeRange>2</MeleeRange>
+						<ProjectileRange>27</ProjectileRange>
+				
+					<!--Supression-->
+						<Suppression>4</Suppression>
+						<SuppressionZoneFull>1</SuppressionZoneFull>
+						<SuppressionZoneZero>3</SuppressionZoneZero>
+					
+					<!--Delay-->
+						<AttackDelay>0</AttackDelay>
+
+			  <!--Noise-->
+			  <ShotNoiseRange>40</ShotNoiseRange>
+			  <ImpactNoiseRange>20</ImpactNoiseRange>
+				</WeaponConfiguration>
+
+			<!--Olga|Melee-->
+			<WeaponConfiguration id="rus_hero_olga_melee">
+				<AmmoConfigurationId>Olga_Melee</AmmoConfigurationId>
+				<Cooldown>4</Cooldown>
+				<Range>2</Range>
+
+			  <!--Noise-->
+			  <ShotNoiseRange>10</ShotNoiseRange>
+			  <ImpactNoiseRange>10</ImpactNoiseRange>
+			  </WeaponConfiguration>
+
+			<!--Olga|Detonators-->
+			<WeaponConfiguration id="rus_hero_olga_detonators">
+				<!--Shot Information-->
+					<AmmoConfigurationId>Olga_Detonator</AmmoConfigurationId>
+					<Height>1.5</Height>
+					<BurstSize>1</BurstSize>
+					<BurstDelay>0</BurstDelay>
+						
+				<!--Hitsystem-->
+					<SpreadWidth>1</SpreadWidth>
+					<SpreadHeight>1</SpreadHeight>
+						
+				<!--Cooldowns-->
+					<Cooldown>720</Cooldown>
+					
+				<!--Ranges-->
+					<Range>15</Range>
+					<MeleeRange>5</MeleeRange>
+					
+				<!--Delay-->
+					<AttackDelay>0</AttackDelay>
+
+			  <!--Noise-->
+			  <ShotNoiseRange>10</ShotNoiseRange>
+			  <ImpactNoiseRange>45</ImpactNoiseRange>
+			</WeaponConfiguration>
+			
+			<!--Changa|Melee-->
+			<WeaponConfiguration id="rus_hero_changa_melee">
+				<AmmoConfigurationId>Olga_ChangaMelee</AmmoConfigurationId>
+				<Cooldown>8</Cooldown>
+				<Range>2</Range>
+
+			  <!--Noise-->
+			  <ShotNoiseRange>10</ShotNoiseRange>
+			  <ImpactNoiseRange>10</ImpactNoiseRange>
+			  </WeaponConfiguration>
+
+		<!--Brother-->
+
+			<!--Brother|Rifle-->
+			<WeaponConfiguration id="rus_hero_brother_rifle">
+					<!--Shot Information-->
+						<AmmoConfigurationId>BrotherCartridge</AmmoConfigurationId>
+						<Height>1.5</Height>
+						<BurstSize>3</BurstSize>
+						<BurstDelay>3</BurstDelay>
+
+					<!--Hitsystem-->
+						<SpreadWidth>1</SpreadWidth>
+						<SpreadHeight>1</SpreadHeight>
+						<ConeAngleDegree>5</ConeAngleDegree>
+					<!--Cooldowns-->
+						<Cooldown>24</Cooldown>
+				
+					<!--Ranges-->
+						<Range>24</Range>
+						<MeleeRange>2</MeleeRange>
+						<AttackRange>22</AttackRange>
+						<ProjectileRange>34</ProjectileRange>
+				
+					<!--Supression-->
+						<Suppression>10</Suppression>
+						<SuppressionZoneFull>1</SuppressionZoneFull>
+						<SuppressionZoneZero>3</SuppressionZoneZero>
+					
+					<!--Delay-->
+						<AttackDelay>0</AttackDelay>
+
+			  <!--Noise-->
+			  <ShotNoiseRange>10</ShotNoiseRange>
+			  <ImpactNoiseRange>10</ImpactNoiseRange>
+			  
+			  <!--Show an indicator for when the weapon can fire again-->
+			  <ShowReloadIndicator>True</ShowReloadIndicator>
+				</WeaponConfiguration>
+
+			<!--Brother|Melee-->
+			<WeaponConfiguration id="rus_hero_brother_melee">
+					<!--Shot Information-->
+						<AmmoConfigurationId>Brother_Melee</AmmoConfigurationId>
+						<Height>4</Height>
+						<BurstSize>1</BurstSize>
+						<BurstDelay>0</BurstDelay>
+						
+					<!--Hitsystem-->
+						<ConeAngleDegree>30</ConeAngleDegree>
+						<SpreadWidth>2</SpreadWidth>
+						<SpreadHeight>2</SpreadHeight>
+						
+					<!--Cooldowns-->
+						<Cooldown>40</Cooldown>
+						
+					<!--Ranges-->
+						<Range>2</Range>
+					
+					<!--Supression-->
+						<Suppression>25</Suppression>
+						<SuppressionZoneFull>1</SuppressionZoneFull>
+						<SuppressionZoneZero>2</SuppressionZoneZero>
+					
+					<!--Delay-->
+						<AttackDelay>0</AttackDelay>
+
+			    <!--Noise-->
+			    <ShotNoiseRange>10</ShotNoiseRange>
+			    <ImpactNoiseRange>10</ImpactNoiseRange>
+				</WeaponConfiguration>
+
+			<!--Brother|Rocket-->				
+			<WeaponConfiguration id="rus_hero_brother_rocket">
+					<!--Shot Information-->
+						<AmmoConfigurationId>Brother_Rocket</AmmoConfigurationId>
+						<Height>1</Height>	
+						<BurstSize>1</BurstSize>
+						<BurstDelay>0</BurstDelay>
+					
+					<!--Hitsystem-->
+						<IgnoreLOS>False</IgnoreLOS>
+						<ConeAngleDegree>5</ConeAngleDegree>
+					
+					<!--Cooldowns-->
+						<Cooldown>480</Cooldown>
+					
+					<!--Ranges-->
+						<Range>30</Range>
+						<AttackRange>28</AttackRange>
+						<ProjectileRange>42</ProjectileRange>
+					
+					<!--Delay-->
+						<AttackDelay>1</AttackDelay>
+
+			    <!--Noise-->
+			    <ShotNoiseRange>45</ShotNoiseRange>
+			    <ImpactNoiseRange>45</ImpactNoiseRange>
+			</WeaponConfiguration>
+
+			<!--Brother|Chainlightning-->
+			<WeaponConfiguration id="rus_hero_brother_chainlightning">
+					<!--Shot Information-->
+						<AmmoConfigurationId>Brother_Lightning</AmmoConfigurationId>
+						<Height>1.5</Height>
+						<BurstSize>1</BurstSize> <!--The shot should hit a maximum number of targets only, number should be adjustable-->
+						<BurstDelay>0</BurstDelay>
+						
+					<!--Hitsystem-->
+						<ConeAngleDegree>5</ConeAngleDegree>
+						<SpreadWidth>0</SpreadWidth>
+						<SpreadHeight>0</SpreadHeight>
+						
+					<!--Cooldowns-->
+						<Cooldown>200</Cooldown>
+						
+					<!--Ranges-->
+						<Range>18</Range>
+						<AttackRange>17</AttackRange>
+				
+					<!--Supression-->
+						<Suppression>1</Suppression>
+						<SuppressionZoneFull>1</SuppressionZoneFull>
+						<SuppressionZoneZero>3</SuppressionZoneZero>
+					
+					<!--Delay-->
+						<AttackDelay>0</AttackDelay>
+						<Jumps>8</Jumps>
+						<JumpRadius>5</JumpRadius>
+
+			    <!--Noise-->
+			    <ShotNoiseRange>10</ShotNoiseRange>
+			    <ImpactNoiseRange>10</ImpactNoiseRange>
+			</WeaponConfiguration>
+
+      <!--Brother|Uninsulated Rigging-->
+      <WeaponConfiguration id="rus_hero_brother_rigging">
+        <!--Shot Information-->
+        <AmmoConfigurationId>Brother_Rigging</AmmoConfigurationId>
+        <Height>1.5</Height>
+        <BurstSize>1</BurstSize>
+        <BurstDelay>0</BurstDelay>
+
+        <!--Supression-->
+        <Suppression>0</Suppression>
+        <SuppressionZoneFull>1</SuppressionZoneFull>
+        <SuppressionZoneZero>1</SuppressionZoneZero>
+
+        <!--Noise-->
+        <ShotNoiseRange>0</ShotNoiseRange>
+        <ImpactNoiseRange>0</ImpactNoiseRange>
+
+		<!--Ranges-->
+		<Range>5</Range> <!-- Needs range for impact to be simulated properly, value doesn't really matter-->
+      </WeaponConfiguration>
+
+		<!--General-->
+			
+			<!--General|Cannon-->
+			<WeaponConfiguration id="rus_hero_general_cannon">
+					<!--Shot Information-->
+						<AmmoConfigurationId>Gen_Shell</AmmoConfigurationId>
+						<Height>5.5</Height>
+						<BurstSize>1</BurstSize>
+						<BurstDelay>4</BurstDelay>
+					<!--Hitsystem-->
+						<ConeAngleDegree>360</ConeAngleDegree>
+						<SpreadWidth>3.5</SpreadWidth>
+						<SpreadHeight>3.5</SpreadHeight>
+					
+					<!--Cooldowns-->
+						<Cooldown>40</Cooldown>
+					<!--Ranges-->
+						<MinimumRange>12</MinimumRange>
+						<Range>28</Range>
+						<AttackRange>24</AttackRange>
+						<ProjectileRange>38</ProjectileRange>
+					<!--Splash-->
+						<SplashRadius>2.5</SplashRadius>
+						<SplashAmmoConfigurationId>Gen_Splash</SplashAmmoConfigurationId>
+					
+					<!--Supression-->
+						<Suppression>35</Suppression>
+						<SuppressionZoneFull>2</SuppressionZoneFull>
+						<SuppressionZoneZero>3</SuppressionZoneZero>
+						
+					<!--Delay-->
+						<AttackDelay>0</AttackDelay>
+						<TurretRotationSpeed>25</TurretRotationSpeed>
+
+			    <!--Noise-->
+			    <ShotNoiseRange>55</ShotNoiseRange>
+			    <ImpactNoiseRange>45</ImpactNoiseRange>
+				</WeaponConfiguration>
+			<WeaponConfiguration id="rus_hero_general_cannon_L" parentId="rus_hero_general_cannon"></WeaponConfiguration>
+			<WeaponConfiguration id="rus_hero_general_cannon_R" parentId="rus_hero_general_cannon"></WeaponConfiguration>
+
+			<!--General|Melee-->
+			<WeaponConfiguration id="rus_hero_general_melee">
+					<!--Shot Information-->
+						<AmmoConfigurationId>Gen_Melee</AmmoConfigurationId>
+						<Height>4</Height>
+						<BurstSize>1</BurstSize>
+						<BurstDelay>0</BurstDelay>
+						
+					<!--Hitsystem-->
+						<ConeAngleDegree>30</ConeAngleDegree>
+						<SpreadWidth>2</SpreadWidth>
+						<SpreadHeight>2</SpreadHeight>
+						
+					<!--Cooldowns-->
+						<Cooldown>40</Cooldown>
+						
+					<!--Ranges-->
+						<AttackRange>5</AttackRange>
+						<Range>6</Range>
+					<!--Splash-->
+						<SplashRadius>2</SplashRadius>
+						<SplashAmmoConfigurationId>Gen_Melee</SplashAmmoConfigurationId>
+					
+					<!--Supression-->
+						<Suppression>0</Suppression>
+						<SuppressionZoneFull>1</SuppressionZoneFull>
+						<SuppressionZoneZero>2</SuppressionZoneZero>
+					
+					<!--Delay-->
+						<AttackDelay>0</AttackDelay>
+
+			  <!--Noise-->
+			  <ShotNoiseRange>10</ShotNoiseRange>
+			  <ImpactNoiseRange>10</ImpactNoiseRange>
+				</WeaponConfiguration>
+			<WeaponConfiguration id="rus_hero_general_melee1" parentId="rus_hero_general_melee" >
+				<AmmoConfigurationId>Gen_MeleeSeries</AmmoConfigurationId>
+				<SplashAmmoConfigurationId>Gen_MeleeSeriesSplash</SplashAmmoConfigurationId>
+				<BurstSize>4</BurstSize>
+				<BurstDelay>1</BurstDelay>
+			</WeaponConfiguration>
+			<WeaponConfiguration id="rus_hero_general_melee2" parentId="rus_hero_general_melee" >
+				<AmmoConfigurationId>Gen_MeleeSeries</AmmoConfigurationId>
+				<SplashAmmoConfigurationId>Gen_MeleeSeriesSplash</SplashAmmoConfigurationId>
+				<BurstSize>4</BurstSize>
+				<BurstDelay>1</BurstDelay>
+			</WeaponConfiguration>
+			<WeaponConfiguration id="rus_hero_general_melee3" parentId="rus_hero_general_melee" >
+				<AmmoConfigurationId>Gen_MeleeSeries</AmmoConfigurationId>
+				<SplashAmmoConfigurationId>Gen_MeleeSeriesSplash</SplashAmmoConfigurationId>
+				<BurstSize>4</BurstSize>
+				<BurstDelay>1</BurstDelay>
+			</WeaponConfiguration>
+			<WeaponConfiguration id="rus_hero_general_melee4" parentId="rus_hero_general_melee">
+				<AmmoConfigurationId>Gen_MeleeSeries</AmmoConfigurationId>
+				<SplashAmmoConfigurationId>Gen_MeleeSeriesSplash</SplashAmmoConfigurationId>
+				<BurstSize>4</BurstSize>
+				<BurstDelay>1</BurstDelay>
+			</WeaponConfiguration>
+			
+			<!--General|Jump-->
+			<WeaponConfiguration id="rus_hero_general_jump">
+					<!--Shot Information-->
+						<AmmoConfigurationId>Gen_Jump</AmmoConfigurationId>
+						<Height>4</Height>
+						<BurstSize>1</BurstSize>
+						<BurstDelay>0</BurstDelay>
+						
+					<!--Hitsystem-->
+						<ConeAngleDegree>30</ConeAngleDegree>
+						<SpreadWidth>2</SpreadWidth>
+						<SpreadHeight>2</SpreadHeight>
+						
+					<!--Cooldowns--><!--cd can be set in ability config in Units_02_Heroes.xml-->
+						
+					<!--Ranges-->
+						<Range>20</Range>
+					
+					<!--Supression-->
+						<Suppression>25</Suppression>
+						<SuppressionZoneFull>1</SuppressionZoneFull>
+						<SuppressionZoneZero>2</SuppressionZoneZero>
+					
+					<!--Delay-->
+						<AttackDelay>0</AttackDelay>
+
+			  <!--Noise-->
+			  <ShotNoiseRange>55</ShotNoiseRange>
+			  <ImpactNoiseRange>45</ImpactNoiseRange>
+				</WeaponConfiguration>
+
+<!--Special-->
+			<!--Anna Child|Rifle-->
+			<WeaponConfiguration id="pol_hero_annachild_rifle" parentId="pol_hero_anna_rifle">			
+				<!--Shot Information-->
+					<AmmoConfigurationId>AnnaChild_RifleCartridge</AmmoConfigurationId>
+				<!--Cooldowns-->
+					<Cooldown>40</Cooldown>
+				<!--Ranges-->
+					<Range>18</Range>
+					<AttackRange>16</AttackRange>
+					<ProjectileRange>28</ProjectileRange>
+					<SpreadHeight>-0.5</SpreadHeight><!-- this is used for auto miss of annachild in pol01-->
+			</WeaponConfiguration>
+			
+			<!--AnnaChild|Snowball-->
+			<WeaponConfiguration id="pol_hero_annachild_snowball">
+				<!--Shot Information-->
+					<AmmoConfigurationId>Snowball</AmmoConfigurationId>
+					<Height>1.5</Height>
+					<BurstSize>1</BurstSize>
+					<BurstDelay>0</BurstDelay>
+				<!--Hitsystem-->
+					<SpreadWidth>0.7</SpreadWidth>
+					<SpreadHeight>0.7</SpreadHeight>
+				<!--Cooldowns-->
+					<Cooldown>20</Cooldown>
+				<!--Ranges-->
+					<Range>15</Range>
+					<MeleeRange>2</MeleeRange>	
+				<!--Supression-->
+					<Suppression>0</Suppression>
+					<SuppressionZoneFull>0</SuppressionZoneFull>
+					<SuppressionZoneZero>0</SuppressionZoneZero>
+				<!--Delay-->
+					<AttackDelay>0</AttackDelay>
+				<!--Noise-->
+					<ShotNoiseRange>10</ShotNoiseRange>
+					<ImpactNoiseRange>10</ImpactNoiseRange>
+			</WeaponConfiguration>
+		
+			<WeaponConfiguration id="pol_hero_annachild_melee" parentId="com_soldier_melee">		
+			</WeaponConfiguration>
+			<!--Farmerboy|Snowball-->
+			<WeaponConfiguration id="com_npc_farmerboy_snowball" parentId="pol_hero_annachild_snowball">
+			
+			<!--Hitsystem-->
+			<SpreadWidth>2.1</SpreadWidth>
+			<SpreadHeight>2.1</SpreadHeight>
+			
+			<!--Cooldowns-->
+			<Cooldown>40</Cooldown>
+			
+			</WeaponConfiguration>
+
+			<!--Animal|Melee-->
+			<WeaponConfiguration id="com_animal_melee">
+				<AmmoConfigurationId>AnimalMelee</AmmoConfigurationId>
+				<Cooldown>8</Cooldown>
+				<Range>2</Range>
+
+			    <!--Noise-->
+			    <ShotNoiseRange>10</ShotNoiseRange>
+			    <ImpactNoiseRange>10</ImpactNoiseRange>
+			 </WeaponConfiguration>
+
+			<!--Train|Cannon-->
+			<WeaponConfiguration id="com_mech_traincannon_cannon">
+					<!--Shot Information-->
+						<AmmoConfigurationId>TrainArtilleryGrenade</AmmoConfigurationId>
+						<Height>1</Height>
+						<BurstSize>1</BurstSize>
+						<BurstDelay>0</BurstDelay>
+					
+					<!--Hitsystem-->
+						<IgnoreLOS>True</IgnoreLOS>
+						<ConeAngleDegree>360</ConeAngleDegree>
+						<TurretRotationSpeed>30</TurretRotationSpeed>
+					
+					<!--Cooldowns-->
+						<Cooldown>76</Cooldown>
+					
+					<!--Ranges-->
+						<Range>60</Range>
+						<AttackRange>55</AttackRange>
+						<MinimumRange>25</MinimumRange>
+					
+					<!--Delay-->
+						<AttackDelay>0</AttackDelay>
+
+				  <!--Noise-->
+				  <ShotNoiseRange>45</ShotNoiseRange>
+				  <ImpactNoiseRange>45</ImpactNoiseRange>
+				</WeaponConfiguration>
+				
+				<!--Tsar Handgun-->
+        <WeaponConfiguration id="com_soldier_tsar_handgun">
+            <!--Shot Information-->
+            <AmmoConfigurationId>GatlingCartridge</AmmoConfigurationId>
+            <Height>1.5</Height>
+            <BurstSize>1</BurstSize>
+            <BurstDelay>0</BurstDelay>
+            <ConeAngleDegree>160</ConeAngleDegree>
+
+            <!--Hitsystem-->
+            <SpreadWidth>1.3</SpreadWidth>
+            <SpreadHeight>1.2</SpreadHeight>
+
+            <!--Cooldowns-->
+            <Cooldown>12</Cooldown>
+            <SuppressedCooldown>64</SuppressedCooldown>
+
+            <!--Ranges-->
+            <Range>23</Range>
+            <AttackRange>22</AttackRange>
+            <ProjectileRange>32</ProjectileRange>
+            <MeleeRange>2</MeleeRange>
+
+            <!--Supression-->
+            <Suppression>2</Suppression>
+            <SuppressionZoneFull>1</SuppressionZoneFull>
+            <SuppressionZoneZero>2</SuppressionZoneZero>
+
+            <!--Delay-->
+            <AttackDelay>0</AttackDelay>
+
+            <!--Noise-->
+            <ShotNoiseRange>40</ShotNoiseRange>
+            <ImpactNoiseRange>20</ImpactNoiseRange>
+
+        </WeaponConfiguration>
+
+<!--End of File-->	
+</WeaponConfigurations>

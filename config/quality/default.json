@@ -1,0 +1,509 @@
+{
+  "$type": "KingArt.Quality.QualitySettingsConfig, KingArt.IronHarvest",
+  "Modules": {
+    "$type": "System.Collections.Generic.List`1[[KingArt.Quality.QualitySettingModule, KingArt.IronHarvest]], mscorlib",
+    "$values": [
+      {
+        "$type": "KingArt.Quality.TextureSettingModule, KingArt.IronHarvest",
+        "Levels": {
+          "$type": "System.Collections.Generic.List`1[[KingArt.Quality.QualitySettingModuleLevel, KingArt.IronHarvest]], mscorlib",
+          "$values": [
+            {
+              "$type": "KingArt.Quality.TextureSettingModuleLevel, KingArt.IronHarvest",
+              "StreamingMipmapsMemoryBudget": 1024,
+              "TextureQuality": 0,
+              "Name": "low"
+            },
+            {
+              "$type": "KingArt.Quality.TextureSettingModuleLevel, KingArt.IronHarvest",
+              "StreamingMipmapsMemoryBudget": 2048,
+              "TextureQuality": 0,
+              "Name": "medium"
+            },
+            {
+              "$type": "KingArt.Quality.TextureSettingModuleLevel, KingArt.IronHarvest",
+              "StreamingMipmapsMemoryBudget": 4096,
+              "TextureQuality": 0,
+              "Name": "high"
+            }
+          ]
+        },
+        "Name": "quality_textures",
+        "Properties": {
+          "$type": "System.Linq.Enumerable+WhereArrayIterator`1[[System.Reflection.PropertyInfo, mscorlib]], System.Core",
+          "$values": [
+            {
+              "$type": "System.Reflection.MonoProperty, mscorlib",
+              "Name": "StreamingMipmapsMemoryBudget",
+              "AssemblyName": "KingArt.IronHarvest, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "ClassName": "KingArt.Quality.TextureSettingModuleLevel",
+              "Signature": "Int32 StreamingMipmapsMemoryBudget",
+              "Signature2": "System.Int32 StreamingMipmapsMemoryBudget",
+              "MemberType": 16,
+              "GenericArguments": null
+            },
+            {
+              "$type": "System.Reflection.MonoProperty, mscorlib",
+              "Name": "TextureQuality",
+              "AssemblyName": "KingArt.IronHarvest, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "ClassName": "KingArt.Quality.TextureSettingModuleLevel",
+              "Signature": "KingArt.Quality.TextureQuality TextureQuality",
+              "Signature2": "KingArt.Quality.TextureQuality TextureQuality",
+              "MemberType": 16,
+              "GenericArguments": null
+            }
+          ]
+        }
+      },
+      {
+        "$type": "KingArt.Quality.ShadowSettingModule, KingArt.IronHarvest",
+        "Levels": {
+          "$type": "System.Collections.Generic.List`1[[KingArt.Quality.QualitySettingModuleLevel, KingArt.IronHarvest]], mscorlib",
+          "$values": [
+            {
+              "$type": "KingArt.Quality.ShadowSettingModuleLevel, KingArt.IronHarvest",
+              "ShadowQuality": 2,
+              "ShadowResolution": 1,
+              "ShadowDistance": 160.0,
+              "ShadowCascades": 0,
+              "Name": "low"
+            },
+            {
+              "$type": "KingArt.Quality.ShadowSettingModuleLevel, KingArt.IronHarvest",
+              "ShadowQuality": 2,
+              "ShadowResolution": 3,
+              "ShadowDistance": 170.0,
+              "ShadowCascades": 0,
+              "Name": "medium"
+            },
+            {
+              "$type": "KingArt.Quality.ShadowSettingModuleLevel, KingArt.IronHarvest",
+              "ShadowQuality": 2,
+              "ShadowResolution": 3,
+              "ShadowDistance": 180.0,
+              "ShadowCascades": 0,
+              "Name": "high"
+            }
+          ]
+        },
+        "Name": "quality_shadows",
+        "Properties": {
+          "$type": "System.Linq.Enumerable+WhereArrayIterator`1[[System.Reflection.PropertyInfo, mscorlib]], System.Core",
+          "$values": [
+            {
+              "$type": "System.Reflection.MonoProperty, mscorlib",
+              "Name": "ShadowQuality",
+              "AssemblyName": "KingArt.IronHarvest, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "ClassName": "KingArt.Quality.ShadowSettingModuleLevel",
+              "Signature": "UnityEngine.ShadowQuality ShadowQuality",
+              "Signature2": "UnityEngine.ShadowQuality ShadowQuality",
+              "MemberType": 16,
+              "GenericArguments": null
+            },
+            {
+              "$type": "System.Reflection.MonoProperty, mscorlib",
+              "Name": "ShadowResolution",
+              "AssemblyName": "KingArt.IronHarvest, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "ClassName": "KingArt.Quality.ShadowSettingModuleLevel",
+              "Signature": "UnityEngine.ShadowResolution ShadowResolution",
+              "Signature2": "UnityEngine.ShadowResolution ShadowResolution",
+              "MemberType": 16,
+              "GenericArguments": null
+            },
+            {
+              "$type": "System.Reflection.MonoProperty, mscorlib",
+              "Name": "ShadowDistance",
+              "AssemblyName": "KingArt.IronHarvest, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "ClassName": "KingArt.Quality.ShadowSettingModuleLevel",
+              "Signature": "Single ShadowDistance",
+              "Signature2": "System.Single ShadowDistance",
+              "MemberType": 16,
+              "GenericArguments": null
+            },
+            {
+              "$type": "System.Reflection.MonoProperty, mscorlib",
+              "Name": "ShadowCascades",
+              "AssemblyName": "KingArt.IronHarvest, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "ClassName": "KingArt.Quality.ShadowSettingModuleLevel",
+              "Signature": "KingArt.Quality.ShadowCascades ShadowCascades",
+              "Signature2": "KingArt.Quality.ShadowCascades ShadowCascades",
+              "MemberType": 16,
+              "GenericArguments": null
+            }
+          ]
+        }
+      },
+      {
+        "$type": "KingArt.Quality.AntiAliasingSettingModule, KingArt.IronHarvest",
+        "Levels": {
+          "$type": "System.Collections.Generic.List`1[[KingArt.Quality.QualitySettingModuleLevel, KingArt.IronHarvest]], mscorlib",
+          "$values": [
+            {
+              "$type": "KingArt.Quality.AntiAliasingSettingModuleLevel, KingArt.IronHarvest",
+              "FXAAFastMode": true,
+              "SMAAFastQuality": 0,
+              "TAAJitterSpread": 0.8,
+              "TAAStationaryBlending": 0.95,
+              "TAAMotionBlending": 0.7,
+              "TAASharpness": 0.15,
+              "Name": "low"
+            },
+            {
+              "$type": "KingArt.Quality.AntiAliasingSettingModuleLevel, KingArt.IronHarvest",
+              "FXAAFastMode": false,
+              "SMAAFastQuality": 1,
+              "TAAJitterSpread": 0.8,
+              "TAAStationaryBlending": 0.95,
+              "TAAMotionBlending": 0.7,
+              "TAASharpness": 0.15,
+              "Name": "medium"
+            },
+            {
+              "$type": "KingArt.Quality.AntiAliasingSettingModuleLevel, KingArt.IronHarvest",
+              "FXAAFastMode": false,
+              "SMAAFastQuality": 2,
+              "TAAJitterSpread": 0.8,
+              "TAAStationaryBlending": 0.95,
+              "TAAMotionBlending": 0.7,
+              "TAASharpness": 0.15,
+              "Name": "high"
+            }
+          ]
+        },
+        "Name": "quality_anti_aliasing_quality",
+        "Properties": {
+          "$type": "System.Linq.Enumerable+WhereArrayIterator`1[[System.Reflection.PropertyInfo, mscorlib]], System.Core",
+          "$values": [
+            {
+              "$type": "System.Reflection.MonoProperty, mscorlib",
+              "Name": "FXAAFastMode",
+              "AssemblyName": "KingArt.IronHarvest, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "ClassName": "KingArt.Quality.AntiAliasingSettingModuleLevel",
+              "Signature": "Boolean FXAAFastMode",
+              "Signature2": "System.Boolean FXAAFastMode",
+              "MemberType": 16,
+              "GenericArguments": null
+            },
+            {
+              "$type": "System.Reflection.MonoProperty, mscorlib",
+              "Name": "SMAAFastQuality",
+              "AssemblyName": "KingArt.IronHarvest, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "ClassName": "KingArt.Quality.AntiAliasingSettingModuleLevel",
+              "Signature": "Int32 SMAAFastQuality",
+              "Signature2": "System.Int32 SMAAFastQuality",
+              "MemberType": 16,
+              "GenericArguments": null
+            },
+            {
+              "$type": "System.Reflection.MonoProperty, mscorlib",
+              "Name": "TAAJitterSpread",
+              "AssemblyName": "KingArt.IronHarvest, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "ClassName": "KingArt.Quality.AntiAliasingSettingModuleLevel",
+              "Signature": "Single TAAJitterSpread",
+              "Signature2": "System.Single TAAJitterSpread",
+              "MemberType": 16,
+              "GenericArguments": null
+            },
+            {
+              "$type": "System.Reflection.MonoProperty, mscorlib",
+              "Name": "TAAStationaryBlending",
+              "AssemblyName": "KingArt.IronHarvest, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "ClassName": "KingArt.Quality.AntiAliasingSettingModuleLevel",
+              "Signature": "Single TAAStationaryBlending",
+              "Signature2": "System.Single TAAStationaryBlending",
+              "MemberType": 16,
+              "GenericArguments": null
+            },
+            {
+              "$type": "System.Reflection.MonoProperty, mscorlib",
+              "Name": "TAAMotionBlending",
+              "AssemblyName": "KingArt.IronHarvest, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "ClassName": "KingArt.Quality.AntiAliasingSettingModuleLevel",
+              "Signature": "Single TAAMotionBlending",
+              "Signature2": "System.Single TAAMotionBlending",
+              "MemberType": 16,
+              "GenericArguments": null
+            },
+            {
+              "$type": "System.Reflection.MonoProperty, mscorlib",
+              "Name": "TAASharpness",
+              "AssemblyName": "KingArt.IronHarvest, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "ClassName": "KingArt.Quality.AntiAliasingSettingModuleLevel",
+              "Signature": "Single TAASharpness",
+              "Signature2": "System.Single TAASharpness",
+              "MemberType": 16,
+              "GenericArguments": null
+            }
+          ]
+        }
+      },
+      {
+        "$type": "KingArt.Quality.VFXSettingModule, KingArt.IronHarvest",
+        "Levels": {
+          "$type": "System.Collections.Generic.List`1[[KingArt.Quality.QualitySettingModuleLevel, KingArt.IronHarvest]], mscorlib",
+          "$values": [
+            {
+              "$type": "KingArt.Quality.VFXSettingModuleLevel, KingArt.IronHarvest",
+              "RealtimeReflectionProbes": false,
+              "DecalLimit": 10,
+              "quality": 2,
+              "Name": "low"
+            },
+            {
+              "$type": "KingArt.Quality.VFXSettingModuleLevel, KingArt.IronHarvest",
+              "RealtimeReflectionProbes": true,
+              "DecalLimit": 30,
+              "quality": 1,
+              "Name": "medium"
+            },
+            {
+              "$type": "KingArt.Quality.VFXSettingModuleLevel, KingArt.IronHarvest",
+              "RealtimeReflectionProbes": true,
+              "DecalLimit": 100,
+              "quality": 0,
+              "Name": "high"
+            }
+          ]
+        },
+        "Name": "quality_vfx",
+        "Properties": {
+          "$type": "System.Linq.Enumerable+WhereArrayIterator`1[[System.Reflection.PropertyInfo, mscorlib]], System.Core",
+          "$values": [
+            {
+              "$type": "System.Reflection.MonoProperty, mscorlib",
+              "Name": "RealtimeReflectionProbes",
+              "AssemblyName": "KingArt.IronHarvest, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "ClassName": "KingArt.Quality.VFXSettingModuleLevel",
+              "Signature": "Boolean RealtimeReflectionProbes",
+              "Signature2": "System.Boolean RealtimeReflectionProbes",
+              "MemberType": 16,
+              "GenericArguments": null
+            },
+            {
+              "$type": "System.Reflection.MonoProperty, mscorlib",
+              "Name": "DecalLimit",
+              "AssemblyName": "KingArt.IronHarvest, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "ClassName": "KingArt.Quality.VFXSettingModuleLevel",
+              "Signature": "Int32 DecalLimit",
+              "Signature2": "System.Int32 DecalLimit",
+              "MemberType": 16,
+              "GenericArguments": null
+            },
+            {
+              "$type": "System.Reflection.MonoProperty, mscorlib",
+              "Name": "quality",
+              "AssemblyName": "KingArt.IronHarvest, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "ClassName": "KingArt.Quality.VFXSettingModuleLevel",
+              "Signature": "Quality quality",
+              "Signature2": "KingArt.Quality.VFXSettingModuleLevel+Quality quality",
+              "MemberType": 16,
+              "GenericArguments": null
+            }
+          ]
+        }
+      },
+      {
+        "$type": "KingArt.Quality.TerrainSettingModule, KingArt.IronHarvest",
+        "Levels": {
+          "$type": "System.Collections.Generic.List`1[[KingArt.Quality.QualitySettingModuleLevel, KingArt.IronHarvest]], mscorlib",
+          "$values": [
+            {
+              "$type": "KingArt.Quality.TerrainSettingModuleLevel, KingArt.IronHarvest",
+              "ShadowCastingMode": 0,
+              "HeightmapPixelError": 20.0,
+              "ReflectionProbeUsage": 0,
+              "SnowResolution": 0,
+              "Name": "low"
+            },
+            {
+              "$type": "KingArt.Quality.TerrainSettingModuleLevel, KingArt.IronHarvest",
+              "ShadowCastingMode": 1,
+              "HeightmapPixelError": 1.0,
+              "ReflectionProbeUsage": 1,
+              "SnowResolution": 0,
+              "Name": "medium"
+            },
+            {
+              "$type": "KingArt.Quality.TerrainSettingModuleLevel, KingArt.IronHarvest",
+              "ShadowCastingMode": 1,
+              "HeightmapPixelError": 1.0,
+              "ReflectionProbeUsage": 1,
+              "SnowResolution": 0,
+              "Name": "high"
+            }
+          ]
+        },
+        "Name": "quality_terrain",
+        "Properties": {
+          "$type": "System.Linq.Enumerable+WhereArrayIterator`1[[System.Reflection.PropertyInfo, mscorlib]], System.Core",
+          "$values": [
+            {
+              "$type": "System.Reflection.MonoProperty, mscorlib",
+              "Name": "ShadowCastingMode",
+              "AssemblyName": "KingArt.IronHarvest, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "ClassName": "KingArt.Quality.TerrainSettingModuleLevel",
+              "Signature": "UnityEngine.Rendering.ShadowCastingMode ShadowCastingMode",
+              "Signature2": "UnityEngine.Rendering.ShadowCastingMode ShadowCastingMode",
+              "MemberType": 16,
+              "GenericArguments": null
+            },
+            {
+              "$type": "System.Reflection.MonoProperty, mscorlib",
+              "Name": "HeightmapPixelError",
+              "AssemblyName": "KingArt.IronHarvest, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "ClassName": "KingArt.Quality.TerrainSettingModuleLevel",
+              "Signature": "Single HeightmapPixelError",
+              "Signature2": "System.Single HeightmapPixelError",
+              "MemberType": 16,
+              "GenericArguments": null
+            },
+            {
+              "$type": "System.Reflection.MonoProperty, mscorlib",
+              "Name": "ReflectionProbeUsage",
+              "AssemblyName": "KingArt.IronHarvest, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "ClassName": "KingArt.Quality.TerrainSettingModuleLevel",
+              "Signature": "UnityEngine.Rendering.ReflectionProbeUsage ReflectionProbeUsage",
+              "Signature2": "UnityEngine.Rendering.ReflectionProbeUsage ReflectionProbeUsage",
+              "MemberType": 16,
+              "GenericArguments": null
+            },
+            {
+              "$type": "System.Reflection.MonoProperty, mscorlib",
+              "Name": "SnowResolution",
+              "AssemblyName": "KingArt.IronHarvest, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "ClassName": "KingArt.Quality.TerrainSettingModuleLevel",
+              "Signature": "KingArt.Quality.SnowResolution SnowResolution",
+              "Signature2": "KingArt.Quality.SnowResolution SnowResolution",
+              "MemberType": 16,
+              "GenericArguments": null
+            }
+          ]
+        }
+      },
+      {
+        "$type": "KingArt.Quality.PhysicsSettingModule, KingArt.IronHarvest",
+        "Levels": {
+          "$type": "System.Collections.Generic.List`1[[KingArt.Quality.QualitySettingModuleLevel, KingArt.IronHarvest]], mscorlib",
+          "$values": [
+            {
+              "$type": "KingArt.Quality.PhysicsSettingModuleLevel, KingArt.IronHarvest",
+              "Name": "low"
+            },
+            {
+              "$type": "KingArt.Quality.PhysicsSettingModuleLevel, KingArt.IronHarvest",
+              "Name": "medium"
+            },
+            {
+              "$type": "KingArt.Quality.PhysicsSettingModuleLevel, KingArt.IronHarvest",
+              "Name": "high"
+            }
+          ]
+        },
+        "Name": "quality_physics",
+        "Properties": {
+          "$type": "System.Linq.Enumerable+WhereArrayIterator`1[[System.Reflection.PropertyInfo, mscorlib]], System.Core",
+          "$values": []
+        }
+      },
+      {
+        "$type": "KingArt.Quality.MapObjectsSettingModule, KingArt.IronHarvest",
+        "Levels": {
+          "$type": "System.Collections.Generic.List`1[[KingArt.Quality.QualitySettingModuleLevel, KingArt.IronHarvest]], mscorlib",
+          "$values": [
+            {
+              "$type": "KingArt.Quality.MapObjectsSettingModuleLevel, KingArt.IronHarvest",
+              "LODBias": 1.5,
+              "LODSet": "default_LowQuality",
+              "Name": "low"
+            },
+            {
+              "$type": "KingArt.Quality.MapObjectsSettingModuleLevel, KingArt.IronHarvest",
+              "LODBias": 2.0,
+              "LODSet": "default_MediumQuality",
+              "Name": "medium"
+            },
+            {
+              "$type": "KingArt.Quality.MapObjectsSettingModuleLevel, KingArt.IronHarvest",
+              "LODBias": 3.0,
+              "LODSet": "default_HighQuality",
+              "Name": "high"
+            }
+          ]
+        },
+        "Name": "quality_map_objects",
+        "Properties": {
+          "$type": "System.Linq.Enumerable+WhereArrayIterator`1[[System.Reflection.PropertyInfo, mscorlib]], System.Core",
+          "$values": [
+            {
+              "$type": "System.Reflection.MonoProperty, mscorlib",
+              "Name": "LODBias",
+              "AssemblyName": "KingArt.IronHarvest, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "ClassName": "KingArt.Quality.MapObjectsSettingModuleLevel",
+              "Signature": "Single LODBias",
+              "Signature2": "System.Single LODBias",
+              "MemberType": 16,
+              "GenericArguments": null
+            },
+            {
+              "$type": "System.Reflection.MonoProperty, mscorlib",
+              "Name": "LODSet",
+              "AssemblyName": "KingArt.IronHarvest, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "ClassName": "KingArt.Quality.MapObjectsSettingModuleLevel",
+              "Signature": "System.String LODSet",
+              "Signature2": "System.String LODSet",
+              "MemberType": 16,
+              "GenericArguments": null
+            }
+          ]
+        }
+      },
+      {
+        "$type": "KingArt.Quality.MotionBlurSettingModule, KingArt.IronHarvest",
+        "Levels": {
+          "$type": "System.Collections.Generic.List`1[[KingArt.Quality.QualitySettingModuleLevel, KingArt.IronHarvest]], mscorlib",
+          "$values": [
+            {
+              "$type": "KingArt.Quality.MotionBlurSettingModuleLevel, KingArt.IronHarvest",
+              "MotionBlurSamples": 8,
+              "Name": "low"
+            },
+            {
+              "$type": "KingArt.Quality.MotionBlurSettingModuleLevel, KingArt.IronHarvest",
+              "MotionBlurSamples": 10,
+              "Name": "medium"
+            },
+            {
+              "$type": "KingArt.Quality.MotionBlurSettingModuleLevel, KingArt.IronHarvest",
+              "MotionBlurSamples": 12,
+              "Name": "high"
+            }
+          ]
+        },
+        "Name": "quality_motion_blur_quality",
+        "Properties": {
+          "$type": "System.Linq.Enumerable+WhereArrayIterator`1[[System.Reflection.PropertyInfo, mscorlib]], System.Core",
+          "$values": [
+            {
+              "$type": "System.Reflection.MonoProperty, mscorlib",
+              "Name": "MotionBlurSamples",
+              "AssemblyName": "KingArt.IronHarvest, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
+              "ClassName": "KingArt.Quality.MotionBlurSettingModuleLevel",
+              "Signature": "Int32 MotionBlurSamples",
+              "Signature2": "System.Int32 MotionBlurSamples",
+              "MemberType": 16,
+              "GenericArguments": null
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "Levels": {
+    "$type": "System.Linq.Enumerable+SelectListIterator`2[[KingArt.Quality.QualitySettingModuleLevel, KingArt.IronHarvest],[System.String, mscorlib]], System.Core",
+    "$values": [
+      "low",
+      "medium",
+      "high"
+    ]
+  }
+}

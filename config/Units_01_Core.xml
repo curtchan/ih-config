@@ -1,0 +1,4315 @@
+<UnitConfigurations>
+	<!-- Engineer-->
+	<UnitConfiguration id="com_soldier_engineer" type="engineer" parentId="com_soldier">
+		<IsAbstract>true</IsAbstract>
+	  	<StatesId>com_handgun</StatesId>
+		<Equipment>Engineer</Equipment>
+		<MeleeWeaponId>com_soldier_melee_useless</MeleeWeaponId>
+		<!--<Health>75</Health>-->
+
+		<!-- Abilities-->
+		<RepairSpeed>0.15</RepairSpeed>
+
+		<!--Costs-->
+		<BuildCost>
+			<IronCost>150</IronCost>
+			<OilCost>0</OilCost>
+			<PopulationCost>3</PopulationCost>
+		</BuildCost>
+		<ReinforceCost>
+			<IronCost>15</IronCost>
+			<OilCost>0</OilCost>
+			<PopulationCost>0</PopulationCost>
+		</ReinforceCost>
+		<ReserveBuildCost>
+			<IronCost>100</IronCost>
+			<OilCost>0</OilCost>
+			<PopulationCost>3</PopulationCost>
+		</ReserveBuildCost>
+
+		<!--Internals-->
+		<PrimaryMoveSpeed>4</PrimaryMoveSpeed> <!-- roughly 80% of rifleman speed -->
+		<BrawlSpeed>4</BrawlSpeed>
+		<VaultSpeed>3.5</VaultSpeed>
+		<SecondaryMoveSpeed>3</SecondaryMoveSpeed>
+		
+		<AutoAbilities>
+			<SelfBuffAutoAbilityDefinition abilityType="Boost" conditions="SquadOnly, InCombat" settingIdentifier="BoostAutoAbility"/>
+			<RepairAutoAbilityDefinition interactionType="Repair" conditions="SquadOnly" minRange="0" maxRange="15" healthLostRatioThreshold="0.1" settingIdentifier="RepairAutoAbility"/>
+		</AutoAbilities>
+	</UnitConfiguration>
+
+	<!--Medic-->
+	<UnitConfiguration id="com_soldier_medic" type="medic" parentId="com_soldier">
+		<IsAbstract>true</IsAbstract>
+		<StatesId>com_handgun</StatesId>
+		<Equipment>Medic</Equipment>
+		<MeleeWeaponId>com_soldier_melee_useless</MeleeWeaponId>
+
+		<!--Costs-->
+		<BuildCost>
+		<IronCost>150</IronCost>
+			<OilCost>0</OilCost>
+			<PopulationCost>3</PopulationCost>
+		</BuildCost>
+		<ReinforceCost>
+			<IronCost>15</IronCost>
+			<OilCost>0</OilCost>
+			<PopulationCost>0</PopulationCost>
+		</ReinforceCost>
+		<ReserveBuildCost>
+			<IronCost>70</IronCost>
+			<OilCost>0</OilCost>
+			<PopulationCost>3</PopulationCost>
+		</ReserveBuildCost>
+
+		<!--Internals-->
+		<TentId>pol_structure_medicbuilding</TentId>
+		
+		<AutoAbilities>
+			<SelfBuffAutoAbilityDefinition abilityType="Boost" conditions="SquadOnly, InCombat" settingIdentifier="BoostAutoAbility"/>
+			<HealAutoAbilityDefinition interactionType="Heal" conditions="SquadOnly" minRange="0" maxRange="15" healthLostRatioThreshold="0.1" settingIdentifier="HealAutoAbility"/>
+		</AutoAbilities>
+	</UnitConfiguration>
+  
+	<!--Rifleman-->	
+	<UnitConfiguration id="com_soldier_rifleman" type="human" parentId="com_soldier">
+		<IsAbstract>true</IsAbstract>
+		
+		<!--Costs-->
+		<BuildCost>
+			<IronCost>200</IronCost>
+			<OilCost>0</OilCost>
+			<PopulationCost>3</PopulationCost>
+		</BuildCost>
+		<ReinforceCost>
+			<IronCost>20</IronCost>
+			<OilCost>0</OilCost>
+			<PopulationCost>0</PopulationCost>
+		</ReinforceCost>
+		<ReserveBuildCost>
+			<IronCost>160</IronCost>
+			<OilCost>0</OilCost>
+			<PopulationCost>3</PopulationCost>
+		</ReserveBuildCost>
+	</UnitConfiguration>
+
+	<!--Grenadier-->
+	<UnitConfiguration id="com_soldier_grenadier" type="human" parentId="com_soldier">
+		<IsAbstract>true</IsAbstract>
+		<Equipment>Grenades</Equipment>
+
+		<!--Costs-->
+		<BuildCost>
+			<IronCost>250</IronCost>
+			<OilCost>5</OilCost>
+			<PopulationCost>3</PopulationCost>
+		</BuildCost>
+		<ReinforceCost>
+			<IronCost>30</IronCost>
+			<OilCost>0</OilCost>
+			<PopulationCost>0</PopulationCost>
+		</ReinforceCost>
+		<ReserveBuildCost>
+			<IronCost>170</IronCost>
+			<OilCost>5</OilCost>
+			<PopulationCost>3</PopulationCost>
+		</ReserveBuildCost>
+		
+		<!--Internals-->
+		<PrimaryMoveSpeed>4</PrimaryMoveSpeed> <!-- roughly 80% of rifleman speed -->
+		<BrawlSpeed>4</BrawlSpeed>
+		<!--VaultSpeed>3.5</VaultSpeed-->
+		<SecondaryMoveSpeed>3</SecondaryMoveSpeed>
+		
+		<AutoAbilities>
+			<SelfBuffAutoAbilityDefinition abilityType="Boost" conditions="SquadOnly, InCombat" settingIdentifier="BoostAutoAbility"/>
+			<GrenadeAutoAbilityDefinition weapon="com_frag_hand_grenade" abilityType="Grenade" conditions="SquadOnly" considerationRange="4" minTargetsInArea="1" settingIdentifier="GrenadeAutoAbility"/>
+		</AutoAbilities>
+	</UnitConfiguration>
+
+	<!--Gunner-->
+	<UnitConfiguration id="com_soldier_gunner" type="human" parentId="com_soldier">
+		<IsAbstract>true</IsAbstract>
+		<Equipment>Bazooka</Equipment>
+		<StatesId>com_gunner</StatesId>
+		<MeleeWeaponId>com_soldier_melee_weak</MeleeWeaponId>
+
+		<!--Costs-->
+		<BuildCost>
+			<IronCost>275</IronCost>
+			<OilCost>20</OilCost>
+			<PopulationCost>3</PopulationCost>
+		</BuildCost>
+		<ReinforceCost>
+			<IronCost>35</IronCost>
+			<OilCost>0</OilCost>
+			<PopulationCost>0</PopulationCost>
+		</ReinforceCost>
+		<ReserveBuildCost>
+			<IronCost>220</IronCost>
+			<OilCost>20</OilCost>
+			<PopulationCost>3</PopulationCost>
+		</ReserveBuildCost>
+
+		<!--Veterancy-->
+		<Veterancy>
+			<VeteranThreshold>1500</VeteranThreshold>
+			<EliteThreshold>3500</EliteThreshold>
+		</Veterancy>
+
+		<!--Internals-->
+		<PrimaryMoveSpeed>3</PrimaryMoveSpeed> <!-- roughly 60% of rifleman speed -->
+		<BrawlSpeed>3</BrawlSpeed>
+		<SecondaryMoveSpeed>3</SecondaryMoveSpeed>
+		<VaultSpeed>3</VaultSpeed>
+	</UnitConfiguration>
+
+	<!--MG Soldier-->
+	<UnitConfiguration id="com_soldier_mg" type="mg" parentId="com_soldier">
+		<IsAbstract>true</IsAbstract>
+		<StatesId>com_mg</StatesId>
+		<MeleeWeaponId>com_soldier_melee_useless</MeleeWeaponId>
+		<Equipment>MG</Equipment>
+		<AttackRange>24</AttackRange>
+
+		<!--Hitsystem-->
+		<StationaryHeight>0.75</StationaryHeight>
+
+		<!--Costs-->
+		<BuildCost>
+			<IronCost>300</IronCost>
+			<OilCost>10</OilCost>
+			<PopulationCost>3</PopulationCost>
+		</BuildCost>
+		<ReinforceCost>
+			<IronCost>30</IronCost>
+			<OilCost>0</OilCost>
+			<PopulationCost>0</PopulationCost>
+		</ReinforceCost>
+		<ReserveBuildCost>
+			<IronCost>240</IronCost>
+			<OilCost>10</OilCost>
+			<PopulationCost>3</PopulationCost>
+		</ReserveBuildCost>
+
+		<!--Internals-->
+		<PrimaryMoveSpeed>3</PrimaryMoveSpeed> <!-- roughly 60% of rifleman speed -->
+		<BrawlSpeed>3</BrawlSpeed>
+		<VaultSpeed>3</VaultSpeed>
+		<SecondaryMoveSpeed>3</SecondaryMoveSpeed>
+	</UnitConfiguration>
+
+	<!--Flamethrower-->
+	<UnitConfiguration id="com_soldier_flamer" type="human" parentId="com_soldier">
+		<IsAbstract>true</IsAbstract>
+		<!--<Health>85</Health>-->
+		<StatesId>com_flamer</StatesId>
+		<WeaponId>com_soldier_flamer</WeaponId>
+		<MeleeWeaponId>com_soldier_melee_superior</MeleeWeaponId>
+		<Equipment>Flamethrower</Equipment>
+		<Suppression>
+			<Max>216</Max>
+			<Enter>200</Enter>
+			<Exit>175</Exit>
+		</Suppression>
+
+		<!--Costs-->
+		<BuildCost>
+			<IronCost>275</IronCost>
+			<OilCost>5</OilCost>
+			<PopulationCost>3</PopulationCost>
+		</BuildCost>
+		<ReinforceCost>
+			<IronCost>30</IronCost>
+			<OilCost>0</OilCost>
+			<PopulationCost>0</PopulationCost>
+		</ReinforceCost>
+		<ReserveBuildCost>
+			<IronCost>220</IronCost>
+			<OilCost>5</OilCost>
+			<PopulationCost>3</PopulationCost>
+		</ReserveBuildCost>
+		
+		<!--Hitsystem-->
+		<StationaryHeight>0.75</StationaryHeight>
+
+		<!--Internals-->
+		<PrimaryMoveSpeed>3</PrimaryMoveSpeed> <!-- roughly 60% of rifleman speed -->
+		<BrawlSpeed>3</BrawlSpeed>
+		<VaultSpeed>3</VaultSpeed>
+		<SecondaryMoveSpeed>3</SecondaryMoveSpeed>
+		
+		<GarrisonWeaponId>com_soldier_flamethrower_garrsion</GarrisonWeaponId>
+	</UnitConfiguration>
+
+<!--Polania Units-->
+	<!--Infantry-->
+
+		<!--Polania Engineer-->
+		<UnitConfiguration id="pol_soldier_engineer" type="engineer" parentId="com_soldier_engineer">
+			<IsAbstract>false</IsAbstract>
+			<WeaponId>pol_engineer_handgun</WeaponId>
+
+			<!--Abilities-->
+			<BuildOptions>
+				<UnitBuildOption>
+					<UnitId>pol_structure_hq</UnitId>
+				</UnitBuildOption>
+				<UnitBuildOption>
+					<UnitId>pol_structure_barracks01</UnitId>
+				</UnitBuildOption>
+				<UnitBuildOption>
+					<UnitId>pol_structure_workshop01</UnitId>
+				</UnitBuildOption>
+				<UnitBuildOption>
+					<UnitId>pol_structure_bunker</UnitId>
+				</UnitBuildOption>
+				<UnitBuildOption>
+					<UnitId>pol_structure_bunkertier01</UnitId>
+					<RequiredRank>Veteran</RequiredRank>
+				</UnitBuildOption>
+				<UnitBuildOption>
+					<UnitId>pol_structure_bunkertier02</UnitId>
+					<RequiredRank>Elite</RequiredRank>
+				</UnitBuildOption>
+				<UnitBuildOption>
+					<UnitId>com_structure_sandbags</UnitId>
+				</UnitBuildOption>
+				<UnitBuildOption>
+					<UnitId>com_structure_barbwire</UnitId>
+				</UnitBuildOption>
+				<UnitBuildOption>
+					<UnitId>mis_mine_buried</UnitId>
+				</UnitBuildOption>
+			</BuildOptions>
+		</UnitConfiguration>
+
+		<!--Polania Medic-->
+		<UnitConfiguration id="pol_soldier_medic" type="medic" parentId="com_soldier_medic">
+			<IsAbstract>false</IsAbstract>
+			<WeaponId>pol_medic_handgun</WeaponId>
+		</UnitConfiguration>
+
+		<!--Polania Rifleman-->
+		<UnitConfiguration id="pol_soldier_rifleman" type="human" parentId="com_soldier_rifleman">
+			<IsAbstract>false</IsAbstract>
+			<WeaponId>pol_soldier_rifleman_rifle</WeaponId>
+			<MeleeWeaponId>com_soldier_melee_weak</MeleeWeaponId>
+			<StatesId>pol_rifle</StatesId>
+		</UnitConfiguration>
+
+		<!--Polania Grenadier-->
+		<UnitConfiguration id="pol_soldier_grenadier" type="human" parentId="com_soldier_grenadier">
+			<IsAbstract>false</IsAbstract>
+			<WeaponId>pol_soldier_rifleman_rifle</WeaponId>
+			<MeleeWeaponId>com_soldier_melee_weak</MeleeWeaponId>
+			<StatesId>pol_grenade</StatesId>
+		</UnitConfiguration>
+
+		<!-- Polania Gunner-->
+		<UnitConfiguration id="pol_soldier_gunner" type="human" parentId="com_soldier_gunner">
+			<IsAbstract>false</IsAbstract>
+			<WeaponId>pol_soldier_gunner_cannon</WeaponId>
+		</UnitConfiguration>
+
+		<!--Polania MG Soldier-->
+		<UnitConfiguration id="pol_soldier_mg" type="mg" parentId="com_soldier_mg">
+			<IsAbstract>false</IsAbstract>
+			<WeaponId>pol_soldier_mg_mg</WeaponId>
+			<GarrisonWeaponId>pol_soldier_garrisonmg</GarrisonWeaponId>
+		</UnitConfiguration>
+
+		<!--Polania Flamethrower-->	
+		<UnitConfiguration id="pol_soldier_flamer" type="human" parentId="com_soldier_flamer">  
+			<IsAbstract>false</IsAbstract>
+		<WeaponId>pol_soldier_flamethrower</WeaponId>			
+		</UnitConfiguration>
+	
+	<!--Mechs & Exo-Skeletons-->
+	
+		<!--Polania Spec Ops-->
+		<UnitConfiguration id="pol_soldier_exo" type="exoskeleton" parentId="com_exo">
+			<IsAbstract>false</IsAbstract>
+			<Type>Mech</Type>
+			<Health>175</Health>
+			<ArmorType>Light</ArmorType>
+			<VisionRadius>40</VisionRadius>
+			<Weapons>
+				<Weapon>pol_soldier_exo_autocannon</Weapon>
+				<Weapon>pol_soldier_exo_melee</Weapon>
+			</Weapons>
+			<SquadSize>3</SquadSize>
+			<!--Navigation-->
+			<NavRadius>Human</NavRadius>
+
+			<!--Hitsystem-->
+			<!--<HitzoneRadius>0.6</HitzoneRadius>-->
+			<DefaultHeight>2.0</DefaultHeight>
+
+			<!--Costs-->
+			<BuildCost>
+				<IronCost>350</IronCost>
+				<OilCost>60</OilCost>
+				<PopulationCost>3</PopulationCost>
+			</BuildCost>
+			<RepairCost>
+				<IronCost>3</IronCost>
+				<OilCost>1</OilCost>
+				<BatchSize>15</BatchSize>
+			</RepairCost>
+			<ReinforceCost>
+				<IronCost>85</IronCost>
+				<OilCost>15</OilCost>
+				<PopulationCost>0</PopulationCost>
+			</ReinforceCost>
+			<ReserveBuildCost>
+				<IronCost>175</IronCost>
+				<OilCost>30</OilCost>
+				<PopulationCost>3</PopulationCost>
+			</ReserveBuildCost>			
+			<UpkeepCost>
+				<OilCost>0</OilCost>
+			</UpkeepCost>
+
+			<!--Veterancy-->
+			<Veterancy>
+				<VeteranThreshold>2000</VeteranThreshold>
+				<EliteThreshold>4500</EliteThreshold>
+			</Veterancy>
+			
+			<UnitAbilities>
+				<MechMovementAbilityDefinition defaultMovement="true"/>
+				<DefaultMechAttackAbilityDefinition weapon="pol_soldier_exo_autocannon" defaultAttack="true"/>
+				<DefaultMechAttackAbilityDefinition weapon="pol_soldier_exo_melee" defaultMelee="true" abilityType="MeleeAttack"/>
+				<MechDefenseModeAbilityDefinition DamageReductionModifer="0.2" AbilityType="VeteranMechAbility" cooldown="8" VeteranAbility="true"/>
+			</UnitAbilities>
+
+			<!--ExperienceValues-->
+			<ExperienceValues>
+				<AttackerXP> <!--how many points would an attacker get when doing 100% damage-->
+					<Rookie>300</Rookie>
+					<Veteran>400</Veteran>
+					<Elite>500</Elite>
+				</AttackerXP>
+				<DamageXP> <!--how many points would this unit get if someone does 100% damage to it-->
+					<Rookie>200</Rookie>
+					<Veteran>240</Veteran>
+					<Elite>300</Elite>
+				</DamageXP>
+				<HealerXP> <!--how many points would a healer get if they heal 100% HPs-->
+					<Rookie>250</Rookie>
+					<Veteran>325</Veteran>
+					<Elite>375</Elite>
+				</HealerXP>
+			</ExperienceValues>
+
+			<!--Internals-->
+			<KineticToVelocity>0.5</KineticToVelocity>
+			<RotationSpeed>96</RotationSpeed>
+			<MoveSpeed>3.45</MoveSpeed>
+			<ChargingMoveSpeed>3</ChargingMoveSpeed>
+			<ForwardScale>1.2</ForwardScale>
+			<PositiveDelta>120</PositiveDelta>
+			<NegativeDelta>60</NegativeDelta>
+			<Acceleration>0.2</Acceleration>
+			<MotionScaleCurve>
+				<Key x="0" y="1"/>
+				<Key x="60" y="0.8"/>
+				<Key x="90" y="0.7"/>
+				<Key x="140" y="0.5"/>
+				<Key x="180" y="0.4"/>
+			</MotionScaleCurve>
+				<!--Decay describes velocity reduction in meter per tick! -->
+			<KineticVelocityProportionalDecay>0.2</KineticVelocityProportionalDecay>
+			<KineticVelocityConstantDecay>0.1</KineticVelocityConstantDecay>	
+			<UnitStates>
+					<States>
+						<DefaultMechStateDefinition name="default"/>
+						<MechShootStateDefinition name="shoot" PreTicks="9" PostTicks="3"/>
+						<MechTurnStateDefinition name="turn"/>
+					  <MechInteractStateDefinition name="interact"/>
+					  <MechShootStateDefinition name ="brawl" PreTicks="6" PostTicks="8"/>
+					</States>
+					<Transitions>
+						<BlendTransitionDefinition from="default" to="turn" mergeTicks="1"/>
+						<InstantTransitionDefinition from="turn" to="default"/>
+						<BlendTransitionDefinition from="turn" to="shoot" mergeTicks="3"/>
+						<InstantTransitionDefinition from="shoot" to="default"/>
+						<BlendTransitionDefinition from="default" to="shoot" mergeTicks="3"/>
+						<BlendTransitionDefinition from="default" to="interact" mergeTicks="3"/>
+						<BlendTransitionDefinition from="turn" to="interact" mergeTicks="3"/>
+						<InstantTransitionDefinition from="interact" to="default"/>
+						<InstantTransitionDefinition from="brawl" to="default"/>
+						<BlendTransitionDefinition from="default" to="brawl" mergeTicks="3"/>
+						<BlendTransitionDefinition from="turn" to="brawl" mergeTicks="3"/>
+					</Transitions>
+					<Requests>
+						<MoveRequest>
+							<StateNames>
+								<Request>default</Request>
+							</StateNames>
+						</MoveRequest>
+						<TurnRequest>
+							<StateNames>
+								<Request>turn</Request>
+							</StateNames>
+						</TurnRequest>
+						<AttackRequest>
+							<StateNames>
+								<Request>shoot</Request>
+								<Request>default</Request>
+							</StateNames>
+						</AttackRequest>
+						<MeleeAttackRequest>
+							<StateNames>
+								<Request>brawl</Request>
+								<Request>default</Request>
+							</StateNames>
+						</MeleeAttackRequest>
+					  <InteractRequest>
+					    <StateNames>
+					      <Request>interact</Request>
+					    </StateNames>
+					  </InteractRequest>
+          </Requests>
+				</UnitStates>
+		</UnitConfiguration>
+
+		<!--Polania Spider-->
+		<UnitConfiguration id="pol_mech_spider" type="mech" parentId="com_light_mech">
+			<IsAbstract>false</IsAbstract>
+			<Health>600</Health>
+			<VisionRadius>40</VisionRadius>
+			<Weapons>
+				<Weapon>pol_mech_spider_cannons</Weapon>
+				<Weapon>pol_mech_spider_cannons_overdrive</Weapon>
+			</Weapons>
+
+			<!--Hitsystem-->
+			<HitzoneRadius>2</HitzoneRadius>
+			<DefaultHeight>2.5</DefaultHeight>
+			<DamageHitzones>
+				<DamageHitzone>
+					<Id>1</Id>
+					<LowerAngle>135</LowerAngle>
+					<UpperAngle>225</UpperAngle>
+					<Type>Vulnerable</Type>
+				</DamageHitzone>
+			</DamageHitzones>
+
+			<!--Abilities-->
+			<UnitAbilities>
+				<SpiderDefaultAbilityDefinition weapon="pol_mech_spider_cannons" defaultAttack="true" defaultMovement="true"/>
+				<MechoverdriveAbilityDefinition weapon="pol_mech_spider_cannons_overdrive" cooldown="50" abilityType="Deploy" VeteranAbility="true"/>
+			</UnitAbilities>
+			
+			<AutoAbilities>
+				<AllAroundAttackAutoAbilityDefinition weapon="pol_mech_spider_cannons_overdrive" abilityType="Deploy" minTargetsInRange="2" settingIdentifier="OverdriveAutoAbility"/>
+			</AutoAbilities>
+			
+			<LookForTargetsWhileMoving>True</LookForTargetsWhileMoving>
+
+			<!--Costs-->
+			<BuildCost>
+				<IronCost>330</IronCost>
+				<OilCost>80</OilCost>
+				<PopulationCost>4</PopulationCost>
+			</BuildCost>
+			<RepairCost>
+				<IronCost>5</IronCost>
+				<OilCost>1</OilCost>
+				<BatchSize>50</BatchSize>
+			</RepairCost>
+			<ReserveBuildCost>
+				<IronCost>200</IronCost>
+				<OilCost>60</OilCost>
+				<PopulationCost>4</PopulationCost>
+			</ReserveBuildCost>
+			<UpkeepCost>
+				<OilCost>0</OilCost>
+			</UpkeepCost>
+
+			<!--Veterancy-->
+			<Veterancy>
+				<VeteranThreshold>1500</VeteranThreshold>
+				<EliteThreshold>3500</EliteThreshold>
+			</Veterancy>
+
+			<!--ExperienceValues-->
+			<ExperienceValues>
+				<AttackerXP> <!--how many points would an attacker get when doing 100% damage-->
+					<Rookie>666</Rookie>
+					<Veteran>800</Veteran>
+					<Elite>1000</Elite>
+				</AttackerXP>
+				<DamageXP> <!--how many points would this unit get if someone does 100% damage to it-->
+					<Rookie>450</Rookie>
+					<Veteran>540</Veteran>
+					<Elite>675</Elite>
+				</DamageXP>
+				<HealerXP> <!--how many points would a healer get if they heal 100% HPs-->
+					<Rookie>750</Rookie>
+					<Veteran>975</Veteran>
+					<Elite>1125</Elite>
+				</HealerXP>
+			</ExperienceValues>
+
+			<!--Internals-->
+			<MaxKineticVelocity>0</MaxKineticVelocity>
+			<KineticToVelocity>1.1</KineticToVelocity>
+			<RotationSpeed>120</RotationSpeed>
+			<MoveSpeed>3.42</MoveSpeed>
+			<Acceleration>0.5</Acceleration>
+			<WreckConfiguration>pol_mech_spider_wreck</WreckConfiguration>
+		</UnitConfiguration>
+
+		<!-- Polania Recon-->
+		<UnitConfiguration id="pol_mech_recon" type="mech" parentId="com_light_mech">
+			<IsAbstract>false</IsAbstract>
+			<Health>750</Health>
+			<VisionRadius>40</VisionRadius>
+			<AfterDeathVisionDuration>4.8</AfterDeathVisionDuration> <!-- in seconds -->
+			<AfterDeathVisionRadius>30</AfterDeathVisionRadius>
+			<Weapons>
+				<Weapon>pol_mech_recon_rifle</Weapon>
+				<Weapon>pol_mech_recon_melee</Weapon>
+				<Weapon>pol_mech_recon_charge_impact</Weapon>
+				<Weapon>pol_mech_recon_charge_push</Weapon>
+			</Weapons>
+
+			<!--Navigation-->
+			<NavRadius>SmallMech</NavRadius>
+
+			<!--Hitsystem-->
+			<HitzoneRadius>2</HitzoneRadius>
+			<DefaultHeight>2.5</DefaultHeight>
+			<DamageHitzones>
+				<DamageHitzone>
+					<Id>1</Id>
+					<LowerAngle>135</LowerAngle>
+					<UpperAngle>225</UpperAngle>
+					<Type>Vulnerable</Type>
+				</DamageHitzone>
+			</DamageHitzones>
+
+			<!--Abilities-->
+			<UnitAbilities>
+				<MechMovementAbilityDefinition defaultMovement="true"/>
+				<DefaultMechAttackAbilityDefinition weapon="pol_mech_recon_rifle" defaultAttack="true"/>
+				<DefaultMechAttackAbilityDefinition weapon="pol_mech_recon_melee" defaultMelee="true" abilityType="MeleeAttack"/>
+				<MechChargeDefinition impactWeapon="pol_mech_recon_charge_impact" pushWeapon="pol_mech_recon_charge_push" pushKinetic="10" cooldown="720" minRange="1" maxRange="40" abilityType="Dash" VeteranAbility="true"/>
+			</UnitAbilities>
+			
+			<AutoAbilities>
+				<MechChargeAutoAbilityDefinition weapon="pol_mech_recon_charge_impact" abilityType="Dash" settingIdentifier="ChargeAutoAbility"/>
+			</AutoAbilities>
+
+			<!--Costs-->
+			<BuildCost>
+				<IronCost>400</IronCost>
+				<OilCost>120</OilCost>
+				<PopulationCost>4</PopulationCost>
+			</BuildCost>
+			<RepairCost>
+				<IronCost>5</IronCost>
+				<OilCost>2</OilCost>
+				<BatchSize>70</BatchSize>
+			</RepairCost>
+			<ReserveBuildCost>
+				<IronCost>240</IronCost>
+				<OilCost>80</OilCost>
+				<PopulationCost>4</PopulationCost>
+			</ReserveBuildCost>
+			<UpkeepCost>
+				<OilCost>0</OilCost>
+			</UpkeepCost>
+
+			<!--Veterancy-->
+			<Veterancy>
+				<VeteranThreshold>1500</VeteranThreshold>
+				<EliteThreshold>3500</EliteThreshold>
+			</Veterancy>
+
+			<!--ExperienceValues-->
+			<ExperienceValues>
+				<AttackerXP> <!--how many points would an attacker get when doing 100% damage-->
+					<Rookie>1000</Rookie>
+					<Veteran>1200</Veteran>
+					<Elite>1500</Elite>
+				</AttackerXP>
+				<DamageXP> <!--how many points would this unit get if someone does 100% damage to it-->
+					<Rookie>300</Rookie>
+					<Veteran>360</Veteran>
+					<Elite>450</Elite>
+				</DamageXP>
+				<HealerXP> <!--how many points would a healer get if they heal 100% HPs-->
+					<Rookie>750</Rookie>
+					<Veteran>975</Veteran>
+					<Elite>1125</Elite>
+				</HealerXP>
+			</ExperienceValues>
+
+			<!--Internals-->
+			<RotationSpeed>80</RotationSpeed>
+			<MoveSpeed>6.5</MoveSpeed>
+			<ChargingMoveSpeed>9</ChargingMoveSpeed>
+			<KineticToVelocity>0.5</KineticToVelocity>
+			<MaxKineticVelocity>1</MaxKineticVelocity>
+			<PositiveDelta>120</PositiveDelta>
+			<NegativeDelta>60</NegativeDelta>
+			<Acceleration>0.3</Acceleration>
+			<RotationAcceleration>0.15</RotationAcceleration>
+			<MotionScaleCurve>
+				<Key x="0" y="1"/>
+				<Key x="60" y="0.5"/>
+				<Key x="90" y="0"/>
+				<Key x="180" y="-.3"/>
+			</MotionScaleCurve>
+			<ReversingMotionScaleCurve>
+				<Key x="0" y=".5"/>
+				<Key x="90" y="0"/>
+				<Key x="150" y=".3"/>
+				<Key x="180" y=".5"/>
+			</ReversingMotionScaleCurve>
+			<UnitStates>
+				<States>
+					<DefaultMechStateDefinition name="default"/>
+					<MechShootStateDefinition name="shoot" PreTicks="7" PostTicks="3"/>
+					<MechShootStateDefinition name="brawl" PreTicks="5" PostTicks="16"/>
+					<MechTurnStateDefinition name="turn"/>
+					<MechInteractStateDefinition name="interact"/>
+					<ChargeMechStateDefinition name="charge"/>
+				</States>
+
+				<Transitions>
+					<BlendTransitionDefinition from="default" to="turn" mergeTicks="3"/>
+					<InstantTransitionDefinition from="turn" to="default"/>
+					<BlendTransitionDefinition from="turn" to="shoot" mergeTicks="3"/>
+					<InstantTransitionDefinition from="shoot" to="default" />
+					<BlendTransitionDefinition from="default" to="shoot" mergeTicks="3"/>
+					<BlendTransitionDefinition from="turn" to="brawl" mergeTicks="3"/>
+					<InstantTransitionDefinition from="brawl" to="default"/>
+					<BlendTransitionDefinition from="default" to="brawl" mergeTicks="3"/>
+					<BlendTransitionDefinition from="turn" to="interact" mergeTicks="3"/>
+					<InstantTransitionDefinition from="interact" to="default"/>
+					<BlendTransitionDefinition from="turn" to="charge" mergeTicks="3"/>
+					<InstantTransitionDefinition from="charge" to="default" />
+					<BlendTransitionDefinition from="default" to="charge" mergeTicks="3"/>
+				</Transitions>
+
+				<Requests>
+					<MoveRequest>
+						<StateNames>
+							<Request>default</Request>
+						</StateNames>
+					</MoveRequest>
+					<TurnRequest>
+						<StateNames>
+							<Request>turn</Request>
+						</StateNames>
+					</TurnRequest>
+					<AttackRequest>
+						<StateNames>
+							<Request>shoot</Request>
+							<Request>default</Request>
+						</StateNames>
+					</AttackRequest>
+					<MeleeAttackRequest>
+						<StateNames>
+							<Request>brawl</Request>
+							<Request>default</Request>
+						  </StateNames>
+					</MeleeAttackRequest>
+					<InteractRequest>
+						<StateNames>
+							<Request>interact</Request>
+						</StateNames>
+					</InteractRequest>
+					<AbilityRequest ability="Dash">
+						<StateNames>
+							<Request>charge</Request>
+							<Request>default</Request>
+						</StateNames>
+					</AbilityRequest>
+				</Requests>
+			</UnitStates>
+			<WreckConfiguration>pol_mech_recon_wreck</WreckConfiguration>
+			
+		</UnitConfiguration>
+
+		<!-- Polania Artillery | Siege Tank-->
+		<UnitConfiguration id="pol_mech_artillery" type="mech" parentId="com_medium_mech">
+			<IsAbstract>false</IsAbstract>
+			<Health>600</Health>
+			<VisionRadius>35</VisionRadius>
+			<Weapons>
+				<Weapon>pol_mech_artillery_cannon_motion</Weapon>
+				<Weapon>pol_mech_artillery_cannon_siege</Weapon>
+				<Weapon>pol_mech_artillery_mg</Weapon>
+				<Weapon>pol_mech_artillery_smokebarrel</Weapon>
+			</Weapons>
+			
+			
+			<SecondaryWeaponModuleConfiguration>
+				<SecondaryWeapons>
+					<SecondaryWeaponConfiguration weaponConfigurationId="pol_mech_artillery_mg" offsetX="0" offsetY="0" direction="45"/>
+				</SecondaryWeapons>
+			</SecondaryWeaponModuleConfiguration>
+			
+
+			<!--Hitsystem-->
+			<HitzoneRadius>2.5</HitzoneRadius>
+			<DefaultHeight>2.5</DefaultHeight>
+			<DamageHitzones>
+				<DamageHitzone>
+					<Id>1</Id>
+					<LowerAngle>135</LowerAngle>
+					<UpperAngle>225</UpperAngle>
+					<Type>Vulnerable</Type>
+				</DamageHitzone>
+			</DamageHitzones>
+
+			<!--Abilities-->
+			<UnitAbilities>
+				<MechMovementAbilityDefinition defaultMovement="true"/>
+				<DefaultMechAttackAbilityDefinition weapon="pol_mech_artillery_cannon_motion" defaultAttack="true">
+					<AllowedStates>
+						<State>default</State>
+						<State>turn</State>
+						<State>aim</State>
+						<State>shoot_default</State>
+					</AllowedStates>
+				</DefaultMechAttackAbilityDefinition>
+				<DefaultMechAttackAbilityDefinition weapon="pol_mech_artillery_cannon_siege" defaultAttack="true">
+					<AllowedStates>
+						<State>siege</State>
+						<State>shoot_siege</State>
+						<State>default</State>
+					</AllowedStates>
+				</DefaultMechAttackAbilityDefinition>
+				<MechAbilityDefinition abilityType="Deploy" cooldown="42"/>
+				<MechSmokeScreenAbilityDefinition abilityType="HeroAbility2" cooldown="150" SmokeAmmoName="Smokescreen" VeteranAbility="true"/>
+				<DefaultMechAttackAbilityDefinition abilityType="HeroAbility1" weapon="pol_mech_artillery_smokebarrel" deactivateAfterShot="true" VeteranAbility="true"/>
+			</UnitAbilities>
+			
+			<AutoAbilities>
+				<SmokeScreenAutoAbilityDefinition abilityType="HeroAbility2" conditions="InCombat, UnDeployed" ownHealthLostRatioThreshold="0.25" settingIdentifier="ArtillerySmokeAutoAbility"/>
+				<SmokeCanisterAutoAbilityDefinition abilityType="HeroAbility1" conditions="Deployed" settingIdentifier="SmokeCanisterAutoAbility"/>
+			</AutoAbilities>
+
+			<!--Costs-->
+			<BuildCost>
+				<IronCost>500</IronCost>
+				<OilCost>160</OilCost>
+				<PopulationCost>5</PopulationCost>
+			</BuildCost>
+			<RepairCost>
+				<IronCost>6</IronCost>
+				<OilCost>2</OilCost>
+				<BatchSize>40</BatchSize>
+			</RepairCost>
+			<ReserveBuildCost>
+				<IronCost>290</IronCost>
+				<OilCost>90</OilCost>
+				<PopulationCost>5</PopulationCost>
+			</ReserveBuildCost>
+			<UpkeepCost>
+				<OilCost>0</OilCost>
+			</UpkeepCost>
+
+			<!--Veterancy-->
+			<Veterancy>
+				<VeteranThreshold>3000</VeteranThreshold>
+				<EliteThreshold>7000</EliteThreshold>
+			</Veterancy>
+
+			<!--ExperienceValues-->
+			<ExperienceValues>
+				<AttackerXP> <!--how many points would an attacker get when doing 100% damage-->
+					<Rookie>800</Rookie>
+					<Veteran>960</Veteran>
+					<Elite>1200</Elite>
+				</AttackerXP>
+				<DamageXP> <!--how many points would this unit get if someone does 100% damage to it-->
+					<Rookie>600</Rookie>
+					<Veteran>720</Veteran>
+					<Elite>900</Elite>
+				</DamageXP>
+				<HealerXP> <!--how many points would a healer get if they heal 100% HPs-->
+					<Rookie>750</Rookie>
+					<Veteran>975</Veteran>
+					<Elite>1125</Elite>
+				</HealerXP>
+			</ExperienceValues>
+
+			<!--Internals-->
+			<MoveSpeed>2.5</MoveSpeed>
+			<MaxKineticVelocity>0</MaxKineticVelocity>			
+			<Acceleration>0.05</Acceleration>
+			<RotationSpeed>22</RotationSpeed>
+			<RotationAcceleration>0.05</RotationAcceleration>
+			<MotionScaleCurve>
+				<Key x="0" y="1"/>
+				<Key x="90" y="0"/>
+				<Key x="180" y="0"/>
+			</MotionScaleCurve>
+			<ReversingMotionScaleCurve>
+				<Key x="0" y="0"/>
+				<Key x="135" y="0"/>
+				<Key x="180" y=".8"/>
+			</ReversingMotionScaleCurve>
+			<DeployToAttack>False</DeployToAttack>
+			<DeployOnDragMove>True</DeployOnDragMove>
+			<WreckConfiguration>pol_mech_artillery_wreck</WreckConfiguration>
+			<UnitStates>
+				<States>
+					<DefaultMechStateDefinition name="default"/>
+					<StationaryMechStateDefinition name="siege"/>
+					<MechShootStateDefinition name="shoot_default" PreTicks="1" PostTicks="3"/>
+					<MechStationaryShootStateDefinition name="shoot_siege" PreTicks="1" PostTicks="3"/>
+					<MechTurnStateDefinition name="turn"/>
+					<MechAimStateDefinition name="aim"/>
+				</States>
+
+				<Transitions>
+				<!--Attention: the flat-value should be as long as the actual time for the artillery to change to siege mode. 
+				Having a lower value might lead to delayed visual attacks and therefore early visualization of logical attack (damage)-->
+					<StationaryTransitionDefinition from="default" to="siege" fadeOut="3" flat="42" fadeIn="0"/>
+					<StationaryTransitionDefinition from="turn" to="siege" fadeOut="3" flat="42" fadeIn="0"/>
+					<StationaryTransitionDefinition from="siege" to="default" fadeOut="3" flat="45" fadeIn="3"/>
+					<InstantTransitionDefinition from="shoot_siege" to="siege"/>
+					<BlendTransitionDefinition from="siege" to="shoot_siege" mergeTicks="3"/>
+					<BlendTransitionDefinition from="default" to="turn" mergeTicks="3"/>
+					<BlendTransitionDefinition from="turn" to="default" mergeTicks="3"/>
+					<BlendTransitionDefinition from="default" to="aim" mergeTicks="3"/>
+					<BlendTransitionDefinition from="turn" to="aim" mergeTicks="3"/>
+					<BlendTransitionDefinition from="aim" to="default" mergeTicks="3"/>
+					<InstantTransitionDefinition from="aim" to="shoot_default"/>
+					<InstantTransitionDefinition from="shoot_default" to="aim"/>
+				</Transitions>
+
+				<Requests>
+					<MoveRequest>
+						<StateNames>
+							<Request>default</Request>
+						</StateNames>
+					</MoveRequest>
+					<TurnRequest>
+						<StateNames>
+							<Request>default</Request>
+							<Request>turn</Request>
+							<Request>default</Request>
+						</StateNames>
+					</TurnRequest>
+					<AttackRequest if="default">
+						<StateNames>
+							<Request>aim</Request>
+							<Request>shoot_default</Request>
+							<Request>aim</Request>
+						</StateNames>
+					</AttackRequest>
+					<AttackRequest if="aim">
+						<StateNames>
+							<Request>shoot_default</Request>
+							<Request>aim</Request>
+						</StateNames>
+					</AttackRequest>
+					<AttackRequest if="siege">
+						<StateNames>
+							<Request>shoot_siege</Request>
+							<Request>siege</Request>
+						</StateNames>
+					</AttackRequest>
+					<AbilityRequest if="aim" ability="Deploy">
+						<StateNames>
+							<Request>default</Request>
+							<Request>siege</Request>
+						</StateNames>
+					</AbilityRequest>
+					<AbilityRequest if="default" ability="Deploy">
+						<StateNames>
+							<Request>siege</Request>
+						</StateNames>
+					</AbilityRequest>
+					<AbilityRequest if="turn" ability="Deploy">
+						<StateNames>
+							<Request>default</Request>
+							<Request>siege</Request>
+						</StateNames>
+					</AbilityRequest>
+					<AbilityRequest if="siege" ability="Deploy">
+						<StateNames>
+							<Request>default</Request>
+						</StateNames>
+					</AbilityRequest>
+				</Requests>
+				<DeployedStates>
+					<State>siege</State>
+					<State>shoot_siege</State>
+				</DeployedStates>
+			</UnitStates>
+		</UnitConfiguration>
+
+		<!-- Polania Stinger-->
+		<UnitConfiguration id="pol_mech_stinger" type="mech" parentId="com_medium_mech">
+			<IsAbstract>false</IsAbstract>
+			<Health>1000</Health>
+			<VisionRadius>40</VisionRadius>
+			<Weapons>
+				<Weapon>pol_mech_stinger_bolter</Weapon>
+				<Weapon>pol_mech_stinger_harpoon</Weapon>
+			</Weapons>
+
+			<!--Hitsystem-->
+			<HitzoneRadius>1.7</HitzoneRadius>
+			<DefaultHeight>2.5</DefaultHeight>
+			<DamageHitzones>
+				<DamageHitzone>
+					<Id>1</Id>
+					<LowerAngle>135</LowerAngle>
+					<UpperAngle>225</UpperAngle>
+					<Type>Vulnerable</Type>
+				</DamageHitzone>
+			</DamageHitzones>
+
+			<!--Abilities-->
+			<UnitAbilities>
+				<MechMovementAbilityDefinition defaultMovement="true"/>
+				<DefaultMechAttackAbilityDefinition weapon="pol_mech_stinger_bolter" defaultAttack="true"/>
+				<DefaultMechAttackAbilityDefinition weapon="pol_mech_stinger_harpoon" abilityType="VeteranMechAbility" VeteranAbility="true" DeactivateAfterShot="true"/>
+			</UnitAbilities>
+			<AutoAbilities>
+				<SingleTargetAttackAutoAbilityDefinition weapon="pol_mech_stinger_harpoon" abilityType="VeteranMechAbility" settingIdentifier="StingAutoAbility"/>
+			</AutoAbilities>
+			<!--Costs-->
+			<BuildCost>
+				<IronCost>650</IronCost>
+				<OilCost>180</OilCost>
+				<PopulationCost>5</PopulationCost>
+			</BuildCost>
+			<RepairCost>
+				<IronCost>7</IronCost>
+				<OilCost>2</OilCost>
+				<BatchSize>70</BatchSize>
+			</RepairCost>
+			<ReserveBuildCost>
+				<IronCost>420</IronCost>
+				<OilCost>140</OilCost>
+				<PopulationCost>5</PopulationCost>
+			</ReserveBuildCost>
+			<UpkeepCost>
+				<OilCost>0</OilCost>
+			</UpkeepCost>
+
+			<!--Veterancy-->
+			<Veterancy>
+				<VeteranThreshold>2500</VeteranThreshold>
+				<EliteThreshold>5500</EliteThreshold>
+			</Veterancy>
+
+			<!--ExperienceValues-->
+			<ExperienceValues>
+				<AttackerXP> <!--how many points would an attacker get when doing 100% damage-->
+					<Rookie>1333</Rookie>
+					<Veteran>1600</Veteran>
+					<Elite>2000</Elite>
+				</AttackerXP>
+				<DamageXP> <!--how many points would this unit get if someone does 100% damage to it-->
+					<Rookie>750</Rookie>
+					<Veteran>900</Veteran>
+					<Elite>1125</Elite>
+				</DamageXP>
+				<HealerXP> <!--how many points would a healer get if they heal 100% HPs-->
+					<Rookie>750</Rookie>
+					<Veteran>975</Veteran>
+					<Elite>1125</Elite>
+				</HealerXP>
+			</ExperienceValues>
+
+			<!--Internals-->
+			<RotationSpeed>50</RotationSpeed>
+			<KineticToVelocity>2</KineticToVelocity>
+			<MaxKineticVelocity>2</MaxKineticVelocity>
+			<RotationAcceleration>0.05</RotationAcceleration>
+			<MoveSpeed>2.25</MoveSpeed>
+			<PositiveDelta>90</PositiveDelta>
+			<NegativeDelta>160</NegativeDelta>
+			<Acceleration>0.05</Acceleration>
+			<MotionScaleCurve>
+				<Key x="0" y="1"/>
+				<Key x="60" y="1"/>
+				<Key x="110" y="0"/>
+				<Key x="180" y="-.6"/>
+			</MotionScaleCurve>
+			<WreckConfiguration>pol_mech_stinger_wreck</WreckConfiguration>
+			<UnitStates>
+				<States>
+					<DefaultMechStateDefinition name="default"/>
+					<MechShootStateDefinition name="shoot" PreTicks="7" PostTicks="3"/>
+					<MechShootStateDefinition name="harpoon" PreTicks="3" PostTicks="3"/>
+					<MechTurnStateDefinition name="turn"/>
+				  <MechInteractStateDefinition name="interact"/>
+				</States>
+				<Transitions>
+					<BlendTransitionDefinition from="default" to="turn" mergeTicks="1"/>
+					<InstantTransitionDefinition from="turn" to="default"/>
+					<BlendTransitionDefinition from="turn" to="shoot" mergeTicks="3"/>
+					<InstantTransitionDefinition from="shoot" to="default"/>
+					<BlendTransitionDefinition from="default" to="shoot" mergeTicks="3"/>
+					<BlendTransitionDefinition from="turn" to="harpoon" mergeTicks="4"/>
+					<InstantTransitionDefinition from="harpoon" to="default"/>
+					<BlendTransitionDefinition from="default" to="harpoon" mergeTicks="4"/>
+				  <BlendTransitionDefinition from="turn" to="interact" mergeTicks="3"/>
+				  <BlendTransitionDefinition from="default" to="interact" mergeTicks="3"/>
+				  <InstantTransitionDefinition from="interact" to="default"/>
+				</Transitions>
+				<Requests>
+					<MoveRequest>
+						<StateNames>
+							<Request>default</Request>
+						</StateNames>
+					</MoveRequest>
+					<TurnRequest>
+						<StateNames>
+							<Request>turn</Request>
+						</StateNames>
+					</TurnRequest>
+					<AttackRequest>
+						<StateNames>
+							<Request>shoot</Request>
+							<Request>default</Request>
+						</StateNames>
+					</AttackRequest>
+					<InteractRequest>
+						<StateNames>
+							<Request>interact</Request>
+						</StateNames>
+					</InteractRequest>
+					<AbilityRequest ability="VeteranMechAbility">
+						<StateNames>
+							<Request>harpoon</Request>
+							<Request>default</Request>
+						</StateNames>
+					</AbilityRequest>
+				</Requests>
+			</UnitStates>
+		</UnitConfiguration>
+
+		<!-- Polania Trooptransport-->
+		<UnitConfiguration id="pol_mech_trooptransport" type="mech" parentId="com_heavy_mech">
+			<IsAbstract>false</IsAbstract>
+			<Health>1000</Health>
+			<VisionRadius>40</VisionRadius>
+			<Weapons>
+				<Weapon>pol_mech_trooptransport_mortar</Weapon>
+			</Weapons>
+
+			<!--Hitsystem-->
+			<!--removed default hight nnnn-->
+			<HitzoneRadius>3.5</HitzoneRadius>
+			<DefaultHeight>2.5</DefaultHeight>
+
+			<!--Abilities-->
+			<UnitAbilities>
+				<MechMovementAbilityDefinition defaultMovement="true"/>
+				<TurretMechAttackAbilityDefinition weapon="pol_mech_trooptransport_mortar" defaultAttack="true"/>
+				<MechFortifyAbilityDefinition abilityType="Deploy" cooldown="32" DisabledInAlpha2="false" DamageReductionModifer="0.25" VeteranAbility="true"/>
+				<MechAbilityDefinition abilityType="Unload">
+					<AllowedStates>
+						<State>default</State>
+						<State>turn</State>
+					</AllowedStates>
+				</MechAbilityDefinition>
+			</UnitAbilities>
+			<AutoAbilities>
+				<FortifyAutoAbilityDefinition abilityType="Deploy" conditions="UnDeployed" noMoveOrderGivenTime="30" settingIdentifier="FortifyDownAutoAbility"/>
+			</AutoAbilities>
+
+			<!--Costs-->
+			<BuildCost>
+				<IronCost>500</IronCost>
+				<OilCost>150</OilCost>
+				<PopulationCost>5</PopulationCost>
+			</BuildCost>
+			<RepairCost>
+				<IronCost>5</IronCost>
+				<OilCost>1</OilCost>
+				<BatchSize>60</BatchSize>
+			</RepairCost>
+			<ReserveBuildCost>
+				<IronCost>350</IronCost>
+				<OilCost>120</OilCost>
+				<PopulationCost>5</PopulationCost>
+			</ReserveBuildCost>
+			<UpkeepCost>
+				<OilCost>0</OilCost>
+			</UpkeepCost>
+
+			<!--Veterancy-->
+			<Veterancy>
+				<VeteranThreshold>2000</VeteranThreshold>
+				<EliteThreshold>4000</EliteThreshold>
+			</Veterancy>
+
+			<!--ExperienceValues-->
+			<ExperienceValues>
+				<AttackerXP> <!--how many points would an attacker get when doing 100% damage-->
+					<Rookie>1200</Rookie>
+					<Veteran>1400</Veteran>
+					<Elite>1900</Elite>
+				</AttackerXP>
+				<DamageXP> <!--how many points would this unit get if someone does 100% damage to it-->
+					<Rookie>1750</Rookie>
+					<Veteran>2100</Veteran>
+					<Elite>2625</Elite><!--wait what? Does this value even make sense?-->
+				</DamageXP>
+				<HealerXP> <!--how many points would a healer get if they heal 100% HPs-->
+					<Rookie>750</Rookie>
+					<Veteran>975</Veteran>
+					<Elite>1125</Elite>
+				</HealerXP>
+			</ExperienceValues>
+
+			<!--Internals-->
+			<MoveSpeed>4.32</MoveSpeed>
+			<MaxKineticVelocity>0</MaxKineticVelocity>
+			<KineticToVelocity>0</KineticToVelocity>
+			<Acceleration>0.1</Acceleration>
+			<RotationSpeed>35</RotationSpeed>
+			<RotationAcceleration>0.05</RotationAcceleration>
+			<MotionScaleCurve>
+				<Key x="0" y="1"/>
+				<Key x="45" y="0"/>
+				<Key x="135" y="0"/>
+				<Key x="180" y="1"/>
+			</MotionScaleCurve>
+			<AutoReversing>True</AutoReversing>
+			<GarrisonModuleConfiguration>
+				<DealCollateralDamage>False</DealCollateralDamage>
+			</GarrisonModuleConfiguration>
+			<WreckConfiguration>pol_mech_trooptransport_wreck</WreckConfiguration>
+			<UnitStates>
+				<States>
+					<DefaultMechStateDefinition name="default"/>
+					<StationaryMechStateDefinition name="siege"/>
+					<MechShootStateDefinition name="shoot" PreTicks="1" PostTicks="3"/>
+					<MechTurnStateDefinition name="turn"/>
+					<MechStationaryShootStateDefinition name="shoot_siege" PreTicks="1" PostTicks="3"/>
+				</States>
+				<Transitions>
+					<StationaryTransitionDefinition from="default" to="siege" fadeOut="3" flat="24" fadeIn="0"/>
+					<StationaryTransitionDefinition from="turn" to="siege" fadeOut="3" flat="24" fadeIn="0"/>
+					<StationaryTransitionDefinition from="siege" to="default" fadeOut="3" flat="24" fadeIn="3"/>
+					<BlendTransitionDefinition from="default" to="turn" mergeTicks="3"/>
+					<BlendTransitionDefinition from="turn" to="default" mergeTicks="3"/>
+					<InstantTransitionDefinition from="shoot_siege" to="siege"/>
+					<BlendTransitionDefinition from="default" to="shoot" mergeTicks="3"/>
+					<InstantTransitionDefinition from="shoot" to="default"/>
+					<BlendTransitionDefinition from="siege" to="shoot_siege" mergeTicks="3"/>
+				</Transitions>
+				<Requests>
+					<MoveRequest>
+						<StateNames>
+							<Request>default</Request>
+						</StateNames>
+					</MoveRequest>
+					<TurnRequest>
+						<StateNames>
+							<Request>default</Request>
+							<Request>turn</Request>
+						</StateNames>
+					</TurnRequest>
+					<AttackRequest if="siege">
+						<StateNames>
+							<Request>shoot_siege</Request>
+							<Request>siege</Request>
+						</StateNames>
+					</AttackRequest>
+					<AttackRequest>
+						<StateNames>
+							<Request>shoot</Request>
+							<Request>default</Request>
+						</StateNames>
+					</AttackRequest>
+					<AbilityRequest if="default" ability="Deploy">
+						<StateNames>
+							<Request>siege</Request>
+						</StateNames>
+					</AbilityRequest>
+					<AbilityRequest if="turn" ability="Deploy">
+						<StateNames>
+							<Request>default</Request>
+							<Request>siege</Request>
+						</StateNames>
+					</AbilityRequest>
+					<AbilityRequest if="siege" ability="Deploy">
+						<StateNames>
+							<Request>default</Request>
+						</StateNames>
+					</AbilityRequest>
+				</Requests>
+				<DeployedStates>
+					<State>siege</State>
+					<State>shoot_siege</State>
+				</DeployedStates>
+			</UnitStates>
+		</UnitConfiguration>
+
+		<!--Polania Gunfort | Tur-->
+		<UnitConfiguration id="pol_mech_gunfort" type="mech" parentId="com_heavy_mech">
+			<IsAbstract>false</IsAbstract>
+			<Health>1700</Health>
+			<VisionRadius>40</VisionRadius>
+			<Weapons>
+				<Weapon>pol_mech_gunfort_cannon</Weapon>
+				<Weapon>pol_mech_gunfort_mortar</Weapon>
+			</Weapons>
+
+			<!--Hitsystem-->
+			<!--removed default hight nnnn-->
+			<HitzoneRadius>3.5</HitzoneRadius>
+			<DefaultHeight>2.5</DefaultHeight>
+			<DamageHitzones>
+        <DamageHitzone>
+          <Id>1</Id>
+          <LowerAngle>135</LowerAngle>
+          <UpperAngle>225</UpperAngle>
+          <Type>Vulnerable</Type>
+        </DamageHitzone>
+			</DamageHitzones>
+
+			<!--Abilities-->
+			<UnitAbilities>
+				<MechMovementAbilityDefinition defaultMovement="true"/>
+				<DefaultMechAttackAbilityDefinition weapon="pol_mech_gunfort_cannon" defaultAttack="true"/>
+				<DefaultMechAttackAbilityDefinition weapon="pol_mech_gunfort_mortar" abilityType="VeteranMechAbility" VeteranAbility="true" deactivateAfterShot="true"/>
+			</UnitAbilities>
+			
+			<AutoAbilities>
+				<AllAroundAttackAutoAbilityDefinition weapon="pol_mech_gunfort_mortar" abilityType="VeteranMechAbility" minTargetsInRange="2" settingIdentifier="RainAutoAbility"/>
+			</AutoAbilities>
+
+			<!--Costs-->
+			<BuildCost>
+				<IronCost>750</IronCost>
+				<OilCost>220</OilCost>
+				<PopulationCost>7</PopulationCost>
+			</BuildCost>
+			<RepairCost>
+				<IronCost>8</IronCost>
+				<OilCost>2</OilCost>
+				<BatchSize>100</BatchSize>
+			</RepairCost>
+			<UpkeepCost>
+				<OilCost>0</OilCost>
+			</UpkeepCost>
+
+			<!--Veterancy-->
+			<Veterancy>
+				<VeteranThreshold>2000</VeteranThreshold>
+				<EliteThreshold>5000</EliteThreshold>
+			</Veterancy>
+
+			<!--ExperienceValues-->
+			<ExperienceValues>
+				<AttackerXP> <!--how many points would an attacker get when doing 100% damage-->
+					<Rookie>2000</Rookie>
+					<Veteran>2400</Veteran>
+					<Elite>3000</Elite>
+				</AttackerXP>
+				<DamageXP> <!--how many points would this unit get if someone does 100% damage to it-->
+					<Rookie>500</Rookie>
+					<Veteran>600</Veteran>
+					<Elite>750</Elite>
+				</DamageXP>
+				<HealerXP> <!--how many points would a healer get if they heal 100% HPs-->
+					<Rookie>750</Rookie>
+					<Veteran>975</Veteran>
+					<Elite>1125</Elite>
+				</HealerXP>
+			</ExperienceValues>
+
+			<!--Internals-->
+			<MoveSpeed>2.21</MoveSpeed>
+			<Acceleration>0.15</Acceleration>
+			<RotationSpeed>21.09</RotationSpeed>
+			<RotationAcceleration>0.002</RotationAcceleration>
+			<MaxKineticVelocity>0</MaxKineticVelocity>
+			<MotionScaleCurve>
+				<Key x="0" y="1"/>
+				<Key x="25" y="1"/>
+				<Key x="135" y="0.5"/>
+				<Key x="180" y="0.5"/>
+			</MotionScaleCurve>
+			<UnitStates>
+				<States>
+					<DefaultMechStateDefinition name="default"/>
+					<MechShootStateDefinition name="shoot" PreTicks="1" PostTicks="7"/>
+					<MechTurnStateDefinition name="turn"/>
+					<MechAimStateDefinition name="aim"/>
+				</States>
+
+				<Transitions>
+					<BlendTransitionDefinition from="default" to="turn" mergeTicks="1"/>
+					<InstantTransitionDefinition from="turn" to="default"/>
+					<BlendTransitionDefinition from="turn" to="shoot" mergeTicks="3"/>
+					<InstantTransitionDefinition from="shoot" to="default"/>
+					<BlendTransitionDefinition from="default" to="shoot" mergeTicks="3"/>
+					<BlendTransitionDefinition from="turn" to="aim" mergeTicks="3"/>
+					<BlendTransitionDefinition from="default" to="aim" mergeTicks="3"/>
+					<InstantTransitionDefinition from="shoot" to="aim"/>
+					<InstantTransitionDefinition from="aim" to="shoot"/>
+					<InstantTransitionDefinition from="aim" to="turn"/>
+					<InstantTransitionDefinition from="aim" to="default"/>
+				</Transitions>
+
+				<Requests>
+					<MoveRequest>
+						<StateNames>
+							<Request>default</Request>
+						</StateNames>
+					</MoveRequest>
+					<TurnRequest>
+						<StateNames>
+							<Request>turn</Request>
+						</StateNames>
+					</TurnRequest>
+					<AttackRequest>
+						<StateNames>
+							<Request>aim</Request>
+							<Request>shoot</Request>
+							<Request>aim</Request>
+						</StateNames>
+					</AttackRequest>
+				</Requests>
+			</UnitStates>
+			<WreckConfiguration>pol_mech_gunfort_wreck</WreckConfiguration>
+		</UnitConfiguration>
+
+<!--Saxony Units--> 
+	<!--Infantry-->
+		
+		<!--Saxony Engineer-->
+		<UnitConfiguration id="sax_soldier_engineer" type="engineer" parentId="com_soldier_engineer">
+			<IsAbstract>false</IsAbstract>
+			<WeaponId>sax_engineer_handgun</WeaponId>
+
+			<!--Abilities-->
+			<BuildOptions>
+				<UnitBuildOption>
+					<UnitId>sax_structure_hq</UnitId>
+				</UnitBuildOption>
+				<UnitBuildOption>
+					<UnitId>sax_structure_barracks01</UnitId>
+				</UnitBuildOption>
+				<UnitBuildOption>
+					<UnitId>sax_structure_workshop01</UnitId>
+				</UnitBuildOption>
+				<UnitBuildOption>
+					<UnitId>sax_structure_bunker</UnitId>
+				</UnitBuildOption>
+				<UnitBuildOption>
+					<UnitId>sax_structure_bunkertier02</UnitId>
+					<RequiredRank>Elite</RequiredRank>
+				</UnitBuildOption>
+				<UnitBuildOption>
+					<UnitId>sax_structure_bunkertier01</UnitId>
+					<RequiredRank>Veteran</RequiredRank>
+				</UnitBuildOption>
+				<UnitBuildOption>
+					<UnitId>com_structure_sandbags</UnitId>
+				</UnitBuildOption>
+				<UnitBuildOption>
+					<UnitId>com_structure_barbwire</UnitId>
+				</UnitBuildOption>
+				<UnitBuildOption>
+					<UnitId>mis_mine_buried</UnitId>
+				</UnitBuildOption>
+			</BuildOptions>
+		</UnitConfiguration>
+
+		<!-- Saxony Medic-->
+		<UnitConfiguration id="sax_soldier_medic" type="medic" parentId="com_soldier_medic">
+			<IsAbstract>false</IsAbstract>
+			<WeaponId>sax_medic_handgun</WeaponId>
+
+			<!--Internals-->
+			<TentId>sax_structure_medicbuilding</TentId>
+		</UnitConfiguration>
+
+		<!-- Saxony Rifleman|Stormtrooper-->
+		<UnitConfiguration id="sax_soldier_rifleman" type="human" parentId="com_soldier_rifleman">
+			<IsAbstract>false</IsAbstract>
+			<WeaponId>sax_soldier_rifleman_rifle</WeaponId>
+			<MeleeWeaponId>com_soldier_melee_medium</MeleeWeaponId>
+			<StatesId>sax_smg</StatesId>
+		</UnitConfiguration>
+
+		<!-- Saxony Grenadier-->
+		<UnitConfiguration id="sax_soldier_grenadier" type="human" parentId="com_soldier_grenadier">
+			<IsAbstract>false</IsAbstract>
+			<WeaponId>sax_soldier_rifleman_rifle</WeaponId>
+			<MeleeWeaponId>com_soldier_melee_medium</MeleeWeaponId>
+			<StatesId>sax_grenade</StatesId>
+		</UnitConfiguration>
+
+		<!-- Saxony Gunner-->
+		<UnitConfiguration id="sax_soldier_gunner" type="human" parentId="com_soldier_gunner">
+			<IsAbstract>false</IsAbstract>
+			<WeaponId>sax_soldier_gunner_cannon</WeaponId>
+		</UnitConfiguration>
+
+		<!-- Saxony MG Soldier-->
+		<UnitConfiguration id="sax_soldier_mg" type="mg" parentId="com_soldier_mg">
+			<IsAbstract>false</IsAbstract>
+			<WeaponId>sax_soldier_mg_mg</WeaponId>
+			<GarrisonWeaponId>sax_soldier_garrisonmg</GarrisonWeaponId>
+		</UnitConfiguration>
+
+		<!-- Saxony Flamethrower-->
+		<UnitConfiguration id="sax_soldier_flamer" type="human" parentId="com_soldier_flamer">
+			<IsAbstract>false</IsAbstract>
+		<WeaponId>sax_soldier_flamethrower</WeaponId>			
+		</UnitConfiguration>
+
+	<!--Mechs & Exo-Skeletons-->
+	
+		<!-- Saxony Mortar | Breacher -->
+		<UnitConfiguration id="sax_soldier_mortar" type="exoskeleton" parentId="com_exo">
+			<IsAbstract>false</IsAbstract>
+			<Health>350</Health>
+			<ArmorType>Light</ArmorType>
+			<VisionRadius>40</VisionRadius>
+			<AttackRange>10</AttackRange>
+			<Weapons>
+				<Weapon>sax_soldier_mortar_mortar</Weapon>
+				<Weapon>sax_soldier_mortar_melee</Weapon>
+			</Weapons>
+			<SquadSize>3</SquadSize>
+
+			<!--Hitsystem-->
+			<HitzoneRadius>1</HitzoneRadius>
+			<DefaultHeight>2.0</DefaultHeight>
+
+			<!--Costs-->
+			<BuildCost>
+				<IronCost>300</IronCost>
+				<OilCost>50</OilCost>
+				<PopulationCost>3</PopulationCost>
+			</BuildCost>
+			<RepairCost>
+				<IronCost>3</IronCost>
+				<OilCost>1</OilCost>
+				<BatchSize>30</BatchSize>
+			</RepairCost>
+			<ReinforceCost>
+				<IronCost>75</IronCost>
+				<OilCost>13</OilCost>
+				<PopulationCost>0</PopulationCost>
+			</ReinforceCost>
+			<ReserveBuildCost>
+				<IronCost>150</IronCost>
+				<OilCost>25</OilCost>
+				<PopulationCost>3</PopulationCost>
+			</ReserveBuildCost>
+			<UpkeepCost>
+				<OilCost>0</OilCost>
+			</UpkeepCost>
+
+			<!--Veterancy-->
+			<Veterancy>
+				<VeteranThreshold>2000</VeteranThreshold>
+				<EliteThreshold>4500</EliteThreshold>
+			</Veterancy>
+
+			<!--ExperienceValues-->
+			<ExperienceValues>
+				<AttackerXP> <!--how many points would an attacker get when doing 100% damage-->
+					<Rookie>200</Rookie>
+					<Veteran>240</Veteran>
+					<Elite>300</Elite>
+				</AttackerXP>
+				<DamageXP> <!--how many points would this unit get if someone does 100% damage to it-->
+					<Rookie>333</Rookie>
+					<Veteran>400</Veteran>
+					<Elite>500</Elite>
+				</DamageXP>
+				<HealerXP> <!--how many points would a healer get if they heal 100% HPs-->
+					<Rookie>250</Rookie>
+					<Veteran>325</Veteran>
+					<Elite>375</Elite>
+				</HealerXP>
+			</ExperienceValues>
+
+      <!--Abilities-->
+      <UnitAbilities>
+        <MechBrawlMovementAbilityDefinition defaultMovement="true"/>
+        <DefaultMechAttackAbilityDefinition weapon="sax_soldier_mortar_mortar" defaultAttack="true"/>
+        <DefaultMechAttackAbilityDefinition weapon="sax_soldier_mortar_melee" defaultMelee="true" abilityType="MeleeAttack"/>
+		<MechDisruptAbilityDefinition abilityType="VeteranMechAbility" cooldown="10" Range="10" VeteranAbility="true"/>
+      </UnitAbilities>
+
+			<UnitStates>
+				<States>
+					<DefaultMechStateDefinition name="default"/>
+					<StationaryMechStateDefinition name="aim"/>
+					<MechTurnStateDefinition name="aim_turn"/>
+					<MechShootStateDefinition name="shoot" PreTicks="1" PostTicks="4"/>
+					<MechTurnStateDefinition name="turn"/>
+					<DefaultMechStateDefinition name="brawl"/>
+					<MechShootStateDefinition name="brawl_attack" PreTicks="6" PostTicks="30"/>
+					<MechTurnStateDefinition name="brawl_turn"/>
+					<MechInteractStateDefinition name="interact"/>
+					<MechShootStateDefinition name="ability" PreTicks="16" PostTicks="30"/>
+				</States>
+				<Transitions>
+					<StationaryTransitionDefinition from="aim" to="default" fadeOut="0" flat="12" fadeIn="0"/>
+					<StationaryTransitionDefinition from="aim" to="turn" fadeOut="0" flat="12" fadeIn="0"/>
+					<StationaryTransitionDefinition from="aim" to="brawl" fadeOut="0" flat="12" fadeIn="0"/>
+					<BlendTransitionDefinition from="aim" to="aim_turn" mergeTicks="3"/>
+					<InstantTransitionDefinition from="aim" to="shoot"/>
+					
+					<InstantTransitionDefinition from="aim_turn" to="aim"/>	
+					<StationaryTransitionDefinition from="aim_turn" to="default" fadeOut="0" flat="12" fadeIn="0"/>
+					<StationaryTransitionDefinition from="aim_turn" to="turn" fadeOut="0" flat="12" fadeIn="0"/>
+					<StationaryTransitionDefinition from="aim_turn" to="brawl" fadeOut="0" flat="12" fadeIn="0"/>
+
+					<StationaryTransitionDefinition from="shoot" to="default" fadeOut="0" flat="14" fadeIn="0"/>
+					<StationaryTransitionDefinition from="shoot" to="turn" fadeOut="0" flat="14" fadeIn="0"/>
+					<InstantTransitionDefinition from="shoot" to="aim"/>
+
+					<StationaryTransitionDefinition from="default" to="aim" fadeOut="0" flat="12" fadeIn="0"/>
+					<BlendTransitionDefinition from="default" to="turn" mergeTicks="3"/>
+					<InstantTransitionDefinition from="default" to="brawl"/>
+
+					<StationaryTransitionDefinition from="turn" to="aim" fadeOut="0" flat="12" fadeIn="0"/>
+					<InstantTransitionDefinition from="turn" to="default"/>	
+					<StationaryTransitionDefinition from="turn" to="brawl" mergeTicks="3"/>
+
+					<BlendTransitionDefinition from="brawl" to="brawl_turn" mergeTicks="3"/>
+					<InstantTransitionDefinition from="brawl" to="default"/>
+					<StationaryTransitionDefinition from="brawl" to="aim" fadeOut="0" flat="12" fadeIn="0"/>
+					<StationaryTransitionDefinition from="brawl" to="brawl_attack" mergeTicks="3"/>
+
+					<BlendTransitionDefinition from="brawl_attack" to="default" mergeTicks="3"/>
+					<InstantTransitionDefinition from="brawl_attack" to="brawl"/>
+					<StationaryTransitionDefinition from="brawl_attack" to="aim" fadeOut="0" flat="12" fadeIn="0"/>
+
+					<StationaryTransitionDefinition from="brawl_turn" to="aim" fadeOut="0" flat="12" fadeIn="0"/>
+					<BlendTransitionDefinition from="brawl_turn" to="default" mergeTicks="3"/>	
+					<InstantTransitionDefinition from="brawl_turn" to="brawl"/>	
+
+					<BlendTransitionDefinition from="default" to="interact" mergeTicks="3"/>
+					<BlendTransitionDefinition from="turn" to="interact" mergeTicks="3"/>
+					<InstantTransitionDefinition from="interact" to="default"/>
+
+					<StationaryTransitionDefinition from="default" to="ability" mergeTicks="3"/>
+					<StationaryTransitionDefinition from="ability" to="default"/>
+
+				</Transitions>
+				<Requests>
+					<MoveRequest if="brawl_attack">
+						<StateNames>
+							<Request>brawl</Request>
+						</StateNames>
+					</MoveRequest>
+					<MoveRequest if="brawl">
+						<StateNames>
+							<Request>brawl</Request>
+						</StateNames>
+					</MoveRequest>
+					<MoveRequest if="brawl_turn">
+						<StateNames>
+							<Request>brawl</Request>
+						</StateNames>
+					</MoveRequest>
+					<MoveRequest>
+						<StateNames>
+							<Request>default</Request>
+						</StateNames>
+					</MoveRequest>
+					<TurnRequest if="brawl_attack">
+						<StateNames>
+							<Request>brawl</Request>
+							<Request>brawl_turn</Request>
+						</StateNames>
+					</TurnRequest>
+					<TurnRequest if="brawl">
+						<StateNames>
+							<Request>brawl_turn</Request>
+						</StateNames>
+					</TurnRequest>
+					<TurnRequest if="brawl_turn">
+						<StateNames>
+							<Request>brawl_turn</Request>
+						</StateNames>
+					</TurnRequest>
+					<TurnRequest if="aim">
+						<StateNames>
+							<Request>aim_turn</Request>
+						</StateNames>
+					</TurnRequest>
+					<TurnRequest>
+						<StateNames>
+							<Request>turn</Request>
+						</StateNames>
+					</TurnRequest>
+					<AttackRequest Dequeueable="true">
+						<StateNames>
+							<Request>aim</Request>
+							<Request>shoot</Request>
+							<Request>aim</Request>
+						</StateNames>
+					</AttackRequest>
+					<MeleeAttackRequest Dequeueable="true">
+						<StateNames>
+							<Request>brawl</Request>
+							<Request>brawl_attack</Request>
+							<Request>brawl</Request>
+						</StateNames>
+					</MeleeAttackRequest>
+					<AbilityRequest if="default" ability="Deploy">
+						<StateNames>
+							<Request>brawl</Request>
+						</StateNames>
+					</AbilityRequest>
+					<AbilityRequest ability="Deploy">
+						<StateNames>
+							<Request>default</Request>
+						</StateNames>
+					</AbilityRequest>
+					<AbilityRequest ability="VeteranMechAbility">
+						<StateNames>
+							<Request>ability</Request>
+							<Request>default</Request>
+						</StateNames>
+					</AbilityRequest>
+					<InteractRequest>
+						<StateNames>
+							<Request>default</Request>
+							<Request>interact</Request>
+						</StateNames>
+					</InteractRequest>
+				</Requests>
+			</UnitStates>	
+
+			<!--Internals-->
+			<RotationSpeed>60</RotationSpeed>
+			<MoveSpeed>1.5</MoveSpeed>
+			<ForwardScale>1.2</ForwardScale>
+			<PositiveDelta>120</PositiveDelta>
+			<NegativeDelta>60</NegativeDelta>
+			<Acceleration>0.2</Acceleration>
+			<MotionScaleCurve>
+				<Key x="0" y="1"/>
+				<Key x="60" y="0.5"/>
+				<Key x="90" y="0"/>
+				<Key x="140" y="-0.5"/>
+				<Key x="180" y="-1"/>
+			</MotionScaleCurve>
+		</UnitConfiguration>
+
+		<!-- Saxony Gatling-->
+		<UnitConfiguration id="sax_mech_gatling" type="mech" parentId="com_light_mech">
+			<IsAbstract>false</IsAbstract>
+			<Health>1000</Health>
+			<VisionRadius>40</VisionRadius>
+			<Weapons>
+				<Weapon>sax_mech_gatling_gatling</Weapon>
+				<Weapon>sax_mech_gatling_sweep</Weapon>
+			</Weapons>
+
+			<!--Hitsystem-->
+			<HitzoneRadius>2.5</HitzoneRadius>
+			<DefaultHeight>2.5</DefaultHeight>
+
+			<DamageHitzones>
+				<DamageHitzone>
+					<Id>1</Id>
+					<LowerAngle>135</LowerAngle>
+					<UpperAngle>225</UpperAngle>
+					<Type>Vulnerable</Type>
+				</DamageHitzone>
+			</DamageHitzones>
+
+			<!--Abilities-->
+			<UnitAbilities>
+				<MechMovementAbilityDefinition defaultMovement="true"/>
+				<DefaultMechAttackAbilityDefinition weapon="sax_mech_gatling_gatling" defaultAttack="true"/>
+				<MechGatlingSweepDefinition weapon="sax_mech_gatling_sweep" VeteranAbility="true" abilityType="GatlingSweep" sweepAngle="60"/>
+			</UnitAbilities>
+			<AutoAbilities>
+				<ConeAttackAutoAbilityDefinition weapon="sax_mech_gatling_sweep" abilityType="GatlingSweep" considerationAngle="90" minTargetsInCone="4" settingIdentifier="SweepAutoAbility"/>
+			</AutoAbilities>
+			<!--Costs-->
+			<BuildCost>
+				<IronCost>350</IronCost>
+				<OilCost>90</OilCost>
+				<PopulationCost>4</PopulationCost>
+			</BuildCost>
+			<RepairCost>
+				<IronCost>5</IronCost>
+				<OilCost>1</OilCost>
+				<BatchSize>90</BatchSize>
+			</RepairCost>
+			<ReserveBuildCost>
+				<IronCost>210</IronCost>
+				<OilCost>63</OilCost>
+				<PopulationCost>4</PopulationCost>
+			</ReserveBuildCost>			
+			<UpkeepCost>
+				<OilCost>0</OilCost>
+			</UpkeepCost>
+
+			<!--Veterancy-->
+			<Veterancy>
+				<VeteranThreshold>2000</VeteranThreshold>
+				<EliteThreshold>4500</EliteThreshold>
+			</Veterancy>
+
+			<!--ExperienceValues-->
+			<ExperienceValues>
+				<AttackerXP> <!--how many points would an attacker get when doing 100% damage-->
+					<Rookie>1333</Rookie>
+					<Veteran>1600</Veteran>
+					<Elite>2000</Elite>
+				</AttackerXP>
+				<DamageXP> <!--how many points would this unit get if someone does 100% damage to it-->
+					<Rookie>600</Rookie>
+					<Veteran>720</Veteran>
+					<Elite>900</Elite>
+				</DamageXP>
+				<HealerXP> <!--how many points would a healer get if they heal 100% HPs-->
+					<Rookie>750</Rookie>
+					<Veteran>975</Veteran>
+					<Elite>1125</Elite>
+				</HealerXP>
+			</ExperienceValues>
+
+			<!--Internals-->
+			<RotationSpeed>78</RotationSpeed>
+			<MoveSpeed>3.2</MoveSpeed>
+			<KineticToVelocity>1</KineticToVelocity>
+			<MaxKineticVelocity>1.5</MaxKineticVelocity>
+			<PositiveDelta>90</PositiveDelta>
+			<NegativeDelta>160</NegativeDelta>
+			<Acceleration>0.05</Acceleration>
+			<MotionScaleCurve>
+				<Key x="0" y="1"/>
+				<Key x="90" y="0"/>
+				<Key x="160" y="0"/>
+				<Key x="180" y="-1"/>
+			</MotionScaleCurve>
+			<ReversingMotionScaleCurve>
+				<Key x="0" y="0"/>
+				<Key x="90" y="0"/>
+				<Key x="160" y="0"/>
+				<Key x="180" y=".8"/>
+			</ReversingMotionScaleCurve>
+			<WreckConfiguration>sax_mech_gatling_wreck</WreckConfiguration>
+		</UnitConfiguration>
+
+		<!-- Saxony Tank-->
+		<UnitConfiguration id="sax_mech_tank" type="mech" parentId="com_medium_mech">
+			<IsAbstract>false</IsAbstract>
+			<Health>800</Health>
+			<VisionRadius>40</VisionRadius>
+			<Weapons>
+				<Weapon>sax_mech_tank_cannon</Weapon>
+			</Weapons>
+
+			<!--Hitsystem-->
+			<HitzoneRadius>2.5</HitzoneRadius>
+			<DefaultHeight>2.5</DefaultHeight>
+			<DamageHitzones>
+				<DamageHitzone>
+					<Id>1</Id>
+					<LowerAngle>135</LowerAngle>
+					<UpperAngle>225</UpperAngle>
+					<Type>Vulnerable</Type>
+				</DamageHitzone>
+			</DamageHitzones>
+
+			<!--Abilities-->
+			<UnitAbilities>
+				<MechMovementAbilityDefinition defaultMovement="true"/>
+				<TurretMechAttackAbilityDefinition weapon="sax_mech_tank_cannon" defaultAttack="true"/>
+				<MechSmokeScreenAbilityDefinition abilityType="VeteranMechAbility" cooldown="120" SmokeAmmoName="TankSmokescreen" VeteranAbility="true" NewSmokescreenRadiusFraction="0.5"/>
+			</UnitAbilities>
+			
+			<AutoAbilities>
+				<SmokeScreenAutoAbilityDefinition abilityType="VeteranMechAbility" conditions="InCombat" ownHealthLostRatioThreshold="0.25" settingIdentifier="TankSmokeAutoAbility"/>
+			</AutoAbilities>
+
+			<!--Costs-->
+			<BuildCost>
+				<IronCost>450</IronCost>
+				<OilCost>120</OilCost>
+				<PopulationCost>4</PopulationCost>
+			</BuildCost>
+			<RepairCost>
+				<IronCost>6</IronCost>
+				<OilCost>2</OilCost>
+				<BatchSize>80</BatchSize>
+			</RepairCost>
+			<ReserveBuildCost>
+				<IronCost>270</IronCost>
+				<OilCost>84</OilCost>
+				<PopulationCost>4</PopulationCost>
+			</ReserveBuildCost>
+			<UpkeepCost>
+				<OilCost>0</OilCost>
+			</UpkeepCost>
+
+			<!--Veterancy-->
+			<Veterancy>
+				<VeteranThreshold>2500</VeteranThreshold>
+				<EliteThreshold>5500</EliteThreshold>
+			</Veterancy>
+
+			<!--ExperienceValues-->
+			<ExperienceValues>
+				<AttackerXP> <!--how many points would an attacker get when doing 100% damage-->
+					<Rookie>1000</Rookie>
+					<Veteran>1200</Veteran>
+					<Elite>1500</Elite>
+				</AttackerXP>
+				<DamageXP> <!--how many points would this unit get if someone does 100% damage to it-->
+					<Rookie>750</Rookie>
+					<Veteran>900</Veteran>
+					<Elite>1125</Elite>
+				</DamageXP>
+				<HealerXP> <!--how many points would a healer get if they heal 100% HPs-->
+					<Rookie>750</Rookie>
+					<Veteran>975</Veteran>
+					<Elite>1125</Elite>
+				</HealerXP>
+			</ExperienceValues>
+
+			<!--Internals-->
+			<MaxKineticVelocity>0</MaxKineticVelocity>
+			<KineticToVelocity>0</KineticToVelocity>			
+			<RotationSpeed>38</RotationSpeed>
+			<RotationAcceleration>0.005</RotationAcceleration>
+			<MoveSpeed>3.56</MoveSpeed>
+			<PositiveDelta>180</PositiveDelta>
+			<NegativeDelta>0</NegativeDelta>
+			<Acceleration>0.05</Acceleration>
+			<MotionScaleCurve>
+				<Key x="0" y="1"/>
+				<Key x="90" y="0.5"/>
+				<Key x="180" y="1"/>
+			</MotionScaleCurve>
+			<ReversingMotionScaleCurve>
+				<Key x="0" y=".65"/>
+				<Key x="90" y=".5"/>
+				<Key x="180" y=".65"/>
+			</ReversingMotionScaleCurve>
+			<WreckConfiguration>sax_mech_tank_wreck</WreckConfiguration>
+		</UnitConfiguration>
+
+		<!-- Saxony Artillery-->
+		<UnitConfiguration id="sax_mech_artillery" type="mech" parentId="com_light_mech">
+			<IsAbstract>false</IsAbstract>
+			<Health>750</Health>
+			<VisionRadius>25</VisionRadius>
+			<Weapons>
+				<Weapon>sax_mech_artillery_cannon</Weapon>
+				<Weapon>sax_mech_artillery_flare</Weapon>
+			</Weapons>
+
+			<!--Hitsystem-->
+			<HitzoneRadius>2.5</HitzoneRadius>
+			<DefaultHeight>2.5</DefaultHeight>
+			<DamageHitzones>
+				<DamageHitzone>
+					<Id>1</Id>
+					<LowerAngle>135</LowerAngle>
+					<UpperAngle>225</UpperAngle>
+					<Type>Vulnerable</Type>
+				</DamageHitzone>
+			</DamageHitzones>
+
+			<!--Abilities-->
+			<UnitAbilities>
+				<MechMovementAbilityDefinition defaultMovement="true"/>
+				<DefaultMechAttackAbilityDefinition weapon="sax_mech_artillery_cannon" defaultAttack="true"/>
+				<MechAbilityDefinition abilityType="Deploy" cooldown="50"/>
+				<DefaultMechAttackAbilityDefinition weapon="sax_mech_artillery_flare" abilityType="VeteranMechAbility" VeteranAbility="true" DeactivateAfterShot="true"/>
+			</UnitAbilities>
+
+			<!--Costs-->
+			<BuildCost>
+				<IronCost>450</IronCost>
+				<OilCost>170</OilCost>
+				<PopulationCost>5</PopulationCost>
+			</BuildCost>
+			<RepairCost>
+				<IronCost>6</IronCost>
+				<OilCost>2</OilCost>
+				<BatchSize>55</BatchSize>
+			</RepairCost>
+			<ReserveBuildCost>
+				<IronCost>270</IronCost>
+				<OilCost>84</OilCost>
+				<PopulationCost>5</PopulationCost>
+			</ReserveBuildCost>
+			<UpkeepCost>
+				<OilCost>0</OilCost>
+			</UpkeepCost>
+
+			<!--Veterancy-->
+			<Veterancy>
+				<VeteranThreshold>3000</VeteranThreshold>
+				<EliteThreshold>6500</EliteThreshold>
+			</Veterancy>
+
+			<!--ExperienceValues-->
+			<ExperienceValues>
+				<AttackerXP> <!--how many points would an attacker get when doing 100% damage-->
+					<Rookie>1000</Rookie>
+					<Veteran>1200</Veteran>
+					<Elite>1500</Elite>
+				</AttackerXP>
+				<DamageXP> <!--how many points would this unit get if someone does 100% damage to it-->
+					<Rookie>450</Rookie>
+					<Veteran>540</Veteran>
+					<Elite>675</Elite>
+				</DamageXP>
+				<HealerXP> <!--how many points would a healer get if they heal 100% HPs-->
+					<Rookie>750</Rookie>
+					<Veteran>975</Veteran>
+					<Elite>1125</Elite>
+				</HealerXP>
+			</ExperienceValues>
+
+			<!--Internals-->
+			<MoveSpeed>1.75</MoveSpeed>
+			<KineticToVelocity>0.5</KineticToVelocity>
+			<MaxKineticVelocity>0.5</MaxKineticVelocity>
+			<Acceleration>0.05</Acceleration>
+			<RotationSpeed>39</RotationSpeed>
+			<RotationAcceleration>0.05</RotationAcceleration>
+			<MotionScaleCurve>
+				<Key x="0" y="1"/>
+				<Key x="90" y="0"/>
+				<Key x="180" y="-.5"/>
+			</MotionScaleCurve>
+			<ReversingMotionScaleCurve>
+				<Key x="0" y="0"/>
+				<Key x="90" y="0"/>
+				<Key x="180" y=".8"/>
+			</ReversingMotionScaleCurve>
+			<DeployToAttack>True</DeployToAttack>
+			<DeployOnDragMove>True</DeployOnDragMove>	
+			<WreckConfiguration>sax_mech_artillery_wreck</WreckConfiguration>
+		</UnitConfiguration>
+
+		<!-- Saxony Dachs-->
+		<UnitConfiguration id="sax_mech_dachs" type="mech" parentId="sax_mech_tank">
+			<IsAbstract>false</IsAbstract>
+			<Health>600</Health>
+			<ArmorType>Heavy</ArmorType>
+			<VisionRadius>40</VisionRadius>
+			<Weapons>
+				<Weapon>sax_mech_dachs_cannon</Weapon>
+				<Weapon>sax_mech_dachs_rockets</Weapon>
+			</Weapons>
+
+			<!--Hitsystem-->
+			<HitzoneRadius>2.5</HitzoneRadius>
+			<DefaultHeight>2.5</DefaultHeight>
+			<DamageHitzones>
+				<DamageHitzone>
+					<Id>1</Id>
+					<LowerAngle>135</LowerAngle>
+					<UpperAngle>225</UpperAngle>
+					<Type>Vulnerable</Type>
+				</DamageHitzone>
+			</DamageHitzones>
+
+			<!--Abilities-->
+			<UnitAbilities>
+				<MechMovementAbilityDefinition defaultMovement="true"/>
+				<DefaultMechAttackAbilityDefinition weapon="sax_mech_dachs_cannon" defaultAttack="true"/>
+				<DefaultMechAttackAbilityDefinition weapon="sax_mech_dachs_rockets" abilityType="VeteranMechAbility" VeteranAbility="true" DeactivateAfterShot="true"/>
+			</UnitAbilities>
+			<AutoAbilities>
+				<SingleTargetAttackAutoAbilityDefinition weapon="sax_mech_dachs_rockets" abilityType="VeteranMechAbility" settingIdentifier="MissilesAutoAbility"/>
+			</AutoAbilities>
+			<!--Costs-->
+			<BuildCost>
+				<IronCost>550</IronCost>
+				<OilCost>170</OilCost>
+				<PopulationCost>5</PopulationCost>
+			</BuildCost>
+			<RepairCost>
+				<IronCost>6</IronCost>
+				<OilCost>2</OilCost>
+				<BatchSize>40</BatchSize>
+			</RepairCost>
+			<ReserveBuildCost>
+				<IronCost>385</IronCost>
+				<OilCost>136</OilCost>
+				<PopulationCost>5</PopulationCost>
+			</ReserveBuildCost>
+			<UpkeepCost>
+				<OilCost>0</OilCost>
+			</UpkeepCost>
+
+			<!--Veterancy-->
+			<Veterancy>
+				<VeteranThreshold>4000</VeteranThreshold>
+				<EliteThreshold>9000</EliteThreshold>
+			</Veterancy>
+
+			<!--ExperienceValues-->
+			<ExperienceValues>
+				<AttackerXP> <!--how many points would an attacker get when doing 100% damage-->
+					<Rookie>1400</Rookie>
+					<Veteran>1680</Veteran>
+					<Elite>2100</Elite>
+				</AttackerXP>
+				<DamageXP> <!--how many points would this unit get if someone does 100% damage to it-->
+					<Rookie>600</Rookie>
+					<Veteran>720</Veteran>
+					<Elite>900</Elite>
+				</DamageXP>
+				<HealerXP> <!--how many points would a healer get if they heal 100% HPs-->
+					<Rookie>750</Rookie>
+					<Veteran>975</Veteran>
+					<Elite>1125</Elite>
+				</HealerXP>
+			</ExperienceValues>
+
+			<!--Internals-->
+			<MoveSpeed>2.66</MoveSpeed>
+			<Acceleration>0.35</Acceleration>
+			<RotationSpeed>52</RotationSpeed>
+			<RotationAcceleration>0.1</RotationAcceleration>
+			<MotionScaleCurve>
+				<Key x="0" y="1"/>
+				<Key x="90" y="1"/>
+				<Key x="180" y="1"/>
+			</MotionScaleCurve>
+			<ReversingMotionScaleCurve>
+				<Key x="0" y="1"/>
+				<Key x="90" y="1"/>
+				<Key x="180" y="1"/>
+			</ReversingMotionScaleCurve>
+			<WreckConfiguration>sax_mech_dachs_wreck</WreckConfiguration>
+		</UnitConfiguration>
+
+		<!-- Saxony Mother-->
+		<UnitConfiguration id="sax_mech_mother" type="mech" parentId="com_medium_mech">
+			<IsAbstract>false</IsAbstract>
+			<Health>750</Health>
+			<ArmorType>Light</ArmorType>
+			<VisionRadius>30</VisionRadius>
+			<Weapons>
+				<Weapon>sax_mech_mother_wheel_F</Weapon>
+				<Weapon>sax_mech_mother_wheel_FL</Weapon>
+				<Weapon>sax_mech_mother_wheel_BL</Weapon>
+				<Weapon>sax_mech_mother_wheel_BR</Weapon>
+				<Weapon>sax_mech_mother_wheel_FR</Weapon>
+				<Weapon>sax_mech_mother_grenaderain</Weapon>
+			</Weapons>
+			<PreventImplicitTargeting>true</PreventImplicitTargeting>
+
+			<!--Hitsystem-->
+			<!--removed default hight nnnn-->
+			<HitzoneRadius>3.5</HitzoneRadius>
+			<DefaultHeight>2.5</DefaultHeight>
+			<DamageHitzones>
+			</DamageHitzones>
+
+			<!--Abilities-->
+			<UnitAbilities>
+				<MechMovementAbilityDefinition defaultMovement="true"/>
+				<MechMotherDroneAttackDefinition defaultAttack="true">
+					<ProductionTime>4</ProductionTime> <!--in seconds-->
+					<Weapons>
+						<Weapon>sax_mech_mother_wheel_F</Weapon>
+						<Weapon>sax_mech_mother_wheel_FL</Weapon>
+						<Weapon>sax_mech_mother_wheel_BL</Weapon>
+						<Weapon>sax_mech_mother_wheel_BR</Weapon>
+						<Weapon>sax_mech_mother_wheel_FR</Weapon>
+					</Weapons>
+				</MechMotherDroneAttackDefinition>
+			</UnitAbilities>
+
+			<!--Costs-->
+			<BuildCost>
+				<IronCost>500</IronCost>
+				<OilCost>140</OilCost>
+				<PopulationCost>5</PopulationCost>
+			</BuildCost>
+			<RepairCost>
+				<IronCost>6</IronCost>
+				<OilCost>1</OilCost>
+				<BatchSize>50</BatchSize>
+			</RepairCost>
+			<ReserveBuildCost>
+				<IronCost>330</IronCost>
+				<OilCost>110</OilCost>
+				<PopulationCost>5</PopulationCost>
+			</ReserveBuildCost>
+			<UpkeepCost>
+				<OilCost>0</OilCost>
+			</UpkeepCost>
+
+			<!--Veterancy-->
+			<Veterancy>
+				<VeteranThreshold>2000</VeteranThreshold>
+				<EliteThreshold>4500</EliteThreshold>
+			</Veterancy>
+			<WreckConfiguration>sax_mech_mother_wreck</WreckConfiguration>
+      <!--ExperienceValues-->
+      <ExperienceValues>
+        <AttackerXP>
+          <!--how many points would an attacker get when doing 100% damage-->
+          <Rookie>1400</Rookie>
+          <Veteran>1680</Veteran>
+          <Elite>2100</Elite>
+        </AttackerXP>
+        <DamageXP>
+          <!--how many points would this unit get if someone does 100% damage to it-->
+          <Rookie>300</Rookie>
+          <Veteran>360</Veteran>
+          <Elite>450</Elite>
+        </DamageXP>
+        <HealerXP>
+          <!--how many points would a healer get if they heal 100% HPs-->
+					<Rookie>750</Rookie>
+					<Veteran>975</Veteran>
+					<Elite>1125</Elite>
+        </HealerXP>
+      </ExperienceValues>
+
+			<!--Internals-->
+			<MoveSpeed>1.7</MoveSpeed>
+			<Acceleration>0.15</Acceleration>
+			<RotationSpeed>42.5</RotationSpeed>
+			<RotationAcceleration>0.01</RotationAcceleration>
+			<MotionScaleCurve>
+				<Key x="0" y="1"/>
+				<Key x="45" y="0"/>
+				<Key x="135" y="0"/>
+				<Key x="180" y="1"/>
+			</MotionScaleCurve>
+			<UnitStates>
+				<States>
+					<SaxGunfortMechStateDefinition name="default"/>
+					<MechShootStateDefinition name="shoot" PreTicks="1" PostTicks="3"/>
+				</States>
+				<Transitions>
+					<BlendTransitionDefinition from="default" to="shoot" mergeTicks="3"/>
+					<InstantTransitionDefinition from="shoot" to="default"/>
+				</Transitions>
+				<Requests>
+					<MoveRequest>
+						<StateNames>
+							<Request>default</Request>
+						</StateNames>
+					</MoveRequest>
+					<TurnRequest>
+						<StateNames>
+							<Request>default</Request>
+						</StateNames>
+					</TurnRequest>
+					<AttackRequest>
+						<StateNames>
+							<Request>shoot</Request>
+							<Request>default</Request>
+						</StateNames>
+					</AttackRequest>
+				</Requests>
+			</UnitStates>
+		</UnitConfiguration>
+
+		<!-- Saxony Gunfort | Kaiser -->
+		<UnitConfiguration id="sax_mech_gunfort" type="mech" parentId="com_heavy_mech">
+			<IsAbstract>false</IsAbstract>
+			<Health>2000</Health>
+			<VisionRadius>40</VisionRadius>
+			<Weapons>
+				<Weapon>sax_mech_gunfort_cannon</Weapon>
+				<Weapon>sax_mech_gunfort_launcher_F</Weapon>
+				<Weapon>sax_mech_gunfort_launcher_L</Weapon>
+				<Weapon>sax_mech_gunfort_launcher_R</Weapon>
+				<Weapon>sax_mech_gunfort_mg_F</Weapon>
+				<Weapon>sax_mech_gunfort_mg_R</Weapon>
+				<Weapon>sax_mech_gunfort_mg_B</Weapon>
+				<Weapon>sax_mech_gunfort_mg_L</Weapon>
+			</Weapons>
+
+			
+			<SecondaryWeaponModuleConfiguration>
+				<SecondaryWeapons>
+					<SecondaryWeaponConfiguration weaponConfigurationId="sax_mech_gunfort_mg_F" offsetX="0" offsetY="0" direction="0"/>
+					<SecondaryWeaponConfiguration weaponConfigurationId="sax_mech_gunfort_mg_R" offsetX="0" offsetY="0" direction="90"/>
+					<SecondaryWeaponConfiguration weaponConfigurationId="sax_mech_gunfort_mg_B" offsetX="0" offsetY="0" direction="180"/>
+					<SecondaryWeaponConfiguration weaponConfigurationId="sax_mech_gunfort_mg_L" offsetX="0" offsetY="0" direction="270"/>
+				</SecondaryWeapons>
+			</SecondaryWeaponModuleConfiguration>
+			
+			<StateSpecificSecondaryWeaponModuleConfiguration>
+				<SecondaryWeapons>
+					<SecondaryWeaponConfiguration weaponConfigurationId="sax_mech_gunfort_launcher_F" offsetX="0" offsetY="0" direction="0"/>
+					<SecondaryWeaponConfiguration weaponConfigurationId="sax_mech_gunfort_launcher_R" offsetX="0" offsetY="0" direction="90"/>
+					<SecondaryWeaponConfiguration weaponConfigurationId="sax_mech_gunfort_launcher_L" offsetX="0" offsetY="0" direction="270"/>
+				</SecondaryWeapons>
+				<AllowedStates>
+					<State>siege</State>
+				</AllowedStates>
+			</StateSpecificSecondaryWeaponModuleConfiguration>
+
+			<!--Hitsystem-->
+			<!--removed default hight nnnn-->
+			<HitzoneRadius>3.5</HitzoneRadius>
+			<DefaultHeight>2.5</DefaultHeight>
+			<DamageHitzones>
+				<DamageHitzone>
+					<Id>1</Id>
+					<LowerAngle>135</LowerAngle>
+					<UpperAngle>225</UpperAngle>
+					<Type>Vulnerable</Type>
+				</DamageHitzone>
+			</DamageHitzones>
+
+			<!--Abilities-->
+			<UnitAbilities>
+				<MechMovementAbilityDefinition defaultMovement="true"/>
+				<MechAbilityDefinition abilityType="Deploy" cooldown="32" VeteranAbility="true"/>
+				<DefaultMechAttackAbilityDefinition weapon="sax_mech_gunfort_cannon" defaultAttack="true"/>
+				<!--<DefaultMechAttackAbilityDefinition weapon="sax_mech_gunfort_launcher" abilityType="Rockets" VeteranAbility="true" DeactivateAfterShot="true"/>-->
+			</UnitAbilities>
+			
+			<AutoAbilities>
+				<FortifyAutoAbilityDefinition abilityType="Deploy" conditions="UnDeployed" noMoveOrderGivenTime="30" settingIdentifier="EntrenchDownAutoAbility"/>
+			</AutoAbilities>
+
+			<!--Costs-->
+			<BuildCost>
+				<IronCost>700</IronCost>
+				<OilCost>210</OilCost>
+				<PopulationCost>8</PopulationCost>
+			</BuildCost>
+			<RepairCost>
+				<IronCost>7</IronCost>
+				<OilCost>2</OilCost>
+				<BatchSize>130</BatchSize>
+			</RepairCost>
+			<UpkeepCost>
+				<OilCost>0</OilCost>
+			</UpkeepCost>
+
+			<!--Veterancy-->
+			<Veterancy>
+				<VeteranThreshold>3000</VeteranThreshold>
+				<EliteThreshold>7000</EliteThreshold>
+			</Veterancy>
+
+			<!--ExperienceValues-->
+			<ExperienceValues>
+				<AttackerXP> <!--how many points would an attacker get when doing 100% damage-->
+					<Rookie>2000</Rookie>
+					<Veteran>2400</Veteran>
+					<Elite>3000</Elite>
+				</AttackerXP>
+				<DamageXP> <!--how many points would this unit get if someone does 100% damage to it-->
+					<Rookie>600</Rookie>
+					<Veteran>720</Veteran>
+					<Elite>900</Elite>
+				</DamageXP>
+				<HealerXP> <!--how many points would a healer get if they heal 100% HPs-->
+					<Rookie>750</Rookie>
+					<Veteran>975</Veteran>
+					<Elite>1125</Elite>
+				</HealerXP>
+			</ExperienceValues>
+
+			<!--Internals-->
+			<MaxKineticVelocity>0</MaxKineticVelocity>
+			<KineticToVelocity>0</KineticToVelocity>
+			<!--Decay describes velocity reduction in meter per tick! -->
+			<KineticVelocityProportionalDecay>0.2</KineticVelocityProportionalDecay>
+			<KineticVelocityConstantDecay>0.05</KineticVelocityConstantDecay>			
+			<MoveSpeed>2.23</MoveSpeed>
+			<Acceleration>0.15</Acceleration>
+			<RotationSpeed>39.9</RotationSpeed>
+			<RotationAcceleration>0.01</RotationAcceleration>
+			<MotionScaleCurve>
+				<Key x="0" y="1"/>
+				<Key x="90" y="0.8"/>
+				<Key x="180" y="0.5"/>
+			</MotionScaleCurve>
+
+			<UnitStates>
+					<States>
+						<DefaultMechStateDefinition name="default"/>
+						<StationaryMechStateDefinition name="siege"/>
+						<MechShootStateDefinition name="shoot_default" PreTicks="1" PostTicks="3"/>
+						<MechStationaryShootStateDefinition name="shoot_siege" PreTicks="1" PostTicks="3"/>
+						<MechTurnStateDefinition name="turn"/>
+						<MechAimStateDefinition name="aim"/>
+					</States>
+					<Transitions>
+						<StationaryTransitionDefinition from="default" to="siege" fadeOut="3" flat="24" fadeIn="0"/>
+						<StationaryTransitionDefinition from="turn" to="siege" fadeOut="3" flat="24" fadeIn="0"/>
+						<StationaryTransitionDefinition from="siege" to="default" fadeOut="3" flat="24" fadeIn="3"/>
+						<BlendTransitionDefinition from="default" to="turn" mergeTicks="3"/>
+						<BlendTransitionDefinition from="turn" to="default" mergeTicks="3"/>
+						<InstantTransitionDefinition from="shoot_siege" to="siege"/>
+						<BlendTransitionDefinition from="siege" to="shoot_siege" mergeTicks="3"/>
+						<BlendTransitionDefinition from="turn" to="shoot_default" mergeTicks="3"/>
+						
+						<InstantTransitionDefinition from="aim" to="shoot_default"/>
+						<InstantTransitionDefinition from="shoot_default" to="aim"/>
+						<BlendTransitionDefinition from="aim" to="default" mergeTicks="1"/>
+						<StationaryTransitionDefinition from="default" to="aim"  fadeOut="3" flat="8" fadeIn="0"/>
+					</Transitions>
+					<Requests>
+						<MoveRequest>
+							<StateNames>
+								<Request>default</Request>
+							</StateNames>
+						</MoveRequest>
+						<TurnRequest>
+							<StateNames>
+								<Request>default</Request>
+								<Request>turn</Request>
+								<Request>default</Request>
+							</StateNames>
+						</TurnRequest>
+						<AttackRequest if="siege">
+							<StateNames>
+								<Request>shoot_siege</Request>
+								<Request>siege</Request>
+							</StateNames>
+						</AttackRequest>
+						<AttackRequest if="default">
+							<StateNames>
+								<Request>aim</Request>
+								<Request>shoot_default</Request>
+								<Request>aim</Request>
+							</StateNames>
+						</AttackRequest>
+						<AttackRequest if="aim">
+							<StateNames>
+								<Request>shoot_default</Request>
+								<Request>aim</Request>
+							</StateNames>
+						</AttackRequest>
+						<AttackRequest>
+							<StateNames>
+								<Request>shoot_default</Request>
+								<Request>default</Request>
+							</StateNames>
+						</AttackRequest>
+						<AbilityRequest if="default" ability="Deploy">
+							<StateNames>
+								<Request>siege</Request>
+							</StateNames>
+						</AbilityRequest>
+						<AbilityRequest if="siege" ability="Deploy">
+							<StateNames>
+								<Request>default</Request>
+							</StateNames>
+						</AbilityRequest>
+						<AbilityRequest ability="Deploy">
+							<StateNames>
+								<Request>default</Request>
+								<Request>siege</Request>
+							</StateNames>
+						</AbilityRequest>
+					</Requests>
+					<DeployedStates>
+						<State>siege</State>
+					</DeployedStates>
+				</UnitStates>
+				<WreckConfiguration>sax_mech_gunfort_wreck</WreckConfiguration>
+		</UnitConfiguration>
+
+<!-- Rusviet Units -->
+	<!-- Infantry-->
+	
+		<!--Rusviet Engineer-->
+		<UnitConfiguration id="rus_soldier_engineer" type="engineer" parentId="com_soldier_engineer">
+			<IsAbstract>false</IsAbstract>
+			<WeaponId>rus_engineer_handgun</WeaponId>
+
+			<!--Abilities-->
+			<BuildOptions>
+				<UnitBuildOption>
+					<UnitId>rus_structure_hq</UnitId>
+				</UnitBuildOption>
+				<UnitBuildOption>
+					<UnitId>rus_structure_barracks01</UnitId>
+				</UnitBuildOption>
+				<UnitBuildOption>
+					<UnitId>rus_structure_workshop01</UnitId>
+				</UnitBuildOption>
+				<UnitBuildOption>
+					<UnitId>rus_structure_bunker</UnitId>
+				</UnitBuildOption>
+				<UnitBuildOption>
+					<UnitId>rus_structure_bunkertier02</UnitId>
+					<RequiredRank>Elite</RequiredRank>
+				</UnitBuildOption>
+				<UnitBuildOption>
+					<UnitId>rus_structure_bunkertier01</UnitId>
+					<RequiredRank>Veteran</RequiredRank>
+				</UnitBuildOption>
+				<UnitBuildOption>
+					<UnitId>com_structure_sandbags</UnitId>
+				</UnitBuildOption>
+				<UnitBuildOption>
+					<UnitId>com_structure_barbwire</UnitId>
+				</UnitBuildOption>
+				<UnitBuildOption>
+					<UnitId>mis_mine_buried</UnitId>
+				</UnitBuildOption>
+			</BuildOptions>
+		</UnitConfiguration>
+
+		<!--Rusviet Medic-->
+		<UnitConfiguration id="rus_soldier_medic" type="medic" parentId="com_soldier_medic">
+			<IsAbstract>false</IsAbstract>
+			<WeaponId>rus_medic_handgun</WeaponId>
+			
+			<!--Internals-->
+			<TentId>rus_structure_medicbuilding</TentId>
+		</UnitConfiguration>
+
+		<!--Rusviet Rifleman-->
+		<UnitConfiguration id="rus_soldier_rifleman" type="human" parentId="com_soldier_rifleman">
+			<IsAbstract>false</IsAbstract>
+			<WeaponId>rus_soldier_rifleman_rifle</WeaponId>
+			<MeleeWeaponId>com_soldier_melee_strong</MeleeWeaponId>
+			<StatesId>rus_shotgun</StatesId>
+		</UnitConfiguration>
+
+		<!--Rusviet Grenadier-->
+		<UnitConfiguration id="rus_soldier_grenadier" type="human" parentId="com_soldier_grenadier">
+			<IsAbstract>false</IsAbstract>
+			<WeaponId>rus_soldier_rifleman_rifle</WeaponId>
+			<MeleeWeaponId>com_soldier_melee_strong</MeleeWeaponId>
+			<StatesId>rus_grenade</StatesId>
+		</UnitConfiguration>
+
+		<!--Rusviet Gunner-->
+		<UnitConfiguration id="rus_soldier_gunner" type="human" parentId="com_soldier_gunner">
+			<IsAbstract>false</IsAbstract>
+			<WeaponId>rus_soldier_gunner_cannon</WeaponId>
+		</UnitConfiguration>
+
+		<!--Rusviet MG-->
+		<UnitConfiguration id="rus_soldier_mg" type="mg" parentId="com_soldier_mg">
+			<IsAbstract>false</IsAbstract>
+			<WeaponId>rus_soldier_mg_mg</WeaponId>
+			<GarrisonWeaponId>rus_soldier_garrisonmg</GarrisonWeaponId>
+		</UnitConfiguration>
+
+		<!--Rusviet Flame-->
+		<UnitConfiguration id="rus_soldier_flamer" type="human" parentId="com_soldier_flamer">
+			<IsAbstract>false</IsAbstract>
+		<WeaponId>rus_soldier_flamethrower</WeaponId>			
+		</UnitConfiguration>
+
+	<!-- Mechs & Exo-Skeletons-->
+
+		<!--Rusviet Shock Troops-->
+		<UnitConfiguration id="rus_soldier_exo" type="exoskeleton" parentId="com_exo">
+			<IsAbstract>false</IsAbstract>
+			<Health>170</Health>
+			<VisionRadius>40</VisionRadius>
+			<ArmorType>Light</ArmorType>
+			<Weapons>
+				<Weapon>rus_soldier_exo_melee1</Weapon>
+				<Weapon>rus_soldier_exo_melee2</Weapon>
+				<Weapon>rus_soldier_exo_jump</Weapon>
+			</Weapons>
+			<AttackRange>13</AttackRange>
+			<SquadSize>3</SquadSize>
+
+			<!--Hitsystem-->
+			<!--<HitzoneRadius>.6</HitzoneRadius>-->
+			<DefaultHeight>2.0</DefaultHeight>
+
+			<!--Costs-->
+			<BuildCost>
+				<IronCost>300</IronCost>
+				<OilCost>100</OilCost>
+				<PopulationCost>3</PopulationCost>
+			</BuildCost>
+			<RepairCost>
+				<IronCost>3</IronCost>
+				<OilCost>1</OilCost>
+				<BatchSize>11</BatchSize>
+			</RepairCost>
+			<ReinforceCost>
+				<IronCost>85</IronCost>
+				<OilCost>15</OilCost>
+				<PopulationCost>0</PopulationCost>
+			</ReinforceCost>
+			<ReserveBuildCost>
+				<IronCost>150</IronCost>
+				<OilCost>50</OilCost>
+				<PopulationCost>3</PopulationCost>
+			</ReserveBuildCost>
+			<UpkeepCost>
+				<OilCost>0</OilCost>
+			</UpkeepCost>
+
+			<!--Abilities-->
+			<UnitAbilities>
+				<MechMovementAbilityDefinition defaultMovement="true"/>
+				<!--<DefaultMechAttackAbilityDefinition weapon="rus_soldier_exo_melee" defaultMelee="true" abilityType="MeleeAttack"/>-->
+				<MultiWeaponMechAttackAbilityDefinition defaultMelee="true" abilityType="MeleeAttack" useWeaponNameAsStateRequestName="true" sharedCooldown="true">
+					<Weapons>
+						<Weapon>rus_soldier_exo_melee1</Weapon>
+						<Weapon>rus_soldier_exo_melee2</Weapon>
+					</Weapons>
+				</MultiWeaponMechAttackAbilityDefinition>
+				<MechJumpDefinition abilityType="VeteranMechAbility" weaponId="rus_soldier_exo_jump" jumpRange="35" cooldown="480" jumpTimeForMinDistance="2.94" jumpTimeForMaxDistance="2.94"/>
+				<AirDropBattleReinforceDefinition abilityType="AirDropBattleReinforce" weaponId="rus_soldier_exo_jump" range="15" cooldown="880" maxCount="2" impactDelay="14" delayBetweenSpawns="3" VeteranAbility="true" />
+			</UnitAbilities>
+			
+			<AutoAbilities>
+				<JumpAttackAutoAbilityDefinition weapon="rus_soldier_exo_jump" abilityType="VeteranMechAbility" settingIdentifier="JumpAutoAbility"/>
+				<ReinforceAutoAbilityDefinition  weapon="rus_soldier_exo_jump" abilityType="AirDropBattleReinforce" settingIdentifier="ReinforceBattleAutoAbility"/>
+			</AutoAbilities>
+
+			<!--Veterancy-->
+			<Veterancy>
+				<VeteranThreshold>2000</VeteranThreshold>
+				<EliteThreshold>4500</EliteThreshold>
+			</Veterancy>
+
+
+			<!--ExperienceValues-->
+			<ExperienceValues>
+				<AttackerXP>
+					<!--how many points would an attacker get when doing 100% damage-->
+					<Rookie>267</Rookie>
+					<Veteran>320</Veteran>
+					<Elite>400</Elite>
+				</AttackerXP>
+				<DamageXP>
+					<!--how many points would this unit get if someone does 100% damage to it-->
+					<Rookie>200</Rookie>
+					<Veteran>240</Veteran>
+					<Elite>300</Elite>
+				</DamageXP>
+				<HealerXP>
+					<!--how many points would a healer get if they heal 100% HPs-->
+					<Rookie>250</Rookie>
+					<Veteran>325</Veteran>
+					<Elite>375</Elite>
+				</HealerXP>
+			</ExperienceValues>
+
+			<!--Internals-->
+			<RotationAcceleration>0.4</RotationAcceleration>
+			<RotationSpeed>85</RotationSpeed>
+			<MoveSpeed>4.1</MoveSpeed>
+			<ForwardScale>1.2</ForwardScale>
+			<PositiveDelta>120</PositiveDelta>
+			<NegativeDelta>60</NegativeDelta>
+			<Acceleration>0.2</Acceleration>
+			<MotionScaleCurve>
+				<Key x="0" y="1"/>
+				<Key x="90" y=".9"/>
+				<Key x="180" y="0.4"/>
+			</MotionScaleCurve>
+
+			<UnitStates>
+				<States>
+					<StationaryMechStateDefinition name="airdrop_spawn"/>
+					<DefaultMechStateDefinition name="default"/>
+					<MechShootStateDefinition name="brawl1" PreTicks="4" PostTicks="17"/>
+					<MechShootStateDefinition name="brawl2" PreTicks="7" PostTicks="16"/>
+					<MechTurnStateDefinition name="turn"/>
+					<MechInteractStateDefinition name="interact"/>
+					<MechJumpStateDefinition name="jump" PreTicks="3"/>
+				</States>
+				<Transitions>
+					<StationaryTransitionDefinition from="airdrop_spawn" to="default" fadeOut="31" flat="0" fadeIn="0"/>
+					<BlendTransitionDefinition from="default" to="turn" mergeTicks="1"/>
+					<InstantTransitionDefinition from="turn" to="default"/>
+					<BlendTransitionDefinition from="turn" to="brawl1" mergeTicks="3"/>
+					<InstantTransitionDefinition from="brawl1" to="default"/>
+					<BlendTransitionDefinition from="default" to="brawl1" mergeTicks="3"/>
+					<BlendTransitionDefinition from="turn" to="brawl2" mergeTicks="3"/>
+					<InstantTransitionDefinition from="brawl2" to="default"/>
+					<BlendTransitionDefinition from="default" to="brawl2" mergeTicks="3"/>
+					<BlendTransitionDefinition from="default" to="interact" mergeTicks="3"/>
+					<BlendTransitionDefinition from="turn" to="interact" mergeTicks="3"/>
+					<InstantTransitionDefinition from="interact" to="default"/>
+					<BlendTransitionDefinition from="default" to="jump" mergeTicks="3"/>
+					<InstantTransitionDefinition from="turn" to="jump"/>
+					<StationaryTransitionDefinition from="jump" to="default" fadeOut="20" flat="0" fadeIn="0"/>
+				</Transitions>
+				<Requests>
+					<MoveRequest>
+						<StateNames>
+							<Request>default</Request>
+						</StateNames>
+					</MoveRequest>
+					<TurnRequest if="airdrop_spawn">
+						<StateNames>
+							<Request>default</Request>
+							<Request>turn</Request>
+						</StateNames>
+					</TurnRequest>
+					<TurnRequest>
+						<StateNames>
+							<Request>turn</Request>
+						</StateNames>
+					</TurnRequest>
+					<AttackRequest if="airdrop_spawn">
+						<StateNames>
+							<Request>default</Request>
+							<Request>brawl</Request>
+							<Request>default</Request>
+						</StateNames>
+					</AttackRequest>
+					<AttackRequest>
+						<StateNames>
+							<Request>brawl</Request>
+							<Request>default</Request>
+						</StateNames>
+					</AttackRequest>
+					<MeleeAttackRequest if="airdrop_spawn">
+						<StateNames>
+							<Request>default</Request>
+							<Request>brawl</Request>
+							<Request>default</Request>
+						</StateNames>
+					</MeleeAttackRequest>
+					<MeleeAttackRequest name="rus_soldier_exo_melee1">
+						<StateNames>
+							<Request>brawl1</Request>
+							<Request>default</Request>
+						</StateNames>
+					</MeleeAttackRequest>
+					<MeleeAttackRequest name="rus_soldier_exo_melee2">
+						<StateNames>
+							<Request>brawl2</Request>
+							<Request>default</Request>
+						</StateNames>
+					</MeleeAttackRequest>
+					<InteractRequest if="airdrop_spawn">
+						<StateNames>
+							<Request>default</Request>
+							<Request>interact</Request>
+						</StateNames>
+					</InteractRequest>
+					<InteractRequest>
+						<StateNames>
+							<Request>interact</Request>
+						</StateNames>
+					</InteractRequest>
+					<AbilityRequest ability="VeteranMechAbility" if="elevator_spawn">
+						<StateNames>
+							<Request>default</Request>
+							<Request>jump</Request>
+							<Request>default</Request>
+						</StateNames>
+					</AbilityRequest>
+					<AbilityRequest ability="VeteranMechAbility">
+						<StateNames>
+							<Request>jump</Request>
+							<Request>default</Request>
+						</StateNames>
+					</AbilityRequest>
+				</Requests>
+			</UnitStates>
+		</UnitConfiguration>
+
+		<!-- Rusviet Flamer-->
+		<UnitConfiguration id="rus_mech_flamer" type="mech"  parentId="com_light_mech">
+			<IsAbstract>false</IsAbstract>
+			<Health>500</Health>
+			<ArmorType>Medium</ArmorType>
+			<VisionRadius>40</VisionRadius>
+			<Weapons>
+				<Weapon>rus_mech_flamer_flamer</Weapon>
+				<Weapon>rus_mech_flamer_framing</Weapon>
+			</Weapons>
+
+			<!--Hitsystem-->
+			<HitzoneRadius>2.5</HitzoneRadius>
+			<DefaultHeight>2.5</DefaultHeight>
+			<DamageHitzones>
+				<DamageHitzone>
+					<Id>1</Id>
+					<LowerAngle>135</LowerAngle>
+					<UpperAngle>225</UpperAngle>
+					<Type>Vulnerable</Type>
+				</DamageHitzone>
+			</DamageHitzones>
+
+			<!--Abilities-->
+			<UnitAbilities>
+				<MechMovementAbilityDefinition defaultMovement="true"/>
+				<!--<DefaultMechAttackAbilityDefinition weapon="rus_mech_flamer_flamer" defaultAttack="true"/>-->
+				<MultiWeaponMechAttackAbilityDefinition defaultAttack="true" sharedCooldown="true" autoSwitching="false" abilityType="ToggleWeapon" VeteranAbility="true">
+					<Weapons>
+						<Weapon>rus_mech_flamer_flamer</Weapon>
+						<Weapon>rus_mech_flamer_framing</Weapon>
+					</Weapons>
+				</MultiWeaponMechAttackAbilityDefinition>
+			</UnitAbilities>
+			
+			<AutoAbilities>
+				<SwitchWeaponAutoAbilityDefinition abilityType="ToggleWeapon" settingIdentifier="FramingDownAutoAbility"/>
+			</AutoAbilities>
+
+			<!--Costs-->
+			<BuildCost>
+				<IronCost>350</IronCost>
+				<OilCost>60</OilCost>
+				<PopulationCost>4</PopulationCost>
+			</BuildCost>
+			<RepairCost>
+				<IronCost>5</IronCost>
+				<OilCost>1</OilCost>
+				<BatchSize>40</BatchSize>
+			</RepairCost>
+			<ReserveBuildCost>
+				<IronCost>210</IronCost>
+				<OilCost>40</OilCost>
+				<PopulationCost>4</PopulationCost>
+			</ReserveBuildCost>
+			<UpkeepCost>
+				<OilCost>0</OilCost>
+			</UpkeepCost>
+
+			<!--Veterancy-->
+			<Veterancy>
+				<VeteranThreshold>2000</VeteranThreshold>
+				<EliteThreshold>4500</EliteThreshold>
+			</Veterancy>			
+
+			<!--ExperienceValues-->
+			<ExperienceValues>
+				<AttackerXP> <!--how many points would an attacker get when doing 100% damage-->
+					<Rookie>1000</Rookie>
+					<Veteran>1200</Veteran>
+					<Elite>1500</Elite>
+				</AttackerXP>
+				<DamageXP> <!--how many points would this unit get if someone does 100% damage to it-->
+					<Rookie>600</Rookie>
+					<Veteran>720</Veteran>
+					<Elite>900</Elite>
+				</DamageXP>
+				<HealerXP> <!--how many points would a healer get if they heal 100% HPs-->
+					<Rookie>750</Rookie>
+					<Veteran>975</Veteran>
+					<Elite>1125</Elite>
+				</HealerXP>
+			</ExperienceValues>			
+
+			<!--Internals-->
+			<MaxKineticVelocity>1</MaxKineticVelocity>
+			<KineticToVelocity>4</KineticToVelocity>
+			<MaxKineticVelocity>4</MaxKineticVelocity>
+			<MoveSpeed>2.3</MoveSpeed>
+			<Acceleration>0.2</Acceleration>
+			<RotationSpeed>44</RotationSpeed>
+			<RotationAcceleration>0.05</RotationAcceleration>
+			<MotionScaleCurve>
+				<Key x="0" y="1"/>
+				<Key x="90" y="1"/>
+				<Key x="180" y="1"/>
+			</MotionScaleCurve>
+			<ReversingMotionScaleCurve>
+				<Key x="0" y="1"/>
+				<Key x="90" y="1"/>
+				<Key x="180" y="0.9"/>
+			</ReversingMotionScaleCurve>
+			<PositiveDelta>180</PositiveDelta>
+			<NegativeDelta>0</NegativeDelta>
+			<WreckConfiguration>rus_mech_flamer_wreck</WreckConfiguration>
+			<UnitStates>
+				<States>
+					<DefaultMechStateDefinition name="default"/>
+					<MechShootStateDefinition name="shoot" PreTicks="7" PostTicks="3"/>
+					<MechTurnStateDefinition name="turn"/>
+				</States>
+
+				<Transitions>
+					<BlendTransitionDefinition from="default" to="turn" mergeTicks="1"/>
+					<InstantTransitionDefinition from="turn" to="default"/>
+					<BlendTransitionDefinition from="turn" to="shoot" mergeTicks="3"/>
+					<InstantTransitionDefinition from="shoot" to="default"/>
+					<InstantTransitionDefinition from="shoot" to="turn"/>
+					<BlendTransitionDefinition from="default" to="shoot" mergeTicks="3"/>
+				</Transitions>
+
+				<Requests>
+					<MoveRequest>
+						<StateNames>
+							<Request>default</Request>
+						</StateNames>
+					</MoveRequest>
+					<TurnRequest>
+						<StateNames>
+							<Request>turn</Request>
+						</StateNames>
+					</TurnRequest>
+					<AttackRequest Dequeueable="true">
+						<StateNames>
+							<Request>shoot</Request>
+							<Request>default</Request>
+						</StateNames>
+					</AttackRequest>
+				</Requests>
+			</UnitStates>
+		</UnitConfiguration>
+
+		<!-- Rusviet Bomber-->
+		<UnitConfiguration id="rus_mech_bomber" type="mech" parentId="com_light_mech">
+			<IsAbstract>false</IsAbstract>
+			<Health>750</Health>
+			<VisionRadius>40</VisionRadius>
+			<Weapons>
+				<Weapon>rus_mech_bomber_launcher</Weapon>
+				<Weapon>rus_mech_bomber_axial</Weapon>
+			</Weapons>
+
+			<!--Hitsystem-->
+			<HitzoneRadius>2</HitzoneRadius>
+			<DefaultHeight>2.5</DefaultHeight>
+			<DamageHitzones>
+				<DamageHitzone>
+					<Id>1</Id>
+					<LowerAngle>135</LowerAngle>
+					<UpperAngle>225</UpperAngle>
+					<Type>Vulnerable</Type>
+				</DamageHitzone>
+			</DamageHitzones>
+
+			<!--Abilities-->
+			<UnitAbilities>
+				<MechMovementAbilityDefinition defaultMovement="true"/>
+				<DefaultMechAttackAbilityDefinition weapon="rus_mech_bomber_launcher" defaultAttack="true"/>
+			</UnitAbilities>
+
+			<!--Costs-->
+			<BuildCost>
+				<IronCost>400</IronCost>
+				<OilCost>90</OilCost>
+				<PopulationCost>4</PopulationCost>
+			</BuildCost>
+			<RepairCost>
+				<IronCost>5</IronCost>
+				<OilCost>1</OilCost>
+				<BatchSize>55</BatchSize>
+			</RepairCost>
+			<ReserveBuildCost>
+				<IronCost>240</IronCost>
+				<OilCost>60</OilCost>
+				<PopulationCost>4</PopulationCost>
+			</ReserveBuildCost>
+			<UpkeepCost>
+				<OilCost>0</OilCost>
+			</UpkeepCost>
+
+			<!--Veterancy-->
+			<Veterancy>
+				<VeteranThreshold>3500</VeteranThreshold>
+				<EliteThreshold>8000</EliteThreshold>
+			</Veterancy>
+
+			<!--ExperienceValues-->
+			<ExperienceValues>
+				<AttackerXP> <!--how many points would an attacker get when doing 100% damage-->
+					<Rookie>1000</Rookie>
+					<Veteran>1200</Veteran>
+					<Elite>1500</Elite>
+				</AttackerXP>
+				<DamageXP> <!--how many points would this unit get if someone does 100% damage to it-->
+					<Rookie>875</Rookie>
+					<Veteran>1050</Veteran>
+					<Elite>1312</Elite>
+				</DamageXP>
+				<HealerXP> <!--how many points would a healer get if they heal 100% HPs-->
+					<Rookie>750</Rookie>
+					<Veteran>975</Veteran>
+					<Elite>1125</Elite>
+				</HealerXP>
+			</ExperienceValues>			
+
+			<!--Internals-->
+			<MoveSpeed>3.61</MoveSpeed>
+			<KineticToVelocity>2</KineticToVelocity>
+			<Acceleration>0.6</Acceleration>
+			<RotationSpeed>114</RotationSpeed>
+			<RotationAcceleration>0.6</RotationAcceleration>
+			<MotionScaleCurve>
+				<Key x="0" y="1"/>
+				<Key x="180" y=".5"/>
+			</MotionScaleCurve>
+			<ReversingMotionScaleCurve>
+				<Key x="0" y=".5"/>
+				<Key x="180" y="0.9"/>
+			</ReversingMotionScaleCurve>
+			<PositiveDelta>180</PositiveDelta>
+			<NegativeDelta>0</NegativeDelta>
+			<WreckConfiguration>rus_mech_bomber_wreck</WreckConfiguration>
+			<UnitStates>
+				<States>
+					<DefaultMechStateDefinition name="default"/>
+					<MechAimStateDefinition name="aim"/>
+					<MechShootStateDefinition name="shoot" PreTicks="1" PostTicks="3"/>
+					<MechTurnStateDefinition name="turn"/>
+				</States>
+				<Transitions>
+					<BlendTransitionDefinition from="default" to="turn" mergeTicks="1"/>
+					<InstantTransitionDefinition from="turn" to="default"/>
+					<BlendTransitionDefinition from="turn" to="aim" mergeTicks="3"/>
+					<InstantTransitionDefinition from="shoot" to="default"/>
+					<BlendTransitionDefinition from="default" to="aim" mergeTicks="3"/>
+					<InstantTransitionDefinition from="shoot" to="aim"/>
+					<InstantTransitionDefinition from="aim" to="shoot"/>
+					<InstantTransitionDefinition from="aim" to="turn"/>
+					<InstantTransitionDefinition from="aim" to="default"/>
+				</Transitions>
+				<Requests>
+					<MoveRequest>
+						<StateNames>
+							<Request>default</Request>
+								</StateNames>
+					</MoveRequest>
+					<TurnRequest>
+						<StateNames>
+							<Request>turn</Request>
+						</StateNames>
+					</TurnRequest>
+					<AttackRequest>
+						<StateNames>
+							<Request>aim</Request>
+							<Request>shoot</Request>
+							<Request>aim</Request>
+						</StateNames>
+					</AttackRequest>
+				</Requests>
+			</UnitStates>
+		</UnitConfiguration>
+
+		<!-- Rusviet Artillery | Rocket artillery-->	
+		<UnitConfiguration id="rus_mech_artillery" type="mech" parentId="com_medium_mech">
+			<IsAbstract>false</IsAbstract>
+			<Health>750</Health>
+			<ArmorType>Light</ArmorType>
+			<VisionRadius>35</VisionRadius>
+			<Weapons>
+				<Weapon>rus_mech_artillery_launcher</Weapon>
+				<Weapon>rus_mech_artillery_sentry_launcher</Weapon>
+			</Weapons>
+      <PreventImplicitTargeting>true</PreventImplicitTargeting>
+
+			<!--Hitsystem-->
+			<HitzoneRadius>2.5</HitzoneRadius>
+			<DefaultHeight>2.5</DefaultHeight>
+			<DamageHitzones>
+				<DamageHitzone>
+					<Id>1</Id>
+					<LowerAngle>135</LowerAngle>
+					<UpperAngle>225</UpperAngle>
+					<Type>Vulnerable</Type>
+				</DamageHitzone>
+			</DamageHitzones>
+		
+			<!--Costs-->
+			<BuildCost>
+				<IronCost>400</IronCost>
+				<OilCost>140</OilCost>
+				<PopulationCost>4</PopulationCost>
+			</BuildCost>
+			<RepairCost>
+				<IronCost>5</IronCost>
+				<OilCost>2</OilCost>
+				<BatchSize>65</BatchSize>
+			</RepairCost>
+			<ReserveBuildCost>
+				<IronCost>240</IronCost>
+				<OilCost>90</OilCost>
+				<PopulationCost>4</PopulationCost>
+			</ReserveBuildCost>
+
+			<!--Veterancy-->
+			<Veterancy>
+				<VeteranThreshold>2000</VeteranThreshold>
+				<EliteThreshold>4500</EliteThreshold>
+			</Veterancy>			
+
+			<!--ExperienceValues-->
+			<ExperienceValues>
+				<AttackerXP> <!--how many points would an attacker get when doing 100% damage-->
+					<Rookie>1000</Rookie>
+					<Veteran>1200</Veteran>
+					<Elite>1500</Elite>
+				</AttackerXP>
+				<DamageXP> <!--how many points would this unit get if someone does 100% damage to it-->
+					<Rookie>300</Rookie>
+					<Veteran>360</Veteran>
+					<Elite>450</Elite>
+				</DamageXP>
+				<HealerXP> <!--how many points would a healer get if they heal 100% HPs-->
+					<Rookie>750</Rookie>
+					<Veteran>975</Veteran>
+					<Elite>1125</Elite>
+				</HealerXP>
+			</ExperienceValues>
+
+			<!--Internals-->
+			<MaxKineticVelocity>0</MaxKineticVelocity>
+			<KineticToVelocity>0</KineticToVelocity>
+			<RotationSpeed>40</RotationSpeed>
+			<MoveSpeed>2.28</MoveSpeed>
+			<Acceleration>0.025</Acceleration>
+			<MotionScaleCurve>
+				<Key x="0" y="1"/>
+				<Key x="90" y="0"/>
+				<Key x="180" y="0"/>
+			</MotionScaleCurve>
+			<ReversingMotionScaleCurve>
+				<Key x="0" y="0"/>
+				<Key x="90" y="0"/>
+				<Key x="180" y="1"/>
+			</ReversingMotionScaleCurve>
+			<!--Decay describes velocity reduction in meter per tick! -->
+
+			<UnitAbilities>
+				<MechMovementAbilityDefinition defaultMovement="true"/>
+				<DefaultMechAttackAbilityDefinition weapon="rus_mech_artillery_launcher" abilityType="Rockets" deactivateAfterShot="true" defaultAttack="true"/>
+				<MechSentryModeAbilityDefinition weapon="rus_mech_artillery_sentry_launcher" abilityType="VeteranMechAbility" VeteranAbility="true" SentryRadius="12" BurstSize="3" BurstCooldown="20" Range="55" cooldown="80"/>
+			</UnitAbilities>
+			
+			<AutoAbilities>
+				<SingleTargetAttackAutoAbilityDefinition weapon="rus_mech_artillery_launcher" lookForTargets="true" abilityType="Rockets" conditions="UnDeployed" settingIdentifier="LaunchAutoAbility"/>
+				<SentryModeAutoAbilityDefinition weapon="rus_mech_artillery_sentry_launcher" lookForTargets="true" abilityType="VeteranMechAbility" conditions="UnDeployed" noMoveOrderGivenTime="10" settingIdentifier="LiberationAutoAbility"/>
+			</AutoAbilities>
+						
+			<UnitStates>
+				<States>
+					<DefaultMechStateDefinition name="default"/>
+					<MechShootStateDefinition name="shoot" PreTicks="7" PostTicks="3"/>
+					<MechTurnStateDefinition name="turn"/>
+					<StationaryMechStateDefinition name="sentry"/>
+					<MechShootStateDefinition name="sentry_shoot" PreTicks="7" PostTicks="3"/>
+				</States>
+				<Transitions>
+					<BlendTransitionDefinition from="default" to="turn" mergeTicks="1"/>
+					<InstantTransitionDefinition from="turn" to="default"/>
+					<BlendTransitionDefinition from="turn" to="shoot" mergeTicks="3"/>
+					<InstantTransitionDefinition from="shoot" to="default"/>
+					<BlendTransitionDefinition from="default" to="shoot" mergeTicks="3"/>
+					<StationaryTransitionDefinition from="turn" to="sentry"  fadeOut="3" flat="30" fadeIn="0"/>
+					<InstantTransitionDefinition from="sentry" to="sentry_shoot"/>
+					<InstantTransitionDefinition from="sentry_shoot" to="sentry"/>
+					<StationaryTransitionDefinition from="sentry" to="default"  fadeOut="3" flat="30" fadeIn="0"/>
+				</Transitions>
+				<Requests>
+					<MoveRequest>
+						<StateNames>
+							<Request>default</Request>
+						</StateNames>
+					</MoveRequest>
+					<TurnRequest>
+						<StateNames>
+							<Request>turn</Request>
+						</StateNames>
+					</TurnRequest>
+					<AttackRequest>
+						<StateNames>
+							<Request>shoot</Request>
+							<Request>default</Request>
+						</StateNames>
+					</AttackRequest>
+					<AbilityRequest if="sentry" ability="Rockets">
+						<StateNames>
+							<Request>default</Request>
+							<Request>shoot</Request>
+							<Request>default</Request>
+						</StateNames>
+					</AbilityRequest>
+					<AbilityRequest if="sentry" ability="VeteranMechAbility">
+						<StateNames>
+							<Request>default</Request>
+						</StateNames>
+					</AbilityRequest>
+					<AbilityRequest ability="VeteranMechAbility">
+						<StateNames>
+							<Request>turn</Request>
+							<Request>sentry</Request>
+						</StateNames>
+					</AbilityRequest>
+				</Requests>
+				<DeployedStates>
+					<State>sentry</State>
+				</DeployedStates>
+			</UnitStates>
+			<WreckConfiguration>rus_mech_artillery_wreck</WreckConfiguration>
+		</UnitConfiguration>
+
+		<!-- Rusviet Revolver-->
+		<UnitConfiguration id="rus_mech_revolver" type="mech" parentId="com_medium_mech">
+			<IsAbstract>false</IsAbstract>
+			<Health>1150</Health>
+			<VisionRadius>40</VisionRadius>
+			<Weapons>
+				<weapon>rus_mech_revolver_cannon_L</weapon>
+				<weapon>rus_mech_revolver_cannon_LM</weapon>
+				<weapon>rus_mech_revolver_cannon_RM</weapon>
+				<weapon>rus_mech_revolver_cannon_R</weapon>
+				<weapon>rus_mech_revolver_barrage</weapon>
+			</Weapons>
+
+			<!--Hitsystem-->
+			<HitzoneRadius>3.5</HitzoneRadius>
+			<DefaultHeight>2.5</DefaultHeight>
+			<DamageHitzones>
+				<DamageHitzone>
+					<Id>1</Id>
+					<LowerAngle>135</LowerAngle>
+					<UpperAngle>225</UpperAngle>
+					<Type>Vulnerable</Type>
+				</DamageHitzone>
+			</DamageHitzones>
+
+			<!--Abilities-->
+			<!--<Weapon>rus_mech_revolver_barrage</Weapon>--> <!--ability-->
+			<UnitAbilities>
+				<MechMovementAbilityDefinition defaultMovement="true"/>
+				<!-- RevolverMechAttackDefinition
+				times are in ticks
+				shotDelay = time between shots in normal shooting
+				abilityShotDelay = Time between shots during used ability
+				abilityCooldown = Time until the veteran ability can be used again (does not impact normal shooting)
+				 -->
+				<RevolverMechAttackDefinition defaultAttack="true" weapon="rus_mech_revolver_cannon" shotDelay="8" abiltiyShotDelay="2" abilityCooldown="160" abilityType="VeteranMechAbility">
+					<Weapons>
+						<Weapon>rus_mech_revolver_cannon_L</Weapon>
+						<Weapon>rus_mech_revolver_cannon_LM</Weapon>
+						<Weapon>rus_mech_revolver_cannon_RM</Weapon>
+						<Weapon>rus_mech_revolver_cannon_R</Weapon>
+					</Weapons>
+				</RevolverMechAttackDefinition>
+			</UnitAbilities>
+			<AutoAbilities>
+				<SingleTargetAttackAutoAbilityDefinition weapon="rus_mech_revolver_cannon" abilityType="VeteranMechAbility" settingIdentifier="BarrageAutoAbility"/>
+			</AutoAbilities>
+
+			<!--Costs-->
+			<BuildCost>
+				<IronCost>550</IronCost>
+				<OilCost>190</OilCost>
+				<PopulationCost>5</PopulationCost>
+			</BuildCost>
+			<RepairCost>
+				<IronCost>6</IronCost>
+				<OilCost>2</OilCost>
+				<BatchSize>75</BatchSize>
+			</RepairCost>
+			<ReserveBuildCost>
+				<IronCost>390</IronCost>
+				<OilCost>150</OilCost>
+				<PopulationCost>5</PopulationCost>
+			</ReserveBuildCost>
+			<UpkeepCost>
+				<OilCost>0</OilCost>
+			</UpkeepCost>
+
+			<!--Veterancy-->
+			<Veterancy>
+				<VeteranThreshold>2000</VeteranThreshold>
+				<EliteThreshold>4500</EliteThreshold>
+			</Veterancy>
+
+			<!--ExperienceValues-->
+			<ExperienceValues>
+				<AttackerXP> <!--how many points would an attacker get when doing 100% damage-->
+					<Rookie>1533</Rookie>
+					<Veteran>1840</Veteran>
+					<Elite>2300</Elite>
+				</AttackerXP>
+				<DamageXP> <!--how many points would this unit get if someone does 100% damage to it-->
+					<Rookie>600</Rookie>
+					<Veteran>720</Veteran>
+					<Elite>900</Elite>
+				</DamageXP>
+				<HealerXP> <!--how many points would a healer get if they heal 100% HPs-->
+					<Rookie>750</Rookie>
+					<Veteran>975</Veteran>
+					<Elite>1125</Elite>
+				</HealerXP>
+			</ExperienceValues>
+
+			<!--Internals-->
+			<MaxKineticVelocity>0</MaxKineticVelocity>
+			<KineticToVelocity>0</KineticToVelocity>			
+			<MoveSpeed>2.4</MoveSpeed>
+			<Acceleration>0.1</Acceleration>
+			<RotationSpeed>38</RotationSpeed>
+			<RotationAcceleration>0.05</RotationAcceleration>
+			<MotionScaleCurve>
+				<Key x="0" y="1"/>
+				<Key x="90" y="0.5"/>
+				<Key x="180" y="1"/>
+			</MotionScaleCurve>
+			<ReversingMotionScaleCurve>
+				<Key x="0" y="0.2"/>
+				<Key x="90" y="0.5"/>
+				<Key x="180" y="0.5"/>
+			</ReversingMotionScaleCurve>
+			<PositiveDelta>180</PositiveDelta>
+			<NegativeDelta>0</NegativeDelta>
+			<UnitStates>
+				<States>
+					<DefaultMechStateDefinition name="default"/>
+					<MechAimStateDefinition name="aim"/>
+					<MechShootStateDefinition name="shoot" PreTicks="0" PostTicks="0"/>
+					<MechTurnStateDefinition name="turn"/>
+				</States>
+				<Transitions>
+					<BlendTransitionDefinition from="default" to="turn" mergeTicks="1"/>
+					<InstantTransitionDefinition from="turn" to="default"/>
+					<BlendTransitionDefinition from="turn" to="aim" mergeTicks="3"/>
+					<BlendTransitionDefinition from="default" to="aim" mergeTicks="3"/>
+					<InstantTransitionDefinition from="shoot" to="aim"/>
+					<InstantTransitionDefinition from="aim" to="shoot"/>
+					<InstantTransitionDefinition from="aim" to="turn"/>
+					<InstantTransitionDefinition from="aim" to="default"/>
+					</Transitions>
+				<Requests>
+					<MoveRequest>
+						<StateNames>
+							<Request>default</Request>
+						</StateNames>
+					</MoveRequest>
+					<TurnRequest>
+						<StateNames>
+							<Request>turn</Request>
+						</StateNames>
+					</TurnRequest>
+					<AttackRequest>
+						<StateNames>
+							<Request>aim</Request>
+							<Request>shoot</Request>
+							<Request>aim</Request>
+						</StateNames>
+					</AttackRequest>
+				</Requests>
+			</UnitStates>
+			<WreckConfiguration>rus_mech_revolver_wreck</WreckConfiguration>
+		</UnitConfiguration>
+
+		<!--Rusviet Scythe-->
+		<UnitConfiguration id="rus_mech_scythe" type="mech" parentId="com_heavy_mech">
+			<IsAbstract>false</IsAbstract>
+			<Health>1000</Health>
+			<VisionRadius>40</VisionRadius>
+			<Weapons>
+				<Weapon>rus_mech_scythe_melee</Weapon>
+				<Weapon>rus_mech_scythe_mg</Weapon>
+			</Weapons>
+			<AttackRange>15</AttackRange><!--problematic to have this at all while cancelling is not implemented-->
+
+			<SecondaryWeaponModuleConfiguration>
+				<SecondaryWeapons>
+					<SecondaryWeaponConfiguration weaponConfigurationId="rus_mech_scythe_mg" offsetX="0" offsetY="0" direction="0"/>
+				</SecondaryWeapons>
+			</SecondaryWeaponModuleConfiguration>
+
+
+			<!--Hitsystem-->
+			<HitzoneRadius>3.5</HitzoneRadius>
+			<DefaultHeight>2.5</DefaultHeight>
+			<DamageHitzones>
+				<DamageHitzone>
+					<Id>1</Id>
+					<LowerAngle>120</LowerAngle>
+					<UpperAngle>240</UpperAngle>
+					<Type>Vulnerable</Type>
+				</DamageHitzone>
+			</DamageHitzones>
+
+			<!--Abilities-->
+			<UnitAbilities>
+				<MechMovementAbilityDefinition defaultMovement="true"/>
+				<DefaultMechAttackAbilityDefinition weapon="rus_mech_scythe_melee" defaultMelee="true" abilityType="MeleeAttack"/>
+				<MechWarCryAbilityDefinition cooldown="360" range="15" HealAmount="50" WarCryWeapon="rus_mech_scythe_warcry" VeteranAbility="true" AbilityType="VeteranMechAbility" DeactivateAfterShot="true" SuppressionPreventionDuration="28"/>
+			</UnitAbilities>
+
+			<AutoAbilities>
+				<RallyingCallAutoAbilityDefinition abilityType="VeteranMechAbility" allyHealthLostRatioThreshold="0.25" minAlliesInRange="3" minEnemiesInRange="3" settingIdentifier="CryAutoAbility"/>
+			</AutoAbilities>
+
+			<!--Costs-->
+			<BuildCost>
+				<IronCost>600</IronCost>
+				<OilCost>175</OilCost>
+				<PopulationCost>6</PopulationCost>
+			</BuildCost>
+			<RepairCost>
+				<IronCost>7</IronCost>
+				<OilCost>2</OilCost>
+				<BatchSize>70</BatchSize>
+			</RepairCost>
+			<ReserveBuildCost>
+				<IronCost>420</IronCost>
+				<OilCost>140</OilCost>
+				<PopulationCost>6</PopulationCost>
+			</ReserveBuildCost>
+			<UpkeepCost>
+				<OilCost>0</OilCost>
+			</UpkeepCost>
+
+			<!--Veterancy-->
+			<Veterancy>
+				<VeteranThreshold>3000</VeteranThreshold>
+				<EliteThreshold>6500</EliteThreshold>
+			</Veterancy>
+
+			<!--ExperienceValues-->
+			<ExperienceValues>
+				<AttackerXP>
+					<!--how many points would an attacker get when doing 100% damage-->
+					<Rookie>1333</Rookie>
+					<Veteran>1600</Veteran>
+					<Elite>2000</Elite>
+				</AttackerXP>
+				<DamageXP>
+					<!--how many points would this unit get if someone does 100% damage to it-->
+					<Rookie>900</Rookie>
+					<Veteran>1080</Veteran>
+					<Elite>1350</Elite>
+				</DamageXP>
+				<HealerXP>
+					<!--how many points would a healer get if they heal 100% HPs-->
+					<Rookie>750</Rookie>
+					<Veteran>975</Veteran>
+					<Elite>1125</Elite>
+				</HealerXP>
+			</ExperienceValues>
+
+			<!--Internals-->
+			<!--Plain Copied from Revolver-->
+			<MoveSpeed>3</MoveSpeed>
+			<Acceleration>0.1</Acceleration>
+			<KineticToVelocity>1</KineticToVelocity>
+			<MaxKineticVelocity>2</MaxKineticVelocity>
+			<RotationSpeed>38</RotationSpeed>
+			<RotationAcceleration>0.05</RotationAcceleration>
+			<MotionScaleCurve>
+				<Key x="0" y="1"/>
+				<Key x="90" y="0.5"/>
+				<Key x="180" y="0.2"/>
+			</MotionScaleCurve>
+			<ReversingMotionScaleCurve>
+				<Key x="0" y="0.2"/>
+				<Key x="90" y="0.5"/>
+				<Key x="180" y="0.7"/>
+			</ReversingMotionScaleCurve>
+			<PositiveDelta>180</PositiveDelta>
+			<NegativeDelta>0</NegativeDelta>
+			<UnitStates>
+				<States>
+					<DefaultMechStateDefinition name="default"/>
+					<MechShootStateDefinition name="shoot" PreTicks="7" PostTicks="3"/>
+					<MechShootStateDefinition name="brawl" PreTicks="10" PostTicks="26"/>
+					<MechTurnStateDefinition name="turn"/>
+					<MechShootStateDefinition name="warcry" PreTicks="7" PostTicks="20"/>
+				</States>
+
+				<Transitions>
+					<BlendTransitionDefinition from="default" to="turn" mergeTicks="1"/>
+					<InstantTransitionDefinition from="turn" to="default"/>
+					<BlendTransitionDefinition from="turn" to="shoot" mergeTicks="3"/>
+					<InstantTransitionDefinition from="shoot" to="default"/>
+					<BlendTransitionDefinition from="default" to="shoot" mergeTicks="3"/>
+					<BlendTransitionDefinition from="turn" to="brawl" mergeTicks="3"/>
+					<BlendTransitionDefinition from="brawl" to="default" mergeTicks="3"/>
+					<BlendTransitionDefinition from="default" to="brawl" mergeTicks="3"/>
+					<BlendTransitionDefinition from="default" to="warcry" mergeTicks="3"/>
+					<InstantTransitionDefinition from="warcry" to="default"/>
+				</Transitions>
+
+				<Requests>
+					<MoveRequest>
+						<StateNames>
+							<Request>default</Request>
+						</StateNames>
+					</MoveRequest>
+					<TurnRequest>
+						<StateNames>
+							<Request>turn</Request>
+						</StateNames>
+					</TurnRequest>
+					<AttackRequest>
+						<StateNames>
+							<Request>shoot</Request>
+							<Request>default</Request>
+						</StateNames>
+					</AttackRequest>
+					<MeleeAttackRequest>
+						<StateNames>
+							<Request>brawl</Request>
+							<Request>default</Request>
+						</StateNames>
+					</MeleeAttackRequest>
+					<AbilityRequest ability="VeteranMechAbility">
+						<StateNames>
+							<Request>default</Request>
+							<Request>warcry</Request>
+							<Request>default</Request>
+						</StateNames>
+					</AbilityRequest>
+				</Requests>
+			</UnitStates>
+			<WreckConfiguration>rus_mech_scythe_wreck</WreckConfiguration>
+		</UnitConfiguration>
+
+		<!--Rusviet Gunfort-->
+		<UnitConfiguration id="rus_mech_gunfort" type="mech" parentId="com_heavy_mech">
+			<IsAbstract>false</IsAbstract>
+			<Health>1500</Health>
+			<ArmorType>Heavy</ArmorType>
+			<VisionRadius>40</VisionRadius>
+			<Weapons>
+				<Weapon>rus_mech_gunfort_cannon</Weapon>
+				<Weapon>rus_mech_gunfort_demolisher</Weapon>
+				<Weapon>rus_mech_gunfort_mg_F</Weapon>
+				<Weapon>rus_mech_gunfort_mg_BL</Weapon>
+				<Weapon>rus_mech_gunfort_mg_BR</Weapon>
+			</Weapons>
+
+			<SecondaryWeaponModuleConfiguration>
+				<SecondaryWeapons> 
+					<SecondaryWeaponConfiguration weaponConfigurationId="rus_mech_gunfort_mg_F" offsetX="0" offsetY="0" direction="0"/> 
+					<SecondaryWeaponConfiguration weaponConfigurationId="rus_mech_gunfort_mg_BL" offsetX="0" offsetY="0" direction="270"/> 
+					<SecondaryWeaponConfiguration weaponConfigurationId="rus_mech_gunfort_mg_BR" offsetX="0" offsetY="0" direction="90"/> 
+				</SecondaryWeapons> 
+			</SecondaryWeaponModuleConfiguration>
+
+			<!--Hitsystem-->
+			<HitzoneRadius>3.5</HitzoneRadius>
+			<DefaultHeight>2.5</DefaultHeight>
+			<DamageHitzones>
+				<DamageHitzone>
+					<Id>1</Id>
+					<LowerAngle>135</LowerAngle>
+					<UpperAngle>225</UpperAngle>
+					<Type>Vulnerable</Type>
+				</DamageHitzone>
+			</DamageHitzones>
+
+			<!--Abilities-->
+			<UnitAbilities>
+				<MechMovementAbilityDefinition defaultMovement="true"/>
+				<DefaultMechAttackAbilityDefinition weapon="rus_mech_gunfort_cannon" defaultAttack="true"/>
+				<MechChargingUpAttackDefinition weapon="rus_mech_gunfort_demolisher" abilityType="VeteranMechAbility" VeteranAbility="true" DeactivateAfterShot="true"/>
+			</UnitAbilities>
+			<AutoAbilities>
+				<AreaAttackAutoAbilityDefinition weapon="rus_mech_gunfort_demolisher" abilityType="VeteranMechAbility" settingIdentifier="DemolisherAutoAbility"/>
+			</AutoAbilities>
+			<!--Costs-->
+			<BuildCost>
+				<IronCost>700</IronCost>
+				<OilCost>210</OilCost>
+				<PopulationCost>6</PopulationCost>
+			</BuildCost>
+			<RepairCost>
+				<IronCost>7</IronCost>
+				<OilCost>2</OilCost>
+				<BatchSize>90</BatchSize>
+			</RepairCost>
+			<UpkeepCost>
+				<OilCost>0</OilCost>
+			</UpkeepCost>
+
+			<!--Veterancy-->
+			<Veterancy>
+				<VeteranThreshold>3000</VeteranThreshold>
+				<EliteThreshold>7000</EliteThreshold>
+			</Veterancy>
+
+			<!--ExperienceValues-->
+			<ExperienceValues>
+				<AttackerXP> <!--how many points would an attacker get when doing 100% damage-->
+					<Rookie>1800</Rookie>
+					<Veteran>2160</Veteran>
+					<Elite>2700</Elite>
+				</AttackerXP>
+				<DamageXP> <!--how many points would this unit get if someone does 100% damage to it-->
+					<Rookie>525</Rookie>
+					<Veteran>630</Veteran>
+					<Elite>787</Elite>
+				</DamageXP>
+				<HealerXP> <!--how many points would a healer get if they heal 100% HPs-->
+					<Rookie>750</Rookie>
+					<Veteran>975</Veteran>
+					<Elite>1125</Elite>
+				</HealerXP>
+			</ExperienceValues>
+
+			<!--Internals-->
+			<MoveSpeed>2.60</MoveSpeed>
+			<KineticToVelocity>2.5</KineticToVelocity>
+			<MaxKineticVelocity>2.5</MaxKineticVelocity>
+			<Acceleration>0.15</Acceleration>
+			<RotationSpeed>25.6</RotationSpeed>
+			<RotationAcceleration>0.01</RotationAcceleration>
+			<MotionScaleCurve>
+				<Key x="0" y="1"/>
+				<Key x="45" y="0.2"/>
+				<Key x="135" y="0.2"/>
+				<Key x="180" y="0.5"/>
+			</MotionScaleCurve>
+			<ReversingMotionScaleCurve>
+				<Key x="0" y="0.4"/>
+				<Key x="45" y="0.2"/>
+				<Key x="135" y="0.2"/>
+				<Key x="180" y="0.7"/>
+			</ReversingMotionScaleCurve>
+			<UnitStates>
+				<States>
+					<DefaultMechStateDefinition name="default"/>
+					<MechShootStateDefinition name="shoot" PreTicks="1" PostTicks="3"/>
+					<MechShootStateDefinition name="shoot_demolisher" PreTicks="1" PostTicks="3"/>
+					<MechTurnStateDefinition name="turn"/>
+					<MechAimStateDefinition name="aim"/>
+					<MechInteractStateDefinition name="interact"/>
+				</States>
+
+				<Transitions>
+					<BlendTransitionDefinition from="default" to="turn" mergeTicks="1"/>
+					<InstantTransitionDefinition from="turn" to="default"/>
+					<InstantTransitionDefinition from="aim" to="shoot"/>
+					<InstantTransitionDefinition from="shoot" to="aim"/>
+					<BlendTransitionDefinition from="aim" to="default" mergeTicks="1"/>
+					<StationaryTransitionDefinition from="default" to="aim"  fadeOut="3" flat="8" fadeIn="0"/>	
+					<BlendTransitionDefinition from="turn" to="shoot_demolisher" mergeTicks="3"/>
+					<BlendTransitionDefinition from="default" to="shoot_demolisher" mergeTicks="3"/>
+					<BlendTransitionDefinition from="shoot_demolisher" to="default" mergeTicks="3"/>
+					<BlendTransitionDefinition from="default" to="interact" mergeTicks="3"/>
+					<InstantTransitionDefinition from="interact" to="default"/>
+				</Transitions>
+
+				<Requests>
+					<MoveRequest>
+						<StateNames>
+							<Request>default</Request>
+						</StateNames>
+					</MoveRequest>
+					<TurnRequest>
+						<StateNames>
+							<Request>default</Request>
+							<Request>turn</Request>
+							<Request>default</Request>
+						</StateNames>
+					</TurnRequest>
+					<AttackRequest if="default">
+						<StateNames>
+							<Request>aim</Request>
+							<Request>shoot</Request>
+							<Request>aim</Request>
+						</StateNames>
+					</AttackRequest>
+					<AttackRequest if="aim">
+						<StateNames>
+							<Request>shoot</Request>
+							<Request>aim</Request>
+						</StateNames>
+					</AttackRequest>
+					<AbilityRequest ability="VeteranMechAbility">
+						<StateNames>
+							<Request>shoot_demolisher</Request>
+							<Request>default</Request>
+						</StateNames>
+					</AbilityRequest>
+					<InteractRequest>
+						<StateNames>
+							<Request>interact</Request>
+						</StateNames>
+					</InteractRequest>
+				</Requests>
+			</UnitStates>
+			<WreckConfiguration>rus_mech_gunfort_wreck</WreckConfiguration>
+		</UnitConfiguration>
+
+<!--Shared units of all factions-->
+	<!-- Weapon Systems-->		
+		<!-- MG system-->
+		<UnitConfiguration id="com_support_mg" type="mech" parentId="com_weaponsys">
+			<IsAbstract>false</IsAbstract>
+			<Health>400</Health>
+			<ArmorType>Medium</ArmorType>
+			<VisionRadius>35</VisionRadius>
+			<StandardCrew>Engineer</StandardCrew>
+			<Weapons>
+				<Weapon>com_support_mg_mg</Weapon>
+			</Weapons>
+
+			<!--Navigation-->
+			<DeployToAttack>True</DeployToAttack>
+			<DeployOnDragMove>True</DeployOnDragMove>
+
+			<!--Hitsystem-->
+			<HitzoneRadius>1.5</HitzoneRadius>
+			<DefaultHeight>2.5</DefaultHeight>
+			<DamageHitzones>
+				<DamageHitzone>
+					<Id>0</Id>
+					<LowerAngle>90</LowerAngle>
+					<UpperAngle>150</UpperAngle>
+					<Type>Absorb</Type>
+				</DamageHitzone>
+				<DamageHitzone>
+					<Id>1</Id>
+					<LowerAngle>150</LowerAngle>
+					<UpperAngle>210</UpperAngle>
+					<Type>Absorb</Type>
+				</DamageHitzone>
+				<DamageHitzone>
+					<Id>2</Id>
+					<LowerAngle>210</LowerAngle>
+					<UpperAngle>270</UpperAngle>
+					<Type>Absorb</Type>
+				</DamageHitzone>
+			</DamageHitzones>
+
+			<!--Abilities-->
+
+			<!--Costs-->
+			<BuildCost>
+				<IronCost>300</IronCost>
+				<OilCost>20</OilCost>
+				<PopulationCost>1</PopulationCost>
+			</BuildCost>
+			<RepairCost>
+				<IronCost>5</IronCost>
+				<OilCost>1</OilCost>
+				<BatchSize>45</BatchSize>
+			</RepairCost>
+			<ReserveBuildCost>
+				<IronCost>240</IronCost>
+				<OilCost>15</OilCost>
+				<PopulationCost>1</PopulationCost>
+			</ReserveBuildCost>
+
+			<!--Veterancy-->
+			<DamageModifier>
+				<Rookie>1</Rookie>
+				<Veteran>1.3</Veteran>
+				<Elite>1.5</Elite>
+			</DamageModifier>
+			<HealthModifier>
+				<Rookie>1</Rookie>
+				<Veteran>1.3</Veteran>
+				<Elite>1.5</Elite>
+			</HealthModifier>
+
+			<!--ExperienceValues-->
+			<ExperienceValues>
+				<AttackerXP> <!--how many points would an attacker get when doing 100% damage-->
+					<Rookie>500</Rookie>
+					<Veteran>1000</Veteran>
+					<Elite>2400</Elite>
+				</AttackerXP>
+				<DamageXP> <!--how many points would this unit get if someone does 100% damage to it-->
+					<Rookie>100</Rookie>
+					<Veteran>120</Veteran>
+					<Elite>150</Elite>
+				</DamageXP>
+				<HealerXP> <!--how many points would a healer get if they heal 100% HPs-->
+					<Rookie>500</Rookie>
+					<Veteran>650</Veteran>
+					<Elite>750</Elite>
+				</HealerXP>
+			</ExperienceValues>
+
+			<!--Internals-->
+			<RotationSpeed>56</RotationSpeed>
+			<MaxKineticVelocity>0</MaxKineticVelocity>
+			<KineticToVelocity>0</KineticToVelocity>
+			<MoveSpeed>1.8</MoveSpeed>
+			<PositiveDelta>180</PositiveDelta>
+			<NegativeDelta>-1</NegativeDelta>
+			<Acceleration>0.025</Acceleration>
+			<WeaponSystemModuleConfiguration>
+				<CrewManSlots>
+					<CrewManSlotTransforms> <!-- soldier3_position_bone -->
+						<ExitStationaryTransform>
+							<Position x="1.66" y="0.44" />
+							<Direction>75</Direction>
+						</ExitStationaryTransform>
+						<EntryStationaryTransform>
+							<Position x="1.70" y="0.36" />
+							<Direction>281</Direction>
+						</EntryStationaryTransform>
+						<ExitMobileTransform>
+							<Position x="1.60" y="0.57" />
+							<Direction>60</Direction>
+						</ExitMobileTransform>
+						<EntryMobileTransform>
+							<Position x="1.70" y="0.36" />
+							<Direction>281</Direction>
+						</EntryMobileTransform>
+					</CrewManSlotTransforms>
+					<CrewManSlotTransforms> <!-- soldier2_position_bone -->
+						<ExitStationaryTransform>
+							<Position x="0.46" y="1.96" />
+							<Direction>179</Direction>
+						</ExitStationaryTransform>
+						<EntryStationaryTransform>
+							<Position x="0.56" y="2.01" />
+							<Direction>346</Direction>
+						</EntryStationaryTransform>
+						<ExitMobileTransform>
+							<Position x="0.31" y="1.89" />
+							<Direction>142</Direction>
+						</ExitMobileTransform>
+						<EntryMobileTransform>
+							<Position x="0.56" y="2.01" />
+							<Direction>346</Direction>
+						</EntryMobileTransform>
+					</CrewManSlotTransforms>
+					<CrewManSlotTransforms><!-- soldier1_position_bone -->
+						<ExitStationaryTransform>
+							<Position x="-1.43" y="0.71" />
+							<Direction>249</Direction>
+						</ExitStationaryTransform>
+						<EntryStationaryTransform>
+							<Position x="-1.44" y="0.76" />
+							<Direction>44</Direction>
+						</EntryStationaryTransform>
+						<ExitMobileTransform>
+							<Position x="-1.41" y="0.6" />
+							<Direction>252</Direction>
+						</ExitMobileTransform>
+						<EntryMobileTransform>
+							<Position x="-1.44" y="0.76" />
+							<Direction>44</Direction>
+						</EntryMobileTransform>
+					</CrewManSlotTransforms>
+				</CrewManSlots>
+				<DestructionTrigger>WeaponSystemDestruction</DestructionTrigger>
+			</WeaponSystemModuleConfiguration>
+		</UnitConfiguration>
+
+		<!-- Cannon system-->	
+		<UnitConfiguration id="com_support_cannon" type="mech" parentId="com_weaponsys">
+			<IsAbstract>false</IsAbstract>
+			<Health>600</Health>
+			<VisionRadius>35</VisionRadius>
+			<Weapons>
+				<Weapon>com_support_cannon_cannon</Weapon>
+			</Weapons>
+			<StandardCrew>Engineer</StandardCrew>
+
+			<!--Navigation-->
+			<DeployToAttack>True</DeployToAttack>
+			<DeployOnDragMove>True</DeployOnDragMove>
+
+			<!--Hitsystem-->
+			<HitzoneRadius>1.5</HitzoneRadius>
+			<DefaultHeight>2.5</DefaultHeight>
+			<DamageHitzones>
+				<DamageHitzone>
+					<Id>0</Id>
+					<LowerAngle>60</LowerAngle>
+					<UpperAngle>140</UpperAngle>
+					<Type>Absorb</Type>
+				</DamageHitzone>
+				<DamageHitzone>
+					<Id>1</Id>
+					<LowerAngle>140</LowerAngle>
+					<UpperAngle>220</UpperAngle>
+					<Type>Absorb</Type>
+				</DamageHitzone>
+				<DamageHitzone>
+					<Id>2</Id>
+					<LowerAngle>220</LowerAngle>
+					<UpperAngle>300</UpperAngle>
+					<Type>Absorb</Type>
+				</DamageHitzone>
+			</DamageHitzones>
+
+			<!--Abilities-->
+
+			<!--Costs-->
+			<BuildCost>
+				<IronCost>350</IronCost>
+				<OilCost>35</OilCost>
+				<PopulationCost>1</PopulationCost>
+			</BuildCost>
+			<RepairCost>
+				<IronCost>6</IronCost>
+				<OilCost>1</OilCost>
+				<BatchSize>45</BatchSize>
+			</RepairCost>
+			<ReserveBuildCost>
+				<IronCost>280</IronCost>
+				<OilCost>30</OilCost>
+				<PopulationCost>1</PopulationCost>
+			</ReserveBuildCost>
+
+			<!--Veterancy-->
+			<!--<Veterancy>
+				<VeteranThreshold>2000</VeteranThreshold>
+				<EliteThreshold>8000</EliteThreshold>
+			</Veterancy>-->
+
+			<!--ExperienceValues-->
+			<ExperienceValues>
+				<AttackerXP> <!--how many points would an attacker get when doing 100% damage-->
+					<Rookie>500</Rookie>
+					<Veteran>1000</Veteran>
+					<Elite>2400</Elite>
+				</AttackerXP>
+				<DamageXP> <!--how many points would this unit get if someone does 100% damage to it-->
+					<Rookie>100</Rookie>
+					<Veteran>120</Veteran>
+					<Elite>150</Elite>
+				</DamageXP>
+				<HealerXP> <!--how many points would a healer get if they heal 100% HPs-->
+					<Rookie>500</Rookie>
+					<Veteran>650</Veteran>
+					<Elite>750</Elite>
+				</HealerXP>
+			</ExperienceValues>
+
+			<!--Internals-->
+			<RotationSpeed>35</RotationSpeed>
+			<MoveSpeed>1.2</MoveSpeed>
+			<MaxKineticVelocity>0</MaxKineticVelocity>
+			<KineticToVelocity>0</KineticToVelocity>			
+			<PositiveDelta>180</PositiveDelta>
+			<NegativeDelta>-1</NegativeDelta>
+			<Acceleration>0.025</Acceleration>
+			<WeaponSystemModuleConfiguration>
+				<CrewManSlots>
+					<CrewManSlotTransforms>
+						<ExitStationaryTransform>
+							<Position x="1.53" y="1.01" />
+							<Direction>75</Direction>
+						</ExitStationaryTransform>
+						<EntryStationaryTransform>
+							<Position x="1.53" y="1.01" />
+							<Direction>279</Direction>
+						</EntryStationaryTransform>
+						<ExitMobileTransform>
+							<Position x="1.43" y="1.63" />
+							<Direction>117</Direction>
+						</ExitMobileTransform>
+						<EntryMobileTransform>
+							<Position x="1.43" y="1.63" />
+							<Direction>279</Direction>
+						</EntryMobileTransform>
+					</CrewManSlotTransforms>
+					<CrewManSlotTransforms>
+						<ExitStationaryTransform>
+							<Position x="0.02" y="2.39" />
+							<Direction>179</Direction>
+						</ExitStationaryTransform>
+						<EntryStationaryTransform>
+							<Position x="0.02" y="1.78" />
+							<Direction>0</Direction>
+						</EntryStationaryTransform>
+						<ExitMobileTransform>
+							<Position x="-1.40" y="0.91" />
+							<Direction>276</Direction>
+						</ExitMobileTransform>
+						<EntryMobileTransform>
+							<Position x="-1.40" y="1.15" />
+							<Direction>101</Direction>
+						</EntryMobileTransform>
+					</CrewManSlotTransforms>
+					<CrewManSlotTransforms>
+						<ExitStationaryTransform>
+							<Position x="-1.54" y="1.29" />
+							<Direction>249</Direction>
+						</ExitStationaryTransform>
+						<EntryStationaryTransform>
+							<Position x="-1.38" y="1.23" />
+							<Direction>70</Direction>
+						</EntryStationaryTransform>
+						<ExitMobileTransform>
+							<Position x="-1.28" y="3.05" />
+							<Direction>225</Direction>
+						</ExitMobileTransform>
+						<EntryMobileTransform>
+							<Position x="-1.32" y="2.39" />
+							<Direction>60</Direction>
+						</EntryMobileTransform>
+					</CrewManSlotTransforms>
+				</CrewManSlots>
+				<DestructionTrigger>WeaponSystemDestruction</DestructionTrigger>
+			</WeaponSystemModuleConfiguration>
+		</UnitConfiguration>
+
+		<!-- Mortar system-->	
+		<UnitConfiguration id="com_support_mortar" type="mech" parentId="com_weaponsys">
+			<IsAbstract>false</IsAbstract>
+			<Health>400</Health>
+			<VisionRadius>30</VisionRadius>
+			<StandardCrew>Engineer</StandardCrew>
+			<Weapons>
+				<Weapon>com_support_mortar_mortar</Weapon>
+			</Weapons>
+
+			<!--Navigation-->
+			<DeployToAttack>True</DeployToAttack>
+			<DeployOnDragMove>True</DeployOnDragMove>
+
+			<!--Hitsystem-->
+			<HitzoneRadius>1.5</HitzoneRadius>
+			<DefaultHeight>2.5</DefaultHeight>
+			<DamageHitzones>
+				<DamageHitzone>
+					<Id>0</Id>
+					<LowerAngle>90</LowerAngle>
+					<UpperAngle>150</UpperAngle>
+					<Type>Absorb</Type>
+				</DamageHitzone>
+				<DamageHitzone>
+					<Id>1</Id>
+					<LowerAngle>150</LowerAngle>
+					<UpperAngle>210</UpperAngle>
+					<Type>Absorb</Type>
+				</DamageHitzone>
+				<DamageHitzone>
+					<Id>2</Id>
+					<LowerAngle>210</LowerAngle>
+					<UpperAngle>270</UpperAngle>
+					<Type>Absorb</Type>
+				</DamageHitzone>
+			</DamageHitzones>
+
+			<!--Costs-->
+			<BuildCost>
+				<IronCost>325</IronCost>
+				<OilCost>35</OilCost>
+				<PopulationCost>1</PopulationCost>
+			</BuildCost>
+			<RepairCost>
+				<IronCost>5</IronCost>
+				<OilCost>1</OilCost>
+				<BatchSize>45</BatchSize>
+			</RepairCost>
+			<ReserveBuildCost>
+				<IronCost>260</IronCost>
+				<OilCost>30</OilCost>
+				<PopulationCost>1</PopulationCost>
+			</ReserveBuildCost>
+
+			<!--Veterancy-->
+			<!--<Veterancy>
+				<VeteranThreshold>2000</VeteranThreshold>
+				<EliteThreshold>8000</EliteThreshold>
+			</Veterancy>-->
+
+			<!--ExperienceValues-->
+			<ExperienceValues>
+				<AttackerXP> <!--how many points would an attacker get when doing 100% damage-->
+					<Rookie>500</Rookie>
+					<Veteran>1000</Veteran>
+					<Elite>2400</Elite>
+				</AttackerXP>
+				<DamageXP> <!--how many points would this unit get if someone does 100% damage to it-->
+					<Rookie>100</Rookie>
+					<Veteran>120</Veteran>
+					<Elite>150</Elite>
+				</DamageXP>
+				<HealerXP> <!--how many points would a healer get if they heal 100% HPs-->
+					<Rookie>500</Rookie>
+					<Veteran>650</Veteran>
+					<Elite>750</Elite>
+				</HealerXP>
+			</ExperienceValues>
+
+			<!--Internals-->
+			<RotationSpeed>56</RotationSpeed>
+			<MaxKineticVelocity>0</MaxKineticVelocity>
+			<KineticToVelocity>0</KineticToVelocity>			
+			<MoveSpeed>1.8</MoveSpeed>
+			<PositiveDelta>180</PositiveDelta>
+			<NegativeDelta>-1</NegativeDelta>
+			<Acceleration>0.025</Acceleration>
+			<WeaponSystemModuleConfiguration>
+				<CrewManSlots>
+					<CrewManSlotTransforms> <!-- soldier5_position_bone -->
+						<ExitStationaryTransform><Position x="1.75" y="-0.24"/><Direction>90</Direction></ExitStationaryTransform>
+						<EntryStationaryTransform><Position x="1.33" y="-2.02"/><Direction>211</Direction></EntryStationaryTransform>
+						<ExitMobileTransform><Position x="0.00" y="-2.41"/><Direction>0</Direction></ExitMobileTransform>
+						<EntryMobileTransform><Position x="1.33" y="-2.02"/><Direction>211</Direction></EntryMobileTransform>
+					</CrewManSlotTransforms>
+					<CrewManSlotTransforms><!-- soldier4_position_bone -->
+						<ExitStationaryTransform><Position x="1.67" y="1.69"/><Direction>89</Direction></ExitStationaryTransform>
+						<EntryStationaryTransform><Position x="1.53" y="1.81"/><Direction>315</Direction></EntryStationaryTransform>
+						<ExitMobileTransform><Position x="0.86" y="2.57"/><Direction>179</Direction></ExitMobileTransform>
+						<EntryMobileTransform><Position x="1.53" y="1.81"/><Direction>315</Direction></EntryMobileTransform>
+					</CrewManSlotTransforms>
+					<CrewManSlotTransforms><!-- soldier3_position_bone -->
+						<ExitStationaryTransform><Position x="0.05" y="2.57"/><Direction>180</Direction></ExitStationaryTransform>
+						<EntryStationaryTransform><Position x="-1.53" y="1.81"/><Direction>45</Direction></EntryStationaryTransform>
+						<ExitMobileTransform><Position x="-0.65" y="2.57"/><Direction>178</Direction></ExitMobileTransform>
+						<EntryMobileTransform><Position x="-1.53" y="1.81"/><Direction>45</Direction></EntryMobileTransform>         
+					</CrewManSlotTransforms>
+				</CrewManSlots>
+				<DestructionTrigger>WeaponSystemDestruction</DestructionTrigger>
+			</WeaponSystemModuleConfiguration>
+		</UnitConfiguration>
+
+		<!-- destroyer -->
+		<UnitConfiguration id="com_support_destroyer" type="mech" parentId="com_weaponsys">
+			<IsAbstract>false</IsAbstract>
+			<Health>600</Health>
+			<VisionRadius>25</VisionRadius>
+			<StandardCrew>Engineer</StandardCrew>
+				<Weapons>
+					<Weapon>com_support_destroyer_cannon</Weapon>
+				</Weapons>
+
+			<!--Navigation-->
+			<DeployToAttack>True</DeployToAttack>
+			<DeployOnDragMove>True</DeployOnDragMove>
+
+			<!--Hitsystem-->
+			<HitzoneRadius>1.5</HitzoneRadius>
+			<DefaultHeight>2.5</DefaultHeight>
+			<DamageHitzones>
+				<DamageHitzone>
+					<Id>0</Id>
+					<LowerAngle>90</LowerAngle>
+					<UpperAngle>150</UpperAngle>
+					<Type>Absorb</Type>
+				</DamageHitzone>
+				<DamageHitzone>
+					<Id>1</Id>
+					<LowerAngle>150</LowerAngle>
+					<UpperAngle>210</UpperAngle>
+					<Type>Absorb</Type>
+				</DamageHitzone>
+				<DamageHitzone>
+					<Id>2</Id>
+					<LowerAngle>210</LowerAngle>
+					<UpperAngle>270</UpperAngle>
+					<Type>Absorb</Type>
+				</DamageHitzone>
+			</DamageHitzones>
+
+			<!--Costs-->
+			<BuildCost>
+				<IronCost>300</IronCost>
+				<OilCost>150</OilCost>
+				<PopulationCost>1</PopulationCost>
+			</BuildCost>
+			<RepairCost>
+				<IronCost>5</IronCost>
+				<OilCost>0</OilCost>
+				<BatchSize>20</BatchSize>
+			</RepairCost>
+
+			<!--Veterancy-->
+			<!--<Veterancy>
+				<VeteranThreshold>2000</VeteranThreshold>
+				<EliteThreshold>8000</EliteThreshold>
+			</Veterancy>-->
+
+			<!--ExperienceValues-->
+			<ExperienceValues>
+				<AttackerXP> <!--how many points would an attacker get when doing 100% damage-->
+					<Rookie>500</Rookie>
+					<Veteran>1000</Veteran>
+					<Elite>2400</Elite>
+				</AttackerXP>
+				<DamageXP> <!--how many points would this unit get if someone does 100% damage to it-->
+					<Rookie>100</Rookie>
+					<Veteran>120</Veteran>
+					<Elite>150</Elite>
+				</DamageXP>
+				<HealerXP> <!--how many points would a healer get if they heal 100% HPs-->
+					<Rookie>500</Rookie>
+					<Veteran>650</Veteran>
+					<Elite>750</Elite>
+				</HealerXP>
+			</ExperienceValues>
+
+			<!--Internals-->
+			<RotationSpeed>56</RotationSpeed>
+			<MoveSpeed>1.8</MoveSpeed>
+			<PositiveDelta>180</PositiveDelta>
+			<NegativeDelta>-1</NegativeDelta>
+			<Acceleration>0.025</Acceleration>
+			<WeaponSystemModuleConfiguration>
+				<CrewManSlots>
+					<CrewManSlotTransforms> <!-- soldier5_position_bone -->
+						<ExitStationaryTransform><Position x="1.75" y="-0.24"/><Direction>90</Direction></ExitStationaryTransform>
+						<EntryStationaryTransform><Position x="1.33" y="-2.02"/><Direction>211</Direction></EntryStationaryTransform>
+						<ExitMobileTransform><Position x="0.00" y="-2.41"/><Direction>0</Direction></ExitMobileTransform>
+						<EntryMobileTransform><Position x="1.33" y="-2.02"/><Direction>211</Direction></EntryMobileTransform>
+					</CrewManSlotTransforms>
+					<CrewManSlotTransforms><!-- soldier4_position_bone -->
+						<ExitStationaryTransform><Position x="1.67" y="1.69"/><Direction>89</Direction></ExitStationaryTransform>
+						<EntryStationaryTransform><Position x="1.53" y="1.81"/><Direction>315</Direction></EntryStationaryTransform>
+						<ExitMobileTransform><Position x="0.86" y="2.57"/><Direction>179</Direction></ExitMobileTransform>
+						<EntryMobileTransform><Position x="1.53" y="1.81"/><Direction>315</Direction></EntryMobileTransform>
+					</CrewManSlotTransforms>
+					<CrewManSlotTransforms><!-- soldier3_position_bone -->
+						<ExitStationaryTransform><Position x="0.05" y="2.57"/><Direction>180</Direction></ExitStationaryTransform>
+						<EntryStationaryTransform><Position x="-1.53" y="1.81"/><Direction>45</Direction></EntryStationaryTransform>
+						<ExitMobileTransform><Position x="-0.65" y="2.57"/><Direction>178</Direction></ExitMobileTransform>
+						<EntryMobileTransform><Position x="-1.53" y="1.81"/><Direction>45</Direction></EntryMobileTransform>         
+					</CrewManSlotTransforms>
+				</CrewManSlots>
+				<DestructionTrigger>WeaponSystemDestruction</DestructionTrigger>
+			</WeaponSystemModuleConfiguration>
+		</UnitConfiguration>
+
+	<!-- Misc -->
+		<!-- Saxony Mother Drone -->
+		<UnitConfiguration id="sax_mech_mothersdrone" type="mech" parentId="com_light_mech">
+			<IsAbstract>False</IsAbstract>
+			<NavRadius>Human</NavRadius>
+			<Health>75</Health>
+			<ArmorType>Light</ArmorType>
+			<!--IsMinion means that the unit does not count as UnitsKilled or UnitsLost in BattleStatistics and UnitDeathLimit handicap-->
+			<Tags>IsMinion</Tags>
+			<VisionRadius>15</VisionRadius>
+			<Weapons>
+				<Weapon>sax_mech_mothersdrone_selfdestruct</Weapon>
+			</Weapons>
+			<Selectable>false</Selectable>
+			<PreventImplicitTargeting>true</PreventImplicitTargeting>
+			<HideOverheadInfo>true</HideOverheadInfo>
+			<HideUnitCard>true</HideUnitCard>
+			
+			<!--Abilities-->
+			<UnitAbilities>
+				<MechMovementAbilityDefinition defaultMovement="true"/>
+				<MechDroneSelfDestructAttackDefinition weapon="sax_mech_mothersdrone_selfdestruct" defaultAttack="true">
+					<Lifetime>7</Lifetime>
+				</MechDroneSelfDestructAttackDefinition>
+			</UnitAbilities>
+			
+			<!-- Costs -->
+			<BuildCost>
+				<IronCost>0</IronCost>
+				<OilCost>0</OilCost>
+				<PopulationCost>0</PopulationCost>
+			</BuildCost>
+			
+			<!-- Internals -->
+			<MoveSpeed>10</MoveSpeed>
+			<Acceleration>20</Acceleration>
+			<RotationSpeed>180</RotationSpeed>
+			<RotationAcceleration>0.25</RotationAcceleration>
+			<MotionScaleCurve>
+				<Key x="0" y="1"/>
+				<Key x="45" y="0.6"/>
+				<Key x="135" y="0.25"/>
+				<Key x="180" y="0"/>
+			</MotionScaleCurve>
+			<UnitStates>
+				<States>
+					<DefaultMechStateDefinition name="default"/>
+					<MechShootStateDefinition name="shoot" PreTicks="0" PostTicks="0"/>
+				</States>
+				<Transitions>
+					<InstantTransitionDefinition from="default" to="shoot" />
+					<InstantTransitionDefinition from="shoot" to="default"/>
+				</Transitions>
+				<Requests>
+					<MoveRequest>
+						<StateNames>
+							<Request>default</Request>
+						</StateNames>
+					</MoveRequest>
+					<AttackRequest>
+						<StateNames>
+							<Request>shoot</Request>
+							<Request>default</Request>
+						</StateNames>
+					</AttackRequest>
+				</Requests>
+			</UnitStates>
+		</UnitConfiguration>
+		
+		<!-- Unburrowed Mine -->
+		<UnitConfiguration id="com_mech_mine" type="mech" parentId="sax_mech_mothersdrone">
+      <Health>100</Health>
+      <ArmorType>Unarmored</ArmorType>
+      <VisionRadius>5</VisionRadius>
+      <Weapons>
+        <Weapon>com_mech_mine_explosion</Weapon>
+      </Weapons>
+	  <HideUnitCard>true</HideUnitCard>
+	  <Selectable>false</Selectable>
+
+      <!--Abilities-->
+      <UnitAbilities>
+        <MechMovementAbilityDefinition defaultMovement="true"/>
+        <MechDroneSelfDestructAttackDefinition weapon="com_mech_mine_explosion" defaultAttack="true">
+          <Lifetime>7</Lifetime>
+        </MechDroneSelfDestructAttackDefinition>
+      </UnitAbilities>
+      		
+			<!-- Internals -->
+			<WalkWithoutTurn>true</WalkWithoutTurn>
+			<MoveSpeed>6</MoveSpeed>
+			<Acceleration>50</Acceleration>
+			<RotationSpeed>180</RotationSpeed>
+			<RotationAcceleration>0.25</RotationAcceleration>
+			<MotionScaleCurve>
+				<Key x="0" y="1"/>
+				<Key x="180" y="1"/>
+			</MotionScaleCurve>
+
+			<UnitStates>
+				<StartState>burrowed</StartState>
+				<States>
+					<BurrowedMechStateDefinition name="burrowed"/>
+					<DefaultMechStateDefinition name="default"/>
+					<MechShootStateDefinition name="shoot" PreTicks="0" PostTicks="0"/>
+				</States>
+				<Transitions>
+					<StationaryTransitionDefinition from="burrowed" to="default" fadeOut="4" flat="4" fadeIn="0"/>
+					<InstantTransitionDefinition from="default" to="shoot"/>
+					<InstantTransitionDefinition from="shoot" to="default"/>
+				</Transitions>
+				<Requests>
+					<MoveRequest>
+						<StateNames>
+							<Request>default</Request>
+						</StateNames>
+					</MoveRequest>
+					<AttackRequest if="burrowed">
+						<StateNames>
+							<Request>default</Request>
+							<Request>shoot</Request>
+							<Request>default</Request>
+						</StateNames>
+					</AttackRequest>
+					<AttackRequest if="default">
+						<StateNames>
+							<Request>shoot</Request>
+							<Request>default</Request>
+						</StateNames>
+					</AttackRequest>
+				</Requests>
+				<DeployedStates>
+					<State>burrowed</State>
+				</DeployedStates>
+			</UnitStates>
+		</UnitConfiguration>
+
+<!-- End of File-->
+</UnitConfigurations>

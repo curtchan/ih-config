@@ -1,0 +1,376 @@
+<AutoAbilities>
+  <!-- GENERIC ABILITIES --> 	
+  <AutoAbilityConfiguration id="RepairAutoAbility"> <!-- Repair ability for Engineers -->
+	<Settings>
+		<AutoAbilitySetting operator="Player" cooldown="0"/> 
+		<AutoAbilitySetting operator="AIMedium" cooldown="60"/>
+		<AutoAbilitySetting operator="AIHard" cooldown="35"/>
+		<AutoAbilitySetting operator="AIInsane" cooldown="0"/>
+	</Settings>
+  </AutoAbilityConfiguration>
+  <AutoAbilityConfiguration id="HealAutoAbility"> <!-- Heal ability for Medics -->
+	<Settings>
+		<AutoAbilitySetting operator="Player" cooldown="0"/>
+		<AutoAbilitySetting operator="AIMedium" cooldown="60"/>
+		<AutoAbilitySetting operator="AIHard" cooldown="35"/>
+		<AutoAbilitySetting operator="AIInsane" cooldown="0"/>
+	</Settings>
+	</AutoAbilityConfiguration>
+  <AutoAbilityConfiguration id="GrenadeAutoAbility"> <!-- Grenade ability for Grenadiers -->
+	<Settings>
+		<AutoAbilitySetting operator="Player" cooldown="0"/> <!-- Cooldown time stacks with the ability's actual cooldown -->
+		<AutoAbilitySetting operator="AIEasy" cooldown="60"/> 
+		<AutoAbilitySetting operator="AIMedium" cooldown="45"/>
+		<AutoAbilitySetting operator="AIHard" cooldown="30"/>
+		<AutoAbilitySetting operator="AIInsane" cooldown="0"/> <!-- 0 is no cooldown-->
+	</Settings>
+  </AutoAbilityConfiguration>
+  <AutoAbilityConfiguration id="BoostAutoAbility"> <!--Battle Cry ability for infantry-->
+	<Settings>
+		<AutoAbilitySetting operator="Player" cooldown="0"/> <!-- Cooldown time stacks with the ability's actual cooldown -->
+	<!--	<AutoAbilitySetting operator="AIEasy" cooldown="60"/> 
+		<AutoAbilitySetting operator="AIMedium" cooldown="60"/>
+		<AutoAbilitySetting operator="AIHard" cooldown="10"/>-->
+		<AutoAbilitySetting operator="AIInsane" cooldown="0"/>  <!--0 is no cooldown-->
+	</Settings>
+  </AutoAbilityConfiguration>
+  <AutoAbilityConfiguration id="MedicTentAutoAbility"> <!--Aid Station ability for Medics-->
+	<Settings>
+
+	</Settings>
+  </AutoAbilityConfiguration>  
+  
+  
+  <!-- FACTION ABILITIES -->
+	<!-- Polania -->
+  <AutoAbilityConfiguration id="ApproachDownAutoAbility"> <!--Toggle on Shields Up ability for pol_soldier_exo-->
+	<Settings>
+		<AutoAbilitySetting operator="Player" cooldown="0"/> <!-- Cooldown time stacks with the ability's actual cooldown -->
+		<AutoAbilitySetting operator="AIInsane" cooldown="0"/> <!-- 0 is no cooldown-->
+	</Settings>
+  </AutoAbilityConfiguration>    
+  <AutoAbilityConfiguration id="ApproachUpAutoAbility"> <!--Toggle off Shields Up ability for pol_soldier_exo-->
+	<Settings>
+		<AutoAbilitySetting operator="Player" cooldown="0"/> <!-- Cooldown time stacks with the ability's actual cooldown -->
+	</Settings>
+  </AutoAbilityConfiguration>
+  <AutoAbilityConfiguration id="OverdriveAutoAbility"> <!--Overdrive ability for pol_mech_spider-->
+	<Settings>
+		<AutoAbilitySetting operator="Player" cooldown="0"/> <!-- Cooldown time stacks with the ability's actual cooldown -->
+		<AutoAbilitySetting operator="AIInsane" cooldown="0"/> <!-- 0 is no cooldown-->
+	</Settings>
+  </AutoAbilityConfiguration>
+  <AutoAbilityConfiguration id="ChargeAutoAbility"> <!--Charge ability for pol_mech_recon-->
+	<Settings>
+		<AutoAbilitySetting operator="Player" cooldown="0"/> <!-- Cooldown time stacks with the ability's actual cooldown -->
+		<AutoAbilitySetting operator="AIInsane" cooldown="0"/> <!-- 0 is no cooldown-->
+	</Settings>
+  </AutoAbilityConfiguration>
+  <AutoAbilityConfiguration id="BarrelAutoAbility"> <!--Defensive Charges ability for pol_mech_gunfort-->
+	<Settings>
+		<AutoAbilitySetting operator="Player" cooldown="0"/> <!-- Cooldown time stacks with the ability's actual cooldown -->
+		<AutoAbilitySetting operator="AIInsane" cooldown="0"/> <!-- 0 is no cooldown-->
+	</Settings>
+  </AutoAbilityConfiguration>  
+  <AutoAbilityConfiguration id="StingAutoAbility"> <!--Sting ability for pol_mech_stinger-->
+	<Settings>
+		<AutoAbilitySetting operator="Player" cooldown="0"/> <!-- Cooldown time stacks with the ability's actual cooldown -->
+		<AutoAbilitySetting operator="AIInsane" cooldown="0"/> <!-- 0 is no cooldown-->
+	</Settings>
+  </AutoAbilityConfiguration>  
+  <AutoAbilityConfiguration id="FortifyDownAutoAbility"> <!--Toggle on Fortify ability for pol_mech_trooptransport-->
+	<Settings>
+		<AutoAbilitySetting operator="Player" cooldown="0"/> <!-- Cooldown time stacks with the ability's actual cooldown -->
+		<AutoAbilitySetting operator="AIInsane" cooldown="0"/> <!-- 0 is no cooldown-->
+	</Settings>
+  </AutoAbilityConfiguration>    
+  <AutoAbilityConfiguration id="FortifyUpAutoAbility"> <!--Toggle off Fortify ability for pol_mech_trooptransport-->
+	<Settings>
+		<AutoAbilitySetting operator="Player" cooldown="0"/> <!-- Cooldown time stacks with the ability's actual cooldown -->
+
+	</Settings>
+  </AutoAbilityConfiguration>  
+  <AutoAbilityConfiguration id="RainAutoAbility"> <!--Defensive Charges ability for pol_mech_gunfort-->
+	<Settings>
+		<AutoAbilitySetting operator="Player" cooldown="0"/> <!-- Cooldown time stacks with the ability's actual cooldown -->
+		<AutoAbilitySetting operator="AIInsane" cooldown="0"/> <!-- 0 is no cooldown-->
+	</Settings>
+  </AutoAbilityConfiguration> 
+  <AutoAbilityConfiguration id="ArtillerySmokeAutoAbility"> <!--Smokescreen ability for pol_mech_artillery-->
+	<Settings>
+		<AutoAbilitySetting operator="Player" cooldown="0"/> <!-- Cooldown time stacks with the ability's actual cooldown -->
+		<AutoAbilitySetting operator="AIInsane" cooldown="0"/> <!-- 0 is no cooldown-->
+	</Settings>
+  </AutoAbilityConfiguration> 
+  <AutoAbilityConfiguration id="SmokeCanisterAutoAbility"> <!--Smoke Canister ability for pol_mech_artillery-->
+	<Settings>
+		<AutoAbilitySetting operator="Player" cooldown="0"/> <!-- Cooldown time stacks with the ability's actual cooldown -->
+		<AutoAbilitySetting operator="AIInsane" cooldown="0"/> <!-- 0 is no cooldown-->
+	</Settings>
+  </AutoAbilityConfiguration> 
+
+	<!-- Rusviet -->
+  <AutoAbilityConfiguration id="JumpAutoAbility"> <!--Rocket Jump ability for rus_soldier_exo-->
+	<Settings>
+		<AutoAbilitySetting operator="Player" cooldown="0"/> <!-- Cooldown time stacks with the ability's actual cooldown -->
+		<AutoAbilitySetting operator="AIInsane" cooldown="0"/> <!-- 0 is no cooldown-->
+	</Settings>
+  </AutoAbilityConfiguration>
+  <AutoAbilityConfiguration id="ReinforceBattleAutoAbility"> <!--Airborne Reinforcements ability for rus_soldier_exo-->
+	<Settings>
+		<AutoAbilitySetting operator="Player" cooldown="0"/> <!-- Cooldown time stacks with the ability's actual cooldown -->
+		<AutoAbilitySetting operator="AIInsane" cooldown="0"/> <!-- 0 is no cooldown-->
+	</Settings>
+  </AutoAbilityConfiguration>  
+  <AutoAbilityConfiguration id="FramingDownAutoAbility"> <!--Toggle on Choke Nozzles ability for rus_mech_flamer-->
+	<Settings>
+		<AutoAbilitySetting operator="Player" cooldown="0"/> <!-- Cooldown time stacks with the ability's actual cooldown -->
+		<AutoAbilitySetting operator="AIInsane" cooldown="0"/> <!-- 0 is no cooldown-->
+	</Settings>
+  </AutoAbilityConfiguration>    
+  <AutoAbilityConfiguration id="FramingUpAutoAbility"> <!--Toggle off Choke Nozzles ability for rus_mech_flamer-->
+	<Settings>
+		<AutoAbilitySetting operator="Player" cooldown="0"/> <!-- Cooldown time stacks with the ability's actual cooldown -->
+
+	</Settings>
+  </AutoAbilityConfiguration>  
+  <AutoAbilityConfiguration id="AxialAutoAbility"> <!--Enhanced Warhead ability for rus_mech_bomber-->
+	<Settings>
+		<AutoAbilitySetting operator="Player" cooldown="0"/> <!-- Cooldown time stacks with the ability's actual cooldown -->
+		<AutoAbilitySetting operator="AIInsane" cooldown="0"/> <!-- 0 is no cooldown-->
+	</Settings>
+  </AutoAbilityConfiguration>  
+  <AutoAbilityConfiguration id="LiberationAutoAbility"> <!--Sentry Mode ability for rus_mech_artillery-->
+	<Settings>
+		<AutoAbilitySetting operator="Player" cooldown="0"/> <!-- Cooldown time stacks with the ability's actual cooldown -->
+		<AutoAbilitySetting operator="AIInsane" cooldown="0"/> <!-- 0 is no cooldown-->
+	</Settings>
+  </AutoAbilityConfiguration>  
+  <AutoAbilityConfiguration id="LaunchAutoAbility"> <!--Launch ability for rus_mech_artillery-->
+	<Settings>
+		<AutoAbilitySetting operator="Player" cooldown="0"/> <!-- Cooldown time stacks with the ability's actual cooldown -->
+		<AutoAbilitySetting operator="AIInsane" cooldown="0"/> <!-- 0 is no cooldown-->
+	</Settings>
+  </AutoAbilityConfiguration>  
+  <AutoAbilityConfiguration id="BarrageAutoAbility"> <!--Barrage ability for rus_mech_revolver-->
+	<Settings>
+		<AutoAbilitySetting operator="Player" cooldown="0"/> <!-- Cooldown time stacks with the ability's actual cooldown -->
+		<AutoAbilitySetting operator="AIInsane" cooldown="0"/> <!-- 0 is no cooldown-->
+	</Settings>
+  </AutoAbilityConfiguration>
+  <AutoAbilityConfiguration id="CryAutoAbility"> <!--Rallying Call ability for rus_mech_scythe-->
+	<Settings>
+		<AutoAbilitySetting operator="Player" cooldown="0"/> <!-- Cooldown time stacks with the ability's actual cooldown -->
+		<AutoAbilitySetting operator="AIInsane" cooldown="0"/> <!-- 0 is no cooldown-->
+	</Settings>
+  </AutoAbilityConfiguration>
+  <AutoAbilityConfiguration id="DemolisherAutoAbility"> <!--Devastator Missile ability for rus_mech_gunfort-->
+	<Settings>
+		<AutoAbilitySetting operator="Player" cooldown="0"/> <!-- Cooldown time stacks with the ability's actual cooldown -->
+		<AutoAbilitySetting operator="AIInsane" cooldown="0"/> <!-- 0 is no cooldown-->
+	</Settings>
+  </AutoAbilityConfiguration>  
+
+	<!-- Saxony -->
+  <AutoAbilityConfiguration id="ShockTrapAutoAbility"> <!-- Veteran ability for sax_soldier_mortar -->
+	<Settings>
+		<AutoAbilitySetting operator="Player" cooldown="0"/> <!-- Cooldown time stacks with the ability's actual cooldown -->
+		<AutoAbilitySetting operator="AIInsane" cooldown="0"/> <!-- 0 is no cooldown-->
+	</Settings>
+  </AutoAbilityConfiguration>
+  <AutoAbilityConfiguration id="SweepAutoAbility"> <!-- Sweep ability for sax_mech_gatling-->
+	<Settings>
+		<AutoAbilitySetting operator="Player" cooldown="0"/> <!-- Cooldown time stacks with the ability's actual cooldown -->
+		<AutoAbilitySetting operator="AIInsane" cooldown="0"/> <!-- 0 is no cooldown-->
+	</Settings>
+  </AutoAbilityConfiguration>
+  <AutoAbilityConfiguration id="TankSmokeAutoAbility"> <!--Smokescreen ability for sax_mech_tank-->
+	<Settings>
+		<AutoAbilitySetting operator="Player" cooldown="0"/> <!-- Cooldown time stacks with the ability's actual cooldown -->
+		<AutoAbilitySetting operator="AIInsane" cooldown="0"/> <!-- 0 is no cooldown-->
+	</Settings>
+  </AutoAbilityConfiguration> 
+  <AutoAbilityConfiguration id="VisionAutoAbility"> <!--Flare Shot ability for sax_mech_artillery-->
+	<Settings>
+		<AutoAbilitySetting operator="Player" cooldown="0"/> <!-- Cooldown time stacks with the ability's actual cooldown -->
+		<AutoAbilitySetting operator="AIInsane" cooldown="0"/> <!-- 0 is no cooldown-->
+	</Settings>
+  </AutoAbilityConfiguration>
+  <AutoAbilityConfiguration id="MissilesAutoAbility"> <!-- Rocket Launch ability for sax_mech_dachs-->
+	<Settings>
+		<AutoAbilitySetting operator="Player" cooldown="0"/> <!-- Cooldown time stacks with the ability's actual cooldown -->
+		<AutoAbilitySetting operator="AIInsane" cooldown="0"/> <!-- 0 is no cooldown-->
+	</Settings>
+  </AutoAbilityConfiguration>  
+  <AutoAbilityConfiguration id="ExplosivesAutoAbility"> <!--Launch Explosives ability for sax_mech_mother-->
+	<Settings>
+		<AutoAbilitySetting operator="Player" cooldown="0"/> <!-- Cooldown time stacks with the ability's actual cooldown -->
+		<AutoAbilitySetting operator="AIInsane" cooldown="0"/> <!-- 0 is no cooldown-->
+	</Settings>
+  </AutoAbilityConfiguration>
+  <AutoAbilityConfiguration id="EntrenchDownAutoAbility"> <!--Toggle on Entrench ability for sax_mech_gunfort-->
+	<Settings>
+		<AutoAbilitySetting operator="Player" cooldown="0"/> <!-- Cooldown time stacks with the ability's actual cooldown -->
+		<AutoAbilitySetting operator="AIInsane" cooldown="0"/> <!-- 0 is no cooldown-->
+	</Settings>
+  </AutoAbilityConfiguration>    
+  <AutoAbilityConfiguration id="EntrenchUpAutoAbility"> <!--Toggle off Entrench ability for sax_mech_gunfort-->
+	<Settings>
+		<AutoAbilitySetting operator="Player" cooldown="0"/> <!-- Cooldown time stacks with the ability's actual cooldown -->
+
+	</Settings>
+  </AutoAbilityConfiguration>  
+  
+  	<!-- Telsa -->
+  <AutoAbilityConfiguration id="ShockAutoAbility"> <!-- ShockTrap ability for tes_mech_guard -->
+	<Settings>
+		<AutoAbilitySetting operator="Player" cooldown="0"/> <!-- Cooldown time stacks with the ability's actual cooldown -->
+		<AutoAbilitySetting operator="AIInsane" cooldown="0"/> <!-- 0 is no cooldown-->
+	</Settings>
+  </AutoAbilityConfiguration>
+  <AutoAbilityConfiguration id="DeployAutoAbility"> <!-- Deploy ability for tes_mech_guard -->
+	<Settings>
+		<AutoAbilitySetting operator="Player" cooldown="0"/> <!-- Cooldown time stacks with the ability's actual cooldown -->
+		<AutoAbilitySetting operator="AIInsane" cooldown="0"/> <!-- 0 is no cooldown-->
+	</Settings>
+  </AutoAbilityConfiguration>  
+   
+  <!-- HERO ABILITIES -->
+	<!-- Anna -->
+  <AutoAbilityConfiguration id="PowerShotAutoAbility"> <!-- Precision Shot ability -->
+	<Settings>
+		<AutoAbilitySetting operator="Player" cooldown="0"/> <!-- Cooldown time stacks with the ability's actual cooldown -->
+		<AutoAbilitySetting operator="AIInsane" cooldown="0"/> <!-- 0 is no cooldown-->
+	</Settings>
+  </AutoAbilityConfiguration>
+  <AutoAbilityConfiguration id="WojtekAttackAutoAbility"> <!-- Ferocious Maul ability -->
+	<Settings>
+		<AutoAbilitySetting operator="Player" cooldown="0"/> <!-- Cooldown time stacks with the ability's actual cooldown -->
+		<AutoAbilitySetting operator="AIInsane" cooldown="0"/> <!-- 0 is no cooldown-->
+	</Settings>
+  </AutoAbilityConfiguration>
+  <AutoAbilityConfiguration id="WojtekCallBackAutoAbility"> <!-- Withdraw Wojtek ability -->
+	<Settings>
+		<AutoAbilitySetting operator="Player" cooldown="0"/> <!-- Cooldown time stacks with the ability's actual cooldown -->
+		<AutoAbilitySetting operator="AIInsane" cooldown="0"/> <!-- 0 is no cooldown-->
+	</Settings>
+  </AutoAbilityConfiguration>   
+  <AutoAbilityConfiguration id="WojtekCallAutoAbility"> <!-- Respawn Wojtek ability -->
+	<Settings>
+		<AutoAbilitySetting operator="Player" cooldown="0"/> <!-- Cooldown time stacks with the ability's actual cooldown -->
+		<AutoAbilitySetting operator="AIInsane" cooldown="0"/> <!-- 0 is no cooldown-->
+	</Settings>
+  </AutoAbilityConfiguration>
+ 
+	<!-- CavalryCommander -->
+  <AutoAbilityConfiguration id="CavalryChargeAutoAbility"> <!-- Cavalry Charge ability -->
+	<Settings>
+		<AutoAbilitySetting operator="Player" cooldown="0"/> <!-- Cooldown time stacks with the ability's actual cooldown -->
+		<AutoAbilitySetting operator="AIInsane" cooldown="0"/> <!-- 0 is no cooldown-->
+	</Settings>
+  </AutoAbilityConfiguration>	
+  <AutoAbilityConfiguration id="BombsAutoAbility"> <!-- Sticky Explosives ability -->
+	<Settings>
+		<AutoAbilitySetting operator="Player" cooldown="0"/> <!-- Cooldown time stacks with the ability's actual cooldown -->
+		<AutoAbilitySetting operator="AIInsane" cooldown="0"/> <!-- 0 is no cooldown-->
+	</Settings>
+  </AutoAbilityConfiguration>	
+	<!-- RebelLeader -->
+  <AutoAbilityConfiguration id="DashAutoAbility"> <!-- Vicious Tackle ability -->
+	<Settings>
+		<AutoAbilitySetting operator="Player" cooldown="0"/> <!-- Cooldown time stacks with the ability's actual cooldown -->
+		<AutoAbilitySetting operator="AIInsane" cooldown="0"/> <!-- 0 is no cooldown-->
+	</Settings>
+  </AutoAbilityConfiguration>
+  <AutoAbilityConfiguration id="ShrapnelAutoAbility"> <!-- Relentless Fury ability -->
+	<Settings>
+		<AutoAbilitySetting operator="Player" cooldown="0"/> <!-- Cooldown time stacks with the ability's actual cooldown -->
+		<AutoAbilitySetting operator="AIInsane" cooldown="0"/> <!-- 0 is no cooldown-->
+	</Settings>
+  </AutoAbilityConfiguration>  
+	<!-- Olga -->
+  <AutoAbilityConfiguration id="DetonatorsAutoAbility"> <!-- Remote Detonator ability -->
+	<Settings>
+		<AutoAbilitySetting operator="Player" cooldown="0"/> <!-- Cooldown time stacks with the ability's actual cooldown -->
+		<AutoAbilitySetting operator="AIInsane" cooldown="0"/> <!-- 0 is no cooldown-->
+	</Settings>
+  </AutoAbilityConfiguration>
+  <AutoAbilityConfiguration id="DetonateAutoAbility"> <!-- Detonate ability -->
+	<Settings>
+		<AutoAbilitySetting operator="Player" cooldown="0"/> <!-- Cooldown time stacks with the ability's actual cooldown -->
+		<AutoAbilitySetting operator="AIInsane" cooldown="0"/> <!-- 0 is no cooldown-->
+	</Settings>
+  </AutoAbilityConfiguration>
+  <AutoAbilityConfiguration id="TigerUpAbility"> <!-- Ride the Tiger ability -->
+	<Settings>
+		<AutoAbilitySetting operator="Player" cooldown="0"/> <!-- Cooldown time stacks with the ability's actual cooldown -->
+		<AutoAbilitySetting operator="AIInsane" cooldown="0"/> <!-- 0 is no cooldown-->
+	</Settings>
+  </AutoAbilityConfiguration>  
+  <AutoAbilityConfiguration id="TigerDownAbility"> <!-- Dismount Changa ability -->
+	<Settings>
+		<AutoAbilitySetting operator="Player" cooldown="0"/> <!-- Cooldown time stacks with the ability's actual cooldown -->
+	</Settings>
+  </AutoAbilityConfiguration>
+	<!-- Brother -->
+    <AutoAbilityConfiguration id="LightningAutoAbility"> <!-- Chain Lightning ability -->
+	<Settings>
+		<AutoAbilitySetting operator="Player" cooldown="0"/> <!-- Cooldown time stacks with the ability's actual cooldown -->
+		<AutoAbilitySetting operator="AIInsane" cooldown="0"/> <!-- 0 is no cooldown-->
+	</Settings>
+  </AutoAbilityConfiguration>
+    <AutoAbilityConfiguration id="RuptureAutoAbility"> <!-- Rupture ability -->
+	<Settings>
+		<AutoAbilitySetting operator="Player" cooldown="0"/> <!-- Cooldown time stacks with the ability's actual cooldown -->
+		<AutoAbilitySetting operator="AIInsane" cooldown="0"/> <!-- 0 is no cooldown-->
+	</Settings>
+  </AutoAbilityConfiguration>	
+	<!-- RusvietGeneral -->	
+  <AutoAbilityConfiguration id="ShatterAutoAbility"> <!-- Death from Above ability -->
+	<Settings>
+		<AutoAbilitySetting operator="Player" cooldown="0"/> <!-- Cooldown time stacks with the ability's actual cooldown -->
+		<AutoAbilitySetting operator="AIInsane" cooldown="0"/> <!-- 0 is no cooldown-->
+	</Settings>
+  </AutoAbilityConfiguration>
+  <AutoAbilityConfiguration id="ObliterateAutoAbility"> <!-- Cull the Weak ability -->
+	<Settings>
+		<AutoAbilitySetting operator="Player" cooldown="0"/> <!-- Cooldown time stacks with the ability's actual cooldown -->
+		<AutoAbilitySetting operator="AIInsane" cooldown="0"/> <!-- 0 is no cooldown-->
+	</Settings>
+  </AutoAbilityConfiguration>  
+  	<!-- Gunter -->
+  <AutoAbilityConfiguration id="BladeAutoAbility"> <!-- Iron Fist ability -->
+	<Settings>
+		<AutoAbilitySetting operator="Player" cooldown="0"/> <!-- Cooldown time stacks with the ability's actual cooldown -->
+		<AutoAbilitySetting operator="AIInsane" cooldown="0"/> <!-- 0 is no cooldown-->
+	</Settings>
+  </AutoAbilityConfiguration>
+  <AutoAbilityConfiguration id="ScoutingAutoAbility"> <!-- Scouting Route ability -->
+	<Settings>
+		<AutoAbilitySetting operator="Player" cooldown="0"/> <!-- Cooldown time stacks with the ability's actual cooldown -->
+		<AutoAbilitySetting operator="AIInsane" cooldown="0"/> <!-- 0 is no cooldown-->
+	</Settings>
+  </AutoAbilityConfiguration>
+	<!-- Prince -->
+  <AutoAbilityConfiguration id="DoubleAutoAbility"> <!-- Lay Waste ability -->
+	<Settings>
+		<AutoAbilitySetting operator="Player" cooldown="0"/> <!-- Cooldown time stacks with the ability's actual cooldown -->
+		<AutoAbilitySetting operator="AIInsane" cooldown="0"/> <!-- 0 is no cooldown-->
+	</Settings>
+  </AutoAbilityConfiguration>
+  <AutoAbilityConfiguration id="RocketAutoAbility"> <!-- Missile Salvo ability -->
+	<Settings>
+		<AutoAbilitySetting operator="Player" cooldown="0"/> <!-- Cooldown time stacks with the ability's actual cooldown -->
+		<AutoAbilitySetting operator="AIInsane" cooldown="0"/> <!-- 0 is no cooldown-->
+	</Settings>
+  </AutoAbilityConfiguration>
+	<!-- Brunhilde -->
+  <AutoAbilityConfiguration id="StrikeAutoAbility"> <!-- Artillery Strike ability -->
+	<Settings>
+		<AutoAbilitySetting operator="Player" cooldown="0"/> <!-- Cooldown time stacks with the ability's actual cooldown -->
+		<AutoAbilitySetting operator="AIInsane" cooldown="0"/> <!-- 0 is no cooldown-->
+	</Settings>
+  </AutoAbilityConfiguration>
+ 
+
+</AutoAbilities>

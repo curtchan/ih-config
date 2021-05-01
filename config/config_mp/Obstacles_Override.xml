@@ -1,0 +1,81 @@
+<ObstacleConfigurationRepository>
+		<!--Barbwire-->
+			<ObstacleConfiguration overrideId="com_structure_barbwire" type="wallSegment">
+				<!--Construction-->
+					<BuildCost>
+						<IronCost>10</IronCost>
+						<OilCost>0</OilCost>
+						<PopulationCost>0</PopulationCost>
+					</BuildCost>
+			</ObstacleConfiguration>
+
+		<!--Barbwire Straight-->
+			<ObstacleConfiguration overrideId="com_structure_barbwire_straight" type="straightWallSegment" parentId="com_structure_barbwire">
+					<!--Construction-->
+					<BuildCost>
+						<IronCost>15</IronCost>
+						<OilCost>0</OilCost>
+						<PopulationCost>0</PopulationCost>
+					</BuildCost>
+			</ObstacleConfiguration>
+		
+		<!--Barbwire Curve 22.5 left-->		
+			<ObstacleConfiguration overrideId="com_structure_barbwire_curve22-5_left" type="curveWallSegment" parentId="com_structure_barbwire">
+					<!--Construction-->
+					<BuildCost>
+						<IronCost>15</IronCost>
+						<OilCost>0</OilCost>
+						<PopulationCost>0</PopulationCost>
+					</BuildCost>
+			</ObstacleConfiguration>
+			
+		<!--Barbwire Curve 22.5 right-->	
+			<ObstacleConfiguration overrideId="com_structure_barbwire_curve22-5_right" type="curveWallSegment" parentId="com_structure_barbwire">
+					<!--Construction-->
+					<BuildCost>
+						<IronCost>15</IronCost>
+						<OilCost>0</OilCost>
+						<PopulationCost>0</PopulationCost>
+					</BuildCost>
+			</ObstacleConfiguration>
+			
+		<!--Barbwire Curve 45 left-->	
+			<ObstacleConfiguration overrideId="com_structure_barbwire_curve45_left" type="curveWallSegment" parentId="com_structure_barbwire">
+					<!--Construction-->
+					<BuildCost>
+						<IronCost>15</IronCost>
+						<OilCost>0</OilCost>
+						<PopulationCost>0</PopulationCost>
+					</BuildCost>
+			</ObstacleConfiguration>
+			
+		<!--Barbwire Curve 45 right-->	
+			<ObstacleConfiguration overrideId="com_structure_barbwire_curve45_right" type="curveWallSegment" parentId="com_structure_barbwire">
+					<!--Construction-->
+					<BuildCost>
+						<IronCost>15</IronCost>
+						<OilCost>0</OilCost>
+						<PopulationCost>0</PopulationCost>
+					</BuildCost>
+			</ObstacleConfiguration>
+			
+		<!--Barbwire Curve 90 left-->		
+			<ObstacleConfiguration overrideId="com_structure_barbwire_curve90_left" type="curveWallSegment" parentId="com_structure_barbwire">
+					<!--Construction-->
+					<BuildCost>
+						<IronCost>15</IronCost>
+						<OilCost>0</OilCost>
+						<PopulationCost>0</PopulationCost>
+					</BuildCost>
+			</ObstacleConfiguration>
+			
+		<!--Barbwire Curve 90 right-->	
+			<ObstacleConfiguration overrideId="com_structure_barbwire_curve90_right" type="curveWallSegment" parentId="com_structure_barbwire">
+					<!--Construction-->
+					<BuildCost>
+						<IronCost>15</IronCost>
+						<OilCost>0</OilCost>
+						<PopulationCost>0</PopulationCost>
+					</BuildCost>
+			</ObstacleConfiguration>
+ </ObstacleConfigurationRepository>

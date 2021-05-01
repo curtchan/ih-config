@@ -1,0 +1,250 @@
+<AmmoConfigurationRepository>
+	<!-- Projectiles -->
+	<AmmoConfiguration overrideId="RifleCartridge" type="projectile">
+		<GarrisonedUnitdamageModifier>0.2</GarrisonedUnitdamageModifier>
+	</AmmoConfiguration>
+	<AmmoConfiguration overrideId="SmgCartridge" type="projectile">
+		<GarrisonedUnitdamageModifier>0.15</GarrisonedUnitdamageModifier>
+	</AmmoConfiguration>
+  <AmmoConfiguration overrideId="ShotgunCartridge" type="projectile">
+		<GarrisonedUnitdamageModifier>0.1</GarrisonedUnitdamageModifier>
+	</AmmoConfiguration>
+  <AmmoConfiguration overrideId="GatlingCartridge" type="projectile">
+		<GarrisonedUnitdamageModifier>0.15</GarrisonedUnitdamageModifier>
+	</AmmoConfiguration>
+	<AmmoConfiguration overrideId="SpiderCartridge" type="projectile">
+		<GarrisonedUnitdamageModifier>0.1</GarrisonedUnitdamageModifier>
+	</AmmoConfiguration>
+	<AmmoConfiguration overrideId="SpiderOverdriveCartridge" type="projectile">
+		<GarrisonedUnitdamageModifier>0.2</GarrisonedUnitdamageModifier>
+	</AmmoConfiguration>
+  <AmmoConfiguration overrideId="HMGCartridge" type="projectile">
+		<GarrisonedUnitdamageModifier>0.15</GarrisonedUnitdamageModifier>
+  </AmmoConfiguration>
+  <AmmoConfiguration overrideId="AutoCannonCartridge" type="projectile">
+		<GarrisonedUnitdamageModifier>0.3</GarrisonedUnitdamageModifier>
+  </AmmoConfiguration>
+  <AmmoConfiguration overrideId="StingerBolt" type="projectile">
+		<GarrisonedUnitdamageModifier>0.5</GarrisonedUnitdamageModifier>
+  </AmmoConfiguration>
+  <AmmoConfiguration overrideId="StingerAbilityBolt" type="projectile">
+		<GarrisonedUnitdamageModifier>0.5</GarrisonedUnitdamageModifier>
+  </AmmoConfiguration>
+  <AmmoConfiguration overrideId="RailgunCartridge" type="projectile">
+		<GarrisonedUnitdamageModifier>0.2</GarrisonedUnitdamageModifier>
+  </AmmoConfiguration>
+
+  <!--Shells-->
+  <AmmoConfiguration overrideId="HeavyRifleShell" type="projectile">
+		<GarrisonedUnitdamageModifier>0.2</GarrisonedUnitdamageModifier>
+	</AmmoConfiguration>
+	<AmmoConfiguration overrideId="HeavyCannonShell" type="projectile">
+		<GarrisonedUnitdamageModifier>0.1</GarrisonedUnitdamageModifier>
+	</AmmoConfiguration>
+	<AmmoConfiguration overrideId="TankShell" type="projectile">
+		<GarrisonedUnitdamageModifier>0.1</GarrisonedUnitdamageModifier>
+	</AmmoConfiguration>
+	<AmmoConfiguration overrideId="GunShell" type="projectile">
+		<GarrisonedUnitdamageModifier>0.1</GarrisonedUnitdamageModifier>
+	</AmmoConfiguration>
+	<AmmoConfiguration overrideId="DachsShell" type="projectile">
+		<GarrisonedUnitdamageModifier>0.15</GarrisonedUnitdamageModifier>
+	</AmmoConfiguration>
+  <AmmoConfiguration overrideId="PolArtShell" type="projectile">
+		<GarrisonedUnitdamageModifier>0.15</GarrisonedUnitdamageModifier>
+  </AmmoConfiguration>
+  <AmmoConfiguration overrideId="RevolverShell" type="projectile">
+		<GarrisonedUnitdamageModifier>0.15</GarrisonedUnitdamageModifier>
+  </AmmoConfiguration>
+  <AmmoConfiguration overrideId="GunfortShell" type="projectile">
+		<GarrisonedUnitdamageModifier>0.15</GarrisonedUnitdamageModifier>
+  </AmmoConfiguration>
+  <AmmoConfiguration overrideId="TurShell" type="projectile">
+		<GarrisonedUnitdamageModifier>0.15</GarrisonedUnitdamageModifier>
+  </AmmoConfiguration>
+  <AmmoConfiguration overrideId="KaiserShell" type="projectile">
+		<GarrisonedUnitdamageModifier>0.15</GarrisonedUnitdamageModifier>
+  </AmmoConfiguration>
+  
+	<!-- Explosives -->
+	<AmmoConfiguration overrideId="HandGrenade" type="explosive">
+		<GarrisonedUnitdamageModifier>3</GarrisonedUnitdamageModifier>
+	</AmmoConfiguration>
+  <AmmoConfiguration overrideId="BomberGrenade" type="explosive">
+		<GarrisonedUnitdamageModifier>0.2</GarrisonedUnitdamageModifier>
+  </AmmoConfiguration>
+	<AmmoConfiguration overrideId="MortarGrenade" type="explosive">
+		<GarrisonedUnitdamageModifier>0.01</GarrisonedUnitdamageModifier>
+	</AmmoConfiguration>
+  <AmmoConfiguration overrideId="MortarSystemGrenade" type="explosive">
+		<ExplosionRadius>4</ExplosionRadius>
+    <OuterExplosionRadius>6</OuterExplosionRadius>
+    <OuterExplosionRadiusDamageModifier>0.4</OuterExplosionRadiusDamageModifier>
+    <GarrisonedUnitdamageModifier>0.01</GarrisonedUnitdamageModifier>
+  </AmmoConfiguration>
+  <AmmoConfiguration overrideId="TransportMortarGrenade" type="explosive">
+		<GarrisonedUnitdamageModifier>0.01</GarrisonedUnitdamageModifier>
+  </AmmoConfiguration>
+  <AmmoConfiguration overrideId="BMortarGrenade" type="explosive">
+		<GarrisonedUnitdamageModifier>0.01</GarrisonedUnitdamageModifier>
+  </AmmoConfiguration>
+	<AmmoConfiguration overrideId="DachsRockets" type="explosive">
+		<GarrisonedUnitdamageModifier>0.15</GarrisonedUnitdamageModifier>
+	</AmmoConfiguration>
+  <AmmoConfiguration overrideId="SaxArtilleryGrenade" type="explosive">
+		<GarrisonedUnitdamageModifier>0.01</GarrisonedUnitdamageModifier>
+  </AmmoConfiguration>
+  <AmmoConfiguration overrideId="PolArtilleryGrenade" type="explosive">
+		<GarrisonedUnitdamageModifier>0.01</GarrisonedUnitdamageModifier>
+  </AmmoConfiguration>
+  <AmmoConfiguration overrideId="RusArtilleryRocket" type="explosive">
+		<GarrisonedUnitdamageModifier>0.15</GarrisonedUnitdamageModifier>
+  </AmmoConfiguration>
+  <AmmoConfiguration overrideId="RusArtillerySentryRocket" type="explosive">
+		<GarrisonedUnitdamageModifier>0.15</GarrisonedUnitdamageModifier>
+  </AmmoConfiguration>
+	<AmmoConfiguration overrideId="TurGrenade" type="explosive">
+		<GarrisonedUnitdamageModifier>0.2</GarrisonedUnitdamageModifier>
+	</AmmoConfiguration>
+  <AmmoConfiguration overrideId="GunfortDemolisherGrenade" type="explosive">
+		<GarrisonedUnitdamageModifier>0.15</GarrisonedUnitdamageModifier>
+  </AmmoConfiguration>
+  <AmmoConfiguration overrideId="KaiserRockets" type="explosive">
+		<GarrisonedUnitdamageModifier>0.1</GarrisonedUnitdamageModifier>
+  </AmmoConfiguration>
+  <AmmoConfiguration overrideId="MotherWheel" type="explosive">
+		<GarrisonedUnitdamageModifier>0.2</GarrisonedUnitdamageModifier>
+  </AmmoConfiguration>
+  <AmmoConfiguration overrideId="MotherGrenade" type="explosive">
+		<GarrisonedUnitdamageModifier>0.1</GarrisonedUnitdamageModifier>
+  </AmmoConfiguration>
+  
+  
+  <!--Heroes-->
+  <!--Anna-->
+  <AmmoConfiguration overrideId="Anna_RifleCartridge" type="projectile">
+		<GarrisonedUnitdamageModifier>0.5</GarrisonedUnitdamageModifier>
+  </AmmoConfiguration>
+  <AmmoConfiguration overrideId="Anna_PowerShotCartridge" type="projectile">
+		<GarrisonedUnitdamageModifier>0.8</GarrisonedUnitdamageModifier>
+  </AmmoConfiguration>
+  
+  <!--Cavalry Commander-->
+  <AmmoConfiguration overrideId="Cav_RifleCartridge" type="projectile">
+		<GarrisonedUnitdamageModifier>0.2</GarrisonedUnitdamageModifier>
+  </AmmoConfiguration>
+  <AmmoConfiguration overrideId="Cav_Bomb" type="explosive">
+		<GarrisonedUnitdamageModifier>0.2</GarrisonedUnitdamageModifier>
+  </AmmoConfiguration>
+  <AmmoConfiguration overrideId="Cav_BombProjectile" type="effect">
+		<GarrisonedUnitdamageModifier>0.2</GarrisonedUnitdamageModifier>
+  </AmmoConfiguration>
+  
+  <!--Gunter-->
+  <AmmoConfiguration overrideId="Gunter_HandgunShell" type="projectile">
+		<GarrisonedUnitdamageModifier>0.15</GarrisonedUnitdamageModifier>
+  </AmmoConfiguration>
+  <AmmoConfiguration overrideId="Gunter_Splash" type="projectile">
+		<GarrisonedUnitdamageModifier>0.15</GarrisonedUnitdamageModifier>
+  </AmmoConfiguration>
+  
+  <!--Prince-->
+  <AmmoConfiguration overrideId="Prince_GatlingCartridge" type="projectile">
+		<GarrisonedUnitdamageModifier>0.2</GarrisonedUnitdamageModifier>
+  </AmmoConfiguration>
+  <AmmoConfiguration overrideId="Prince_GatlingSweepCartridge" type="projectile">
+		<GarrisonedUnitdamageModifier>0.15</GarrisonedUnitdamageModifier>
+  </AmmoConfiguration>
+  <AmmoConfiguration overrideId="Prince_Rocket" type="explosive">
+		<GarrisonedUnitdamageModifier>0.01</GarrisonedUnitdamageModifier>
+  </AmmoConfiguration>
+  
+  <!--Brunhilde-->
+  <AmmoConfiguration overrideId="Brunh_CannonShell" type="projectile">
+		<GarrisonedUnitdamageModifier>0.15</GarrisonedUnitdamageModifier>
+  </AmmoConfiguration>
+  <AmmoConfiguration overrideId="Brunh_LongShotGrenade" type="explosive">
+		<GarrisonedUnitdamageModifier>0.01</GarrisonedUnitdamageModifier>
+  </AmmoConfiguration>
+  <AmmoConfiguration overrideId="Brunh_BroadsideShell" type="projectile">
+		<GarrisonedUnitdamageModifier>0.15</GarrisonedUnitdamageModifier>
+  </AmmoConfiguration>
+  <AmmoConfiguration overrideId="Brunh_CannonSplash" type="projectile">
+		<GarrisonedUnitdamageModifier>0.15</GarrisonedUnitdamageModifier>
+  </AmmoConfiguration>
+  <AmmoConfiguration overrideId="Brunh_BroadsideSplash" type="projectile">
+		<GarrisonedUnitdamageModifier>0.15</GarrisonedUnitdamageModifier>
+  </AmmoConfiguration>
+
+  <!--Olga-->
+  <AmmoConfiguration overrideId="Olga_Cartridge" type="projectile">
+		<GarrisonedUnitdamageModifier>0.2</GarrisonedUnitdamageModifier>
+  </AmmoConfiguration>
+  <AmmoConfiguration overrideId="Olga_Detonator" type="explosive">
+		<GarrisonedUnitdamageModifier>1</GarrisonedUnitdamageModifier>
+  </AmmoConfiguration>
+
+  <!--Brother-->
+  <AmmoConfiguration overrideId="BrotherCartridge" type="projectile">
+		<GarrisonedUnitdamageModifier>0.15</GarrisonedUnitdamageModifier>
+  </AmmoConfiguration>
+  <AmmoConfiguration overrideId="Brother_Rocket" type="explosive">
+		<GarrisonedUnitdamageModifier>0.15</GarrisonedUnitdamageModifier>
+  </AmmoConfiguration>
+
+  <!--Rusviet General-->
+  <AmmoConfiguration overrideId="Gen_Shell" type="projectile">
+		<GarrisonedUnitdamageModifier>0.15</GarrisonedUnitdamageModifier>
+  </AmmoConfiguration>
+  <AmmoConfiguration overrideId="Gen_Splash" type="projectile">
+		<GarrisonedUnitdamageModifier>0.15</GarrisonedUnitdamageModifier>
+  </AmmoConfiguration>
+
+ <!-- Splash Ammo-->
+  <AmmoConfiguration overrideId="APSplash" type="projectile">
+		<GarrisonedUnitdamageModifier>0.1</GarrisonedUnitdamageModifier>
+  </AmmoConfiguration>
+  <AmmoConfiguration overrideId="NonThrowSplash" type="projectile">
+		<GarrisonedUnitdamageModifier>0.1</GarrisonedUnitdamageModifier>
+  </AmmoConfiguration>
+  <AmmoConfiguration overrideId="TankSplash" type="projectile">
+		<GarrisonedUnitdamageModifier>0.1</GarrisonedUnitdamageModifier>
+  </AmmoConfiguration>
+  <AmmoConfiguration overrideId="MediumSplash" type="projectile">
+		<GarrisonedUnitdamageModifier>0.1</GarrisonedUnitdamageModifier>
+  </AmmoConfiguration>
+  <AmmoConfiguration overrideId="HeavySplash" type="projectile">
+		<GarrisonedUnitdamageModifier>0.1</GarrisonedUnitdamageModifier>
+  </AmmoConfiguration>
+  <AmmoConfiguration overrideId="UltraHeavySplash" type="projectile">
+		<GarrisonedUnitdamageModifier>0.1</GarrisonedUnitdamageModifier>
+  </AmmoConfiguration>
+  <AmmoConfiguration overrideId="KaiserSplash" type="projectile">
+		<GarrisonedUnitdamageModifier>0.1</GarrisonedUnitdamageModifier>
+  </AmmoConfiguration>
+  <AmmoConfiguration overrideId="RevolverSplash" type="projectile">
+		<GarrisonedUnitdamageModifier>0.1</GarrisonedUnitdamageModifier>
+  </AmmoConfiguration>
+
+  <!--Special Ammo-->
+	<AmmoConfiguration overrideId="TestFlames" type="explosive">
+		<GarrisonedUnitdamageModifier>1.5</GarrisonedUnitdamageModifier>
+  </AmmoConfiguration>
+	
+	<AmmoConfiguration overrideId="MechFlames" type="explosive">
+		<GarrisonedUnitdamageModifier>1.5</GarrisonedUnitdamageModifier>
+    <ExplosionRadius>4</ExplosionRadius>
+    <EffectAmmoConfig>
+      <EffectType>FlamerFlame</EffectType>
+      <CanDamage>True</CanDamage>
+      <EffectRadius>3</EffectRadius>
+      <EffectDuration>10</EffectDuration>
+    </EffectAmmoConfig>
+  </AmmoConfiguration>
+
+	<AmmoConfiguration overrideId="MechFrameFlames" type="explosive">
+		<GarrisonedUnitdamageModifier>1</GarrisonedUnitdamageModifier>
+    <ExplosionRadius>2.8</ExplosionRadius>
+	</AmmoConfiguration>
+ 
+ </AmmoConfigurationRepository>

@@ -1,0 +1,499 @@
+<!-- Weapon Configurations-->
+<WeaponConfigurations>
+	<!--Common Weapons-->
+		<!--Common Soldier|Handgun-->
+			<WeaponConfiguration overrideId="com_soldier_handgun">
+				<!--Supression-->
+					<Suppression>0</Suppression>
+					<SuppressionZoneFull>0</SuppressionZoneFull>
+					<SuppressionZoneZero>0</SuppressionZoneZero>
+				</WeaponConfiguration>
+		<!--Polania Engineer|Handgun-->
+			<WeaponConfiguration overrideId="pol_engineer_handgun" parentId="com_soldier_handgun">
+			<!--Supression-->
+					<Suppression>0</Suppression>
+					<SuppressionZoneFull>0</SuppressionZoneFull>
+					<SuppressionZoneZero>0</SuppressionZoneZero>
+			</WeaponConfiguration>
+
+		<!--Polania Medic|Handgun-->
+			<WeaponConfiguration overrideId="pol_medic_handgun" parentId="com_soldier_handgun">
+			<!--Supression-->
+					<Suppression>0</Suppression>
+					<SuppressionZoneFull>0</SuppressionZoneFull>
+					<SuppressionZoneZero>0</SuppressionZoneZero>
+			</WeaponConfiguration>
+		
+		<!--Saxony Engineer|Handgun-->
+			<WeaponConfiguration overrideId="sax_engineer_handgun" parentId="com_soldier_handgun">
+			<!--Supression-->
+					<Suppression>0</Suppression>
+					<SuppressionZoneFull>0</SuppressionZoneFull>
+					<SuppressionZoneZero>0</SuppressionZoneZero>
+			</WeaponConfiguration>
+		
+		<!--Saxony Medic|Handgun-->
+			<WeaponConfiguration overrideId="sax_medic_handgun" parentId="com_soldier_handgun">
+			<!--Supression-->
+					<Suppression>0</Suppression>
+					<SuppressionZoneFull>0</SuppressionZoneFull>
+					<SuppressionZoneZero>0</SuppressionZoneZero>
+			</WeaponConfiguration>
+
+		<!--Rusviet Engineer|Handgun-->
+			<WeaponConfiguration overrideId="rus_engineer_handgun" parentId="com_soldier_handgun">
+			<!--Supression-->
+					<Suppression>0</Suppression>
+					<SuppressionZoneFull>0</SuppressionZoneFull>
+					<SuppressionZoneZero>0</SuppressionZoneZero>
+			</WeaponConfiguration>
+		
+		<!--Rusviet Medic|Handgun-->
+			<WeaponConfiguration overrideId="rus_medic_handgun" parentId="com_soldier_handgun">
+			<!--Supression-->
+					<Suppression>0</Suppression>
+					<SuppressionZoneFull>0</SuppressionZoneFull>
+					<SuppressionZoneZero>0</SuppressionZoneZero>
+			</WeaponConfiguration>	
+
+		<!--Common Soldier|MG |mg Infantry-->
+			<WeaponConfiguration overrideId="com_soldier_mg">	
+
+				<!--Shot Information-->
+				<AmmoConfigurationId>LMGCartridge</AmmoConfigurationId>
+				<Height>1.5</Height>	
+				<BurstSize>15</BurstSize>
+				<BurstDelay>1</BurstDelay>
+				
+				<!--Hitsystem-->
+				<ConeAngleDegree>60</ConeAngleDegree>
+				<SpreadWidth>3.5</SpreadWidth>
+				<SpreadHeight>1.5</SpreadHeight>
+				
+				<!--Cooldowns-->
+				<Cooldown>24</Cooldown>
+				<BoostedCooldown>16</BoostedCooldown>
+				<SuppressedCooldown>64</SuppressedCooldown>
+				
+				<!--Ranges-->
+				<Range>25</Range>
+				<AttackRange>25</AttackRange>
+				<ProjectileRange>30</ProjectileRange>
+				<MeleeRange>2</MeleeRange>
+				<NearSuppressionDistance>10</NearSuppressionDistance>
+									
+				<!--Supression-->
+				<Suppression>1.5</Suppression>
+				<SuppressionZoneFull>4</SuppressionZoneFull>
+				<SuppressionZoneZero>5</SuppressionZoneZero>
+				<NearSuppression>4</NearSuppression>
+				
+				<!--Delay-->
+				<AttackDelay>0</AttackDelay>
+
+				<!--Noise-->
+				<ShotNoiseRange>40</ShotNoiseRange>
+				<ImpactNoiseRange>20</ImpactNoiseRange>
+			</WeaponConfiguration>
+	
+		<!--Polania LMG-->
+		<WeaponConfiguration overrideId="pol_soldier_mg_mg" parentId="com_soldier_mg">
+			<!--Supression-->
+				<Suppression>1.5</Suppression>
+				<SuppressionZoneFull>4</SuppressionZoneFull>
+				<SuppressionZoneZero>5</SuppressionZoneZero>
+				<NearSuppression>4</NearSuppression>
+				<NearSuppressionDistance>10</NearSuppressionDistance>
+		</WeaponConfiguration>
+
+		<!--Saxony LMG-->
+		<WeaponConfiguration overrideId="sax_soldier_mg_mg" parentId="com_soldier_mg">
+			<!--Supression-->
+				<Suppression>1.5</Suppression>
+				<SuppressionZoneFull>4</SuppressionZoneFull>
+				<SuppressionZoneZero>5</SuppressionZoneZero>
+				<NearSuppression>4</NearSuppression>
+				<NearSuppressionDistance>10</NearSuppressionDistance>
+		</WeaponConfiguration>
+
+		<!--Rusviet LMG-->
+		<WeaponConfiguration overrideId="rus_soldier_mg_mg" parentId="com_soldier_mg">
+			<!--Supression-->
+				<Suppression>1.5</Suppression>
+				<SuppressionZoneFull>4</SuppressionZoneFull>
+				<SuppressionZoneZero>5</SuppressionZoneZero>
+				<NearSuppression>4</NearSuppression>
+				<NearSuppressionDistance>10</NearSuppressionDistance>
+		</WeaponConfiguration>	
+
+		<!--Common Soldier|Garrison MG |Garrison mg Infantry-->
+		<WeaponConfiguration overrideId="com_soldier_garrisonmg">
+			<!--Supression-->
+			<Suppression>2.1</Suppression>
+
+			<SuppressionZoneFull>4</SuppressionZoneFull>
+			<SuppressionZoneZero>5</SuppressionZoneZero>
+		</WeaponConfiguration>
+
+		<!--Polania Garrison LMG-->
+		<WeaponConfiguration overrideId="pol_soldier_garrisonmg" parentId="com_soldier_garrisonmg">
+			<!--Supression-->
+			<Suppression>2.1</Suppression>
+			<SuppressionZoneFull>4</SuppressionZoneFull>
+			<SuppressionZoneZero>5</SuppressionZoneZero>
+			<NearSuppression>5</NearSuppression>
+			<NearSuppressionDistance>8</NearSuppressionDistance>
+		</WeaponConfiguration>
+
+		<!--Saxony Garrison LMG-->
+		<WeaponConfiguration overrideId="sax_soldier_garrisonmg" parentId="com_soldier_garrisonmg">
+			<!--Supression-->
+			<Suppression>2.1</Suppression>
+			<SuppressionZoneFull>4</SuppressionZoneFull>
+			<SuppressionZoneZero>5</SuppressionZoneZero>
+			<NearSuppression>5</NearSuppression>
+			<NearSuppressionDistance>8</NearSuppressionDistance>
+		</WeaponConfiguration>
+
+		<!--Rusviet Garrison LMG-->
+		<WeaponConfiguration overrideId="rus_soldier_garrisonmg" parentId="com_soldier_garrisonmg">
+			<!--Supression-->
+			<Suppression>2.1</Suppression>
+			<SuppressionZoneFull>4</SuppressionZoneFull>
+			<SuppressionZoneZero>5</SuppressionZoneZero>
+			<NearSuppression>5</NearSuppression>
+			<NearSuppressionDistance>8</NearSuppressionDistance>
+		</WeaponConfiguration>	
+		
+<!-- Polania Weapons-->
+	<!--Ranged-->
+		<!--Infantry-->
+			<!--Polania Rifleman|Rifle-->
+			<WeaponConfiguration overrideId="pol_soldier_rifleman_rifle">
+				<!--Ranges-->
+					<Range>28</Range>
+					<AttackRange>27</AttackRange>
+
+				<!--Suppression-->
+					<Suppression>2</Suppression>
+					<SuppressionZoneFull>2</SuppressionZoneFull>
+					<SuppressionZoneZero>3</SuppressionZoneZero>
+			</WeaponConfiguration>
+
+		<!--Mechs-->
+			<!--Recon|Heavy Rifle-->
+				<WeaponConfiguration overrideId="pol_mech_recon_rifle">
+					<!--Supression-->
+						<Suppression>20</Suppression>
+						<SuppressionZoneFull>1</SuppressionZoneFull>
+						<SuppressionZoneZero>2</SuppressionZoneZero>
+				</WeaponConfiguration>
+
+			<!--Siege Tank|Cannon|Motion-->
+			<WeaponConfiguration overrideId="pol_mech_artillery_cannon_motion">
+				<!--Ranges-->
+					<Range>40</Range> 
+					<AttackRange>38</AttackRange>
+					<ProjectileRange>60</ProjectileRange>
+				<!--Supression-->
+					<Suppression>0</Suppression>
+					<SuppressionZoneFull>0</SuppressionZoneFull>
+					<SuppressionZoneZero>0</SuppressionZoneZero>	
+			</WeaponConfiguration>
+			<!--Stinger|Bolter|Harpoon-->
+			<WeaponConfiguration overrideId="pol_mech_stinger_bolter">
+				<!--Supression-->
+					<Suppression>20</Suppression>
+					<SuppressionZoneFull>1</SuppressionZoneFull>
+					<SuppressionZoneZero>2</SuppressionZoneZero>
+					
+			</WeaponConfiguration>			
+
+			<!--Tur|Cannon-->
+			<WeaponConfiguration overrideId="pol_mech_gunfort_cannon">
+				<!--Splash-->
+				<SplashRadius>5.5</SplashRadius>
+
+				<!--Supression-->
+					<Suppression>10</Suppression>
+					<SuppressionZoneFull>1</SuppressionZoneFull>
+					<SuppressionZoneZero>2</SuppressionZoneZero>
+			</WeaponConfiguration>
+	<!--Melee-->
+		<!--Recon|Melee-->
+		<WeaponConfiguration overrideId="pol_mech_recon_charge_impact">
+			<!--Supression-->
+				<Suppression>15</Suppression>
+				<SuppressionZoneFull>1</SuppressionZoneFull>
+				<SuppressionZoneZero>2</SuppressionZoneZero>
+		</WeaponConfiguration>
+
+		<!--Recon|Charge push-->
+		<WeaponConfiguration overrideId="pol_mech_recon_charge_push">
+			<!--Supression-->
+				<Suppression>15</Suppression>
+				<SuppressionZoneFull>1</SuppressionZoneFull>
+				<SuppressionZoneZero>2</SuppressionZoneZero>
+
+		</WeaponConfiguration>
+
+<!--Saxony Weapons-->
+	<!--Ranged-->
+		<!--Infantry-->
+			<!--Saxony Rifleman|Rifle-->
+			<WeaponConfiguration overrideId="sax_soldier_rifleman_rifle">
+				<!--Supression-->
+					<Suppression>0.6</Suppression>
+					<SuppressionZoneFull>3</SuppressionZoneFull>
+					<SuppressionZoneZero>4</SuppressionZoneZero>
+			</WeaponConfiguration>
+		<!--Mechs-->
+			<!--Gatling|Gatling-->
+			<WeaponConfiguration overrideId="sax_mech_gatling_gatling">
+				<!--Splash-->
+					<SplashRadius>2</SplashRadius>
+					<SplashAmmoConfigurationId>MgSplash</SplashAmmoConfigurationId>
+					
+				<!--Cooldowns-->
+					<Cooldown>12</Cooldown><!--32-->
+					
+				<!--Supression-->
+					<Suppression>3</Suppression>
+					<SuppressionZoneFull>4</SuppressionZoneFull>
+					<SuppressionZoneZero>7</SuppressionZoneZero>
+					<NearSuppression>10</NearSuppression>
+					<NearSuppressionDistance>10</NearSuppressionDistance>
+			</WeaponConfiguration>
+
+			<!--Gatling|Sweep-->
+			<WeaponConfiguration overrideId="sax_mech_gatling_sweep">
+				<!--Shot Information-->
+					<AmmoConfigurationId>GatlingCartridge</AmmoConfigurationId>
+
+				<!--Splash-->
+					<SplashRadius>2</SplashRadius>
+					<SplashAmmoConfigurationId>GatlingSweepSplash</SplashAmmoConfigurationId>
+				
+				<!--Supression-->
+					<Suppression>10</Suppression>
+					<SuppressionZoneFull>4</SuppressionZoneFull>
+					<SuppressionZoneZero>5</SuppressionZoneZero>
+			</WeaponConfiguration>
+
+		<!--Dachs|Cannon-->
+		<WeaponConfiguration overrideId="sax_mech_dachs_cannon">
+			<!--Supression-->
+				<Suppression>25</Suppression>
+				<SuppressionZoneFull>1</SuppressionZoneFull>
+				<SuppressionZoneZero>2</SuppressionZoneZero>
+		</WeaponConfiguration>
+
+		<!--Kaiser|Cannon-->
+		<WeaponConfiguration overrideId="sax_mech_gunfort_cannon">
+			<!--Supression-->
+			<Suppression>15</Suppression>
+			<SuppressionZoneFull>1</SuppressionZoneFull>
+			<SuppressionZoneZero>2</SuppressionZoneZero>
+		</WeaponConfiguration>
+
+	<!--Melee-->
+		<!--Breacher|Melee-->
+		<WeaponConfiguration overrideId="sax_soldier_mortar_melee">
+			<!--Supression-->
+				<Suppression>0</Suppression>
+				<SuppressionZoneFull>0</SuppressionZoneFull>
+				<SuppressionZoneZero>0</SuppressionZoneZero>
+		</WeaponConfiguration>
+
+<!-- Rusviet Weapons-->
+	<!--Ranged-->
+		<!--Infantry-->
+			<!--Rusviet Rifleman|Rifle-->
+				<WeaponConfiguration overrideId="rus_soldier_rifleman_rifle">
+					<!--Ranges-->
+						<AttackRange>12</AttackRange>
+					
+					<!--Supression-->
+						<Suppression>0.4</Suppression>
+						<SuppressionZoneFull>2</SuppressionZoneFull>
+						<SuppressionZoneZero>3</SuppressionZoneZero>
+
+				</WeaponConfiguration>
+
+		<!--Mechs-->
+			<!--Gunfort|Cannon-->
+			<WeaponConfiguration overrideId="rus_mech_gunfort_cannon">
+				<!--Hitsystem-->
+					<SpreadWidth>6.5</SpreadWidth>
+					<SpreadHeight>3</SpreadHeight>
+
+				<!--Supression-->
+					<Suppression>15</Suppression>
+					<SuppressionZoneFull>1</SuppressionZoneFull>
+					<SuppressionZoneZero>2</SuppressionZoneZero>
+			</WeaponConfiguration>
+	<!--Melee-->
+		<!--Scythe|Melee-->
+		<WeaponConfiguration overrideId="rus_mech_scythe_melee">
+			<!--Supression-->
+				<Suppression>15</Suppression>
+				<SuppressionZoneFull>1</SuppressionZoneFull>
+				<SuppressionZoneZero>2</SuppressionZoneZero>
+			</WeaponConfiguration>
+
+<!--Weapon Systems-->
+	<!--Weapon System Cannon|Cannon System-->
+	<WeaponConfiguration overrideId="com_support_cannon_cannon">
+	<!--Supression-->
+		<Suppression>10</Suppression>
+		<SuppressionZoneFull>1</SuppressionZoneFull>
+		<SuppressionZoneZero>2</SuppressionZoneZero>
+	</WeaponConfiguration>
+
+	<!--Weapon System 88-->
+	<WeaponConfiguration overrideId="com_support_destroyer_cannon">
+	<!--Supression-->
+		<Suppression>15</Suppression>
+		<SuppressionZoneFull>1</SuppressionZoneFull>
+		<SuppressionZoneZero>2</SuppressionZoneZero>
+	</WeaponConfiguration>
+
+<!--Hero Weapons-->
+	<!-- Polania Heroes-->
+		<!--Anna-->
+			<!--Anna|Rifle-->
+			<WeaponConfiguration overrideId="pol_hero_anna_rifle">
+				<!--Supression-->
+					<Suppression>10</Suppression>
+					<SuppressionZoneFull>1</SuppressionZoneFull>
+					<SuppressionZoneZero>2</SuppressionZoneZero>
+			</WeaponConfiguration>
+
+		<!--Cavalry Commander-->
+			<!--Cavalry|Rifle-->
+  			<WeaponConfiguration overrideId="pol_hero_cavalry_rifle">
+				<!--Supression-->
+						<Suppression>3</Suppression>
+						<SuppressionZoneFull>1</SuppressionZoneFull>
+						<SuppressionZoneZero>2</SuppressionZoneZero>
+			</WeaponConfiguration>
+	<!--Saxony-->
+		<!--Gunter-->
+			<!--Gunter|Handgun-->
+			<WeaponConfiguration overrideId="sax_hero_gunter_handgun">
+				<!--Supression-->
+					<Suppression>15</Suppression>
+					<SuppressionZoneFull>1</SuppressionZoneFull>
+					<SuppressionZoneZero>2</SuppressionZoneZero>
+			</WeaponConfiguration>
+		
+		<!--Prince-->
+			<!--Prince|Gatling-->
+			<WeaponConfiguration overrideId="sax_hero_prince_gatling">
+				<!--Supression-->
+					<Suppression>2</Suppression>
+					<SuppressionZoneFull>1</SuppressionZoneFull>
+					<SuppressionZoneZero>2</SuppressionZoneZero>
+        	</WeaponConfiguration>
+
+			<!--Prince|Gatling Sweep-->
+			<WeaponConfiguration overrideId="sax_hero_prince_gatling_sweep">
+				<!--Shot Information-->
+					<AmmoConfigurationId>Prince_GatlingSweepCartridge</AmmoConfigurationId>
+					<Height>2.5</Height>
+					<BurstSize>10</BurstSize>
+					<BurstDelay>3</BurstDelay>
+
+				<!--Splash-->
+					<SplashRadius>2.5</SplashRadius>
+					<SplashAmmoConfigurationId>PrinceSweepSplash</SplashAmmoConfigurationId>
+
+				<!--Hitsystem-->
+					<ConeAngleDegree>20</ConeAngleDegree>
+					<SpreadWidth>1.5</SpreadWidth>
+					<SpreadHeight>1.5</SpreadHeight>
+
+				<!--Cooldowns-->
+				<!--Attention: lowering this value(24) might lead to "skipping" attacks since the used weapon-arm might not be ready to shoot yet-->
+					<Cooldown>480</Cooldown>
+
+				<!--Ranges-->
+					<Range>25</Range>
+					<ProjectileRange>32</ProjectileRange>
+
+				<!--Supression-->
+					<Suppression>20</Suppression>
+					<SuppressionZoneFull>1</SuppressionZoneFull>
+					<SuppressionZoneZero>2</SuppressionZoneZero>
+					
+				<!--Delay-->
+					<AttackDelay>0</AttackDelay>
+					<PostAttackDelay>3</PostAttackDelay>
+
+				<!--Noise-->
+					<ShotNoiseRange>40</ShotNoiseRange>
+					<ImpactNoiseRange>20</ImpactNoiseRange>
+			</WeaponConfiguration>
+
+		<!--Brunhilde-->
+			<!--Brunhilde|Cannon-->
+			<WeaponConfiguration overrideId="sax_hero_brunhilde_cannon">
+				<!--Supression-->
+					<Suppression>20</Suppression>
+					<SuppressionZoneFull>2</SuppressionZoneFull>
+					<SuppressionZoneZero>3</SuppressionZoneZero>
+			</WeaponConfiguration>
+
+			<!--Saxony Brunhilde|ArtillerySkill-->
+			<WeaponConfiguration overrideId="sax_hero_brunhilde_longshot">
+				<!--Supression-->
+					<Suppression>20</Suppression>
+					<SuppressionZoneFull>2</SuppressionZoneFull>
+					<SuppressionZoneZero>3</SuppressionZoneZero>
+			</WeaponConfiguration>
+
+	<!-- Rusviet Heroes-->
+		<!--Olga-->
+			<!--Olga|Rifle-->
+			<WeaponConfiguration overrideId="rus_hero_olga_rifle">
+				<!--Supression-->
+					<Suppression>4</Suppression>
+					<SuppressionZoneFull>1</SuppressionZoneFull>
+					<SuppressionZoneZero>3</SuppressionZoneZero>
+				</WeaponConfiguration>
+
+		<!--Brother-->
+			<!--Brother|Rifle-->
+			<WeaponConfiguration overrideId="rus_hero_brother_rifle">
+				<!--Supression-->
+					<Suppression>5</Suppression>
+					<SuppressionZoneFull>1</SuppressionZoneFull>
+					<SuppressionZoneZero>3</SuppressionZoneZero>
+				</WeaponConfiguration>
+
+			<!--Brother|Melee-->
+			<WeaponConfiguration overrideId="rus_hero_brother_melee">
+				<!--Supression-->
+					<Suppression>10</Suppression>
+					<SuppressionZoneFull>1</SuppressionZoneFull>
+					<SuppressionZoneZero>2</SuppressionZoneZero>
+				</WeaponConfiguration>
+
+		<!--General-->
+			<!--General|Cannon-->
+			<WeaponConfiguration overrideId="rus_hero_general_cannon">
+					<!--Supression-->
+						<Suppression>20</Suppression>
+						<SuppressionZoneFull>2</SuppressionZoneFull>
+						<SuppressionZoneZero>3</SuppressionZoneZero>
+				</WeaponConfiguration>
+			
+			<!--General|Jump-->
+			<WeaponConfiguration overrideId="rus_hero_general_jump">
+				<!--Supression-->
+					<Suppression>15</Suppression>
+					<SuppressionZoneFull>1</SuppressionZoneFull>
+					<SuppressionZoneZero>2</SuppressionZoneZero>
+				</WeaponConfiguration>
+<!--End of File-->	
+</WeaponConfigurations>

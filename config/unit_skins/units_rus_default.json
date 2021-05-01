@@ -1,0 +1,404 @@
+{
+  "Units": [
+    {
+      "UnitID": "rus_hero_brother",
+      "SkinID": "default",
+      "MainPrefabName": "cha_rus_hero_brother.prefab",
+      "RagdollPrefabName": "cha_rus_hero_brother_ragdoll.prefab",
+      "DestroyedPrefabName": "cha_rus_hero_brother_ragdoll.prefab",
+      "AssetBundleFile": "units_rus_default"
+    },
+    {
+      "UnitID": "rus_hero_changa",
+      "SkinID": "default",
+      "MainPrefabName": "cha_rus_hero_changa.prefab",
+      "RagdollPrefabName": "cha_rus_hero_changa_ragdoll.prefab",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_rus_default"
+    },
+    {
+      "UnitID": "rus_hero_olga",
+      "SkinID": "default",
+      "MainPrefabName": "cha_rus_hero_olga.prefab",
+      "RagdollPrefabName": "cha_rus_hero_olga_ragdoll.prefab",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_rus_default"
+    },
+    {
+      "UnitID": "rus_mech_artillery",
+      "SkinID": "default",
+      "MainPrefabName": "cha_rus_mech_artillery.prefab",
+      "RagdollPrefabName": "",
+      "DestroyedPrefabName": "cha_rus_mech_artillery_wreck.prefab",
+      "AssetBundleFile": "units_rus_default"
+    },
+    {
+      "UnitID": "rus_mech_bomber",
+      "SkinID": "default",
+      "MainPrefabName": "cha_rus_mech_bomber.prefab",
+      "RagdollPrefabName": "",
+      "DestroyedPrefabName": "cha_rus_mech_bomber_wreck.prefab",
+      "AssetBundleFile": "units_rus_default"
+    },
+    {
+      "UnitID": "rus_mech_flamer",
+      "SkinID": "default",
+      "MainPrefabName": "cha_rus_mech_flamer.prefab",
+      "RagdollPrefabName": "",
+      "DestroyedPrefabName": "cha_rus_mech_flamer_wreck.prefab",
+      "AssetBundleFile": "units_rus_default"
+    },
+    {
+      "UnitID": "rus_mech_gunfort",
+      "SkinID": "default",
+      "MainPrefabName": "cha_rus_mech_gunfort.prefab",
+      "RagdollPrefabName": "",
+      "DestroyedPrefabName": "cha_rus_mech_gunfort_wreck.prefab",
+      "AssetBundleFile": "units_rus_default"
+    },
+    {
+      "UnitID": "rus_mech_revolver",
+      "SkinID": "default",
+      "MainPrefabName": "cha_rus_mech_revolver.prefab",
+      "RagdollPrefabName": "",
+      "DestroyedPrefabName": "cha_rus_mech_revolver_wreck.prefab",
+      "AssetBundleFile": "units_rus_default"
+    },
+    {
+      "UnitID": "rus_soldier_engineer",
+      "SkinID": "default",
+      "MainPrefabName": "cha_rus_soldier_engineer.prefab",
+      "RagdollPrefabName": "cha_rus_soldier_engineer_ragdoll.prefab",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_rus_default"
+    },
+    {
+      "UnitID": "rus_soldier_mg",
+      "SkinID": "default",
+      "MainPrefabName": "cha_rus_soldier_mg.prefab",
+      "RagdollPrefabName": "cha_rus_soldier_mg_ragdoll.prefab",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_rus_default"
+    },
+    {
+      "UnitID": "rus_structure_ironmine01",
+      "SkinID": "default",
+      "MainPrefabName": "sct_rus_structure_ironmine01.prefab",
+      "RagdollPrefabName": "",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_rus_default"
+    },
+    {
+      "UnitID": "rus_structure_ironmine02",
+      "SkinID": "default",
+      "MainPrefabName": "sct_rus_structure_ironmine02.prefab",
+      "RagdollPrefabName": "",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_rus_default"
+    },
+    {
+      "UnitID": "rus_structure_oilpump01",
+      "SkinID": "default",
+      "MainPrefabName": "sct_rus_structure_oilpump01.prefab",
+      "RagdollPrefabName": "",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_rus_default"
+    },
+    {
+      "UnitID": "rus_structure_oilpump02",
+      "SkinID": "default",
+      "MainPrefabName": "sct_rus_structure_oilpump02.prefab",
+      "RagdollPrefabName": "",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_rus_default"
+    },
+    {
+      "UnitID": "rus_support_mg",
+      "SkinID": "default",
+      "MainPrefabName": "cha_rus_support_mg.prefab",
+      "RagdollPrefabName": "cha_rus_soldier_rifleman_ragdoll.prefab",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_rus_default"
+    },
+    {
+      "UnitID": "rus_support_mortar",
+      "SkinID": "default",
+      "MainPrefabName": "cha_rus_support_mortar.prefab",
+      "RagdollPrefabName": "cha_rus_soldier_rifleman_ragdoll.prefab",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_rus_default"
+    },
+    {
+      "UnitID": "rus_structure_barracks01",
+      "SkinID": "default",
+      "MainPrefabName": "sct_rus_structure_barracks01.prefab",
+      "RagdollPrefabName": "",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_rus_default"
+    },
+    {
+      "UnitID": "rus_structure_barracks02",
+      "SkinID": "default",
+      "MainPrefabName": "sct_rus_structure_barracks02.prefab",
+      "RagdollPrefabName": "",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_rus_default"
+    },
+    {
+      "UnitID": "rus_structure_hq",
+      "SkinID": "default",
+      "MainPrefabName": "sct_rus_structure_hq.prefab",
+      "RagdollPrefabName": "",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_rus_default"
+    },
+    {
+      "UnitID": "rus_structure_workshop01",
+      "SkinID": "default",
+      "MainPrefabName": "sct_rus_structure_workshop01.prefab",
+      "RagdollPrefabName": "",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_rus_default"
+    },
+    {
+      "UnitID": "rus_structure_workshop02",
+      "SkinID": "default",
+      "MainPrefabName": "sct_rus_structure_workshop02.prefab",
+      "RagdollPrefabName": "",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_rus_default"
+    },
+    {
+      "UnitID": "rus_structure_bunkertier01",
+      "SkinID": "default",
+      "MainPrefabName": "sct_rus_structure_bunkertier01.prefab",
+      "RagdollPrefabName": "",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_rus_default"
+    },
+    {
+      "UnitID": "rus_hero_general",
+      "SkinID": "default",
+      "MainPrefabName": "cha_rus_hero_general.prefab",
+      "RagdollPrefabName": "",
+      "DestroyedPrefabName": "cha_rus_hero_general_wreck.prefab",
+      "AssetBundleFile": "units_rus_default"
+    },
+    {
+      "UnitID": "rus_soldier_flamer",
+      "SkinID": "default",
+      "MainPrefabName": "cha_rus_soldier_flamer.prefab",
+      "RagdollPrefabName": "cha_rus_soldier_flamer_ragdoll.prefab",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_rus_default"
+    },
+    {
+      "UnitID": "rus_npc_general",
+      "SkinID": "default",
+      "MainPrefabName": "cha_rus_npc_general.prefab",
+      "RagdollPrefabName": "cha_rus_npc_general_ragdoll.prefab",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_rus_default"
+    },
+    {
+      "UnitID": "rus_soldier_gunner",
+      "SkinID": "default",
+      "MainPrefabName": "cha_rus_soldier_gunner.prefab",
+      "RagdollPrefabName": "cha_rus_soldier_gunner_ragdoll.prefab",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_rus_default"
+    },
+    {
+      "UnitID": "rus_soldier_medic",
+      "SkinID": "default",
+      "MainPrefabName": "cha_rus_soldier_medic.prefab",
+      "RagdollPrefabName": "cha_rus_soldier_medic_ragdoll.prefab",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_rus_default"
+    },
+    {
+      "UnitID": "rus_soldier_grenadier",
+      "SkinID": "default",
+      "MainPrefabName": "cha_rus_soldier_grenadier.prefab",
+      "RagdollPrefabName": "cha_rus_soldier_grenadier_ragdoll.prefab",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_rus_default"
+    },
+    {
+      "UnitID": "rus_soldier_rifleman",
+      "SkinID": "default",
+      "MainPrefabName": "cha_rus_soldier_rifleman.prefab",
+      "RagdollPrefabName": "cha_rus_soldier_rifleman_ragdoll.prefab",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_rus_default"
+    },
+    {
+      "UnitID": "rus_support_destroyer",
+      "SkinID": "default",
+      "MainPrefabName": "cha_rus_support_destroyer.prefab",
+      "RagdollPrefabName": "cha_rus_soldier_rifleman_ragdoll.prefab",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_rus_default"
+    },
+    {
+      "UnitID": "rus_support_cannon",
+      "SkinID": "default",
+      "MainPrefabName": "cha_rus_support_cannon.prefab",
+      "RagdollPrefabName": "cha_rus_soldier_rifleman_ragdoll.prefab",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_rus_default"
+    },
+    {
+      "UnitID": "rus_mech_scythe",
+      "SkinID": "default",
+      "MainPrefabName": "cha_rus_mech_scythe.prefab",
+      "RagdollPrefabName": "",
+      "DestroyedPrefabName": "cha_rus_mech_scythe_wreck.prefab",
+      "AssetBundleFile": "units_rus_default"
+    },
+    {
+      "UnitID": "rus_structure_medicbuilding",
+      "SkinID": "default",
+      "MainPrefabName": "sct_rus_structure_medicbuilding.prefab",
+      "RagdollPrefabName": "",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_rus_default"
+    },
+    {
+      "UnitID": "rus_structure_bunkertier02",
+      "SkinID": "default",
+      "MainPrefabName": "sct_rus_structure_bunkertier02.prefab",
+      "RagdollPrefabName": "",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_rus_default"
+    },
+    {
+      "UnitID": "rus_structure_bunker",
+      "SkinID": "default",
+      "MainPrefabName": "sct_rus_structure_bunker.prefab",
+      "RagdollPrefabName": "",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_rus_default"
+    },
+    {
+      "UnitID": "rus_hero_brotheradult",
+      "SkinID": "default",
+      "MainPrefabName": "cha_rus_hero_brotheradult.prefab",
+      "RagdollPrefabName": "cha_rus_hero_brotheradult_ragdoll.prefab",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_rus_default"
+    },
+    {
+      "UnitID": "rus_hero_olgachanga",
+      "SkinID": "default",
+      "MainPrefabName": "cha_rus_hero_olgachanga.prefab",
+      "RagdollPrefabName": "cha_rus_hero_olgachanga_ragdoll.prefab",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_rus_default"
+    },
+    {
+      "UnitID": "rus_soldier_exo",
+      "SkinID": "default",
+      "MainPrefabName": "cha_rus_soldier_exo.prefab",
+      "RagdollPrefabName": "cha_rus_soldier_exo_ragdoll.prefab",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_rus_default"
+    },
+    {
+      "UnitID": "rus_npc_cityfemale",
+      "SkinID": "default",
+      "MainPrefabName": "cha_rus_npc_cityfemale.prefab",
+      "RagdollPrefabName": "cha_com_npc_cityfemale_ragdoll.prefab",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_rus_default"
+    },
+    {
+      "UnitID": "rus_npc_citymale",
+      "SkinID": "default",
+      "MainPrefabName": "cha_rus_npc_citymale.prefab",
+      "RagdollPrefabName": "cha_com_npc_citymale_ragdoll.prefab",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_rus_default"
+    },
+    {
+      "UnitID": "rus_npc_citymalerifleman",
+      "SkinID": "default",
+      "MainPrefabName": "cha_rus_npc_citymalerifleman.prefab",
+      "RagdollPrefabName": "cha_com_npc_citymale_ragdoll.prefab",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_rus_default"
+    },
+    {
+      "UnitID": "rus_npc_citymalegrenadier",
+      "SkinID": "default",
+      "MainPrefabName": "cha_rus_npc_citymalegrenadier.prefab",
+      "RagdollPrefabName": "cha_com_npc_citymale_ragdoll.prefab",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_rus_default"
+    },
+    {
+      "UnitID": "rus_npc_citymalegunner",
+      "SkinID": "default",
+      "MainPrefabName": "cha_rus_npc_citymalegunner.prefab",
+      "RagdollPrefabName": "cha_com_npc_citymale_ragdoll.prefab",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_rus_default"
+    },
+    {
+      "UnitID": "rus_hero_brotherunarmed",
+      "SkinID": "default",
+      "MainPrefabName": "cha_rus_hero_brotherunarmed.prefab",
+      "RagdollPrefabName": "cha_rus_hero_brotherunarmed_ragdoll.prefab",
+      "DestroyedPrefabName": "cha_rus_hero_brotherunarmed_ragdoll.prefab",
+      "AssetBundleFile": "units_rus_default"
+    },
+    {
+      "UnitID": "rus_npc_farmermale",
+      "SkinID": "default",
+      "MainPrefabName": "cha_rus_npc_farmermale.prefab",
+      "RagdollPrefabName": "cha_com_npc_farmermale_ragdoll.prefab",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_rus_default"
+    },
+    {
+      "UnitID": "rus_npc_farmermalerifleman",
+      "SkinID": "default",
+      "MainPrefabName": "cha_rus_npc_farmermalerifleman.prefab",
+      "RagdollPrefabName": "cha_com_npc_farmermale_ragdoll.prefab",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_rus_default"
+    },
+    {
+      "UnitID": "rus_npc_farmermalegrenadier",
+      "SkinID": "default",
+      "MainPrefabName": "cha_rus_npc_farmermalegrenadier.prefab",
+      "RagdollPrefabName": "cha_com_npc_farmermale_ragdoll.prefab",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_rus_default"
+    },
+    {
+      "UnitID": "rus_npc_farmermalegunner",
+      "SkinID": "default",
+      "MainPrefabName": "cha_rus_npc_farmermalegunner.prefab",
+      "RagdollPrefabName": "cha_com_npc_farmermale_ragdoll.prefab",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_rus_default"
+    },
+    {
+      "UnitID": "rus_hero_tsar",
+      "SkinID": "default",
+      "MainPrefabName": "cha_rus_hero_tsar.prefab",
+      "RagdollPrefabName": "cha_rus_hero_tsar_ragdoll.prefab",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_rus_default"
+    },
+    {
+      "UnitID": "rus_npc_tsar",
+      "SkinID": "default",
+      "MainPrefabName": "cha_rus_npc_tsar.prefab",
+      "RagdollPrefabName": "cha_rus_npc_tsar_ragdoll.prefab",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_rus_default"
+    }
+  ]
+}

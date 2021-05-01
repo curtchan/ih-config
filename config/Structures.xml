@@ -1,0 +1,2823 @@
+<StructureConfigurations>
+
+
+<!--Shape-->
+<!--Conquering-->
+<!--Structure Building-->
+<!--Upgrade Structure-->
+<!--Stats-->
+<!--Resource Production-->
+<!--Unit Building-->
+<!--Repair-->
+<!--Refund-->
+
+
+	<!--Resource Buildings-->				
+		<!--Common Ironmine-->
+			<StructureConfiguration id="com_structure_ironmine" type="default">
+				<!--Shape-->
+					<PlacementShape type="rect" x="-4" y="-4" width="8" height="8" shapeheight="0" />
+					<Shape type="convex"><Vertex x="-3.3" y="3.1" height="0.01" /><Vertex x="-3.33" y="-3.3" height="0.01" /><Vertex x="-3" y="-3.6" height="0.01" /><Vertex x="3.5" y="-3.6" height="0.01" /><Vertex x="3.8" y="-3.2" height="0.01" /><Vertex x="3.8" y="2.9" height="0.01" /><Vertex x="3.5" y="3.33" height="0.01" /><Vertex x="-2.9" y="3.5" height="0.01" /></Shape>
+						
+				<!--Conquering-->
+					<Conquerable>true</Conquerable>
+					<MaxConquerPoints>300</MaxConquerPoints>
+				
+				<!--Structure Building-->
+					<ConstructionPoints>-1</ConstructionPoints>
+						
+				<!--Upgrade Structure-->
+					<UpgradeOptions>
+						<UpgradeOption>
+							<FactionRestricted>true</FactionRestricted>
+							<FactionType>Polania</FactionType>
+							<StructureId>pol_structure_ironmine01</StructureId>
+							<UpgradeDuration>60</UpgradeDuration>
+							<BuildCost>
+								<IronCost>30</IronCost>
+								<OilCost>10</OilCost>								
+								<PopulationCost>0</PopulationCost>
+							</BuildCost>
+						</UpgradeOption>
+						<UpgradeOption>
+							<FactionRestricted>true</FactionRestricted>
+							<FactionType>Saxony</FactionType>
+							<StructureId>sax_structure_ironmine01</StructureId>
+							<UpgradeDuration>60</UpgradeDuration>
+							<BuildCost>
+								<IronCost>30</IronCost>
+								<OilCost>10</OilCost>								
+								<PopulationCost>0</PopulationCost>
+							</BuildCost>
+						</UpgradeOption>
+						<UpgradeOption>
+							<FactionRestricted>true</FactionRestricted>
+							<FactionType>Rusviet</FactionType>
+							<StructureId>rus_structure_ironmine01</StructureId>
+							<UpgradeDuration>60</UpgradeDuration>
+							<BuildCost>
+								<IronCost>30</IronCost>
+								<OilCost>10</OilCost>								
+								<PopulationCost>0</PopulationCost>
+							</BuildCost>
+						</UpgradeOption>
+					</UpgradeOptions>
+						
+				<!--Stats-->
+					<Health>-1</Health>
+					<VisionRadius>15</VisionRadius>
+						
+				<!--Resource Production-->
+					<ResourceProduction>
+						<AdditionalResourceType>Iron</AdditionalResourceType>
+						<IronAmount>0</IronAmount>
+						<GrantToAllies>true</GrantToAllies>
+					</ResourceProduction>
+					
+				<!--Repair-->
+					<RepairCost>
+						<IronCost>0</IronCost>
+						<OilCost>0</OilCost>
+						<BatchSize>1</BatchSize>
+					</RepairCost>
+			</StructureConfiguration>
+		
+		<!--Polania Ironmine 01-->
+			<StructureConfiguration id="pol_structure_ironmine01" type="default">
+				<!--Shape-->
+					<PlacementShape type="rect" x="-4" y="-4" width="8" height="8" shapeheight="0" />
+					<Shape type="convex"><Vertex x="-3.6" y="2.9" height="0.2" /><Vertex x="-3.6" y="-3.2" height="0.2" /><Vertex x="-3.3" y="-3.6" height="0.2" /><Vertex x="3.5" y="-3.6" height="0.2" /><Vertex x="3.8" y="-3.2" height="0.2" /><Vertex x="3.7" y="1.5" height="0.2" /><Vertex x="2.5" y="3.2" height="0.2" /><Vertex x="-2.9" y="3.5" height="0.2" /></Shape>
+						
+				<!--Conquering-->
+					<Conquerable>true</Conquerable>
+					<MaxConquerPoints>300</MaxConquerPoints>
+				
+				<!--Structure Building-->
+					<ConstructionPoints>-1</ConstructionPoints>
+				
+				<!--Upgrade Structure-->
+					<UpgradeOptions>
+						<UpgradeOption>
+							<FactionRestricted>true</FactionRestricted>
+							<FactionType>Polania</FactionType>
+							<StructureId>pol_structure_ironmine02</StructureId>
+							<UpgradeDuration>45</UpgradeDuration>
+							<BuildCost>
+								<IronCost>20</IronCost>
+								<OilCost>60</OilCost>
+								<PopulationCost>0</PopulationCost>
+							</BuildCost>
+						</UpgradeOption>
+						<UpgradeOption>
+							<FactionRestricted>true</FactionRestricted>
+							<FactionType>Saxony</FactionType>
+							<StructureId>sax_structure_ironmine02</StructureId>
+							<UpgradeDuration>45</UpgradeDuration>
+							<BuildCost>
+								<IronCost>20</IronCost>
+								<OilCost>60</OilCost>
+								<PopulationCost>0</PopulationCost>
+							</BuildCost>
+						</UpgradeOption>
+						<UpgradeOption>
+							<FactionRestricted>true</FactionRestricted>
+							<FactionType>Rusviet</FactionType>
+							<StructureId>rus_structure_ironmine02</StructureId>
+							<UpgradeDuration>45</UpgradeDuration>
+							<BuildCost>
+								<IronCost>20</IronCost>
+								<OilCost>60</OilCost>
+								<PopulationCost>0</PopulationCost>
+							</BuildCost>
+						</UpgradeOption>
+					</UpgradeOptions>
+				
+				<!--Stats-->
+					<Health>500</Health>
+					<VisionRadius>40</VisionRadius>
+				
+				<!--Resource Production-->
+					<ResourceProduction>
+						<IronAmount>4</IronAmount>
+						<GrantToAllies>true</GrantToAllies>
+					</ResourceProduction>
+				
+				<!--Repair-->
+					<RepairCost>
+						<IronCost>0</IronCost>
+						<OilCost>0</OilCost>
+						<BatchSize>42</BatchSize>
+					</RepairCost>
+				
+				<!--Refund-->
+					<Refund>
+						<IronCost>50</IronCost>
+						<OilCost>20</OilCost>
+					</Refund>
+					
+					<RubbleConfiguration>com_structure_ironmine</RubbleConfiguration>
+			</StructureConfiguration>
+				
+		<!--Saxony Ironmine 01-->
+			<StructureConfiguration id="sax_structure_ironmine01" type="default" parentId="pol_structure_ironmine01">
+			<Shape type="convex"><Vertex x="-4.3" y="3.6" height="0.2" /><Vertex x="-4.1" y="-3.1" height="0.2" /><Vertex x="-2.9" y="-3.8" height="0.2" /><Vertex x="3.1" y="-3.7" height="0.2" /><Vertex x="3.8" y="-2.8" height="0.2" /><Vertex x="3.6" y="3.7" height="0.2" /><Vertex x="3.3" y="4" height="0.2" /><Vertex x="-4" y="4" height="0.2" /></Shape>
+			<PlacementShape type="rect" x="-4" y="-4" width="8" height="8" shapeheight="0" /></StructureConfiguration>
+		
+		<!--Rusviet Ironmine 01-->
+			<StructureConfiguration id="rus_structure_ironmine01" type="default" parentId="pol_structure_ironmine01">
+			<Shape type="convex"><Vertex x="-3.5" y="3.4" height="0.2" /><Vertex x="-3.4" y="-2" height="0.2" /><Vertex x="-3.1" y="-2.4" height="0.2" /><Vertex x="1" y="-3.9" height="0.2" /><Vertex x="3.1" y="-3.9" height="0.2" /><Vertex x="3.4" y="-3.7" height="0.2" /><Vertex x="3.8" y="3.3" height="0.2" /><Vertex x="3.1" y="3.9" height="0.2" /><Vertex x="-3.2" y="3.7" height="0.2" /></Shape>
+			<PlacementShape type="rect" x="-4" y="-4" width="8" height="8" shapeheight="0" /></StructureConfiguration>
+		
+		<!--Polania Ironmine 02-->
+			<StructureConfiguration id="pol_structure_ironmine02" type="default">
+				<!--Shape-->
+					<PlacementShape type="rect" x="-4" y="-4" width="8" height="8" shapeheight="0" />
+					<Shape type="convex"><Vertex x="-3.7" y="3.4" height="0.2" /><Vertex x="-3.7" y="-3.2" height="0.2" /><Vertex x="-2.5" y="-3.6" height="0.2" /><Vertex x="3.7" y="-3.8" height="0.2" /><Vertex x="4.1" y="-3.4" height="0.2" /><Vertex x="4" y="-1.3" height="0.2" /><Vertex x="3" y="3.6" height="0.2" /><Vertex x="2.1" y="4" height="0.2" /><Vertex x="-3.4" y="3.8" height="0.2" /></Shape>
+					
+				<!--Conquering-->
+					<Conquerable>true</Conquerable>
+					<MaxConquerPoints>300</MaxConquerPoints>
+				
+				<!--Structure Building-->
+					<ConstructionPoints>-1</ConstructionPoints>
+				
+				<!--Stats-->
+					<Health>750</Health>
+					<VisionRadius>40</VisionRadius>
+				
+				<!--Resource Production-->
+					<ResourceProduction>
+						<IronAmount>8</IronAmount>
+						<GrantToAllies>true</GrantToAllies>
+					</ResourceProduction>
+				
+				<!--Repair-->
+					<RepairCost>
+						<IronCost>0</IronCost>
+						<OilCost>0</OilCost>
+						<BatchSize>62</BatchSize>
+					</RepairCost>
+				
+				<!--Refund-->
+					<Refund>
+						<IronCost>60</IronCost>
+						<OilCost>50</OilCost>
+					</Refund>
+					
+					<RubbleConfiguration>com_structure_ironmine</RubbleConfiguration>
+			</StructureConfiguration>
+				
+		<!--Saxony Ironmine 02-->
+			<StructureConfiguration id="sax_structure_ironmine02" type="default" parentId="pol_structure_ironmine02">
+			</StructureConfiguration>
+			
+		<!--Rusviet Ironmine 02-->
+			<StructureConfiguration id="rus_structure_ironmine02" type="default" parentId="pol_structure_ironmine02">
+			<Shape type="convex"><Vertex x="-4" y="3.3" height="0.2" /><Vertex x="-3.9" y="-3" height="0.2" /><Vertex x="-0.33" y="-4" height="0.2" /><Vertex x="3.35" y="-4" height="0.2" /><Vertex x="3.7" y="-3.7" height="0.2" /><Vertex x="4" y="0.1" height="0.2" /><Vertex x="4" y="3.3" height="0.2" /><Vertex x="3.35" y="3.8" height="0.2" /><Vertex x="-3.7" y="3.7" height="0.2" /></Shape>
+			<PlacementShape type="rect" x="-4" y="-4" width="8" height="8" shapeheight="0" /></StructureConfiguration>
+			
+			
+		<!--Common Oilfield-->
+			<StructureConfiguration id="com_structure_oilfield" type="default">
+				<!--Shape-->
+					<PlacementShape type="rect" x="-4" y="-4" width="8" height="8" shapeheight="0" />
+					<Shape type="convex"><Vertex x="-3.5" y="-3.2" height="0.01" /><Vertex x="-3.1" y="-3.5" height="0.01" /><Vertex x="3.4" y="-3.4" height="0.01" /><Vertex x="3.7" y="-3.2" height="0.01" /><Vertex x="3.7" y="2.9" height="0.01" /><Vertex x="3.4" y="3.3" height="0.01" /><Vertex x="-3" y="3.5" height="0.01" /><Vertex x="-3.4" y="3.2" height="0.01" /></Shape>
+					
+				<!--Conquering-->
+					<Conquerable>true</Conquerable>
+					<MaxConquerPoints>300</MaxConquerPoints>
+				
+				<!--Structure Building-->
+					<ConstructionPoints>-1</ConstructionPoints>
+				
+				<!--Upgrade Structure-->
+					<UpgradeOptions>
+						<UpgradeOption>
+							<FactionRestricted>true</FactionRestricted>
+							<FactionType>Polania</FactionType>
+							<StructureId>pol_structure_oilpump01</StructureId>
+							<UpgradeDuration>60</UpgradeDuration>
+							<BuildCost>
+								<IronCost>50</IronCost>
+								<OilCost>5</OilCost>
+								<PopulationCost>0</PopulationCost>
+							</BuildCost>
+						</UpgradeOption>
+						<UpgradeOption>
+							<FactionRestricted>true</FactionRestricted>
+							<FactionType>Saxony</FactionType>
+							<StructureId>sax_structure_oilpump01</StructureId>
+							<UpgradeDuration>60</UpgradeDuration>
+							<BuildCost>
+								<IronCost>50</IronCost>
+								<OilCost>5</OilCost>
+								<PopulationCost>0</PopulationCost>
+							</BuildCost>
+						</UpgradeOption>
+						<UpgradeOption>
+							<FactionRestricted>true</FactionRestricted>
+							<FactionType>Rusviet</FactionType>
+							<StructureId>rus_structure_oilpump01</StructureId>
+							<UpgradeDuration>60</UpgradeDuration>
+							<BuildCost>
+								<IronCost>50</IronCost>
+								<OilCost>5</OilCost>
+								<PopulationCost>0</PopulationCost>
+							</BuildCost>
+						</UpgradeOption>
+					</UpgradeOptions>
+				
+				<!--Stats-->
+					<Health>-1</Health>
+					<VisionRadius>15</VisionRadius>
+				
+				<!--Resource Production-->
+					<ResourceProduction>
+						<AdditionalResourceType>Oil</AdditionalResourceType>
+						<OilAmount>0</OilAmount>
+						<GrantToAllies>true</GrantToAllies>
+					</ResourceProduction>
+				
+				<!--Repair-->
+					<RepairCost>
+						<IronCost>0</IronCost>
+						<OilCost>0</OilCost>
+						<BatchSize>1</BatchSize>
+					</RepairCost>
+			</StructureConfiguration>
+				
+		<!--Polania Oilpump 01-->
+			<StructureConfiguration id="pol_structure_oilpump01" type="default">
+				<!--Shape-->
+					<PlacementShape type="rect" x="-4" y="-4" width="8" height="8" shapeheight="0" />
+					<Shape type="convex"><Vertex x="-3.4" y="-1.8" height="0.2" /><Vertex x="-2.7" y="-3.5" height="0.2" /><Vertex x="2.75" y="-3.6" height="0.2" /><Vertex x="3.8" y="-2.4" height="0.2" /><Vertex x="3.5" y="3.1" height="0.2" /><Vertex x="3" y="3.66" height="0.2" /><Vertex x="-2" y="3.2" height="0.2" /><Vertex x="-3.4" y="2.7" height="0.2" /></Shape>
+				
+				<!--Conquering-->
+					<Conquerable>true</Conquerable>
+					<MaxConquerPoints>300</MaxConquerPoints>
+				
+				<!--Structure Building-->
+					<ConstructionPoints>-1</ConstructionPoints>
+				
+				<!--Upgrade Structure-->
+					<UpgradeOptions>
+						<UpgradeOption>
+							<FactionRestricted>true</FactionRestricted>
+							<FactionType>Polania</FactionType>
+							<StructureId>pol_structure_oilpump02</StructureId>
+							<UpgradeDuration>45</UpgradeDuration>
+							<BuildCost>
+								<IronCost>250</IronCost>
+								<OilCost>10</OilCost>
+								<PopulationCost>0</PopulationCost>
+							</BuildCost>
+						</UpgradeOption>
+						<UpgradeOption>
+							<FactionRestricted>true</FactionRestricted>
+							<FactionType>Saxony</FactionType>
+							<StructureId>sax_structure_oilpump02</StructureId>
+							<UpgradeDuration>45</UpgradeDuration>
+							<BuildCost>
+								<IronCost>250</IronCost>
+								<OilCost>10</OilCost>
+								<PopulationCost>0</PopulationCost>
+							</BuildCost>
+						</UpgradeOption>
+						<UpgradeOption>
+							<FactionRestricted>true</FactionRestricted>
+							<FactionType>Rusviet</FactionType>
+							<StructureId>rus_structure_oilpump02</StructureId>
+							<UpgradeDuration>45</UpgradeDuration>
+							<BuildCost>
+								<IronCost>250</IronCost>
+								<OilCost>10</OilCost>
+								<PopulationCost>0</PopulationCost>
+							</BuildCost>
+						</UpgradeOption>
+					</UpgradeOptions>
+				
+				<!--Stats-->
+					<Health>500</Health>
+					<VisionRadius>40</VisionRadius>
+				
+				<!--Resource Production-->
+					<ResourceProduction>
+						<OilAmount>1</OilAmount>
+						<GrantToAllies>true</GrantToAllies>
+					</ResourceProduction>
+			
+				<!--Repair-->
+					<RepairCost>
+						<IronCost>0</IronCost>
+						<OilCost>0</OilCost>
+						<BatchSize>42</BatchSize>
+					</RepairCost>
+			
+				<!--Refund-->
+					<Refund>
+						<IronCost>110</IronCost>
+						<OilCost>10</OilCost>
+					</Refund>
+					
+					<RubbleConfiguration>com_structure_oilfield</RubbleConfiguration>
+			</StructureConfiguration>
+			
+		<!--Saxony Oilpump 01-->
+			<StructureConfiguration id="sax_structure_oilpump01" type="default" parentId="pol_structure_oilpump01">
+				<Shape type="convex"><Vertex x="-3.8" y="3.5" height="0.2" /><Vertex x="-4" y="-3.3" height="0.2" /><Vertex x="-3.6" y="-3.9" height="0.2" /><Vertex x="3.4" y="-3.9" height="0.2" /><Vertex x="4" y="-3.6" height="0.2" /><Vertex x="4" y="-1.4" height="0.2" /><Vertex x="3.7" y="3.2" height="0.2" /><Vertex x="3.5" y="3.6" height="0.2" /><Vertex x="1.3" y="3.8" height="0.2" /><Vertex x="-3.3" y="3.8" height="0.2" /></Shape>
+				<PlacementShape type="rect" x="-4" y="-4" width="8" height="8" shapeheight="0" />
+			</StructureConfiguration>
+			
+		<!--Rusviet Oilpump 01-->
+			<StructureConfiguration id="rus_structure_oilpump01" type="default" parentId="pol_structure_oilpump01">
+			<Shape type="convex"><Vertex x="-4.2" y="0.7" height="0.2" /><Vertex x="-3.5" y="-3.2" height="0.2" /><Vertex x="-3.25" y="-3.4" height="0.2" /><Vertex x="2.5" y="-4" height="0.2" /><Vertex x="4" y="-2.5" height="0.2" /><Vertex x="4" y="3.3" height="0.2" /><Vertex x="2.6" y="3.9" height="0.2" /><Vertex x="-3.9" y="4" height="0.2" /><Vertex x="-4.2" y="3.7" height="0.2" /></Shape>
+			<PlacementShape type="rect" x="-4" y="-4" width="8" height="8" shapeheight="0" /></StructureConfiguration>
+			
+		<!--Polania Oilpump 02-->
+			<StructureConfiguration id="pol_structure_oilpump02" type="default">
+				<!--Shape-->
+					<PlacementShape type="rect" x="-4" y="-4" width="8" height="8" shapeheight="0" />
+					<Shape type="convex"><Vertex x="-3.4" y="-3.2" height="0.2" /><Vertex x="-3" y="-3.7" height="0.2" /><Vertex x="2.6" y="-3.6" height="0.2" /><Vertex x="4" y="-2.3" height="0.2" /><Vertex x="3.1" y="3.8" height="0.2" /><Vertex x="-1.8" y="3.6" height="0.2" /><Vertex x="-4" y="0.6" height="0.2" /><Vertex x="-4" y="-1.1" height="0.2" /></Shape>
+				<!--Conquering-->
+					<Conquerable>true</Conquerable>
+					<MaxConquerPoints>300</MaxConquerPoints>
+				<!--Structure Building-->
+					<ConstructionPoints>-1</ConstructionPoints>
+				<!--Upgrade Structure-->
+				<!--Stats-->
+					<Health>750</Health>
+					<VisionRadius>40</VisionRadius>
+				<!--Resource Production-->
+					<ResourceProduction>
+						<OilAmount>3</OilAmount>
+						<GrantToAllies>true</GrantToAllies>
+					</ResourceProduction>
+				<!--Unit Building-->
+				<!--Repair-->
+					<RepairCost>
+						<IronCost>0</IronCost>
+						<OilCost>0</OilCost>
+						<BatchSize>62</BatchSize>
+					</RepairCost>
+				<!--Refund-->
+					<Refund>
+						<IronCost>200</IronCost>
+						<OilCost>10</OilCost>
+					</Refund>
+					
+					<RubbleConfiguration>com_structure_oilfield</RubbleConfiguration>
+			</StructureConfiguration>	
+
+		<!--Saxony Oilpump 02-->
+			<StructureConfiguration id="sax_structure_oilpump02" type="default" parentId="pol_structure_oilpump02">
+				<Shape type="convex"><Vertex x="-3.8" y="3.5" height="0.2" /><Vertex x="-4" y="-3.3" height="0.2" /><Vertex x="-3.6" y="-3.9" height="0.2" /><Vertex x="3.4" y="-3.9" height="0.2"/><Vertex x="4" y="-3.6" height="0.2" /><Vertex x="4" y="-1.4" height="0.2" /><Vertex x="3.7" y="3.2" height="0.2" /><Vertex x="3.5" y="3.6" height="0.2" /><Vertex x="1.3" y="3.8" height="0.2" /><Vertex x="-3.3" y="3.8" height="0.2" /></Shape>
+				<PlacementShape type="rect" x="-4" y="-4" width="8" height="8" shapeheight="0" />
+			</StructureConfiguration>
+				
+		<!--Rusviet Oilpump 02-->
+			<StructureConfiguration id="rus_structure_oilpump02" type="default" parentId="pol_structure_oilpump02">
+			<Shape type="convex"><Vertex x="-3.589167" y="-3.877847" height="0.2" /><Vertex x="2.5016" y="-3.889167" height="0.2" /><Vertex x="3.939932" y="-3.584236" height="0.2" /><Vertex x="3.889651" y="3.422293" height="0.2" /><Vertex x="3.604445" y="3.595069" height="0.2" /><Vertex x="2.431319" y="3.960104" height="0.2" /><Vertex x="-3.802014" y="4.025625" height="0.2" /><Vertex x="-4.047291" y="3.784307" height="0.2" /><Vertex x="-3.858124" y="-3.637986" height="0.2" /></Shape>
+			<PlacementShape type="rect" x="-4" y="-4" width="8" height="8" shapeheight="0" /></StructureConfiguration>
+				
+	<!--Base Buildings-->
+		<!--Polania Headquarter-->			
+			<StructureConfiguration id="pol_structure_hq" type="defaultproduction">
+				<!--Shape-->
+					<PlacementShape type="rect" x="-6.5" y="-8" width="13" height="16" shapeheight="0" />
+					<Shape type="convex"><Vertex x="-6.1" y="-0.1" height="0.2" /><Vertex x="2.8" y="-7.5" height="0.2" /><Vertex x="6" y="-7.5" height="0.2" /><Vertex x="6.2" y="-7.3" height="0.2" /><Vertex x="6.1" y="7.6" height="0.2" /><Vertex x="5.8" y="7.8" height="0.2" /><Vertex x="-5.6" y="8" height="0.2" /><Vertex x="-6" y="7.5" height="0.2" /></Shape>
+				
+				<!--Structure Building-->
+					<BuildCost>
+						<IronCost>250</IronCost>
+						<OilCost>0</OilCost>
+						<PopulationCost>0</PopulationCost>
+					</BuildCost>
+					<ConstructionPoints>500</ConstructionPoints>
+				
+				<!--Stats-->
+					<Health>1000</Health>
+					<VisionRadius>40</VisionRadius>
+				
+				<!--Resource Production-->
+					<ResourceProduction>
+						<IronAmount>14</IronAmount>
+						<OilAmount>3</OilAmount>
+						<GrantToAllies>false</GrantToAllies>
+						<IgnoreMapProductionMultiplier>true</IgnoreMapProductionMultiplier>
+					</ResourceProduction>
+				
+				<!--Unit Building-->
+					<BuildOptions>
+						<UnitBuildOption>
+							<UnitId>pol_soldier_engineer</UnitId>
+							<BuildDuration>40</BuildDuration>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>pol_soldier_rifleman</UnitId>
+							<BuildDuration>40</BuildDuration>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>pol_hero_anna</UnitId>
+							<BuildDuration>30</BuildDuration>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>pol_hero_cavalry</UnitId>
+							<BuildDuration>30</BuildDuration>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>pol_hero_rebel</UnitId>
+							<BuildDuration>30</BuildDuration>
+						</UnitBuildOption>
+						<ReserveBuildOption>
+							<Phase>1</Phase>
+							<BuildDuration>30</BuildDuration>
+						</ReserveBuildOption>
+						<ReserveBuildOption>
+							<Phase>2</Phase>
+							<BuildDuration>30</BuildDuration>
+						</ReserveBuildOption>
+					</BuildOptions>
+					<ReinforceOptions>
+						<UnitBuildOption>
+							<UnitId>pol_soldier_engineer</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>pol_soldier_medic</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>pol_soldier_rifleman</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>pol_soldier_grenadier</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>pol_soldier_gunner</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>pol_soldier_flamer</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>pol_soldier_mg</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>pol_hero_anna</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>pol_hero_wojtek</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>com_support_cannon</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>com_support_mg</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>com_support_mortar</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>pol_soldier_exo</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>pol_mech_spider</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>pol_mech_recon</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>pol_mech_artillery</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>pol_mech_stinger</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>pol_mech_trooptransport</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>pol_mech_gunfort</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>pol_hero_rebel</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>pol_hero_cavalry</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>pol_soldier_cavalry</UnitId>
+						</UnitBuildOption>	
+					</ReinforceOptions>
+					<RallyPoint x="-6" y="-8" />
+				
+				<!--Repair-->
+					<RepairCost>
+						<IronCost>5</IronCost>
+						<OilCost>0</OilCost>
+						<BatchSize>50</BatchSize>
+					</RepairCost>
+				
+				<!--Refund-->
+					<Refund>
+						<IronCost>250</IronCost>
+						<OilCost>0</OilCost>
+					</Refund>
+			</StructureConfiguration>
+			
+		<!--Saxony Headquarter-->
+			<StructureConfiguration id="sax_structure_hq" type="defaultproduction">
+				<!--Shape-->
+					<PlacementShape type="rect" x="-6.5" y="-8" width="13" height="16" shapeheight="0" />
+					<Shape type="convex"><Vertex x="-4.75" y="7" height="0.2" /><Vertex x="-6.2" y="5.3" height="0.2" /><Vertex x="-6.2" y="1.5" height="0.2" /><Vertex x="0.5" y="-4.9" height="0.2" /><Vertex x="6.1" y="-4.9" height="0.2" /><Vertex x="6.5" y="-4.6" height="0.2" /><Vertex x="6.25" y="4.4" height="0.2" /><Vertex x="3.9" y="7" height="0.2" /></Shape>
+			
+				<!--Structure Building-->
+					<BuildCost>
+						<IronCost>250</IronCost>
+						<OilCost>0</OilCost>
+						<PopulationCost>0</PopulationCost>
+					</BuildCost>
+					<ConstructionPoints>500</ConstructionPoints>
+			
+				<!--Stats-->
+					<Health>1000</Health>
+					<VisionRadius>40</VisionRadius>
+			
+				<!--Resource Production-->
+					<ResourceProduction>
+						<IronAmount>14</IronAmount>
+						<OilAmount>3</OilAmount>
+						<GrantToAllies>false</GrantToAllies>
+						<IgnoreMapProductionMultiplier>true</IgnoreMapProductionMultiplier>
+					</ResourceProduction>
+
+				<!--Unit Building-->
+					<BuildOptions>
+						<UnitBuildOption>
+							<UnitId>sax_soldier_engineer</UnitId>
+							<BuildDuration>40</BuildDuration>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>sax_soldier_rifleman</UnitId>
+							<BuildDuration>40</BuildDuration>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>sax_hero_gunter</UnitId>
+							<BuildDuration>30</BuildDuration>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>sax_hero_prince</UnitId>
+							<BuildDuration>30</BuildDuration>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>sax_hero_brunhilde</UnitId>
+							<BuildDuration>30</BuildDuration>
+						</UnitBuildOption>
+						<ReserveBuildOption>
+							<Phase>1</Phase>
+							<BuildDuration>30</BuildDuration>
+						</ReserveBuildOption>
+						<ReserveBuildOption>
+							<Phase>2</Phase>
+							<BuildDuration>30</BuildDuration>
+						</ReserveBuildOption>
+					</BuildOptions>
+					<ReinforceOptions>
+						<UnitBuildOption>
+							<UnitId>sax_soldier_engineer</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>sax_soldier_medic</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>sax_soldier_rifleman</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>sax_soldier_grenadier</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>sax_soldier_gunner</UnitId>
+						</UnitBuildOption>						
+						<UnitBuildOption>
+							<UnitId>sax_soldier_flamer</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>sax_soldier_mg</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>sax_hero_gunter</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>com_support_mg</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>com_support_cannon</UnitId>
+						</UnitBuildOption>						
+						<UnitBuildOption>
+							<UnitId>com_support_mortar</UnitId>
+						</UnitBuildOption>		
+						<UnitBuildOption>
+							<UnitId>com_support_cannon</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>com_support_mg</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>com_support_mortar</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>sax_soldier_mortar</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>sax_mech_gatling</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>sax_mech_tank</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>sax_mech_artillery</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>sax_mech_mother</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>sax_mech_dachs</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>sax_mech_gunfort</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>sax_hero_gunter</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>sax_hero_prince</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>sax_hero_brunhilde</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>sax_hero_brunhildegunter</UnitId>
+						</UnitBuildOption>	
+						<UnitBuildOption>
+							<UnitId>rus_hero_olga</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_hero_olgachanga</UnitId>
+						</UnitBuildOption>
+					</ReinforceOptions>
+					<RallyPoint x="-6" y="-8" />
+					
+				<!--Repair-->
+					<RepairCost>
+						<IronCost>5</IronCost>
+						<OilCost>0</OilCost>
+						<BatchSize>50</BatchSize>
+					</RepairCost>
+				
+				<!--Refund-->
+					<Refund>
+						<IronCost>250</IronCost>
+						<OilCost>0</OilCost>
+					</Refund>
+			</StructureConfiguration>
+				
+		<!--Rusviet Headquarter-->
+			<StructureConfiguration id="rus_structure_hq" type="defaultproduction">
+				<!--Shape-->
+					<PlacementShape type="rect" x="-6.5" y="-8" width="13" height="16" shapeheight="0" />
+					<Shape type="convex"><Vertex x="-6" y="-0.5" height="0.2" /><Vertex x="1.4" y="-6" height="0.2" /><Vertex x="5.5" y="-6" height="0.2" /><Vertex x="6" y="-5.5" height="0.2" /><Vertex x="6" y="6.3" height="0.2" /><Vertex x="5.5" y="6.8" height="0.2" /><Vertex x="-5.5" y="6.7" height="0.2" /><Vertex x="-6" y="6.2" height="0.2" /></Shape>
+			
+				<!--Structure Building-->
+					<BuildCost>
+						<IronCost>250</IronCost>
+						<OilCost>0</OilCost>
+						<PopulationCost>0</PopulationCost>
+					</BuildCost>
+					<ConstructionPoints>500</ConstructionPoints>
+			
+				<!--Stats-->
+					<Health>1000</Health>
+					<VisionRadius>40</VisionRadius>
+			
+				<!--Resource Production-->
+					<ResourceProduction>
+						<IronAmount>14</IronAmount>
+						<OilAmount>3</OilAmount>
+						<GrantToAllies>false</GrantToAllies>
+						<IgnoreMapProductionMultiplier>true</IgnoreMapProductionMultiplier>
+					</ResourceProduction>
+
+				<!--Unit Building-->
+					<BuildOptions>
+						<UnitBuildOption>
+							<UnitId>rus_soldier_engineer</UnitId>
+							<BuildDuration>40</BuildDuration>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_soldier_rifleman</UnitId>
+							<BuildDuration>40</BuildDuration>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_hero_olga</UnitId>
+							<BuildDuration>30</BuildDuration>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_hero_brother</UnitId>
+							<BuildDuration>30</BuildDuration>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_hero_general</UnitId>
+							<BuildDuration>30</BuildDuration>
+						</UnitBuildOption>
+						<ReserveBuildOption>
+							<Phase>1</Phase>
+							<BuildDuration>30</BuildDuration>
+						</ReserveBuildOption>
+						<ReserveBuildOption>
+							<Phase>2</Phase>
+							<BuildDuration>30</BuildDuration>
+						</ReserveBuildOption>
+					</BuildOptions>
+					<ReinforceOptions>
+						<UnitBuildOption>
+							<UnitId>rus_soldier_engineer</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_soldier_medic</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_soldier_rifleman</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_soldier_grenadier</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_soldier_gunner</UnitId>
+						</UnitBuildOption>						
+						<UnitBuildOption>
+							<UnitId>rus_soldier_flamer</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_soldier_mg</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_hero_olga</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_hero_olgachanga</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>com_support_mg</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>com_support_cannon</UnitId>
+						</UnitBuildOption>						
+						<UnitBuildOption>
+							<UnitId>com_support_mortar</UnitId>
+						</UnitBuildOption>		
+						<UnitBuildOption>
+							<UnitId>com_support_cannon</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>com_support_mg</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>com_support_mortar</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_soldier_exo</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_mech_flamer</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_mech_bomber</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_mech_artillery</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_mech_revolver</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_mech_scythe</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_mech_gunfort</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_hero_general</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_hero_brother</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_npc_farmermalerifleman</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_npc_farmermalegrenadier</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_npc_farmermalegunner</UnitId>
+						</UnitBuildOption>	
+						<UnitBuildOption>
+							<UnitId>rus_hero_tsar</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_npc_tsar</UnitId>
+						</UnitBuildOption>
+					</ReinforceOptions>
+					<RallyPoint x="-6" y="-8" />
+					
+				<!--Repair-->
+					<RepairCost>
+						<IronCost>5</IronCost>
+						<OilCost>0</OilCost>
+						<BatchSize>50</BatchSize>
+					</RepairCost>
+				
+				<!--Refund-->
+					<Refund>
+						<IronCost>250</IronCost>
+						<OilCost>0</OilCost>
+					</Refund>
+			</StructureConfiguration>
+				
+		<!--Polania Headquarter Rubble-->
+			<StructureConfiguration id="pol_structure_hq_rubble" type="rubble">
+				<!--Shape-->
+					<PlacementShape type="rect" x="-7" y="-8" width="14" height="16" shapeheight="0" />
+					<Shape type="convex"><Vertex x="-6.5" y="-7.5" height="0.01" /><Vertex x="-6.1" y="-7.9" height="0.01" /><Vertex x="6.1" y="-7.9" height="0.01" /><Vertex x="6.5" y="-7.5" height="0.01" /><Vertex x="6.5" y="7.5" height="0.01" /><Vertex x="6.1" y="7.9" height="0.01" /><Vertex x="-6.1" y="7.9" height="0.01" /><Vertex x="-6.5" y="7.5" height="0.01" /></Shape>
+				<!--Structure Building-->
+					<ConstructionPoints>0</ConstructionPoints>
+				<!--Stats-->
+					<Health>10</Health>
+			</StructureConfiguration>	
+		
+	<!--Fortifications-->
+	
+		<!-- Polania Bunkers -->
+			<StructureConfiguration id="pol_structure_bunker" type="default">
+				<!--Shape-->
+					<PlacementShape type="rect" x="-3" y="-3" width="6" height="6" shapeheight="0" />
+					<Shape type="convex"><Vertex x="-2.7" y="-2.5" height="0.2" /><Vertex x="-2.3" y="-2.9" height="0.2" /><Vertex x="2.25" y="-2.9" height="0.2" /><Vertex x="2.5" y="-2.5" height="0.2" /><Vertex x="2.5" y="2.5" height="0.2" /><Vertex x="2.25" y="2.9" height="0.2" /><Vertex x="-2.25" y="2.8" height="0.2" /><Vertex x="-2.6" y="2.5" height="0.2" /></Shape>
+				
+				<!--Structure Building-->
+				<BuildCost>
+					<IronCost>200</IronCost>
+					<OilCost>15</OilCost>
+					<PopulationCost>1</PopulationCost>
+				</BuildCost>
+				<ConstructionPoints>400</ConstructionPoints>
+				<ConstructionExperience>0</ConstructionExperience>					
+				<RestrictToBuildArea>false</RestrictToBuildArea>
+			
+				<!--Repair-->
+				<RepairCost>
+					<IronCost>3</IronCost>
+					<OilCost>0</OilCost>
+					<BatchSize>20</BatchSize>
+				</RepairCost>
+			
+				<!--Refund-->	
+				<Refund>
+					<IronCost>60</IronCost>
+					<OilCost>5</OilCost>
+				</Refund>
+				
+				<!--Stats-->
+				<Health>350</Health>
+				<VisionRadius>50</VisionRadius>
+				<Bunker coneAngle="360" />
+				
+				<!--Upgrade Structure-->
+				<UpgradeOptions>
+					<UpgradeOption>
+						<FactionType>Polania</FactionType>
+						<StructureId>pol_structure_bunkertier01</StructureId>
+						<UpgradeDuration>45</UpgradeDuration>
+						<BuildCost>
+							<IronCost>200</IronCost>
+							<OilCost>30</OilCost>
+							<PopulationCost>0</PopulationCost>
+						</BuildCost>
+					</UpgradeOption>
+				</UpgradeOptions>
+			</StructureConfiguration>
+			
+			<StructureConfiguration id="pol_structure_bunkertier01" type="default">
+				<!--Shape-->
+					<PlacementShape type="rect" x="-3" y="-3" width="6" height="6" shapeheight="0" />
+					<Shape type="convex"><Vertex x="-2.7" y="-2.5" height="0.2" /><Vertex x="-2.3" y="-2.9" height="0.2" /><Vertex x="2.25" y="-2.9" height="0.2" /><Vertex x="2.5" y="-2.5" height="0.2" /><Vertex x="2.5" y="2.5" height="0.2" /><Vertex x="2.25" y="2.9" height="0.2" /><Vertex x="-2.25" y="2.8" height="0.2" /><Vertex x="-2.6" y="2.5" height="0.2" /></Shape>
+				
+				<!--Structure Building-->
+					<BuildCost>
+						<IronCost>350</IronCost>
+						<OilCost>30</OilCost>
+						<PopulationCost>1</PopulationCost>
+					</BuildCost>
+					<ConstructionPoints>400</ConstructionPoints>
+					<ConstructionExperience>0</ConstructionExperience>					
+					<RestrictToBuildArea>false</RestrictToBuildArea>
+				
+				<!--Stats-->
+					<Health>350</Health>
+					<VisionRadius>55</VisionRadius>
+					<Bunker coneAngle="360" />
+					<WeaponModule>
+						<WeaponId>pol_structure_t1bunker</WeaponId>
+						<Direction x="0" y="-1" />
+						<Angle>35</Angle><!--Take special care! This angle is effectively doubled and determines the firing cone. Make sure that this value times 2 matches the weapon's coneAngleDegree-->
+					</WeaponModule>
+								
+				<!--Repair-->
+					<RepairCost>
+						<IronCost>5</IronCost>
+						<OilCost>0</OilCost>
+						<BatchSize>25</BatchSize>
+					</RepairCost>
+				
+				<!--Refund-->	
+					<Refund>
+						<IronCost>150</IronCost>
+						<OilCost>15</OilCost>
+					</Refund>
+
+				<!--Upgrade Structure-->
+					<UpgradeOptions>
+						<UpgradeOption>
+							<FactionType>Polania</FactionType>
+							<StructureId>pol_structure_bunkertier02</StructureId>
+							<UpgradeDuration>45</UpgradeDuration>
+							<BuildCost>
+								<IronCost>250</IronCost>
+								<OilCost>40</OilCost>
+								<PopulationCost>0</PopulationCost>
+							</BuildCost>
+							<CanShootDuringUpgrade>false</CanShootDuringUpgrade>
+						</UpgradeOption>
+					</UpgradeOptions>
+			</StructureConfiguration>
+			
+			<StructureConfiguration id="pol_structure_bunkertier02" type="default">
+				<!--Shape-->
+					<PlacementShape type="rect" x="-3" y="-3" width="6" height="6" shapeheight="0" />
+					<Shape type="convex"><Vertex x="-2.7" y="-2.5" height="0.2" /><Vertex x="-2.3" y="-2.9" height="0.2" /><Vertex x="2.25" y="-2.9" height="0.2" /><Vertex x="2.5" y="-2.5" height="0.2" /><Vertex x="2.5" y="2.5" height="0.2" /><Vertex x="2.25" y="2.9" height="0.2" /><Vertex x="-2.25" y="2.8" height="0.2" /><Vertex x="-2.6" y="2.5" height="0.2" /></Shape>
+				
+				<!--Structure Building-->
+					<BuildCost>
+						<IronCost>450</IronCost>
+						<OilCost>50</OilCost>
+						<PopulationCost>1</PopulationCost>
+					</BuildCost>
+					<ConstructionPoints>400</ConstructionPoints>
+					<RestrictToBuildArea>false</RestrictToBuildArea>
+				
+				<!--Stats-->
+					<Health>550</Health>
+					<VisionRadius>60</VisionRadius>
+					<Bunker coneAngle="360" />
+					<WeaponModule>
+						<WeaponId>pol_structure_t2bunker</WeaponId>
+						<Direction x="0" y="-1" />
+						<Angle>30</Angle><!--Take special care! This angle is effectively doubled and determines the firing cone. Make sure that this value times 2 matches the weapon's coneAngleDegree-->
+					</WeaponModule>
+								
+				<!--Repair-->
+					<RepairCost>
+						<IronCost>7</IronCost>
+						<OilCost>1</OilCost>
+						<BatchSize>35</BatchSize>
+					</RepairCost>
+				
+				<!--Refund-->	
+					<Refund>
+						<IronCost>250</IronCost>
+						<OilCost>30</OilCost>
+					</Refund>
+			</StructureConfiguration>
+			
+		<!-- Rusviet Bunkers -->
+			<StructureConfiguration id="rus_structure_bunker" parentId="pol_structure_bunker" type="default">			
+				<!--Shape-->
+					<PlacementShape type="rect" x="-3" y="-3" width="6" height="6" shapeheight="0" />
+					<Shape type="convex"><Vertex x="-2" y="-1.2" height="0.2" /><Vertex x="0" y="-2.6" height="0.2" /><Vertex x="2" y="-1.2" height="0.2" /><Vertex x="2" y="1" height="0.2" /><Vertex x="0.8" y="2.9" height="0.2" /><Vertex x="-0.8" y="2.9" height="0.2" /><Vertex x="-2" y="1" height="0.2" /></Shape>
+				
+				<!--Stats-->
+					<Health>300</Health>
+					<VisionRadius>40</VisionRadius>
+					<Bunker coneAngle="180" />
+
+				<!--Structure Building-->
+				<BuildCost>
+					<IronCost>200</IronCost>
+					<OilCost>30</OilCost>
+					<PopulationCost>1</PopulationCost>
+				</BuildCost>
+
+				<!--Upgrade Structure-->
+					<UpgradeOptions>
+						<UpgradeOption>
+							<FactionType>Rusviet</FactionType>
+							<StructureId>rus_structure_bunkertier01</StructureId>
+							<UpgradeDuration>45</UpgradeDuration>
+							<BuildCost>
+								<IronCost>200</IronCost>
+								<OilCost>35</OilCost>
+								<PopulationCost>0</PopulationCost>
+							</BuildCost>
+						</UpgradeOption>
+					</UpgradeOptions>
+			</StructureConfiguration>
+			
+			<StructureConfiguration id="rus_structure_bunkertier01" parentId="pol_structure_bunkertier01" type="default">
+				<!--Shape-->
+					<PlacementShape type="rect" x="-3" y="-3" width="6" height="6" shapeheight="0" />
+					<Shape type="convex"><Vertex x="-2.7" y="-2.5" height="0.2" /><Vertex x="-2.3" y="-2.9" height="0.2" /><Vertex x="2.25" y="-2.9" height="0.2" /><Vertex x="2.5" y="-2.5" height="0.2" /><Vertex x="2.5" y="2.5" height="0.2" /><Vertex x="2.25" y="2.9" height="0.2" /><Vertex x="-2.25" y="2.8" height="0.2" /><Vertex x="-2.6" y="2.5" height="0.2" /></Shape>
+				
+				<!--Stats-->
+					<Health>550</Health>
+					<VisionRadius>40</VisionRadius>
+					<Bunker coneAngle="180" />
+					<WeaponModule>
+						<WeaponId>rus_structure_t1bunker</WeaponId>
+						<Direction x="0" y="-1" />
+						<Angle>60</Angle><!--Take special care! This angle is effectively doubled and determines the firing cone. Make sure that this value times 2 matches the weapon's coneAngleDegree-->
+					</WeaponModule>
+
+				<!--Structure Building-->
+				<BuildCost>
+					<IronCost>400</IronCost>
+					<OilCost>50</OilCost>
+					<PopulationCost>1</PopulationCost>
+				</BuildCost>
+				
+				<!--Upgrade Structure-->
+					<UpgradeOptions>
+						<UpgradeOption>
+							<FactionType>Rusviet</FactionType>
+							<StructureId>rus_structure_bunkertier02</StructureId>
+							<UpgradeDuration>45</UpgradeDuration>
+							<BuildCost>
+								<IronCost>300</IronCost>
+								<OilCost>70</OilCost>
+								<PopulationCost>0</PopulationCost>
+							</BuildCost>
+							<CanShootDuringUpgrade>false</CanShootDuringUpgrade>
+						</UpgradeOption>
+					</UpgradeOptions>
+			</StructureConfiguration>
+			
+			<StructureConfiguration id="rus_structure_bunkertier02" parentId="pol_structure_bunkertier02" type="default">
+				<!--Shape-->
+					<PlacementShape type="rect" x="-3" y="-3" width="6" height="6" shapeheight="0" />
+					<Shape type="convex"><Vertex x="-2.7" y="-2.5" height="0.2" /><Vertex x="-2.3" y="-2.9" height="0.2" /><Vertex x="2.25" y="-2.9" height="0.2" /><Vertex x="2.5" y="-2.5" height="0.2" /><Vertex x="2.5" y="2.5" height="0.2" /><Vertex x="2.25" y="2.9" height="0.2" /><Vertex x="-2.25" y="2.8" height="0.2" /><Vertex x="-2.6" y="2.5" height="0.2" /></Shape>
+				
+				<!--Stats-->
+					<Health>750</Health>
+					<VisionRadius>40</VisionRadius>
+					<Bunker coneAngle="180" />
+					<WeaponModule>
+						<WeaponId>rus_structure_t2bunker</WeaponId>
+						<Direction x="0" y="-1" />
+						<Angle>45</Angle><!--Take special care! This angle is effectively doubled and determines the firing cone. Make sure that this value times 2 matches the weapon's coneAngleDegree-->
+					</WeaponModule>
+
+				<!--Structure Building-->
+				<BuildCost>
+					<IronCost>600</IronCost>
+					<OilCost>100</OilCost>
+					<PopulationCost>1</PopulationCost>
+				</BuildCost>
+			</StructureConfiguration>
+			
+		<!-- Saxony Bunkers -->
+			<StructureConfiguration id="sax_structure_bunker" parentId="pol_structure_bunker" type="default"> 
+				<!--Shape-->
+					<PlacementShape type="rect" x="-3" y="-3" width="6" height="6" shapeheight="0" />
+					<Shape type="convex"><Vertex x="-2.4" y="-1.6" height="0.2" /><Vertex x="-1.4" y="-2.6" height="0.2" /><Vertex x="1.5" y="-2.7" height="0.2" /><Vertex x="2.4" y="-1.7" height="0.2" /><Vertex x="2.4" y="0.9" height="0.2" /><Vertex x="1.5" y="2.7" height="0.2" /><Vertex x="-1.5" y="2.7" height="0.2" /><Vertex x="-2.4" y="0.9" height="0.2" /></Shape>
+								
+				<!--Stats-->
+					<Health>250</Health>
+					<VisionRadius>40</VisionRadius>
+					<Bunker coneAngle="240" />
+
+				<!--Structure Building-->
+				<BuildCost>
+					<IronCost>150</IronCost>
+					<OilCost>15</OilCost>
+					<PopulationCost>1</PopulationCost>
+				</BuildCost>
+
+				<!--Upgrade Structure-->
+					<UpgradeOptions>
+						<UpgradeOption>
+							<FactionType>Saxony</FactionType>
+							<StructureId>sax_structure_bunkertier01</StructureId>
+							<UpgradeDuration>45</UpgradeDuration>
+							<BuildCost>
+								<IronCost>150</IronCost>
+								<OilCost>20</OilCost>
+								<PopulationCost>0</PopulationCost>
+							</BuildCost>
+						</UpgradeOption>
+					</UpgradeOptions>
+			</StructureConfiguration>
+			
+			<StructureConfiguration id="sax_structure_bunkertier01" parentId="pol_structure_bunkertier01" type="default">
+				<!--Shape-->
+					<PlacementShape type="rect" x="-3" y="-3" width="6" height="6" shapeheight="0" />
+					<Shape type="convex"><Vertex x="-2.7" y="-2.5" height="0.2" /><Vertex x="-2.3" y="-2.9" height="0.2" /><Vertex x="2.25" y="-2.9" height="0.2" /><Vertex x="2.5" y="-2.5" height="0.2" /><Vertex x="2.5" y="2.5" height="0.2" /><Vertex x="2.25" y="2.9" height="0.2" /><Vertex x="-2.25" y="2.8" height="0.2" /><Vertex x="-2.6" y="2.5" height="0.2" /></Shape>
+				
+				<!--Stats-->
+					<Health>350</Health>
+					<VisionRadius>40</VisionRadius>
+					<Bunker coneAngle="240" />
+					<WeaponModule>
+						<WeaponId>sax_structure_t1bunker</WeaponId>
+						<Direction x="0" y="-1" />
+						<Angle>35</Angle><!--Take special care! This angle is effectively doubled and determines the firing cone. Make sure that this value times 2 matches the weapon's coneAngleDegree-->
+					</WeaponModule>
+
+				<!--Structure Building-->
+				<BuildCost>
+					<IronCost>275</IronCost>
+					<OilCost>30</OilCost>
+					<PopulationCost>1</PopulationCost>
+				</BuildCost>
+
+				<!--Upgrade Structure-->
+					<UpgradeOptions>
+						<UpgradeOption>
+							<FactionType>Saxony</FactionType>
+							<StructureId>sax_structure_bunkertier02</StructureId>
+							<UpgradeDuration>45</UpgradeDuration>
+							<BuildCost>
+								<IronCost>160</IronCost>
+								<OilCost>25</OilCost>
+								<PopulationCost>0</PopulationCost>
+							</BuildCost>
+							<CanShootDuringUpgrade>true</CanShootDuringUpgrade>
+						</UpgradeOption>
+					</UpgradeOptions>
+			</StructureConfiguration>
+			
+			<StructureConfiguration id="sax_structure_bunkertier02" parentId="pol_structure_bunkertier02" type="default">
+				<!--Shape-->
+					<PlacementShape type="rect" x="-3" y="-3" width="6" height="6" shapeheight="0" />
+					<Shape type="convex"><Vertex x="-2.7" y="-2.5" height="0.2" /><Vertex x="-2.3" y="-2.9" height="0.2" /><Vertex x="2.25" y="-2.9" height="0.2" /><Vertex x="2.5" y="-2.5" height="0.2" /><Vertex x="2.5" y="2.5" height="0.2" /><Vertex x="2.25" y="2.9" height="0.2" /><Vertex x="-2.25" y="2.8" height="0.2" /><Vertex x="-2.6" y="2.5" height="0.2" /></Shape>
+				
+				<!--Stats-->
+					<Health>450</Health>
+					<VisionRadius>40</VisionRadius>
+					<Bunker coneAngle="240" />
+					<WeaponModule>
+						<WeaponId>sax_structure_t2bunker</WeaponId>
+						<Direction x="0" y="-1" />
+						<Angle>30</Angle><!--Take special care! This angle is effectively doubled and determines the firing cone. Make sure that this value times 2 matches the weapon's coneAngleDegree-->
+					</WeaponModule>
+
+				<!--Structure Building-->
+				<BuildCost>
+					<IronCost>400</IronCost>
+					<OilCost>40</OilCost>
+					<PopulationCost>1</PopulationCost>
+				</BuildCost>
+			</StructureConfiguration>
+			
+			
+		<!--Polania Medicbuilding-->
+			<StructureConfiguration id="pol_structure_medicbuilding" type="defaultreinforce">
+				<!--Shape-->
+					<PlacementShape type="rect" x="-4" y="-3" width="8" height="6" shapeheight="0" />
+					<Shape type="convex"><Vertex x="-3.8" y="1.3" height="0.2" /><Vertex x="-3.66" y="0.2" height="0.2" /><Vertex x="-2" y="-1.8" height="0.2" /><Vertex x="-0.7" y="-2.7" height="0.2" /><Vertex x="0.7" y="-2.7" height="0.2" /><Vertex x="3.8" y="-1.5" height="0.2" /><Vertex x="3.9" y="-1.2" height="0.2" /><Vertex x="1.9" y="2" height="0.2" /><Vertex x="-1.8" y="2" height="0.2" /></Shape>
+				
+				<!--Structure Building-->
+					<BuildCost>
+						<IronCost>0</IronCost>
+						<OilCost>0</OilCost>
+						<PopulationCost>0</PopulationCost>
+					</BuildCost>
+					<ConstructionPoints>50</ConstructionPoints>
+					<RestrictToBuildArea>false</RestrictToBuildArea>
+			
+				<!--Stats-->
+					<Health>150</Health>
+					<VisionRadius>30</VisionRadius>
+			
+				<!--Unit Building-->
+					<ReinforceOptions>
+						<UnitBuildOption>
+							<UnitId>pol_soldier_rifleman</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>pol_soldier_grenadier</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>pol_soldier_gunner</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>pol_soldier_engineer</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>pol_soldier_medic</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>pol_soldier_mg</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>pol_soldier_flamer</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>com_support_cannon</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>com_support_mg</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>com_support_mortar</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>pol_hero_anna</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>pol_hero_wojtek</UnitId>
+						</UnitBuildOption>							
+					</ReinforceOptions>
+			</StructureConfiguration>
+			
+		<!--Saxony Medicbuilding-->
+			<StructureConfiguration id="sax_structure_medicbuilding" type="defaultreinforce">
+				<!--Shape-->
+					<PlacementShape type="rect" x="-4" y="-3" width="8" height="6" shapeheight="0" />
+					<Shape type="convex"><Vertex x="-2.434712" y="1.593368" height="0.2" /><Vertex x="-3.681869" y="-0.8665581" height="0.2" /><Vertex x="-3.523624" y="-1.85434" height="0.2" /><Vertex x="2.165977" y="-1.932731" height="0.2" /><Vertex x="3.114642" y="-1.278295" height="0.2" /><Vertex x="3.089148" y="-0.4957796" height="0.2" /><Vertex x="2.421878" y="1.54186" height="0.2" /><Vertex x="2.215935" y="1.875883" height="0.2" /><Vertex x="-2.127218" y="1.887166" height="0.2" /></Shape>
+				
+				<!--Structure Building-->
+					<BuildCost>
+						<IronCost>0</IronCost>
+						<OilCost>0</OilCost>
+						<PopulationCost>0</PopulationCost>
+					</BuildCost>
+					<ConstructionPoints>50</ConstructionPoints>
+					<RestrictToBuildArea>false</RestrictToBuildArea>
+				
+				<!--Stats-->
+					<Health>150</Health>
+					<VisionRadius>30</VisionRadius>
+				
+				<!--Unit Building-->
+					<ReinforceOptions>
+						<UnitBuildOption>
+							<UnitId>sax_soldier_engineer</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>sax_soldier_medic</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>sax_soldier_rifleman</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>sax_soldier_grenadier</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>sax_soldier_gunner</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>sax_soldier_mg</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>sax_soldier_flamer</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>sax_hero_gunter</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>com_support_mg</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>com_support_cannon</UnitId>
+						</UnitBuildOption>						
+						<UnitBuildOption>
+							<UnitId>com_support_mortar</UnitId>
+						</UnitBuildOption>			
+					</ReinforceOptions>
+			</StructureConfiguration>
+			
+		<!--Rusviet Medicbuilding-->
+			<StructureConfiguration id="rus_structure_medicbuilding" type="defaultreinforce">
+				<!--Shape-->
+					<PlacementShape type="rect" x="-4" y="-3" width="8" height="6" shapeheight="0" />
+					<Shape type="convex"><Vertex x="-2.7" y="-0.5" height="0.2" /><Vertex x="-2.75" y="-2.4" height="0.2" /><Vertex x="-2.4" y="-2.75" height="0.2" /><Vertex x="2.25" y="-2.8" height="0.2" /><Vertex x="2.6" y="-2.4" height="0.2" /><Vertex x="2.8" y="1.6" height="0.2" /><Vertex x="2.45" y="2" height="0.2" /><Vertex x="-1.7" y="1.55" height="0.2" /></Shape>
+				
+				<!--Structure Building-->
+					<BuildCost>
+						<IronCost>0</IronCost>
+						<OilCost>0</OilCost>
+						<PopulationCost>0</PopulationCost>
+					</BuildCost>
+					<ConstructionPoints>50</ConstructionPoints>
+					<RestrictToBuildArea>false</RestrictToBuildArea>
+				
+				<!--Stats-->
+					<Health>150</Health>
+					<VisionRadius>30</VisionRadius>
+				
+				<!--Unit Building-->
+					<ReinforceOptions>
+						<UnitBuildOption>
+							<UnitId>rus_soldier_engineer</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_soldier_medic</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_soldier_rifleman</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_soldier_grenadier</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_soldier_gunner</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_soldier_mg</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_soldier_flamer</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_hero_olga</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_hero_olgachanga</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_support_mg</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_support_cannon</UnitId>
+						</UnitBuildOption>						
+						<UnitBuildOption>
+							<UnitId>rus_support_mortar</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_npc_farmermalerifleman</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_npc_farmermalegrenadier</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_npc_farmermalegunner</UnitId>
+						</UnitBuildOption>	
+						<UnitBuildOption>
+							<UnitId>rus_hero_tsar</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_npc_tsar</UnitId>
+						</UnitBuildOption>
+					</ReinforceOptions>
+			</StructureConfiguration>	
+	
+	
+	<!--Production Buildings-->
+		<!--Polania Barracks 01-->
+			<StructureConfiguration id="pol_structure_barracks01" type="defaultproduction">
+				<!--Shape-->
+					<PlacementShape type="rect" x="-6.3" y="-6.3" width="12.6" height="12.6" shapeheight="0" />
+					<Shape type="convex"><Vertex x="-5.75" y="3.4" height="0.2" /><Vertex x="-6" y="-5.9" height="0.2" /><Vertex x="-5.7" y="-6.1" height="0.2" /><Vertex x="5.7" y="-6.1" height="0.2" /><Vertex x="6" y="-5.8" height="0.2" /><Vertex x="6" y="5.8" height="0.2" /><Vertex x="5.75" y="6.1" height="0.2" /><Vertex x="-3" y="6" height="0.2" /></Shape>
+				
+				<!--Structure Building-->
+					<BuildCost>
+						<IronCost>180</IronCost>
+						<OilCost>65</OilCost>
+						<PopulationCost>0</PopulationCost>
+					</BuildCost>
+					<ConstructionPoints>500</ConstructionPoints>
+					<ConstructionExperience>0</ConstructionExperience>
+				
+				<!--Upgrade Structure-->
+					<UpgradeOptions>
+						<UpgradeOption>
+							<FactionType>Polania</FactionType>
+							<StructureId>pol_structure_barracks02</StructureId>
+							<UpgradeDuration>35</UpgradeDuration>
+							<BuildCost>
+								<IronCost>150</IronCost>
+								<OilCost>85</OilCost>
+								<PopulationCost>0</PopulationCost>
+							</BuildCost>
+						</UpgradeOption>
+					</UpgradeOptions>
+				
+				<!--Stats-->
+					<Health>700</Health>
+					<ExperienceValues>
+						<AttackerXP>160</AttackerXP><!-- how many points would an attacker get when doing 100% damage-->
+						<HealerXP>160</HealerXP><!-- how many points would a healer get if they heal 100% HPs-->
+					</ExperienceValues>
+					<PopulationIncrement>25</PopulationIncrement>
+					<VisionRadius>40</VisionRadius>
+				
+				<!--Unit Building-->
+					<BuildOptions>
+						<UnitBuildOption>
+							<UnitId>pol_soldier_engineer</UnitId>
+							<BuildDuration>15</BuildDuration>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>pol_soldier_medic</UnitId>
+							<BuildDuration>15</BuildDuration>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>pol_soldier_rifleman</UnitId>
+							<BuildDuration>15</BuildDuration>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>pol_soldier_grenadier</UnitId>
+							<BuildDuration>16</BuildDuration>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>pol_soldier_gunner</UnitId>
+							<BuildDuration>18</BuildDuration>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>pol_soldier_flamer</UnitId>
+							<BuildDuration>18</BuildDuration>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>com_support_cannon</UnitId>
+							<BuildDuration>18</BuildDuration>
+						</UnitBuildOption>	
+					</BuildOptions>
+					<ReinforceOptions>
+						<UnitBuildOption>
+							<UnitId>pol_soldier_engineer</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>pol_soldier_medic</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>pol_soldier_rifleman</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>pol_soldier_grenadier</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>pol_soldier_gunner</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>pol_soldier_flamer</UnitId>
+						</UnitBuildOption>						
+						<UnitBuildOption>
+							<UnitId>pol_soldier_mg</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>com_support_mg</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>com_support_cannon</UnitId>
+						</UnitBuildOption>					
+						<UnitBuildOption>
+							<UnitId>com_support_mortar</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>pol_soldier_exo</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>pol_hero_anna</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>pol_hero_wojtek</UnitId>
+						</UnitBuildOption>
+					</ReinforceOptions>
+					<RallyPoint x="-1" y="-7" />
+				
+				<!--Repair-->
+					<RepairCost>
+						<IronCost>5</IronCost>
+						<OilCost>0</OilCost>
+						<BatchSize>50</BatchSize>
+					</RepairCost>
+				
+				<!--Refund-->
+					<Refund>
+						<IronCost>100</IronCost>
+						<OilCost>40</OilCost>
+					</Refund>
+			</StructureConfiguration>
+			
+		<!--Saxony Barracks 01-->
+			<StructureConfiguration id="sax_structure_barracks01" type="defaultproduction">
+				<!--Shape-->
+					<PlacementShape type="rect" x="-6.3" y="-6.3" width="12.6" height="12.6" shapeheight="0" />
+					<Shape type="convex"><Vertex x="-6.2" y="-5.5" height="0.2" /><Vertex x="-5.45" y="-6.2" height="0.2" /><Vertex x="5.3" y="-6.2" height="0.2" /><Vertex x="6.1" y="-5.4" height="0.2" /><Vertex x="6.1" y="5.2" height="0.2" /><Vertex x="5.5" y="6" height="0.2" /><Vertex x="-5.3" y="6" height="0.2" /><Vertex x="-6.2" y="5.5" height="0.2" /></Shape>
+				
+				<!--Structure Building-->
+					<BuildCost>
+						<IronCost>200</IronCost>
+						<OilCost>75</OilCost>
+						<PopulationCost>0</PopulationCost>
+					</BuildCost>
+					<ConstructionPoints>800</ConstructionPoints>
+				
+				<!--Upgrade Structure-->
+					<UpgradeOptions>
+						<UpgradeOption>
+							<FactionType>Saxony</FactionType>
+							<StructureId>sax_structure_barracks02</StructureId>
+							<UpgradeDuration>45</UpgradeDuration>
+							<BuildCost>
+								<IronCost>200</IronCost>
+								<OilCost>100</OilCost>
+								<PopulationCost>0</PopulationCost>
+							</BuildCost>
+						</UpgradeOption>
+					</UpgradeOptions>
+				
+				<!--Stats-->
+					<Health>700</Health>
+					<PopulationIncrement>25</PopulationIncrement>
+					<VisionRadius>40</VisionRadius>
+				
+				<!--Unit Building-->
+					<BuildOptions>
+						<UnitBuildOption>
+							<UnitId>sax_soldier_engineer</UnitId>
+							<BuildDuration>15</BuildDuration>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>sax_soldier_medic</UnitId>
+							<BuildDuration>15</BuildDuration>
+						</UnitBuildOption>	
+						<UnitBuildOption>
+							<UnitId>sax_soldier_rifleman</UnitId>
+							<BuildDuration>15</BuildDuration>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>sax_soldier_grenadier</UnitId>
+							<BuildDuration>16</BuildDuration>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>sax_soldier_gunner</UnitId>
+							<BuildDuration>18</BuildDuration>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>sax_soldier_flamer</UnitId>
+							<BuildDuration>18</BuildDuration>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>com_support_cannon</UnitId>
+							<BuildDuration>18</BuildDuration>
+						</UnitBuildOption>	
+					</BuildOptions>
+					<ReinforceOptions>
+						<UnitBuildOption>
+							<UnitId>sax_soldier_engineer</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>sax_soldier_medic</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>sax_soldier_rifleman</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>sax_soldier_grenadier</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>sax_soldier_gunner</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>sax_soldier_flamer</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>sax_soldier_mg</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>sax_hero_gunter</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>com_support_mg</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>com_support_cannon</UnitId>
+						</UnitBuildOption>						
+						<UnitBuildOption>
+							<UnitId>com_support_mortar</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>sax_soldier_mortar</UnitId>
+						</UnitBuildOption>
+					</ReinforceOptions>
+					<RallyPoint x="0" y="-7" />
+				
+				<!--Repair-->
+					<RepairCost>
+						<IronCost>5</IronCost>
+						<OilCost>0</OilCost>
+						<BatchSize>50</BatchSize>
+					</RepairCost>
+				
+				<!--Refund-->
+					<Refund>
+						<IronCost>100</IronCost>
+						<OilCost>40</OilCost>
+					</Refund>
+			</StructureConfiguration>
+
+		<!--Rusviet Barracks 01-->
+			<StructureConfiguration id="rus_structure_barracks01" type="defaultproduction">
+				<!--Shape-->
+					<PlacementShape type="rect" x="-6.3" y="-6.3" width="12.6" height="12.6" shapeheight="0" />
+					<Shape type="convex"><Vertex x="-6.2" y="-5.7" height="0.2" /><Vertex x="-5.6" y="-6.2" height="0.2" /><Vertex x="5.6" y="-6.2" height="0.2" /><Vertex x="6.1" y="-5.8" height="0.2" /><Vertex x="6.1" y="5.7" height="0.2" /><Vertex x="5.6" y="6" height="0.2" /><Vertex x="-5.6" y="6.1" height="0.2" /><Vertex x="-6.2" y="5.7" height="0.2" /></Shape>
+				
+				<!--Structure Building-->
+					<BuildCost>
+						<IronCost>200</IronCost>
+						<OilCost>75</OilCost>
+						<PopulationCost>0</PopulationCost>
+					</BuildCost>
+					<ConstructionPoints>1100</ConstructionPoints>
+				
+				<!--Upgrade Structure-->
+					<UpgradeOptions>
+						<UpgradeOption>
+							<FactionType>Rusviet</FactionType>
+							<StructureId>rus_structure_barracks02</StructureId>
+							<UpgradeDuration>55</UpgradeDuration>
+							<BuildCost>
+								<IronCost>200</IronCost>
+								<OilCost>100</OilCost>
+								<PopulationCost>0</PopulationCost>
+							</BuildCost>
+						</UpgradeOption>
+					</UpgradeOptions>
+				
+				<!--Stats-->
+					<Health>700</Health>
+					<PopulationIncrement>25</PopulationIncrement>
+					<VisionRadius>40</VisionRadius>
+				
+				<!--Unit Building-->
+					<BuildOptions>
+						<UnitBuildOption>
+							<UnitId>rus_soldier_engineer</UnitId>
+							<BuildDuration>15</BuildDuration>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_soldier_medic</UnitId>
+							<BuildDuration>15</BuildDuration>
+						</UnitBuildOption>	
+						<UnitBuildOption>
+							<UnitId>rus_soldier_rifleman</UnitId>
+							<BuildDuration>15</BuildDuration>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_soldier_grenadier</UnitId>
+							<BuildDuration>16</BuildDuration>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_soldier_gunner</UnitId>
+							<BuildDuration>18</BuildDuration>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_soldier_flamer</UnitId>
+							<BuildDuration>18</BuildDuration>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>com_support_cannon</UnitId>
+							<BuildDuration>18</BuildDuration>
+						</UnitBuildOption>	
+					</BuildOptions>
+					<ReinforceOptions>
+						<UnitBuildOption>
+							<UnitId>rus_soldier_engineer</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_soldier_medic</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_soldier_rifleman</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_soldier_grenadier</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_soldier_gunner</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_soldier_flamer</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_soldier_mg</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_hero_olga</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_hero_olgachanga</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>com_support_mg</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>com_support_cannon</UnitId>
+						</UnitBuildOption>						
+						<UnitBuildOption>
+							<UnitId>com_support_mortar</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_soldier_exo</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_npc_farmermalerifleman</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_npc_farmermalegrenadier</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_npc_farmermalegunner</UnitId>
+						</UnitBuildOption>	
+						<UnitBuildOption>
+							<UnitId>rus_hero_tsar</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_npc_tsar</UnitId>
+						</UnitBuildOption>
+					</ReinforceOptions>
+					<RallyPoint x="0" y="-7" />
+				
+				<!--Repair-->
+					<RepairCost>
+						<IronCost>5</IronCost>
+						<OilCost>0</OilCost>
+						<BatchSize>50</BatchSize>
+					</RepairCost>
+				
+				<!--Refund-->
+					<Refund>
+						<IronCost>100</IronCost>
+						<OilCost>40</OilCost>
+					</Refund>
+			</StructureConfiguration>
+
+			
+		<!--Polania Barracks 02-->
+			<StructureConfiguration id="pol_structure_barracks02" type="defaultproduction">
+				<!--Shape-->
+					<PlacementShape type="rect" x="-6.3" y="-6.3" width="12.6" height="12.6" shapeheight="0" />
+					<Shape type="convex"><Vertex x="-5.75" y="3.4" height="0.2" /><Vertex x="-6" y="-5.9" height="0.2" /><Vertex x="-5.7" y="-6.1" height="0.2" /><Vertex x="5.7" y="-6.1" height="0.2" /><Vertex x="6" y="-5.8" height="0.2" /><Vertex x="6" y="5.8" height="0.2" /><Vertex x="5.75" y="6.1" height="0.2" /><Vertex x="-3" y="6" height="0.2" /></Shape>
+				
+				<!--Structure Building-->
+					<ConstructionPoints>500</ConstructionPoints>
+		
+				<!--Stats-->
+					<Health>800</Health>
+					<PopulationIncrement>25</PopulationIncrement>
+					<VisionRadius>40</VisionRadius>
+				
+				<!--Unit Building-->
+					<BuildOptions>
+						<UnitBuildOption>
+							<UnitId>pol_soldier_engineer</UnitId>
+							<BuildDuration>15</BuildDuration>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>pol_soldier_medic</UnitId>
+							<BuildDuration>15</BuildDuration>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>pol_soldier_rifleman</UnitId>
+							<BuildDuration>15</BuildDuration>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>pol_soldier_grenadier</UnitId>
+							<BuildDuration>16</BuildDuration>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>pol_soldier_gunner</UnitId>
+							<BuildDuration>18</BuildDuration>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>pol_soldier_flamer</UnitId>
+							<BuildDuration>18</BuildDuration>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>pol_soldier_mg</UnitId>
+							<BuildDuration>18</BuildDuration>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>com_support_mg</UnitId>
+							<BuildDuration>18</BuildDuration>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>com_support_cannon</UnitId>
+							<BuildDuration>18</BuildDuration>
+						</UnitBuildOption>						
+						<UnitBuildOption>
+							<UnitId>com_support_mortar</UnitId>
+							<BuildDuration>18</BuildDuration>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>pol_soldier_exo</UnitId>
+							<BuildDuration>20</BuildDuration>
+						</UnitBuildOption>
+					</BuildOptions>
+					<ReinforceOptions>	
+						<UnitBuildOption>
+							<UnitId>pol_soldier_engineer</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>pol_soldier_medic</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>pol_soldier_rifleman</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>pol_soldier_grenadier</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>pol_soldier_gunner</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>pol_soldier_flamer</UnitId>
+						</UnitBuildOption>						
+						<UnitBuildOption>
+							<UnitId>pol_soldier_mg</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>com_support_mg</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>com_support_cannon</UnitId>
+						</UnitBuildOption>					
+						<UnitBuildOption>
+							<UnitId>com_support_mortar</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>pol_soldier_exo</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>pol_hero_anna</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>pol_hero_wojtek</UnitId>
+						</UnitBuildOption>		
+					</ReinforceOptions>
+					<RallyPoint x="-1" y="-7" />
+				<!--Repair-->
+					<RepairCost>
+						<IronCost>5</IronCost>
+						<OilCost>0</OilCost>
+						<BatchSize>50</BatchSize>
+					</RepairCost>
+				<!--Refund-->	
+					<Refund>
+						<IronCost>250</IronCost>
+						<OilCost>100</OilCost>
+					</Refund>
+			</StructureConfiguration>
+			
+		<!--Saxony Barracks 02-->		
+			<StructureConfiguration id="sax_structure_barracks02" type="defaultproduction">
+				<!--Shape-->
+					<PlacementShape type="rect" x="-6.3" y="-6.3" width="12.6" height="12.6" shapeheight="0" />
+					<Shape type="convex"><Vertex x="-6.1" y="-5.4" height="0.2" /><Vertex x="-5.35" y="-6.3" height="0.2" /><Vertex x="5.3" y="-6.2" height="0.2" /><Vertex x="6.2" y="-5.6" height="0.2" /><Vertex x="6.2" y="5.4" height="0.2" /><Vertex x="5.2" y="6.2" height="0.2" /><Vertex x="-5.3" y="6.2" height="0.2" /><Vertex x="-6.2" y="5.3" height="0.2" /></Shape>
+			
+				<!--Structure Building-->
+					<ConstructionPoints>500</ConstructionPoints>
+			
+				<!--Stats-->
+					<Health>800</Health>
+					<PopulationIncrement>25</PopulationIncrement>
+					<VisionRadius>40</VisionRadius>
+			
+				<!--Unit Building-->
+					<BuildOptions>
+						<UnitBuildOption>
+							<UnitId>sax_soldier_engineer</UnitId>
+							<BuildDuration>15</BuildDuration>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>sax_soldier_medic</UnitId>
+							<BuildDuration>15</BuildDuration>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>sax_soldier_rifleman</UnitId>
+							<BuildDuration>15</BuildDuration>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>sax_soldier_grenadier</UnitId>
+							<BuildDuration>16</BuildDuration>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>sax_soldier_gunner</UnitId>
+							<BuildDuration>18</BuildDuration>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>sax_soldier_flamer</UnitId>
+							<BuildDuration>18</BuildDuration>
+						</UnitBuildOption>						
+						<UnitBuildOption>
+							<UnitId>sax_soldier_mg</UnitId>
+							<BuildDuration>18</BuildDuration>					
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>com_support_mg</UnitId>
+							<BuildDuration>18</BuildDuration>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>com_support_cannon</UnitId>
+							<BuildDuration>18</BuildDuration>
+						</UnitBuildOption>						
+						<UnitBuildOption>
+							<UnitId>com_support_mortar</UnitId>
+							<BuildDuration>18</BuildDuration>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>sax_soldier_mortar</UnitId>
+							<BuildDuration>20</BuildDuration>
+						</UnitBuildOption>
+					</BuildOptions>
+					<ReinforceOptions>
+						<UnitBuildOption>
+							<UnitId>sax_soldier_engineer</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>sax_soldier_medic</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>sax_soldier_rifleman</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>sax_soldier_grenadier</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>sax_soldier_gunner</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>sax_soldier_flamer</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>sax_soldier_mg</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>sax_hero_gunter</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>com_support_mg</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>com_support_cannon</UnitId>
+						</UnitBuildOption>						
+						<UnitBuildOption>
+							<UnitId>com_support_mortar</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>sax_soldier_mortar</UnitId>
+						</UnitBuildOption>
+					</ReinforceOptions>
+					<RallyPoint x="0" y="-7" />
+			
+				<!--Repair-->
+					<RepairCost>
+						<IronCost>5</IronCost>
+						<OilCost>0</OilCost>
+						<BatchSize>50</BatchSize>
+					</RepairCost>
+				
+				<!--Refund-->
+					<Refund>
+						<IronCost>250</IronCost>
+						<OilCost>100</OilCost>
+					</Refund>
+			</StructureConfiguration>
+
+		<!--Rusviet Barracks 02-->		
+			<StructureConfiguration id="rus_structure_barracks02" type="defaultproduction">
+				<!--Shape-->
+					<PlacementShape type="rect" x="-6.3" y="-6.3" width="12.6" height="12.6" shapeheight="0" />
+					<Shape type="convex"><Vertex x="-6.2" y="-5.7" height="0.2" /><Vertex x="-5.6" y="-6.2" height="0.2" /><Vertex x="5.6" y="-6.2" height="0.2" /><Vertex x="6.1" y="-5.8" height="0.2" /><Vertex x="6.1" y="5.7" height="0.2" /><Vertex x="5.6" y="6" height="0.2" /><Vertex x="-5.6" y="6.1" height="0.2" /><Vertex x="-6.2" y="5.7" height="0.2" /></Shape>
+				
+				<!--Structure Building-->
+					<ConstructionPoints>500</ConstructionPoints>
+			
+				<!--Stats-->
+					<Health>800</Health>
+					<PopulationIncrement>25</PopulationIncrement>
+					<VisionRadius>40</VisionRadius>
+			
+				<!--Unit Building-->
+					<BuildOptions>
+						<UnitBuildOption>
+							<UnitId>rus_soldier_engineer</UnitId>
+							<BuildDuration>15</BuildDuration>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_soldier_medic</UnitId>
+							<BuildDuration>15</BuildDuration>
+						</UnitBuildOption>	
+						<UnitBuildOption>
+							<UnitId>rus_soldier_rifleman</UnitId>
+							<BuildDuration>15</BuildDuration>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_soldier_grenadier</UnitId>
+							<BuildDuration>16</BuildDuration>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_soldier_gunner</UnitId>
+							<BuildDuration>18</BuildDuration>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_soldier_flamer</UnitId>
+							<BuildDuration>18</BuildDuration>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_soldier_mg</UnitId>
+							<BuildDuration>18</BuildDuration>					
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>com_support_mg</UnitId>
+							<BuildDuration>18</BuildDuration>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>com_support_cannon</UnitId>
+							<BuildDuration>18</BuildDuration>
+						</UnitBuildOption>						
+						<UnitBuildOption>
+							<UnitId>com_support_mortar</UnitId>
+							<BuildDuration>18</BuildDuration>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_soldier_exo</UnitId>
+							<BuildDuration>20</BuildDuration>
+						</UnitBuildOption>
+					</BuildOptions>
+					<ReinforceOptions>
+						<UnitBuildOption>
+							<UnitId>rus_soldier_engineer</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_soldier_medic</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_soldier_rifleman</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_soldier_grenadier</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_soldier_gunner</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_soldier_flamer</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_soldier_mg</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>com_support_mg</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_hero_olga</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_hero_olgachanga</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>com_support_cannon</UnitId>
+						</UnitBuildOption>						
+						<UnitBuildOption>
+							<UnitId>com_support_mortar</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_soldier_exo</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_npc_farmermalerifleman</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_npc_farmermalegrenadier</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_npc_farmermalegunner</UnitId>
+						</UnitBuildOption>	
+						<UnitBuildOption>
+							<UnitId>rus_hero_tsar</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_npc_tsar</UnitId>
+						</UnitBuildOption>
+					</ReinforceOptions>
+					<RallyPoint x="0" y="-7" />
+			
+				<!--Repair-->
+					<RepairCost>
+						<IronCost>5</IronCost>
+						<OilCost>0</OilCost>
+						<BatchSize>50</BatchSize>
+					</RepairCost>
+				
+				<!--Refund-->
+					<Refund>
+						<IronCost>250</IronCost>
+						<OilCost>100</OilCost>
+					</Refund>
+			</StructureConfiguration>
+
+			
+		<!--Polania Workshop 01-->
+			<StructureConfiguration id="pol_structure_workshop01" type="defaultproduction">
+				<!--Shape-->
+					<PlacementShape type="rect" x="-6.3" y="-6.3" width="12.6" height="12.6" shapeheight="0" />
+					<Shape type="convex"><Vertex x="-6" y="-5.5" height="0.2" /><Vertex x="-5.6" y="-6.1" height="0.2" /><Vertex x="2.5" y="-5" height="0.2" /><Vertex x="3.1" y="-4.4" height="0.2" /><Vertex x="5.7" y="-0.4" height="0.2" /><Vertex x="5.4" y="1.1" height="0.2" /><Vertex x="2.5" y="3.3" height="0.2" /><Vertex x="-2.9" y="4.9" height="0.2" /><Vertex x="-5.1" y="5" height="0.2" /><Vertex x="-5.6" y="4.6" height="0.2" /></Shape>
+				
+				<!--Structure Building-->
+					<BuildCost>
+						<IronCost>500</IronCost>
+						<OilCost>160</OilCost>
+						<PopulationCost>0</PopulationCost>
+					</BuildCost>
+					<ConstructionPoints>750</ConstructionPoints>
+				
+				<!--Upgrade Structure-->
+					<UpgradeOptions>
+						<UpgradeOption>
+							<FactionType>Polania</FactionType>
+							<StructureId>pol_structure_workshop02</StructureId>
+							<UpgradeDuration>60</UpgradeDuration>
+							<BuildCost>
+								<IronCost>550</IronCost>
+								<OilCost>180</OilCost>
+								<PopulationCost>0</PopulationCost>
+							</BuildCost>
+						</UpgradeOption>
+					</UpgradeOptions>
+				
+				<!--Stats-->
+					<Health>700</Health>
+					<PopulationIncrement>25</PopulationIncrement>
+					<VisionRadius>40</VisionRadius>
+				
+				<!--Unit Building-->
+					<BuildOptions>
+						<UnitBuildOption>
+							<UnitId>pol_mech_spider</UnitId>
+							<BuildDuration>19</BuildDuration>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>pol_mech_recon</UnitId>
+							<BuildDuration>19</BuildDuration>
+						</UnitBuildOption>
+					</BuildOptions>
+					<ReinforceOptions>
+						<UnitBuildOption>
+							<UnitId>pol_soldier_exo</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>pol_mech_spider</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>pol_mech_recon</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>pol_mech_artillery</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>pol_mech_stinger</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>pol_mech_trooptransport</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>pol_mech_gunfort</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>pol_hero_rebel</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>pol_hero_cavalry</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>pol_soldier_cavalry</UnitId>
+						</UnitBuildOption>		
+					</ReinforceOptions>
+					<RallyPoint x="0" y="-8" />
+				
+				<!--Repair-->
+					<RepairCost>
+						<IronCost>5</IronCost>
+						<OilCost>0</OilCost>
+						<BatchSize>50</BatchSize>
+					</RepairCost>
+				
+				<!--Refund-->
+					<Refund>
+						<IronCost>200</IronCost>
+						<OilCost>100</OilCost>
+					</Refund>
+				</StructureConfiguration>
+		
+		<!--Saxony Workshop 01-->
+			<StructureConfiguration id="sax_structure_workshop01" type="defaultproduction">
+				<!--Shape-->
+					<PlacementShape type="rect" x="-6.3" y="-6.3" width="12.6" height="12.6" shapeheight="0" />
+					<Shape type="convex"><Vertex x="-5.4" y="4.7" height="0.2" /><Vertex x="-5.4" y="-3" height="0.2" /><Vertex x="-5" y="-3.4" height="0.2" /><Vertex x="3.5" y="-3.3" height="0.2" /><Vertex x="4" y="-2.8" height="0.2" /><Vertex x="4.8" y="-0.1" height="0.2" /><Vertex x="4.8" y="4.6" height="0.2" /><Vertex x="4.5" y="5.1" height="0.2" /><Vertex x="-5" y="5.1" height="0.2" /></Shape>
+			
+				<!--Structure Building-->
+					<BuildCost>
+						<IronCost>450</IronCost>
+						<OilCost>180</OilCost>
+						<PopulationCost>0</PopulationCost>
+					</BuildCost>
+					<ConstructionPoints>800</ConstructionPoints>
+				
+				<!--Upgrade Structure-->
+					<UpgradeOptions>
+						<UpgradeOption>
+							<FactionType>Saxony</FactionType>
+							<StructureId>sax_structure_workshop02</StructureId>
+							<UpgradeDuration>45</UpgradeDuration>
+							<BuildCost>
+								<IronCost>400</IronCost>
+								<OilCost>150</OilCost>
+								<PopulationCost>0</PopulationCost>
+							</BuildCost>
+						</UpgradeOption>
+					</UpgradeOptions>
+				
+				<!--Stats-->
+					<Health>700</Health>
+					<PopulationIncrement>25</PopulationIncrement>
+					<VisionRadius>40</VisionRadius>
+			
+				<!--Unit Building-->
+					<BuildOptions>
+						<UnitBuildOption>
+							<UnitId>sax_mech_gatling</UnitId>
+							<BuildDuration>19</BuildDuration>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>sax_mech_tank</UnitId>
+							<BuildDuration>19</BuildDuration>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>sax_mech_artillery</UnitId>
+							<BuildDuration>25</BuildDuration>
+						</UnitBuildOption>
+					</BuildOptions>
+					<ReinforceOptions>
+						<UnitBuildOption>
+							<UnitId>sax_soldier_mortar</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>sax_mech_gatling</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>sax_mech_tank</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>sax_mech_artillery</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>sax_mech_mother</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>sax_mech_dachs</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>sax_mech_gunfort</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>sax_hero_prince</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>sax_hero_brunhilde</UnitId>
+						</UnitBuildOption>								
+					</ReinforceOptions>
+					<RallyPoint x="0" y="-8" />
+			
+				<!--Repair-->
+					<RepairCost>
+						<IronCost>5</IronCost>
+						<OilCost>0</OilCost>
+						<BatchSize>50</BatchSize>
+					</RepairCost>
+
+				<!--Refund-->
+					<Refund>
+						<IronCost>200</IronCost>
+						<OilCost>100</OilCost>
+					</Refund>
+			</StructureConfiguration>
+	
+		<!--Rusviet Workshop 01-->
+			<StructureConfiguration id="rus_structure_workshop01" type="defaultproduction">
+				<!--Shape-->
+					<PlacementShape type="rect" x="-6.3" y="-6.3" width="12.6" height="12.6" shapeheight="0" />
+					<Shape type="convex"><Vertex x="-4" y="5.2" height="0.2" /><Vertex x="-6.2" y="1.4" height="0.2" /><Vertex x="-6.2" y="-1.8" height="0.2" /><Vertex x="-3" y="-5" height="0.2" /><Vertex x="3.1" y="-5" height="0.2" /><Vertex x="5" y="-3.3" height="0.2" /><Vertex x="4.2" y="5.8" height="0.2" /><Vertex x="3.9" y="6.2" height="0.2" /><Vertex x="-2.9" y="6.1" height="0.2" /></Shape>
+			
+				<!--Structure Building-->
+					<BuildCost>
+						<IronCost>500</IronCost>
+						<OilCost>200</OilCost>
+						<PopulationCost>0</PopulationCost>
+					</BuildCost>
+					<ConstructionPoints>1100</ConstructionPoints>
+				
+				<!--Upgrade Structure-->
+					<UpgradeOptions>
+						<UpgradeOption>
+							<FactionType>Rusviet</FactionType>
+							<StructureId>rus_structure_workshop02</StructureId>
+							<UpgradeDuration>55</UpgradeDuration>
+							<BuildCost>
+								<IronCost>500</IronCost>
+								<OilCost>170</OilCost>
+								<PopulationCost>0</PopulationCost>
+							</BuildCost>
+						</UpgradeOption>
+					</UpgradeOptions>
+				
+				<!--Stats-->
+					<Health>700</Health>
+					<PopulationIncrement>25</PopulationIncrement>
+					<VisionRadius>40</VisionRadius>
+			
+				<!--Unit Building-->
+					<BuildOptions>
+						<UnitBuildOption>
+							<UnitId>rus_mech_flamer</UnitId>
+							<BuildDuration>15</BuildDuration>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_mech_bomber</UnitId>
+							<BuildDuration>15</BuildDuration>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_mech_artillery</UnitId>
+							<BuildDuration>15</BuildDuration>
+						</UnitBuildOption>
+					</BuildOptions>
+					<ReinforceOptions>
+						<UnitBuildOption>
+							<UnitId>rus_soldier_exo</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_mech_flamer</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_mech_bomber</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_mech_artillery</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_mech_revolver</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_mech_scythe</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_mech_gunfort</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_hero_general</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_hero_brother</UnitId>
+						</UnitBuildOption>
+					</ReinforceOptions>
+					<RallyPoint x="0" y="-8" />
+			
+				<!--Repair-->
+					<RepairCost>
+						<IronCost>5</IronCost>
+						<OilCost>0</OilCost>
+						<BatchSize>50</BatchSize>
+					</RepairCost>
+
+				<!--Refund-->
+					<Refund>
+						<IronCost>200</IronCost>
+						<OilCost>100</OilCost>
+					</Refund>
+			</StructureConfiguration>
+	
+	
+		<!--Polania Workshop 02-->
+			<StructureConfiguration id="pol_structure_workshop02" type="defaultproduction">
+				<!--Shape-->
+					<Shape type="convex"><Vertex x="-5.65" y="-4.5" height="0.2" /><Vertex x="-4.7" y="-5.4" height="0.2" /><Vertex x="3.4" y="-4.7" height="0.2" /><Vertex x="4.6" y="-3.8" height="0.2" /><Vertex x="4.6" y="3.6" height="0.2" /><Vertex x="3.3" y="4.8" height="0.2" /><Vertex x="1.1" y="5.65" height="0.2" /><Vertex x="-5.1" y="5.3" height="0.2" /><Vertex x="-5.65" y="4.7" height="0.2" /></Shape>
+					<PlacementShape type="rect" x="-6.3" y="-6.3" width="12.6" height="12.6" shapeheight="0" />
+		
+				<!--Structure Building-->
+					<ConstructionPoints>500</ConstructionPoints>
+		
+				<!--Stats-->
+					<Health>800</Health>
+					<PopulationIncrement>25</PopulationIncrement>
+					<VisionRadius>40</VisionRadius>
+		
+				<!--Unit Building-->
+				<BuildOptions>
+						<UnitBuildOption>
+							<UnitId>pol_mech_spider</UnitId>
+							<BuildDuration>19</BuildDuration>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>pol_mech_recon</UnitId>
+							<BuildDuration>19</BuildDuration>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>pol_mech_artillery</UnitId>
+							<BuildDuration>24</BuildDuration>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>pol_mech_stinger</UnitId>
+							<BuildDuration>30</BuildDuration>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>pol_mech_trooptransport</UnitId>
+							<BuildDuration>30</BuildDuration>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>pol_mech_gunfort</UnitId>
+							<BuildDuration>40</BuildDuration>
+							<RequiresFullInfrastructure>false</RequiresFullInfrastructure>
+						</UnitBuildOption>
+				</BuildOptions>
+					<ReinforceOptions>
+						<UnitBuildOption>
+							<UnitId>pol_soldier_exo</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>pol_mech_spider</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>pol_mech_recon</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>pol_mech_artillery</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>pol_mech_stinger</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>pol_mech_trooptransport</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>pol_mech_gunfort</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>pol_hero_rebel</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>pol_hero_cavalry</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>pol_soldier_cavalry</UnitId>
+						</UnitBuildOption>	
+					</ReinforceOptions>
+					<RallyPoint x="0" y="-8" />
+				
+				<!--Repair-->
+					<RepairCost>
+						<IronCost>5</IronCost>
+						<OilCost>0</OilCost>
+						<BatchSize>50</BatchSize>
+					</RepairCost>
+				
+				<!--Refund-->
+					<Refund>
+						<IronCost>500</IronCost>
+						<OilCost>150</OilCost>
+					</Refund>
+			</StructureConfiguration>
+				
+		<!--Saxony Workshop 02-->
+			<StructureConfiguration id="sax_structure_workshop02" type="defaultproduction">
+				<!--Shape-->
+					<PlacementShape type="rect" x="-6.3" y="-6.3" width="12.6" height="12.6" shapeheight="0" />
+					<Shape type="convex"><Vertex x="-5.3" y="4.9" height="0.2" /><Vertex x="-5.3" y="-4.1" height="0.2" /><Vertex x="-4.8" y="-4.8" height="0.2" /><Vertex x="4.5" y="-4.9" height="0.2" /><Vertex x="5.3" y="-2.1" height="0.2" /><Vertex x="5.4" y="4.9" height="0.2" /><Vertex x="5" y="5.4" height="0.2" /><Vertex x="-4.9" y="5.5" height="0.2" /></Shape>
+				
+				<!--Structure Building-->
+					<ConstructionPoints>500</ConstructionPoints>
+				
+				<!--Stats-->
+					<Health>800</Health>
+					<PopulationIncrement>25</PopulationIncrement>
+					<VisionRadius>40</VisionRadius>
+				
+				<!--Unit Building-->
+					<BuildOptions>
+						<UnitBuildOption>
+							<UnitId>sax_mech_gatling</UnitId>
+							<BuildDuration>19</BuildDuration>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>sax_mech_tank</UnitId>
+							<BuildDuration>19</BuildDuration>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>sax_mech_artillery</UnitId>
+							<BuildDuration>25</BuildDuration>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>sax_mech_dachs</UnitId>
+							<BuildDuration>25</BuildDuration>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>sax_mech_mother</UnitId>
+							<BuildDuration>25</BuildDuration>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>sax_mech_gunfort</UnitId>
+							<BuildDuration>40</BuildDuration>
+							<RequiresFullInfrastructure>false</RequiresFullInfrastructure>
+						</UnitBuildOption>
+					</BuildOptions>
+					<ReinforceOptions>
+						<UnitBuildOption>
+							<UnitId>sax_soldier_mortar</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>sax_mech_gatling</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>sax_mech_tank</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>sax_mech_artillery</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>sax_mech_mother</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>sax_mech_dachs</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>sax_mech_gunfort</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>sax_hero_prince</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>sax_hero_brunhilde</UnitId>
+						</UnitBuildOption>	
+					</ReinforceOptions>
+					<RallyPoint x="0" y="-8" />
+				
+				<!--Repair-->
+					<RepairCost>
+						<IronCost>5</IronCost>
+						<OilCost>0</OilCost>
+						<BatchSize>50</BatchSize>
+					</RepairCost>
+				
+				<!--Refund-->
+					<Refund>
+						<IronCost>500</IronCost>
+						<OilCost>150</OilCost>
+					</Refund>
+			</StructureConfiguration>
+		
+		<!--Rusviet Workshop 02-->
+			<StructureConfiguration id="rus_structure_workshop02" type="defaultproduction">
+				<!--Shape-->
+					<PlacementShape type="rect" x="-6.3" y="-6.3" width="12.6" height="12.6" shapeheight="0" />
+					<Shape type="convex"><Vertex x="-6.2" y="-5.7" height="0.2" /><Vertex x="-5.8" y="-6.2" height="0.2" /><Vertex x="5.8" y="-6.2" height="0.2" /><Vertex x="6.3" y="-5.8" height="0.2" /><Vertex x="6.3" y="5.8" height="0.2" /><Vertex x="5.8" y="6.3" height="0.2" /><Vertex x="-5.8" y="6.3" height="0.2" /><Vertex x="-6.3" y="5.8" height="0.2" /></Shape>
+				
+				<!--Structure Building-->
+					<ConstructionPoints>500</ConstructionPoints>
+				
+				<!--Stats-->
+					<Health>800</Health>
+					<PopulationIncrement>25</PopulationIncrement>
+					<VisionRadius>40</VisionRadius>
+				
+				<!--Unit Building-->
+					<BuildOptions>
+						<UnitBuildOption>
+							<UnitId>rus_mech_flamer</UnitId>
+							<BuildDuration>15</BuildDuration>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_mech_bomber</UnitId>
+							<BuildDuration>15</BuildDuration>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_mech_artillery</UnitId>
+							<BuildDuration>15</BuildDuration>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_mech_revolver</UnitId>
+							<BuildDuration>25</BuildDuration>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_mech_scythe</UnitId>
+							<BuildDuration>25</BuildDuration>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_mech_gunfort</UnitId>
+							<BuildDuration>30</BuildDuration>
+							<RequiresFullInfrastructure>false</RequiresFullInfrastructure>
+						</UnitBuildOption>
+					</BuildOptions>
+					<ReinforceOptions>
+						<UnitBuildOption>
+							<UnitId>rus_soldier_exo</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_mech_flamer</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_mech_bomber</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_mech_artillery</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_mech_revolver</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_mech_scythe</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_mech_gunfort</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_hero_general</UnitId>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_hero_brother</UnitId>
+						</UnitBuildOption>
+					</ReinforceOptions>
+					<RallyPoint x="0" y="-8" />
+				
+				<!--Repair-->
+					<RepairCost>
+						<IronCost>5</IronCost>
+						<OilCost>0</OilCost>
+						<BatchSize>50</BatchSize>
+					</RepairCost>
+				
+				<!--Refund-->
+					<Refund>
+						<IronCost>500</IronCost>
+						<OilCost>150</OilCost>
+					</Refund>
+			</StructureConfiguration>
+			
+		
+		<!--Range Targets-->			
+			<StructureConfiguration id="com_structure_rangetarget" type="default">
+				<HideOverheadInfo>true</HideOverheadInfo>
+			
+				<!--Shape-->
+					<Shape type="rect" x="-4" y="-5.5" width="8" height="0.01" />
+					<PlacementShape type="rect" x="-4" y="-5.5" width="8" height="10" />
+				
+				<!--Structure Building-->
+					<BuildCost>
+						<IronCost>250</IronCost>
+						<OilCost>0</OilCost>
+						<PopulationCost>1</PopulationCost>
+					</BuildCost>
+					<ConstructionPoints>400</ConstructionPoints>
+					<RestrictToBuildArea>false</RestrictToBuildArea>
+				
+				<!--Stats-->
+					<Health>225</Health>
+					<VisionRadius>40</VisionRadius>
+					<Bunker>true</Bunker>
+								
+				<!--Repair-->
+					<RepairCost>
+						<IronCost>0</IronCost>
+						<OilCost>0</OilCost>
+						<BatchSize>25</BatchSize>
+					</RepairCost>
+				
+				<!--Refund-->	
+					<Refund>
+						<IronCost>75</IronCost>
+						<OilCost>0</OilCost>
+					</Refund>
+			</StructureConfiguration>
+			<StructureConfiguration id="com_structure_rangetargetlarge" type="default" parentId="com_structure_rangetarget">
+			<Shape type="convex"><Vertex x="-4.15" y="-4.15" height="0.2" /><Vertex x="-3.75" y="-4.5" height="0.2" /><Vertex x="3.75" y="-4.5" height="0.2" /><Vertex x="4" y="-4.15" height="0.2" /><Vertex x="4" y="5.2" height="0.2" /><Vertex x="3.75" y="5.5" height="0.2" /><Vertex x="-3.75" y="5.5" height="0.2" /><Vertex x="-4.15" y="5.2" height="0.2" /></Shape>
+			<PlacementShape type="rect" x="-4" y="-4.5" width="8" height="10" shapeheight="0" /></StructureConfiguration>
+			<StructureConfiguration id="com_structure_rangetargetmedium" type="default" parentId="com_structure_rangetarget">
+			<Shape type="convex"><Vertex x="-3.3" y="4.3" height="0.2" /><Vertex x="-3.3" y="-3.2" height="0.2" /><Vertex x="-3" y="-3.6" height="0.2" /><Vertex x="3.3" y="-3.6" height="0.2" /><Vertex x="3.6" y="-3.2" height="0.2" /><Vertex x="3.6" y="4.3" height="0.2" /><Vertex x="3.3" y="4.8" height="0.2" /><Vertex x="-3" y="4.8" height="0.2" /></Shape>
+			<PlacementShape type="rect" x="-3.4" y="-3.7" width="7" height="8.6" shapeheight="0" /></StructureConfiguration>
+			<StructureConfiguration id="com_structure_rangetargetsmall" type="default" parentId="com_structure_rangetarget">
+			<Shape type="convex"><Vertex x="-2.6" y="4.5" height="0.2" /><Vertex x="-2.6" y="-3.3" height="0.2" /><Vertex x="-2.3" y="-3.6" height="0.2" /><Vertex x="2.75" y="-3.6" height="0.2" /><Vertex x="3" y="-3.3" height="0.2" /><Vertex x="3" y="4.5" height="0.2" /><Vertex x="2.75" y="4.8" height="0.2" /><Vertex x="-2.35" y="4.8" height="0.2" /></Shape>
+			<PlacementShape type="rect" x="-2.75" y="-3.6" width="5.75" height="8.5" shapeheight="0" /></StructureConfiguration>
+	
+	
+		<!--Generators-->
+			<StructureConfiguration id="tes_structure_generator01" type="default">
+				<!--Shape-->
+					<PlacementShape type="rect" x="-2" y="-3" width="4" height="5.6" shapeheight="0" />
+					<Shape type="convex"><Vertex x="-2.2" y="2.4" height="0.2" /><Vertex x="-2.2" y="-1.1" height="0.2" /><Vertex x="-0.8" y="-2.7" height="0.2" /><Vertex x="0.8" y="-2.7" height="0.2" /><Vertex x="2.2" y="-1.1" height="0.2" /><Vertex x="2.2" y="2.4" height="0.2" /><Vertex x="1.9" y="2.7" height="0.2" /><Vertex x="-1.9" y="2.7" height="0.2" /></Shape>
+					
+				<!--Structure Building-->
+					<ConstructionPoints>-1</ConstructionPoints>
+						
+				<!--Upgrade Structure-->
+					<UpgradeOptions>
+						<UpgradeOption>
+							<StructureId>tes_structure_generator02</StructureId>
+							<UpgradeDuration>20</UpgradeDuration>
+							<BuildCost>
+							</BuildCost>
+						</UpgradeOption>
+					</UpgradeOptions>
+						
+				<!--Stats-->
+					<Health>-10</Health>
+					<VisionRadius>15</VisionRadius>
+						
+				<!--Repair-->
+					<RepairCost>
+						<IronCost>0</IronCost>
+						<OilCost>0</OilCost>
+						<BatchSize>1</BatchSize>
+					</RepairCost>
+			</StructureConfiguration>
+			<StructureConfiguration id="tes_structure_generator02" type="default">
+				<!--Shape-->
+					<PlacementShape type="rect" x="-2" y="-3" width="4" height="5.6" shapeheight="0" />
+					<Shape type="convex"><Vertex x="-2.2" y="2.4" height="0.2" /><Vertex x="-2.2" y="-1.1" height="0.2" /><Vertex x="-0.8" y="-2.7" height="0.2" /><Vertex x="0.8" y="-2.7" height="0.2" /><Vertex x="2.2" y="-1.1" height="0.2" /><Vertex x="2.2" y="2.4" height="0.2" /><Vertex x="1.9" y="2.7" height="0.2" /><Vertex x="-1.9" y="2.7" height="0.2" /></Shape>
+					
+				<!--Structure Building-->
+					<ConstructionPoints>-1</ConstructionPoints>
+				
+				<!--Stats-->
+					<Health>100</Health>
+					<VisionRadius>40</VisionRadius>
+				
+				<!--Repair-->
+					<RepairCost>
+						<IronCost>0</IronCost>
+						<OilCost>0</OilCost>
+						<BatchSize>16</BatchSize>
+					</RepairCost>
+					
+					<RubbleConfiguration>tes_structure_generator01</RubbleConfiguration>
+			</StructureConfiguration>
+			
+			<StructureConfiguration id="tes_structure_generator01sturdy" parentId="tes_structure_generator01" type="default">
+				<!--Upgrade Structure-->
+					<UpgradeOptions>
+						<UpgradeOption>
+							<StructureId>tes_structure_generator02sturdy</StructureId>
+							<UpgradeDuration>40</UpgradeDuration>
+							<BuildCost>
+							</BuildCost>
+						</UpgradeOption>
+					</UpgradeOptions>
+			</StructureConfiguration>
+			<StructureConfiguration id="tes_structure_generator02sturdy" parentId="tes_structure_generator02" type="default">
+				<Health>750</Health>
+				<RubbleConfiguration>tes_structure_generator01sturdy</RubbleConfiguration>
+			</StructureConfiguration>
+			
+	</StructureConfigurations>

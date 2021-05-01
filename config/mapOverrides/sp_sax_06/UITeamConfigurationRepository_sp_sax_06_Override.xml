@@ -1,0 +1,61 @@
+<UITeamConfigurationRepository>
+	<!--Saxony-->
+	<UITeamConfiguration overrideId="sax_structure_hq">
+        <BuildOptions>
+			<UnitBuildOption>
+				<id>sax_soldier_engineer</id>
+				<BuilOptionTier>0</BuilOptionTier>
+				<DisplayInRow>0</DisplayInRow>
+				<BuildOptionCategory>UnitBuildOption</BuildOptionCategory>
+			</UnitBuildOption>
+			<UnitBuildOption>
+				<id>sax_soldier_rifleman</id>
+				<BuilOptionTier>0</BuilOptionTier>
+				<DisplayInRow>0</DisplayInRow>
+				<BuildOptionCategory>UnitBuildOption</BuildOptionCategory>
+			</UnitBuildOption>
+			<UnitBuildOption>
+				<id>sax_hero_gunter</id>
+				<BuilOptionTier>0</BuilOptionTier>
+				<DisplayInRow>1</DisplayInRow>
+				<BuildOptionCategory>UnitBuildOption</BuildOptionCategory>
+			</UnitBuildOption>
+			<UnitBuildOption>
+				<id>sax_hero_prince</id>
+				<BuilOptionTier>0</BuilOptionTier>
+				<DisplayInRow>1</DisplayInRow>
+				<BuildOptionCategory>UnitBuildOption</BuildOptionCategory>
+			</UnitBuildOption>
+			<UnitBuildOption>
+				<id>sax_hero_brunhilde</id>
+				<BuilOptionTier>0</BuilOptionTier>
+				<DisplayInRow>1</DisplayInRow>
+				<BuildOptionCategory>UnitBuildOption</BuildOptionCategory>
+			</UnitBuildOption>
+			
+			<!--Begin Change: Added Olga, so she can be revived in the HQ on this map-->
+			<UnitBuildOption>
+				<id>rus_hero_olga</id>
+				<BuilOptionTier>0</BuilOptionTier>
+				<DisplayInRow>1</DisplayInRow>
+				<BuildOptionCategory>UnitBuildOption</BuildOptionCategory>
+			</UnitBuildOption>
+			<!--End Change-->
+			
+			<ReserveBuildOption>
+				<id>reserve_phase_1</id>
+				<BuilOptionTier>0</BuilOptionTier>
+				<DisplayInRow>2</DisplayInRow>
+				<BuildOptionCategory>UnitBuildOption</BuildOptionCategory>
+			</ReserveBuildOption>
+			<ReserveBuildOption>
+				<id>reserve_phase_2</id>
+				<BuilOptionTier>0</BuilOptionTier>
+				<DisplayInRow>2</DisplayInRow>
+				<BuildOptionCategory>UnitBuildOption</BuildOptionCategory>
+			</ReserveBuildOption>
+        </BuildOptions>
+    </UITeamConfiguration>
+</UITeamConfigurationRepository>
+
+

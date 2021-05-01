@@ -1,0 +1,138 @@
+[
+    {
+        "Name": "IronAcquired",
+        "SteamId": "IronAcquired",
+        "GOGId": "IronAcquired",
+        "EpicId": "IronAcquired",
+        "XboxOneId": "IronAcquired",
+        "PS4Id": "IronAcquired"
+    },
+    {
+        "Name": "OilAcquired",
+        "SteamId": "OilAcquired",
+        "GOGId": "OilAcquired",
+        "EpicId": "OilAcquired",
+        "XBoxOneId": "OilAcquired",
+        "PS4Id": "OilAcquired"
+    },
+    {
+        "Name": "FlamethrowerInfantryKills",
+        "SteamId": "FlamethrowerInfantryKills",
+        "GOGId": "FlamethrowerInfantryKills",
+        "EpicId": "FlamethrowerInfantryKills",
+        "XBoxOneId": "FlamethrowerInfantryKills",
+        "PS4Id": "FlamethrowerInfantryKills"
+    },
+    {
+        "Name": "MechsHarvested",
+        "SteamId": "MechsHarvested",
+        "GOGId": "MechsHarvested",
+        "EpicId": "MechsHarvested",
+        "XBoxOneId": "MechsHarvested",
+        "PS4Id": "MechsHarvested"
+    },
+    {
+        "Name": "PickedUpEquipment",
+        "SteamId": "PickedUpEquipment",
+        "GOGId": "PickedUpEquipment",
+        "EpicId": "PickedUpEquipment",
+        "XBoxOneId": "PickedUpEquipment",
+        "PS4Id": "PickedUpEquipment"
+    },
+    {
+        "Name": "SoldiersReinforced",
+        "SteamId": "SoldiersReinforced",
+        "GOGId": "SoldiersReinforced",
+        "EpicId": "SoldiersReinforced",
+        "XBoxOneId": "SoldiersReinforced",
+        "PS4Id": "SoldiersReinforced"
+    },
+    {
+        "Name": "UnitsRetreated",
+        "SteamId": "UnitsRetreated",
+        "GOGId": "UnitsRetreated",
+        "EpicId": "UnitsRetreated",
+        "XBoxOneId": "UnitsRetreated",
+        "PS4Id": "UnitsRetreated"
+    },
+    {
+        "Name": "ReviveSingleHeroCounter",
+        "SteamId": "ReviveSingleHeroCounter",
+        "GOGId": "ReviveSingleHeroCounter",
+        "EpicId": "ReviveSingleHeroCounter",
+        "XBoxOneId": "ReviveSingleHeroCounter",
+        "PS4Id": "ReviveSingleHeroCounter"
+    },
+    {
+        "Name": "EnemyBunkersDestroyed",
+        "SteamId": "EnemyBunkersDestroyed",
+        "GOGId": "EnemyBunkersDestroyed",
+        "EpicId": "EnemyBunkersDestroyed",
+        "XBoxOneId": "EnemyBunkersDestroyed",
+        "PS4Id": "EnemyBunkersDestroyed"
+    },
+    {
+        "Name": "MechsBuilt",
+        "SteamId": "MechsBuilt",
+        "GOGId": "MechsBuilt",
+        "EpicId": "MechsBuilt",
+        "XBoxOneId": "MechsBuilt",
+        "PS4Id": "MechsBuilt"
+    },
+    {
+        "Name": "PlayedMatchesAndMissions",
+        "SteamId": "PlayedMatchesAndMissions",
+        "GOGId": "PlayedMatchesAndMissions",
+        "EpicId": "PlayedMatchesAndMissions",
+        "XBoxOneId": "PlayedMatchesAndMissions",
+        "PS4Id": "PlayedMatchesAndMissions"
+    },
+    {
+        "Name": "ConqueredResourcePoints",
+        "SteamId": "ConqueredResourcePoints",
+        "GOGId": "ConqueredResourcePoints",
+        "EpicId": "ConqueredResourcePoints",
+        "XBoxOneId": "ConqueredResourcePoints",
+        "PS4Id": "ConqueredResourcePoints"
+    },
+    {
+        "Name": "ConstructedStructures",
+        "SteamId": "ConstructedStructures",
+        "GOGId": "ConstructedStructures",
+        "EpicId": "ConstructedStructures",
+        "XBoxOneId": "ConstructedStructures",
+        "PS4Id": "ConstructedStructures"
+    },
+    {
+        "Name": "EnemyMechsKilled",
+        "SteamId": "EnemyMechsKilled",
+        "GOGId": "EnemyMechsKilled",
+        "EpicId": "EnemyMechsKilled",
+        "XBoxOneId": "EnemyMechsKilled",
+        "PS4Id": "EnemyMechsKilled"
+    },
+    {
+        "Name": "EnemyHeroesKilled",
+        "SteamId": "EnemyHeroesKilled",
+        "GOGId": "EnemyHeroesKilled",
+        "EpicId": "EnemyHeroesKilled",
+        "XBoxOneId": "EnemyHeroesKilled",
+        "PS4Id": "EnemyHeroesKilled"
+    },
+    {
+        "Name": "CratesOpened",
+        "SteamId": "CratesOpened",
+        "GOGId": "CratesOpened",
+        "EpicId": "CratesOpened",
+        "XBoxOneId": "CratesOpened",
+        "PS4Id": "CratesOpened"
+    },
+    {
+        "Name": "SkirmishMatchesWon",
+        "SteamId": "SkirmishMatchesWon",
+        "GOGId": "SkirmishMatchesWon",
+        "EpicId": "SkirmishMatchesWon",
+        "XBoxOneId": "SkirmishMatchesWon",
+        "PS4Id": "SkirmishMatchesWon"
+    }
+]

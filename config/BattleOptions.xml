@@ -1,0 +1,1101 @@
+<BattleOptions>
+  <BattleOption id="skirmish_two_player" type="skirmish">
+    <PossibleFactions>
+      <Faction>Polania</Faction>
+      <Faction>Saxony</Faction>
+	  <Faction>Rusviet</Faction>
+    </PossibleFactions>
+    <PossibleOperators>
+      <Operator>Player</Operator>
+      <Operator>AIEasy</Operator>
+      <Operator>AIMedium</Operator>
+      <Operator>AIHard</Operator>
+      <Operator>AIInsane</Operator>
+    </PossibleOperators>
+    <PossibleColors>
+      <Color>Blue</Color>
+      <Color>Red</Color>
+      <Color>Green</Color>
+      <Color>Yellow</Color>	  
+	  <Color>PalePink</Color>
+      <Color>Orchid</Color>
+      <Color>Purple</Color>
+      <Color>Royal</Color>
+	  <Color>Turquoise</Color>
+      <Color>Aquamarin</Color>
+      <Color>Olive</Color>
+      <Color>Orange</Color>
+    </PossibleColors>
+    <PossibleTeams>
+      <Team>Team1</Team>
+      <Team>Team2</Team>
+    </PossibleTeams>
+    <PossibleStartResources Type="StartResource">
+      <SettingLevels>
+        <ResourceLevel SettingLevel="Low">
+          <Resources>
+            <Resource Type="Iron" Value ="0"/>
+            <Resource Type="Oil" Value ="0"/>
+          </Resources>
+        </ResourceLevel>
+        <ResourceLevel SettingLevel="Default">
+          <Resources>
+            <Resource Type="Iron" Value ="250"/>
+            <Resource Type="Oil" Value ="0"/>
+          </Resources>
+        </ResourceLevel>
+        <ResourceLevel SettingLevel="High">
+          <Resources>
+            <Resource Type="Iron" Value ="1500"/>
+            <Resource Type="Oil" Value ="1000"/>
+          </Resources>
+        </ResourceLevel>
+        <ResourceLevel SettingLevel="VeryHigh">
+          <Resources>
+            <Resource Type="Iron" Value ="10000"/>
+            <Resource Type="Oil" Value ="10000"/>
+          </Resources>
+        </ResourceLevel>
+      </SettingLevels>
+    </PossibleStartResources>
+    <PossibleResourceLimits Type="ResourceLimit">
+      <SettingLevels>
+        <ResourceLevel SettingLevel="Low">
+          <Resources>
+            <Resource Type="Population" Value ="10"/>
+          </Resources>
+        </ResourceLevel>
+        <ResourceLevel SettingLevel="Default">
+          <Resources>
+            <Resource Type="Population" Value ="20"/>
+          </Resources>
+        </ResourceLevel>
+        <ResourceLevel SettingLevel="High">
+          <Resources>
+            <Resource Type="Population" Value ="40"/>
+          </Resources>
+        </ResourceLevel>
+      </SettingLevels>
+    </PossibleResourceLimits>
+    <PossiblePrimaryOutcomes>
+      <BattleOutcomeDestroyEnemyHeadQuartersConfig Enabled="true" ActivateOnLoad="true" ShowOnLoad="true" Experience="125"/>
+      <BattleOutcomeVictoryPointsConfig Enabled="true" ActivateOnLoad="true" ShowOnLoad="true" Experience="125">
+        <SettingLevels>
+          <BattleOutcomeSettingLevel SettingLevel="VeryLow" Value="150"/>
+          <BattleOutcomeSettingLevel SettingLevel="Low" Value="250"/>
+          <BattleOutcomeSettingLevel SettingLevel="Default" Value="500"/>
+          <BattleOutcomeSettingLevel SettingLevel="High" Value="750"/>
+          <BattleOutcomeSettingLevel SettingLevel="VeryHigh" Value="1000"/>
+        </SettingLevels>
+      </BattleOutcomeVictoryPointsConfig>
+      <BattleOutcomeAnnihilationConfig Enabled="true" ActivateOnLoad="true" ShowOnLoad="true" Experience="125"/>
+    </PossiblePrimaryOutcomes>
+    <PossibleSecondaryOutcomes>
+    </PossibleSecondaryOutcomes>
+    <PossibleHandicaps>
+      <BattleHandicapTimeLimitConfig>
+        <DifficultyLevels>
+          <BattleHandicapDifficultyLevel DifficultyLevel="Default" Value="0" BonusExperience="0"/>
+          <BattleHandicapDifficultyLevel DifficultyLevel="Bronze" Value="15" BonusExperience="125"/>
+          <BattleHandicapDifficultyLevel DifficultyLevel="Silver" Value="12" BonusExperience="225"/>
+          <BattleHandicapDifficultyLevel DifficultyLevel="Gold"   Value="10" BonusExperience="435"/>
+        </DifficultyLevels>
+      </BattleHandicapTimeLimitConfig>
+      <BattleHandicapUnitDeathLimitConfig>
+        <DifficultyLevels>
+          <BattleHandicapDifficultyLevel DifficultyLevel="Default" Value="0" BonusExperience="0"/>
+          <BattleHandicapDifficultyLevel DifficultyLevel="Bronze" Value="12" BonusExperience="125"/>
+          <BattleHandicapDifficultyLevel DifficultyLevel="Silver" Value="8" BonusExperience="225"/>
+          <BattleHandicapDifficultyLevel DifficultyLevel="Gold"   Value="5" BonusExperience="435"/>
+        </DifficultyLevels>
+      </BattleHandicapUnitDeathLimitConfig>
+      <BattleHandicapUnitHitPointReductionConfig>
+        <DifficultyLevels>
+          <BattleHandicapDifficultyLevel DifficultyLevel="Default" Value="100" BonusExperience="0"/>
+          <BattleHandicapDifficultyLevel DifficultyLevel="Bronze" Value="85" BonusExperience="125"/>
+          <BattleHandicapDifficultyLevel DifficultyLevel="Silver" Value="70" BonusExperience="225"/>
+          <BattleHandicapDifficultyLevel DifficultyLevel="Gold"   Value="50" BonusExperience="435"/>
+        </DifficultyLevels>
+      </BattleHandicapUnitHitPointReductionConfig>
+    </PossibleHandicaps>
+    <RefundDistribution>
+      <Refund From="0" To="120" Percentage="100"/>
+      <Refund From="120" To="240" Percentage ="80"/>
+      <Refund From="240" To="360" Percentage ="60"/>
+      <Refund From="360" To="480" Percentage ="40"/>
+      <Refund From="480" To="600" Percentage ="20"/>
+    </RefundDistribution>
+    <PossibleTimeLimit Enabled="false" OutcomeType="Win" >
+      <SettingLevels>
+        <BattleTimeLimitSettingLevel SettingLevel="VeryShort" Value="300"/>
+        <BattleTimeLimitSettingLevel SettingLevel="Short" Value="600"/>
+		<BattleTimeLimitSettingLevel SettingLevel="Default" Value="900"/>
+        <BattleTimeLimitSettingLevel SettingLevel="Long" Value="1200"/>
+        <BattleTimeLimitSettingLevel SettingLevel="VeryLong" Value="1500"/>
+      </SettingLevels>
+    </PossibleTimeLimit>
+	  <FallbackMissionConfig>
+		  <BattleSlots>
+			  <BattleSlot Id="1">
+			    <SlotOptions>
+				  <DefaultFaction>Polania</DefaultFaction>
+				  <DefaultOperator>Player</DefaultOperator>
+				  <DefaultColor>Blue</DefaultColor>
+				  <DefaultTeam>Team1</DefaultTeam>
+			    </SlotOptions>
+			  </BattleSlot>
+			  <BattleSlot Id="2">
+			    <SlotOptions>
+				  <DefaultFaction>Polania</DefaultFaction>
+				  <DefaultOperator>AIEasy</DefaultOperator>
+				  <DefaultColor>Red</DefaultColor>
+				  <DefaultTeam>Team2</DefaultTeam>
+			    </SlotOptions>
+			  </BattleSlot>
+		</BattleSlots>
+		  <BattleInfo Activated = "true" BaseXp = "250" MaximumXp ="2000">
+		  <BattleInfoStars>
+			  <BattleInfoStar Name ="FirstStar" Experience ="750"/>
+			  <BattleInfoStar Name ="SecondStar" Experience ="1150"/>
+			  <BattleInfoStar Name ="ThirdStar" Experience ="1450"/>
+		  </BattleInfoStars>
+		</BattleInfo>
+	  </FallbackMissionConfig>
+  </BattleOption>
+  <BattleOption id="skirmish_four_player" type="skirmish">
+    <PossibleFactions>
+      <Faction>Polania</Faction>
+      <Faction>Saxony</Faction>
+	  <Faction>Rusviet</Faction>
+    </PossibleFactions>
+    <PossibleOperators>
+      <Operator>None</Operator>
+      <Operator>Player</Operator>
+      <Operator>AIEasy</Operator>
+      <Operator>AIMedium</Operator>
+      <Operator>AIHard</Operator>
+      <Operator>AIInsane</Operator>
+    </PossibleOperators>
+    <PossibleColors>
+      <Color>Blue</Color>
+      <Color>Red</Color>
+      <Color>Green</Color>
+      <Color>Yellow</Color>
+	  <Color>PalePink</Color>
+      <Color>Orchid</Color>
+      <Color>Purple</Color>
+      <Color>Royal</Color>
+	  <Color>Turquoise</Color>
+      <Color>Aquamarin</Color>
+      <Color>Olive</Color>
+      <Color>Orange</Color>
+    </PossibleColors>
+    <PossibleTeams>
+      <Team>None</Team>
+      <Team>Team1</Team>
+      <Team>Team2</Team>
+    </PossibleTeams>
+    <PossibleStartResources Type="StartResource">
+      <SettingLevels>
+        <ResourceLevel SettingLevel="Low">
+          <Resources>
+            <Resource Type="Iron" Value ="0"/>
+            <Resource Type="Oil" Value ="0"/>
+          </Resources>
+        </ResourceLevel>
+        <ResourceLevel SettingLevel="Default">
+          <Resources>
+            <Resource Type="Iron" Value ="250"/>
+            <Resource Type="Oil" Value ="0"/>
+          </Resources>
+        </ResourceLevel>
+        <ResourceLevel SettingLevel="High">
+          <Resources>
+            <Resource Type="Iron" Value ="1500"/>
+            <Resource Type="Oil" Value ="1000"/>
+          </Resources>
+        </ResourceLevel>
+        <ResourceLevel SettingLevel="VeryHigh">
+          <Resources>
+            <Resource Type="Iron" Value ="10000"/>
+            <Resource Type="Oil" Value ="10000"/>
+          </Resources>
+        </ResourceLevel>
+      </SettingLevels>
+    </PossibleStartResources>
+    <PossibleResourceLimits Type="ResourceLimit">
+      <SettingLevels>
+        <ResourceLevel SettingLevel="Low">
+          <Resources>
+            <Resource Type="Population" Value ="12"/>
+          </Resources>
+        </ResourceLevel>
+        <ResourceLevel SettingLevel="Default">
+          <Resources>
+            <Resource Type="Population" Value ="20"/>
+          </Resources>
+        </ResourceLevel>
+        <ResourceLevel SettingLevel="High">
+          <Resources>
+            <Resource Type="Population" Value ="40"/>
+          </Resources>
+        </ResourceLevel>
+      </SettingLevels>
+    </PossibleResourceLimits>
+    <PossiblePrimaryOutcomes>
+      <BattleOutcomeDestroyEnemyHeadQuartersConfig Enabled="true" ActivateOnLoad="true" ShowOnLoad="true" Experience="125"/>
+      <BattleOutcomeVictoryPointsConfig Enabled="true" ActivateOnLoad="true" ShowOnLoad="true" Experience="125">
+        <SettingLevels>
+          <BattleOutcomeSettingLevel SettingLevel="VeryLow" Value="150"/>
+          <BattleOutcomeSettingLevel SettingLevel="Low" Value="250"/>
+          <BattleOutcomeSettingLevel SettingLevel="Default" Value="500"/>
+          <BattleOutcomeSettingLevel SettingLevel="High" Value="1000"/>
+          <BattleOutcomeSettingLevel SettingLevel="VeryHigh" Value="2500"/>
+        </SettingLevels>
+      </BattleOutcomeVictoryPointsConfig>
+      <BattleOutcomeAnnihilationConfig Enabled="true" ActivateOnLoad="true" ShowOnLoad="true" Experience="125"/>
+    </PossiblePrimaryOutcomes>
+    <PossibleSecondaryOutcomes>
+      <BattleOutcomeLoseOwnHeadQuartersConfig Enabled="true" ActivateOnLoad="true" ShowOnLoad="true" Experience="125"/>
+    </PossibleSecondaryOutcomes>
+    <PossibleHandicaps>
+      <BattleHandicapTimeLimitConfig>
+        <DifficultyLevels>
+          <BattleHandicapDifficultyLevel DifficultyLevel="Default" Value="0" BonusExperience="0"/>
+          <BattleHandicapDifficultyLevel DifficultyLevel="Bronze" Value="15" BonusExperience="125"/>
+          <BattleHandicapDifficultyLevel DifficultyLevel="Silver" Value="12" BonusExperience="225"/>
+          <BattleHandicapDifficultyLevel DifficultyLevel="Gold"   Value="10" BonusExperience="435"/>
+        </DifficultyLevels>
+      </BattleHandicapTimeLimitConfig>
+      <BattleHandicapUnitDeathLimitConfig>
+        <DifficultyLevels>
+          <BattleHandicapDifficultyLevel DifficultyLevel="Default" Value="0" BonusExperience="0"/>
+          <BattleHandicapDifficultyLevel DifficultyLevel="Bronze" Value="12" BonusExperience="125"/>
+          <BattleHandicapDifficultyLevel DifficultyLevel="Silver" Value="8" BonusExperience="225"/>
+          <BattleHandicapDifficultyLevel DifficultyLevel="Gold"   Value="5" BonusExperience="435"/>
+        </DifficultyLevels>
+      </BattleHandicapUnitDeathLimitConfig>
+      <BattleHandicapUnitHitPointReductionConfig>
+        <DifficultyLevels>
+          <BattleHandicapDifficultyLevel DifficultyLevel="Default" Value="100" BonusExperience="0"/>
+          <BattleHandicapDifficultyLevel DifficultyLevel="Bronze" Value="85" BonusExperience="125"/>
+          <BattleHandicapDifficultyLevel DifficultyLevel="Silver" Value="70" BonusExperience="225"/>
+          <BattleHandicapDifficultyLevel DifficultyLevel="Gold"   Value="50" BonusExperience="435"/>
+        </DifficultyLevels>
+      </BattleHandicapUnitHitPointReductionConfig>
+    </PossibleHandicaps>
+    <RefundDistribution>
+      <Refund From="0" To="120" Percentage="100"/>
+      <Refund From="120" To="240" Percentage ="80"/>
+      <Refund From="240" To="360" Percentage ="60"/>
+      <Refund From="360" To="480" Percentage ="40"/>
+      <Refund From="480" To="600" Percentage ="20"/>
+    </RefundDistribution>
+    <PossibleTimeLimit Enabled="false" OutcomeType="Win">
+      <SettingLevels>
+        <BattleTimeLimitSettingLevel SettingLevel="VeryShort" Value="300"/>
+        <BattleTimeLimitSettingLevel SettingLevel="Short" Value="600"/>
+        <BattleTimeLimitSettingLevel SettingLevel="Default" Value="900"/>
+        <BattleTimeLimitSettingLevel SettingLevel="Long" Value="1200"/>
+        <BattleTimeLimitSettingLevel SettingLevel="VeryLong" Value="1500"/>
+      </SettingLevels>
+    </PossibleTimeLimit>
+	  <FallbackMissionConfig>
+		  <BattleSlots>
+        <BattleSlot Id="1">
+          <SlotOptions>
+            <DefaultFaction>Polania</DefaultFaction>
+            <DefaultOperator>Player</DefaultOperator>
+            <DefaultColor>Blue</DefaultColor>
+            <DefaultTeam>Team1</DefaultTeam>
+          </SlotOptions>
+        </BattleSlot>
+        <BattleSlot Id="2">
+          <SlotOptions>
+            <DefaultFaction>Saxony</DefaultFaction>
+            <DefaultOperator>AIEasy</DefaultOperator>
+            <DefaultColor>Red</DefaultColor>
+            <DefaultTeam>Team1</DefaultTeam>
+          </SlotOptions>
+        </BattleSlot>
+        <BattleSlot Id="3">
+          <SlotOptions>
+            <DefaultFaction>Polania</DefaultFaction>
+            <DefaultOperator>AIEasy</DefaultOperator>
+            <DefaultColor>Green</DefaultColor>
+            <DefaultTeam>Team2</DefaultTeam>
+          </SlotOptions>
+        </BattleSlot>
+        <BattleSlot Id="4">
+          <SlotOptions>
+            <DefaultFaction>Saxony</DefaultFaction>
+            <DefaultOperator>AIEasy</DefaultOperator>
+            <DefaultColor>Yellow</DefaultColor>
+            <DefaultTeam>Team2</DefaultTeam>
+          </SlotOptions>
+        </BattleSlot>
+    </BattleSlots>
+		  <BattleInfo Activated = "true" BaseXp = "250" MaximumXp ="2000">
+		    <BattleInfoStars>
+			    <BattleInfoStar Name ="FirstStar" Experience ="750"/>
+			    <BattleInfoStar Name ="SecondStar" Experience ="1150"/>
+			    <BattleInfoStar Name ="ThirdStar" Experience ="1450"/>
+		    </BattleInfoStars>
+		  </BattleInfo>
+		  <IronProductionMultiplier>0.7</IronProductionMultiplier>
+		  <OilProductionMultiplier>0.7</OilProductionMultiplier>
+	</FallbackMissionConfig>
+  </BattleOption>
+  <BattleOption id="skirmish_eight_player" type="skirmish">
+    <PossibleFactions>
+      <Faction>Polania</Faction>
+      <Faction>Saxony</Faction>
+	  <Faction>Rusviet</Faction>
+    </PossibleFactions>
+    <PossibleOperators>
+      <Operator>None</Operator>
+      <Operator>Player</Operator>
+      <Operator>AIEasy</Operator>
+      <Operator>AIMedium</Operator>
+      <Operator>AIHard</Operator>
+      <Operator>AIInsane</Operator>
+    </PossibleOperators>
+    <PossibleColors>
+      <Color>Blue</Color>
+      <Color>Red</Color>
+      <Color>Green</Color>
+      <Color>Yellow</Color>
+	  <Color>PalePink</Color>
+      <Color>Orchid</Color>
+      <Color>Purple</Color>
+      <Color>Royal</Color>
+	  <Color>Turquoise</Color>
+      <Color>Aquamarin</Color>
+      <Color>Olive</Color>
+      <Color>Orange</Color>
+    </PossibleColors>
+    <PossibleTeams>
+      <Team>None</Team>
+      <Team>Team1</Team>
+      <Team>Team2</Team>
+    </PossibleTeams>
+    <PossibleStartResources Type="StartResource">
+      <SettingLevels>
+        <ResourceLevel SettingLevel="Low">
+          <Resources>
+            <Resource Type="Iron" Value ="0"/>
+            <Resource Type="Oil" Value ="0"/>
+          </Resources>
+        </ResourceLevel>
+        <ResourceLevel SettingLevel="Default">
+          <Resources>
+            <Resource Type="Iron" Value ="250"/>
+            <Resource Type="Oil" Value ="0"/>
+          </Resources>
+        </ResourceLevel>
+        <ResourceLevel SettingLevel="High">
+          <Resources>
+            <Resource Type="Iron" Value ="1500"/>
+            <Resource Type="Oil" Value ="1000"/>
+          </Resources>
+        </ResourceLevel>
+        <ResourceLevel SettingLevel="VeryHigh">
+          <Resources>
+            <Resource Type="Iron" Value ="10000"/>
+            <Resource Type="Oil" Value ="10000"/>
+          </Resources>
+        </ResourceLevel>
+      </SettingLevels>
+    </PossibleStartResources>
+    <PossibleResourceLimits Type="ResourceLimit">
+      <SettingLevels>
+        <ResourceLevel SettingLevel="Low">
+          <Resources>
+            <Resource Type="Population" Value ="12"/>
+          </Resources>
+        </ResourceLevel>
+        <ResourceLevel SettingLevel="Default">
+          <Resources>
+            <Resource Type="Population" Value ="20"/>
+          </Resources>
+        </ResourceLevel>
+        <ResourceLevel SettingLevel="High">
+          <Resources>
+            <Resource Type="Population" Value ="40"/>
+          </Resources>
+        </ResourceLevel>
+      </SettingLevels>
+    </PossibleResourceLimits>
+    <PossiblePrimaryOutcomes>
+      <BattleOutcomeDestroyEnemyHeadQuartersConfig Enabled="true" ActivateOnLoad="true" ShowOnLoad="true" Experience="125"/>
+      <BattleOutcomeVictoryPointsConfig Enabled="true" ActivateOnLoad="true" ShowOnLoad="true" Experience="125">
+        <SettingLevels>
+          <BattleOutcomeSettingLevel SettingLevel="VeryLow" Value="150"/>
+          <BattleOutcomeSettingLevel SettingLevel="Low" Value="250"/>
+          <BattleOutcomeSettingLevel SettingLevel="Default" Value="500"/>
+          <BattleOutcomeSettingLevel SettingLevel="High" Value="1000"/>
+          <BattleOutcomeSettingLevel SettingLevel="VeryHigh" Value="2500"/>
+        </SettingLevels>
+      </BattleOutcomeVictoryPointsConfig>
+      <BattleOutcomeAnnihilationConfig Enabled="true" ActivateOnLoad="true" ShowOnLoad="true" Experience="125"/>
+    </PossiblePrimaryOutcomes>
+    <PossibleSecondaryOutcomes>
+      <BattleOutcomeLoseOwnHeadQuartersConfig Enabled="true" ActivateOnLoad="true" ShowOnLoad="true" Experience="125"/>
+    </PossibleSecondaryOutcomes>
+    <PossibleHandicaps>
+      <BattleHandicapTimeLimitConfig>
+        <DifficultyLevels>
+          <BattleHandicapDifficultyLevel DifficultyLevel="Default" Value="0" BonusExperience="0"/>
+          <BattleHandicapDifficultyLevel DifficultyLevel="Bronze" Value="15" BonusExperience="125"/>
+          <BattleHandicapDifficultyLevel DifficultyLevel="Silver" Value="12" BonusExperience="225"/>
+          <BattleHandicapDifficultyLevel DifficultyLevel="Gold"   Value="10" BonusExperience="435"/>
+        </DifficultyLevels>
+      </BattleHandicapTimeLimitConfig>
+      <BattleHandicapUnitDeathLimitConfig>
+        <DifficultyLevels>
+          <BattleHandicapDifficultyLevel DifficultyLevel="Default" Value="0" BonusExperience="0"/>
+          <BattleHandicapDifficultyLevel DifficultyLevel="Bronze" Value="12" BonusExperience="125"/>
+          <BattleHandicapDifficultyLevel DifficultyLevel="Silver" Value="8" BonusExperience="225"/>
+          <BattleHandicapDifficultyLevel DifficultyLevel="Gold"   Value="5" BonusExperience="435"/>
+        </DifficultyLevels>
+      </BattleHandicapUnitDeathLimitConfig>
+      <BattleHandicapUnitHitPointReductionConfig>
+        <DifficultyLevels>
+          <BattleHandicapDifficultyLevel DifficultyLevel="Default" Value="100" BonusExperience="0"/>
+          <BattleHandicapDifficultyLevel DifficultyLevel="Bronze" Value="85" BonusExperience="125"/>
+          <BattleHandicapDifficultyLevel DifficultyLevel="Silver" Value="70" BonusExperience="225"/>
+          <BattleHandicapDifficultyLevel DifficultyLevel="Gold"   Value="50" BonusExperience="435"/>
+        </DifficultyLevels>
+      </BattleHandicapUnitHitPointReductionConfig>
+    </PossibleHandicaps>
+    <RefundDistribution>
+      <Refund From="0" To="120" Percentage="100"/>
+      <Refund From="120" To="240" Percentage ="80"/>
+      <Refund From="240" To="360" Percentage ="60"/>
+      <Refund From="360" To="480" Percentage ="40"/>
+      <Refund From="480" To="600" Percentage ="20"/>
+    </RefundDistribution>
+    <PossibleTimeLimit Enabled="false" OutcomeType="Win">
+      <SettingLevels>
+        <BattleTimeLimitSettingLevel SettingLevel="VeryShort" Value="300"/>
+        <BattleTimeLimitSettingLevel SettingLevel="Short" Value="600"/>
+        <BattleTimeLimitSettingLevel SettingLevel="Default" Value="900"/>
+        <BattleTimeLimitSettingLevel SettingLevel="Long" Value="1200"/>
+        <BattleTimeLimitSettingLevel SettingLevel="VeryLong" Value="1500"/>
+      </SettingLevels>
+    </PossibleTimeLimit>
+	  <FallbackMissionConfig>
+		  <BattleSlots>
+        <BattleSlot Id="1">
+          <SlotOptions>
+            <DefaultFaction>Polania</DefaultFaction>
+            <DefaultOperator>Player</DefaultOperator>
+            <DefaultColor>Blue</DefaultColor>
+            <DefaultTeam>Team1</DefaultTeam>
+          </SlotOptions>
+        </BattleSlot>
+        <BattleSlot Id="2">
+          <SlotOptions>
+            <DefaultFaction>Saxony</DefaultFaction>
+            <DefaultOperator>AIMedium</DefaultOperator>
+            <DefaultColor>Blue</DefaultColor>
+            <DefaultTeam>Team1</DefaultTeam>
+          </SlotOptions>
+        </BattleSlot>
+        <BattleSlot Id="3">
+          <SlotOptions>
+            <DefaultFaction>Polania</DefaultFaction>
+            <DefaultOperator>AIMedium</DefaultOperator>
+            <DefaultColor>Green</DefaultColor>
+            <DefaultTeam>Team1</DefaultTeam>
+          </SlotOptions>
+        </BattleSlot>
+        <BattleSlot Id="4">
+          <SlotOptions>
+            <DefaultFaction>Saxony</DefaultFaction>
+            <DefaultOperator>AIMedium</DefaultOperator>
+            <DefaultColor>Green</DefaultColor>
+            <DefaultTeam>Team1</DefaultTeam>
+          </SlotOptions>
+        </BattleSlot>
+	      <BattleSlot Id="5">
+          <SlotOptions>
+            <DefaultFaction>Polania</DefaultFaction>
+            <DefaultOperator>AIMedium</DefaultOperator>
+            <DefaultColor>Red</DefaultColor>
+            <DefaultTeam>Team2</DefaultTeam>
+          </SlotOptions>
+        </BattleSlot>
+        <BattleSlot Id="6">
+          <SlotOptions>
+            <DefaultFaction>Saxony</DefaultFaction>
+            <DefaultOperator>AIMedium</DefaultOperator>
+            <DefaultColor>Red</DefaultColor>
+            <DefaultTeam>Team2</DefaultTeam>
+          </SlotOptions>
+        </BattleSlot>
+        <BattleSlot Id="7">
+          <SlotOptions>
+            <DefaultFaction>Polania</DefaultFaction>
+            <DefaultOperator>AIMedium</DefaultOperator>
+            <DefaultColor>Yellow</DefaultColor>
+            <DefaultTeam>Team2</DefaultTeam>
+          </SlotOptions>
+        </BattleSlot>
+        <BattleSlot Id="8">
+          <SlotOptions>
+            <DefaultFaction>Saxony</DefaultFaction>
+            <DefaultOperator>AIMedium</DefaultOperator>
+            <DefaultColor>Yellow</DefaultColor>
+            <DefaultTeam>Team2</DefaultTeam>
+          </SlotOptions>
+        </BattleSlot>
+  </BattleSlots>
+		  <BattleInfo Activated = "true" BaseXp = "250" MaximumXp ="2000">
+		    <BattleInfoStars>
+			    <BattleInfoStar Name ="FirstStar" Experience ="750"/>
+			    <BattleInfoStar Name ="SecondStar" Experience ="1150"/>
+			    <BattleInfoStar Name ="ThirdStar" Experience ="1450"/>
+		    </BattleInfoStars>
+		  </BattleInfo>
+		  <IronProductionMultiplier>0.5</IronProductionMultiplier>
+		  <OilProductionMultiplier>0.5</OilProductionMultiplier>
+	</FallbackMissionConfig>
+  </BattleOption>
+  <BattleOption id="sandbox_basic" type="skirmish">
+    <PossibleFactions>
+      <Faction>Polania</Faction>
+      <Faction>Saxony</Faction>
+	  <Faction>Rusviet</Faction>
+    </PossibleFactions>
+    <PossibleOperators>
+      <Operator>Player</Operator>
+      <Operator>AIEasy</Operator>
+      <Operator>AIMedium</Operator>
+      <Operator>AIHard</Operator>
+      <Operator>AIInsane</Operator>
+    </PossibleOperators>
+    <PossibleColors>
+      <Color>Blue</Color>
+      <Color>Red</Color>
+      <Color>Green</Color>
+      <Color>Yellow</Color>
+      <Color>PalePink</Color>
+      <Color>Orchid</Color>
+      <Color>Purple</Color>
+      <Color>Royal</Color>
+      <Color>Turquoise</Color>
+      <Color>Aquamarin</Color>
+      <Color>Olive</Color>
+      <Color>Orange</Color>
+    </PossibleColors>
+    <PossibleTeams>
+      <Team>None</Team>
+    </PossibleTeams>
+    <PossibleStartResources Type="StartResource">
+      <SettingLevels>
+        <ResourceLevel SettingLevel="Default">
+          <Resources>
+            <Resource Type="Iron" Value ="250"/>
+            <Resource Type="Oil" Value ="100"/>
+          </Resources>
+        </ResourceLevel>
+      </SettingLevels>
+    </PossibleStartResources>
+    <PossibleResourceLimits Type="ResourceLimit">
+      <SettingLevels>
+        <ResourceLevel SettingLevel="Default">
+          <Resources>
+            <Resource Type="Population" Value ="200"/>
+          </Resources>
+        </ResourceLevel>
+      </SettingLevels>
+    </PossibleResourceLimits>
+  </BattleOption>
+  <BattleOption id="challenge_basic" type="challenge">
+    <PossibleFactions>
+      <Faction>Polania</Faction>
+      <Faction>Saxony</Faction>
+	  <Faction>Rusviet</Faction>
+    </PossibleFactions>
+    <PossibleOperators>
+      <Operator>Player</Operator>
+    </PossibleOperators>
+    <PossibleColors>
+      <Color>Blue</Color>
+      <Color>Red</Color>
+      <Color>Green</Color>
+      <Color>Yellow</Color>
+      <Color>PalePink</Color>
+      <Color>Orchid</Color>
+      <Color>Purple</Color>
+      <Color>Royal</Color>
+      <Color>Turquoise</Color>
+      <Color>Aquamarin</Color>
+      <Color>Olive</Color>
+      <Color>Orange</Color>
+    </PossibleColors>
+    <PossibleTeams>
+      <Team>None</Team>
+    </PossibleTeams>
+    <PossibleStartResources Type="StartResource">
+      <SettingLevels>
+        <ResourceLevel SettingLevel="Low">
+          <Resources>
+            <Resource Type="Iron" Value ="0"/>
+            <Resource Type="Oil" Value ="0"/>
+          </Resources>
+        </ResourceLevel>
+        <ResourceLevel SettingLevel="Default">
+          <Resources>
+            <Resource Type="Iron" Value ="250"/>
+            <Resource Type="Oil" Value ="0"/>
+          </Resources>
+        </ResourceLevel>
+        <ResourceLevel SettingLevel="High">
+          <Resources>
+            <Resource Type="Iron" Value ="1500"/>
+            <Resource Type="Oil" Value ="1000"/>
+          </Resources>
+        </ResourceLevel>
+        <ResourceLevel SettingLevel="VeryHigh">
+          <Resources>
+            <Resource Type="Iron" Value ="10000"/>
+            <Resource Type="Oil" Value ="10000"/>
+          </Resources>
+        </ResourceLevel>
+      </SettingLevels>
+    </PossibleStartResources>
+    <PossibleResourceLimits Type="ResourceLimit">
+      <SettingLevels>
+        <ResourceLevel SettingLevel="Low">
+          <Resources>
+            <Resource Type="Population" Value ="10"/>
+          </Resources>
+        </ResourceLevel>
+        <ResourceLevel SettingLevel="Default">
+          <Resources>
+            <Resource Type="Population" Value ="20"/>
+          </Resources>
+        </ResourceLevel>
+        <ResourceLevel SettingLevel="High">
+          <Resources>
+            <Resource Type="Population" Value ="40"/>
+          </Resources>
+        </ResourceLevel>
+      </SettingLevels>
+    </PossibleResourceLimits>
+    <PossiblePrimaryOutcomes>
+      <BattleOutcomeAnnihilationConfig Enabled="true" ActivateOnLoad="true" ShowOnLoad="true" Experience="125"/>
+    </PossiblePrimaryOutcomes>
+    <PossibleSecondaryOutcomes>
+	  <BattleOutcomeDestroyEnemyHeadQuartersConfig Enabled="true" ActivateOnLoad="true" ShowOnLoad="true" Experience="125"/>
+      <BattleOutcomeLoseOwnHeadQuartersConfig Enabled="true" ActivateOnLoad="true" ShowOnLoad="true" Experience="125"/>
+    </PossibleSecondaryOutcomes>
+    <PossibleHandicaps>
+      <BattleHandicapResourceReductionConfig>
+        <DifficultyLevels>
+          <DifficultyLevel DifficultyLevel="Default" Value="100" BonusExperience="0"/>
+          <DifficultyLevel DifficultyLevel="Bronze" Value="85" BonusExperience="100"/>
+          <DifficultyLevel DifficultyLevel="Silver" Value="70" BonusExperience="200"/>
+          <DifficultyLevel DifficultyLevel="Gold"   Value="50" BonusExperience="300"/>
+        </DifficultyLevels>
+      </BattleHandicapResourceReductionConfig>
+      <BattleHandicapUnitDeathLimitConfig>
+        <DifficultyLevels>
+          <DifficultyLevel DifficultyLevel="Default" Value="0" BonusExperience="0"/>
+          <DifficultyLevel DifficultyLevel="Bronze" Value="12" BonusExperience="100"/>
+          <DifficultyLevel DifficultyLevel="Silver" Value="8" BonusExperience="200"/>
+          <DifficultyLevel DifficultyLevel="Gold"   Value="5" BonusExperience="300"/>
+        </DifficultyLevels>
+      </BattleHandicapUnitDeathLimitConfig>
+      <BattleHandicapUnitHitPointReductionConfig>
+        <DifficultyLevels>
+          <DifficultyLevel DifficultyLevel="Default" Value="100" BonusExperience="0"/>
+          <DifficultyLevel DifficultyLevel="Bronze" Value="85" BonusExperience="100"/>
+          <DifficultyLevel DifficultyLevel="Silver" Value="70" BonusExperience="200"/>
+          <DifficultyLevel DifficultyLevel="Gold"   Value="50" BonusExperience="300"/>
+        </DifficultyLevels>
+      </BattleHandicapUnitHitPointReductionConfig>
+    </PossibleHandicaps>
+    <PossibleTimeLimit Enabled="false" OutcomeType="Win" >
+      <SettingLevels>
+        <BattleTimeLimitSettingLevel SettingLevel="VeryShort" Value="300"/>
+        <BattleTimeLimitSettingLevel SettingLevel="Short" Value="600"/>
+        <BattleTimeLimitSettingLevel SettingLevel="Default" Value="900"/>
+        <BattleTimeLimitSettingLevel SettingLevel="Long" Value="1200"/>
+        <BattleTimeLimitSettingLevel SettingLevel="VeryLong" Value="1500"/>
+      </SettingLevels>
+    </PossibleTimeLimit>
+    <FallbackMissionConfig>
+      <BattleSlots>
+        <BattleSlot Id="1">
+          <SlotOptions>
+            <DefaultFaction>Polania</DefaultFaction>
+            <DefaultOperator>Player</DefaultOperator>
+            <DefaultColor>Blue</DefaultColor>
+            <DefaultTeam>Team1</DefaultTeam>
+          </SlotOptions>
+        </BattleSlot>
+        <BattleSlot Id="2">
+          <SlotOptions>
+            <DefaultFaction>Polania</DefaultFaction>
+            <DefaultOperator>ScriptDriven</DefaultOperator>
+            <DefaultColor>Red</DefaultColor>
+            <DefaultTeam>Team2</DefaultTeam>
+          </SlotOptions>
+        </BattleSlot>
+      </BattleSlots>
+    </FallbackMissionConfig>
+  </BattleOption>
+  <BattleOption id="challenge_kiosk" type="challenge">
+    <PossibleFactions>
+      <Faction>Polania</Faction>
+      <Faction>Saxony</Faction>
+	  <Faction>Rusviet</Faction>
+    </PossibleFactions>
+    <PossibleOperators>
+      <Operator>Player</Operator>
+    </PossibleOperators>
+    <PossibleColors>
+      <Color>Blue</Color>
+      <Color>Red</Color>
+      <Color>Green</Color>
+      <Color>Yellow</Color>
+      <Color>PalePink</Color>
+      <Color>Orchid</Color>
+      <Color>Purple</Color>
+      <Color>Royal</Color>
+      <Color>Turquoise</Color>
+      <Color>Aquamarin</Color>
+      <Color>Olive</Color>
+      <Color>Orange</Color>
+    </PossibleColors>
+    <PossibleTeams>
+      <Team>None</Team>
+    </PossibleTeams>
+    <PossibleStartResources Type="StartResource">
+      <SettingLevels>
+        <ResourceLevel SettingLevel="Low">
+          <Resources>
+            <Resource Type="Iron" Value ="0"/>
+            <Resource Type="Oil" Value ="0"/>
+          </Resources>
+        </ResourceLevel>
+        <ResourceLevel SettingLevel="Default">
+          <Resources>
+            <Resource Type="Iron" Value ="250"/>
+            <Resource Type="Oil" Value ="0"/>
+          </Resources>
+        </ResourceLevel>
+        <ResourceLevel SettingLevel="High">
+          <Resources>
+            <Resource Type="Iron" Value ="1500"/>
+            <Resource Type="Oil" Value ="1000"/>
+          </Resources>
+        </ResourceLevel>
+        <ResourceLevel SettingLevel="VeryHigh">
+          <Resources>
+            <Resource Type="Iron" Value ="10000"/>
+            <Resource Type="Oil" Value ="10000"/>
+          </Resources>
+        </ResourceLevel>
+      </SettingLevels>
+    </PossibleStartResources>
+    <PossibleResourceLimits Type="ResourceLimit">
+      <SettingLevels>
+        <ResourceLevel SettingLevel="Low">
+          <Resources>
+            <Resource Type="Population" Value ="10"/>
+          </Resources>
+        </ResourceLevel>
+        <ResourceLevel SettingLevel="Default">
+          <Resources>
+            <Resource Type="Population" Value ="20"/>
+          </Resources>
+        </ResourceLevel>
+        <ResourceLevel SettingLevel="High">
+          <Resources>
+            <Resource Type="Population" Value ="40"/>
+          </Resources>
+        </ResourceLevel>
+      </SettingLevels>
+    </PossibleResourceLimits>
+	<PossiblePrimaryOutcomes>
+	
+	</PossiblePrimaryOutcomes>
+    <PossibleSecondaryOutcomes>
+      
+    </PossibleSecondaryOutcomes>
+    <PossibleHandicaps>
+      <BattleHandicapResourceReductionConfig>
+        <DifficultyLevels>
+          <DifficultyLevel DifficultyLevel="Default" Value="100" BonusExperience="0"/>
+          <DifficultyLevel DifficultyLevel="Bronze" Value="85" BonusExperience="100"/>
+          <DifficultyLevel DifficultyLevel="Silver" Value="70" BonusExperience="200"/>
+          <DifficultyLevel DifficultyLevel="Gold"   Value="50" BonusExperience="300"/>
+        </DifficultyLevels>
+      </BattleHandicapResourceReductionConfig>
+      <BattleHandicapUnitDeathLimitConfig>
+        <DifficultyLevels>
+          <DifficultyLevel DifficultyLevel="Default" Value="0" BonusExperience="0"/>
+          <DifficultyLevel DifficultyLevel="Bronze" Value="12" BonusExperience="100"/>
+          <DifficultyLevel DifficultyLevel="Silver" Value="8" BonusExperience="200"/>
+          <DifficultyLevel DifficultyLevel="Gold"   Value="5" BonusExperience="300"/>
+        </DifficultyLevels>
+      </BattleHandicapUnitDeathLimitConfig>
+      <BattleHandicapUnitHitPointReductionConfig>
+        <DifficultyLevels>
+          <DifficultyLevel DifficultyLevel="Default" Value="100" BonusExperience="0"/>
+          <DifficultyLevel DifficultyLevel="Bronze" Value="85" BonusExperience="100"/>
+          <DifficultyLevel DifficultyLevel="Silver" Value="70" BonusExperience="200"/>
+          <DifficultyLevel DifficultyLevel="Gold"   Value="50" BonusExperience="300"/>
+        </DifficultyLevels>
+      </BattleHandicapUnitHitPointReductionConfig>
+    </PossibleHandicaps>
+    <PossibleTimeLimit Enabled="false" OutcomeType="Win" >
+      <SettingLevels>
+        <BattleTimeLimitSettingLevel SettingLevel="VeryShort" Value="300"/>
+        <BattleTimeLimitSettingLevel SettingLevel="Short" Value="600"/>
+        <BattleTimeLimitSettingLevel SettingLevel="Default" Value="900"/>
+        <BattleTimeLimitSettingLevel SettingLevel="Long" Value="1200"/>
+        <BattleTimeLimitSettingLevel SettingLevel="VeryLong" Value="1500"/>
+      </SettingLevels>
+    </PossibleTimeLimit>
+    <FallbackMissionConfig>
+      <BattleSlots>
+        <BattleSlot Id="1">
+          <SlotOptions>
+            <DefaultFaction>Polania</DefaultFaction>
+            <DefaultOperator>Player</DefaultOperator>
+            <DefaultColor>Blue</DefaultColor>
+            <DefaultTeam>Team1</DefaultTeam>
+          </SlotOptions>
+        </BattleSlot>
+        <BattleSlot Id="2">
+          <SlotOptions>
+            <DefaultFaction>Polania</DefaultFaction>
+            <DefaultOperator>ScriptDriven</DefaultOperator>
+            <DefaultColor>Red</DefaultColor>
+            <DefaultTeam>Team2</DefaultTeam>
+          </SlotOptions>
+        </BattleSlot>
+      </BattleSlots>
+	  <FogOfWarEnabled>False</FogOfWarEnabled>
+    </FallbackMissionConfig>
+  </BattleOption>
+  <BattleOption id="campaign_pol_basic" type="campaign">
+    <PossibleFactions>
+      <Faction>Polania</Faction>
+    </PossibleFactions>
+    <PossibleOperators>
+      <Operator>Player</Operator>
+    </PossibleOperators>
+    <PossibleColors>
+      <Color>Blue</Color>
+    </PossibleColors>
+    <PossibleTeams>
+      <Team>None</Team>
+    </PossibleTeams>
+    <PossibleStartResources Type="StartResource">
+      <SettingLevels>
+        <ResourceLevel SettingLevel="Default">
+          <Resources>
+            <Resource Type="Iron" Value ="100"/>
+            <Resource Type="Oil" Value ="50"/>
+          </Resources>
+        </ResourceLevel>
+      </SettingLevels>
+    </PossibleStartResources>
+    <PossibleResourceLimits Type="ResourceLimit">
+      <SettingLevels>
+        <ResourceLevel SettingLevel="Default">
+          <Resources>
+            <Resource Type="Population" Value ="200"/>
+          </Resources>
+        </ResourceLevel>
+      </SettingLevels>
+    </PossibleResourceLimits>
+    <FallbackMissionConfig>
+      <BattleSlots>
+        <BattleSlot Id="1">
+          <SlotOptions>
+            <PossiblePrimaryOutcomes/>
+            <PossibleSecondaryOutcomes/>
+            <DefaultFaction>Polania</DefaultFaction>
+            <DefaultOperator>Player</DefaultOperator>
+            <DefaultColor>Blue</DefaultColor>
+            <DefaultTeam>Team1</DefaultTeam>
+          </SlotOptions>
+        </BattleSlot>
+        <BattleSlot Id="2">
+          <SlotOptions>
+            <DefaultFaction>Saxony</DefaultFaction>
+            <DefaultOperator>ScriptDriven</DefaultOperator>
+            <DefaultColor>Red</DefaultColor>
+            <DefaultTeam>Team2</DefaultTeam>
+          </SlotOptions>
+        </BattleSlot>
+      </BattleSlots>
+    </FallbackMissionConfig>
+  </BattleOption>
+  <BattleOption id="campaign_sax_basic" type="campaign">
+    <PossibleFactions>
+      <Faction>Saxony</Faction>
+    </PossibleFactions>
+    <PossibleOperators>
+      <Operator>Player</Operator>
+    </PossibleOperators>
+    <PossibleColors>
+      <Color>Blue</Color>
+    </PossibleColors>
+    <PossibleTeams>
+      <Team>None</Team>
+    </PossibleTeams>
+    <PossibleStartResources Type="StartResource">
+      <SettingLevels>
+        <ResourceLevel SettingLevel="Default">
+          <Resources>
+            <Resource Type="Iron" Value ="250"/>
+            <Resource Type="Oil" Value ="100"/>
+          </Resources>
+        </ResourceLevel>
+      </SettingLevels>
+    </PossibleStartResources>
+    <PossibleResourceLimits Type="ResourceLimit">
+      <SettingLevels>
+        <ResourceLevel SettingLevel="Default">
+          <Resources>
+            <Resource Type="Population" Value ="200"/>
+          </Resources>
+        </ResourceLevel>
+      </SettingLevels>
+    </PossibleResourceLimits>
+    <FallbackMissionConfig>
+      <BattleSlots>
+        <BattleSlot Id="1">
+          <SlotOptions>
+            <DefaultFaction>Saxony</DefaultFaction>
+            <DefaultOperator>Player</DefaultOperator>
+            <DefaultColor>Blue</DefaultColor>
+            <DefaultTeam>Team1</DefaultTeam>
+          </SlotOptions>
+        </BattleSlot>
+        <BattleSlot Id="2">
+          <SlotOptions>
+            <DefaultFaction>Polania</DefaultFaction>
+            <DefaultOperator>ScriptDriven</DefaultOperator>
+            <DefaultColor>Red</DefaultColor>
+            <DefaultTeam>Team2</DefaultTeam>
+          </SlotOptions>
+        </BattleSlot>
+      </BattleSlots>
+    </FallbackMissionConfig>
+  </BattleOption>
+  <BattleOption id="campaign_rus_basic" type="campaign">
+    <PossibleFactions>
+      <Faction>Rusviet</Faction>
+    </PossibleFactions>
+    <PossibleOperators>
+      <Operator>Player</Operator>
+    </PossibleOperators>
+    <PossibleColors>
+      <Color>Blue</Color>
+    </PossibleColors>
+    <PossibleTeams>
+      <Team>None</Team>
+    </PossibleTeams>
+    <PossibleStartResources Type="StartResource">
+      <SettingLevels>
+        <ResourceLevel SettingLevel="Default">
+          <Resources>
+            <Resource Type="Iron" Value ="250"/>
+            <Resource Type="Oil" Value ="100"/>
+          </Resources>
+        </ResourceLevel>
+      </SettingLevels>
+    </PossibleStartResources>
+    <PossibleResourceLimits Type="ResourceLimit">
+      <SettingLevels>
+        <ResourceLevel SettingLevel="Default">
+          <Resources>
+            <Resource Type="Population" Value ="200"/>
+          </Resources>
+        </ResourceLevel>
+      </SettingLevels>
+    </PossibleResourceLimits>
+    <FallbackMissionConfig>
+      <BattleSlots>
+        <BattleSlot Id="1">
+          <SlotOptions>
+            <DefaultFaction>Rusviet</DefaultFaction>
+            <DefaultOperator>Player</DefaultOperator>
+            <DefaultColor>Blue</DefaultColor>
+            <DefaultTeam>Team1</DefaultTeam>
+          </SlotOptions>
+        </BattleSlot>
+        <BattleSlot Id="2">
+          <SlotOptions>
+            <DefaultFaction>Polania</DefaultFaction>
+            <DefaultOperator>ScriptDriven</DefaultOperator>
+            <DefaultColor>Red</DefaultColor>
+            <DefaultTeam>Team2</DefaultTeam>
+          </SlotOptions>
+        </BattleSlot>
+      </BattleSlots>
+    </FallbackMissionConfig>
+  </BattleOption>
+  <BattleOption id="campaign_bon_basic" type="campaign">
+    <PossibleFactions>
+      <Faction>Rusviet</Faction>
+    </PossibleFactions>
+    <PossibleOperators>
+      <Operator>Player</Operator>
+    </PossibleOperators>
+    <PossibleColors>
+      <Color>Blue</Color>
+    </PossibleColors>
+    <PossibleTeams>
+      <Team>None</Team>
+    </PossibleTeams>
+    <PossibleStartResources Type="StartResource">
+      <SettingLevels>
+        <ResourceLevel SettingLevel="Default">
+          <Resources>
+            <Resource Type="Iron" Value ="250"/>
+            <Resource Type="Oil" Value ="100"/>
+          </Resources>
+        </ResourceLevel>
+      </SettingLevels>
+    </PossibleStartResources>
+    <PossibleResourceLimits Type="ResourceLimit">
+      <SettingLevels>
+        <ResourceLevel SettingLevel="Default">
+          <Resources>
+            <Resource Type="Population" Value ="200"/>
+          </Resources>
+        </ResourceLevel>
+      </SettingLevels>
+    </PossibleResourceLimits>
+    <FallbackMissionConfig>
+      <BattleSlots>
+        <BattleSlot Id="1">
+          <SlotOptions>
+            <DefaultFaction>Rusviet</DefaultFaction>
+            <DefaultOperator>Player</DefaultOperator>
+            <DefaultColor>Blue</DefaultColor>
+            <DefaultTeam>Team1</DefaultTeam>
+          </SlotOptions>
+        </BattleSlot>
+        <BattleSlot Id="2">
+          <SlotOptions>
+            <DefaultFaction>Rusviet</DefaultFaction>
+            <DefaultOperator>ScriptDriven</DefaultOperator>
+            <DefaultColor>Red</DefaultColor>
+            <DefaultTeam>Team2</DefaultTeam>
+          </SlotOptions>
+        </BattleSlot>
+      </BattleSlots>
+    </FallbackMissionConfig>
+  </BattleOption>
+</BattleOptions>

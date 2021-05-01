@@ -1,0 +1,2924 @@
+<ActorConfigurationRepository>
+  <!--
+    <SkillType></SkillType> Specifies the type of skill.
+    Possible types (from TeamSkillType enum in Assets\Code\Presentation\ActorConfiguration.cs):
+      AbilityTeamSkill
+      RetreatOrReinforceTeamSkill
+      GoToPointTeamSkill
+      StopTeamSkill
+      AreaAbilityTeamSkill
+      BuildStructureTeamSkill
+      RepairTeamSkill
+      HealTeamSkill
+      MedicTentTeamSkill
+    <Ability></Ability> Is an AbilityType for AbilityTeamSkills.
+    Possible ability types are:
+      0 Undefined,
+      1 AttackGround,
+      2 Grenade,
+      3 Mortar,
+      4 SetRallyPoint,
+      5 GatlingSweep,
+      6 Reinforce,
+      7 Unload,
+      8 Deploy,
+      9 Rockets,
+      10 VeteranMechAbility,
+      11 Retreat,
+      12 Boost,
+      13 Abandon,
+      14 Upgrade,
+      15 PlaceMedicTent,
+      16 PowerShot,
+      17 CallPet,
+      18 MeleeAttack,
+      19 SendPet,
+      20 Dash,
+      21 RetreatOrReinforce,
+      22 CallOffPet
+    <SkillId></SkillId> Specifies a valid SkillId that is used to load the skill configuration from Abilities.xml.
+    <SkillSlot></SkillSlot> Specifies the slot that the skill will occupy.
+    
+    Usage example:
+    <ActorConfiguration id="soldier" type="human">
+      <Skills>
+        <SkillConfiguration>
+          <SkillType>RetreatOrReinforceTeamSkill</SkillType>
+          <SkillId>retreat</SkillId>
+          <SkillSlot>0</SkillSlot>
+        </SkillConfiguration>
+        <SkillConfiguration>
+          <SkillType>AbilityTeamSkill</SkillType>
+          <Ability>MeleeAttack</Ability>
+          <SkillId>melee</SkillId>
+          <SkillSlot>1</SkillSlot>
+        </SkillConfiguration>
+      </Skills>
+      ...etc
+    </ActorConfiguration>
+  -->
+
+  <ActorConfiguration id="soldier" type="human">
+		<VisualWeaponName>rifle</VisualWeaponName>
+		<MaxStrafeSpeed>5</MaxStrafeSpeed>
+		<MaxForwardSpeed>7</MaxForwardSpeed>
+		<MaxBackwardSpeed>3</MaxBackwardSpeed>
+		<MaxForwardCrawlSpeed>0.1</MaxForwardCrawlSpeed>
+		<MaxBackwardCrawlSpeed>0.1</MaxBackwardCrawlSpeed>
+		<MaxStrafeExplorationSpeed>5</MaxStrafeExplorationSpeed>
+		<MaxForwardExplorationSpeed>7</MaxForwardExplorationSpeed>
+		<MaxBackwardExplorationSpeed>3</MaxBackwardExplorationSpeed>
+		<MaxShiftCoverSpeed>1.5</MaxShiftCoverSpeed>
+		<VelocityCurve>0.5</VelocityCurve>
+		<StrafeCurve>0.5</StrafeCurve>
+		<BlendSpeed>2</BlendSpeed>
+		<!--Decay describes flinch reduction in per second! -->
+		<FlinchProportionalDecay>2.5</FlinchProportionalDecay>
+		<FlinchConstantDecay>0.75</FlinchConstantDecay>
+		<KineticToFlinch>2.0</KineticToFlinch>
+		<AimDecay>4</AimDecay>
+		<Height>2.3</Height>
+		<DefaultMaterial>Flesh</DefaultMaterial>
+		<DeathSound>Human</DeathSound>
+		<HitSound>Flesh</HitSound>
+    <Skills>
+      <SkillConfiguration>
+        <SkillType>RetreatOrReinforceTeamSkill</SkillType>
+        <SkillId>retreat</SkillId>
+        <SkillSlot>0</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>AbilityTeamSkill</SkillType>
+        <Ability>MeleeAttack</Ability>
+        <SkillId>melee</SkillId>
+        <SkillSlot>1</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>GoToPointTeamSkill</SkillType>
+        <SkillSlot>2</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>AbilityTeamSkill</SkillType>
+        <Ability>AttackGround</Ability>
+        <SkillId>pointAttack</SkillId>
+        <SkillSlot>3</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>StopTeamSkill</SkillType>
+        <SkillSlot>4</SkillSlot>
+      </SkillConfiguration>
+    </Skills>
+  </ActorConfiguration>
+
+	<ActorConfiguration id="pol_hero_anna" parentId="soldier" type="human">
+	  <MaxStrafeExplorationSpeed>5</MaxStrafeExplorationSpeed>
+	  <MaxForwardExplorationSpeed>7</MaxForwardExplorationSpeed>
+	  <MaxBackwardExplorationSpeed>3</MaxBackwardExplorationSpeed>
+    <Skills>
+      <SkillConfiguration>
+        <SkillType>RetreatOrReinforceTeamSkill</SkillType>
+        <SkillId>retreat</SkillId>
+        <SkillSlot>0</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>AbilityTeamSkill</SkillType>
+        <Ability>MeleeAttack</Ability>
+        <SkillId>melee</SkillId>
+        <SkillSlot>1</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>GoToPointTeamSkill</SkillType>
+        <SkillSlot>2</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>AbilityTeamSkill</SkillType>
+        <Ability>AttackGround</Ability>
+        <SkillId>pointAttack</SkillId>
+        <SkillSlot>3</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>StopTeamSkill</SkillType>
+        <SkillSlot>4</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>AbilityTeamSkill</SkillType>
+        <Ability>PowerShot</Ability>
+        <SkillId>powerShot</SkillId>
+        <SkillSlot>5</SkillSlot>
+        <SpecialSlot>Special1</SpecialSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>AbilityTeamSkill</SkillType>
+        <Ability>HeroAbility3</Ability>
+        <SkillId>wojtek</SkillId>
+        <SkillSlot>7</SkillSlot>
+      </SkillConfiguration>
+    </Skills>
+    <IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_pol_hero_anna.png</IconName>
+	  <Priority>1</Priority>
+  </ActorConfiguration>
+
+	<ActorConfiguration id="pol_hero_annachild" parentId="soldier" type="human">
+		  <MaxStrafeExplorationSpeed>5</MaxStrafeExplorationSpeed>
+		  <MaxForwardExplorationSpeed>7</MaxForwardExplorationSpeed>
+		<MaxBackwardExplorationSpeed>3</MaxBackwardExplorationSpeed>
+		  <Skills>
+		  <SkillConfiguration>
+			<SkillType>AbilityTeamSkill</SkillType>
+			<Ability>Retreat</Ability>
+			<SkillId>retreat</SkillId>
+			<SkillSlot>0</SkillSlot>
+		  </SkillConfiguration>
+		  <SkillConfiguration>
+			<SkillType>AbilityTeamSkill</SkillType>
+			<Ability>MeleeAttack</Ability>
+			<SkillId>melee</SkillId>
+			<SkillSlot>1</SkillSlot>
+		  </SkillConfiguration>
+		  <SkillConfiguration>
+			<SkillType>GoToPointTeamSkill</SkillType>
+			<SkillSlot>2</SkillSlot>
+		  </SkillConfiguration>
+		  <SkillConfiguration>
+			<SkillType>AbilityTeamSkill</SkillType>
+			<Ability>AttackGround</Ability>
+			<SkillId>pointAttack</SkillId>
+			<SkillSlot>3</SkillSlot>
+		  </SkillConfiguration>
+		  <SkillConfiguration>
+			<SkillType>StopTeamSkill</SkillType>
+			<SkillSlot>4</SkillSlot>
+		  </SkillConfiguration>
+		</Skills>
+		<IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_pol_hero_annachild.png</IconName>
+		  <Priority>1</Priority>
+	  </ActorConfiguration>
+
+	<ActorConfiguration id="pol_hero_annachildrifle" parentId="pol_hero_annachild" type="human">
+		<MaxStrafeExplorationSpeed>7.5</MaxStrafeExplorationSpeed>
+		<MaxForwardExplorationSpeed>7.5</MaxForwardExplorationSpeed>
+		<MaxBackwardExplorationSpeed>3</MaxBackwardExplorationSpeed>
+		<MaxForwardSpeed>7.5</MaxForwardSpeed>
+		<MaxStrafeSpeed>7.5</MaxStrafeSpeed>
+	   <Skills>
+		  <SkillConfiguration>
+			<SkillType>AbilityTeamSkill</SkillType>
+			<Ability>Retreat</Ability>
+			<SkillId>retreat</SkillId>
+			<SkillSlot>0</SkillSlot>
+		  </SkillConfiguration>
+		  <SkillConfiguration>
+			<SkillType>AbilityTeamSkill</SkillType>
+			<Ability>MeleeAttack</Ability>
+			<SkillId>melee</SkillId>
+			<SkillSlot>1</SkillSlot>
+		  </SkillConfiguration>
+		  <SkillConfiguration>
+			<SkillType>GoToPointTeamSkill</SkillType>
+			<SkillSlot>2</SkillSlot>
+		  </SkillConfiguration>
+		  <SkillConfiguration>
+			<SkillType>AbilityTeamSkill</SkillType>
+			<Ability>AttackGround</Ability>
+			<SkillId>pointAttack</SkillId>
+			<SkillSlot>3</SkillSlot>
+		  </SkillConfiguration>
+		  <SkillConfiguration>
+			<SkillType>StopTeamSkill</SkillType>
+			<SkillSlot>4</SkillSlot>
+		  </SkillConfiguration>
+		  <SkillConfiguration>
+			<SkillType>AbilityTeamSkill</SkillType>
+			<Ability>PowerShot</Ability>
+			<SkillId>powerShot</SkillId>
+			<SkillSlot>5</SkillSlot>
+      <SpecialSlot>Special1</SpecialSlot>
+		  </SkillConfiguration>
+		</Skills>
+		<Priority>1</Priority>
+	</ActorConfiguration>
+
+
+	<ActorConfiguration id="pol_hero_wojtek" parentId="soldier" type="human">
+    <Skills>
+      <SkillConfiguration>
+        <SkillType>AbilityTeamSkill</SkillType>
+        <Ability>Retreat</Ability>
+        <SkillId>retreat</SkillId>
+        <SkillSlot>0</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>AbilityTeamSkill</SkillType>
+        <Ability>MeleeAttack</Ability>
+        <SkillId>melee</SkillId>
+        <SkillSlot>1</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>GoToPointTeamSkill</SkillType>
+        <SkillSlot>2</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>AbilityTeamSkill</SkillType>
+        <Ability>AttackGround</Ability>
+        <SkillId>pointAttack</SkillId>
+        <SkillSlot>3</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>StopTeamSkill</SkillType>
+        <SkillSlot>4</SkillSlot>
+      </SkillConfiguration>
+    </Skills>
+	<MaxForwardSpeed>5.1</MaxForwardSpeed>
+    <IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_pol_hero_anna.png</IconName>
+	  <Priority>60</Priority>
+		<MaxStrafeExplorationSpeed>1</MaxStrafeExplorationSpeed>
+		<MaxForwardExplorationSpeed>2</MaxForwardExplorationSpeed>
+		<MaxBackwardExplorationSpeed>1.25</MaxBackwardExplorationSpeed>
+  </ActorConfiguration>
+
+	<ActorConfiguration id="pol_hero_cavalry" parentId="soldier" type="human">
+    <Skills>
+      <SkillConfiguration>
+        <SkillType>RetreatOrReinforceTeamSkill</SkillType>
+        <SkillId>retreat</SkillId>
+        <SkillSlot>0</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>AbilityTeamSkill</SkillType>
+        <Ability>MeleeAttack</Ability>
+        <SkillId>melee</SkillId>
+        <SkillSlot>1</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>GoToPointTeamSkill</SkillType>
+        <SkillSlot>2</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>AbilityTeamSkill</SkillType>
+        <Ability>AttackGround</Ability>
+        <SkillId>pointAttack</SkillId>
+        <SkillSlot>3</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>StopTeamSkill</SkillType>
+        <SkillSlot>4</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>AbilityTeamSkill</SkillType>
+        <Ability>Grenade</Ability>
+        <skillId>bombs</skillId>
+        <SkillSlot>5</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>AbilityTeamSkill</SkillType>
+        <Ability>HeroAbility1</Ability>
+        <skillId>cavalrycharge</skillId>
+        <SkillSlot>6</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>AbilityTeamSkill</SkillType>
+        <skillId>squad</skillId>
+        <SkillSlot>7</SkillSlot>
+      </SkillConfiguration>
+    </Skills>
+	<MaxForwardSpeed>10</MaxForwardSpeed>
+    <Priority>25</Priority>
+	
+		<IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_pol_hero_cavalry.png</IconName>
+	 </ActorConfiguration>
+
+	<ActorConfiguration id="pol_soldier_cavalry" parentId="pol_hero_cavalry" type="human">
+	 </ActorConfiguration>
+
+
+	<ActorConfiguration id="pol_soldier_rifleman" parentId="soldier" type="human">
+    <IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_pol_soldier_rifleman.png</IconName>
+		<Priority>150</Priority>
+	</ActorConfiguration>
+
+	<ActorConfiguration id="pol_soldier_grenadier" parentId="soldier" type="human">
+    <IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_pol_soldier_grenadier.png</IconName>
+		<Priority>140</Priority>
+		<MaxStrafeExplorationSpeed>1</MaxStrafeExplorationSpeed>
+		<MaxForwardExplorationSpeed>2</MaxForwardExplorationSpeed>
+		<MaxBackwardExplorationSpeed>1.25</MaxBackwardExplorationSpeed>
+	</ActorConfiguration>
+
+	<ActorConfiguration id="pol_soldier_medic" parentId="soldier" type="human">
+    <IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_pol_soldier_medic.png</IconName>
+		<Priority>160</Priority>
+		<VisualWeaponName>pol_medic_handgun</VisualWeaponName>
+	</ActorConfiguration>
+
+	<ActorConfiguration id="pol_soldier_engineer" parentId="soldier" type="human">
+    <IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_pol_soldier_engineer.png</IconName>
+		<Priority>170</Priority>
+		<VisualWeaponName>pol_engineer_handgun</VisualWeaponName>
+	 </ActorConfiguration>
+
+	<ActorConfiguration id="pol_soldier_gunner" parentId="soldier" type="human">
+    <IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_pol_soldier_gunner.png</IconName>
+		<Priority>120</Priority>
+		<MaxForwardSpeed>4.5</MaxForwardSpeed>
+		<VisualWeaponName>pol_soldier_gunner_cannon</VisualWeaponName>
+	 </ActorConfiguration>
+
+	<ActorConfiguration id="pol_soldier_mg" parentId="soldier" type="human">
+    <IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_pol_soldier_mg.png</IconName>
+		<Priority>110</Priority>
+		<MaxForwardSpeed>4.5</MaxForwardSpeed>
+		<VisualWeaponName>mg_light</VisualWeaponName>
+	</ActorConfiguration>
+
+	<ActorConfiguration id="pol_soldier_flamer" parentId="soldier" type="human">
+    <MaxForwardSpeed>4.5</MaxForwardSpeed>
+		<IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_pol_soldier_flamer.png</IconName>
+		<Priority>130</Priority>
+		<VisualWeaponName>pol_soldier_flamethrower</VisualWeaponName>
+	</ActorConfiguration>
+
+	<ActorConfiguration id="pol_npc_father" parentId="soldier" type="human">
+		<MaxStrafeExplorationSpeed>2.1</MaxStrafeExplorationSpeed>
+		<MaxForwardExplorationSpeed>2.1</MaxForwardExplorationSpeed>
+		<MaxBackwardExplorationSpeed>2.1</MaxBackwardExplorationSpeed>
+  
+		<IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_pol_npc_father.png</IconName>
+	</ActorConfiguration>
+	<ActorConfiguration id="rus_hero_brotheradult" parentId="soldier" type="human">
+		<MaxStrafeExplorationSpeed>1</MaxStrafeExplorationSpeed>
+		<MaxForwardExplorationSpeed>2</MaxForwardExplorationSpeed>
+		<MaxBackwardExplorationSpeed>1.25</MaxBackwardExplorationSpeed>
+	
+		<IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_rus_hero_brotheradult.png</IconName>
+	</ActorConfiguration>
+	<ActorConfiguration id="pol_hero_brotherteen" parentId="soldier" type="human">
+	  <MaxStrafeExplorationSpeed>5</MaxStrafeExplorationSpeed>
+	  <MaxForwardExplorationSpeed>7</MaxForwardExplorationSpeed>
+	  <MaxBackwardExplorationSpeed>3</MaxBackwardExplorationSpeed>
+	  <Priority>29</Priority>
+
+	  <IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_pol_hero_brotherteen.png</IconName>
+  </ActorConfiguration>
+	<ActorConfiguration id="pol_npc_friend" parentId="soldier" type="human">
+  		<IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_pol_npc_friend.png</IconName>
+	</ActorConfiguration>
+	<ActorConfiguration id="pol_npc_rebelleader" parentId="soldier" type="human">
+  		<IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_pol_npc_rebelleader.png</IconName>
+  </ActorConfiguration>
+	
+	<ActorConfiguration id="sax_soldier_rifleman" parentId="soldier" type="human">
+    <IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_sax_soldier_rifleman.png</IconName>
+		<Priority>159</Priority>
+		<VisualWeaponName>smg</VisualWeaponName>
+  </ActorConfiguration>
+
+	<ActorConfiguration id="sax_soldier_grenadier" parentId="soldier" type="human">
+		<IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_sax_soldier_grenadier.png</IconName>
+		<Priority>149</Priority>
+		<VisualWeaponName>smg</VisualWeaponName>
+  </ActorConfiguration>
+
+	<ActorConfiguration id="sax_soldier_medic" parentId="soldier" type="human">
+    <IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_sax_soldier_medic.png</IconName>
+		<Priority>169</Priority>
+		<VisualWeaponName>sax_medic_handgun</VisualWeaponName>
+  </ActorConfiguration>
+
+	<ActorConfiguration id="sax_soldier_engineer" parentId="soldier" type="human">
+    <IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_sax_soldier_engineer.png</IconName>
+		<Priority>179</Priority>
+		<VisualWeaponName>sax_engineer_handgun</VisualWeaponName>
+  </ActorConfiguration>
+
+	<ActorConfiguration id="sax_soldier_gunner" parentId="soldier" type="human">
+    <IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_sax_soldier_gunner.png</IconName>
+		<Priority>129</Priority>
+		<MaxForwardSpeed>4.5</MaxForwardSpeed>
+		<VisualWeaponName>sax_soldier_gunner_cannon</VisualWeaponName>
+  </ActorConfiguration>
+
+	<ActorConfiguration id="sax_soldier_mg" parentId="soldier" type="human">
+    <IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_sax_soldier_mg.png</IconName>
+		<Priority>119</Priority>
+		<MaxForwardSpeed>4.5</MaxForwardSpeed>
+		<VisualWeaponName>mg_light</VisualWeaponName>
+  </ActorConfiguration>
+
+	<ActorConfiguration id="sax_soldier_flamer" parentId="soldier" type="human">
+    <MaxForwardSpeed>4.5</MaxForwardSpeed>
+		<IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_sax_soldier_flamer.png</IconName>
+		<Priority>139</Priority>
+		<VisualWeaponName>sax_soldier_flamethrower</VisualWeaponName>
+	</ActorConfiguration>
+
+	<ActorConfiguration id="sax_hero_gunter" parentId="soldier" type="human">
+    <Skills>
+      <SkillConfiguration>
+        <SkillType>RetreatOrReinforceTeamSkill</SkillType>
+        <SkillId>retreat</SkillId>
+        <SkillSlot>0</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>AbilityTeamSkill</SkillType>
+        <Ability>MeleeAttack</Ability>
+        <SkillId>melee</SkillId>
+        <SkillSlot>1</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>GoToPointTeamSkill</SkillType>
+        <SkillSlot>2</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>AbilityTeamSkill</SkillType>
+        <Ability>AttackGround</Ability>
+        <SkillId>pointAttack</SkillId>
+        <SkillSlot>3</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>StopTeamSkill</SkillType>
+        <SkillSlot>4</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>AbilityTeamSkill</SkillType>
+        <Ability>CallPet</Ability>
+        <SkillId>guard</SkillId>
+        <SkillSlot>7</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>AbilityTeamSkill</SkillType>
+        <Ability>HeroAbility1</Ability>
+        <SkillId>blade</SkillId>
+        <SkillSlot>6</SkillSlot>
+      </SkillConfiguration> 
+      <SkillConfiguration>
+        <SkillType>AbilityTeamSkill</SkillType>
+        <Ability>SendPet</Ability>
+        <SkillId>scouting</SkillId>
+        <SkillSlot>5</SkillSlot>
+      </SkillConfiguration>
+    </Skills>
+		<Priority>1</Priority>
+		<MaxStrafeExplorationSpeed>1</MaxStrafeExplorationSpeed>
+		<MaxForwardExplorationSpeed>2</MaxForwardExplorationSpeed>
+		<MaxBackwardExplorationSpeed>1.25</MaxBackwardExplorationSpeed>
+		<IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_sax_hero_gunter.png</IconName>
+	 </ActorConfiguration>
+	<ActorConfiguration id="sax_hero_tag" parentId="soldier" type="human">
+	 <MaxForwardSpeed>7</MaxForwardSpeed>
+	  <Priority>60</Priority>
+		<IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_sax_hero_gunter.png</IconName>
+	 </ActorConfiguration>
+	 <ActorConfiguration id="sax_hero_nacht" parentId="soldier" type="human">
+	 <MaxForwardSpeed>7</MaxForwardSpeed>
+	  <Priority>60</Priority>
+		<IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_sax_hero_gunter.png</IconName>
+	 </ActorConfiguration>
+	<ActorConfiguration id="sax_npc_technician" parentId="soldier" type="human">
+		<IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_sax_npc_technician.png</IconName>
+	</ActorConfiguration>
+
+	<ActorConfiguration id="rus_hero_general" type="mech">
+		<!--Speed props describe the speeds the actor is capable of when setting control properties to 1! -->
+		<RunSpeed>4.5</RunSpeed>
+		<StrafeSpeed>4.5</StrafeSpeed>
+		<RotationSpeed>66</RotationSpeed>
+		<!--Decay describes flinch reduction in per second! -->
+		<FlinchProportionalDecay>1.5</FlinchProportionalDecay>
+		<FlinchConstantDecay>1</FlinchConstantDecay>
+		<KineticToFlinch>1</KineticToFlinch>
+		<StrafeFixStrength>1</StrafeFixStrength>
+		<ForwardFixStrength>1</ForwardFixStrength>
+		<BackwardFixStrength>1</BackwardFixStrength>
+		<AngularFixStrength>1</AngularFixStrength>
+		<MinFixDeadzone>0.5</MinFixDeadzone>
+		<MaxFixDeadzone>2</MaxFixDeadzone>
+		<PosConstraintStrength>5</PosConstraintStrength>
+		<AngularConstraintStrength>60</AngularConstraintStrength>
+		<MinDeadzone>1.5</MinDeadzone>
+		<MaxDeadzone>3</MaxDeadzone>
+		<MinDeadAngle>2</MinDeadAngle>
+		<MaxDeadAngle>30</MaxDeadAngle>
+    <Skills>
+      <SkillConfiguration skillType="RetreatOrReinforceTeamSkill" skillId="retreat" skillSlot="0"/>
+      <SkillConfiguration skillType="AbilityTeamSkill" skillId="melee" ability="MeleeAttack" skillSlot="1"/>
+      <SkillConfiguration skillType="GoToPointTeamSkill"  skillSlot="2"/>
+      <SkillConfiguration skillType="AbilityTeamSkill" skillId="pointAttack" ability="AttackGround" skillSlot="3"/>
+      <SkillConfiguration skillType="StopTeamSkill" skillSlot="4"/>
+      <SkillConfiguration skillType="AbilityTeamSkill" skillId="shatter" ability="HeroAbility1" skillSlot="5"/>
+      <SkillConfiguration skillType="AbilityTeamSkill" skillId="alone" ability="HeroAbility2" skillSlot="7"/>
+    </Skills>
+		<IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_rus_hero_general.png</IconName>
+		<VisualWeaponName>sax_mech_gatling_gatling</VisualWeaponName>
+		<Priority>19</Priority>
+		<Height>7.75</Height>
+		<WreckTimeToLifeinSeconds>4.60</WreckTimeToLifeinSeconds>
+		<WreckPrefabId>rus_hero_generalr@rus_hero_general_wreck.prefab</WreckPrefabId>
+		<DefaultMaterial>Metal</DefaultMaterial>
+		<DeathSound>Mech</DeathSound>
+		<HitSound>Metal</HitSound>
+	</ActorConfiguration>
+
+	<ActorConfiguration id="rus_hero_olga" parentId="soldier" type="human">
+		<MaxStrafeExplorationSpeed>10</MaxStrafeExplorationSpeed>
+		<MaxForwardExplorationSpeed>14</MaxForwardExplorationSpeed>
+		<MaxBackwardExplorationSpeed>6</MaxBackwardExplorationSpeed>
+    <Skills>
+      <SkillConfiguration>
+        <SkillType>RetreatOrReinforceTeamSkill</SkillType>
+        <SkillId>retreat</SkillId>
+        <SkillSlot>0</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>AbilityTeamSkill</SkillType>
+        <Ability>MeleeAttack</Ability>
+        <SkillId>melee</SkillId>
+        <SkillSlot>1</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>GoToPointTeamSkill</SkillType>
+        <SkillSlot>2</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>AbilityTeamSkill</SkillType>
+        <Ability>AttackGround</Ability>
+        <SkillId>pointAttack</SkillId>
+        <SkillSlot>3</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>StopTeamSkill</SkillType>
+        <SkillSlot>4</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration skillType="AbilityTeamSkill" skillId="stealth" skillSlot="7"/>
+      <SkillConfiguration skillType="AbilityTeamSkill" ability="HeroAbility1" skillId="tigerUp" skillSlot="6"/>
+      <!--<SkillConfiguration skillType="AbilityTeamSkill" ability="HeroAbility3" skillId="detonators" skillSlot="5"/>-->
+    </Skills>
+    <Priority>9</Priority>
+	<IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_rus_hero_olga.png</IconName>
+  </ActorConfiguration>
+	<ActorConfiguration id="rus_hero_olgachanga" parentId="soldier" type="human">
+    <Skills>
+      <SkillConfiguration>
+        <SkillType>RetreatOrReinforceTeamSkill</SkillType>
+        <SkillId>retreat</SkillId>
+        <SkillSlot>0</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>AbilityTeamSkill</SkillType>
+        <Ability>MeleeAttack</Ability>
+        <SkillId>melee</SkillId>
+        <SkillSlot>1</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>GoToPointTeamSkill</SkillType>
+        <SkillSlot>2</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>AbilityTeamSkill</SkillType>
+        <Ability>AttackGround</Ability>
+        <SkillId>pointAttack</SkillId>
+        <SkillSlot>3</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>StopTeamSkill</SkillType>
+        <SkillSlot>4</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration skillType="AbilityTeamSkill" ability="HeroAbility1" skillId="tigerDown" skillSlot="6"/>
+      <SkillConfiguration skillType="AbilityTeamSkill" skillId="stealth" skillSlot="7"/>
+    </Skills>
+    <Priority>9</Priority>
+	<MaxForwardSpeed>7</MaxForwardSpeed>
+    <IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_rus_hero_olga.png</IconName>
+  </ActorConfiguration>
+  <ActorConfiguration id="rus_hero_changa" parentId="soldier" type="human">
+    <Skills>
+      <SkillConfiguration>
+        <SkillType>AbilityTeamSkill</SkillType>
+        <Ability>Retreat</Ability>
+        <SkillId>retreat</SkillId>
+        <SkillSlot>0</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>AbilityTeamSkill</SkillType>
+        <Ability>MeleeAttack</Ability>
+        <SkillId>melee</SkillId>
+        <SkillSlot>1</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>GoToPointTeamSkill</SkillType>
+        <SkillSlot>2</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>AbilityTeamSkill</SkillType>
+        <Ability>AttackGround</Ability>
+        <SkillId>pointAttack</SkillId>
+        <SkillSlot>3</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>StopTeamSkill</SkillType>
+        <SkillSlot>4</SkillSlot>
+      </SkillConfiguration>
+    </Skills>
+	<MaxForwardSpeed>7</MaxForwardSpeed>
+    <IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_rus_hero_olga.png</IconName>
+	  <Priority>60</Priority>
+  </ActorConfiguration>
+
+	<ActorConfiguration id="rus_npc_general" parentId="soldier" type="human">
+  		<IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_rus_npc_general.png</IconName>
+  </ActorConfiguration>
+
+  <ActorConfiguration id="rus_soldier_engineer" parentId="soldier" type="human">
+    <IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_rus_soldier_engineer.png</IconName>
+		<Priority>175</Priority>
+		<VisualWeaponName>rus_engineer_handgun</VisualWeaponName>
+  </ActorConfiguration>
+
+	<ActorConfiguration id="rus_soldier_mg" parentId="soldier" type="human">
+    <IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_rus_soldier_mg.png</IconName>
+		<Priority>115</Priority>
+		<MaxForwardSpeed>4.5</MaxForwardSpeed>
+		<VisualWeaponName>mg_light</VisualWeaponName>
+  </ActorConfiguration>
+
+	<ActorConfiguration id="rus_soldier_flamer" parentId="soldier" type="human">
+    <IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_rus_soldier_flamer.png</IconName>
+		<Priority>135</Priority>
+		<VisualWeaponName>rus_soldier_flamethrower</VisualWeaponName>		
+	</ActorConfiguration>
+
+	<ActorConfiguration id="rus_soldier_gunner" parentId="soldier" type="human">
+    <IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_rus_soldier_gunner.png</IconName>
+		<Priority>125</Priority>
+	</ActorConfiguration>
+
+	<ActorConfiguration id="rus_soldier_medic" parentId="soldier" type="human">
+    <IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_rus_soldier_medic.png</IconName>
+		<Priority>165</Priority>
+	</ActorConfiguration>
+
+	<ActorConfiguration id="rus_soldier_grenadier" parentId="soldier" type="human">
+    <IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_rus_soldier_grenadier.png</IconName>
+		<Priority>145</Priority>
+	</ActorConfiguration>
+
+	<ActorConfiguration id="rus_soldier_rifleman" parentId="soldier" type="human">
+    <IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_rus_soldier_rifleman.png</IconName>
+		<Priority>155</Priority>
+	</ActorConfiguration>
+  
+  <ActorConfiguration id="mech_base" type="mech">
+		<!--Speed props describe the speeds the actor is capable of when setting control properties to 1! -->
+		<RunSpeed>10</RunSpeed>
+    <StrafeSpeed>4</StrafeSpeed>
+    <RotationSpeed>225</RotationSpeed>
+		<!--Decay describes flinch reduction in per second! -->
+		<FlinchProportionalDecay>1</FlinchProportionalDecay>
+		<FlinchConstantDecay>1</FlinchConstantDecay>
+		<KineticToFlinch>1.5</KineticToFlinch>
+		<StrafeFixStrength>1</StrafeFixStrength>
+		<ForwardFixStrength>0.5</ForwardFixStrength>
+		<BackwardFixStrength>1</BackwardFixStrength>
+		<AngularFixStrength>1</AngularFixStrength>
+		<MinFixDeadzone>1</MinFixDeadzone>
+		<MaxFixDeadzone>2</MaxFixDeadzone>
+		<PosConstraintStrength>10</PosConstraintStrength>
+		<AngularConstraintStrength>180</AngularConstraintStrength>
+		<MinDeadzone>1</MinDeadzone>
+		<MaxDeadzone>3</MaxDeadzone>
+		<MinDeadAngle>15</MinDeadAngle>
+		<MaxDeadAngle>60</MaxDeadAngle>
+    <Skills>
+      <SkillConfiguration>
+        <SkillType>RetreatOrReinforceTeamSkill</SkillType>
+        <SkillId>retreat</SkillId>
+        <SkillSlot>0</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>GoToPointTeamSkill</SkillType>
+        <SkillSlot>2</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>AbilityTeamSkill</SkillType>
+        <Ability>AttackGround</Ability>
+        <SkillId>pointAttack</SkillId>
+        <SkillSlot>3</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>StopTeamSkill</SkillType>
+        <SkillSlot>4</SkillSlot>
+      </SkillConfiguration>
+    </Skills>
+		<IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_pol_mech_recon.png</IconName>
+		<VisualWeaponName>mech</VisualWeaponName>
+		<Priority>1</Priority>
+		<Height>4</Height>
+		<WreckTimeToLifeinSeconds>4.25</WreckTimeToLifeinSeconds>
+		<WreckPrefabId>pol_mech_recon@cha_pol_mech_recon_wreck.prefab</WreckPrefabId>
+		<DefaultMaterial>Metal</DefaultMaterial>
+		<DeathSound>Mech</DeathSound>
+		<HitSound>Metal</HitSound>
+  </ActorConfiguration>
+
+<ActorConfiguration id="pol_soldier_exo" parentId="mech_base" type="mech">
+    <!--Speed props describe the speeds the actor is capable of when setting control properties to 1! -->
+    <RunSpeed>3.55</RunSpeed>
+    <StrafeSpeed>3.55</StrafeSpeed>
+    <RotationSpeed>100</RotationSpeed>
+    <!--Decay describes flinch reduction in per second! -->
+    <FlinchProportionalDecay>1</FlinchProportionalDecay>
+    <FlinchConstantDecay>0.5</FlinchConstantDecay>
+    <KineticToFlinch>0.5</KineticToFlinch>
+    <StrafeFixStrength>1</StrafeFixStrength>
+    <ForwardFixStrength>1</ForwardFixStrength>
+    <BackwardFixStrength>1</BackwardFixStrength>
+    <AngularFixStrength>1</AngularFixStrength>
+    <MinFixDeadzone>0</MinFixDeadzone>
+    <MaxFixDeadzone>1.5</MaxFixDeadzone>
+    <PosConstraintStrength>30</PosConstraintStrength>
+    <AngularConstraintStrength>60</AngularConstraintStrength>
+    <MinDeadzone>1</MinDeadzone>
+    <MaxDeadzone>2</MaxDeadzone>
+    <MinDeadAngle>1</MinDeadAngle>
+    <MaxDeadAngle>5</MaxDeadAngle>
+	<Skills>
+      <SkillConfiguration skillType="RetreatOrReinforceTeamSkill" skillId="retreat" skillSlot="0"/>
+      <SkillConfiguration skillType="AbilityTeamSkill" ability="MeleeAttack" skillId="melee" skillSlot="1"/>
+      <SkillConfiguration skillType="GoToPointTeamSkill" skillSlot="2"/>
+      <SkillConfiguration skillType="AbilityTeamSkill" ability="AttackGround" skillId="pointAttack" skillSlot="3"/>
+      <SkillConfiguration skillType="StopTeamSkill" skillSlot="4"/>
+    </Skills>
+    <IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_pol_soldier_exo.png</IconName>
+    <WreckTimeToLifeinSeconds>5.5</WreckTimeToLifeinSeconds>
+    <WreckPrefabId>sax_mech_dachs@cha_sax_mech_dachs_wreck.prefab</WreckPrefabId>
+    <DeathSound>Mech</DeathSound>
+    <Priority>90</Priority>
+    <Height>2.5</Height>
+    <DefaultMaterial>Metal</DefaultMaterial>
+    <HitSound>Metal</HitSound>
+  </ActorConfiguration>
+
+    <ActorConfiguration id="pol_mech_recon" parentId="mech_base" type="mech">
+        <Skills>
+            <SkillConfiguration skillType="RetreatOrReinforceTeamSkill" skillId="retreat" skillSlot="0"/>
+            <!--<SkillConfiguration skillType="AbilityTeamSkill" ability="MeleeAttack" skillId="melee" skillSlot="1"/>-->
+            <SkillConfiguration skillType="GoToPointTeamSkill" skillSlot="2"/>
+            <SkillConfiguration skillType="AbilityTeamSkill" ability="AttackGround" skillId="pointAttack" skillSlot="3"/>
+            <SkillConfiguration skillType="StopTeamSkill" skillSlot="4"/>
+            <SkillConfiguration skillType="AbilityTeamSkill" ability="Dash" skillId="charge" skillSlot="5"/>
+        </Skills>
+        <!--Speed props describe the speeds the actor is capable of when setting control properties to 1! -->
+		<RunSpeed>9.5</RunSpeed>
+        <StrafeSpeed>9.5</StrafeSpeed>
+		<RotationSpeed>210</RotationSpeed>
+        <KineticToFlinch>1</KineticToFlinch>
+		<StrafeFixStrength>0.1</StrafeFixStrength>
+		<ForwardFixStrength>0.1</ForwardFixStrength>
+		<BackwardFixStrength>0.1</BackwardFixStrength>
+		<AngularFixStrength>1</AngularFixStrength>
+		<MinFixDeadzone>0.1</MinFixDeadzone>
+		<MaxFixDeadzone>1.5</MaxFixDeadzone>
+		<AngularFixAngle0>1</AngularFixAngle0>
+		<AngularFixAngle1>30</AngularFixAngle1>
+        <IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_pol_mech_recon.png</IconName>
+        <Priority>80</Priority>
+        <WreckPrefabId>pol_mech_recon@cha_pol_mech_recon_wreck.prefab</WreckPrefabId>
+        <DeathSound>pol_mech_recon</DeathSound>
+        <Height>5.75</Height>
+    </ActorConfiguration>
+
+  <ActorConfiguration id="rus_hero_brother" parentId="mech_base" type="mech">
+    <Skills>
+      <SkillConfiguration skillType="RetreatOrReinforceTeamSkill" skillId="retreat" skillSlot="0"/>
+      <SkillConfiguration skillType="AbilityTeamSkill" ability="MeleeAttack" skillId="melee" skillSlot="1"/>
+      <SkillConfiguration skillType="GoToPointTeamSkill" skillSlot="2"/>
+      <SkillConfiguration skillType="AbilityTeamSkill" ability="AttackGround" skillId="pointAttack" skillSlot="3"/>
+      <SkillConfiguration skillType="StopTeamSkill" skillSlot="4"/>
+      <SkillConfiguration skillType="AbilityTeamSkill" ability="HeroAbility1" skillId="rig" skillSlot="7"/>
+      <SkillConfiguration skillType="AbilityTeamSkill" ability="HeroAbility2" skillId="rupture" skillSlot="6"/>
+      <SkillConfiguration skillType="AbilityTeamSkill" ability="HeroAbility3" skillId="lightning" skillSlot="5"/>
+    </Skills>
+        <!--Decay describes flinch reduction in per second! -->
+    <RunSpeed>3.6</RunSpeed>
+    <StrafeSpeed>3.6</StrafeSpeed>
+    <RotationSpeed>110</RotationSpeed>
+        <StrafeFixStrength>1</StrafeFixStrength>
+    <ForwardFixStrength>1</ForwardFixStrength>
+    <BackwardFixStrength>1</BackwardFixStrength>
+    <AngularFixStrength>1</AngularFixStrength>
+    <MinFixDeadzone>0.3</MinFixDeadzone>
+    <MaxFixDeadzone>1.5</MaxFixDeadzone>
+    <PosConstraintStrength>1</PosConstraintStrength>
+    <AngularConstraintStrength>120</AngularConstraintStrength>
+    <MinDeadzone>0.5</MinDeadzone>
+    <MaxDeadzone>1</MaxDeadzone>
+    <Height>2.75</Height>
+    <Priority>29</Priority>
+	<WreckPrefabId>pol_mech_recon@cha_pol_mech_recon_wreck.prefab</WreckPrefabId>
+	<DeathSound>pol_mech_recon</DeathSound>
+		
+	<IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_rus_hero_brother.png</IconName>
+  </ActorConfiguration>
+  
+	<ActorConfiguration id="rus_hero_brotherunarmed" parentId="rus_hero_brother" type="mech">
+		<Skills>
+		  <SkillConfiguration skillType="RetreatOrReinforceTeamSkill" skillId="retreat" skillSlot="0"/>
+		  <SkillConfiguration skillType="AbilityTeamSkill" ability="MeleeAttack" skillId="melee" skillSlot="1"/>
+		  <SkillConfiguration skillType="StopTeamSkill" skillSlot="4"/>
+		</Skills>
+	
+		<IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_rus_hero_brother.png</IconName>
+	</ActorConfiguration>
+
+	<ActorConfiguration id="pol_mech_stinger" parentId="mech_base" type="mech">
+		<!--Speed props describe the speeds the actor is capable of when setting control properties to 1! -->
+		<RunSpeed>2.37</RunSpeed>
+		<StrafeSpeed>2.37</StrafeSpeed>
+		<RotationSpeed>53</RotationSpeed>
+    <KineticToFlinch>2</KineticToFlinch>
+		<StrafeFixStrength>0.2</StrafeFixStrength>
+		<ForwardFixStrength>0.2</ForwardFixStrength>
+		<BackwardFixStrength>0.2</BackwardFixStrength>
+		<AngularFixStrength>1</AngularFixStrength>
+		<MinFixDeadzone>0.0</MinFixDeadzone>
+		<MaxFixDeadzone>1.5</MaxFixDeadzone>
+		<AngularFixAngle0>1</AngularFixAngle0>
+		<AngularFixAngle1>30</AngularFixAngle1>
+    <Skills>
+      <SkillConfiguration>
+        <SkillType>RetreatOrReinforceTeamSkill</SkillType>
+        <SkillId>retreat</SkillId>
+        <SkillSlot>0</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>GoToPointTeamSkill</SkillType>
+        <SkillSlot>2</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>AbilityTeamSkill</SkillType>
+        <Ability>AttackGround</Ability>
+        <SkillId>pointAttack</SkillId>
+        <SkillSlot>3</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>StopTeamSkill</SkillType>
+        <SkillSlot>4</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>AbilityTeamSkill</SkillType>
+        <Ability>VeteranMechAbility</Ability>
+        <SkillId>sting</SkillId>
+        <SkillSlot>5</SkillSlot>
+      </SkillConfiguration>
+    </Skills>
+    <IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_pol_mech_stinger.png</IconName>
+    <Priority>53</Priority>
+		<WreckPrefabId>pol_mech_stinger@cha_pol_mech_stinger_wreck.prefab</WreckPrefabId>
+		<WreckTimeToLifeinSeconds>7.5</WreckTimeToLifeinSeconds>
+		<DeathSound>Mech</DeathSound>
+    <Height>7.75</Height>
+  </ActorConfiguration>
+
+	<ActorConfiguration id="pol_mech_spider" parentId="mech_base" type="mech">
+		<RunSpeed>3.6</RunSpeed>
+    <StrafeSpeed>3.6</StrafeSpeed>
+    <Skills>
+      <SkillConfiguration>
+        <SkillType>RetreatOrReinforceTeamSkill</SkillType>
+        <SkillId>retreat</SkillId>
+        <SkillSlot>0</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>GoToPointTeamSkill</SkillType>
+        <SkillSlot>2</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>AbilityTeamSkill</SkillType>
+        <Ability>AttackGround</Ability>
+        <SkillId>pointAttack</SkillId>
+        <SkillSlot>3</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>StopTeamSkill</SkillType>
+        <SkillSlot>4</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>AbilityTeamSkill</SkillType>
+        <Ability>Deploy</Ability>
+        <SkillId>overdrive</SkillId>
+        <SkillSlot>5</SkillSlot>
+      </SkillConfiguration>
+    </Skills>
+		<IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_pol_mech_spider.png</IconName>
+		<Priority>89</Priority>
+		<WreckTimeToLifeinSeconds>4.85</WreckTimeToLifeinSeconds>
+		<WreckPrefabId>pol_mech_spider@cha_pol_mech_spider_wreck.prefab</WreckPrefabId>
+		<DeathSound>pol_mech_spider</DeathSound>
+		<VisualWeaponName>smg</VisualWeaponName>
+    <Height>5</Height>
+  </ActorConfiguration>
+
+	<ActorConfiguration id="pol_hero_rebel" parentId="mech_base" type="mech">
+	 	<!--Speed props describe the speeds the actor is capable of when setting control properties to 1! -->
+		<RunSpeed>4.55</RunSpeed>
+    <StrafeSpeed>4.55</StrafeSpeed>
+    <!--<StrafeSpeed>1.6</StrafeSpeed>-->
+		<IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_pol_hero_rebel.png</IconName>
+    <RotationSpeed>82</RotationSpeed>
+		<!--Decay describes flinch reduction in per second! -->
+		<FlinchProportionalDecay>1</FlinchProportionalDecay>
+		<FlinchConstantDecay>0.5</FlinchConstantDecay>
+		<KineticToFlinch>1.5</KineticToFlinch>
+		<StrafeFixStrength>1</StrafeFixStrength>
+		<ForwardFixStrength>1</ForwardFixStrength>
+		<BackwardFixStrength>1</BackwardFixStrength>
+		<AngularFixStrength>1</AngularFixStrength>
+		<MinFixDeadzone>0</MinFixDeadzone>
+		<MaxFixDeadzone>1.5</MaxFixDeadzone>
+		<PosConstraintStrength>30</PosConstraintStrength>
+		<AngularConstraintStrength>60</AngularConstraintStrength>
+		<MinDeadzone>1</MinDeadzone>
+		<MaxDeadzone>2</MaxDeadzone>
+		<MinDeadAngle>1</MinDeadAngle>
+		<MaxDeadAngle>5</MaxDeadAngle>
+  	<AngularFixAngle0>1</AngularFixAngle0>
+		<AngularFixAngle1>30</AngularFixAngle1>
+    <Skills>
+      <SkillConfiguration>
+        <SkillType>RetreatOrReinforceTeamSkill</SkillType>
+        <SkillId>retreat</SkillId>
+        <SkillSlot>0</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>GoToPointTeamSkill</SkillType>
+        <SkillSlot>2</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>AbilityTeamSkill</SkillType>
+        <Ability>AttackGround</Ability>
+        <SkillId>pointAttack</SkillId>
+        <SkillSlot>3</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>StopTeamSkill</SkillType>
+        <SkillSlot>4</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>AbilityTeamSkill</SkillType>
+        <Ability>Dash</Ability>
+        <SkillId>dash</SkillId>
+        <SkillSlot>5</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>AbilityTeamSkill</SkillType>
+        <Ability>HeroAbility2</Ability>
+        <SkillId>shrapnel</SkillId>
+        <SkillSlot>6</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>AbilityTeamSkill</SkillType>
+        <Ability>HeroAbility3</Ability>
+        <SkillId>rage</SkillId>
+        <SkillSlot>7</SkillSlot>
+      </SkillConfiguration>
+    </Skills>
+		<WreckTimeToLifeinSeconds>5.5</WreckTimeToLifeinSeconds>
+    <Priority>15</Priority>
+    <Height>4.75</Height>
+  </ActorConfiguration>
+
+	<ActorConfiguration id="sax_soldier_mortar" type="mech">
+    <!--Decay describes flinch reduction in per second! -->
+    <RunSpeed>1.6</RunSpeed>
+    <StrafeSpeed>1.6</StrafeSpeed>
+    <RotationSpeed>80</RotationSpeed>
+    <FlinchProportionalDecay>1</FlinchProportionalDecay>
+    <FlinchConstantDecay>0.5</FlinchConstantDecay>
+    <KineticToFlinch>0.5</KineticToFlinch>
+    <StrafeFixStrength>1</StrafeFixStrength>
+    <ForwardFixStrength>1</ForwardFixStrength>
+    <BackwardFixStrength>1</BackwardFixStrength>
+    <AngularFixStrength>1</AngularFixStrength>
+    <MinFixDeadzone>0.3</MinFixDeadzone>
+    <MaxFixDeadzone>1.5</MaxFixDeadzone>
+    <PosConstraintStrength>5</PosConstraintStrength>
+    <AngularConstraintStrength>120</AngularConstraintStrength>
+    <MinDeadzone>0.5</MinDeadzone>
+    <MaxDeadzone>1</MaxDeadzone>
+    <MinDeadAngle>1</MinDeadAngle>
+    <MaxDeadAngle>5</MaxDeadAngle>
+    <Skills>
+      <SkillConfiguration>
+        <SkillType>RetreatOrReinforceTeamSkill</SkillType>
+        <SkillId>retreat</SkillId>
+        <SkillSlot>0</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>AbilityTeamSkill</SkillType>
+        <Ability>MeleeAttack</Ability>
+        <SkillId>melee</SkillId>
+        <SkillSlot>1</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>GoToPointTeamSkill</SkillType>
+        <SkillSlot>2</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>AbilityTeamSkill</SkillType>
+        <Ability>AttackGround</Ability>
+        <SkillId>pointAttack</SkillId>
+        <SkillSlot>3</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>StopTeamSkill</SkillType>
+        <SkillSlot>4</SkillSlot>
+      </SkillConfiguration>
+      <!--<SkillConfiguration>                    NOT FINISHED
+        <SkillType>AbilityTeamSkill</SkillType>
+        <Ability>VeteranMechAbility</Ability>
+        <SkillId>disrupt</SkillId>
+        <SkillSlot>5</SkillSlot>
+      </SkillConfiguration>                       NOT FINISHED-->
+    </Skills>
+    <IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_sax_soldier_mortar.png</IconName>
+    <VisualWeaponName>sax_soldier_mortar_mortar</VisualWeaponName>
+    <Priority>99</Priority>
+    <Height>3.25</Height>
+    <DefaultMaterial>Metal</DefaultMaterial>
+    <DeathSound>Human</DeathSound>
+    <HitSound>Metal</HitSound>
+  </ActorConfiguration>
+
+	<ActorConfiguration id="pol_mech_artillery" parentId="sax_soldier_mortar" type="mech">
+    <!--Speed props describe the speeds the actor is capable of when setting control properties to 1! -->
+    <RunSpeed>2.7</RunSpeed>
+    <StrafeSpeed>0.7</StrafeSpeed>
+    <RotationSpeed>30</RotationSpeed>
+    <FlinchProportionalDecay>1</FlinchProportionalDecay>
+    <FlinchConstantDecay>1</FlinchConstantDecay>
+    <KineticToFlinch>1.5</KineticToFlinch>
+    <StrafeFixStrength>1</StrafeFixStrength>
+    <ForwardFixStrength>1</ForwardFixStrength>
+    <BackwardFixStrength>1</BackwardFixStrength>
+    <AngularFixStrength>1</AngularFixStrength>
+    <MinFixDeadzone>0</MinFixDeadzone>
+    <MaxFixDeadzone>1.5</MaxFixDeadzone>
+    <PosConstraintStrength>30</PosConstraintStrength>
+    <AngularConstraintStrength>60</AngularConstraintStrength>
+    <MinDeadzone>1</MinDeadzone>
+    <MaxDeadzone>2</MaxDeadzone>
+    <MinDeadAngle>1</MinDeadAngle>
+    <MaxDeadAngle>5</MaxDeadAngle>
+    <Skills>
+      <SkillConfiguration>
+        <SkillType>RetreatOrReinforceTeamSkill</SkillType>
+        <SkillId>retreat</SkillId>
+        <SkillSlot>0</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>GoToPointTeamSkill</SkillType>
+        <SkillSlot>2</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>AbilityTeamSkill</SkillType>
+        <Ability>AttackGround</Ability>
+        <SkillId>pointAttack</SkillId>
+        <SkillSlot>3</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>StopTeamSkill</SkillType>
+        <SkillSlot>4</SkillSlot>
+      </SkillConfiguration>
+    </Skills>
+    <IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_pol_mech_artillery.png</IconName>
+    <WreckTimeToLifeinSeconds>6.4</WreckTimeToLifeinSeconds>
+    <WreckPrefabId>pol_mech_artillery@cha_pol_mech_artillery_wreck.prefab</WreckPrefabId>
+    <DeathSound>pol_mech_artillery</DeathSound>
+    <Priority>69</Priority>
+    <AngularFixAngle0>1</AngularFixAngle0>
+    <AngularFixAngle1>30</AngularFixAngle1>
+    <Height>8.5</Height>
+  </ActorConfiguration>
+
+	<ActorConfiguration id="sax_mech_tank" type="mech">
+    <!--Speed props describe the speeds the actor is capable of when setting control properties to 1! -->
+    <RunSpeed>3.75</RunSpeed>
+    <StrafeSpeed>2.4</StrafeSpeed>
+    <RotationSpeed>41</RotationSpeed>
+    <!--Decay describes flinch reduction in per second! -->
+    <FlinchProportionalDecay>1</FlinchProportionalDecay>
+    <FlinchConstantDecay>1</FlinchConstantDecay>
+    <KineticToFlinch>1.5</KineticToFlinch>
+    <StrafeFixStrength>1</StrafeFixStrength>
+    <ForwardFixStrength>1</ForwardFixStrength>
+    <BackwardFixStrength>1</BackwardFixStrength>
+    <AngularFixStrength>1</AngularFixStrength>
+    <MinFixDeadzone>0.1</MinFixDeadzone>
+    <MaxFixDeadzone>2</MaxFixDeadzone>
+    <PosConstraintStrength>15</PosConstraintStrength>
+    <AngularConstraintStrength>30</AngularConstraintStrength>
+    <MinDeadzone>1.5</MinDeadzone>
+    <MaxDeadzone>3</MaxDeadzone>
+    <MinDeadAngle>2</MinDeadAngle>
+    <MaxDeadAngle>10</MaxDeadAngle>
+    <Skills>
+      <SkillConfiguration>
+        <SkillType>RetreatOrReinforceTeamSkill</SkillType>
+        <SkillId>retreat</SkillId>
+        <SkillSlot>0</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>GoToPointTeamSkill</SkillType>
+        <SkillSlot>2</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>AbilityTeamSkill</SkillType>
+        <Ability>AttackGround</Ability>
+        <SkillId>pointAttack</SkillId>
+        <SkillSlot>3</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>StopTeamSkill</SkillType>
+        <SkillSlot>4</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>AbilityTeamSkill</SkillType>
+        <Ability>VeteranMechAbility</Ability>
+        <SkillId>smoke</SkillId>
+        <SkillSlot>5</SkillSlot>
+      </SkillConfiguration>
+    </Skills>
+    <IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_sax_mech_tank.png</IconName>
+    <VisualWeaponName>sax_mech_tank_cannon</VisualWeaponName>
+    <Priority>70</Priority>
+    <Height>5.5</Height>
+    <WreckTimeToLifeinSeconds>4.45</WreckTimeToLifeinSeconds>
+    <WreckPrefabId>sax_mech_tank@cha_sax_mech_tank_wreck.prefab</WreckPrefabId>
+    <WreckPrefabId></WreckPrefabId>
+    <DefaultMaterial>Metal</DefaultMaterial>
+    <DeathSound>sax_mech_tank</DeathSound>
+    <HitSound>Metal</HitSound>
+  </ActorConfiguration>
+
+  <ActorConfiguration id="pol_mech_trooptransport" parentId="sax_mech_tank" type="mech">
+    <!--Speed props describe the speeds the actor is capable of when setting control properties to 1! -->
+    <RunSpeed>4.56</RunSpeed>
+    <StrafeSpeed>4.56</StrafeSpeed>
+    <!--<StrafeSpeed>1.6</StrafeSpeed>-->
+    <RotationSpeed>37</RotationSpeed>
+    <!--Decay describes flinch reduction in per second! -->
+    <FlinchProportionalDecay>1</FlinchProportionalDecay>
+    <FlinchConstantDecay>0.5</FlinchConstantDecay>
+    <KineticToFlinch>1.3</KineticToFlinch>
+    <StrafeFixStrength>1</StrafeFixStrength>
+    <ForwardFixStrength>1</ForwardFixStrength>
+    <BackwardFixStrength>1</BackwardFixStrength>
+    <AngularFixStrength>1</AngularFixStrength>
+    <MinFixDeadzone>0</MinFixDeadzone>
+    <MaxFixDeadzone>1.5</MaxFixDeadzone>
+    <PosConstraintStrength>5</PosConstraintStrength>
+    <AngularConstraintStrength>60</AngularConstraintStrength>
+    <MinDeadzone>5</MinDeadzone>
+    <MaxDeadzone>20</MaxDeadzone>
+    <MinDeadAngle>1</MinDeadAngle>
+    <MaxDeadAngle>5</MaxDeadAngle>
+    <Skills>
+      <SkillConfiguration>
+        <SkillType>RetreatOrReinforceTeamSkill</SkillType>
+        <SkillId>retreat</SkillId>
+        <SkillSlot>0</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>GoToPointTeamSkill</SkillType>
+        <SkillSlot>2</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>AbilityTeamSkill</SkillType>
+        <Ability>AttackGround</Ability>
+        <SkillId>pointAttack</SkillId>
+        <SkillSlot>3</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>StopTeamSkill</SkillType>
+        <SkillSlot>4</SkillSlot>
+      </SkillConfiguration>
+    </Skills>
+    <IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_pol_mech_trooptransport.png</IconName>
+    <WreckTimeToLifeinSeconds>4.5</WreckTimeToLifeinSeconds>
+    <WreckPrefabId>pol_mech_trooptransport@cha_pol_mech_trooptransport_wreck.prefab</WreckPrefabId>
+    <DeathSound>pol_mech_trooptransport</DeathSound>
+    <Priority>50</Priority>
+    <Height>5.5</Height>
+  </ActorConfiguration>
+
+	<ActorConfiguration id="pol_mech_gunfort" type="mech">
+		<!--Speed props describe the speeds the actor is capable of when setting control properties to 1! -->
+		<RunSpeed>2.33</RunSpeed>
+        <StrafeSpeed>2.33</StrafeSpeed>
+        <RotationSpeed>22.2</RotationSpeed>
+		<!--Decay describes flinch reduction in per second! -->
+		<FlinchProportionalDecay>1</FlinchProportionalDecay>
+		<FlinchConstantDecay>1</FlinchConstantDecay>
+		<KineticToFlinch>1</KineticToFlinch>
+		<StrafeFixStrength>1</StrafeFixStrength>
+		<ForwardFixStrength>1</ForwardFixStrength>
+		<BackwardFixStrength>1</BackwardFixStrength>
+		<AngularFixStrength>1</AngularFixStrength>
+		<MinFixDeadzone>0.1</MinFixDeadzone>
+		<MaxFixDeadzone>2</MaxFixDeadzone>
+		<PosConstraintStrength>30</PosConstraintStrength>
+		<AngularConstraintStrength>30</AngularConstraintStrength>
+		<MinDeadzone>1</MinDeadzone>
+		<MaxDeadzone>5</MaxDeadzone>
+		<MinDeadAngle>1</MinDeadAngle>
+		<MaxDeadAngle>5</MaxDeadAngle>
+    <Skills>
+      <SkillConfiguration>
+        <SkillType>RetreatOrReinforceTeamSkill</SkillType>
+        <SkillId>retreat</SkillId>
+        <SkillSlot>0</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>GoToPointTeamSkill</SkillType>
+        <SkillSlot>2</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>AbilityTeamSkill</SkillType>
+        <Ability>AttackGround</Ability>
+        <SkillId>pointAttack</SkillId>
+        <SkillSlot>3</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>StopTeamSkill</SkillType>
+        <SkillSlot>4</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>AbilityTeamSkill</SkillType>
+        <Ability>VeteranMechAbility</Ability>
+        <SkillId>rain</SkillId>
+        <SkillSlot>5</SkillSlot>
+      </SkillConfiguration>
+    </Skills>
+    <IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_pol_mech_gunfort.png</IconName>
+		<Priority>35</Priority>
+		<Height>11.5</Height>
+		<WreckTimeToLifeinSeconds>7.5</WreckTimeToLifeinSeconds>
+		<WreckPrefabId>pol_mech_gunfort_default@cha_pol_mech_gunfort_wreck.prefab</WreckPrefabId>
+		<DefaultMaterial>Metal</DefaultMaterial>
+		<DeathSound>Mech</DeathSound>
+		<HitSound>Metal</HitSound>
+  </ActorConfiguration>
+
+	<ActorConfiguration id="com_wagon" type="mech">
+		<Priority>29</Priority>
+		<Height>4</Height>
+		<DefaultMaterial>Metal</DefaultMaterial>
+		<HitSound>Metal</HitSound>
+		<FallbackWeaponSpriteId>ui@Images/UnitInfo/UnitInfos/UnitWeapons/weapon_mother.png</FallbackWeaponSpriteId>
+	</ActorConfiguration>
+	
+	<ActorConfiguration id="com_mech_trainlocomotive" type="mech" parentId="com_wagon">
+		<Skills>
+			<SkillConfiguration>
+				<SkillType>StopTeamSkill</SkillType>
+				<SkillSlot>4</SkillSlot>
+			</SkillConfiguration>
+		</Skills>
+		<IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_com_mech_trainlocomotive.png</IconName>
+		<WreckTimeToLifeinSeconds>0</WreckTimeToLifeinSeconds>
+		<WreckPrefabId>units_com_default@cha_com_mech_trainflatbed_wreck.prefab</WreckPrefabId>
+		<DeathSound>com_mech_trainlocomotive</DeathSound>
+	</ActorConfiguration>
+	
+	<ActorConfiguration id="com_mech_trainlocomotivetender" type="mech" parentId="com_wagon">
+		<IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_com_mech_trainlocomotive.png</IconName>
+		<DeathSound>com_mech_trainlocomotivetender</DeathSound>
+	</ActorConfiguration>
+	
+	<ActorConfiguration id="com_mech_trainarmored" type="mech" parentId="com_wagon">
+		<Skills>
+			<SkillConfiguration>
+				<SkillType>AbilityTeamSkill</SkillType>
+				<Ability>Unload</Ability>
+				<SkillId>exit</SkillId>
+				<LocaId>dismount</LocaId>
+				<ShoutIdOverride>action_abandon</ShoutIdOverride>
+				<SkillSlot>1</SkillSlot>
+				<SpecialSlot>Special2</SpecialSlot>
+			</SkillConfiguration>
+		</Skills>
+		
+		<IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_com_mech_trainlocomotive.png</IconName>
+		<DeathSound>com_mech_trainarmored</DeathSound>
+	</ActorConfiguration>
+	
+	<ActorConfiguration id="com_mech_traincannon" type="mech" parentId="com_wagon">
+		<Skills>
+			<SkillConfiguration>
+				<SkillType>AbilityTeamSkill</SkillType>
+				<Ability>AttackGround</Ability>
+				<SkillId>pointAttack</SkillId>
+				<SkillSlot>3</SkillSlot>
+			</SkillConfiguration>
+		</Skills>
+		<IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_com_mech_trainlocomotive.png</IconName>
+		<DeathSound>com_mech_traincannon</DeathSound>
+	</ActorConfiguration>
+	
+	<ActorConfiguration id="com_mech_traincannonsupport" type="mech" parentId="com_wagon">
+		<IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_com_mech_trainlocomotive.png</IconName>
+		<DeathSound>com_mech_traincannonsupport</DeathSound>
+	</ActorConfiguration>
+	
+	<ActorConfiguration id="com_mech_trainflatbed" type="mech" parentId="com_wagon">
+		<IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_com_mech_trainlocomotive.png</IconName>
+		<DeathSound>com_mech_trainflatbed</DeathSound>
+	</ActorConfiguration>
+	
+	<ActorConfiguration id="com_mech_trainfreight" type="mech" parentId="com_wagon">
+		<IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_com_mech_trainlocomotive.png</IconName>
+		<DeathSound>com_mech_trainfreight</DeathSound>
+	</ActorConfiguration>
+
+  <ActorConfiguration id="sax_mech_gatling" parentId="mech_base" type="mech">
+    <!--Speed props describe the speeds the actor is capable of when setting control properties to 1! -->
+    <RunSpeed>3.38</RunSpeed>
+    <StrafeSpeed>2.45</StrafeSpeed>
+    <RotationSpeed>82</RotationSpeed>
+    <!--Decay describes flinch reduction in per second! -->
+    <FlinchProportionalDecay>1</FlinchProportionalDecay>
+    <FlinchConstantDecay>1</FlinchConstantDecay>
+    <KineticToFlinch>0.75</KineticToFlinch>
+    <StrafeFixStrength>1</StrafeFixStrength>
+    <ForwardFixStrength>1</ForwardFixStrength>
+    <BackwardFixStrength>1</BackwardFixStrength>
+    <AngularFixStrength>1</AngularFixStrength>
+    <MinFixDeadzone>0.5</MinFixDeadzone>
+    <MaxFixDeadzone>2</MaxFixDeadzone>
+    <PosConstraintStrength>5</PosConstraintStrength>
+    <AngularConstraintStrength>60</AngularConstraintStrength>
+    <MinDeadzone>1.5</MinDeadzone>
+    <MaxDeadzone>3</MaxDeadzone>
+    <MinDeadAngle>2</MinDeadAngle>
+    <MaxDeadAngle>30</MaxDeadAngle>
+    <Skills>
+      <SkillConfiguration>
+        <SkillType>RetreatOrReinforceTeamSkill</SkillType>
+        <SkillId>retreat</SkillId>
+        <SkillSlot>0</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>GoToPointTeamSkill</SkillType>
+        <SkillSlot>2</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>AbilityTeamSkill</SkillType>
+        <Ability>AttackGround</Ability>
+        <SkillId>pointAttack</SkillId>
+        <SkillSlot>3</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>StopTeamSkill</SkillType>
+        <SkillSlot>4</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>AbilityTeamSkill</SkillType>
+        <Ability>GatlingSweep</Ability>
+        <SkillId>sweep</SkillId>
+        <SkillSlot>5</SkillSlot>
+      </SkillConfiguration>
+    </Skills>
+    <IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_sax_mech_gatling.png</IconName>
+    <VisualWeaponName>sax_mech_gatling_gatling</VisualWeaponName>
+    <Priority>81</Priority>
+    <Height>5</Height>
+    <WreckTimeToLifeinSeconds>4.60</WreckTimeToLifeinSeconds>
+    <WreckPrefabId>sax_mech_gatling@cha_sax_mech_gatling_wreck.prefab</WreckPrefabId>
+    <DefaultMaterial>Metal</DefaultMaterial>
+    <DeathSound>sax_mech_gatling</DeathSound>
+    <HitSound>Metal</HitSound>
+  </ActorConfiguration>
+
+  <ActorConfiguration id="sax_mech_artillery" parentId="sax_soldier_mortar" type="mech">
+		<!--Speed props describe the speeds the actor is capable of when setting control properties to 1! -->
+		<RunSpeed>1.87</RunSpeed>
+    <StrafeSpeed>1.253</StrafeSpeed>
+    <RotationSpeed>42</RotationSpeed>
+		<FlinchProportionalDecay>1</FlinchProportionalDecay>
+		<FlinchConstantDecay>1</FlinchConstantDecay>
+		<KineticToFlinch>0.75</KineticToFlinch>
+		<StrafeFixStrength>1</StrafeFixStrength>
+		<ForwardFixStrength>1</ForwardFixStrength>
+		<BackwardFixStrength>1</BackwardFixStrength>
+		<AngularFixStrength>1</AngularFixStrength>
+		<WreckTimeToLifeinSeconds>8.8</WreckTimeToLifeinSeconds>
+		<WreckPrefabId>sax_mech_artillery@cha_sax_mech_artillery_wreck.prefab</WreckPrefabId>
+		<DeathSound>sax_mech_artillery</DeathSound>
+    <Priority>60</Priority>
+		<MinFixDeadzone>0</MinFixDeadzone>
+		<MaxFixDeadzone>1.5</MaxFixDeadzone>
+		<PosConstraintStrength>30</PosConstraintStrength>
+		<AngularConstraintStrength>60</AngularConstraintStrength>
+		<MinDeadzone>1</MinDeadzone>
+		<MaxDeadzone>2</MaxDeadzone>
+		<MinDeadAngle>1</MinDeadAngle>
+		<MaxDeadAngle>5</MaxDeadAngle>
+    <Skills>
+      <SkillConfiguration>
+        <SkillType>RetreatOrReinforceTeamSkill</SkillType>
+        <SkillId>retreat</SkillId>
+        <SkillSlot>0</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>GoToPointTeamSkill</SkillType>
+        <SkillSlot>2</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>AbilityTeamSkill</SkillType>
+        <Ability>AttackGround</Ability>
+        <SkillId>pointAttack</SkillId>
+        <SkillSlot>3</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>StopTeamSkill</SkillType>
+        <SkillSlot>4</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>AbilityTeamSkill</SkillType>
+        <Ability>VeteranMechAbility</Ability>
+        <SkillId>vision</SkillId>
+        <SkillSlot>5</SkillSlot>
+      </SkillConfiguration>
+    </Skills>
+		<IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_sax_mech_artillery.png</IconName>
+		<AngularFixAngle0>1</AngularFixAngle0>
+		<AngularFixAngle1>30</AngularFixAngle1>
+    <Height>9.25</Height>
+  </ActorConfiguration>
+
+	<ActorConfiguration id="sax_mech_dachs" parentId="mech_base" type="mech">
+	 	<!--Speed props describe the speeds the actor is capable of when setting control properties to 1! -->
+		<RunSpeed>2.8</RunSpeed>
+		<StrafeSpeed>2.8</StrafeSpeed>
+    <RotationSpeed>55</RotationSpeed>
+		<!--Decay describes flinch reduction in per second! -->
+		<FlinchProportionalDecay>1</FlinchProportionalDecay>
+		<FlinchConstantDecay>0.5</FlinchConstantDecay>
+		<KineticToFlinch>1.5</KineticToFlinch>
+		<StrafeFixStrength>0.2</StrafeFixStrength>
+		<ForwardFixStrength>0.2</ForwardFixStrength>
+		<BackwardFixStrength>0.2</BackwardFixStrength>
+		<AngularFixStrength>1</AngularFixStrength>
+		<MinFixDeadzone>0</MinFixDeadzone>
+		<MaxFixDeadzone>1.5</MaxFixDeadzone>
+		<AngularFixAngle0>1</AngularFixAngle0>
+		<AngularFixAngle1>30</AngularFixAngle1>
+		<PosConstraintStrength>30</PosConstraintStrength>
+		<AngularConstraintStrength>60</AngularConstraintStrength>
+		<MinDeadzone>1</MinDeadzone>
+		<MaxDeadzone>2</MaxDeadzone>
+		<MinDeadAngle>1</MinDeadAngle>
+		<MaxDeadAngle>5</MaxDeadAngle>
+    <Skills>
+      <SkillConfiguration>
+        <SkillType>RetreatOrReinforceTeamSkill</SkillType>
+        <SkillId>retreat</SkillId>
+        <SkillSlot>0</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>GoToPointTeamSkill</SkillType>
+        <SkillSlot>2</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>AbilityTeamSkill</SkillType>
+        <Ability>AttackGround</Ability>
+        <SkillId>pointAttack</SkillId>
+        <SkillSlot>3</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>StopTeamSkill</SkillType>
+        <SkillSlot>4</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>AbilityTeamSkill</SkillType>
+        <Ability>VeteranMechAbility</Ability>
+        <SkillId>missiles</SkillId>
+        <SkillSlot>5</SkillSlot>
+      </SkillConfiguration>
+    </Skills>
+    <IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_sax_mech_dachs.png</IconName>
+		<WreckTimeToLifeinSeconds>5.5</WreckTimeToLifeinSeconds>
+		<WreckPrefabId>sax_mech_dachs@cha_sax_mech_dachs_wreck.prefab</WreckPrefabId>
+		<DeathSound>Mech</DeathSound>
+    <Priority>45</Priority>
+    <Height>5.75</Height>
+  </ActorConfiguration>
+
+	<ActorConfiguration id="sax_mech_gunfort" parentId="mech_base" type="mech">
+		<!--Speed props describe the speeds the actor is capable of when setting control properties to 1! -->
+		<RunSpeed>2.35</RunSpeed>
+    <StrafeSpeed>2.35</StrafeSpeed>
+    <RotationSpeed>42</RotationSpeed>
+		<!--Decay describes flinch reduction in per second! -->
+		<FlinchProportionalDecay>1.4</FlinchProportionalDecay>
+		<FlinchConstantDecay>1</FlinchConstantDecay>
+		<KineticToFlinch>1.5</KineticToFlinch>
+		<StrafeFixStrength>1</StrafeFixStrength>
+		<ForwardFixStrength>1</ForwardFixStrength>
+		<BackwardFixStrength>1</BackwardFixStrength>
+		<AngularFixStrength>1</AngularFixStrength>
+		<MinFixDeadzone>0.1</MinFixDeadzone>
+		<MaxFixDeadzone>2</MaxFixDeadzone>
+		<PosConstraintStrength>15</PosConstraintStrength>
+		<AngularConstraintStrength>30</AngularConstraintStrength>
+		<MinDeadzone>1.5</MinDeadzone>
+		<MaxDeadzone>3</MaxDeadzone>
+		<MinDeadAngle>2</MinDeadAngle>
+		<MaxDeadAngle>10</MaxDeadAngle>
+    <Skills>
+      <SkillConfiguration>
+        <SkillType>RetreatOrReinforceTeamSkill</SkillType>
+        <SkillId>retreat</SkillId>
+        <SkillSlot>0</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>GoToPointTeamSkill</SkillType>
+        <SkillSlot>2</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>AbilityTeamSkill</SkillType>
+        <Ability>AttackGround</Ability>
+        <SkillId>pointAttack</SkillId>
+        <SkillSlot>3</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>StopTeamSkill</SkillType>
+        <SkillSlot>4</SkillSlot>
+      </SkillConfiguration>
+    </Skills>
+		<IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_sax_mech_gunfort.png</IconName>
+		<Priority>30</Priority>
+		<Height>10</Height>
+		<WreckTimeToLifeinSeconds>6</WreckTimeToLifeinSeconds>
+		<WreckPrefabId>sax_mech_tank@cha_sax_mech_gunfort_wreck.prefab</WreckPrefabId>
+		<WreckPrefabId></WreckPrefabId>
+		<DefaultMaterial>Metal</DefaultMaterial>
+		<DeathSound>Mech</DeathSound>
+		<HitSound>Metal</HitSound>
+  </ActorConfiguration>
+
+	<ActorConfiguration id="sax_mech_mother" parentId="mech_base" type="mech">
+		<!--Speed props describe the speeds the actor is capable of when setting control properties to 1! -->
+		<RunSpeed>1.785</RunSpeed>
+		<StrafeSpeed>1.785</StrafeSpeed>
+		<RotationSpeed>45</RotationSpeed>
+		<!--Decay describes flinch reduction in per second! -->
+		<FlinchProportionalDecay>1</FlinchProportionalDecay>
+		<FlinchConstantDecay>0.5</FlinchConstantDecay>
+		<KineticToFlinch>0.5</KineticToFlinch>
+		<StrafeFixStrength>1</StrafeFixStrength>
+		<ForwardFixStrength>1</ForwardFixStrength>
+		<BackwardFixStrength>1</BackwardFixStrength>
+		<AngularFixStrength>1</AngularFixStrength>
+		<MinFixDeadzone>0.1</MinFixDeadzone>
+		<MaxFixDeadzone>2</MaxFixDeadzone>
+		<PosConstraintStrength>15</PosConstraintStrength>
+		<AngularConstraintStrength>30</AngularConstraintStrength>
+		<MinDeadzone>1.5</MinDeadzone>
+		<MaxDeadzone>3</MaxDeadzone>
+		<MinDeadAngle>2</MinDeadAngle>
+		<MaxDeadAngle>10</MaxDeadAngle>
+		<Skills>
+			<SkillConfiguration>
+				<SkillType>RetreatOrReinforceTeamSkill</SkillType>
+				<SkillId>retreat</SkillId>
+				<SkillSlot>0</SkillSlot>
+			</SkillConfiguration>
+			<SkillConfiguration>
+				<SkillType>GoToPointTeamSkill</SkillType>
+				<SkillSlot>2</SkillSlot>
+			</SkillConfiguration>
+			<SkillConfiguration>
+				<SkillType>AbilityTeamSkill</SkillType>
+				<Ability>AttackGround</Ability>
+				<SkillId>pointAttack</SkillId>
+				<SkillSlot>3</SkillSlot>
+			</SkillConfiguration>
+			<SkillConfiguration>
+				<SkillType>StopTeamSkill</SkillType>
+				<SkillSlot>4</SkillSlot>
+			</SkillConfiguration>
+		</Skills>
+		<IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_sax_mech_mother.png</IconName>
+		<Priority>56</Priority>
+		<Height>9.25</Height>
+		<WreckTimeToLifeinSeconds>4.45</WreckTimeToLifeinSeconds>
+		<WreckPrefabId>sax_mech_tank@cha_sax_mech_tank_wreck.prefab</WreckPrefabId>
+		<DefaultMaterial>Metal</DefaultMaterial>
+		<DeathSound>Mech</DeathSound>
+		<HitSound>Metal</HitSound>
+		<AngularFixAngle0>1</AngularFixAngle0>
+		<AngularFixAngle1>30</AngularFixAngle1>
+	</ActorConfiguration>
+
+	<ActorConfiguration id="sax_mech_mothersdrone" parentId="mech_base" type="mech">
+		<IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_sax_mech_mother.png</IconName>
+		<DefaultMaterial>Metal</DefaultMaterial>
+		<DeathSound>Mech</DeathSound>
+		<HitSound>Metal</HitSound>
+		<Priority>56</Priority>
+		<Height>2.5</Height>
+		<FlinchProportionalDecay>1</FlinchProportionalDecay>
+		<FlinchConstantDecay>1</FlinchConstantDecay>
+		<KineticToFlinch>0</KineticToFlinch>
+		<Skills>
+		</Skills>
+
+		<StrafeFixStrength>1</StrafeFixStrength>
+		<AngularFixStrength>1</AngularFixStrength>
+		<ForwardFixStrength>1</ForwardFixStrength>
+		<BackwardFixStrength>1</BackwardFixStrength>
+		<PosConstraintStrength>15</PosConstraintStrength>
+		<MinDeadzone>1.5</MinDeadzone>
+		<MaxDeadzone>3</MaxDeadzone>
+		<MinFixDeadzone>0.1</MinFixDeadzone>
+		<MaxFixDeadzone>2</MaxFixDeadzone>
+		<MinDeadAngle>2</MinDeadAngle>
+		<MaxDeadAngle>10</MaxDeadAngle>
+		<AngularConstraintStrength>30</AngularConstraintStrength>
+		<RunSpeed>20</RunSpeed>
+		<StrafeSpeed>1</StrafeSpeed>
+		<RotationSpeed>180</RotationSpeed>
+	</ActorConfiguration>
+
+  <ActorConfiguration id="sax_hero_brunhilde" parentId="mech_base" type="mech">
+    <!--Speed props describe the speeds the actor is capable of when setting control properties to 1! -->
+    <RunSpeed>1.86</RunSpeed>
+    <StrafeSpeed>1.18</StrafeSpeed>
+    <RotationSpeed>9.5</RotationSpeed>
+    <!--Decay describes flinch reduction in per second! -->
+    <FlinchProportionalDecay>1</FlinchProportionalDecay>
+    <FlinchConstantDecay>1</FlinchConstantDecay>
+    <KineticToFlinch>1.3</KineticToFlinch>
+    <StrafeFixStrength>1</StrafeFixStrength>
+    <ForwardFixStrength>1</ForwardFixStrength>
+    <BackwardFixStrength>1</BackwardFixStrength>
+    <AngularFixStrength>1</AngularFixStrength>
+    <MinFixDeadzone>0</MinFixDeadzone>
+    <MaxFixDeadzone>1.5</MaxFixDeadzone>
+    <PosConstraintStrength>5</PosConstraintStrength>
+    <AngularConstraintStrength>60</AngularConstraintStrength>
+    <MinDeadzone>5</MinDeadzone>
+    <MaxDeadzone>20</MaxDeadzone>
+    <MinDeadAngle>1</MinDeadAngle>
+    <MaxDeadAngle>5</MaxDeadAngle>
+    <Skills>
+      <SkillConfiguration>
+        <SkillType>RetreatOrReinforceTeamSkill</SkillType>
+        <SkillId>retreat</SkillId>
+        <SkillSlot>0</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>GoToPointTeamSkill</SkillType>
+        <SkillSlot>2</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>AbilityTeamSkill</SkillType>
+        <Ability>AttackGround</Ability>
+        <SkillId>pointAttack</SkillId>
+        <SkillSlot>3</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>StopTeamSkill</SkillType>
+        <SkillSlot>4</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>AbilityTeamSkill</SkillType>
+        <Ability>VeteranMechAbility</Ability>
+        <SkillId>strike</SkillId>
+        <SkillSlot>5</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>AbilityTeamSkill</SkillType>
+        <Ability>HeroAbility3</Ability>
+        <SkillId>mannable</SkillId>
+        <SkillSlot>6</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>AbilityTeamSkill</SkillType>
+        <Ability>HeroAbility1</Ability>
+        <SkillId>technician</SkillId>
+        <SkillSlot>7</SkillSlot>
+      </SkillConfiguration>
+    </Skills>
+    <IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_sax_hero_brunhilde.png</IconName>
+    <WreckTimeToLifeinSeconds>4.5</WreckTimeToLifeinSeconds>
+    <WreckPrefabId>pol_hero_brunhilde@cha_pol_hero_brunhilde_wreck.prefab</WreckPrefabId>
+    <DeathSound>Mech</DeathSound>
+    <Priority>20</Priority>
+    <Height>11.75</Height>
+     <DefaultMaterial>Metal</DefaultMaterial>
+    <DeathSound>Mech</DeathSound>
+    <HitSound>Metal</HitSound>
+  </ActorConfiguration>
+	<ActorConfiguration id="sax_hero_brunhildegunter" parentId="sax_hero_brunhilde" type="mech">
+	<IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_sax_hero_brunhilde.png</IconName>
+	</ActorConfiguration>
+
+  <ActorConfiguration id="sax_hero_prince" parentId="mech_base" type="mech">
+	 	<!--Speed props describe the speeds the actor is capable of when setting control properties to 1! -->
+		<RunSpeed>2.7</RunSpeed>
+    <StrafeSpeed>2.7</StrafeSpeed>
+    <!--<StrafeSpeed>1.6</StrafeSpeed>-->
+    <RotationSpeed>44</RotationSpeed>
+		<!--Decay describes flinch reduction in per second! -->
+		<FlinchProportionalDecay>1</FlinchProportionalDecay>
+		<FlinchConstantDecay>0.5</FlinchConstantDecay>
+		<KineticToFlinch>1.5</KineticToFlinch>
+		<StrafeFixStrength>1</StrafeFixStrength>
+		<ForwardFixStrength>1</ForwardFixStrength>
+		<BackwardFixStrength>1</BackwardFixStrength>
+		<AngularFixStrength>1</AngularFixStrength>
+		<MinFixDeadzone>0</MinFixDeadzone>
+		<MaxFixDeadzone>1.5</MaxFixDeadzone>
+		<PosConstraintStrength>30</PosConstraintStrength>
+		<AngularConstraintStrength>60</AngularConstraintStrength>
+		<MinDeadzone>1</MinDeadzone>
+		<MaxDeadzone>2</MaxDeadzone>
+		<MinDeadAngle>1</MinDeadAngle>
+		<MaxDeadAngle>5</MaxDeadAngle>
+    <Skills>
+      <SkillConfiguration>
+        <SkillType>RetreatOrReinforceTeamSkill</SkillType>
+        <SkillId>retreat</SkillId>
+        <SkillSlot>0</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>GoToPointTeamSkill</SkillType>
+        <SkillSlot>2</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>AbilityTeamSkill</SkillType>
+        <Ability>AttackGround</Ability>
+        <SkillId>pointAttack</SkillId>
+        <SkillSlot>3</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>StopTeamSkill</SkillType>
+        <SkillSlot>4</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>AbilityTeamSkill</SkillType>
+        <Ability>Rockets</Ability>
+        <SkillId>rocket</SkillId>
+        <SkillSlot>6</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>AbilityTeamSkill</SkillType>
+        <Ability>HeroAbility1</Ability>
+        <SkillId>leader</SkillId>
+        <SkillSlot>7</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>AbilityTeamSkill</SkillType>
+        <Ability>HeroAbility2</Ability>
+        <SkillId>double</SkillId>
+        <SkillSlot>5</SkillSlot>
+      </SkillConfiguration>
+    </Skills>
+		<IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_sax_hero_prince.png</IconName>
+		<WreckTimeToLifeinSeconds>5.5</WreckTimeToLifeinSeconds>
+		<DeathSound>Mech</DeathSound>
+    <Priority>10</Priority>
+    <Height>5.5</Height>
+  </ActorConfiguration>
+
+	<ActorConfiguration id="rus_mech_bomber" parentId="mech_base" type="mech">
+	 	<!--Speed props describe the speeds the actor is capable of when setting control properties to 1! -->
+		<RunSpeed>3.8</RunSpeed>
+    <StrafeSpeed>3.8</StrafeSpeed>
+    <RotationSpeed>120</RotationSpeed>
+		<!--Decay describes flinch reduction in per second! -->
+		<FlinchProportionalDecay>1</FlinchProportionalDecay>
+		<FlinchConstantDecay>0.5</FlinchConstantDecay>
+		<KineticToFlinch>1.5</KineticToFlinch>
+		<StrafeFixStrength>1</StrafeFixStrength>
+		<ForwardFixStrength>1</ForwardFixStrength>
+		<BackwardFixStrength>1</BackwardFixStrength>
+		<AngularFixStrength>1</AngularFixStrength>
+		<MinFixDeadzone>0</MinFixDeadzone>
+		<MaxFixDeadzone>1.5</MaxFixDeadzone>
+		<PosConstraintStrength>30</PosConstraintStrength>
+		<AngularConstraintStrength>60</AngularConstraintStrength>
+		<MinDeadzone>1</MinDeadzone>
+		<MaxDeadzone>2</MaxDeadzone>
+		<MinDeadAngle>1</MinDeadAngle>
+		<MaxDeadAngle>5</MaxDeadAngle>
+    <Skills>
+      <SkillConfiguration>
+        <SkillType>RetreatOrReinforceTeamSkill</SkillType>
+        <SkillId>retreat</SkillId>
+        <SkillSlot>0</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>GoToPointTeamSkill</SkillType>
+        <SkillSlot>2</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>AbilityTeamSkill</SkillType>
+        <Ability>AttackGround</Ability>
+        <SkillId>pointAttack</SkillId>
+        <SkillSlot>3</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>StopTeamSkill</SkillType>
+        <SkillSlot>4</SkillSlot>
+      </SkillConfiguration>
+    </Skills>
+		<IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_rus_mech_bomber.png</IconName>
+		<WreckTimeToLifeinSeconds>2.8</WreckTimeToLifeinSeconds>
+		<WreckPrefabId>units_rus_default@cha_rus_mech_bomber_wreck.prefab</WreckPrefabId>
+		<DeathSound>Mech</DeathSound>
+		<Priority>75</Priority>
+		<Height>5</Height>
+		<DefaultMaterial>Metal</DefaultMaterial>
+		<HitSound>Metal</HitSound>
+  </ActorConfiguration>
+
+	<ActorConfiguration id="rus_mech_flamer" parentId="mech_base" type="mech">
+	 	<!--Speed props describe the speeds the actor is capable of when setting control properties to 1! -->
+		<RunSpeed>2.6</RunSpeed>
+    <StrafeSpeed>2.6</StrafeSpeed>
+    <RotationSpeed>56</RotationSpeed>
+		<!--Decay describes flinch reduction in per second! -->
+		<FlinchProportionalDecay>1.75</FlinchProportionalDecay>
+		<FlinchConstantDecay>1.3</FlinchConstantDecay>
+		<KineticToFlinch>1.5</KineticToFlinch>
+		<StrafeFixStrength>1</StrafeFixStrength>
+		<ForwardFixStrength>1</ForwardFixStrength>
+		<BackwardFixStrength>1</BackwardFixStrength>
+		<AngularFixStrength>1</AngularFixStrength>
+		<MinFixDeadzone>0</MinFixDeadzone>
+		<MaxFixDeadzone>1.5</MaxFixDeadzone>
+		<PosConstraintStrength>30</PosConstraintStrength>
+		<AngularConstraintStrength>60</AngularConstraintStrength>
+		<MinDeadzone>1</MinDeadzone>
+		<MaxDeadzone>2</MaxDeadzone>
+		<MinDeadAngle>1</MinDeadAngle>
+		<MaxDeadAngle>5</MaxDeadAngle>
+    <Skills>
+      <SkillConfiguration>
+        <SkillType>RetreatOrReinforceTeamSkill</SkillType>
+        <SkillId>retreat</SkillId>
+        <SkillSlot>0</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>GoToPointTeamSkill</SkillType>
+        <SkillSlot>2</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>AbilityTeamSkill</SkillType>
+        <Ability>AttackGround</Ability>
+        <SkillId>pointAttack</SkillId>
+        <SkillSlot>3</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>StopTeamSkill</SkillType>
+        <SkillSlot>4</SkillSlot>
+      </SkillConfiguration>
+	  <!-- framing is defined in the code-->
+    </Skills>
+		<IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_rus_mech_flamer.png</IconName>
+		<WreckTimeToLifeinSeconds>5.5</WreckTimeToLifeinSeconds>
+		<WreckPrefabId>units_rus_default@cha_rus_mech_flamer_wreck.prefab</WreckPrefabId>
+		<DeathSound>rus_mech_flamer</DeathSound>
+		<Priority>85</Priority>
+		<Height>4</Height>
+		<DefaultMaterial>Metal</DefaultMaterial>
+		<HitSound>Metal</HitSound>
+  </ActorConfiguration>
+
+	<ActorConfiguration id="rus_mech_gunfort" parentId="mech_base" type="mech">
+		<!--Speed props describe the speeds the actor is capable of when setting control properties to 1! -->
+		<RunSpeed>2.75</RunSpeed>
+    <StrafeSpeed>2.75</StrafeSpeed>
+    <!--<StrafeSpeed>1.6</StrafeSpeed>-->
+    <RotationSpeed>27</RotationSpeed>
+		<!--Decay describes flinch reduction in per second! -->
+		<FlinchProportionalDecay>0.5</FlinchProportionalDecay>
+		<FlinchConstantDecay>0.5</FlinchConstantDecay>
+		<KineticToFlinch>1.5</KineticToFlinch>
+		<StrafeFixStrength>1</StrafeFixStrength>
+		<ForwardFixStrength>1</ForwardFixStrength>
+		<BackwardFixStrength>1</BackwardFixStrength>
+		<AngularFixStrength>1</AngularFixStrength>
+		<MinFixDeadzone>0</MinFixDeadzone>
+		<MaxFixDeadzone>1.5</MaxFixDeadzone>
+		<PosConstraintStrength>30</PosConstraintStrength>
+		<AngularConstraintStrength>60</AngularConstraintStrength>
+		<MinDeadzone>1</MinDeadzone>
+		<MaxDeadzone>2</MaxDeadzone>
+		<MinDeadAngle>1</MinDeadAngle>
+		<MaxDeadAngle>5</MaxDeadAngle>
+    <Skills>
+      <SkillConfiguration>
+        <SkillType>RetreatOrReinforceTeamSkill</SkillType>
+        <SkillId>retreat</SkillId>
+        <SkillSlot>0</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>GoToPointTeamSkill</SkillType>
+        <SkillSlot>2</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>AbilityTeamSkill</SkillType>
+        <Ability>AttackGround</Ability>
+        <SkillId>pointAttack</SkillId>
+        <SkillSlot>3</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>StopTeamSkill</SkillType>
+        <SkillSlot>4</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>AbilityTeamSkill</SkillType>
+        <Ability>VeteranMechAbility</Ability>
+        <SkillId>demolisher</SkillId>
+        <SkillSlot>5</SkillSlot>
+      </SkillConfiguration>
+    </Skills>
+		<IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_rus_mech_gunfort.png</IconName>
+		<Priority>39</Priority>
+		<WreckTimeToLifeinSeconds>6.3</WreckTimeToLifeinSeconds>
+		<WreckPrefabId>units_rus_default@cha_rus_mech_gunfort_wreck.prefab</WreckPrefabId>
+    <Height>10.5</Height>
+	</ActorConfiguration>
+
+	<ActorConfiguration id="rus_mech_revolver" parentId="mech_base" type="mech">
+	 	<!--Speed props describe the speeds the actor is capable of when setting control properties to 1! -->
+		<RunSpeed>2.6</RunSpeed>
+    <StrafeSpeed>5.2</StrafeSpeed>
+    <RotationSpeed>56</RotationSpeed>
+		<!--Decay describes flinch reduction in per second! -->
+		<FlinchProportionalDecay>1</FlinchProportionalDecay>
+		<FlinchConstantDecay>1</FlinchConstantDecay>
+		<KineticToFlinch>1.5</KineticToFlinch>
+		<StrafeFixStrength>1</StrafeFixStrength>
+		<ForwardFixStrength>1</ForwardFixStrength>
+		<BackwardFixStrength>1</BackwardFixStrength>
+		<AngularFixStrength>1</AngularFixStrength>
+		<MinFixDeadzone>0</MinFixDeadzone>
+		<MaxFixDeadzone>1.5</MaxFixDeadzone>
+		<PosConstraintStrength>30</PosConstraintStrength>
+		<AngularConstraintStrength>60</AngularConstraintStrength>
+		<MinDeadzone>1</MinDeadzone>
+		<MaxDeadzone>2</MaxDeadzone>
+		<MinDeadAngle>1</MinDeadAngle>
+		<MaxDeadAngle>5</MaxDeadAngle>
+    <Skills>
+      <SkillConfiguration>
+        <SkillType>RetreatOrReinforceTeamSkill</SkillType>
+        <SkillId>retreat</SkillId>
+        <SkillSlot>0</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>GoToPointTeamSkill</SkillType>
+        <SkillSlot>2</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>AbilityTeamSkill</SkillType>
+        <Ability>AttackGround</Ability>
+        <SkillId>pointAttack</SkillId>
+        <SkillSlot>3</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>StopTeamSkill</SkillType>
+        <SkillSlot>4</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>AbilityTeamSkill</SkillType>
+        <Ability>VeteranMechAbility</Ability>
+        <SkillId>barrage</SkillId>
+        <SkillSlot>5</SkillSlot>
+      </SkillConfiguration>
+    </Skills>
+    <IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_rus_mech_revolver.png</IconName>
+		<WreckTimeToLifeinSeconds>6.3</WreckTimeToLifeinSeconds>
+		<WreckPrefabId>units_rus_default@cha_rus_mech_revolver_wreck.prefab</WreckPrefabId>
+		<DeathSound>Mech</DeathSound>
+		<Priority>59</Priority>
+		<Height>4.75</Height>
+		<DefaultMaterial>Metal</DefaultMaterial>
+		<HitSound>Metal</HitSound>
+  </ActorConfiguration>
+
+	<ActorConfiguration id="rus_mech_artillery" parentId="mech_base" type="mech">
+		<!--Speed props describe the speeds the actor is capable of when setting control properties to 1! -->
+		<RunSpeed>2.4</RunSpeed>
+    <StrafeSpeed>0</StrafeSpeed>
+    <RotationSpeed>56</RotationSpeed>
+		<!--Decay describes flinch reduction in per second! -->
+		<FlinchProportionalDecay>1.5</FlinchProportionalDecay>
+		<FlinchConstantDecay>1.5</FlinchConstantDecay>
+		<KineticToFlinch>2.5</KineticToFlinch>
+		<StrafeFixStrength>1</StrafeFixStrength>
+		<ForwardFixStrength>1</ForwardFixStrength>
+		<BackwardFixStrength>1</BackwardFixStrength>
+		<AngularFixStrength>1</AngularFixStrength>
+		<MinFixDeadzone>0</MinFixDeadzone>
+		<MaxFixDeadzone>1.5</MaxFixDeadzone>
+		<PosConstraintStrength>5</PosConstraintStrength>
+		<AngularConstraintStrength>60</AngularConstraintStrength>
+		<MinDeadzone>1.5</MinDeadzone>
+		<MaxDeadzone>3</MaxDeadzone>
+		<MinDeadAngle>15</MinDeadAngle>
+		<MaxDeadAngle>60</MaxDeadAngle>
+    <Skills>
+      <SkillConfiguration>
+        <SkillType>RetreatOrReinforceTeamSkill</SkillType>
+        <SkillId>retreat</SkillId>
+        <SkillSlot>0</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>GoToPointTeamSkill</SkillType>
+        <SkillSlot>2</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>AbilityTeamSkill</SkillType>
+        <Ability>AttackGround</Ability>
+        <SkillId>pointAttack</SkillId>
+        <SkillSlot>3</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>StopTeamSkill</SkillType>
+        <SkillSlot>4</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>AbilityTeamSkill</SkillType>
+        <Ability>Rockets</Ability>
+        <SkillId>launch</SkillId>
+        <SkillSlot>6</SkillSlot>
+      </SkillConfiguration>
+    </Skills>
+		<IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_rus_mech_artillery.png</IconName>
+		<VisualWeaponName>rus_mech_artillery_launcher</VisualWeaponName>
+		<Priority>65</Priority>
+		<Height>6</Height>
+		<WreckTimeToLifeinSeconds>4.25</WreckTimeToLifeinSeconds>
+		<WreckPrefabId>units_rus_default@cha_rus_mech_artillery_wreck.prefab</WreckPrefabId>
+		<AngularFixAngle0>1</AngularFixAngle0>
+		<AngularFixAngle1>30</AngularFixAngle1>
+  </ActorConfiguration>
+
+  <ActorConfiguration id="rus_mech_scythe" parentId="mech_base" type="mech"> <!-- Copied from gunfort -->
+		<!--Speed props describe the speeds the actor is capable of when setting control properties to 1! -->
+		<RunSpeed>4.3</RunSpeed>
+    <StrafeSpeed>4.3</StrafeSpeed>
+    <!--<StrafeSpeed>1.6</StrafeSpeed>-->
+    <RotationSpeed>56</RotationSpeed>
+		<!--Decay describes flinch reduction in per second! -->
+		<FlinchProportionalDecay>1</FlinchProportionalDecay>
+		<FlinchConstantDecay>1</FlinchConstantDecay>
+		<KineticToFlinch>1.5</KineticToFlinch>
+		<StrafeFixStrength>1</StrafeFixStrength>
+		<ForwardFixStrength>1</ForwardFixStrength>
+		<BackwardFixStrength>1</BackwardFixStrength>
+		<AngularFixStrength>1</AngularFixStrength>
+		<MinFixDeadzone>0</MinFixDeadzone>
+		<MaxFixDeadzone>1.5</MaxFixDeadzone>
+		<PosConstraintStrength>30</PosConstraintStrength>
+		<AngularConstraintStrength>60</AngularConstraintStrength>
+		<MinDeadzone>1</MinDeadzone>
+		<MaxDeadzone>2</MaxDeadzone>
+		<MinDeadAngle>1</MinDeadAngle>
+		<MaxDeadAngle>5</MaxDeadAngle>
+    <Skills>
+      <SkillConfiguration>
+        <SkillType>RetreatOrReinforceTeamSkill</SkillType>
+        <SkillId>retreat</SkillId>
+        <SkillSlot>0</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>GoToPointTeamSkill</SkillType>
+        <SkillSlot>2</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>AbilityTeamSkill</SkillType>
+        <Ability>AttackGround</Ability>
+        <SkillId>pointAttack</SkillId>
+        <SkillSlot>3</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>StopTeamSkill</SkillType>
+        <SkillSlot>4</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>AbilityTeamSkill</SkillType>
+        <Ability>VeteranMechAbility</Ability>
+        <SkillId>cry</SkillId>
+        <SkillSlot>5</SkillSlot>
+      </SkillConfiguration>
+    </Skills>
+		<IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_rus_mech_scythe.png</IconName>
+		<Priority>40</Priority>
+    <WreckTimeToLifeinSeconds>7.0</WreckTimeToLifeinSeconds>
+		<WreckPrefabId>units_rus_default@cha_rus_mech_scythe_wreck.prefab</WreckPrefabId>
+    <Height>8.75</Height>
+	</ActorConfiguration>
+	
+  <ActorConfiguration id="rus_soldier_exo" parentId="mech_base" type="mech">
+    <!--Speed props describe the speeds the actor is capable of when setting control properties to 1! -->
+    <RunSpeed>5.4</RunSpeed>
+    <StrafeSpeed>5.4</StrafeSpeed>
+    <RotationSpeed>101</RotationSpeed>
+    <!--Decay describes flinch reduction in per second! -->
+    <FlinchProportionalDecay>1</FlinchProportionalDecay>
+    <FlinchConstantDecay>0.5</FlinchConstantDecay>
+    <KineticToFlinch>0.5</KineticToFlinch>
+    <StrafeFixStrength>1</StrafeFixStrength>
+    <ForwardFixStrength>1</ForwardFixStrength>
+    <BackwardFixStrength>1</BackwardFixStrength>
+    <AngularFixStrength>1</AngularFixStrength>
+    <MinFixDeadzone>0</MinFixDeadzone>
+    <MaxFixDeadzone>1.5</MaxFixDeadzone>
+    <PosConstraintStrength>30</PosConstraintStrength>
+    <AngularConstraintStrength>60</AngularConstraintStrength>
+    <MinDeadzone>1</MinDeadzone>
+    <MaxDeadzone>2</MaxDeadzone>
+    <MinDeadAngle>1</MinDeadAngle>
+    <MaxDeadAngle>5</MaxDeadAngle>
+    <Skills>
+      <SkillConfiguration>
+        <SkillType>RetreatOrReinforceTeamSkill</SkillType>
+        <SkillId>retreat</SkillId>
+        <SkillSlot>0</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>AbilityTeamSkill</SkillType>
+        <Ability>MeleeAttack</Ability>
+        <SkillId>melee</SkillId>
+        <SkillSlot>1</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>GoToPointTeamSkill</SkillType>
+        <SkillSlot>2</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>AbilityTeamSkill</SkillType>
+        <Ability>AttackGround</Ability>
+        <SkillId>pointAttack</SkillId>
+        <SkillSlot>3</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>StopTeamSkill</SkillType>
+        <SkillSlot>4</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>AbilityTeamSkill</SkillType>
+        <Ability>VeteranMechAbility</Ability>
+        <SkillId>jump</SkillId>
+        <SkillSlot>6</SkillSlot>
+      </SkillConfiguration>
+	  <SkillConfiguration>
+        <SkillType>AbilityTeamSkill</SkillType>
+        <Ability>AirDropBattleReinforce</Ability>
+        <SkillId>reinforceBattle</SkillId>
+        <SkillSlot>5</SkillSlot>
+      </SkillConfiguration>
+    </Skills>
+    <IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_rus_soldier_exo.png</IconName>
+    <WreckTimeToLifeinSeconds>5.5</WreckTimeToLifeinSeconds>
+    <WreckPrefabId>sax_mech_dachs@cha_sax_mech_dachs_wreck.prefab</WreckPrefabId>
+    <DeathSound>Mech</DeathSound>
+    <Priority>90</Priority>
+    <Height>2.75</Height>
+    <DefaultMaterial>Metal</DefaultMaterial>
+    <HitSound>Metal</HitSound>
+  </ActorConfiguration>
+
+	<ActorConfiguration id="tes_soldier_walker" parentId="mech_base" type="mech">
+    <!--Speed props describe the speeds the actor is capable of when setting control properties to 1! -->
+    <RunSpeed>3.1</RunSpeed>
+    <StrafeSpeed>3.1</StrafeSpeed>
+    <RotationSpeed>56</RotationSpeed>
+    <!--Decay describes flinch reduction in per second! -->
+    <FlinchProportionalDecay>1</FlinchProportionalDecay>
+    <FlinchConstantDecay>0.5</FlinchConstantDecay>
+    <KineticToFlinch>0.5</KineticToFlinch>
+    <StrafeFixStrength>1</StrafeFixStrength>
+    <ForwardFixStrength>1</ForwardFixStrength>
+    <BackwardFixStrength>1</BackwardFixStrength>
+    <AngularFixStrength>1</AngularFixStrength>
+    <MinFixDeadzone>0</MinFixDeadzone>
+    <MaxFixDeadzone>1.5</MaxFixDeadzone>
+    <PosConstraintStrength>30</PosConstraintStrength>
+    <AngularConstraintStrength>60</AngularConstraintStrength>
+    <MinDeadzone>1</MinDeadzone>
+    <MaxDeadzone>2</MaxDeadzone>
+    <MinDeadAngle>1</MinDeadAngle>
+    <MaxDeadAngle>5</MaxDeadAngle>
+    <Skills>
+      <SkillConfiguration>
+        <SkillType>RetreatOrReinforceTeamSkill</SkillType>
+        <SkillId>retreat</SkillId>
+        <SkillSlot>0</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>GoToPointTeamSkill</SkillType>
+        <SkillSlot>2</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>AbilityTeamSkill</SkillType>
+        <Ability>AttackGround</Ability>
+        <SkillId>pointAttack</SkillId>
+        <SkillSlot>3</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>StopTeamSkill</SkillType>
+        <SkillSlot>4</SkillSlot>
+      </SkillConfiguration>
+    </Skills>
+    <IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_tes_soldier_walker.png</IconName>
+    <WreckTimeToLifeinSeconds>5.5</WreckTimeToLifeinSeconds>
+    <WreckPrefabId>sax_mech_dachs@cha_sax_mech_dachs_wreck.prefab</WreckPrefabId>
+    <DeathSound>Mech</DeathSound>
+    <Priority>91</Priority>
+    <Height>4</Height>
+    <DefaultMaterial>Metal</DefaultMaterial>
+    <HitSound>Metal</HitSound>
+  </ActorConfiguration>
+
+
+  <ActorConfiguration id="tes_mech_charger" parentId="mech_base" type="mech">
+    <!--Speed props describe the speeds the actor is capable of when setting control properties to 1! -->
+    <RunSpeed>3.1</RunSpeed>
+    <StrafeSpeed>3.1</StrafeSpeed>
+    <RotationSpeed>56</RotationSpeed>
+    <!--Decay describes flinch reduction in per second! -->
+    <FlinchProportionalDecay>1</FlinchProportionalDecay>
+    <FlinchConstantDecay>0.5</FlinchConstantDecay>
+    <KineticToFlinch>0.5</KineticToFlinch>
+    <StrafeFixStrength>1</StrafeFixStrength>
+    <ForwardFixStrength>1</ForwardFixStrength>
+    <BackwardFixStrength>1</BackwardFixStrength>
+    <AngularFixStrength>1</AngularFixStrength>
+    <MinFixDeadzone>0</MinFixDeadzone>
+    <MaxFixDeadzone>1.5</MaxFixDeadzone>
+    <PosConstraintStrength>30</PosConstraintStrength>
+    <AngularConstraintStrength>60</AngularConstraintStrength>
+    <MinDeadzone>1</MinDeadzone>
+    <MaxDeadzone>2</MaxDeadzone>
+    <MinDeadAngle>1</MinDeadAngle>
+    <MaxDeadAngle>5</MaxDeadAngle>
+    <Skills>
+      <SkillConfiguration>
+        <SkillType>RetreatOrReinforceTeamSkill</SkillType>
+        <SkillId>retreat</SkillId>
+        <SkillSlot>0</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>GoToPointTeamSkill</SkillType>
+        <SkillSlot>2</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>AbilityTeamSkill</SkillType>
+        <Ability>AttackGround</Ability>
+        <SkillId>pointAttack</SkillId>
+        <SkillSlot>3</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>StopTeamSkill</SkillType>
+        <SkillSlot>4</SkillSlot>
+      </SkillConfiguration>
+    </Skills>
+    <DeathSound>Mech</DeathSound>
+    <Priority>54</Priority>
+    <Height>4</Height>
+    <DefaultMaterial>Metal</DefaultMaterial>
+    <HitSound>Metal</HitSound>
+	
+	<IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_tes_mech_charger.png</IconName>
+  </ActorConfiguration>
+
+  <ActorConfiguration id="tes_mech_serve" parentId="mech_base" type="mech">
+    <!--Speed props describe the speeds the actor is capable of when setting control properties to 1! -->
+    <RunSpeed>3.1</RunSpeed>
+    <StrafeSpeed>3.1</StrafeSpeed>
+    <RotationSpeed>56</RotationSpeed>
+    <!--Decay describes flinch reduction in per second! -->
+    <FlinchProportionalDecay>1</FlinchProportionalDecay>
+    <FlinchConstantDecay>0.5</FlinchConstantDecay>
+    <KineticToFlinch>0.5</KineticToFlinch>
+    <StrafeFixStrength>1</StrafeFixStrength>
+    <ForwardFixStrength>1</ForwardFixStrength>
+    <BackwardFixStrength>1</BackwardFixStrength>
+    <AngularFixStrength>1</AngularFixStrength>
+    <MinFixDeadzone>0</MinFixDeadzone>
+    <MaxFixDeadzone>1.5</MaxFixDeadzone>
+    <PosConstraintStrength>30</PosConstraintStrength>
+    <AngularConstraintStrength>60</AngularConstraintStrength>
+    <MinDeadzone>1</MinDeadzone>
+    <MaxDeadzone>2</MaxDeadzone>
+    <MinDeadAngle>1</MinDeadAngle>
+    <MaxDeadAngle>5</MaxDeadAngle>
+    <Skills>
+      <SkillConfiguration>
+        <SkillType>RetreatOrReinforceTeamSkill</SkillType>
+        <SkillId>retreat</SkillId>
+        <SkillSlot>0</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>GoToPointTeamSkill</SkillType>
+        <SkillSlot>2</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>AbilityTeamSkill</SkillType>
+        <Ability>AttackGround</Ability>
+        <SkillId>pointAttack</SkillId>
+        <SkillSlot>3</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>StopTeamSkill</SkillType>
+        <SkillSlot>4</SkillSlot>
+      </SkillConfiguration>
+    </Skills>
+    <DeathSound>Mech</DeathSound>
+    <Priority>54</Priority>
+    <Height>4</Height>
+    <DefaultMaterial>Metal</DefaultMaterial>
+    <HitSound>Metal</HitSound>
+		
+	<IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_tes_mech_serve.png</IconName>
+  </ActorConfiguration>
+
+  <ActorConfiguration id="tes_mech_guard" parentId="mech_base" type="mech">
+    <!--Speed props describe the speeds the actor is capable of when setting control properties to 1! -->
+    <RunSpeed>1.8</RunSpeed>
+    <StrafeSpeed>1.8</StrafeSpeed>
+    <RotationSpeed>56</RotationSpeed>
+    <!--Decay describes flinch reduction in per second! -->
+    <FlinchProportionalDecay>1</FlinchProportionalDecay>
+    <FlinchConstantDecay>0.5</FlinchConstantDecay>
+    <KineticToFlinch>3</KineticToFlinch>
+    <StrafeFixStrength>1</StrafeFixStrength>
+    <ForwardFixStrength>1</ForwardFixStrength>
+    <BackwardFixStrength>1</BackwardFixStrength>
+    <AngularFixStrength>1</AngularFixStrength>
+    <MinFixDeadzone>0</MinFixDeadzone>
+    <MaxFixDeadzone>1.5</MaxFixDeadzone>
+    <PosConstraintStrength>30</PosConstraintStrength>
+    <AngularConstraintStrength>60</AngularConstraintStrength>
+    <MinDeadzone>1</MinDeadzone>
+    <MaxDeadzone>2</MaxDeadzone>
+    <MinDeadAngle>1</MinDeadAngle>
+    <MaxDeadAngle>5</MaxDeadAngle>
+    <Skills>
+      <SkillConfiguration>
+        <SkillType>RetreatOrReinforceTeamSkill</SkillType>
+        <SkillId>retreat</SkillId>
+        <SkillSlot>0</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>GoToPointTeamSkill</SkillType> 
+        <SkillSlot>2</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>AbilityTeamSkill</SkillType>
+        <Ability>AttackGround</Ability>
+        <SkillId>pointAttack</SkillId>
+        <SkillSlot>3</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>StopTeamSkill</SkillType>
+        <SkillSlot>4</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+				<SkillType>AbilityTeamSkill</SkillType>
+				<Ability>Deploy</Ability>
+				<SkillId>deploy</SkillId>
+				<SkillSlot>5</SkillSlot>
+			</SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>AbilityTeamSkill</SkillType>
+        <Ability>Rockets</Ability>
+        <SkillId>shock</SkillId>
+        <SkillSlot>6</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>AbilityTeamSkill</SkillType>
+        <Ability>Grenade</Ability>
+        <SkillId>strike</SkillId>
+        <SkillSlot>7</SkillSlot>
+      </SkillConfiguration>
+    </Skills>
+    <DeathSound>Mech</DeathSound>
+    <Priority>54</Priority>
+    <Height>4</Height>
+    <DefaultMaterial>Metal</DefaultMaterial>
+    <HitSound>Metal</HitSound>
+	
+	<IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_tes_mech_guard.png</IconName>
+  </ActorConfiguration>
+
+  <ActorConfiguration id="tes_mech_ikarus" parentId="pol_mech_trooptransport" type="mech">
+    <Skills>
+      <SkillConfiguration>
+        <SkillType>RetreatOrReinforceTeamSkill</SkillType>
+        <SkillId>retreat</SkillId>
+        <SkillSlot>0</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>GoToPointTeamSkill</SkillType>
+        <SkillSlot>2</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>AbilityTeamSkill</SkillType>
+        <Ability>AttackGround</Ability>
+        <SkillId>pointAttack</SkillId>
+        <SkillSlot>3</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>StopTeamSkill</SkillType>
+        <SkillSlot>4</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+				<SkillType>AbilityTeamSkill</SkillType>
+				<Ability>Deploy</Ability>
+				<SkillId>deploy</SkillId>
+				<SkillSlot>5</SkillSlot>
+			</SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>AbilityTeamSkill</SkillType>
+        <Ability>Mortar</Ability>
+        <SkillId>shock</SkillId>
+        <SkillSlot>6</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>AbilityTeamSkill</SkillType>
+        <Ability>HeroAbility1</Ability>
+        <SkillId>overdrive</SkillId>
+        <SkillSlot>7</SkillSlot>
+      </SkillConfiguration>
+    </Skills>
+  
+	<IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_tes_mech_ikarus.png</IconName>
+  </ActorConfiguration>
+
+	<ActorConfiguration id="supportsystem_base" type="mech">
+		<DefaultMaterial>Metal</DefaultMaterial>
+		<HitSound>Metal</HitSound>
+	</ActorConfiguration>
+
+	<ActorConfiguration id="com_support_cannon" parentId="supportsystem_base" type="mech">
+		<!--Speed props describe the speeds the actor is capable of when setting control properties to 1! -->
+		<RunSpeed>1.2</RunSpeed>
+		<!--<StrafeSpeed>1.6</StrafeSpeed>-->
+		<RotationSpeed>56</RotationSpeed>
+		<!--Decay describes flinch reduction in per second! -->
+		<FlinchProportionalDecay>1</FlinchProportionalDecay>
+		<FlinchConstantDecay>1</FlinchConstantDecay>
+		<KineticToFlinch>1</KineticToFlinch>
+		<StrafeFixStrength>1</StrafeFixStrength>
+		<ForwardFixStrength>1</ForwardFixStrength>
+		<BackwardFixStrength>1</BackwardFixStrength>
+		<AngularFixStrength>1</AngularFixStrength>
+		<MinFixDeadzone>0</MinFixDeadzone>
+		<MaxFixDeadzone>1.5</MaxFixDeadzone>
+		<PosConstraintStrength>5</PosConstraintStrength>
+		<AngularConstraintStrength>60</AngularConstraintStrength>
+		<MinDeadzone>1.5</MinDeadzone>
+		<MaxDeadzone>3</MaxDeadzone>
+		<MinDeadAngle>15</MinDeadAngle>
+		<MaxDeadAngle>60</MaxDeadAngle>
+    <Skills>
+      <SkillConfiguration>
+        <SkillType>RetreatOrReinforceTeamSkill</SkillType>
+        <SkillId>retreat</SkillId>
+        <SkillSlot>0</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>GoToPointTeamSkill</SkillType>
+        <SkillSlot>2</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>AbilityTeamSkill</SkillType>
+        <Ability>AttackGround</Ability>
+        <SkillId>pointAttack</SkillId>
+        <SkillSlot>3</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>StopTeamSkill</SkillType>
+        <SkillSlot>4</SkillSlot>
+      </SkillConfiguration>
+    </Skills>
+		<IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_com_support_cannon.png</IconName>
+		<HasFactionSpecificPortrait>true</HasFactionSpecificPortrait>
+		<VisualWeaponName>com_support_cannon</VisualWeaponName>
+		<Priority>100</Priority>
+		<Height>2</Height>
+		<WreckTimeToLifeinSeconds>4.85</WreckTimeToLifeinSeconds>
+		<DeathSound>human</DeathSound>
+		<AngularFixAngle0>1</AngularFixAngle0>
+		<AngularFixAngle1>30</AngularFixAngle1>
+  </ActorConfiguration>
+
+	<ActorConfiguration id="com_support_mg"  parentId="supportsystem_base" type="mech">
+		<!--Speed props describe the speeds the actor is capable of when setting control properties to 1! -->
+		<RunSpeed>1.8</RunSpeed>
+		<!--<StrafeSpeed>1.6</StrafeSpeed>-->
+		<RotationSpeed>56</RotationSpeed>
+		<!--Decay describes flinch reduction in per second! -->
+		<FlinchProportionalDecay>1</FlinchProportionalDecay>
+		<FlinchConstantDecay>1</FlinchConstantDecay>
+		<KineticToFlinch>1</KineticToFlinch>
+		<StrafeFixStrength>1</StrafeFixStrength>
+		<ForwardFixStrength>1</ForwardFixStrength>
+		<BackwardFixStrength>1</BackwardFixStrength>
+		<AngularFixStrength>1</AngularFixStrength>
+		<MinFixDeadzone>0</MinFixDeadzone>
+		<MaxFixDeadzone>1.5</MaxFixDeadzone>
+		<PosConstraintStrength>5</PosConstraintStrength>
+		<AngularConstraintStrength>60</AngularConstraintStrength>
+		<MinDeadzone>1.5</MinDeadzone>
+		<MaxDeadzone>3</MaxDeadzone>
+		<MinDeadAngle>15</MinDeadAngle>
+		<MaxDeadAngle>60</MaxDeadAngle>
+    <Skills>
+      <SkillConfiguration>
+        <SkillType>RetreatOrReinforceTeamSkill</SkillType>
+        <SkillId>retreat</SkillId>
+        <SkillSlot>0</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>GoToPointTeamSkill</SkillType>
+        <SkillSlot>2</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>AbilityTeamSkill</SkillType>
+        <Ability>AttackGround</Ability>
+        <SkillId>pointAttack</SkillId>
+        <SkillSlot>3</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>StopTeamSkill</SkillType>
+        <SkillSlot>4</SkillSlot>
+      </SkillConfiguration>
+    </Skills>
+		<IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_com_support_mg.png</IconName>
+		<HasFactionSpecificPortrait>true</HasFactionSpecificPortrait>
+		<Priority>105</Priority>
+		<Height>2</Height>
+		<WreckTimeToLifeinSeconds>4.85</WreckTimeToLifeinSeconds>
+		<DeathSound>human</DeathSound>
+		<AngularFixAngle0>1</AngularFixAngle0>
+		<AngularFixAngle1>30</AngularFixAngle1>
+  </ActorConfiguration>
+
+	<ActorConfiguration id="com_support_mortar" parentId="supportsystem_base" type="mech">
+		<!--Speed props describe the speeds the actor is capable of when setting control properties to 1! -->
+		<RunSpeed>1.8</RunSpeed>
+		<!--<StrafeSpeed>1.6</StrafeSpeed>-->
+		<RotationSpeed>56</RotationSpeed>
+		<!--Decay describes flinch reduction in per second! -->
+		<FlinchProportionalDecay>1</FlinchProportionalDecay>
+		<FlinchConstantDecay>1</FlinchConstantDecay>
+		<KineticToFlinch>1</KineticToFlinch>
+		<StrafeFixStrength>1</StrafeFixStrength>
+		<ForwardFixStrength>1</ForwardFixStrength>
+		<BackwardFixStrength>1</BackwardFixStrength>
+		<AngularFixStrength>1</AngularFixStrength>
+		<MinFixDeadzone>0</MinFixDeadzone>
+		<MaxFixDeadzone>1.5</MaxFixDeadzone>
+		<PosConstraintStrength>5</PosConstraintStrength>
+		<AngularConstraintStrength>60</AngularConstraintStrength>
+		<MinDeadzone>1.5</MinDeadzone>
+		<MaxDeadzone>3</MaxDeadzone>
+		<MinDeadAngle>15</MinDeadAngle>
+		<MaxDeadAngle>60</MaxDeadAngle>
+    <Skills>
+      <SkillConfiguration>
+        <SkillType>RetreatOrReinforceTeamSkill</SkillType>
+        <SkillId>retreat</SkillId>
+        <SkillSlot>0</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>GoToPointTeamSkill</SkillType>
+        <SkillSlot>2</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>AbilityTeamSkill</SkillType>
+        <Ability>AttackGround</Ability>
+        <SkillId>pointAttack</SkillId>
+        <SkillSlot>3</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>StopTeamSkill</SkillType>
+        <SkillSlot>4</SkillSlot>
+      </SkillConfiguration>
+    </Skills>
+		<IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_com_support_mortar.png</IconName>
+		<HasFactionSpecificPortrait>true</HasFactionSpecificPortrait>
+		<Priority>109</Priority>
+		<Height>2</Height>
+		<WreckTimeToLifeinSeconds>4.85</WreckTimeToLifeinSeconds>
+		<DeathSound>human</DeathSound>
+		<AngularFixAngle0>1</AngularFixAngle0>
+		<AngularFixAngle1>30</AngularFixAngle1>
+  </ActorConfiguration>
+
+	<ActorConfiguration id="com_support_destroyer" parentId="supportsystem_base" type="mech">
+    <Skills>
+      <SkillConfiguration>
+        <SkillType>AbilityTeamSkill</SkillType>
+        <Ability>AttackGround</Ability>
+        <SkillId>pointAttack</SkillId>
+        <SkillSlot>3</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>StopTeamSkill</SkillType>
+        <SkillSlot>4</SkillSlot>
+      </SkillConfiguration>
+    </Skills>
+	<Height>4</Height>
+    <IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_com_support_destroyer.png</IconName>
+		<Priority>32</Priority>
+  </ActorConfiguration>
+
+	<ActorConfiguration id="pol_support_cannon" type="mech" parentId="com_support_cannon">
+    <Skills>
+      <SkillConfiguration>
+        <SkillType>RetreatOrReinforceTeamSkill</SkillType>
+        <SkillId>retreat</SkillId>
+        <SkillSlot>0</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>GoToPointTeamSkill</SkillType>
+        <SkillSlot>2</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>AbilityTeamSkill</SkillType>
+        <Ability>AttackGround</Ability>
+        <SkillId>pointAttack</SkillId>
+        <SkillSlot>3</SkillSlot>
+      </SkillConfiguration>
+      <SkillConfiguration>
+        <SkillType>StopTeamSkill</SkillType>
+        <SkillSlot>4</SkillSlot>
+      </SkillConfiguration>
+    </Skills>
+    <IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_pol_support_cannon.png</IconName>
+	</ActorConfiguration>
+
+	<ActorConfiguration id="pol_support_mg" type="mech" parentId="com_support_mg">
+    <IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_pol_support_mg.png</IconName>
+	</ActorConfiguration>
+
+	<ActorConfiguration id="pol_support_mortar" type="mech" parentId="com_support_mortar">
+    <IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_pol_support_mortar.png</IconName>
+	</ActorConfiguration>
+
+	<ActorConfiguration id="pol_support_destroyer" type="mech" parentId="com_support_destroyer">
+    <IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_pol_support_destroyer.png</IconName>
+	</ActorConfiguration>
+
+	<ActorConfiguration id="sax_support_cannon" type="mech" parentId="com_support_cannon">
+    <IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_sax_support_cannon.png</IconName>
+	</ActorConfiguration>
+
+	<ActorConfiguration id="sax_support_mg" type="mech" parentId="com_support_mg">
+    <IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_sax_support_mg.png</IconName>
+	</ActorConfiguration>
+
+	<ActorConfiguration id="sax_support_mortar" type="mech" parentId="com_support_mortar">
+    <IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_sax_support_mortar.png</IconName>
+	</ActorConfiguration>
+
+	<ActorConfiguration id="sax_support_destroyer" type="mech" parentId="com_support_destroyer">
+    <IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_sax_support_destroyer.png</IconName>
+	</ActorConfiguration>
+
+	<ActorConfiguration id="rus_support_cannon" type="mech" parentId="com_support_cannon">
+    <IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_rus_support_cannon.png</IconName>
+	</ActorConfiguration>
+
+	<ActorConfiguration id="rus_support_mg" type="mech" parentId="com_support_mg">
+    <IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_rus_support_mg.png</IconName>
+	</ActorConfiguration>
+
+	<ActorConfiguration id="rus_support_mortar" type="mech" parentId="com_support_mortar">
+    <IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_rus_support_mortar.png</IconName>
+	</ActorConfiguration>
+
+	<ActorConfiguration id="rus_support_destroyer" type="mech" parentId="com_support_destroyer">
+    <IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_rus_support_destroyer.png</IconName>
+	</ActorConfiguration>
+
+	<ActorConfiguration id="com_npc_citymale" parentId="soldier" type="human">
+	<Priority>180</Priority>
+	<IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_com_npc_citymale.png</IconName>
+  </ActorConfiguration>
+	<ActorConfiguration id="com_npc_citymalerifleman" parentId="soldier" type="human">
+		<Priority>150</Priority>
+		<IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_com_npc_citymale.png</IconName>
+	</ActorConfiguration>
+	<ActorConfiguration id="com_npc_citymalegunner" parentId="soldier" type="human">
+		<Priority>120</Priority>
+		<IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_com_npc_citymale.png</IconName>
+	</ActorConfiguration>
+	<ActorConfiguration id="com_npc_citymalegrenadier" parentId="soldier" type="human">
+		<Priority>140</Priority>
+		<IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_com_npc_citymale.png</IconName>
+	</ActorConfiguration>
+	<ActorConfiguration id="com_npc_cityfemale" parentId="soldier" type="human">
+		<Priority>180</Priority>
+		<IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_com_npc_cityfemale.png</IconName>
+	</ActorConfiguration>
+	<ActorConfiguration id="com_npc_farmerboy" parentId="soldier" type="human">
+		<Priority>180</Priority>
+		<IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_com_npc_farmerboy.png</IconName>
+	</ActorConfiguration>
+	<ActorConfiguration id="com_npc_farmerboysnow" parentId="soldier" type="human">
+		<Priority>180</Priority>
+		<IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_com_npc_farmerboy.png</IconName>
+	</ActorConfiguration>
+	<ActorConfiguration id="com_npc_farmerfemale" parentId="soldier" type="human">
+		<Priority>180</Priority>
+		<IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_com_npc_farmerfemale.png</IconName>
+  </ActorConfiguration>
+	<ActorConfiguration id="com_npc_farmermale" parentId="soldier" type="human">
+		<Priority>180</Priority>
+		<IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_com_npc_farmermale.png</IconName>
+	</ActorConfiguration>
+	<ActorConfiguration id="com_npc_farmermalerifleman" parentId="soldier" type="human">
+		<Priority>150</Priority>
+		<IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_com_npc_farmermalerifleman.png</IconName>
+	</ActorConfiguration>
+	<ActorConfiguration id="com_npc_farmermalegunner" parentId="soldier" type="human">
+		<Priority>120</Priority>
+		<IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_com_npc_farmermalegunner.png</IconName>
+	</ActorConfiguration>
+	<ActorConfiguration id="com_npc_farmermalegrenadier" parentId="soldier" type="human">
+			<Priority>140</Priority>
+			<IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_com_npc_farmermalegrenadier.png</IconName>
+	</ActorConfiguration>
+
+	<ActorConfiguration id="com_npc_citymalepartyguest" parentId="com_npc_citymale" type="human" />
+	<ActorConfiguration id="com_npc_cityfemalepartyguest" parentId="com_npc_cityfemale" type="human" />	
+	<ActorConfiguration id="com_npc_citymalepartywaiter" parentId="com_npc_citymale" type="human" />
+
+	<ActorConfiguration id="pol_npc_citymale" parentId="com_npc_citymale" type="human" />
+	<ActorConfiguration id="pol_npc_citymalerifleman" parentId="com_npc_citymalerifleman" type="human" />
+	<ActorConfiguration id="pol_npc_citymalegunner" parentId="com_npc_citymalegunner" type="human" />
+	<ActorConfiguration id="pol_npc_citymalegrenadier" parentId="com_npc_citymalegrenadier" type="human" />
+		
+	<ActorConfiguration id="rus_npc_citymale" parentId="com_npc_citymale" type="human" />
+	<ActorConfiguration id="rus_npc_citymalerifleman" parentId="com_npc_citymalerifleman" type="human">
+		<IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_rus_npc_citymalerifleman.png</IconName>
+	</ActorConfiguration>
+	<ActorConfiguration id="rus_npc_citymalegunner" parentId="com_npc_citymalegunner" type="human">
+		<IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_rus_npc_citymalegunner.png</IconName>
+	</ActorConfiguration>
+	<ActorConfiguration id="rus_npc_citymalegrenadier" parentId="com_npc_citymalegrenadier" type="human">
+		<IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_rus_npc_citymalegrenadier.png</IconName>
+	</ActorConfiguration>
+	
+	<ActorConfiguration id="sax_npc_citymale" parentId="com_npc_citymale" type="human" />
+	<ActorConfiguration id="sax_npc_citymalerifleman" parentId="com_npc_citymalerifleman" type="human">
+		<IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_sax_npc_citymalerifleman.png</IconName>
+	</ActorConfiguration>
+	<ActorConfiguration id="sax_npc_citymalegunner" parentId="com_npc_citymalegunner" type="human">
+		<IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_sax_npc_citymalegunner.png</IconName>
+	</ActorConfiguration>
+	<ActorConfiguration id="sax_npc_citymalegrenadier" parentId="com_npc_citymalegrenadier" type="human">
+		<IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_sax_npc_citymalegrenadier.png</IconName>
+	</ActorConfiguration>
+	
+	<ActorConfiguration id="tes_npc_citymale" parentId="com_npc_citymale" type="human" />
+	<ActorConfiguration id="tes_npc_citymalerifleman" parentId="com_npc_citymalerifleman" type="human" />
+	<ActorConfiguration id="tes_npc_citymalegunner" parentId="com_npc_citymalegunner" type="human" />
+	<ActorConfiguration id="tes_npc_citymalegrenadier" parentId="com_npc_citymalegrenadier" type="human" />
+	
+	<ActorConfiguration id="pol_npc_cityfemale" parentId="com_npc_cityfemale" type="human" />
+	<ActorConfiguration id="rus_npc_cityfemale" parentId="com_npc_cityfemale" type="human" />
+	<ActorConfiguration id="sax_npc_cityfemale" parentId="com_npc_cityfemale" type="human" />
+	<ActorConfiguration id="tes_npc_cityfemale" parentId="com_npc_cityfemale" type="human" />
+	
+	<ActorConfiguration id="pol_npc_farmerboy" parentId="com_npc_farmerboy" type="human" />
+	<ActorConfiguration id="pol_npc_farmerboysnow" parentId="com_npc_farmerboysnow" type="human" />
+	<ActorConfiguration id="pol_npc_farmerfemale" parentId="com_npc_farmerfemale" type="human" />
+	
+	<ActorConfiguration id="pol_npc_farmermale" parentId="com_npc_farmermale" type="human" />
+	<ActorConfiguration id="pol_npc_farmermalerifleman" parentId="com_npc_farmermalerifleman" type="human" />
+	<ActorConfiguration id="pol_npc_farmermalegunner" parentId="com_npc_farmermalegunner" type="human" />
+	<ActorConfiguration id="pol_npc_farmermalegrenadier" parentId="com_npc_farmermalegrenadier" type="human" />
+	
+	<ActorConfiguration id="rus_npc_farmermale" parentId="com_npc_farmermale" type="human" />
+	<ActorConfiguration id="rus_npc_farmermalerifleman" parentId="com_npc_farmermalerifleman" type="human" />
+	<ActorConfiguration id="rus_npc_farmermalegunner" parentId="com_npc_farmermalegunner" type="human" />
+	<ActorConfiguration id="rus_npc_farmermalegrenadier" parentId="com_npc_farmermalegrenadier" type="human" />
+
+	<ActorConfiguration id="rus_hero_tsar" type="human" parentId="com_npc_farmermale">
+		<Priority>10</Priority>
+		<IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_rus_npc_tsar_undercover.png</IconName>
+	</ActorConfiguration>
+	<ActorConfiguration id="rus_npc_tsar" type="human" parentId="com_npc_citymale">
+		<Priority>10</Priority>
+		<IconName>ui@Images/UnitInfo/UnitSelection/unit_icon_rus_npc_tsar.png</IconName>
+	</ActorConfiguration>
+
+	<ActorConfiguration id="com_mech_fieldworker" parentId="mech_base" type="mech">
+	<!--Speed props describe the speeds the actor is capable of when setting control properties to 1! -->
+	<RunSpeed>2.45</RunSpeed>
+    <StrafeSpeed>1.617</StrafeSpeed>
+    <RotationSpeed>30</RotationSpeed>
+		<VisualWeaponName>default</VisualWeaponName>
+		<Priority>180</Priority>
+	</ActorConfiguration>
+
+	<ActorConfiguration id="com_mech_woodcutter" parentId="mech_base" type="mech">
+	<!--Speed props describe the speeds the actor is capable of when setting control properties to 1! -->
+	<RunSpeed>2.15</RunSpeed>
+    <StrafeSpeed>2.15</StrafeSpeed>
+    <RotationSpeed>53</RotationSpeed>
+		<VisualWeaponName>default</VisualWeaponName>
+		<Priority>180</Priority>
+	</ActorConfiguration>
+
+	<ActorConfiguration id="com_mech_transport" parentId="mech_base" type="mech">
+	<!--Speed props describe the speeds the actor is capable of when setting control properties to 1! -->
+	<RunSpeed>3.8</RunSpeed>
+    <StrafeSpeed>3.8</StrafeSpeed>
+    <RotationSpeed>90</RotationSpeed>
+		<VisualWeaponName>default</VisualWeaponName>
+		<Priority>180</Priority>
+	</ActorConfiguration>
+
+	<ActorConfiguration id="com_mech_mine" parentId="mech_base" type="mech">
+    <Height>0.3</Height>
+	</ActorConfiguration>
+
+	<ActorConfiguration id="com_animal_chicken" parentId="soldier" type="human">
+	<MaxForwardSpeed>3.11</MaxForwardSpeed>
+	</ActorConfiguration>
+	<ActorConfiguration id="com_animal_crow" parentId="soldier" type="human">
+	<MaxForwardSpeed>3</MaxForwardSpeed>
+	</ActorConfiguration>
+	<ActorConfiguration id="com_animal_deer" parentId="soldier" type="human">
+	<MaxForwardSpeed>7</MaxForwardSpeed>
+	</ActorConfiguration>
+	<ActorConfiguration id="com_animal_piglet" parentId="soldier" type="human">
+	<MaxForwardSpeed>2.9</MaxForwardSpeed>
+	</ActorConfiguration>
+	<ActorConfiguration id="com_animal_pig" parentId="soldier" type="human">
+	<MaxForwardSpeed>3.3</MaxForwardSpeed>
+	</ActorConfiguration>
+	<ActorConfiguration id="com_animal_sheep" parentId="soldier" type="human">
+	<MaxForwardSpeed>3.3</MaxForwardSpeed>
+	</ActorConfiguration>
+	<ActorConfiguration id="com_animal_cow" parentId="soldier" type="human">
+	<MaxForwardSpeed>4.9</MaxForwardSpeed>
+	</ActorConfiguration>
+	<ActorConfiguration id="com_animal_bear" parentId="soldier" type="human">
+	<MaxForwardSpeed>8.4</MaxForwardSpeed>
+	</ActorConfiguration>
+
+</ActorConfigurationRepository>

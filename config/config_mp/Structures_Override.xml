@@ -1,0 +1,596 @@
+<StructureConfigurations>
+
+<!--Base Buildings-->
+		<!--Polania Headquarter-->			
+			<StructureConfiguration overrideId="pol_structure_hq" type="defaultproduction">
+				<!--Stats-->
+					<Health>1750</Health>
+
+				<!--Unit Building-->
+					<BuildOptions>
+						<UnitBuildOption>
+							<UnitId>pol_soldier_engineer</UnitId>
+							<BuildDuration>40</BuildDuration>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>pol_hero_anna</UnitId>
+							<BuildDuration>30</BuildDuration>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>pol_hero_cavalry</UnitId>
+							<BuildDuration>30</BuildDuration>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>pol_hero_rebel</UnitId>
+							<BuildDuration>30</BuildDuration>
+						</UnitBuildOption>
+						<ReserveBuildOption>
+							<Phase>1</Phase>
+							<BuildDuration>30</BuildDuration>
+						</ReserveBuildOption>
+						<ReserveBuildOption>
+							<Phase>2</Phase>
+							<BuildDuration>30</BuildDuration>
+						</ReserveBuildOption>
+					</BuildOptions>
+			</StructureConfiguration>
+			
+		<!--Saxony Headquarter-->
+			<StructureConfiguration overrideId="sax_structure_hq" type="defaultproduction">
+				<!--Stats-->
+					<Health>1750</Health>
+
+				<!--Unit Building-->
+					<BuildOptions>
+						<UnitBuildOption>
+							<UnitId>sax_soldier_engineer</UnitId>
+							<BuildDuration>40</BuildDuration>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>sax_hero_gunter</UnitId>
+							<BuildDuration>30</BuildDuration>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>sax_hero_prince</UnitId>
+							<BuildDuration>30</BuildDuration>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>sax_hero_brunhilde</UnitId>
+							<BuildDuration>30</BuildDuration>
+						</UnitBuildOption>
+						<ReserveBuildOption>
+							<Phase>1</Phase>
+							<BuildDuration>30</BuildDuration>
+						</ReserveBuildOption>
+						<ReserveBuildOption>
+							<Phase>2</Phase>
+							<BuildDuration>30</BuildDuration>
+						</ReserveBuildOption>
+					</BuildOptions>
+
+
+			</StructureConfiguration>
+				
+		<!--Rusviet Headquarter-->
+			<StructureConfiguration overrideId="rus_structure_hq" type="defaultproduction">
+				<!--Stats-->
+					<Health>1750</Health>
+
+				<!--Unit Building-->
+					<BuildOptions>
+						<UnitBuildOption>
+							<UnitId>rus_soldier_engineer</UnitId>
+							<BuildDuration>40</BuildDuration>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_hero_olga</UnitId>
+							<BuildDuration>30</BuildDuration>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_hero_brother</UnitId>
+							<BuildDuration>30</BuildDuration>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_hero_general</UnitId>
+							<BuildDuration>30</BuildDuration>
+						</UnitBuildOption>
+						<ReserveBuildOption>
+							<Phase>1</Phase>
+							<BuildDuration>30</BuildDuration>
+						</ReserveBuildOption>
+						<ReserveBuildOption>
+							<Phase>2</Phase>
+							<BuildDuration>30</BuildDuration>
+						</ReserveBuildOption>
+					</BuildOptions>		
+			</StructureConfiguration>
+
+<!--Production Buildings-->
+	<!--Polania Barracks 01-->
+		<StructureConfiguration overrideId="pol_structure_barracks01" type="defaultproduction">			
+			<!--Structure Building-->
+				<BuildCost>
+					<IronCost>180</IronCost>
+					<OilCost>65</OilCost>
+					<PopulationCost>0</PopulationCost>
+				</BuildCost>
+			
+			<!--Upgrade Structure-->
+				<UpgradeOptions>
+					<UpgradeOption>
+						<FactionType>Polania</FactionType>
+						<StructureId>pol_structure_barracks02</StructureId>
+						<UpgradeDuration>35</UpgradeDuration>
+						<BuildCost>
+							<IronCost>340</IronCost>
+							<OilCost>100</OilCost>
+							<PopulationCost>0</PopulationCost>
+						</BuildCost>
+					</UpgradeOption>
+				</UpgradeOptions>
+			<!--Build options-->
+				<BuildOptions>
+					<UnitBuildOption>
+						<UnitId>pol_soldier_engineer</UnitId>
+						<BuildDuration>15</BuildDuration>
+					</UnitBuildOption>
+					<UnitBuildOption>
+						<UnitId>pol_soldier_rifleman</UnitId>
+						<BuildDuration>15</BuildDuration>
+					</UnitBuildOption>
+					<UnitBuildOption>
+						<UnitId>pol_soldier_grenadier</UnitId>
+						<BuildDuration>16</BuildDuration>
+					</UnitBuildOption>
+					<UnitBuildOption>
+						<UnitId>com_support_cannon</UnitId>
+						<BuildDuration>18</BuildDuration>
+					</UnitBuildOption>	
+				</BuildOptions>
+
+		</StructureConfiguration>
+
+	<!--Polania Barracks 02-->
+		<StructureConfiguration overrideId="pol_structure_barracks02" type="defaultproduction">
+			
+			<!--Unit Building-->
+				<BuildOptions>
+					<UnitBuildOption>
+						<UnitId>pol_soldier_engineer</UnitId>
+						<BuildDuration>15</BuildDuration>
+						<BuildCostOverride>
+							<IronCost>125</IronCost>
+							<OilCost>0</OilCost>
+							<PopulationCost>3</PopulationCost>
+						</BuildCostOverride>
+					</UnitBuildOption>
+					<UnitBuildOption>
+						<UnitId>pol_soldier_rifleman</UnitId>
+						<BuildDuration>15</BuildDuration>
+						<BuildCostOverride>
+							<IronCost>175</IronCost>
+							<OilCost>0</OilCost>
+							<PopulationCost>3</PopulationCost>
+						</BuildCostOverride>
+					</UnitBuildOption>
+					<UnitBuildOption>
+						<UnitId>pol_soldier_grenadier</UnitId>
+						<BuildDuration>16</BuildDuration>
+						<BuildCostOverride>
+							<IronCost>200</IronCost>
+							<OilCost>5</OilCost>
+							<PopulationCost>3</PopulationCost>
+						</BuildCostOverride>
+					</UnitBuildOption>
+					<UnitBuildOption>
+						<UnitId>pol_soldier_gunner</UnitId>
+						<BuildDuration>18</BuildDuration>
+					</UnitBuildOption>
+					<UnitBuildOption>
+						<UnitId>pol_soldier_mg</UnitId>
+						<BuildDuration>18</BuildDuration>
+					</UnitBuildOption>
+					<UnitBuildOption>
+						<UnitId>com_support_mg</UnitId>
+						<BuildDuration>18</BuildDuration>
+					</UnitBuildOption>
+					<UnitBuildOption>
+						<UnitId>com_support_cannon</UnitId>
+						<BuildDuration>18</BuildDuration>
+					</UnitBuildOption>						
+					<UnitBuildOption>
+						<UnitId>com_support_mortar</UnitId>
+						<BuildDuration>18</BuildDuration>
+					</UnitBuildOption>
+					<UnitBuildOption>
+						<UnitId>pol_soldier_exo</UnitId>
+						<BuildDuration>20</BuildDuration>
+					</UnitBuildOption>
+				</BuildOptions>
+				
+		</StructureConfiguration>
+
+<!--Saxony Barracks 01-->
+			<StructureConfiguration overrideId="sax_structure_barracks01" type="defaultproduction">
+				<!--Unit Building-->
+					<BuildOptions>
+						<UnitBuildOption>
+							<UnitId>sax_soldier_engineer</UnitId>
+							<BuildDuration>15</BuildDuration>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>sax_soldier_medic</UnitId>
+							<BuildDuration>15</BuildDuration>
+						</UnitBuildOption>	
+						<UnitBuildOption>
+							<UnitId>sax_soldier_rifleman</UnitId>
+							<BuildDuration>15</BuildDuration>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>sax_soldier_grenadier</UnitId>
+							<BuildDuration>16</BuildDuration>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>com_support_cannon</UnitId>
+							<BuildDuration>18</BuildDuration>
+						</UnitBuildOption>	
+					</BuildOptions>
+
+				<!--Upgrade Structure-->
+					<UpgradeOptions>
+						<UpgradeOption>
+							<FactionType>Saxony</FactionType>
+							<StructureId>sax_structure_barracks02</StructureId>
+							<UpgradeDuration>45</UpgradeDuration>
+							<BuildCost>
+								<IronCost>380</IronCost>
+								<OilCost>120</OilCost>
+								<PopulationCost>0</PopulationCost>
+							</BuildCost>
+						</UpgradeOption>
+					</UpgradeOptions>
+			</StructureConfiguration>
+
+	<!--Saxony Barracks 02-->
+		<StructureConfiguration overrideId="sax_structure_barracks02" type="defaultproduction">
+			
+			<!--Unit Building-->
+				<BuildOptions>
+					<UnitBuildOption>
+						<UnitId>sax_soldier_engineer</UnitId>
+						<BuildDuration>15</BuildDuration>
+						<BuildCostOverride>
+							<IronCost>125</IronCost>
+							<OilCost>0</OilCost>
+							<PopulationCost>3</PopulationCost>
+						</BuildCostOverride>
+					</UnitBuildOption>
+					<UnitBuildOption>
+						<UnitId>sax_soldier_medic</UnitId>
+						<BuildDuration>15</BuildDuration>
+						<BuildCostOverride>
+							<IronCost>75</IronCost>
+							<OilCost>0</OilCost>
+							<PopulationCost>3</PopulationCost>
+						</BuildCostOverride>
+					</UnitBuildOption>
+					<UnitBuildOption>
+						<UnitId>sax_soldier_rifleman</UnitId>
+						<BuildDuration>15</BuildDuration>
+						<BuildCostOverride>
+							<IronCost>175</IronCost>
+							<OilCost>0</OilCost>
+							<PopulationCost>3</PopulationCost>
+						</BuildCostOverride>
+					</UnitBuildOption>
+					<UnitBuildOption>
+						<UnitId>sax_soldier_grenadier</UnitId>
+						<BuildDuration>16</BuildDuration>
+						<BuildCostOverride>
+							<IronCost>200</IronCost>
+							<OilCost>5</OilCost>
+							<PopulationCost>3</PopulationCost>
+						</BuildCostOverride>
+					</UnitBuildOption>
+					<UnitBuildOption>
+						<UnitId>sax_soldier_gunner</UnitId>
+						<BuildDuration>18</BuildDuration>
+					</UnitBuildOption>
+					<UnitBuildOption>
+						<UnitId>com_support_mg</UnitId>
+						<BuildDuration>18</BuildDuration>
+					</UnitBuildOption>
+					<UnitBuildOption>
+						<UnitId>com_support_cannon</UnitId>
+						<BuildDuration>18</BuildDuration>
+					</UnitBuildOption>						
+					<UnitBuildOption>
+						<UnitId>com_support_mortar</UnitId>
+						<BuildDuration>18</BuildDuration>
+					</UnitBuildOption>
+					<UnitBuildOption>
+						<UnitId>sax_soldier_mortar</UnitId>
+						<BuildDuration>20</BuildDuration>
+					</UnitBuildOption>
+				</BuildOptions>
+				
+		</StructureConfiguration>
+
+		<!--Rusviet Barracks 01-->
+			<StructureConfiguration overrideId="rus_structure_barracks01" type="defaultproduction">
+				<!--Unit Building-->
+					<BuildOptions>
+						<UnitBuildOption>
+							<UnitId>rus_soldier_engineer</UnitId>
+							<BuildDuration>15</BuildDuration>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_soldier_rifleman</UnitId>
+							<BuildDuration>15</BuildDuration>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_soldier_grenadier</UnitId>
+							<BuildDuration>16</BuildDuration>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>rus_soldier_flamer</UnitId>
+							<BuildDuration>18</BuildDuration>
+						</UnitBuildOption>
+						<UnitBuildOption>
+							<UnitId>com_support_cannon</UnitId>
+							<BuildDuration>18</BuildDuration>
+						</UnitBuildOption>	
+					</BuildOptions>
+
+					<!--Upgrade Structure-->
+					<UpgradeOptions>
+						<UpgradeOption>
+							<FactionType>Rusviet</FactionType>
+							<StructureId>rus_structure_barracks02</StructureId>
+							<UpgradeDuration>55</UpgradeDuration>
+							<BuildCost>
+								<IronCost>380</IronCost>
+								<OilCost>120</OilCost>
+								<PopulationCost>0</PopulationCost>
+							</BuildCost>
+						</UpgradeOption>
+					</UpgradeOptions>
+			</StructureConfiguration>
+
+		<!--Rusviet Barracks 02-->
+		<StructureConfiguration overrideId="rus_structure_barracks02" type="defaultproduction">
+			
+			<!--Unit Building-->
+				<BuildOptions>
+					<UnitBuildOption>
+						<UnitId>rus_soldier_engineer</UnitId>
+						<BuildDuration>15</BuildDuration>
+						<BuildCostOverride>
+							<IronCost>125</IronCost>
+							<OilCost>0</OilCost>
+							<PopulationCost>3</PopulationCost>
+						</BuildCostOverride>
+					</UnitBuildOption>
+					<UnitBuildOption>
+						<UnitId>rus_soldier_rifleman</UnitId>
+						<BuildDuration>15</BuildDuration>
+						<BuildCostOverride>
+							<IronCost>175</IronCost>
+							<OilCost>0</OilCost>
+							<PopulationCost>3</PopulationCost>
+						</BuildCostOverride>
+					</UnitBuildOption>
+					<UnitBuildOption>
+						<UnitId>rus_soldier_grenadier</UnitId>
+						<BuildDuration>16</BuildDuration>
+						<BuildCostOverride>
+							<IronCost>200</IronCost>
+							<OilCost>5</OilCost>
+							<PopulationCost>3</PopulationCost>
+						</BuildCostOverride>
+					</UnitBuildOption>
+					<UnitBuildOption>
+						<UnitId>rus_soldier_gunner</UnitId>
+						<BuildDuration>18</BuildDuration>
+					</UnitBuildOption>
+					<UnitBuildOption>
+						<UnitId>rus_soldier_flamer</UnitId>
+						<BuildDuration>18</BuildDuration>
+						<BuildCostOverride>
+							<IronCost>200</IronCost>
+							<OilCost>5</OilCost>
+							<PopulationCost>3</PopulationCost>
+						</BuildCostOverride>
+					</UnitBuildOption>
+					<UnitBuildOption>
+						<UnitId>com_support_mg</UnitId>
+						<BuildDuration>18</BuildDuration>
+					</UnitBuildOption>
+					<UnitBuildOption>
+						<UnitId>com_support_cannon</UnitId>
+						<BuildDuration>18</BuildDuration>
+					</UnitBuildOption>						
+					<UnitBuildOption>
+						<UnitId>com_support_mortar</UnitId>
+						<BuildDuration>18</BuildDuration>
+					</UnitBuildOption>
+					<UnitBuildOption>
+						<UnitId>rus_soldier_exo</UnitId>
+						<BuildDuration>20</BuildDuration>
+					</UnitBuildOption>
+				</BuildOptions>
+				
+		</StructureConfiguration>
+
+<!--Polania Workshop 01-->
+	<StructureConfiguration overrideId="pol_structure_workshop01" type="defaultproduction">
+		<!--Structure Building-->
+			<BuildCost>
+				<IronCost>250</IronCost>
+				<OilCost>100</OilCost>
+				<PopulationCost>0</PopulationCost>
+			</BuildCost>
+			<ConstructionPoints>750</ConstructionPoints>
+
+		<!--Upgrade Structure-->
+			<UpgradeOptions>
+				<UpgradeOption>
+					<FactionType>Polania</FactionType>
+					<StructureId>pol_structure_workshop02</StructureId>
+					<UpgradeDuration>60</UpgradeDuration>
+					<BuildCost>
+						<IronCost>600</IronCost>
+						<OilCost>180</OilCost>
+						<PopulationCost>0</PopulationCost>
+					</BuildCost>
+				</UpgradeOption>
+			</UpgradeOptions>
+	</StructureConfiguration>
+
+<!--Saxony Workshop 01-->
+	<StructureConfiguration overrideId="sax_structure_workshop01" type="defaultproduction">
+		<!--Structure Building-->
+			<BuildCost>
+				<IronCost>250</IronCost>
+				<OilCost>130</OilCost>
+				<PopulationCost>0</PopulationCost>
+			</BuildCost>
+			<ConstructionPoints>800</ConstructionPoints>
+
+		<!--Upgrade Structure-->
+			<UpgradeOptions>
+				<UpgradeOption>
+					<FactionType>Saxony</FactionType>
+					<StructureId>sax_structure_workshop02</StructureId>
+					<UpgradeDuration>45</UpgradeDuration>
+					<BuildCost>
+						<IronCost>525</IronCost>
+						<OilCost>160</OilCost>
+						<PopulationCost>0</PopulationCost>
+					</BuildCost>
+				</UpgradeOption>
+			</UpgradeOptions>
+	</StructureConfiguration>
+
+<!--Rusviet Workshop 01-->
+	<StructureConfiguration overrideId="rus_structure_workshop01" type="defaultproduction">
+		<!--Structure Building-->
+			<BuildCost>
+				<IronCost>300</IronCost>
+				<OilCost>140</OilCost>
+				<PopulationCost>0</PopulationCost>
+			</BuildCost>
+			<ConstructionPoints>1100</ConstructionPoints>
+			
+		<!--Upgrade Structure-->
+			<UpgradeOptions>
+				<UpgradeOption>
+					<FactionType>Rusviet</FactionType>
+					<StructureId>rus_structure_workshop02</StructureId>
+					<UpgradeDuration>55</UpgradeDuration>
+					<BuildCost>
+						<IronCost>575</IronCost>
+						<OilCost>170</OilCost>
+						<PopulationCost>0</PopulationCost>
+					</BuildCost>
+				</UpgradeOption>
+			</UpgradeOptions>
+	</StructureConfiguration>
+
+		<!--Polania Workshop 02-->
+	<StructureConfiguration overrideId="pol_structure_workshop02" type="defaultproduction">
+		<!--Unit Building-->
+			<BuildOptions>
+				<UnitBuildOption>
+					<UnitId>pol_mech_spider</UnitId>
+					<BuildDuration>19</BuildDuration>
+				</UnitBuildOption>
+				<UnitBuildOption>
+					<UnitId>pol_mech_recon</UnitId>
+					<BuildDuration>19</BuildDuration>
+				</UnitBuildOption>
+				<UnitBuildOption>
+					<UnitId>pol_mech_artillery</UnitId>
+					<BuildDuration>24</BuildDuration>
+				</UnitBuildOption>
+				<UnitBuildOption>
+					<UnitId>pol_mech_stinger</UnitId>
+					<BuildDuration>30</BuildDuration>
+				</UnitBuildOption>
+				<UnitBuildOption>
+					<UnitId>pol_mech_trooptransport</UnitId>
+					<BuildDuration>30</BuildDuration>
+				</UnitBuildOption>
+				<UnitBuildOption>
+					<UnitId>pol_mech_gunfort</UnitId>
+					<BuildDuration>40</BuildDuration>
+					<RequiresFullInfrastructure>true</RequiresFullInfrastructure>
+				</UnitBuildOption>
+		</BuildOptions>
+	</StructureConfiguration>
+
+<!--Saxony Workshop 02-->
+	<StructureConfiguration overrideId="sax_structure_workshop02" type="defaultproduction">
+		
+		<!--Unit Building-->
+			<BuildOptions>
+				<UnitBuildOption>
+					<UnitId>sax_mech_gatling</UnitId>
+					<BuildDuration>19</BuildDuration>
+				</UnitBuildOption>
+				<UnitBuildOption>
+					<UnitId>sax_mech_tank</UnitId>
+					<BuildDuration>19</BuildDuration>
+				</UnitBuildOption>
+				<UnitBuildOption>
+					<UnitId>sax_mech_artillery</UnitId>
+					<BuildDuration>25</BuildDuration>
+				</UnitBuildOption>
+				<UnitBuildOption>
+					<UnitId>sax_mech_dachs</UnitId>
+					<BuildDuration>25</BuildDuration>
+				</UnitBuildOption>
+				<UnitBuildOption>
+					<UnitId>sax_mech_mother</UnitId>
+					<BuildDuration>25</BuildDuration>
+				</UnitBuildOption>
+				<UnitBuildOption>
+					<UnitId>sax_mech_gunfort</UnitId>
+					<BuildDuration>40</BuildDuration>
+					<RequiresFullInfrastructure>true</RequiresFullInfrastructure>
+				</UnitBuildOption>
+			</BuildOptions>
+	</StructureConfiguration>
+	
+<!--Rusviet Workshop 02-->
+	<StructureConfiguration overrideId="rus_structure_workshop02" type="defaultproduction">
+		<!--Unit Building-->
+			<BuildOptions>
+				<UnitBuildOption>
+					<UnitId>rus_mech_flamer</UnitId>
+					<BuildDuration>15</BuildDuration>
+				</UnitBuildOption>
+				<UnitBuildOption>
+					<UnitId>rus_mech_bomber</UnitId>
+					<BuildDuration>15</BuildDuration>
+				</UnitBuildOption>
+				<UnitBuildOption>
+					<UnitId>rus_mech_artillery</UnitId>
+					<BuildDuration>15</BuildDuration>
+				</UnitBuildOption>
+				<UnitBuildOption>
+					<UnitId>rus_mech_revolver</UnitId>
+					<BuildDuration>25</BuildDuration>
+				</UnitBuildOption>
+				<UnitBuildOption>
+					<UnitId>rus_mech_scythe</UnitId>
+					<BuildDuration>25</BuildDuration>
+				</UnitBuildOption>
+				<UnitBuildOption>
+					<UnitId>rus_mech_gunfort</UnitId>
+					<BuildDuration>30</BuildDuration>
+					<RequiresFullInfrastructure>true</RequiresFullInfrastructure>
+				</UnitBuildOption>
+			</BuildOptions>
+	</StructureConfiguration>	
+</StructureConfigurations>

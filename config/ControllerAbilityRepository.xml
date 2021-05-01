@@ -1,0 +1,36 @@
+<ControllerInputConfigurationRepository>
+	<ControllerAbilityConfiguration id="pol_soldier_engineer">
+		<QuickMenuSkill>melee</QuickMenuSkill>
+		<ExcludeFromRadialMenu>			
+			<ControllerAbility>
+				<Id>retreat</Id>
+			</ControllerAbility>
+			<ControllerAbility>
+				<Id>melee</Id>
+			</ControllerAbility>
+			<ControllerAbility>
+				<Id>halt</Id>
+			</ControllerAbility>
+		</ExcludeFromRadialMenu>  
+	</ControllerAbilityConfiguration>
+
+	<ControllerAbilityConfiguration id="com_structure_ironmine">
+		<ExcludeFromRadialMenu>			
+			<ControllerAbility>
+				<Id>exit</Id>
+			</ControllerAbility>
+		</ExcludeFromRadialMenu>  
+	</ControllerAbilityConfiguration>
+	<ControllerAbilityConfiguration id="pol_structure_ironmine01" parentId="com_structure_ironmine">
+	</ControllerAbilityConfiguration>
+	<ControllerAbilityConfiguration id="pol_structure_ironmine02" parentId="com_structure_ironmine">
+	</ControllerAbilityConfiguration>
+	<ControllerAbilityConfiguration id="sax_structure_ironmine01" parentId="com_structure_ironmine">
+	</ControllerAbilityConfiguration>
+	<ControllerAbilityConfiguration id="sax_structure_ironmine02" parentId="com_structure_ironmine">
+	</ControllerAbilityConfiguration>
+	<ControllerAbilityConfiguration id="rus_structure_ironmine01" parentId="com_structure_ironmine">
+	</ControllerAbilityConfiguration>
+	<ControllerAbilityConfiguration id="rus_structure_ironmine02" parentId="com_structure_ironmine">
+	</ControllerAbilityConfiguration>
+</ControllerInputConfigurationRepository>

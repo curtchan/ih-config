@@ -1,0 +1,586 @@
+<ControllerInputConfigurationRepository>
+<!--Parents-->
+	<ControllerObjectConfiguration id="com_soldier">
+		<ControllerGravitationWeight>2</ControllerGravitationWeight>
+		<ControllerGravitationWeightEnemy>2</ControllerGravitationWeightEnemy>
+		<ControllerGravitationDistance>2</ControllerGravitationDistance>       
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="com_exo">
+		<ControllerGravitationWeight>2</ControllerGravitationWeight>
+		<ControllerGravitationWeightEnemy>2</ControllerGravitationWeightEnemy>
+		<ControllerGravitationDistance>2</ControllerGravitationDistance>       
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="com_weaponsys">
+		<ControllerGravitationWeight>3</ControllerGravitationWeight>
+		<ControllerGravitationWeightEnemy>3</ControllerGravitationWeightEnemy>
+		<ControllerGravitationDistance>3</ControllerGravitationDistance>       
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="com_mech">
+		<ControllerGravitationWeight>3</ControllerGravitationWeight>
+		<ControllerGravitationWeightEnemy>3</ControllerGravitationWeightEnemy>
+		<ControllerGravitationDistance>3</ControllerGravitationDistance>
+		<ControllerCursorYOffset>0</ControllerCursorYOffset>   
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="com_light_mech" parentId="com_mech">
+		<ControllerGravitationWeight>3</ControllerGravitationWeight>
+		<ControllerGravitationWeightEnemy>3</ControllerGravitationWeightEnemy>
+		<ControllerGravitationDistance>4</ControllerGravitationDistance>
+		<ControllerCursorYOffset>0</ControllerCursorYOffset>      
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="com_medium_mech" parentId="com_mech">
+		<ControllerGravitationWeight>3</ControllerGravitationWeight>
+		<ControllerGravitationWeightEnemy>3</ControllerGravitationWeightEnemy>
+		<ControllerGravitationDistance>5</ControllerGravitationDistance>
+		<ControllerCursorYOffset>0</ControllerCursorYOffset>   
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="com_heavy_mech" parentId="com_mech">
+		<ControllerGravitationWeight>3</ControllerGravitationWeight>
+		<ControllerGravitationWeightEnemy>3</ControllerGravitationWeightEnemy>
+		<ControllerGravitationDistance>6</ControllerGravitationDistance>
+		<ControllerCursorYOffset>0</ControllerCursorYOffset>
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="com_civilian">
+		<ControllerGravitationWeight>3</ControllerGravitationWeight>
+		<ControllerGravitationWeightEnemy>3</ControllerGravitationWeightEnemy>
+		<ControllerGravitationDistance>4</ControllerGravitationDistance>       
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="com_structure">
+		<ControllerGravitationWeight>5</ControllerGravitationWeight>
+		<ControllerGravitationWeightEnemy>5</ControllerGravitationWeightEnemy>
+		<ControllerGravitationDistance>5</ControllerGravitationDistance>       
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="com_interactible">
+		<ControllerGravitationWeight>3</ControllerGravitationWeight>
+		<ControllerGravitationWeightEnemy>3</ControllerGravitationWeightEnemy>
+		<ControllerGravitationDistance>3</ControllerGravitationDistance>       
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="com_wreck" parentId="com_interactible">
+		<ControllerGravitationWeight>2</ControllerGravitationWeight>
+		<ControllerGravitationWeightEnemy>2</ControllerGravitationWeightEnemy>
+		<ControllerGravitationDistance>2</ControllerGravitationDistance>       
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="com_train">
+		<ControllerGravitationWeight>3</ControllerGravitationWeight>
+		<ControllerGravitationWeightEnemy>3</ControllerGravitationWeightEnemy>
+		<ControllerGravitationDistance>3</ControllerGravitationDistance>
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="com_animal">
+		<ControllerGravitationWeight>3</ControllerGravitationWeight>
+		<ControllerGravitationWeightEnemy>3</ControllerGravitationWeightEnemy>
+		<ControllerGravitationDistance>3</ControllerGravitationDistance>       
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="com_crateweapon" parentId="com_interactible">
+		<ControllerCursorYOffset>1</ControllerCursorYOffset>       
+	</ControllerObjectConfiguration>
+
+<!--Structures-->
+	<ControllerObjectConfiguration id="com_structure_ironmine" parentId="com_structure">
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="pol_structure_ironmine01" parentId="com_structure">
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="pol_structure_ironmine02" parentId="com_structure">
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="sax_structure_ironmine01" parentId="com_structure">
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="rus_structure_ironmine01" parentId="com_structure">
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="sax_structure_ironmine02" parentId="com_structure">
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="rus_structure_ironmine02" parentId="com_structure">
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="com_structure_oilfield" parentId="com_structure">
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="pol_structure_oilpump01" parentId="com_structure">
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="sax_structure_oilpump01" parentId="com_structure">
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="rus_structure_oilpump01" parentId="com_structure">
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="pol_structure_oilpump02" parentId="com_structure">
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="sax_structure_oilpump02" parentId="com_structure">
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="rus_structure_oilpump02" parentId="com_structure">
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="pol_structure_hq" parentId="com_structure">
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="sax_structure_hq" parentId="com_structure">
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="rus_structure_hq" parentId="com_structure">
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="pol_structure_bunkertier01" parentId="com_structure">
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="pol_structure_bunkertier02" parentId="com_structure">
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="rus_structure_bunker" parentId="com_structure">
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="rus_structure_bunkertier01" parentId="com_structure">
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="rus_structure_bunkertier02" parentId="com_structure">
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="sax_structure_bunker" parentId="com_structure">
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="sax_structure_bunkertier01" parentId="com_structure">
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="sax_structure_bunkertier02" parentId="com_structure">
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="pol_structure_medicbuilding" parentId="com_structure">
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="sax_structure_medicbuilding" parentId="com_structure">
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="rus_structure_medicbuilding" parentId="com_structure">
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="pol_structure_barracks01" parentId="com_structure">
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="sax_structure_barracks01" parentId="com_structure">
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="rus_structure_barracks01" parentId="com_structure">
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="pol_structure_barracks02" parentId="com_structure">
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="sax_structure_barracks02" parentId="com_structure">
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="rus_structure_barracks02" parentId="com_structure">
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="pol_structure_workshop01" parentId="com_structure">
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="sax_structure_workshop01" parentId="com_structure">
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="rus_structure_workshop01" parentId="com_structure">
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="pol_structure_workshop02" parentId="com_structure">
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="sax_structure_workshop02" parentId="com_structure">
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="rus_structure_workshop02" parentId="com_structure">
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="tes_structure_generator01" parentId="com_structure">
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="tes_structure_generator02" parentId="com_structure">
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="tes_structure_generator01sturdy" parentId="com_structure">
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="tes_structure_generator02sturdy" parentId="com_structure">
+	</ControllerObjectConfiguration>
+
+<!--Interactibles-->
+	<ControllerObjectConfiguration id="rail_switch" parentId="com_interactible">
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="rail_blocker" parentId="com_interactible">
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="Snowman" parentId="com_interactible">
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="custom_interactable" parentId="com_interactible">
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="custom_interactable_snowman" parentId="com_interactible">
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="custom_interactable_2Seconds" parentId="com_interactible">
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="custom_interactable_1Second" parentId="com_interactible">
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="custom_interactable_0Seconds" parentId="com_interactible">
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="drawbridge_01" parentId="com_interactible">
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="crate" parentId="com_interactible">
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="crate_rifle" parentId="com_interactible">
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="crate_grenade" parentId="com_interactible">
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="crate_bazooka" parentId="com_interactible">
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="crate_engineer" parentId="com_interactible">
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="crate_medic" parentId="com_interactible">
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="crate_mg" parentId="com_interactible">
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="crate_flamethrower" parentId="com_interactible">
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="healthboxbase" parentId="com_interactible">
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="healthbox" parentId="com_interactible">
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="equip" parentId="com_interactible">
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="equip_rifle" parentId="com_crateweapon">
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="equip_grenade" parentId="com_crateweapon">
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="equip_bazooka" parentId="com_crateweapon">
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="equip_medic" parentId="com_crateweapon">
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="equip_engineer" parentId="com_crateweapon">
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="equip_flamethrower" parentId="com_crateweapon">
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="equip_mg" parentId="com_crateweapon">
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="pallet" parentId="com_interactible">
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="crate_oil" parentId="com_interactible">
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="crate_victorypoints" parentId="com_interactible">
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="flagpole" parentId="com_interactible">
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="flagpole_victory_points" parentId="com_interactible">
+		<ControllerCursorYOffset>1</ControllerCursorYOffset>
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="flagpole_oil" parentId="com_interactible">
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="flagpole_iron" parentId="com_interactible">
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="flagpole_conquer_territory" parentId="com_interactible">
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="Gastank" parentId="com_interactible">
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="CarExplosive" parentId="com_interactible">
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="Explosivebarrel" parentId="com_interactible">
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="TargetableDoor" parentId="com_interactible">
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="RefineryTank" parentId="com_interactible">
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="Snow" parentId="com_interactible">
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="BrotherDoor" parentId="com_interactible">
+	</ControllerObjectConfiguration>
+	<ControllerObjectConfiguration id="FortressGate" parentId="com_interactible">
+	</ControllerObjectConfiguration>
+
+	<!--Wrecks-->
+		<ControllerObjectConfiguration id="defaultWreck" parentId="com_wreck">
+		</ControllerObjectConfiguration>
+		<ControllerObjectConfiguration id="tier1Wreck" parentId="com_wreck">
+		<ControllerCursorYOffset>0</ControllerCursorYOffset>
+		</ControllerObjectConfiguration>
+		<ControllerObjectConfiguration id="tier2Wreck" parentId="com_wreck">
+		<ControllerCursorYOffset>1</ControllerCursorYOffset>
+		</ControllerObjectConfiguration>
+		<ControllerObjectConfiguration id="gunfortWreck" parentId="com_wreck">
+		<ControllerCursorYOffset>2</ControllerCursorYOffset>
+		</ControllerObjectConfiguration>
+		<ControllerObjectConfiguration id="pol_mech_spider_wreck" parentId="tier1Wreck">
+		</ControllerObjectConfiguration>
+		<ControllerObjectConfiguration id="pol_mech_recon_wreck" parentId="tier1Wreck">
+		</ControllerObjectConfiguration>
+		<ControllerObjectConfiguration id="pol_mech_artillery_wreck" parentId="tier2Wreck">
+		</ControllerObjectConfiguration>
+		<ControllerObjectConfiguration id="pol_mech_stinger_wreck" parentId="tier2Wreck">
+		</ControllerObjectConfiguration>
+		<ControllerObjectConfiguration id="pol_mech_trooptransport_wreck" parentId="tier2Wreck">
+		</ControllerObjectConfiguration>
+		<ControllerObjectConfiguration id="pol_mech_gunfort_wreck" parentId="gunfortWreck">
+		</ControllerObjectConfiguration>
+		<ControllerObjectConfiguration id="pol_hero_rebel_wreck" parentId="tier2Wreck">
+		</ControllerObjectConfiguration>
+		<ControllerObjectConfiguration id="sax_mech_gatling_wreck" parentId="tier1Wreck">
+		</ControllerObjectConfiguration>
+		<ControllerObjectConfiguration id="sax_mech_tank_wreck" parentId="tier1Wreck">
+		</ControllerObjectConfiguration>
+		<ControllerObjectConfiguration id="sax_mech_artillery_wreck" parentId="tier2Wreck">
+		</ControllerObjectConfiguration>
+		<ControllerObjectConfiguration id="sax_mech_dachs_wreck" parentId="tier2Wreck">
+		</ControllerObjectConfiguration>
+		<ControllerObjectConfiguration id="sax_mech_gunfort_wreck" parentId="gunfortWreck">
+		</ControllerObjectConfiguration>
+		<ControllerObjectConfiguration id="sax_mech_mother_wreck" parentId="tier2Wreck">
+		</ControllerObjectConfiguration>
+		<ControllerObjectConfiguration id="sax_hero_brunhilde_wreck" parentId="gunfortWreck">
+		</ControllerObjectConfiguration>
+		<ControllerObjectConfiguration id="sax_hero_prince_wreck" parentId="tier2Wreck">
+		</ControllerObjectConfiguration>
+		<ControllerObjectConfiguration id="rus_mech_bomber_wreck" parentId="tier1Wreck">
+		</ControllerObjectConfiguration>
+		<ControllerObjectConfiguration id="rus_mech_flamer_wreck" parentId="tier1Wreck">
+		</ControllerObjectConfiguration>
+		<ControllerObjectConfiguration id="rus_mech_artillery_wreck" parentId="tier2Wreck">
+		</ControllerObjectConfiguration>
+		<ControllerObjectConfiguration id="rus_hero_general_wreck" parentId="tier2Wreck">
+		</ControllerObjectConfiguration>
+		<ControllerObjectConfiguration id="rus_mech_scythe_wreck" parentId="gunfortWreck">
+		</ControllerObjectConfiguration>
+		<ControllerObjectConfiguration id="rus_mech_revolver_wreck" parentId="tier2Wreck">
+		</ControllerObjectConfiguration>
+		<ControllerObjectConfiguration id="rus_mech_gunfort_wreck" parentId="gunfortWreck">
+		</ControllerObjectConfiguration>
+		<ControllerObjectConfiguration id="tes_mech_ikarus_wreck" parentId="gunfortWreck">
+		</ControllerObjectConfiguration>
+		<ControllerObjectConfiguration id="com_mech_trainlocomotive_wreck" parentId="com_wreck">
+		</ControllerObjectConfiguration>
+		<ControllerObjectConfiguration id="com_mech_trainlocomotivetender_wreck" parentId="com_wreck">
+		</ControllerObjectConfiguration>
+		<ControllerObjectConfiguration id="com_mech_trainarmored_wreck" parentId="com_wreck">
+		</ControllerObjectConfiguration>
+		<ControllerObjectConfiguration id="com_mech_traincannon_wreck" parentId="com_wreck">
+		</ControllerObjectConfiguration>
+		<ControllerObjectConfiguration id="com_mech_traincannonsupport_wreck" parentId="com_wreck">
+		</ControllerObjectConfiguration>
+		<ControllerObjectConfiguration id="com_mech_trainflatbed_wreck" parentId="com_wreck">
+		</ControllerObjectConfiguration>
+		<ControllerObjectConfiguration id="com_mech_trainfreight_wreck" parentId="com_wreck">
+		</ControllerObjectConfiguration>
+
+
+
+<!--Units-->
+	<!--Core units-->
+		<!--Polania-->
+			<ControllerObjectConfiguration id="pol_soldier_engineer" parentId="com_soldier">
+				<ControllerGravitationWeight>4</ControllerGravitationWeight>
+				<ControllerGravitationWeightEnemy>3</ControllerGravitationWeightEnemy>
+				<ControllerGravitationDistance>4</ControllerGravitationDistance>
+				<ControllerFlickDistance>40</ControllerFlickDistance>
+			</ControllerObjectConfiguration>
+
+			<ControllerObjectConfiguration id="pol_soldier_medic" parentId="com_soldier">
+			</ControllerObjectConfiguration>
+			<ControllerObjectConfiguration id="pol_soldier_rifleman" parentId="com_soldier">
+			</ControllerObjectConfiguration>
+			<ControllerObjectConfiguration id="pol_soldier_grenadier" parentId="com_soldier">
+			</ControllerObjectConfiguration>
+			<ControllerObjectConfiguration id="pol_soldier_gunner" parentId="com_soldier">
+			</ControllerObjectConfiguration>
+			<ControllerObjectConfiguration id="pol_soldier_mg" parentId="com_soldier">
+			</ControllerObjectConfiguration>
+			<ControllerObjectConfiguration id="pol_soldier_flamer" parentId="com_soldier">
+			</ControllerObjectConfiguration>
+			<ControllerObjectConfiguration id="pol_soldier_exo" parentId="com_exo">
+			<ControllerCursorYOffset>0</ControllerCursorYOffset>
+			</ControllerObjectConfiguration>
+			<ControllerObjectConfiguration id="pol_mech_spider" parentId="com_light_mech">
+			<ControllerCursorYOffset>0</ControllerCursorYOffset>
+			</ControllerObjectConfiguration>
+			<ControllerObjectConfiguration id="pol_mech_recon" parentId="com_light_mech">
+			<ControllerCursorYOffset>0</ControllerCursorYOffset>
+			</ControllerObjectConfiguration>
+			<ControllerObjectConfiguration id="pol_mech_artillery" parentId="com_medium_mech">
+			<ControllerCursorYOffset>0</ControllerCursorYOffset>
+			</ControllerObjectConfiguration>
+			<ControllerObjectConfiguration id="pol_mech_stinger" parentId="com_medium_mech">
+			<ControllerCursorYOffset>0</ControllerCursorYOffset>
+			</ControllerObjectConfiguration>
+			<ControllerObjectConfiguration id="pol_mech_trooptransport" parentId="com_heavy_mech">
+			<ControllerCursorYOffset>0</ControllerCursorYOffset>
+			</ControllerObjectConfiguration>
+			<ControllerObjectConfiguration id="pol_mech_gunfort" parentId="com_heavy_mech">
+			<ControllerCursorYOffset>0</ControllerCursorYOffset>
+			</ControllerObjectConfiguration>
+		
+		<!--Saxony-->	
+			<ControllerObjectConfiguration id="sax_soldier_engineer" parentId="com_soldier">
+			</ControllerObjectConfiguration>
+			<ControllerObjectConfiguration id="sax_soldier_medic" parentId="com_soldier">
+			</ControllerObjectConfiguration>
+			<ControllerObjectConfiguration id="sax_soldier_rifleman" parentId="com_soldier">
+			</ControllerObjectConfiguration>
+			<ControllerObjectConfiguration id="sax_soldier_grenadier" parentId="com_soldier">
+			</ControllerObjectConfiguration>
+			<ControllerObjectConfiguration id="sax_soldier_gunner" parentId="com_soldier">
+			</ControllerObjectConfiguration>
+			<ControllerObjectConfiguration id="sax_soldier_mg" parentId="com_soldier">
+			</ControllerObjectConfiguration>
+			<ControllerObjectConfiguration id="sax_soldier_flamer" parentId="com_soldier">
+			</ControllerObjectConfiguration>
+			<ControllerObjectConfiguration id="sax_soldier_mortar" parentId="com_exo">
+			<ControllerCursorYOffset>0</ControllerCursorYOffset>
+			</ControllerObjectConfiguration>
+			<ControllerObjectConfiguration id="sax_mech_gatling" parentId="com_light_mech">
+			<ControllerCursorYOffset>0</ControllerCursorYOffset>
+			</ControllerObjectConfiguration>
+			<ControllerObjectConfiguration id="sax_mech_tank" parentId="com_medium_mech">
+			<ControllerCursorYOffset>0</ControllerCursorYOffset>
+			</ControllerObjectConfiguration>
+			<ControllerObjectConfiguration id="sax_mech_artillery" parentId="com_light_mech">
+			<ControllerCursorYOffset>0</ControllerCursorYOffset>
+			</ControllerObjectConfiguration>
+			<ControllerObjectConfiguration id="sax_mech_dachs" parentId="com_heavy_mech">
+			<ControllerCursorYOffset>0</ControllerCursorYOffset>
+			</ControllerObjectConfiguration>
+			<ControllerObjectConfiguration id="sax_mech_mother" parentId="com_medium_mech">
+			<ControllerCursorYOffset>0</ControllerCursorYOffset>
+			</ControllerObjectConfiguration>
+			<ControllerObjectConfiguration id="sax_mech_gunfort" parentId="com_heavy_mech">
+			<ControllerCursorYOffset>0</ControllerCursorYOffset>
+			</ControllerObjectConfiguration>
+		
+		<!--Rusviet-->	
+			<ControllerObjectConfiguration id="rus_soldier_engineer" parentId="com_soldier">
+			</ControllerObjectConfiguration>
+			<ControllerObjectConfiguration id="rus_soldier_medic" parentId="com_soldier">
+			</ControllerObjectConfiguration>
+			<ControllerObjectConfiguration id="rus_soldier_rifleman" parentId="com_soldier">
+			</ControllerObjectConfiguration>
+			<ControllerObjectConfiguration id="rus_soldier_grenadier" parentId="com_soldier">
+			</ControllerObjectConfiguration>
+			<ControllerObjectConfiguration id="rus_soldier_gunner" parentId="com_soldier">
+			</ControllerObjectConfiguration>
+			<ControllerObjectConfiguration id="rus_soldier_mg" parentId="com_soldier">
+			</ControllerObjectConfiguration>
+			<ControllerObjectConfiguration id="rus_soldier_flamer" parentId="com_soldier">
+			</ControllerObjectConfiguration>
+			<ControllerObjectConfiguration id="rus_soldier_exo" parentId="com_exo">
+			<ControllerCursorYOffset>0</ControllerCursorYOffset>
+			</ControllerObjectConfiguration>
+			<ControllerObjectConfiguration id="rus_mech_flamer" parentId="com_light_mech">
+			<ControllerCursorYOffset>0</ControllerCursorYOffset>
+			</ControllerObjectConfiguration>
+			<ControllerObjectConfiguration id="rus_mech_bomber" parentId="com_light_mech">
+			<ControllerCursorYOffset>0</ControllerCursorYOffset>
+			</ControllerObjectConfiguration>
+			<ControllerObjectConfiguration id="rus_mech_artillery" parentId="com_medium_mech">
+			<ControllerCursorYOffset>0</ControllerCursorYOffset>
+			</ControllerObjectConfiguration>
+			<ControllerObjectConfiguration id="rus_mech_revolver" parentId="com_medium_mech">
+			<ControllerCursorYOffset>0</ControllerCursorYOffset>
+			</ControllerObjectConfiguration>
+			<ControllerObjectConfiguration id="rus_mech_scythe" parentId="com_heavy_mech">
+			<ControllerCursorYOffset>0</ControllerCursorYOffset>
+			</ControllerObjectConfiguration>
+			<ControllerObjectConfiguration id="rus_mech_gunfort" parentId="com_heavy_mech">
+			<ControllerCursorYOffset>0</ControllerCursorYOffset>
+			</ControllerObjectConfiguration>
+		
+		<!--Weapon systems-->
+			<ControllerObjectConfiguration id="com_support_mg" parentId="com_weaponsys">
+			</ControllerObjectConfiguration>
+			<ControllerObjectConfiguration id="com_support_cannon" parentId="com_weaponsys">
+			</ControllerObjectConfiguration>
+			<ControllerObjectConfiguration id="com_support_mortar" parentId="com_weaponsys">
+			</ControllerObjectConfiguration>
+			<ControllerObjectConfiguration id="com_support_destroyer" parentId="com_weaponsys">
+			</ControllerObjectConfiguration>
+
+	<!--Hero units-->	
+		<!--Polania-->	
+			<ControllerObjectConfiguration id="pol_hero_anna" parentId="com_soldier">
+			</ControllerObjectConfiguration>
+			<ControllerObjectConfiguration id="pol_hero_cavalry" parentId="com_soldier">
+			</ControllerObjectConfiguration>
+			<ControllerObjectConfiguration id="pol_hero_rebel" parentId="com_mech">
+			<ControllerCursorYOffset>0</ControllerCursorYOffset>
+			</ControllerObjectConfiguration>
+		<!--Saxony-->
+			<ControllerObjectConfiguration id="sax_hero_brunhilde" parentId="com_mech">
+			<ControllerCursorYOffset>0</ControllerCursorYOffset>
+			</ControllerObjectConfiguration>
+			<ControllerObjectConfiguration id="sax_hero_gunter" parentId="com_soldier">
+			</ControllerObjectConfiguration>
+			<ControllerObjectConfiguration id="sax_hero_prince" parentId="com_mech">
+			<ControllerCursorYOffset>0</ControllerCursorYOffset>
+			</ControllerObjectConfiguration>
+		<!--Rusviet-->
+			<ControllerObjectConfiguration id="rus_hero_brother" parentId="com_exo">
+			</ControllerObjectConfiguration>
+			<ControllerObjectConfiguration id="rus_hero_general" parentId="com_mech">
+			<ControllerCursorYOffset>0</ControllerCursorYOffset>
+			</ControllerObjectConfiguration>
+			<ControllerObjectConfiguration id="rus_hero_brotherunarmed" parentId="com_exo">
+			</ControllerObjectConfiguration>
+			<ControllerObjectConfiguration id="rus_hero_olga" parentId="com_soldier">
+			</ControllerObjectConfiguration>
+			<ControllerObjectConfiguration id="rus_hero_olgachanga" parentId="com_soldier">
+			</ControllerObjectConfiguration>
+			<ControllerObjectConfiguration id="rus_hero_changa" parentId="com_soldier">
+			</ControllerObjectConfiguration>
+
+
+
+	<!--Other units-->
+			<ControllerObjectConfiguration id="pol_hero_annachild" parentId="com_soldier">
+			</ControllerObjectConfiguration>
+			<ControllerObjectConfiguration id="pol_hero_annachildrifle" parentId="com_soldier">
+			</ControllerObjectConfiguration>
+			<ControllerObjectConfiguration id="rus_hero_brotheradult" parentId="com_soldier">
+			</ControllerObjectConfiguration>
+			<ControllerObjectConfiguration id="pol_hero_brotherteen" parentId="com_soldier">
+			</ControllerObjectConfiguration>
+			<ControllerObjectConfiguration id="rus_hero_tsar" parentId="com_soldier">
+			</ControllerObjectConfiguration>
+			<ControllerObjectConfiguration id="com_mech_trainlocomotive" parentId="com_train">
+			</ControllerObjectConfiguration>
+			<ControllerObjectConfiguration id="com_mech_trainlocomotivetender" parentId="com_train">
+			</ControllerObjectConfiguration>
+			<ControllerObjectConfiguration id="com_mech_trainarmored" parentId="com_train">
+			</ControllerObjectConfiguration>
+			<ControllerObjectConfiguration id="com_mech_traincannon" parentId="com_train">
+			</ControllerObjectConfiguration>
+			<ControllerObjectConfiguration id="com_mech_traincannonsupport" parentId="com_train">
+			</ControllerObjectConfiguration>
+			<ControllerObjectConfiguration id="com_mech_trainflatbed" parentId="com_train">
+			</ControllerObjectConfiguration>
+			<ControllerObjectConfiguration id="com_mech_trainfreight" parentId="com_train">
+			</ControllerObjectConfiguration>
+			<ControllerObjectConfiguration id="pol_npc_father" parentId="com_soldier">
+			</ControllerObjectConfiguration>
+			<ControllerObjectConfiguration id="pol_npc_friend" parentId="com_soldier">
+			</ControllerObjectConfiguration>
+			<ControllerObjectConfiguration id="sax_npc_technician" parentId="com_soldier">
+			</ControllerObjectConfiguration>
+		<!--Tesla-->	
+			<ControllerObjectConfiguration id="tes_mech_charger" parentId="com_exo">
+			</ControllerObjectConfiguration>
+			<ControllerObjectConfiguration id="tes_soldier_walker" parentId="com_mech">
+			</ControllerObjectConfiguration>
+			<ControllerObjectConfiguration id="tes_mech_guard" parentId="com_mech">
+			</ControllerObjectConfiguration>
+			<ControllerObjectConfiguration id="tes_mech_ikarus" parentId="com_mech">
+			</ControllerObjectConfiguration>
+			<ControllerObjectConfiguration id="tes_mech_serve" parentId="com_mech">
+			</ControllerObjectConfiguration>
+		<!--Other-->
+			<ControllerObjectConfiguration id="com_mech_fieldworker" parentId="com_mech">
+			</ControllerObjectConfiguration>
+			<ControllerObjectConfiguration id="com_mech_transport" parentId="com_mech">
+			</ControllerObjectConfiguration>
+			<ControllerObjectConfiguration id="com_mech_woodcutter" parentId="com_mech">
+			</ControllerObjectConfiguration>
+			<ControllerObjectConfiguration id="com_npc_farmerboy" parentId="com_soldier">
+			</ControllerObjectConfiguration>
+			<ControllerObjectConfiguration id="com_npc_farmerboysnow" parentId="com_soldier">
+			</ControllerObjectConfiguration>
+			<ControllerObjectConfiguration id="com_npc_farmermale" parentId="com_soldier">
+			</ControllerObjectConfiguration>
+			<ControllerObjectConfiguration id="com_npc_farmerfemale" parentId="com_soldier">
+			</ControllerObjectConfiguration>
+			<ControllerObjectConfiguration id="com_npc_citymale" parentId="com_soldier">
+			</ControllerObjectConfiguration>
+			<ControllerObjectConfiguration id="com_npc_cityfemale" parentId="com_soldier">
+			</ControllerObjectConfiguration>
+			<ControllerObjectConfiguration id="com_npc_farmermalerifleman" parentId="com_soldier">
+			</ControllerObjectConfiguration>
+			<ControllerObjectConfiguration id="com_npc_citymalerifleman" parentId="com_soldier">
+			</ControllerObjectConfiguration>
+			<ControllerObjectConfiguration id="com_npc_citymalegrenadier" parentId="com_soldier">
+			</ControllerObjectConfiguration>
+		<!--Npc Heroes-->
+			<ControllerObjectConfiguration id="pol_npc_rebelleader" parentId="com_soldier">
+			</ControllerObjectConfiguration>
+			<ControllerObjectConfiguration id="rus_npc_tsar" parentId="com_soldier">
+			</ControllerObjectConfiguration>
+			<ControllerObjectConfiguration id="rus_npc_general" parentId="com_soldier">
+			</ControllerObjectConfiguration>
+			<ControllerObjectConfiguration id="com_animal_chicken" parentId="com_animal">
+			</ControllerObjectConfiguration>
+			<ControllerObjectConfiguration id="com_animal_crow" parentId="com_animal">
+			</ControllerObjectConfiguration>
+			<ControllerObjectConfiguration id="com_animal_deer" parentId="com_animal">
+			</ControllerObjectConfiguration>
+			<ControllerObjectConfiguration id="com_animal_piglet" parentId="com_animal">
+			</ControllerObjectConfiguration>
+			<ControllerObjectConfiguration id="com_animal_pig" parentId="com_animal">
+			</ControllerObjectConfiguration>
+			<ControllerObjectConfiguration id="com_animal_sheep" parentId="com_animal">
+			</ControllerObjectConfiguration>
+			<ControllerObjectConfiguration id="com_animal_cow" parentId="com_animal">
+			</ControllerObjectConfiguration>
+			<ControllerObjectConfiguration id="com_animal_bear" parentId="com_animal">
+			</ControllerObjectConfiguration>
+
+</ControllerInputConfigurationRepository>
+
+

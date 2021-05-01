@@ -1,0 +1,798 @@
+<AmmoConfigurationRepository>
+  <!--Base Ammo-->
+  <AmmoConfiguration id="BaseProjectile" type="projectile">
+    <GarrisonedUnitdamageModifier>0.1</GarrisonedUnitdamageModifier>
+  </AmmoConfiguration>
+
+  <!-- Projectiles -->
+  <AmmoConfiguration id="HandgunCartridge" type="projectile" parentId="BaseProjectile">
+  </AmmoConfiguration>
+  <AmmoConfiguration id="RifleCartridge" type="projectile" parentId="BaseProjectile">
+  </AmmoConfiguration>
+  <AmmoConfiguration id="SmgCartridge" type="projectile" parentId="BaseProjectile">
+  </AmmoConfiguration>
+  <AmmoConfiguration id="ShotgunCartridge" type="projectile" parentId="BaseProjectile">
+  </AmmoConfiguration>
+  <AmmoConfiguration id="GatlingCartridge" type="projectile" parentId="BaseProjectile">
+  </AmmoConfiguration>
+  <AmmoConfiguration id="SpiderCartridge" type="projectile" parentId="BaseProjectile">
+  </AmmoConfiguration>
+  <AmmoConfiguration id="SpiderOverdriveCartridge" type="projectile" parentId="BaseProjectile">
+  </AmmoConfiguration>
+  <AmmoConfiguration id="HMGCartridge" type="projectile" parentId="BaseProjectile">
+  </AmmoConfiguration>
+  <AmmoConfiguration id="LMGCartridge" type="projectile" parentId="BaseProjectile">
+    <GarrisonedUnitdamageModifier>0.015</GarrisonedUnitdamageModifier>
+  </AmmoConfiguration>
+  <AmmoConfiguration id="GarrisonLMGCartridge" type="projectile" parentId="BaseProjectile">
+    <GarrisonedUnitdamageModifier>0.015</GarrisonedUnitdamageModifier>
+  </AmmoConfiguration>
+  <AmmoConfiguration id="GunfortMgCartridge" type="projectile" parentId="BaseProjectile">
+  </AmmoConfiguration>
+  <AmmoConfiguration id="AutoCannonCartridge" type="projectile" parentId="BaseProjectile">
+  </AmmoConfiguration>
+  <AmmoConfiguration id="KaiserMgCartridge" type="projectile" parentId="BaseProjectile">
+  </AmmoConfiguration>
+  <AmmoConfiguration id="KaiserSideMgCartridge" type="projectile" parentId="BaseProjectile">
+  </AmmoConfiguration>
+  <AmmoConfiguration id="KaiserRearMgCartridge" type="projectile" parentId="BaseProjectile">
+  </AmmoConfiguration>
+  <AmmoConfiguration id="ScytheMgCartridge" type="projectile" parentId="BaseProjectile">
+  </AmmoConfiguration>
+  <AmmoConfiguration id="StingerBolt" type="projectile" parentId="BaseProjectile">
+  </AmmoConfiguration>
+  <AmmoConfiguration id="StingerAbilityBolt" type="projectile" parentId="BaseProjectile">
+  </AmmoConfiguration>
+  <AmmoConfiguration id="ScytheHMGCartridge" type="projectile" parentId="BaseProjectile">
+  </AmmoConfiguration>
+  <AmmoConfiguration id="RailgunCartridge" type="projectile" parentId="BaseProjectile">
+  </AmmoConfiguration>
+  <AmmoConfiguration id="GuardGatlingCartridge" type="projectile" parentId="BaseProjectile">
+  </AmmoConfiguration>
+  <AmmoConfiguration id="PolBunkerMGCartridge" type="projectile" parentId="BaseProjectile">
+  </AmmoConfiguration>
+  <AmmoConfiguration id="RusBunkerMGCartridge" type="projectile" parentId="BaseProjectile">
+  </AmmoConfiguration>
+  <AmmoConfiguration id="SiegeTankMGCartridge" type="projectile" parentId="BaseProjectile">
+  </AmmoConfiguration>
+  <AmmoConfiguration id="WalkerRifleCartridge" type="projectile" parentId="BaseProjectile">
+  </AmmoConfiguration>
+  <AmmoConfiguration id="GuardGatlingCartridge" type="projectile" parentId="BaseProjectile">
+  </AmmoConfiguration>
+
+  <!--Shells-->
+  <AmmoConfiguration id="HeavyRifleShell" type="projectile" parentId="BaseProjectile">
+  </AmmoConfiguration>
+  <AmmoConfiguration id="HeavyCannonShell" type="projectile" parentId="BaseProjectile">
+  </AmmoConfiguration>
+  <AmmoConfiguration id="UltraHeavyCannonShell" type="projectile" parentId="BaseProjectile">
+  </AmmoConfiguration>
+  <AmmoConfiguration id="TankShell" type="projectile" parentId="BaseProjectile">
+  </AmmoConfiguration>
+  <AmmoConfiguration id="GunShell" type="projectile" parentId="BaseProjectile">
+  </AmmoConfiguration>
+  <AmmoConfiguration id="DachsShell" type="projectile" parentId="BaseProjectile">
+  </AmmoConfiguration>
+  <AmmoConfiguration id="PolArtShell" type="projectile" parentId="BaseProjectile">
+  </AmmoConfiguration>
+  <AmmoConfiguration id="RevolverShell" type="projectile" parentId="BaseProjectile">
+  </AmmoConfiguration>
+  <AmmoConfiguration id="GunfortShell" type="projectile" parentId="BaseProjectile">
+  </AmmoConfiguration>
+  <AmmoConfiguration id="TurShell" type="projectile" parentId="BaseProjectile">
+  </AmmoConfiguration>
+  <AmmoConfiguration id="KaiserShell" type="projectile" parentId="BaseProjectile">
+  </AmmoConfiguration>
+  <AmmoConfiguration id="GuardShell" type="projectile" parentId="BaseProjectile">
+  </AmmoConfiguration>
+  <AmmoConfiguration id="PolBunkerShell" type="projectile" parentId="BaseProjectile">
+  </AmmoConfiguration>
+  <AmmoConfiguration id="RusBunkerShell" type="projectile" parentId="BaseProjectile">
+  </AmmoConfiguration>
+
+
+  <!-- Explosives -->
+  <AmmoConfiguration id="HandGrenade" type="explosive">
+    <GarrisonedUnitdamageModifier>0.1</GarrisonedUnitdamageModifier>
+    <ExplosionRadius>2.5</ExplosionRadius>
+    <WarningShoutRadius>5</WarningShoutRadius>
+    <OuterExplosionRadius>3</OuterExplosionRadius>
+    <OuterExplosionRadiusDamageModifier>0.2</OuterExplosionRadiusDamageModifier>
+    <ExplosionDelay>16</ExplosionDelay>
+    <FlightDurationType>ThrowCurve</FlightDurationType>
+    <DeviationRange>0.05</DeviationRange>
+  </AmmoConfiguration>
+  <AmmoConfiguration id="BomberGrenade" type="explosive">
+    <GarrisonedUnitdamageModifier>0.1</GarrisonedUnitdamageModifier>
+    <ExplosionRadius>2</ExplosionRadius>
+    <OuterExplosionRadius>2.5</OuterExplosionRadius>
+    <OuterExplosionRadiusDamageModifier>0</OuterExplosionRadiusDamageModifier>
+    <ExplosionDelay>0</ExplosionDelay>
+    <FlightDurationType>HorizontalVelocity</FlightDurationType>
+    <DeviationRange>0.6</DeviationRange>
+    <FlightSpeed>20</FlightSpeed>
+  </AmmoConfiguration>
+  <AmmoConfiguration id="MortarGrenade" type="explosive">
+    <GarrisonedUnitdamageModifier>0.1</GarrisonedUnitdamageModifier>
+    <ExplosionRadius>1</ExplosionRadius>
+    <OuterExplosionRadius>1</OuterExplosionRadius>
+    <OuterExplosionRadiusDamageModifier>0</OuterExplosionRadiusDamageModifier>
+    <ExplosionDelay>0</ExplosionDelay>
+    <FlightDuration>24</FlightDuration>
+    <DeviationRange>6.5</DeviationRange>
+  </AmmoConfiguration>
+  <AmmoConfiguration id="MortarSystemGrenade" type="explosive">
+    <GarrisonedUnitdamageModifier>0.1</GarrisonedUnitdamageModifier>
+    <ExplosionRadius>1.5</ExplosionRadius>
+    <OuterExplosionRadius>4</OuterExplosionRadius>
+    <OuterExplosionRadiusDamageModifier>0.2</OuterExplosionRadiusDamageModifier>
+    <ExplosionDelay>0</ExplosionDelay>
+    <FlightDuration>12</FlightDuration>
+    <DeviationRange>3.5</DeviationRange>
+  </AmmoConfiguration>
+  <AmmoConfiguration id="TransportMortarGrenade" type="explosive">
+    <GarrisonedUnitdamageModifier>0.1</GarrisonedUnitdamageModifier>
+    <ExplosionRadius>2</ExplosionRadius>
+    <OuterExplosionRadius>5</OuterExplosionRadius>
+    <OuterExplosionRadiusDamageModifier>0.2</OuterExplosionRadiusDamageModifier>
+    <ExplosionDelay>0</ExplosionDelay>
+    <FlightDuration>24</FlightDuration>
+    <DeviationRange>3.5</DeviationRange>
+  </AmmoConfiguration>
+  <AmmoConfiguration id="BMortarGrenade" type="explosive">
+    <GarrisonedUnitdamageModifier>0.1</GarrisonedUnitdamageModifier>
+    <ExplosionRadius>1</ExplosionRadius>
+    <OuterExplosionRadius>30</OuterExplosionRadius>
+    <OuterExplosionRadiusDamageModifier>0</OuterExplosionRadiusDamageModifier>
+    <ExplosionDelay>0</ExplosionDelay>
+    <FlightDuration>24</FlightDuration>
+    <DeviationRange>3.5</DeviationRange>
+  </AmmoConfiguration>
+  <AmmoConfiguration id="DachsRockets" type="explosive">
+    <GarrisonedUnitdamageModifier>0.1</GarrisonedUnitdamageModifier>
+    <ExplosionRadius>1.5</ExplosionRadius>
+    <OuterExplosionRadius>3</OuterExplosionRadius>
+    <OuterExplosionRadiusDamageModifier>0.5</OuterExplosionRadiusDamageModifier>
+    <ExplosionDelay>0</ExplosionDelay>
+    <FlightDurationType>HorizontalVelocity</FlightDurationType>
+    <FlightSpeed>75</FlightSpeed>
+    <DeviationRange>0.5</DeviationRange>
+  </AmmoConfiguration>
+  <AmmoConfiguration id="SaxArtilleryGrenade" type="explosive">
+    <GarrisonedUnitdamageModifier>0.1</GarrisonedUnitdamageModifier>
+    <ExplosionRadius>3</ExplosionRadius>
+    <OuterExplosionRadius>8</OuterExplosionRadius>
+    <OuterExplosionRadiusDamageModifier>0.1</OuterExplosionRadiusDamageModifier>
+    <ExplosionDelay>0</ExplosionDelay>
+    <FlightDuration>24</FlightDuration>
+    <DeviationRange>3</DeviationRange>
+  </AmmoConfiguration>
+  <AmmoConfiguration id="PolArtilleryGrenade" type="explosive">
+    <GarrisonedUnitdamageModifier>0.1</GarrisonedUnitdamageModifier>
+    <ExplosionRadius>2.5</ExplosionRadius>
+    <OuterExplosionRadius>4.5</OuterExplosionRadius>
+    <OuterExplosionRadiusDamageModifier>0.4</OuterExplosionRadiusDamageModifier>
+    <ExplosionDelay>0</ExplosionDelay>
+    <FlightDuration>24</FlightDuration>
+    <DeviationRange>3</DeviationRange>
+  </AmmoConfiguration>
+  <AmmoConfiguration id="RusArtilleryRocket" type="explosive">
+    <GarrisonedUnitdamageModifier>0.1</GarrisonedUnitdamageModifier>
+    <ExplosionRadius>1.5</ExplosionRadius>
+    <OuterExplosionRadius>3</OuterExplosionRadius>
+    <OuterExplosionRadiusDamageModifier>0.1</OuterExplosionRadiusDamageModifier>
+    <ExplosionDelay>0</ExplosionDelay>
+    <FlightDurationType>HorizontalVelocity</FlightDurationType>
+    <FlightSpeed>52</FlightSpeed>
+    <DeviationRange>12</DeviationRange>
+  </AmmoConfiguration>
+  <AmmoConfiguration id="RusArtillerySentryRocket" type="explosive">
+    <GarrisonedUnitdamageModifier>0.1</GarrisonedUnitdamageModifier>
+    <ExplosionRadius>1.5</ExplosionRadius>
+    <OuterExplosionRadius>3</OuterExplosionRadius>
+    <OuterExplosionRadiusDamageModifier>0.1</OuterExplosionRadiusDamageModifier>
+    <ExplosionDelay>0</ExplosionDelay>
+    <FlightDurationType>HorizontalVelocity</FlightDurationType>
+    <FlightSpeed>52</FlightSpeed>
+    <DeviationRange>1</DeviationRange>
+  </AmmoConfiguration>
+  <AmmoConfiguration id="TurGrenade" type="explosive">
+    <GarrisonedUnitdamageModifier>0.1</GarrisonedUnitdamageModifier>
+    <ExplosionRadius>2</ExplosionRadius>
+    <OuterExplosionRadius>4</OuterExplosionRadius>
+    <OuterExplosionRadiusDamageModifier>0.4</OuterExplosionRadiusDamageModifier>
+    <ExplosionDelay>0</ExplosionDelay>
+    <FlightDuration>24</FlightDuration>
+    <DeviationRange>15</DeviationRange>
+  </AmmoConfiguration>
+  <AmmoConfiguration id="GunfortDemolisherGrenade" type="explosive">
+    <GarrisonedUnitdamageModifier>0.1</GarrisonedUnitdamageModifier>
+    <ExplosionRadius>5</ExplosionRadius>
+    <OuterExplosionRadius>10</OuterExplosionRadius>
+    <OuterExplosionRadiusDamageModifier>0.05</OuterExplosionRadiusDamageModifier>
+    <ExplosionDelay>0</ExplosionDelay>
+    <FlightDurationType>HorizontalVelocity</FlightDurationType>
+    <FlightSpeed>56</FlightSpeed>
+    <DeviationRange>0</DeviationRange>
+  </AmmoConfiguration>
+  <AmmoConfiguration id="KaiserRockets" type="explosive">
+    <GarrisonedUnitdamageModifier>0.1</GarrisonedUnitdamageModifier>
+    <ExplosionRadius>3</ExplosionRadius>
+    <OuterExplosionRadius>3</OuterExplosionRadius>
+    <OuterExplosionRadiusDamageModifier>0</OuterExplosionRadiusDamageModifier>
+    <ExplosionDelay>0</ExplosionDelay>
+    <FlightDurationType>HorizontalVelocity</FlightDurationType>
+    <FlightSpeed>56</FlightSpeed>
+    <DeviationRange>8</DeviationRange>
+  </AmmoConfiguration>
+  <AmmoConfiguration id="MotherWheel" type="explosive">
+    <GarrisonedUnitdamageModifier>0.1</GarrisonedUnitdamageModifier>
+    <ExplosionRadius>3.5</ExplosionRadius>
+    <OuterExplosionRadius>3.5</OuterExplosionRadius>
+    <OuterExplosionRadiusDamageModifier>0</OuterExplosionRadiusDamageModifier>
+    <ExplosionDelay>0</ExplosionDelay>
+    <FlightDuration>0</FlightDuration>
+    <DeviationRange>0</DeviationRange>
+  </AmmoConfiguration>
+  <AmmoConfiguration id="MotherGrenade" type="explosive">
+    <GarrisonedUnitdamageModifier>0.1</GarrisonedUnitdamageModifier>
+    <ExplosionRadius>1</ExplosionRadius>
+    <OuterExplosionRadius>1</OuterExplosionRadius>
+    <OuterExplosionRadiusDamageModifier>0</OuterExplosionRadiusDamageModifier>
+    <ExplosionDelay>0</ExplosionDelay>
+    <FlightDurationType>HorizontalVelocity</FlightDurationType>
+    <FlightSpeed>30</FlightSpeed>
+    <DeviationRange>5</DeviationRange>
+  </AmmoConfiguration>
+  <AmmoConfiguration id="SaxT1BunkerGrenade" type="explosive">
+    <GarrisonedUnitdamageModifier>0.1</GarrisonedUnitdamageModifier>
+    <ExplosionRadius>2</ExplosionRadius>
+    <OuterExplosionRadius>2.5</OuterExplosionRadius>
+    <OuterExplosionRadiusDamageModifier>0</OuterExplosionRadiusDamageModifier>
+    <ExplosionDelay>0</ExplosionDelay>
+    <FlightDurationType>HorizontalVelocity</FlightDurationType>
+    <FlightSpeed>50</FlightSpeed>
+    <DeviationRange>3</DeviationRange>
+  </AmmoConfiguration>
+  <AmmoConfiguration id="SaxT2BunkerGrenade" type="explosive">
+    <GarrisonedUnitdamageModifier>0.1</GarrisonedUnitdamageModifier>
+    <ExplosionRadius>2</ExplosionRadius>
+    <OuterExplosionRadius>2.5</OuterExplosionRadius>
+    <OuterExplosionRadiusDamageModifier>0</OuterExplosionRadiusDamageModifier>
+    <ExplosionDelay>0</ExplosionDelay>
+    <FlightDurationType>HorizontalVelocity</FlightDurationType>
+    <FlightSpeed>75</FlightSpeed>
+    <DeviationRange>1</DeviationRange>
+  </AmmoConfiguration>
+  <AmmoConfiguration id="Mine" type="explosive">
+    <GarrisonedUnitdamageModifier>0.1</GarrisonedUnitdamageModifier>
+    <ExplosionRadius>3.5</ExplosionRadius>
+    <OuterExplosionRadius>5</OuterExplosionRadius>
+    <OuterExplosionRadiusDamageModifier>0.5</OuterExplosionRadiusDamageModifier>
+    <ExplosionDelay>0</ExplosionDelay>
+    <FlightDuration>0</FlightDuration>
+    <DeviationRange>0</DeviationRange>
+  </AmmoConfiguration>
+  <AmmoConfiguration id="ChargerEnergyExplosion" type="explosive">
+    <GarrisonedUnitdamageModifier>0.1</GarrisonedUnitdamageModifier>
+    <ExplosionRadius>3.5</ExplosionRadius>
+    <OuterExplosionRadius>3.5</OuterExplosionRadius>
+    <OuterExplosionRadiusDamageModifier>0</OuterExplosionRadiusDamageModifier>
+    <ExplosionDelay>0</ExplosionDelay>
+    <FlightDuration>0</FlightDuration>
+    <DeviationRange>0</DeviationRange>
+  </AmmoConfiguration>
+  <AmmoConfiguration id="LightningBall" type="explosive">
+    <GarrisonedUnitdamageModifier>0.1</GarrisonedUnitdamageModifier>
+    <ExplosionRadius>1.5</ExplosionRadius>
+    <ExplosionDelay>0</ExplosionDelay>
+    <FlightDurationType>HorizontalVelocity</FlightDurationType>
+    <FlightSpeed>65</FlightSpeed>
+    <DeviationRange>12</DeviationRange>
+  </AmmoConfiguration>
+  <AmmoConfiguration id="TrainArtilleryGrenade" type="explosive">
+    <GarrisonedUnitdamageModifier>0.1</GarrisonedUnitdamageModifier>
+    <ExplosionRadius>3</ExplosionRadius>
+    <OuterExplosionRadius>3</OuterExplosionRadius>
+    <OuterExplosionRadiusDamageModifier>0.2</OuterExplosionRadiusDamageModifier>
+    <ExplosionDelay>0</ExplosionDelay>
+    <FlightDurationType>HorizontalVelocity</FlightDurationType>
+    <FlightSpeed>75</FlightSpeed>
+    <DeviationRange>6</DeviationRange>
+  </AmmoConfiguration>
+  <AmmoConfiguration id="TeslaCoilShock" type="explosive">
+    <GarrisonedUnitdamageModifier>0.1</GarrisonedUnitdamageModifier>
+    <ExplosionRadius>45</ExplosionRadius>
+    <ExplosionType>Lightning</ExplosionType>
+    <ExplosionDelay>0</ExplosionDelay>
+    <FlightDuration>0</FlightDuration>
+    <DeviationRange>0</DeviationRange>
+  </AmmoConfiguration>
+  <AmmoConfiguration id="GuardRailgunShell" type="explosive">
+    <GarrisonedUnitdamageModifier>0.1</GarrisonedUnitdamageModifier>
+    <ExplosionRadius>4</ExplosionRadius>
+    <ExplosionDelay>0</ExplosionDelay>
+    <!-- <ExplosionType>Lightning</ExplosionType> -->
+    <FlightDurationType>HorizontalVelocity</FlightDurationType>
+    <FlightSpeed>75</FlightSpeed>
+    <DeviationRange>0.5</DeviationRange>
+  </AmmoConfiguration>
+  <AmmoConfiguration id="GuardShocktrap" type="explosive">
+    <GarrisonedUnitdamageModifier>0.1</GarrisonedUnitdamageModifier>
+    <ExplosionRadius>3</ExplosionRadius>
+    <ExplosionDelay>0</ExplosionDelay>
+    <ExplosionType>Lightning</ExplosionType>
+    <FlightDuration>0</FlightDuration>
+    <DeviationRange>0</DeviationRange>
+    <ElectrificationDuration>5</ElectrificationDuration>
+  </AmmoConfiguration>
+  <AmmoConfiguration id="GuardShocktrapRocket" type="explosive">
+    <GarrisonedUnitdamageModifier>0.1</GarrisonedUnitdamageModifier>
+    <ExplosionRadius>1</ExplosionRadius>
+    <ExplosionDelay>0</ExplosionDelay>
+    <ExplosionType>Lightning</ExplosionType>
+    <FlightDurationType>HorizontalVelocity</FlightDurationType>
+    <FlightSpeed>75</FlightSpeed>
+    <DeviationRange>3</DeviationRange>
+    <EffectAmmoConfig>
+      <EffectType>ShockTrap</EffectType>
+      <EffectRadius>3</EffectRadius>
+      <EffectDuration>20</EffectDuration>
+      <ShockTrapConfiguration ShockTrapAmmoName="GuardShocktrap">
+        <LifeTime>20</LifeTime>
+        <CooldownPerHit>0.5</CooldownPerHit>
+        <StartDelay>3</StartDelay>
+      </ShockTrapConfiguration>
+    </EffectAmmoConfig>
+  </AmmoConfiguration>
+  <AmmoConfiguration id="JumpPack" type="explosive">
+    <GarrisonedUnitdamageModifier>0.1</GarrisonedUnitdamageModifier>
+    <ExplosionRadius>2</ExplosionRadius>
+    <OuterExplosionRadius>4</OuterExplosionRadius>
+    <OuterExplosionRadiusDamageModifier>0.5</OuterExplosionRadiusDamageModifier>
+    <ExplosionDelay>0</ExplosionDelay>
+    <DeviationRange>0</DeviationRange>
+  </AmmoConfiguration>
+  <AmmoConfiguration id="IkarusShocktrap" type="explosive">
+    <GarrisonedUnitdamageModifier>0.1</GarrisonedUnitdamageModifier>
+    <ExplosionRadius>7</ExplosionRadius>
+    <ExplosionDelay>0</ExplosionDelay>
+    <ExplosionType>Lightning</ExplosionType>
+    <FlightDuration>0</FlightDuration>
+    <DeviationRange>0</DeviationRange>
+    <ElectrificationDuration>5</ElectrificationDuration>
+  </AmmoConfiguration>
+  <AmmoConfiguration id="IkarusShocktrapShell" type="explosive">
+    <GarrisonedUnitdamageModifier>0.1</GarrisonedUnitdamageModifier>
+    <ExplosionRadius>1</ExplosionRadius>
+    <ExplosionDelay>0</ExplosionDelay>
+    <ExplosionType>Lightning</ExplosionType>
+    <FlightDurationType>HorizontalVelocity</FlightDurationType>
+    <FlightDuration>24</FlightDuration>
+    <DeviationRange>18</DeviationRange>
+    <EffectAmmoConfig>
+      <EffectType>ShockTrap</EffectType>
+      <EffectRadius>15</EffectRadius>
+      <EffectDuration>15</EffectDuration>
+      <ShockTrapConfiguration ShockTrapAmmoName="IkarusShocktrap">
+        <LifeTime>15</LifeTime>
+        <CooldownPerHit>0.5</CooldownPerHit>
+        <StartDelay>5</StartDelay>
+      </ShockTrapConfiguration>
+    </EffectAmmoConfig>
+  </AmmoConfiguration>
+  <AmmoConfiguration id="IkarusShocktrapDrop" type="explosive">
+    <GarrisonedUnitdamageModifier>0.1</GarrisonedUnitdamageModifier>
+    <ExplosionRadius>1</ExplosionRadius>
+    <ExplosionDelay>0</ExplosionDelay>
+    <ExplosionType>Lightning</ExplosionType>
+    <FlightDurationType>HorizontalVelocity</FlightDurationType>
+    <EffectAmmoConfig>
+      <EffectType>ShockTrap</EffectType>
+      <EffectRadius>15</EffectRadius>
+      <EffectDuration>15</EffectDuration>
+      <ShockTrapConfiguration ShockTrapAmmoName="IkarusShocktrap">
+        <LifeTime>15</LifeTime>
+        <CooldownPerHit>0.5</CooldownPerHit>
+        <StartDelay>0.2</StartDelay>
+      </ShockTrapConfiguration>
+    </EffectAmmoConfig>
+  </AmmoConfiguration>
+
+
+  <!--Heroes-->
+  <!--Anna-->
+  <AmmoConfiguration id="Anna_RifleCartridge" type="projectile" parentId="BaseProjectile">
+  </AmmoConfiguration>
+  <AmmoConfiguration id="Anna_PowerShotCartridge" type="projectile" parentId="BaseProjectile">
+  </AmmoConfiguration>
+  <AmmoConfiguration id="Anna_WojtekMelee" type="projectile" parentId="BaseProjectile">
+  </AmmoConfiguration>
+  <AmmoConfiguration id="Anna_Melee" type="projectile" parentId="BaseProjectile">
+  </AmmoConfiguration>
+
+  <AmmoConfiguration id="AnnaChild_RifleCartridge" type="projectile" parentId="BaseProjectile">
+  </AmmoConfiguration>
+  <AmmoConfiguration id="Snowball" type="projectile" flightSpeed="12">
+    <GarrisonedUnitdamageModifier>0.1</GarrisonedUnitdamageModifier>
+  </AmmoConfiguration>
+
+  <!--Rebel Leader-->
+  <AmmoConfiguration id="Rebel_GunShell" type="projectile" parentId="BaseProjectile">
+  </AmmoConfiguration>
+  <AmmoConfiguration id="Rebel_Splash" type="projectile" parentId="BaseProjectile">
+  </AmmoConfiguration>
+  <AmmoConfiguration id="Rebel_Melee" type="projectile" parentId="BaseProjectile">
+  </AmmoConfiguration>
+  <!--<AmmoConfiguration id="Rebel_MeleeSplash" type="projectile">
+	</AmmoConfiguration>-->
+  <AmmoConfiguration id="Rebel_MeleeSeries" type="projectile" parentId="BaseProjectile">
+  </AmmoConfiguration>
+  <AmmoConfiguration id="Rebel_MeleeSeriesSplash" type="projectile" parentId="BaseProjectile">
+  </AmmoConfiguration>
+  <AmmoConfiguration id="Rebel_DashDmg" type="projectile" parentId="BaseProjectile">
+  </AmmoConfiguration>
+
+  <!--Cavalry Commander-->
+  <AmmoConfiguration id="Cav_RifleCartridge" type="projectile" parentId="BaseProjectile">
+  </AmmoConfiguration>
+  <AmmoConfiguration id="Cav_Bomb" type="explosive">
+    <GarrisonedUnitdamageModifier>0.1</GarrisonedUnitdamageModifier>
+    <ExplosionRadius>2</ExplosionRadius>
+    <OuterExplosionRadius>4</OuterExplosionRadius>
+    <OuterExplosionRadiusDamageModifier>0.1</OuterExplosionRadiusDamageModifier>
+    <ExplosionDelay>4</ExplosionDelay>
+  </AmmoConfiguration>
+  <AmmoConfiguration id="Cav_BombProjectile" type="projectile">
+    <GarrisonedUnitdamageModifier>0.1</GarrisonedUnitdamageModifier>
+    <EffectAmmoConfig>
+      <EffectType>StickyBomb</EffectType>
+      <EffectDuration>2</EffectDuration>
+      <StickyExplosiveConfiguration>
+        <ExplosionAmmoConfig>Cav_Bomb</ExplosionAmmoConfig>
+      </StickyExplosiveConfiguration>
+      <CanDamage>False</CanDamage>
+    </EffectAmmoConfig>
+  </AmmoConfiguration>
+  <AmmoConfiguration id="Cav_ChargeDmg" type="projectile" parentId="BaseProjectile">
+  </AmmoConfiguration>
+  <AmmoConfiguration id="Cav_Melee" type="projectile" parentId="BaseProjectile">
+  </AmmoConfiguration>
+
+  <!--Gunter-->
+  <AmmoConfiguration id="Gunter_HandgunShell" type="projectile" parentId="BaseProjectile">
+  </AmmoConfiguration>
+  <AmmoConfiguration id="Gunter_Splash" type="projectile" parentId="BaseProjectile">
+  </AmmoConfiguration>
+  <AmmoConfiguration id="Gunter_ApStab" type="projectile" parentId="BaseProjectile">
+  </AmmoConfiguration>
+  <AmmoConfiguration id="Gunter_Melee" type="projectile" parentId="BaseProjectile">
+  </AmmoConfiguration>
+  <AmmoConfiguration id="Gunter_ShadowGuardEffect" type="explosive">
+    <GarrisonedUnitdamageModifier>0.1</GarrisonedUnitdamageModifier>
+    <EffectAmmoConfig>
+      <EffectType>ShadowGuard</EffectType>
+      <DetonationHeightOffset>0.5</DetonationHeightOffset>
+    </EffectAmmoConfig>
+  </AmmoConfiguration>
+
+  <AmmoConfiguration id="Gunter_ShadowGuardDmg" type="explosive">
+    <GarrisonedUnitdamageModifier>0.1</GarrisonedUnitdamageModifier>
+    <ExplosionRadius>0.1</ExplosionRadius>
+    <ExplosionDelay>3</ExplosionDelay>
+    <DetonationHeightOffset>0.5</DetonationHeightOffset>
+  </AmmoConfiguration>
+
+  <!--Prince-->
+  <AmmoConfiguration id="Prince_GatlingCartridge" type="projectile" parentId="BaseProjectile">
+  </AmmoConfiguration>
+  <AmmoConfiguration id="Prince_GatlingSweepCartridge" type="projectile" parentId="BaseProjectile">
+  </AmmoConfiguration>
+  <AmmoConfiguration id="Prince_Rocket" type="explosive">
+    <GarrisonedUnitdamageModifier>0.1</GarrisonedUnitdamageModifier>
+    <ExplosionRadius>3</ExplosionRadius>
+    <OuterExplosionRadius>3</OuterExplosionRadius>
+    <OuterExplosionRadiusDamageModifier>0</OuterExplosionRadiusDamageModifier>
+    <ExplosionDelay>0</ExplosionDelay>
+    <FlightDurationType>HorizontalVelocity</FlightDurationType>
+    <FlightSpeed>25</FlightSpeed>
+    <DeviationRange>10</DeviationRange>
+  </AmmoConfiguration>
+
+  <!--Brunhilde-->
+  <AmmoConfiguration id="Brunh_CannonShell" type="projectile" parentId="BaseProjectile">
+  </AmmoConfiguration>
+  <AmmoConfiguration id="Brunh_LongShotGrenade" type="explosive">
+    <GarrisonedUnitdamageModifier>0.1</GarrisonedUnitdamageModifier>
+    <ExplosionRadius>3</ExplosionRadius>
+    <OuterExplosionRadius>6</OuterExplosionRadius>
+    <OuterExplosionRadiusDamageModifier>0.5</OuterExplosionRadiusDamageModifier>
+    <ExplosionDelay>0</ExplosionDelay>
+    <FlightDuration>24</FlightDuration>
+    <DeviationRange>1.5</DeviationRange>
+  </AmmoConfiguration>
+  <AmmoConfiguration id="Brunh_BroadsideShell" type="projectile" parentId="BaseProjectile">
+  </AmmoConfiguration>
+  <AmmoConfiguration id="Brunh_CannonSplash" type="projectile" parentId="BaseProjectile">
+  </AmmoConfiguration>
+  <AmmoConfiguration id="Brunh_BroadsideSplash" type="projectile" parentId="BaseProjectile">
+  </AmmoConfiguration>
+
+  <!--Olga-->
+  <AmmoConfiguration id="Olga_Cartridge" type="projectile" parentId="BaseProjectile">
+  </AmmoConfiguration>
+  <AmmoConfiguration id="Olga_Melee" type="projectile" parentId="BaseProjectile">
+  </AmmoConfiguration>
+  <AmmoConfiguration id="Olga_Detonator" type="explosive">
+    <GarrisonedUnitdamageModifier>0.1</GarrisonedUnitdamageModifier>
+    <ExplosionRadius>2</ExplosionRadius>
+    <OuterExplosionRadius>4</OuterExplosionRadius>
+    <OuterExplosionRadiusDamageModifier>0.1</OuterExplosionRadiusDamageModifier>
+    <ExplosionDelay>0</ExplosionDelay>
+  </AmmoConfiguration>
+  <AmmoConfiguration id="Olga_ChangaMelee" type="projectile" parentId="BaseProjectile">
+  </AmmoConfiguration>
+
+  <!--Brother-->
+  <AmmoConfiguration id="BrotherCartridge" type="projectile" parentId="BaseProjectile">
+  </AmmoConfiguration>
+  <AmmoConfiguration id="Brother_Melee" type="projectile" parentId="BaseProjectile">
+  </AmmoConfiguration>
+  <AmmoConfiguration id="Brother_Rocket" type="explosive">
+    <GarrisonedUnitdamageModifier>0.1</GarrisonedUnitdamageModifier>
+    <ExplosionRadius>3.5</ExplosionRadius>
+    <OuterExplosionRadius>5</OuterExplosionRadius>
+    <OuterExplosionRadiusDamageModifier>0.2</OuterExplosionRadiusDamageModifier>
+    <ExplosionDelay>0</ExplosionDelay>
+    <FlightDurationType>HorizontalVelocity</FlightDurationType>
+    <FlightSpeed>75</FlightSpeed>
+    <DeviationRange>0.5</DeviationRange>
+  </AmmoConfiguration>
+  <AmmoConfiguration id="Brother_Lightning" type="projectile" parentId="BaseProjectile">
+    <ElectrificationDuration>5</ElectrificationDuration>
+  </AmmoConfiguration>
+  <AmmoConfiguration id="Brother_Rigging" type="projectile" parentId="BaseProjectile">
+    <ElectrificationDuration>2</ElectrificationDuration>
+  </AmmoConfiguration>
+
+  <!--Rusviet General-->
+  <AmmoConfiguration id="Gen_Shell" type="projectile" parentId="BaseProjectile">
+  </AmmoConfiguration>
+  <AmmoConfiguration id="Gen_Splash" type="projectile" parentId="BaseProjectile">
+  </AmmoConfiguration>
+  <AmmoConfiguration id="Gen_Melee" type="projectile" parentId="BaseProjectile">
+  </AmmoConfiguration>
+  <AmmoConfiguration id="Gen_MeleeSeries" type="projectile" parentId="BaseProjectile">
+  </AmmoConfiguration>
+  <!--<AmmoConfiguration id="Gen_MeleeSplash" type="projectile">
+	</AmmoConfiguration>-->
+  <AmmoConfiguration id="Gen_MeleeSeriesSplash" type="projectile" parentId="BaseProjectile">
+  </AmmoConfiguration>
+  <AmmoConfiguration id="Gen_Jump" type="explosive">
+    <GarrisonedUnitdamageModifier>0.1</GarrisonedUnitdamageModifier>
+    <ExplosionRadius>4</ExplosionRadius>
+    <OuterExplosionRadius>6</OuterExplosionRadius>
+    <OuterExplosionRadiusDamageModifier>0.1</OuterExplosionRadiusDamageModifier>
+    <ExplosionDelay>0</ExplosionDelay>
+    <DeviationRange>0</DeviationRange>
+  </AmmoConfiguration>
+
+  <!-- Melee Ammo-->
+  <AmmoConfiguration id="ComSoldierMelee" type="melee" parentId="BaseProjectile">
+  </AmmoConfiguration>
+  <AmmoConfiguration id="ComSoldierMeleeUseless" type="melee" parentId="BaseProjectile">
+  </AmmoConfiguration>
+  <AmmoConfiguration id="ComSoldierMeleeWeak" type="melee" parentId="BaseProjectile">
+  </AmmoConfiguration>
+  <AmmoConfiguration id="ComSoldierMeleeMedium" type="melee" parentId="BaseProjectile">
+  </AmmoConfiguration>
+  <AmmoConfiguration id="ComSoldierMeleeStrong" type="melee" parentId="BaseProjectile">
+  </AmmoConfiguration>
+  <AmmoConfiguration id="ComSoldierMeleeSuperior" type="melee" parentId="BaseProjectile">
+  </AmmoConfiguration>
+  <AmmoConfiguration id="ComSoldierMeleeCloseRange" type="melee" parentId="BaseProjectile">
+  </AmmoConfiguration>
+  <AmmoConfiguration id="TesServeMelee" type="melee" parentId="BaseProjectile">
+  </AmmoConfiguration>
+
+  <!-- Mech Melee Ammo-->
+  <AmmoConfiguration id="MechMelee" type="melee" parentId="BaseProjectile">
+  </AmmoConfiguration>
+  <AmmoConfiguration id="ShockTroopBlade" type="melee" parentId="BaseProjectile">
+  </AmmoConfiguration>
+  <AmmoConfiguration id="BreacherMelee" type="melee" parentId="BaseProjectile">
+  </AmmoConfiguration>
+  <AmmoConfiguration id="ScytheMelee" type="melee" parentId="BaseProjectile">
+  </AmmoConfiguration>
+  <!--<AmmoConfiguration id="ScytheMeleeSplash" type="melee">
+	</AmmoConfiguration>-->
+
+  <!-- Splash Ammo-->
+  <AmmoConfiguration id="APSplash" type="projectile" parentId="BaseProjectile">
+  </AmmoConfiguration>
+  <AmmoConfiguration id="NonThrowSplash" type="projectile" parentId="BaseProjectile">
+  </AmmoConfiguration>
+  <AmmoConfiguration id="TankSplash" type="projectile" parentId="BaseProjectile">
+  </AmmoConfiguration>
+  <AmmoConfiguration id="MediumSplash" type="projectile" parentId="BaseProjectile">
+  </AmmoConfiguration>
+  <AmmoConfiguration id="HeavySplash" type="projectile" parentId="BaseProjectile">
+  </AmmoConfiguration>
+  <AmmoConfiguration id="UltraHeavySplash" type="projectile" parentId="BaseProjectile">
+  </AmmoConfiguration>
+  <AmmoConfiguration id="KaiserSplash" type="projectile" parentId="BaseProjectile">
+  </AmmoConfiguration>
+  <AmmoConfiguration id="RevolverSplash" type="projectile" parentId="BaseProjectile">
+  </AmmoConfiguration>
+  <AmmoConfiguration id="GuardRailgunSplash" type="projectile" parentId="BaseProjectile">
+  </AmmoConfiguration>
+  <AmmoConfiguration id="MgSplash" type="projectile" parentId="BaseProjectile">
+  </AmmoConfiguration>
+  <AmmoConfiguration id="GatlingSweepSplash" type="projectile" parentId="BaseProjectile">
+  </AmmoConfiguration>
+  <AmmoConfiguration id="PrinceSweepSplash" type="projectile" parentId="BaseProjectile">
+  </AmmoConfiguration>
+
+  <!--Special Ammo-->
+  <AmmoConfiguration id="TestFlames" type="explosive">
+    <GarrisonedUnitdamageModifier>0.1</GarrisonedUnitdamageModifier>
+    <ExplosionRadius>1</ExplosionRadius>
+    <ExplosionDelay>0</ExplosionDelay>
+    <!--<FlightDurationType>ThrowCurve</FlightDurationType>-->
+    <FlightDurationType>HorizontalVelocity</FlightDurationType>
+    <FlightSpeed>15</FlightSpeed>
+    <DeviationRange>1.5</DeviationRange>
+    <BurnValue>10</BurnValue>
+    <EffectAmmoConfig>
+      <EffectType>FlamerFlame</EffectType>
+      <CanDamage>True</CanDamage>
+      <EffectRadius>0.25</EffectRadius>
+      <EffectDuration>5</EffectDuration>
+    </EffectAmmoConfig>
+  </AmmoConfiguration>
+
+  <AmmoConfiguration id="MechFlames" type="explosive">
+    <GarrisonedUnitdamageModifier>0.1</GarrisonedUnitdamageModifier>
+    <ExplosionRadius>2.8</ExplosionRadius>
+    <ExplosionDelay>0</ExplosionDelay>
+    <!--<FlightDurationType>ThrowCurve</FlightDurationType>-->
+    <FlightDurationType>HorizontalVelocity</FlightDurationType>
+    <FlightSpeed>0</FlightSpeed>
+    <DeviationRange>1</DeviationRange>
+    <BurnValue>10</BurnValue>
+    <EffectAmmoConfig>
+      <EffectType>FlamerFlame</EffectType>
+      <CanDamage>True</CanDamage>
+      <EffectRadius>2</EffectRadius>
+      <EffectDuration>10</EffectDuration>
+    </EffectAmmoConfig>
+  </AmmoConfiguration>
+
+  <AmmoConfiguration id="MechFrameFlames" type="explosive">
+    <GarrisonedUnitdamageModifier>0.1</GarrisonedUnitdamageModifier>
+    <ExplosionRadius>1.8</ExplosionRadius>
+    <ExplosionDelay>0</ExplosionDelay>
+    <!--<FlightDurationType>ThrowCurve</FlightDurationType>-->
+    <FlightDurationType>HorizontalVelocity</FlightDurationType>
+    <FlightSpeed>0</FlightSpeed>
+    <DeviationRange>0.5</DeviationRange>
+    <BurnValue>10</BurnValue>
+    <EffectAmmoConfig>
+      <EffectType>FlamerFlame</EffectType>
+      <CanDamage>True</CanDamage>
+      <EffectRadius>4</EffectRadius>
+      <EffectDuration>10</EffectDuration>
+    </EffectAmmoConfig>
+  </AmmoConfiguration>
+
+
+  <AmmoConfiguration id="Burn" type="explosive">
+    <GarrisonedUnitdamageModifier>0.1</GarrisonedUnitdamageModifier>
+    <ExplosionRadius>0.1</ExplosionRadius>
+    <ExplosionDelay>0</ExplosionDelay>
+  </AmmoConfiguration>
+
+  <AmmoConfiguration id="Flare" type="explosive">
+    <GarrisonedUnitdamageModifier>0.1</GarrisonedUnitdamageModifier>
+    <EffectAmmoConfig>
+      <EffectRadius>15</EffectRadius>
+      <EffectDuration>15</EffectDuration>
+      <EffectType>Flare</EffectType>
+      <DetonationHeightOffset>15</DetonationHeightOffset>
+    </EffectAmmoConfig>
+    <FlightDurationType>ThrowCurve</FlightDurationType>
+    <FlightSpeed>50</FlightSpeed>    <!--arbitrary value - open for change-->
+    <DeviationRange>0</DeviationRange>
+  </AmmoConfiguration>
+
+  <AmmoConfiguration id="TankSmokescreen" type="explosive">
+    <GarrisonedUnitdamageModifier>0.1</GarrisonedUnitdamageModifier>
+    <EffectAmmoConfig>
+      <EffectType>SmokeScreen</EffectType>
+      <SmokescreenConfiguration>
+        <EmitDuration>10</EmitDuration>
+        <SmokeLifetime>20</SmokeLifetime>        <!--Min value 10! Will be overriden via code when lower ;)-->
+        <Radius>27</Radius>
+      </SmokescreenConfiguration>
+    </EffectAmmoConfig>
+  </AmmoConfiguration>
+
+  <AmmoConfiguration id="Smokescreen" type="explosive">
+    <GarrisonedUnitdamageModifier>0.1</GarrisonedUnitdamageModifier>
+    <EffectAmmoConfig>
+      <EffectType>SmokeScreen</EffectType>
+      <SmokescreenConfiguration>
+        <EmitDuration>22</EmitDuration>
+        <SmokeLifetime>10</SmokeLifetime>        <!--Min value 10! Will be overriden via code when lower ;)-->
+        <Radius>10</Radius>        <!--Min seems to be 10-->
+      </SmokescreenConfiguration>
+    </EffectAmmoConfig>
+  </AmmoConfiguration>
+
+  <AmmoConfiguration id="Smokebarrel" type="explosive">
+    <GarrisonedUnitdamageModifier>0.1</GarrisonedUnitdamageModifier>
+    <ExplosionRadius>2.5</ExplosionRadius>
+    <OuterExplosionRadius>4.5</OuterExplosionRadius>
+    <OuterExplosionRadiusDamageModifier>0.4</OuterExplosionRadiusDamageModifier>
+    <ExplosionDelay>0</ExplosionDelay>
+    <FlightDuration>24</FlightDuration>
+    <DeviationRange>3</DeviationRange>
+    <EffectAmmoConfig>
+      <SmokescreenConfiguration>
+        <EmitDuration>0</EmitDuration>
+        <SmokeLifetime>15</SmokeLifetime>        <!--Min value 15! Will be overriden via code when lower ;)-->
+        <Radius>10</Radius>
+      </SmokescreenConfiguration>
+      <EffectType>SmokeShot</EffectType>
+    </EffectAmmoConfig>
+  </AmmoConfiguration>
+
+  <AmmoConfiguration id="AnimalMelee" type="melee" parentId="BaseProjectile">
+  </AmmoConfiguration>
+
+  <!-- Map Elements -->
+  <AmmoConfiguration id="GasTank" type="explosive">
+    <GarrisonedUnitdamageModifier>0.1</GarrisonedUnitdamageModifier>
+    <ExplosionRadius>3</ExplosionRadius>
+    <OuterExplosionRadius>6</OuterExplosionRadius>
+    <OuterExplosionRadiusDamageModifier>0.5</OuterExplosionRadiusDamageModifier>
+    <ExplosionDelay>5</ExplosionDelay>
+  </AmmoConfiguration>
+  <AmmoConfiguration id="CarExplosion" type="explosive">
+    <GarrisonedUnitdamageModifier>0.1</GarrisonedUnitdamageModifier>
+    <ExplosionRadius>3</ExplosionRadius>
+    <OuterExplosionRadius>6</OuterExplosionRadius>
+    <OuterExplosionRadiusDamageModifier>0.5</OuterExplosionRadiusDamageModifier>
+    <ExplosionDelay>1</ExplosionDelay>
+  </AmmoConfiguration>
+  <AmmoConfiguration id="ExplosiveBarrel" type="explosive">
+    <GarrisonedUnitdamageModifier>0.1</GarrisonedUnitdamageModifier>
+    <ExplosionRadius>2</ExplosionRadius>
+    <OuterExplosionRadius>3.5</OuterExplosionRadius>
+    <OuterExplosionRadiusDamageModifier>0.3</OuterExplosionRadiusDamageModifier>
+    <ExplosionDelay>2</ExplosionDelay>
+  </AmmoConfiguration>
+  <AmmoConfiguration id="DeadlyExplosion" type="explosive">
+    <GarrisonedUnitdamageModifier>0.1</GarrisonedUnitdamageModifier>
+    <ExplosionRadius>3</ExplosionRadius>
+    <ExplosionDelay>0</ExplosionDelay>
+  </AmmoConfiguration>
+  <AmmoConfiguration id="BigExplosion" type="explosive">
+    <GarrisonedUnitdamageModifier>0.1</GarrisonedUnitdamageModifier>
+    <ExplosionRadius>5</ExplosionRadius>
+    <ExplosionDelay>0</ExplosionDelay>
+  </AmmoConfiguration>
+    <AmmoConfiguration id="HugeExplosion" type="explosive">
+    <GarrisonedUnitdamageModifier>0.1</GarrisonedUnitdamageModifier>
+    <ExplosionRadius>20</ExplosionRadius>
+    <ExplosionDelay>0</ExplosionDelay>
+  </AmmoConfiguration>
+
+  <!-- Destruction Trigger -->
+  <AmmoConfiguration id="WeaponSystemDestruction" type="explosive">
+    <GarrisonedUnitdamageModifier>0.1</GarrisonedUnitdamageModifier>
+    <ExplosionRadius>3</ExplosionRadius>
+    <ExplosionDelay>2</ExplosionDelay>
+  </AmmoConfiguration>
+
+</AmmoConfigurationRepository>

@@ -1,0 +1,509 @@
+<Abilities>
+  <AbilityConfiguration id="pointAttack" TargetEnemies="False" TargetAllies="False" FreeAiming="True" ShowRangeIndicator="True" InputMode="RangeAttack"/>
+  <AbilityConfiguration id="melee" TargetEnemies="True" TargetAllies="False" FreeAiming="False" ShowRangeIndicator="False" InputMode="MeleeAttack"/>
+  <AbilityConfiguration id="wojtekAttack">
+    <TargetEnemies>True</TargetEnemies>
+    <TargetAllies>False</TargetAllies>
+    <FreeAiming>False</FreeAiming>
+    <ShowRangeIndicator>False</ShowRangeIndicator>
+    <InputMode>SendPetAttack</InputMode>
+    <ShoutId>action_wojtek_attack</ShoutId>
+	 <AbilityTypeRang>Hero</AbilityTypeRang>
+  </AbilityConfiguration>
+  <AbilityConfiguration id="wojtekCallback">
+    <ShoutId>notify_wojtek_attack_end</ShoutId>
+	<AbilityTypeRang>Hero</AbilityTypeRang>
+  </AbilityConfiguration>
+  <AbilityConfiguration id="wojtekCall">
+    <ShoutId>action_wojtekrespawn</ShoutId>
+	<AbilityTypeRang>Hero</AbilityTypeRang>
+	<AutoSkillAvailable>True</AutoSkillAvailable>
+  </AbilityConfiguration>
+    <AbilityConfiguration id="wojtek">
+	  <AbilityTypeRang>HeroPassive</AbilityTypeRang>
+  </AbilityConfiguration>
+  <AbilityConfiguration id="scouting">
+    <TargetEnemies>False</TargetEnemies>
+    <TargetAllies>False</TargetAllies>
+    <FreeAiming>True</FreeAiming>
+    <ShowRangeIndicator>False</ShowRangeIndicator>
+    <InputMode>SendPetPosition</InputMode>
+    <ShoutId>action_scoutingroute</ShoutId>
+	<AbilityTypeRang>Hero</AbilityTypeRang>
+  </AbilityConfiguration>
+  <AbilityConfiguration id="guard">
+    <TargetEnemies>True</TargetEnemies>
+    <TargetAllies>False</TargetAllies>
+    <FreeAiming>False</FreeAiming>
+    <ShowRangeIndicator>False</ShowRangeIndicator>
+    <InputMode>SendPetAttack</InputMode>
+    <ShoutId>notify_shadowguard</ShoutId>
+	<AbilityTypeRang>HeroPassive</AbilityTypeRang>
+  </AbilityConfiguration>
+  <AbilityConfiguration id="grenade">
+    <TargetEnemies>False</TargetEnemies>
+    <TargetAllies>False</TargetAllies>
+    <FreeAiming>True</FreeAiming>
+    <ShowRangeIndicator>True</ShowRangeIndicator>
+    <InputMode>AreaAttack</InputMode>
+    <ShoutId>action_throwgrenade</ShoutId>
+	<AutoSkillAvailable>True</AutoSkillAvailable>
+  </AbilityConfiguration>
+  <AbilityConfiguration id="stealth">
+	<TargetEnemies>False</TargetEnemies>
+    <TargetAllies>False</TargetAllies>
+    <FreeAiming>True</FreeAiming>
+    <ShowRangeIndicator>False</ShowRangeIndicator>
+    <InputMode>None</InputMode>
+	<AbilityTypeRang>HeroPassive</AbilityTypeRang>
+	</AbilityConfiguration>
+  <AbilityConfiguration id="tigerUp">
+    <TargetEnemies>False</TargetEnemies>
+    <TargetAllies>False</TargetAllies>
+    <FreeAiming>False</FreeAiming>
+    <ShowRangeIndicator>False</ShowRangeIndicator>
+    <ShoutId>action_ride</ShoutId>
+	<AbilityTypeRang>Hero</AbilityTypeRang>
+	<AutoSkillAvailable>True</AutoSkillAvailable>
+  </AbilityConfiguration>
+  <AbilityConfiguration id="tigerDown">
+    <TargetEnemies>False</TargetEnemies>
+    <TargetAllies>False</TargetAllies>
+    <FreeAiming>False</FreeAiming>
+    <ShowRangeIndicator>False</ShowRangeIndicator>
+    <ShoutId>action_ride</ShoutId>
+	<AbilityTypeRang>Hero</AbilityTypeRang>
+  </AbilityConfiguration>
+  <AbilityConfiguration id="detonators">
+    <TargetEnemies>True</TargetEnemies>
+    <TargetAllies>False</TargetAllies>
+    <FreeAiming>True</FreeAiming>
+    <ShowRangeIndicator>False</ShowRangeIndicator>
+    <InputMode>RangeAttack</InputMode>
+	<AbilityTypeRang>Hero</AbilityTypeRang>
+	<AutoSkillAvailable>True</AutoSkillAvailable>
+  </AbilityConfiguration>
+  <AbilityConfiguration id="detonate">
+    <TargetEnemies>False</TargetEnemies>
+    <TargetAllies>False</TargetAllies>
+    <FreeAiming>False</FreeAiming>
+    <ShowRangeIndicator>False</ShowRangeIndicator>
+	<AbilityTypeRang>Hero</AbilityTypeRang>
+	<AutoSkillAvailable>True</AutoSkillAvailable>
+  </AbilityConfiguration>
+  <AbilityConfiguration id="grenade">
+    <TargetEnemies>False</TargetEnemies>
+    <TargetAllies>False</TargetAllies>
+    <FreeAiming>True</FreeAiming>
+    <ShowRangeIndicator>True</ShowRangeIndicator>
+    <InputMode>AreaAttack</InputMode>
+  </AbilityConfiguration>
+  <AbilityConfiguration id="powerShot">
+    <TargetEnemies>True</TargetEnemies>
+    <TargetAllies>False</TargetAllies>
+    <FreeAiming>True</FreeAiming>
+    <ShowRangeIndicator>True</ShowRangeIndicator>
+    <InputMode>RangeAttack</InputMode>
+    <ShoutId>action_powershot</ShoutId>
+    <AbilityTypeRang>Hero</AbilityTypeRang>
+	<AutoSkillAvailable>True</AutoSkillAvailable>
+  </AbilityConfiguration>
+  <AbilityConfiguration id="dash">
+    <TargetEnemies>False</TargetEnemies>
+    <TargetAllies>False</TargetAllies>
+    <FreeAiming>True</FreeAiming>
+    <ShowRangeIndicator>True</ShowRangeIndicator>
+    <InputMode>ArcAttack</InputMode>
+    <ShoutId>action_dash</ShoutId>
+	<AbilityTypeRang>Hero</AbilityTypeRang>
+  </AbilityConfiguration>
+  <AbilityConfiguration id="sweep">
+    <TargetEnemies>False</TargetEnemies>
+    <TargetAllies>False</TargetAllies>
+    <FreeAiming>True</FreeAiming>
+    <ShowRangeIndicator>True</ShowRangeIndicator>
+    <InputMode>ArcAttack</InputMode>
+    <ShoutId>action_veteran</ShoutId>
+	<AbilityTypeRang>Veteran</AbilityTypeRang>
+	<AutoSkillAvailable>True</AutoSkillAvailable>
+  </AbilityConfiguration>
+  <AbilityConfiguration id="rocket">
+    <TargetEnemies>True</TargetEnemies>
+    <TargetAllies>False</TargetAllies>
+    <FreeAiming>True</FreeAiming>
+    <ShowRangeIndicator>True</ShowRangeIndicator>
+    <InputMode>RangeAttack</InputMode>
+    <ShoutId>action_rocket</ShoutId>
+	<AbilityTypeRang>Hero</AbilityTypeRang>
+	<AutoSkillAvailable>True</AutoSkillAvailable>
+  </AbilityConfiguration>
+  <AbilityConfiguration id="missiles">
+    <TargetEnemies>True</TargetEnemies>
+    <TargetAllies>False</TargetAllies>
+    <FreeAiming>True</FreeAiming>
+    <ShowRangeIndicator>True</ShowRangeIndicator>
+    <InputMode>RangeAttack</InputMode>
+    <ShoutId>action_veteran</ShoutId>
+	<AbilityTypeRang>Veteran</AbilityTypeRang>
+	<AutoSkillAvailable>True</AutoSkillAvailable>
+  </AbilityConfiguration>
+  <AbilityConfiguration id="barrage">
+    <TargetEnemies>True</TargetEnemies>
+    <TargetAllies>False</TargetAllies>
+    <FreeAiming>True</FreeAiming>
+    <ShowRangeIndicator>True</ShowRangeIndicator>
+    <InputMode>RangeAttack</InputMode>
+    <ShoutId>action_veteran</ShoutId>
+	<AbilityTypeRang>Veteran</AbilityTypeRang>
+	<AutoSkillAvailable>True</AutoSkillAvailable>
+  </AbilityConfiguration>
+  <AbilityConfiguration id="sting">
+    <TargetEnemies>True</TargetEnemies>
+    <TargetAllies>False</TargetAllies>
+    <FreeAiming>True</FreeAiming>
+    <ShowRangeIndicator>True</ShowRangeIndicator>
+    <InputMode>RangeAttack</InputMode>
+    <ShoutId>action_veteran</ShoutId>
+	<AbilityTypeRang>Veteran</AbilityTypeRang>
+	<AutoSkillAvailable>True</AutoSkillAvailable>
+  </AbilityConfiguration>
+  <AbilityConfiguration id="rally">
+    <TargetEnemies>False</TargetEnemies>
+    <TargetAllies>False</TargetAllies>
+    <FreeAiming>True</FreeAiming>
+    <ShowRangeIndicator>False</ShowRangeIndicator>
+  </AbilityConfiguration>
+  <AbilityConfiguration id="boost">
+    <TargetEnemies>False</TargetEnemies>
+    <TargetAllies>False</TargetAllies>
+    <FreeAiming>False</FreeAiming>
+    <ShowRangeIndicator>False</ShowRangeIndicator>
+    <ShoutId>action_veteran</ShoutId>
+    <AbilityTypeRang>Veteran</AbilityTypeRang>
+	<AutoSkillAvailable>True</AutoSkillAvailable>
+  </AbilityConfiguration>
+  <AbilityConfiguration id="exit">
+    <TargetEnemies>False</TargetEnemies>
+    <TargetAllies>False</TargetAllies>
+    <FreeAiming>False</FreeAiming>
+    <ShowRangeIndicator>False</ShowRangeIndicator>
+  </AbilityConfiguration>
+  <AbilityConfiguration id="deploy">
+    <TargetEnemies>False</TargetEnemies>
+    <TargetAllies>False</TargetAllies>
+    <FreeAiming>False</FreeAiming>
+    <ShowRangeIndicator>False</ShowRangeIndicator>
+	<AutoSkillAvailable>True</AutoSkillAvailable>
+  </AbilityConfiguration>
+  <AbilityConfiguration id="mobilize">
+    <TargetEnemies>False</TargetEnemies>
+    <TargetAllies>False</TargetAllies>
+    <FreeAiming>False</FreeAiming>
+    <ShowRangeIndicator>False</ShowRangeIndicator>
+  </AbilityConfiguration>
+  <AbilityConfiguration id="retreat">
+    <TargetEnemies>False</TargetEnemies>
+    <TargetAllies>False</TargetAllies>
+    <FreeAiming>False</FreeAiming>
+    <ShowRangeIndicator>False</ShowRangeIndicator>
+  </AbilityConfiguration>
+  <AbilityConfiguration id="rain">
+    <InputMode>SelfPosition</InputMode>
+    <ShoutId>action_veteran</ShoutId>
+	<AbilityTypeRang>Veteran</AbilityTypeRang>
+	<AutoSkillAvailable>True</AutoSkillAvailable>
+  </AbilityConfiguration>
+  <AbilityConfiguration id="demolisher">
+    <TargetEnemies>True</TargetEnemies>
+    <TargetAllies>False</TargetAllies>
+    <FreeAiming>True</FreeAiming>
+    <ShowRangeIndicator>True</ShowRangeIndicator>
+    <InputMode>RangeAttack</InputMode>
+    <ShoutId>action_veteran</ShoutId>
+	<AbilityTypeRang>Veteran</AbilityTypeRang>
+	<AutoSkillAvailable>True</AutoSkillAvailable>
+  </AbilityConfiguration>
+  <AbilityConfiguration id="strike">
+    <TargetEnemies>True</TargetEnemies>
+    <TargetAllies>False</TargetAllies>
+    <FreeAiming>True</FreeAiming>
+    <ShowRangeIndicator>True</ShowRangeIndicator>
+    <InputMode>RangeAttack</InputMode>
+    <ShoutId>action_strike</ShoutId>
+	<AbilityTypeRang>Hero</AbilityTypeRang>
+	<AutoSkillAvailable>True</AutoSkillAvailable>
+  </AbilityConfiguration>
+  <AbilityConfiguration id="shatter">
+    <TargetEnemies>False</TargetEnemies>
+    <TargetAllies>False</TargetAllies>
+    <FreeAiming>True</FreeAiming>
+    <ShowRangeIndicator>True</ShowRangeIndicator>
+    <InputMode>RangeAttack</InputMode>
+    <ShoutId>action_jump</ShoutId>
+	<AbilityTypeRang>Hero</AbilityTypeRang>
+	<AutoSkillAvailable>True</AutoSkillAvailable>
+  </AbilityConfiguration>
+  <AbilityConfiguration id="rig">
+    <TargetEnemies>False</TargetEnemies>
+    <TargetAllies>False</TargetAllies>
+    <FreeAiming>False</FreeAiming>
+    <ShowRangeIndicator>False</ShowRangeIndicator>
+    <InputMode>None</InputMode>
+    <ShoutId>notify_static</ShoutId>
+	<AbilityTypeRang>HeroPassive</AbilityTypeRang>
+  </AbilityConfiguration>
+  <AbilityConfiguration id="rupture">
+    <TargetEnemies>True</TargetEnemies>
+    <TargetAllies>False</TargetAllies>
+    <FreeAiming>True</FreeAiming>
+    <ShowRangeIndicator>True</ShowRangeIndicator>
+    <InputMode>RangeAttack</InputMode>
+    <ShoutId>action_rupture</ShoutId>
+	<AbilityTypeRang>Hero</AbilityTypeRang>
+	<AutoSkillAvailable>True</AutoSkillAvailable>
+  </AbilityConfiguration>
+  <AbilityConfiguration id="lightning">
+    <TargetEnemies>True</TargetEnemies>
+    <TargetAllies>False</TargetAllies>
+    <FreeAiming>False</FreeAiming>
+    <ShowRangeIndicator>True</ShowRangeIndicator>
+    <InputMode>RangeAttack</InputMode>
+    <ShoutId>action_chain</ShoutId>
+	<AbilityTypeRang>Hero</AbilityTypeRang>
+	<AutoSkillAvailable>True</AutoSkillAvailable>
+  </AbilityConfiguration>
+  <AbilityConfiguration id="shrapnel">
+    <TargetEnemies>False</TargetEnemies>
+    <TargetAllies>False</TargetAllies>
+    <FreeAiming>True</FreeAiming>
+    <ShowRangeIndicator>True</ShowRangeIndicator>
+    <InputMode>ArcAttack</InputMode>
+    <ShoutId>action_shot</ShoutId>
+	<AbilityTypeRang>Hero</AbilityTypeRang>
+	<AutoSkillAvailable>True</AutoSkillAvailable>
+  </AbilityConfiguration>
+  <AbilityConfiguration id="vision">
+    <TargetEnemies>False</TargetEnemies>
+    <TargetAllies>False</TargetAllies>
+    <FreeAiming>True</FreeAiming>
+    <ShowRangeIndicator>True</ShowRangeIndicator>
+    <InputMode>RangeAttack</InputMode>
+    <ShoutId>action_veteran</ShoutId>
+	<AbilityTypeRang>Veteran</AbilityTypeRang>
+  </AbilityConfiguration>
+  <AbilityConfiguration id="railgun">
+    <TargetEnemies>True</TargetEnemies>
+    <TargetAllies>False</TargetAllies>
+    <FreeAiming>True</FreeAiming>
+    <ShowRangeIndicator>True</ShowRangeIndicator>
+    <InputMode>RangeAttack</InputMode>
+	<AbilityTypeRang>Veteran</AbilityTypeRang>
+  </AbilityConfiguration>
+  <AbilityConfiguration id="shock">
+    <TargetEnemies>False</TargetEnemies>
+    <TargetAllies>False</TargetAllies>
+    <FreeAiming>True</FreeAiming>
+    <ShowRangeIndicator>True</ShowRangeIndicator>
+    <InputMode>RangeAttack</InputMode>
+	<AbilityTypeRang>Veteran</AbilityTypeRang>
+	<AutoSkillAvailable>True</AutoSkillAvailable>
+  </AbilityConfiguration>
+  <AbilityConfiguration id="jump">
+    <TargetEnemies>False</TargetEnemies>
+    <TargetAllies>False</TargetAllies>
+    <FreeAiming>True</FreeAiming>
+    <ShowRangeIndicator>True</ShowRangeIndicator>
+    <InputMode>RangeAttack</InputMode>
+    <ShoutId>action_jump</ShoutId>
+	<AutoSkillAvailable>True</AutoSkillAvailable>
+  </AbilityConfiguration>
+  <AbilityConfiguration id="bombs">
+    <TargetEnemies>True</TargetEnemies>
+    <TargetAllies>False</TargetAllies>
+    <FreeAiming>True</FreeAiming>
+    <ShowRangeIndicator>True</ShowRangeIndicator>
+    <InputMode>RangeAttack</InputMode>
+    <ShoutId>action_sticky</ShoutId>
+	<AbilityTypeRang>Hero</AbilityTypeRang>
+	<AutoSkillAvailable>True</AutoSkillAvailable>
+  </AbilityConfiguration>
+  <AbilityConfiguration id="overdrive">
+    <TargetEnemies>False</TargetEnemies>
+    <TargetAllies>False</TargetAllies>
+    <FreeAiming>False</FreeAiming>
+    <ShowRangeIndicator>False</ShowRangeIndicator>
+	<AbilityTypeRang>Veteran</AbilityTypeRang>
+	<AutoSkillAvailable>True</AutoSkillAvailable>
+  </AbilityConfiguration>
+  <AbilityConfiguration id="launch">
+    <TargetEnemies>True</TargetEnemies>
+    <TargetAllies>False</TargetAllies>
+    <FreeAiming>True</FreeAiming>
+    <ShowRangeIndicator>True</ShowRangeIndicator>
+    <InputMode>RangeAttack</InputMode>
+    <ShoutId>action_launch</ShoutId>
+	<AutoSkillAvailable>True</AutoSkillAvailable>
+  </AbilityConfiguration>
+  <AbilityConfiguration id="smoke">
+    <TargetEnemies>False</TargetEnemies>
+    <TargetAllies>False</TargetAllies>
+    <FreeAiming>False</FreeAiming>
+    <ShowRangeIndicator>False</ShowRangeIndicator>
+	<AbilityTypeRang>Veteran</AbilityTypeRang>
+	<AutoSkillAvailable>True</AutoSkillAvailable>
+  </AbilityConfiguration>
+  <AbilityConfiguration id="barrel">
+    <TargetEnemies>False</TargetEnemies>
+    <TargetAllies>False</TargetAllies>
+    <FreeAiming>True</FreeAiming>
+    <ShowRangeIndicator>False</ShowRangeIndicator>
+    <InputMode>RangeAttack</InputMode>
+	<AbilityTypeRang>Veteran</AbilityTypeRang>
+	<AutoSkillAvailable>True</AutoSkillAvailable>
+  </AbilityConfiguration>
+  <AbilityConfiguration id="exit_mech">
+    <TargetEnemies>False</TargetEnemies>
+    <TargetAllies>False</TargetAllies>
+    <FreeAiming>False</FreeAiming>
+    <ShowRangeIndicator>False</ShowRangeIndicator>
+  </AbilityConfiguration>
+  <AbilityConfiguration id="mannable">
+    <TargetEnemies>False</TargetEnemies>
+    <TargetAllies>False</TargetAllies>
+    <FreeAiming>False</FreeAiming>
+    <ShowRangeIndicator>False</ShowRangeIndicator>
+	  <AbilityTypeRang>HeroPassive</AbilityTypeRang>
+    <InputMode>None</InputMode>
+  </AbilityConfiguration>
+  <AbilityConfiguration id="technician">
+    <TargetEnemies>False</TargetEnemies>
+    <TargetAllies>False</TargetAllies>
+    <FreeAiming>False</FreeAiming>
+    <ShowRangeIndicator>False</ShowRangeIndicator>
+    <ShoutId>notify_technician</ShoutId>
+	<AbilityTypeRang>HeroPassive</AbilityTypeRang>
+  </AbilityConfiguration>
+  <AbilityConfiguration id="squad">
+    <TargetEnemies>False</TargetEnemies>
+    <TargetAllies>False</TargetAllies>
+    <FreeAiming>False</FreeAiming>
+    <ShowRangeIndicator>False</ShowRangeIndicator>
+	<AbilityTypeRang>HeroPassive</AbilityTypeRang>
+  </AbilityConfiguration>
+  <AbilityConfiguration id="alone">
+    <TargetEnemies>False</TargetEnemies>
+    <TargetAllies>False</TargetAllies>
+    <FreeAiming>False</FreeAiming>
+    <ShowRangeIndicator>False</ShowRangeIndicator>
+    <ShoutId>notify_alone</ShoutId>
+	<AbilityTypeRang>HeroPassive</AbilityTypeRang>
+  </AbilityConfiguration>
+  <AbilityConfiguration id="cavalrycharge">
+    <TargetEnemies>False</TargetEnemies>
+    <TargetAllies>False</TargetAllies>
+    <FreeAiming>False</FreeAiming>
+    <ShowRangeIndicator>False</ShowRangeIndicator>
+    <ShoutId>action_charge</ShoutId>
+	<AbilityTypeRang>Hero</AbilityTypeRang>
+	<AutoSkillAvailable>True</AutoSkillAvailable>
+  </AbilityConfiguration>
+  <AbilityConfiguration id="blade">
+      <TargetEnemies>True</TargetEnemies>
+    <TargetAllies>False</TargetAllies>
+    <FreeAiming>True</FreeAiming>
+    <ShowRangeIndicator>True</ShowRangeIndicator>
+    <InputMode>MeleeAbility</InputMode>
+    <ShoutId>action_piercingstab</ShoutId>
+    <AbilityTypeRang>Hero</AbilityTypeRang>
+	<AutoSkillAvailable>True</AutoSkillAvailable>
+  </AbilityConfiguration>
+  <AbilityConfiguration id="cry">
+    <TargetEnemies>False</TargetEnemies>
+    <TargetAllies>False</TargetAllies>
+    <FreeAiming>False</FreeAiming>
+    <ShowRangeIndicator>False</ShowRangeIndicator>
+	<AbilityTypeRang>Veteran</AbilityTypeRang>
+	<AutoSkillAvailable>True</AutoSkillAvailable>
+  </AbilityConfiguration>
+  <AbilityConfiguration id="liberation">
+    <TargetEnemies>False</TargetEnemies>
+    <TargetAllies>False</TargetAllies>
+    <FreeAiming>True</FreeAiming>
+    <ShowRangeIndicator>True</ShowRangeIndicator>
+	<AbilityTypeRang>Veteran</AbilityTypeRang>
+    <InputMode>RangeAttack</InputMode>
+	<AutoSkillAvailable>True</AutoSkillAvailable>
+  </AbilityConfiguration>
+  <AbilityConfiguration id="framing">
+    <TargetEnemies>False</TargetEnemies>
+    <TargetAllies>False</TargetAllies>
+    <FreeAiming>False</FreeAiming>
+    <ShowRangeIndicator>False</ShowRangeIndicator>
+	<AbilityTypeRang>Veteran</AbilityTypeRang>
+	<AutoSkillAvailable>True</AutoSkillAvailable>
+  </AbilityConfiguration>
+  <AbilityConfiguration id="reinforceBattle">
+    <TargetEnemies>False</TargetEnemies>
+    <TargetAllies>False</TargetAllies>
+    <FreeAiming>False</FreeAiming>
+    <ShowRangeIndicator>False</ShowRangeIndicator>
+	<AbilityTypeRang>Veteran</AbilityTypeRang>
+	<AutoSkillAvailable>True</AutoSkillAvailable>
+  </AbilityConfiguration>
+  <AbilityConfiguration id="charge">
+    <TargetEnemies>False</TargetEnemies>
+    <TargetAllies>False</TargetAllies>
+    <FreeAiming>True</FreeAiming>
+    <ShowRangeIndicator>True</ShowRangeIndicator>
+    <InputMode>ArcAttack</InputMode>
+	<AbilityTypeRang>Veteran</AbilityTypeRang>
+	<AutoSkillAvailable>True</AutoSkillAvailable>
+  </AbilityConfiguration>
+  <AbilityConfiguration id="disrupt">
+    <TargetEnemies>False</TargetEnemies>
+    <TargetAllies>False</TargetAllies>
+    <FreeAiming>False</FreeAiming>
+    <ShowRangeIndicator>False</ShowRangeIndicator>
+    <AbilityTypeRang>Veteran</AbilityTypeRang>
+  </AbilityConfiguration>
+  <AbilityConfiguration id="rage">
+    <TargetEnemies>False</TargetEnemies>
+    <TargetAllies>False</TargetAllies>
+    <FreeAiming>False</FreeAiming>
+    <ShowRangeIndicator>False</ShowRangeIndicator>
+    <AbilityTypeRang>HeroPassive</AbilityTypeRang>
+  </AbilityConfiguration>
+  <AbilityConfiguration id="leader">
+    <TargetEnemies>False</TargetEnemies>
+    <TargetAllies>False</TargetAllies>
+    <FreeAiming>False</FreeAiming>
+    <ShowRangeIndicator>False</ShowRangeIndicator>
+    <AbilityTypeRang>HeroPassive</AbilityTypeRang>
+  </AbilityConfiguration>
+  <AbilityConfiguration id="double">
+    <TargetEnemies>False</TargetEnemies>
+    <TargetAllies>False</TargetAllies>
+    <FreeAiming>True</FreeAiming>
+    <ShowRangeIndicator>True</ShowRangeIndicator>
+    <InputMode>ArcAttack</InputMode>
+    <ShoutId>action_double</ShoutId>
+	<AbilityTypeRang>Veteran</AbilityTypeRang>
+	<AutoSkillAvailable>True</AutoSkillAvailable>
+  </AbilityConfiguration>
+  <AbilityConfiguration id="approachUp">
+    <TargetEnemies>False</TargetEnemies>
+    <TargetAllies>False</TargetAllies>
+    <FreeAiming>false</FreeAiming>
+    <ShowRangeIndicator>False</ShowRangeIndicator>
+	  <AutoSkillAvailable>False</AutoSkillAvailable>
+    <ShoutId>action_veteran</ShoutId>
+  </AbilityConfiguration>
+  <AbilityConfiguration id="approachDown">
+    <TargetEnemies>False</TargetEnemies>
+    <TargetAllies>False</TargetAllies>
+    <FreeAiming>false</FreeAiming>
+    <ShowRangeIndicator>False</ShowRangeIndicator>
+	  <AutoSkillAvailable>False</AutoSkillAvailable>
+    <ShoutId>veteran_toggle</ShoutId>
+  </AbilityConfiguration>
+</Abilities>

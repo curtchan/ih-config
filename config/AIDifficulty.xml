@@ -1,0 +1,1282 @@
+<AIDifficulties>
+<AIDifficulty id="easy" type="easy">
+    <Type>Easy</Type>
+    <UpdateSpeed>4</UpdateSpeed> <!--Seconds - How often the AI evaluates which tasks to execute. Lower value means the AI will make decisions more often.-->
+    <MaxTasksPerUpdate>3</MaxTasksPerUpdate> <!--How many tasks the AI executes per update. Higher value means more tasks are executed simultaneously.-->
+	<ErrorMargin>60</ErrorMargin> <!--How high is the possibility that the AI makes a mistake choosing the right unit for the task 0 - 100%-->
+	
+	<!-- ConquerStructures -->
+	<ConquerStructuresSettings>
+		<MaxOngoingTasks>1</MaxOngoingTasks> <!--How many tasks of this type are allowed simultaneously-->
+		<CooldownAdvance>180</CooldownAdvance> <!--Seconds - How long after a finished task until the next task is considered in case of Forward Movement (Attack)-->
+		<CooldownSustain>120</CooldownSustain> <!--Seconds - How long after a finished task until the next task is considered in case of Sustain Position (Defend)-->
+		<MinPassedTime>180</MinPassedTime> <!--Seconds - How much time has to pass before the AI considers tackling the task-->
+		<MinVictoryPoints>0</MinVictoryPoints> <!--Percent - How close has one team to be to winning the game before the AI considers tackling the task-->
+		<MinSuperiority>0.5</MinSuperiority> <!-- The min forces-superiority necessary to tackle the task-->
+		<MaxSuperiority>1.5</MaxSuperiority> <!-- The max forces-superiority considered to tackle the task-->
+		<CommitmentTime>45</CommitmentTime> <!--Seconds - How long the TaskForce is defending at the recently fulfilled task area. Higher value slows down the AI since the have longer breaks between task-->
+		<DangerLevelIncrease>100</DangerLevelIncrease> <!--The danger level increase for a POI if a previous task failed 100 means that the appeal for this poi is almost 0 and unit-superiority has to be twice the normal value-->
+		<DangerLevelCooldown>120</DangerLevelCooldown> <!--Seconds - How long until the danger level is reduced incrementally-->
+	</ConquerStructuresSettings>
+	
+	<!-- ControlAreas -->
+	<ControlAreasSettings>
+		<MaxOngoingTasks>1</MaxOngoingTasks> <!--How many tasks of this type are allowed simultaneously-->
+		<CooldownAdvance>120</CooldownAdvance> <!--Seconds - How long after a finished task until the next task is considered in case of Forward Movement (Attack)-->
+		<CooldownSustain>120</CooldownSustain> <!--Seconds - How long after a finished task until the next task is considered in case of Sustain Position (Defend)-->
+		<MinPassedTime>120</MinPassedTime> <!--Seconds - How much time has to pass before the AI considers tackling the task-->
+		<MinVictoryPoints>0</MinVictoryPoints> <!--Percent - How close has one team to be to winning the game before the AI considers tackling the task-->
+		<MinSuperiority>1.0</MinSuperiority> <!-- The min forces-superiority necessary to tackle the task-->
+		<MaxSuperiority>1.5</MaxSuperiority> <!-- The max forces-superiority considered to tackle the task-->
+		<CommitmentTime>45</CommitmentTime> <!--Seconds - How long the TaskForce is defending at the recently fulfilled task area. Higher value slows down the AI since the have longer breaks between task-->
+		<DangerLevelIncrease>100</DangerLevelIncrease> <!--The danger level increase for a POI if a previous task failed 100 means that the appeal for this poi is almost 0 and unit-superiority has to be twice the normal value-->
+		<DangerLevelCooldown>120</DangerLevelCooldown> <!--Seconds - How long until the danger level is reduced incrementally-->
+	</ControlAreasSettings>
+	
+	<!-- ControlDropZones -->
+	<ControlDropZoneSettings>
+		<MaxOngoingTasks>1</MaxOngoingTasks> <!--How many tasks of this type are allowed simultaneously-->
+		<CooldownAdvance>120</CooldownAdvance> <!--Seconds - How long after a finished task until the next task is considered in case of Forward Movement (Attack)-->
+		<CooldownSustain>120</CooldownSustain> <!--Seconds - How long after a finished task until the next task is considered in case of Sustain Position (Defend)-->
+		<MinPassedTime>120</MinPassedTime> <!--Seconds - How much time has to pass before the AI considers tackling the task-->
+		<MinVictoryPoints>0</MinVictoryPoints> <!--Percent - How close has one team to be to winning the game before the AI considers tackling the task-->
+		<MinSuperiority>1.0</MinSuperiority> <!-- The min forces-superiority necessary to tackle the task-->
+		<MaxSuperiority>1.5</MaxSuperiority> <!-- The max forces-superiority considered to tackle the task-->
+		<CommitmentTime>45</CommitmentTime> <!--Seconds - How long the TaskForce is defending at the recently fulfilled task area. Higher value slows down the AI since the have longer breaks between task-->
+		<DangerLevelIncrease>100</DangerLevelIncrease> <!--The danger level increase for a POI if a previous task failed 100 means that the appeal for this poi is almost 0 and unit-superiority has to be twice the normal value-->
+		<DangerLevelCooldown>120</DangerLevelCooldown> <!--Seconds - How long until the danger level is reduced incrementally-->
+	</ControlDropZoneSettings>
+
+	<!-- AttackBases -->
+	<AttackBasesSettings>
+		<MaxOngoingTasks>0</MaxOngoingTasks> <!--How many tasks of this type are allowed simultaneously-->
+		<CooldownAdvance>240</CooldownAdvance> <!--Seconds - How long after a finished task until the next task is considered in case of Forward Movement (Attack)-->
+		<CooldownSustain>240</CooldownSustain> <!--Seconds - How long after a finished task until the next task is considered in case of Sustain Position (Defend)-->
+		<MinPassedTime>600</MinPassedTime> <!--Seconds - How much time has to pass before the AI considers tackling the task-->
+		<MinVictoryPoints>85</MinVictoryPoints> <!--Percent - How close has one team to be to winning the game before the AI considers tackling the task-->
+		<MinSuperiority>0.1</MinSuperiority> <!-- The min forces-superiority necessary to tackle the task-->
+		<MaxSuperiority>1.5</MaxSuperiority> <!-- The max forces-superiority considered to tackle the task-->
+		<CommitmentTime>45</CommitmentTime> <!--Seconds - How long the TaskForce is defending at the recently fulfilled task area. Higher value slows down the AI since the have longer breaks between task-->
+		<DangerLevelIncrease>100</DangerLevelIncrease> <!--The danger level increase for a POI if a previous task failed 100 means that the appeal for this poi is almost 0 and unit-superiority has to be twice the normal value-->
+		<DangerLevelCooldown>120</DangerLevelCooldown> <!--Seconds - How long until the danger level is reduced incrementally-->
+	</AttackBasesSettings>
+	
+	<!-- AttackForces -->
+	<AttackForcesSettings>
+		<MaxOngoingTasks>1</MaxOngoingTasks> <!--How many tasks of this type are allowed simultaneously-->
+		<CooldownAdvance>120</CooldownAdvance> <!--Seconds - How long after a finished task until the next task is considered in case of Forward Movement (Attack)-->
+		<CooldownSustain>120</CooldownSustain> <!--Seconds - How long after a finished task until the next task is considered in case of Sustain Position (Defend)-->
+		<MinPassedTime>380</MinPassedTime> <!--Seconds - How much time has to pass before the AI considers tackling the task-->
+		<MinVictoryPoints>0</MinVictoryPoints> <!--Percent - How close has one team to be to winning the game before the AI considers tackling the task-->
+		<MinSuperiority>0.5</MinSuperiority> <!-- The min forces-superiority necessary to tackle the task-->
+		<MaxSuperiority>1.0</MaxSuperiority> <!-- The max forces-superiority considered to tackle the task-->
+		<CommitmentTime>45</CommitmentTime> <!--Seconds - How long the TaskForce is defending at the recently fulfilled task area. Higher value slows down the AI since the have longer breaks between task-->
+		<DangerLevelIncrease>100</DangerLevelIncrease> <!--The danger level increase for a POI if a previous task failed 100 means that the appeal for this poi is almost 0 and unit-superiority has to be twice the normal value-->
+		<DangerLevelCooldown>120</DangerLevelCooldown> <!--Seconds - How long until the danger level is reduced incrementally-->
+	</AttackForcesSettings>
+	
+	<!-- DefendBases -->
+	<DefendBasesSettings>
+		<MaxOngoingTasks>3</MaxOngoingTasks> <!--How many tasks of this type are allowed simultaneously-->
+		<CooldownAdvance>60</CooldownAdvance> <!--Seconds - How long after a finished task until the next task is considered in case of Forward Movement (Attack)-->
+		<CooldownSustain>10</CooldownSustain> <!--Seconds - How long after a finished task until the next task is considered in case of Sustain Position (Defend)-->
+		<MinPassedTime>60</MinPassedTime> <!--Seconds - How much time has to pass before the AI considers tackling the task-->
+		<MinVictoryPoints>0</MinVictoryPoints> <!--Percent - How close has one team to be to winning the game before the AI considers tackling the task-->
+		<MinSuperiority>0.1</MinSuperiority> <!-- The min forces-superiority necessary to tackle the task-->
+		<MaxSuperiority>1.5</MaxSuperiority> <!-- The max forces-superiority considered to tackle the task-->
+		<CommitmentTime>45</CommitmentTime> <!--Seconds - How long the TaskForce is defending at the recently fulfilled task area. Higher value slows down the AI since the have longer breaks between task-->
+		<DangerLevelIncrease>100</DangerLevelIncrease> <!--The danger level increase for a POI if a previous task failed 100 means that the appeal for this poi is almost 0 and unit-superiority has to be twice the normal value-->
+		<DangerLevelCooldown>120</DangerLevelCooldown> <!--Seconds - How long until the danger level is reduced incrementally-->
+	</DefendBasesSettings>
+	
+	<!-- DefendAssets -->
+	<DefendAssetsSettings>
+		<MaxOngoingTasks>2</MaxOngoingTasks> <!--How many tasks of this type are allowed simultaneously-->
+		<CooldownAdvance>120</CooldownAdvance> <!--Seconds - How long after a finished task until the next task is considered in case of Forward Movement (Attack)-->
+		<CooldownSustain>60</CooldownSustain> <!--Seconds - How long after a finished task until the next task is considered in case of Sustain Position (Defend)-->
+		<MinPassedTime>0</MinPassedTime> <!--Seconds - How much time has to pass before the AI considers tackling the task-->
+		<MinVictoryPoints>0</MinVictoryPoints> <!--Percent - How close has one team to be to winning the game before the AI considers tackling the task-->
+		<MinSuperiority>0.1</MinSuperiority> <!-- The min forces-superiority necessary to tackle the task-->
+		<MaxSuperiority>1.5</MaxSuperiority> <!-- The max forces-superiority considered to tackle the task-->
+		<CommitmentTime>45</CommitmentTime> <!--Seconds - How long the TaskForce is defending at the recently fulfilled task area. Higher value slows down the AI since the have longer breaks between task-->
+		<DangerLevelIncrease>100</DangerLevelIncrease> <!--The danger level increase for a POI if a previous task failed 100 means that the appeal for this poi is almost 0 and unit-superiority has to be twice the normal value-->
+		<DangerLevelCooldown>120</DangerLevelCooldown> <!--Seconds - How long until the danger level is reduced incrementally-->
+	</DefendAssetsSettings>
+	
+	<!-- GuardOwned -->
+	<GuardSettings>
+		<MaxOngoingTasks>3</MaxOngoingTasks> <!--How many tasks of this type are allowed simultaneously-->
+		<CooldownAdvance>120</CooldownAdvance> <!--Seconds - How long after a finished task until the next task is considered in case of Forward Movement (Attack)-->
+		<CooldownSustain>60</CooldownSustain> <!--Seconds - How long after a finished task until the next task is considered in case of Sustain Position (Defend)-->
+		<MinPassedTime>0</MinPassedTime> <!--Seconds - How much time has to pass before the AI considers tackling the task-->
+		<MinVictoryPoints>0</MinVictoryPoints> <!--Percent - How close has one team to be to winning the game before the AI considers tackling the task-->
+		<MinSuperiority>0.1</MinSuperiority> <!-- The min forces-superiority necessary to tackle the task-->
+		<MaxSuperiority>1.5</MaxSuperiority> <!-- The max forces-superiority considered to tackle the task-->
+		<CommitmentTime>45</CommitmentTime> <!--Seconds - How long the TaskForce is defending at the recently fulfilled task area. Higher value slows down the AI since the have longer breaks between task-->
+		<DangerLevelIncrease>100</DangerLevelIncrease> <!--The danger level increase for a POI if a previous task failed 100 means that the appeal for this poi is almost 0 and unit-superiority has to be twice the normal value-->
+		<DangerLevelCooldown>120</DangerLevelCooldown> <!--Seconds - How long until the danger level is reduced incrementally-->
+	</GuardSettings>
+	
+	<!-- Rally -->
+	<RallySettings>
+		<MaxOngoingTasks>1</MaxOngoingTasks> <!--How many tasks of this type are allowed simultaneously-->
+		<CooldownAdvance>120</CooldownAdvance> <!--Seconds - How long after a finished task until the next task is considered in case of Forward Movement (Attack)-->
+		<CooldownSustain>60</CooldownSustain> <!--Seconds - How long after a finished task until the next task is considered in case of Sustain Position (Defend)-->
+		<MinPassedTime>0</MinPassedTime> <!--Seconds - How much time has to pass before the AI considers tackling the task-->
+		<MinVictoryPoints>0</MinVictoryPoints> <!--Percent - How close has one team to be to winning the game before the AI considers tackling the task-->
+		<MinSuperiority>1.0</MinSuperiority> <!-- The min forces-superiority necessary to tackle the task-->
+		<MaxSuperiority>1.5</MaxSuperiority> <!-- The max forces-superiority considered to tackle the task-->
+		<CommitmentTime>45</CommitmentTime> <!--Seconds - How long the TaskForce is defending at the recently fulfilled task area. Higher value slows down the AI since the have longer breaks between task-->
+		<DangerLevelIncrease>100</DangerLevelIncrease> <!--The danger level increase for a POI if a previous task failed 100 means that the appeal for this poi is almost 0 and unit-superiority has to be twice the normal value-->
+		<DangerLevelCooldown>120</DangerLevelCooldown> <!--Seconds - How long until the danger level is reduced incrementally-->
+	</RallySettings>
+	
+	<!-- CollectResources -->
+	<CollectResourcesSettings>
+		<MaxOngoingTasks>2</MaxOngoingTasks> <!--How many tasks of this type are allowed simultaneously-->
+		<CooldownAdvance>180</CooldownAdvance> <!--Seconds - How long after a finished task until the next task is considered in case of Forward Movement (Attack)-->
+		<CooldownSustain>180</CooldownSustain> <!--Seconds - How long after a finished task until the next task is considered in case of Sustain Position (Defend)-->
+		<MinPassedTime>60</MinPassedTime> <!--Seconds - How much time has to pass before the AI considers tackling the task-->
+		<MinVictoryPoints>0</MinVictoryPoints> <!--Percent - How close has one team to be to winning the game before the AI considers tackling the task-->
+		<MinSuperiority>0.1</MinSuperiority> <!-- The min forces-superiority necessary to tackle the task-->
+		<MaxSuperiority>0.8</MaxSuperiority> <!-- The max forces-superiority considered to tackle the task-->
+		<CommitmentTime>45</CommitmentTime> <!--Seconds - How long the TaskForce is defending at the recently fulfilled task area. Higher value slows down the AI since the have longer breaks between task-->
+		<DangerLevelIncrease>100</DangerLevelIncrease> <!--The danger level increase for a POI if a previous task failed 100 means that the appeal for this poi is almost 0 and unit-superiority has to be twice the normal value-->
+		<DangerLevelCooldown>120</DangerLevelCooldown> <!--Seconds - How long until the danger level is reduced incrementally-->
+	</CollectResourcesSettings>
+	
+	<!-- ConquerWeaponSystems -->
+	<ConquerWeaponSystemsSettings>
+		<MaxOngoingTasks>1</MaxOngoingTasks> <!--How many tasks of this type are allowed simultaneously-->
+		<CooldownAdvance>300</CooldownAdvance> <!--Seconds - How long after a finished task until the next task is considered in case of Forward Movement (Attack)-->
+		<CooldownSustain>300</CooldownSustain> <!--Seconds - How long after a finished task until the next task is considered in case of Sustain Position (Defend)-->
+		<MinPassedTime>300</MinPassedTime> <!--Seconds - How much time has to pass before the AI considers tackling the task-->
+		<MinVictoryPoints>0</MinVictoryPoints> <!--Percent - How close has one team to be to winning the game before the AI considers tackling the task-->
+		<MinSuperiority>1.0</MinSuperiority> <!-- The min forces-superiority necessary to tackle the task-->
+		<MaxSuperiority>1.0</MaxSuperiority> <!-- The max forces-superiority considered to tackle the task-->
+		<CommitmentTime>45</CommitmentTime> <!--Seconds - How long the TaskForce is defending at the recently fulfilled task area. Higher value slows down the AI since the have longer breaks between task-->
+		<DangerLevelIncrease>100</DangerLevelIncrease> <!--The danger level increase for a POI if a previous task failed 100 means that the appeal for this poi is almost 0 and unit-superiority has to be twice the normal value-->
+		<DangerLevelCooldown>120</DangerLevelCooldown> <!--Seconds - How long until the danger level is reduced incrementally-->
+	</ConquerWeaponSystemsSettings>
+	
+	<!-- ChangeEquipment -->
+	<ChangeEquipmentSettings>
+		<MaxOngoingTasks>0</MaxOngoingTasks> <!--How many tasks of this type are allowed simultaneously-->
+		<CooldownAdvance>300</CooldownAdvance> <!--Seconds - How long after a finished task until the next task is considered in case of Forward Movement (Attack)-->
+		<CooldownSustain>300</CooldownSustain> <!--Seconds - How long after a finished task until the next task is considered in case of Sustain Position (Defend)-->
+		<MinPassedTime>300</MinPassedTime> <!--Seconds - How much time has to pass before the AI considers tackling the task-->
+		<MinVictoryPoints>0</MinVictoryPoints> <!--Percent - How close has one team to be to winning the game before the AI considers tackling the task-->
+		<MinSuperiority>1.0</MinSuperiority> <!-- The min forces-superiority necessary to tackle the task-->
+		<MaxSuperiority>1.0</MaxSuperiority> <!-- The max forces-superiority considered to tackle the task-->
+		<CommitmentTime>45</CommitmentTime> <!--Seconds - How long the TaskForce is defending at the recently fulfilled task area. Higher value slows down the AI since the have longer breaks between task-->
+		<DangerLevelIncrease>100</DangerLevelIncrease> <!--The danger level increase for a POI if a previous task failed 100 means that the appeal for this poi is almost 0 and unit-superiority has to be twice the normal value-->
+		<DangerLevelCooldown>120</DangerLevelCooldown> <!--Seconds - How long until the danger level is reduced incrementally-->
+	</ChangeEquipmentSettings>
+	
+	<!-- ProduceUnits -->
+	<ProduceUnitSettings>
+		<MaxOngoingTasks>2</MaxOngoingTasks> <!--How many tasks of this type are allowed simultaneously-->
+		<CooldownAdvance>180</CooldownAdvance> <!--Seconds - How long after a finished task until the next task is considered in case of Forward Movement (Attack)-->
+		<CooldownSustain>180</CooldownSustain> <!--Seconds - How long after a finished task until the next task is considered in case of Sustain Position (Defend)-->
+		<MinPassedTime>180</MinPassedTime> <!--Seconds - How much time has to pass before the AI considers tackling the task-->
+		<MinVictoryPoints>0</MinVictoryPoints> <!--Percent - How close has one team to be to winning the game before the AI considers tackling the task-->
+		<MinSuperiority>0.1</MinSuperiority> <!-- The min forces-superiority necessary to tackle the task-->
+		<MaxSuperiority>1.5</MaxSuperiority> <!-- The max forces-superiority considered to tackle the task-->
+		<CommitmentTime>45</CommitmentTime> <!--Seconds - How long the TaskForce is defending at the recently fulfilled task area. Higher value slows down the AI since the have longer breaks between task-->
+		<DangerLevelIncrease>100</DangerLevelIncrease> <!--The danger level increase for a POI if a previous task failed 100 means that the appeal for this poi is almost 0 and unit-superiority has to be twice the normal value-->
+		<DangerLevelCooldown>120</DangerLevelCooldown> <!--Seconds - How long until the danger level is reduced incrementally-->
+		<MaxWaitingTimeExpansion>120</MaxWaitingTimeExpansion> <!--Seconds - Max Waiting Time for the necessary resources to be gathered to produce a unit that is not affordable at the moment-->
+		<MaxWaitingTimeAttack>120</MaxWaitingTimeAttack> <!--Seconds - Max Waiting Time for the necessary resources to be gathered to produce a unit that is not affordable at the moment-->
+		<MaxWaitingTimeDefend>60</MaxWaitingTimeDefend> <!--Seconds - Max Waiting Time for the necessary resources to be gathered to produce a unit that is not affordable at the moment-->
+	</ProduceUnitSettings>
+	
+	<!-- ConstructStructures -->
+	<ConstructStructuresSettings>
+		<MaxOngoingTasks>1</MaxOngoingTasks> <!--How many tasks of this type are allowed simultaneously-->
+		<CooldownAdvance>240</CooldownAdvance> <!--Seconds - How long after a finished task until the next task is considered in case of Forward Movement (Attack)-->
+		<CooldownSustain>240</CooldownSustain> <!--Seconds - How long after a finished task until the next task is considered in case of Sustain Position (Defend)-->
+		<MinPassedTime>240</MinPassedTime> <!--Seconds - How much time has to pass before the AI considers tackling the task-->
+		<MinVictoryPoints>0</MinVictoryPoints> <!--Percent - How close has one team to be to winning the game before the AI considers tackling the task-->
+		<MinSuperiority>1.0</MinSuperiority> <!-- The min forces-superiority necessary to tackle the task-->
+		<MaxSuperiority>1.0</MaxSuperiority> <!-- The max forces-superiority considered to tackle the task-->
+		<CommitmentTime>45</CommitmentTime> <!--Seconds - How long the TaskForce is defending at the recently fulfilled task area. Higher value slows down the AI since the have longer breaks between task-->
+		<DangerLevelIncrease>100</DangerLevelIncrease> <!--The danger level increase for a POI if a previous task failed 100 means that the appeal for this poi is almost 0 and unit-superiority has to be twice the normal value-->
+		<DangerLevelCooldown>120</DangerLevelCooldown> <!--Seconds - How long until the danger level is reduced incrementally-->
+		<MaxWaitingTimeExpansion>120</MaxWaitingTimeExpansion> <!--Seconds - Max Waiting Time for the necessary resources to be gathered to build a structure that is not affordable at the moment-->
+		<MaxWaitingTimeAttack>120</MaxWaitingTimeAttack> <!--Seconds - Max Waiting Time for the necessary resources to be gathered to build a structure that is not affordable at the moment-->
+		<MaxWaitingTimeDefend>60</MaxWaitingTimeDefend> <!--Seconds - Max Waiting Time for the necessary resources to be gathered to build a structure that is not affordable at the moment-->
+	</ConstructStructuresSettings>
+	
+	<!-- UpgradeStructures -->
+	<UpgradeStructuresSettings>
+		<MaxOngoingTasks>1</MaxOngoingTasks> <!--How many tasks of this type are allowed simultaneously-->
+		<CooldownAdvance>360</CooldownAdvance> <!--Seconds - How long after a finished task until the next task is considered in case of Forward Movement (Attack)-->
+		<CooldownSustain>360</CooldownSustain> <!--Seconds - How long after a finished task until the next task is considered in case of Sustain Position (Defend)-->
+		<MinPassedTime>480</MinPassedTime> <!--Seconds - How much time has to pass before the AI considers tackling the task-->
+		<MinVictoryPoints>0</MinVictoryPoints> <!--Percent - How close has one team to be to winning the game before the AI considers tackling the task-->
+		<MinSuperiority>1.0</MinSuperiority> <!-- The min forces-superiority necessary to tackle the task-->
+		<MaxSuperiority>1.5</MaxSuperiority> <!-- The max forces-superiority considered to tackle the task-->
+		<CommitmentTime>45</CommitmentTime> <!--Seconds - How long the TaskForce is defending at the recently fulfilled task area. Higher value slows down the AI since the have longer breaks between task-->
+		<DangerLevelIncrease>100</DangerLevelIncrease> <!--The danger level increase for a POI if a previous task failed 100 means that the appeal for this poi is almost 0 and unit-superiority has to be twice the normal value-->
+		<DangerLevelCooldown>120</DangerLevelCooldown> <!--Seconds - How long until the danger level is reduced incrementally-->
+		<MaxWaitingTimeExpansion>120</MaxWaitingTimeExpansion> <!--Seconds - Max Waiting Time for the necessary resources to be gathered to upgrade a structure that is not affordable at the moment-->
+		<MaxWaitingTimeAttack>120</MaxWaitingTimeAttack> <!--Seconds - Max Waiting Time for the necessary resources to be gathered to upgrade a structure that is not affordable at the moment-->
+		<MaxWaitingTimeDefend>120</MaxWaitingTimeDefend> <!--Seconds - Max Waiting Time for the necessary resources to be gathered to upgrade a structure that is not affordable at the moment-->
+		<MaxResourceBuildings>0</MaxResourceBuildings> <!--How many resource buildings are allowed to be upgraded to the max-->
+	</UpgradeStructuresSettings>
+	
+	<!-- ReinforceTasks -->
+	<ReinforceSettings>
+		<MaxOngoingTasks>1</MaxOngoingTasks> <!--How many tasks of this type are allowed simultaneously-->
+		<CooldownAdvance>180</CooldownAdvance> <!--Seconds - How long after a finished task until the next task is considered in case of Forward Movement (Attack)-->
+		<CooldownSustain>180</CooldownSustain> <!--Seconds - How long after a finished task until the next task is considered in case of Sustain Position (Defend)-->
+		<MinPassedTime>360</MinPassedTime> <!--Seconds - How much time has to pass before the AI considers tackling the task-->
+		<MinVictoryPoints>0</MinVictoryPoints> <!--Percent - How close has one team to be to winning the game before the AI considers tackling the task-->
+		<MinSuperiority>0.1</MinSuperiority> <!-- The min forces-superiority necessary to tackle the task-->
+		<MaxSuperiority>1.5</MaxSuperiority> <!-- The max forces-superiority considered to tackle the task-->
+		<CommitmentTime>45</CommitmentTime> <!--Seconds - How long the TaskForce is defending at the recently fulfilled task area. Higher value slows down the AI since the have longer breaks between task-->
+		<DangerLevelIncrease>100</DangerLevelIncrease> <!--The danger level increase for a POI if a previous task failed 100 means that the appeal for this poi is almost 0 and unit-superiority has to be twice the normal value-->
+		<DangerLevelCooldown>120</DangerLevelCooldown> <!--Seconds - How long until the danger level is reduced incrementally-->
+		<MinHealth>35</MinHealth> <!--Percent - At what health percentage (in relation to the newly started task) are we considering to reinforcing a task-->
+	</ReinforceSettings>
+
+	<!-- RetreatFromTasks -->
+	<RetreatSettings>
+		<MaxOngoingTasks>1</MaxOngoingTasks> <!--How many tasks of this type are allowed simultaneously-->
+		<CooldownAdvance>10</CooldownAdvance> <!--Seconds - How long after a finished task until the next task is considered in case of Forward Movement (Attack)-->
+		<CooldownSustain>10</CooldownSustain> <!--Seconds - How long after a finished task until the next task is considered in case of Sustain Position (Defend)-->
+		<MinPassedTime>0</MinPassedTime> <!--Seconds - How much time has to pass before the AI considers tackling the task-->
+		<MinVictoryPoints>0</MinVictoryPoints> <!--Percent - How close has one team to be to winning the game before the AI considers tackling the task-->
+		<MinSuperiority>0.1</MinSuperiority> <!-- The min forces-superiority necessary to tackle the task-->
+		<MaxSuperiority>1.5</MaxSuperiority> <!-- The max forces-superiority considered to tackle the task-->
+		<CommitmentTime>45</CommitmentTime> <!--Seconds - How long the TaskForce is defending at the recently fulfilled task area. Higher value slows down the AI since the have longer breaks between task-->
+		<DangerLevelIncrease>100</DangerLevelIncrease> <!--The danger level increase for a POI if a previous task failed 100 means that the appeal for this poi is almost 0 and unit-superiority has to be twice the normal value-->
+		<DangerLevelCooldown>120</DangerLevelCooldown> <!--Seconds - How long until the danger level is reduced incrementally-->
+		<MinHealth>45</MinHealth> <!--Percent - At what health percentage (in relation to the newly started task) are we considering to retreat units from a task-->
+	</RetreatSettings>
+  </AIDifficulty>
+  <AIDifficulty id="medium" type="medium">
+    <Type>Medium</Type>
+    <UpdateSpeed>2</UpdateSpeed> <!-- Seconds - How often the AI evaluates which tasks to execute. Lower value means the AI will make decisions more often -->
+    <MaxTasksPerUpdate>30</MaxTasksPerUpdate> <!-- How many tasks the AI executes per update. Higher value means more tasks are executed simultaneously -->
+	<ErrorMargin>30</ErrorMargin> <!--How high is the possibility that the AI makes a mistake choosing the right unit for the task 0 - 100%-->
+	
+	<!-- ConquerStructures -->
+	<ConquerStructuresSettings>
+		<MaxOngoingTasks>6</MaxOngoingTasks> <!--How many tasks of this type are allowed simultaneously-->
+		<CooldownAdvance>90</CooldownAdvance> <!--Seconds - How long after a finished task until the next task is considered in case of Forward Movement (Attack)-->
+		<CooldownSustain>90</CooldownSustain> <!--Seconds - How long after a finished task until the next task is considered in case of Sustain Position (Defend)-->
+		<MinPassedTime>90</MinPassedTime> <!--Seconds - How much time has to pass before the AI considers tackling the task-->
+		<MinVictoryPoints>0</MinVictoryPoints> <!--Percent - How close has one team to be to winning the game before the AI considers tackling the task-->
+		<MinSuperiority>1.0</MinSuperiority> <!-- The min forces-superiority necessary to tackle the task-->
+		<MaxSuperiority>3.0</MaxSuperiority> <!-- The max forces-superiority considered to tackle the task-->
+		<CommitmentTime>12</CommitmentTime> <!--Seconds - How long the TaskForce is defending at the recently fulfilled task area. Higher value slows down the AI since the have longer breaks between task-->
+		<DangerLevelIncrease>100</DangerLevelIncrease> <!--The danger level increase for a POI if a previous task failed 100 means that the appeal for this poi is almost 0 and unit-superiority has to be twice the normal value-->
+		<DangerLevelCooldown>120</DangerLevelCooldown> <!--Seconds - How long until the danger level is reduced incrementally-->
+	</ConquerStructuresSettings>
+	
+	<!-- ControlAreas -->
+	<ControlAreasSettings>
+		<MaxOngoingTasks>6</MaxOngoingTasks> <!--How many tasks of this type are allowed simultaneously-->
+		<CooldownAdvance>60</CooldownAdvance> <!--Seconds - How long after a finished task until the next task is considered in case of Forward Movement (Attack)-->
+		<CooldownSustain>60</CooldownSustain> <!--Seconds - How long after a finished task until the next task is considered in case of Sustain Position (Defend)-->
+		<MinPassedTime>60</MinPassedTime> <!--Seconds - How much time has to pass before the AI considers tackling the task-->
+		<MinVictoryPoints>0</MinVictoryPoints> <!--Percent - How close has one team to be to winning the game before the AI considers tackling the task-->
+		<MinSuperiority>0.5</MinSuperiority> <!-- The min forces-superiority necessary to tackle the task-->
+		<MaxSuperiority>3.0</MaxSuperiority> <!-- The max forces-superiority considered to tackle the task-->
+		<CommitmentTime>12</CommitmentTime> <!--Seconds - How long the TaskForce is defending at the recently fulfilled task area. Higher value slows down the AI since the have longer breaks between task-->
+		<DangerLevelIncrease>100</DangerLevelIncrease> <!--The danger level increase for a POI if a previous task failed 100 means that the appeal for this poi is almost 0 and unit-superiority has to be twice the normal value-->
+		<DangerLevelCooldown>120</DangerLevelCooldown> <!--Seconds - How long until the danger level is reduced incrementally-->
+	</ControlAreasSettings>
+	
+	<!-- ControlDropZones -->
+	<ControlDropZoneSettings>
+		<MaxOngoingTasks>2</MaxOngoingTasks> <!--How many tasks of this type are allowed simultaneously-->
+		<CooldownAdvance>30</CooldownAdvance> <!--Seconds - How long after a finished task until the next task is considered in case of Forward Movement (Attack)-->
+		<CooldownSustain>30</CooldownSustain> <!--Seconds - How long after a finished task until the next task is considered in case of Sustain Position (Defend)-->
+		<MinPassedTime>60</MinPassedTime> <!--Seconds - How much time has to pass before the AI considers tackling the task-->
+		<MinVictoryPoints>0</MinVictoryPoints> <!--Percent - How close has one team to be to winning the game before the AI considers tackling the task-->
+		<MinSuperiority>1.0</MinSuperiority> <!-- The min forces-superiority necessary to tackle the task-->
+		<MaxSuperiority>1.5</MaxSuperiority> <!-- The max forces-superiority considered to tackle the task-->
+		<CommitmentTime>12</CommitmentTime> <!--Seconds - How long the TaskForce is defending at the recently fulfilled task area. Higher value slows down the AI since the have longer breaks between task-->
+		<DangerLevelIncrease>100</DangerLevelIncrease> <!--The danger level increase for a POI if a previous task failed 100 means that the appeal for this poi is almost 0 and unit-superiority has to be twice the normal value-->
+		<DangerLevelCooldown>120</DangerLevelCooldown> <!--Seconds - How long until the danger level is reduced incrementally-->
+	</ControlDropZoneSettings>
+
+	<!-- AttackBases -->
+	<AttackBasesSettings>
+		<MaxOngoingTasks>6</MaxOngoingTasks> <!--How many tasks of this type are allowed simultaneously-->
+		<CooldownAdvance>120</CooldownAdvance> <!--Seconds - How long after a finished task until the next task is considered in case of Forward Movement (Attack)-->
+		<CooldownSustain>120</CooldownSustain> <!--Seconds - How long after a finished task until the next task is considered in case of Sustain Position (Defend)-->
+		<MinPassedTime>420</MinPassedTime> <!--Seconds - How much time has to pass before the AI considers tackling the task-->
+		<MinVictoryPoints>70</MinVictoryPoints> <!--Percent - How close has one team to be to winning the game before the AI considers tackling the task-->
+		<MinSuperiority>1.0</MinSuperiority> <!-- The min forces-superiority necessary to tackle the task-->
+		<MaxSuperiority>3.0</MaxSuperiority> <!-- The max forces-superiority considered to tackle the task-->
+		<CommitmentTime>12</CommitmentTime> <!--Seconds - How long the TaskForce is defending at the recently fulfilled task area. Higher value slows down the AI since the have longer breaks between task-->
+		<DangerLevelIncrease>100</DangerLevelIncrease> <!--The danger level increase for a POI if a previous task failed 100 means that the appeal for this poi is almost 0 and unit-superiority has to be twice the normal value-->
+		<DangerLevelCooldown>120</DangerLevelCooldown> <!--Seconds - How long until the danger level is reduced incrementally-->
+	</AttackBasesSettings>
+	
+	<!-- AttackForces -->
+	<AttackForcesSettings>
+		<MaxOngoingTasks>6</MaxOngoingTasks> <!--How many tasks of this type are allowed simultaneously-->
+		<CooldownAdvance>60</CooldownAdvance> <!--Seconds - How long after a finished task until the next task is considered in case of Forward Movement (Attack)-->
+		<CooldownSustain>60</CooldownSustain> <!--Seconds - How long after a finished task until the next task is considered in case of Sustain Position (Defend)-->
+		<MinPassedTime>120</MinPassedTime> <!--Seconds - How much time has to pass before the AI considers tackling the task-->
+		<MinVictoryPoints>0</MinVictoryPoints> <!--Percent - How close has one team to be to winning the game before the AI considers tackling the task-->
+		<MinSuperiority>1.0</MinSuperiority> <!-- The min forces-superiority necessary to tackle the task-->
+		<MaxSuperiority>3.0</MaxSuperiority> <!-- The max forces-superiority considered to tackle the task-->
+		<CommitmentTime>12</CommitmentTime> <!--Seconds - How long the TaskForce is defending at the recently fulfilled task area. Higher value slows down the AI since the have longer breaks between task-->
+		<DangerLevelIncrease>100</DangerLevelIncrease> <!--The danger level increase for a POI if a previous task failed 100 means that the appeal for this poi is almost 0 and unit-superiority has to be twice the normal value-->
+		<DangerLevelCooldown>120</DangerLevelCooldown> <!--Seconds - How long until the danger level is reduced incrementally-->
+	</AttackForcesSettings>
+	
+	<!-- DefendBases -->
+	<DefendBasesSettings>
+		<MaxOngoingTasks>3</MaxOngoingTasks> <!--How many tasks of this type are allowed simultaneously-->
+		<CooldownAdvance>30</CooldownAdvance> <!--Seconds - How long after a finished task until the next task is considered in case of Forward Movement (Attack)-->
+		<CooldownSustain>5</CooldownSustain> <!--Seconds - How long after a finished task until the next task is considered in case of Sustain Position (Defend)-->
+		<MinPassedTime>20</MinPassedTime> <!--Seconds - How much time has to pass before the AI considers tackling the task-->
+		<MinVictoryPoints>0</MinVictoryPoints> <!--Percent - How close has one team to be to winning the game before the AI considers tackling the task-->
+		<MinSuperiority>0.5</MinSuperiority> <!-- The min forces-superiority necessary to tackle the task-->
+		<MaxSuperiority>2.0</MaxSuperiority> <!-- The max forces-superiority considered to tackle the task-->
+		<CommitmentTime>12</CommitmentTime> <!--Seconds - How long the TaskForce is defending at the recently fulfilled task area. Higher value slows down the AI since the have longer breaks between task-->
+		<DangerLevelIncrease>100</DangerLevelIncrease> <!--The danger level increase for a POI if a previous task failed 100 means that the appeal for this poi is almost 0 and unit-superiority has to be twice the normal value-->
+		<DangerLevelCooldown>120</DangerLevelCooldown> <!--Seconds - How long until the danger level is reduced incrementally-->
+	</DefendBasesSettings>
+	
+	<!-- DefendAssets -->
+	<DefendAssetsSettings>
+		<MaxOngoingTasks>1</MaxOngoingTasks> <!--How many tasks of this type are allowed simultaneously-->
+		<CooldownAdvance>60</CooldownAdvance> <!--Seconds - How long after a finished task until the next task is considered in case of Forward Movement (Attack)-->
+		<CooldownSustain>30</CooldownSustain> <!--Seconds - How long after a finished task until the next task is considered in case of Sustain Position (Defend)-->
+		<MinPassedTime>0</MinPassedTime> <!--Seconds - How much time has to pass before the AI considers tackling the task-->
+		<MinVictoryPoints>0</MinVictoryPoints> <!--Percent - How close has one team to be to winning the game before the AI considers tackling the task-->
+		<MinSuperiority>0.5</MinSuperiority> <!-- The min forces-superiority necessary to tackle the task-->
+		<MaxSuperiority>3.0</MaxSuperiority> <!-- The max forces-superiority considered to tackle the task-->
+		<CommitmentTime>12</CommitmentTime> <!--Seconds - How long the TaskForce is defending at the recently fulfilled task area. Higher value slows down the AI since the have longer breaks between task-->
+		<DangerLevelIncrease>100</DangerLevelIncrease> <!--The danger level increase for a POI if a previous task failed 100 means that the appeal for this poi is almost 0 and unit-superiority has to be twice the normal value-->
+		<DangerLevelCooldown>120</DangerLevelCooldown> <!--Seconds - How long until the danger level is reduced incrementally-->
+	</DefendAssetsSettings>
+	
+	<!-- GuardOwned -->
+	<GuardSettings>
+		<MaxOngoingTasks>2</MaxOngoingTasks> <!--How many tasks of this type are allowed simultaneously-->
+		<CooldownAdvance>90</CooldownAdvance> <!--Seconds - How long after a finished task until the next task is considered in case of Forward Movement (Attack)-->
+		<CooldownSustain>30</CooldownSustain> <!--Seconds - How long after a finished task until the next task is considered in case of Sustain Position (Defend)-->
+		<MinPassedTime>0</MinPassedTime> <!--Seconds - How much time has to pass before the AI considers tackling the task-->
+		<MinVictoryPoints>0</MinVictoryPoints> <!--Percent - How close has one team to be to winning the game before the AI considers tackling the task-->
+		<MinSuperiority>1.0</MinSuperiority> <!-- The min forces-superiority necessary to tackle the task-->
+		<MaxSuperiority>2.0</MaxSuperiority> <!-- The max forces-superiority considered to tackle the task-->
+		<CommitmentTime>12</CommitmentTime> <!--Seconds - How long the TaskForce is defending at the recently fulfilled task area. Higher value slows down the AI since the have longer breaks between task-->
+		<DangerLevelIncrease>100</DangerLevelIncrease> <!--The danger level increase for a POI if a previous task failed 100 means that the appeal for this poi is almost 0 and unit-superiority has to be twice the normal value-->
+		<DangerLevelCooldown>120</DangerLevelCooldown> <!--Seconds - How long until the danger level is reduced incrementally-->
+	</GuardSettings>
+	
+	<!-- Rally -->
+	<RallySettings>
+		<MaxOngoingTasks>4</MaxOngoingTasks> <!--How many tasks of this type are allowed simultaneously-->
+		<CooldownAdvance>60</CooldownAdvance> <!--Seconds - How long after a finished task until the next task is considered in case of Forward Movement (Attack)-->
+		<CooldownSustain>45</CooldownSustain> <!--Seconds - How long after a finished task until the next task is considered in case of Sustain Position (Defend)-->
+		<MinPassedTime>0</MinPassedTime> <!--Seconds - How much time has to pass before the AI considers tackling the task-->
+		<MinVictoryPoints>0</MinVictoryPoints> <!--Percent - How close has one team to be to winning the game before the AI considers tackling the task-->
+		<MinSuperiority>1.0</MinSuperiority> <!-- The min forces-superiority necessary to tackle the task-->
+		<MaxSuperiority>2.0</MaxSuperiority> <!-- The max forces-superiority considered to tackle the task-->
+		<CommitmentTime>12</CommitmentTime> <!--Seconds - How long the TaskForce is defending at the recently fulfilled task area. Higher value slows down the AI since the have longer breaks between task-->
+		<DangerLevelIncrease>100</DangerLevelIncrease> <!--The danger level increase for a POI if a previous task failed 100 means that the appeal for this poi is almost 0 and unit-superiority has to be twice the normal value-->
+		<DangerLevelCooldown>120</DangerLevelCooldown> <!--Seconds - How long until the danger level is reduced incrementally-->
+	</RallySettings>
+	
+	<!-- CollectResources -->
+	<CollectResourcesSettings>
+		<MaxOngoingTasks>4</MaxOngoingTasks> <!--How many tasks of this type are allowed simultaneously-->
+		<CooldownAdvance>90</CooldownAdvance> <!--Seconds - How long after a finished task until the next task is considered in case of Forward Movement (Attack)-->
+		<CooldownSustain>90</CooldownSustain> <!--Seconds - How long after a finished task until the next task is considered in case of Sustain Position (Defend)-->
+		<MinPassedTime>45</MinPassedTime> <!--Seconds - How much time has to pass before the AI considers tackling the task-->
+		<MinVictoryPoints>0</MinVictoryPoints> <!--Percent - How close has one team to be to winning the game before the AI considers tackling the task-->
+		<MinSuperiority>0.1</MinSuperiority> <!-- The min forces-superiority necessary to tackle the task-->
+		<MaxSuperiority>1.0</MaxSuperiority> <!-- The max forces-superiority considered to tackle the task-->
+		<CommitmentTime>12</CommitmentTime> <!--Seconds - How long the TaskForce is defending at the recently fulfilled task area. Higher value slows down the AI since the have longer breaks between task-->
+		<DangerLevelIncrease>100</DangerLevelIncrease> <!--The danger level increase for a POI if a previous task failed 100 means that the appeal for this poi is almost 0 and unit-superiority has to be twice the normal value-->
+		<DangerLevelCooldown>120</DangerLevelCooldown> <!--Seconds - How long until the danger level is reduced incrementally-->
+	</CollectResourcesSettings>
+	
+	<!-- ConquerWeaponSystems -->
+	<ConquerWeaponSystemsSettings>
+		<MaxOngoingTasks>2</MaxOngoingTasks> <!--How many tasks of this type are allowed simultaneously-->
+		<CooldownAdvance>180</CooldownAdvance> <!--Seconds - How long after a finished task until the next task is considered in case of Forward Movement (Attack)-->
+		<CooldownSustain>180</CooldownSustain> <!--Seconds - How long after a finished task until the next task is considered in case of Sustain Position (Defend)-->
+		<MinPassedTime>180</MinPassedTime> <!--Seconds - How much time has to pass before the AI considers tackling the task-->
+		<MinVictoryPoints>0</MinVictoryPoints> <!--Percent - How close has one team to be to winning the game before the AI considers tackling the task-->
+		<MinSuperiority>1.0</MinSuperiority> <!-- The min forces-superiority necessary to tackle the task-->
+		<MaxSuperiority>2.0</MaxSuperiority> <!-- The max forces-superiority considered to tackle the task-->
+		<CommitmentTime>12</CommitmentTime> <!--Seconds - How long the TaskForce is defending at the recently fulfilled task area. Higher value slows down the AI since the have longer breaks between task-->
+		<DangerLevelIncrease>100</DangerLevelIncrease> <!--The danger level increase for a POI if a previous task failed 100 means that the appeal for this poi is almost 0 and unit-superiority has to be twice the normal value-->
+		<DangerLevelCooldown>120</DangerLevelCooldown> <!--Seconds - How long until the danger level is reduced incrementally-->
+	</ConquerWeaponSystemsSettings>
+	
+	<!-- ChangeEquipment -->
+	<ChangeEquipmentSettings>
+		<MaxOngoingTasks>3</MaxOngoingTasks> <!--How many tasks of this type are allowed simultaneously-->
+		<CooldownAdvance>180</CooldownAdvance> <!--Seconds - How long after a finished task until the next task is considered in case of Forward Movement (Attack)-->
+		<CooldownSustain>180</CooldownSustain> <!--Seconds - How long after a finished task until the next task is considered in case of Sustain Position (Defend)-->
+		<MinPassedTime>180</MinPassedTime> <!--Seconds - How much time has to pass before the AI considers tackling the task-->
+		<MinVictoryPoints>0</MinVictoryPoints> <!--Percent - How close has one team to be to winning the game before the AI considers tackling the task-->
+		<MinSuperiority>0.1</MinSuperiority> <!-- The min forces-superiority necessary to tackle the task-->
+		<MaxSuperiority>2.0</MaxSuperiority> <!-- The max forces-superiority considered to tackle the task-->
+		<CommitmentTime>0</CommitmentTime> <!--Seconds - How long the TaskForce is defending at the recently fulfilled task area. Higher value slows down the AI since the have longer breaks between task-->
+		<DangerLevelIncrease>100</DangerLevelIncrease> <!--The danger level increase for a POI if a previous task failed 100 means that the appeal for this poi is almost 0 and unit-superiority has to be twice the normal value-->
+		<DangerLevelCooldown>120</DangerLevelCooldown> <!--Seconds - How long until the danger level is reduced incrementally-->
+	</ChangeEquipmentSettings>
+	
+	<!-- ProduceUnits -->
+	<ProduceUnitSettings>
+		<MaxOngoingTasks>6</MaxOngoingTasks> <!--How many tasks of this type are allowed simultaneously-->
+		<CooldownAdvance>90</CooldownAdvance> <!--Seconds - How long after a finished task until the next task is considered in case of Forward Movement (Attack)-->
+		<CooldownSustain>90</CooldownSustain> <!--Seconds - How long after a finished task until the next task is considered in case of Sustain Position (Defend)-->
+		<MinPassedTime>120</MinPassedTime> <!--Seconds - How much time has to pass before the AI considers tackling the task-->
+		<MinVictoryPoints>0</MinVictoryPoints> <!--Percent - How close has one team to be to winning the game before the AI considers tackling the task-->
+		<MinSuperiority>0.1</MinSuperiority> <!-- The min forces-superiority necessary to tackle the task-->
+		<MaxSuperiority>3.0</MaxSuperiority> <!-- The max forces-superiority considered to tackle the task-->
+		<CommitmentTime>12</CommitmentTime> <!--Seconds - How long the TaskForce is defending at the recently fulfilled task area. Higher value slows down the AI since the have longer breaks between task-->
+		<DangerLevelIncrease>100</DangerLevelIncrease> <!--The danger level increase for a POI if a previous task failed 100 means that the appeal for this poi is almost 0 and unit-superiority has to be twice the normal value-->
+		<DangerLevelCooldown>120</DangerLevelCooldown> <!--Seconds - How long until the danger level is reduced incrementally-->
+		<MaxWaitingTimeExpansion>180</MaxWaitingTimeExpansion> <!--Seconds - Max Waiting Time for the necessary resources to be gathered to produce a unit that is not affordable at the moment-->
+		<MaxWaitingTimeAttack>180</MaxWaitingTimeAttack> <!--Seconds - Max Waiting Time for the necessary resources to be gathered to produce a unit that is not affordable at the moment-->
+		<MaxWaitingTimeDefend>160</MaxWaitingTimeDefend> <!--Seconds - Max Waiting Time for the necessary resources to be gathered to produce a unit that is not affordable at the moment-->
+	</ProduceUnitSettings>
+	
+	<!-- ConstructStructures -->
+	<ConstructStructuresSettings>
+		<MaxOngoingTasks>1</MaxOngoingTasks> <!--How many tasks of this type are allowed simultaneously-->
+		<CooldownAdvance>120</CooldownAdvance> <!--Seconds - How long after a finished task until the next task is considered in case of Forward Movement (Attack)-->
+		<CooldownSustain>120</CooldownSustain> <!--Seconds - How long after a finished task until the next task is considered in case of Sustain Position (Defend)-->
+		<MinPassedTime>120</MinPassedTime> <!--Seconds - How much time has to pass before the AI considers tackling the task-->
+		<MinVictoryPoints>0</MinVictoryPoints> <!--Percent - How close has one team to be to winning the game before the AI considers tackling the task-->
+		<MinSuperiority>1.0</MinSuperiority> <!-- The min forces-superiority necessary to tackle the task-->
+		<MaxSuperiority>3.0</MaxSuperiority> <!-- The max forces-superiority considered to tackle the task-->
+		<CommitmentTime>12</CommitmentTime> <!--Seconds - How long the TaskForce is defending at the recently fulfilled task area. Higher value slows down the AI since the have longer breaks between task-->
+		<DangerLevelIncrease>100</DangerLevelIncrease> <!--The danger level increase for a POI if a previous task failed 100 means that the appeal for this poi is almost 0 and unit-superiority has to be twice the normal value-->
+		<DangerLevelCooldown>120</DangerLevelCooldown> <!--Seconds - How long until the danger level is reduced incrementally-->
+		<MaxWaitingTimeExpansion>180</MaxWaitingTimeExpansion> <!--Seconds - Max Waiting Time for the necessary resources to be gathered to build a structure that is not affordable at the moment-->
+		<MaxWaitingTimeAttack>240</MaxWaitingTimeAttack> <!--Seconds - Max Waiting Time for the necessary resources to be gathered to build a structure that is not affordable at the moment-->
+		<MaxWaitingTimeDefend>180</MaxWaitingTimeDefend> <!--Seconds - Max Waiting Time for the necessary resources to be gathered to build a structure that is not affordable at the moment-->
+	</ConstructStructuresSettings>
+	
+	<!-- UpgradeStructures -->
+	<UpgradeStructuresSettings>
+		<MaxOngoingTasks>2</MaxOngoingTasks> <!--How many tasks of this type are allowed simultaneously-->
+		<CooldownAdvance>30</CooldownAdvance> <!--Seconds - How long after a finished task until the next task is considered in case of Forward Movement (Attack)-->
+		<CooldownSustain>30</CooldownSustain> <!--Seconds - How long after a finished task until the next task is considered in case of Sustain Position (Defend)-->
+		<MinPassedTime>300</MinPassedTime> <!--Seconds - How much time has to pass before the AI considers tackling the task-->
+		<MinVictoryPoints>0</MinVictoryPoints> <!--Percent - How close has one team to be to winning the game before the AI considers tackling the task-->
+		<MinSuperiority>1.0</MinSuperiority> <!-- The min forces-superiority necessary to tackle the task-->
+		<MaxSuperiority>3.0</MaxSuperiority> <!-- The max forces-superiority considered to tackle the task-->
+		<CommitmentTime>0</CommitmentTime> <!--Seconds - How long the TaskForce is defending at the recently fulfilled task area. Higher value slows down the AI since the have longer breaks between task-->
+		<DangerLevelIncrease>100</DangerLevelIncrease> <!--The danger level increase for a POI if a previous task failed 100 means that the appeal for this poi is almost 0 and unit-superiority has to be twice the normal value-->
+		<DangerLevelCooldown>120</DangerLevelCooldown> <!--Seconds - How long until the danger level is reduced incrementally-->
+		<MaxWaitingTimeExpansion>180</MaxWaitingTimeExpansion> <!--Seconds - Max Waiting Time for the necessary resources to be gathered to upgrade a structure that is not affordable at the moment-->
+		<MaxWaitingTimeAttack>180</MaxWaitingTimeAttack> <!--Seconds - Max Waiting Time for the necessary resources to be gathered to upgrade a structure that is not affordable at the moment-->
+		<MaxWaitingTimeDefend>180</MaxWaitingTimeDefend> <!--Seconds - Max Waiting Time for the necessary resources to be gathered to upgrade a structure that is not affordable at the moment-->
+		<MaxResourceBuildings>4</MaxResourceBuildings> <!--How many resource buildings are allowed to be upgraded to the max-->
+	</UpgradeStructuresSettings>
+	
+	<!-- ReinforceTasks -->
+	<ReinforceSettings>
+		<MaxOngoingTasks>6</MaxOngoingTasks> <!--How many tasks of this type are allowed simultaneously-->
+		<CooldownAdvance>30</CooldownAdvance> <!--Seconds - How long after a finished task until the next task is considered in case of Forward Movement (Attack)-->
+		<CooldownSustain>30</CooldownSustain> <!--Seconds - How long after a finished task until the next task is considered in case of Sustain Position (Defend)-->
+		<MinPassedTime>0</MinPassedTime> <!--Seconds - How much time has to pass before the AI considers tackling the task-->
+		<MinVictoryPoints>0</MinVictoryPoints> <!--Percent - How close has one team to be to winning the game before the AI considers tackling the task-->
+		<MinSuperiority>0.1</MinSuperiority> <!-- The min forces-superiority necessary to tackle the task-->
+		<MaxSuperiority>3.0</MaxSuperiority> <!-- The max forces-superiority considered to tackle the task-->
+		<CommitmentTime>12</CommitmentTime> <!--Seconds - How long the TaskForce is defending at the recently fulfilled task area. Higher value slows down the AI since the have longer breaks between task-->
+		<DangerLevelIncrease>100</DangerLevelIncrease> <!--The danger level increase for a POI if a previous task failed 100 means that the appeal for this poi is almost 0 and unit-superiority has to be twice the normal value-->
+		<DangerLevelCooldown>120</DangerLevelCooldown> <!--Seconds - How long until the danger level is reduced incrementally-->
+		<MinHealth>40</MinHealth> <!--Percent - At what health percentage (in relation to the newly started task) are we considering to reinforcing a task-->
+	</ReinforceSettings>
+	
+	<!-- RetreatFromTasks -->
+	<RetreatSettings>
+		<MaxOngoingTasks>6</MaxOngoingTasks> <!--How many tasks of this type are allowed simultaneously-->
+		<CooldownAdvance>1</CooldownAdvance> <!--Seconds - How long after a finished task until the next task is considered in case of Forward Movement (Attack)-->
+		<CooldownSustain>1</CooldownSustain> <!--Seconds - How long after a finished task until the next task is considered in case of Sustain Position (Defend)-->
+		<MinPassedTime>0</MinPassedTime> <!--Seconds - How much time has to pass before the AI considers tackling the task-->
+		<MinVictoryPoints>0</MinVictoryPoints> <!--Percent - How close has one team to be to winning the game before the AI considers tackling the task-->
+		<MinSuperiority>0.1</MinSuperiority> <!-- The min forces-superiority necessary to tackle the task-->
+		<MaxSuperiority>3.0</MaxSuperiority> <!-- The max forces-superiority considered to tackle the task-->
+		<CommitmentTime>12</CommitmentTime> <!--Seconds - How long the TaskForce is defending at the recently fulfilled task area. Higher value slows down the AI since the have longer breaks between task-->
+		<DangerLevelIncrease>100</DangerLevelIncrease> <!--The danger level increase for a POI if a previous task failed 100 means that the appeal for this poi is almost 0 and unit-superiority has to be twice the normal value-->
+		<DangerLevelCooldown>120</DangerLevelCooldown> <!--Seconds - How long until the danger level is reduced incrementally-->
+		<MinHealth>30</MinHealth> <!--Percent - At what health percentage (in relation to the newly started task) are we considering to retreat units from a task-->
+	</RetreatSettings>
+	</AIDifficulty>
+  <AIDifficulty id="hard" type="hard">
+    <Type>Hard</Type>
+    <UpdateSpeed>0.5</UpdateSpeed> <!-- Seconds - How often the AI evaluates which tasks to execute. Lower value means the AI will make decisions more often -->
+	<MaxTasksPerUpdate>100</MaxTasksPerUpdate> <!-- How many tasks the AI executes per update. Higher value means more tasks are executed simultaneously -->
+	<ErrorMargin>15</ErrorMargin> <!--How high is the possibility that the AI makes a mistake choosing the right unit for the task 0 - 100%-->
+	
+	<!-- ConquerStructures -->
+	<ConquerStructuresSettings>
+		<MaxOngoingTasks>10</MaxOngoingTasks> <!--How many tasks of this type are allowed simultaneously-->
+		<CooldownAdvance>20</CooldownAdvance> <!--Seconds - How long after a finished task until the next task is considered in case of Forward Movement (Attack)-->
+		<CooldownSustain>20</CooldownSustain> <!--Seconds - How long after a finished task until the next task is considered in case of Sustain Position (Defend)-->
+		<MinPassedTime>20</MinPassedTime> <!--Seconds - How much time has to pass before the AI considers tackling the task-->
+		<MinVictoryPoints>0</MinVictoryPoints> <!--Percent - How close has one team to be to winning the game before the AI considers tackling the task-->
+		<MinSuperiority>1.0</MinSuperiority> <!-- The min forces-superiority necessary to tackle the task-->
+		<MaxSuperiority>7.0</MaxSuperiority> <!-- The max forces-superiority considered to tackle the task-->
+		<CommitmentTime>5</CommitmentTime> <!--Seconds - How long the TaskForce is defending at the recently fulfilled task area. Higher value slows down the AI since the have longer breaks between task-->
+		<DangerLevelIncrease>100</DangerLevelIncrease> <!--The danger level increase for a POI if a previous task failed 100 means that the appeal for this poi is almost 0 and unit-superiority has to be twice the normal value-->
+		<DangerLevelCooldown>120</DangerLevelCooldown> <!--Seconds - How long until the danger level is reduced incrementally-->
+	</ConquerStructuresSettings>
+	
+	<!-- ControlAreas -->
+	<ControlAreasSettings>
+		<MaxOngoingTasks>10</MaxOngoingTasks> <!--How many tasks of this type are allowed simultaneously-->
+		<CooldownAdvance>20</CooldownAdvance> <!--Seconds - How long after a finished task until the next task is considered in case of Forward Movement (Attack)-->
+		<CooldownSustain>20</CooldownSustain> <!--Seconds - How long after a finished task until the next task is considered in case of Sustain Position (Defend)-->
+		<MinPassedTime>20</MinPassedTime> <!--Seconds - How much time has to pass before the AI considers tackling the task-->
+		<MinVictoryPoints>0</MinVictoryPoints> <!--Percent - How close has one team to be to winning the game before the AI considers tackling the task-->
+		<MinSuperiority>1.0</MinSuperiority> <!-- The min forces-superiority necessary to tackle the task-->
+		<MaxSuperiority>7.0</MaxSuperiority> <!-- The max forces-superiority considered to tackle the task-->
+		<CommitmentTime>5</CommitmentTime> <!--Seconds - How long the TaskForce is defending at the recently fulfilled task area. Higher value slows down the AI since the have longer breaks between task-->
+		<DangerLevelIncrease>100</DangerLevelIncrease> <!--The danger level increase for a POI if a previous task failed 100 means that the appeal for this poi is almost 0 and unit-superiority has to be twice the normal value-->
+		<DangerLevelCooldown>120</DangerLevelCooldown> <!--Seconds - How long until the danger level is reduced incrementally-->
+	</ControlAreasSettings>
+	
+	<!-- ControlDropZones -->
+	<ControlDropZoneSettings>
+		<MaxOngoingTasks>3</MaxOngoingTasks> <!--How many tasks of this type are allowed simultaneously-->
+		<CooldownAdvance>20</CooldownAdvance> <!--Seconds - How long after a finished task until the next task is considered in case of Forward Movement (Attack)-->
+		<CooldownSustain>20</CooldownSustain> <!--Seconds - How long after a finished task until the next task is considered in case of Sustain Position (Defend)-->
+		<MinPassedTime>20</MinPassedTime> <!--Seconds - How much time has to pass before the AI considers tackling the task-->
+		<MinVictoryPoints>0</MinVictoryPoints> <!--Percent - How close has one team to be to winning the game before the AI considers tackling the task-->
+		<MinSuperiority>1.0</MinSuperiority> <!-- The min forces-superiority necessary to tackle the task-->
+		<MaxSuperiority>1.5</MaxSuperiority> <!-- The max forces-superiority considered to tackle the task-->
+		<CommitmentTime>5</CommitmentTime> <!--Seconds - How long the TaskForce is defending at the recently fulfilled task area. Higher value slows down the AI since the have longer breaks between task-->
+		<DangerLevelIncrease>100</DangerLevelIncrease> <!--The danger level increase for a POI if a previous task failed 100 means that the appeal for this poi is almost 0 and unit-superiority has to be twice the normal value-->
+		<DangerLevelCooldown>120</DangerLevelCooldown> <!--Seconds - How long until the danger level is reduced incrementally-->
+	</ControlDropZoneSettings>
+
+	<!-- AttackBases -->
+	<AttackBasesSettings>
+		<MaxOngoingTasks>10</MaxOngoingTasks> <!--How many tasks of this type are allowed simultaneously-->
+		<CooldownAdvance>60</CooldownAdvance> <!--Seconds - How long after a finished task until the next task is considered in case of Forward Movement (Attack)-->
+		<CooldownSustain>60</CooldownSustain> <!--Seconds - How long after a finished task until the next task is considered in case of Sustain Position (Defend)-->
+		<MinPassedTime>240</MinPassedTime> <!--Seconds - How much time has to pass before the AI considers tackling the task-->
+		<MinVictoryPoints>40</MinVictoryPoints> <!--Percent - How close has one team to be to winning the game before the AI considers tackling the task-->
+		<MinSuperiority>1.5</MinSuperiority> <!-- The min forces-superiority necessary to tackle the task-->
+		<MaxSuperiority>7.0</MaxSuperiority> <!-- The max forces-superiority considered to tackle the task-->
+		<CommitmentTime>5</CommitmentTime> <!--Seconds - How long the TaskForce is defending at the recently fulfilled task area. Higher value slows down the AI since the have longer breaks between task-->
+		<DangerLevelIncrease>100</DangerLevelIncrease> <!--The danger level increase for a POI if a previous task failed 100 means that the appeal for this poi is almost 0 and unit-superiority has to be twice the normal value-->
+		<DangerLevelCooldown>120</DangerLevelCooldown> <!--Seconds - How long until the danger level is reduced incrementally-->
+	</AttackBasesSettings>
+	
+	<!-- AttackForces -->
+	<AttackForcesSettings>
+		<MaxOngoingTasks>10</MaxOngoingTasks> <!--How many tasks of this type are allowed simultaneously-->
+		<CooldownAdvance>20</CooldownAdvance> <!--Seconds - How long after a finished task until the next task is considered in case of Forward Movement (Attack)-->
+		<CooldownSustain>20</CooldownSustain> <!--Seconds - How long after a finished task until the next task is considered in case of Sustain Position (Defend)-->
+		<MinPassedTime>80</MinPassedTime> <!--Seconds - How much time has to pass before the AI considers tackling the task-->
+		<MinVictoryPoints>0</MinVictoryPoints> <!--Percent - How close has one team to be to winning the game before the AI considers tackling the task-->
+		<MinSuperiority>1.5</MinSuperiority> <!-- The min forces-superiority necessary to tackle the task-->
+		<MaxSuperiority>7.0</MaxSuperiority> <!-- The max forces-superiority considered to tackle the task-->
+		<CommitmentTime>5</CommitmentTime> <!--Seconds - How long the TaskForce is defending at the recently fulfilled task area. Higher value slows down the AI since the have longer breaks between task-->
+		<DangerLevelIncrease>100</DangerLevelIncrease> <!--The danger level increase for a POI if a previous task failed 100 means that the appeal for this poi is almost 0 and unit-superiority has to be twice the normal value-->
+		<DangerLevelCooldown>120</DangerLevelCooldown> <!--Seconds - How long until the danger level is reduced incrementally-->
+	</AttackForcesSettings>
+	
+	<!-- DefendBases -->
+	<DefendBasesSettings>
+		<MaxOngoingTasks>2</MaxOngoingTasks> <!--How many tasks of this type are allowed simultaneously-->
+		<CooldownAdvance>10</CooldownAdvance> <!--Seconds - How long after a finished task until the next task is considered in case of Forward Movement (Attack)-->
+		<CooldownSustain>3</CooldownSustain> <!--Seconds - How long after a finished task until the next task is considered in case of Sustain Position (Defend)-->
+		<MinPassedTime>0</MinPassedTime> <!--Seconds - How much time has to pass before the AI considers tackling the task-->
+		<MinVictoryPoints>0</MinVictoryPoints> <!--Percent - How close has one team to be to winning the game before the AI considers tackling the task-->
+		<MinSuperiority>1.0</MinSuperiority> <!-- The min forces-superiority necessary to tackle the task-->
+		<MaxSuperiority>7.0</MaxSuperiority> <!-- The max forces-superiority considered to tackle the task-->
+		<CommitmentTime>5</CommitmentTime> <!--Seconds - How long the TaskForce is defending at the recently fulfilled task area. Higher value slows down the AI since the have longer breaks between task-->
+		<DangerLevelIncrease>100</DangerLevelIncrease> <!--The danger level increase for a POI if a previous task failed 100 means that the appeal for this poi is almost 0 and unit-superiority has to be twice the normal value-->
+		<DangerLevelCooldown>120</DangerLevelCooldown> <!--Seconds - How long until the danger level is reduced incrementally-->
+	</DefendBasesSettings>
+	
+	<!-- DefendAssets -->
+	<DefendAssetsSettings>
+		<MaxOngoingTasks>0</MaxOngoingTasks> <!--How many tasks of this type are allowed simultaneously-->
+		<CooldownAdvance>0</CooldownAdvance> <!--Seconds - How long after a finished task until the next task is considered in case of Forward Movement (Attack)-->
+		<CooldownSustain>10</CooldownSustain> <!--Seconds - How long after a finished task until the next task is considered in case of Sustain Position (Defend)-->
+		<MinPassedTime>0</MinPassedTime> <!--Seconds - How much time has to pass before the AI considers tackling the task-->
+		<MinVictoryPoints>0</MinVictoryPoints> <!--Percent - How close has one team to be to winning the game before the AI considers tackling the task-->
+		<MinSuperiority>1.0</MinSuperiority> <!-- The min forces-superiority necessary to tackle the task-->
+		<MaxSuperiority>7.0</MaxSuperiority> <!-- The max forces-superiority considered to tackle the task-->
+		<CommitmentTime>5</CommitmentTime> <!--Seconds - How long the TaskForce is defending at the recently fulfilled task area. Higher value slows down the AI since the have longer breaks between task-->
+		<DangerLevelIncrease>100</DangerLevelIncrease> <!--The danger level increase for a POI if a previous task failed 100 means that the appeal for this poi is almost 0 and unit-superiority has to be twice the normal value-->
+		<DangerLevelCooldown>120</DangerLevelCooldown> <!--Seconds - How long until the danger level is reduced incrementally-->
+	</DefendAssetsSettings>
+	
+	<!-- GuardOwned -->
+	<GuardSettings>
+		<MaxOngoingTasks>1</MaxOngoingTasks> <!--How many tasks of this type are allowed simultaneously-->
+		<CooldownAdvance>10</CooldownAdvance> <!--Seconds - How long after a finished task until the next task is considered in case of Forward Movement (Attack)-->
+		<CooldownSustain>10</CooldownSustain> <!--Seconds - How long after a finished task until the next task is considered in case of Sustain Position (Defend)-->
+		<MinPassedTime>0</MinPassedTime> <!--Seconds - How much time has to pass before the AI considers tackling the task-->
+		<MinVictoryPoints>0</MinVictoryPoints> <!--Percent - How close has one team to be to winning the game before the AI considers tackling the task-->
+		<MinSuperiority>1.0</MinSuperiority> <!-- The min forces-superiority necessary to tackle the task-->
+		<MaxSuperiority>7.0</MaxSuperiority> <!-- The max forces-superiority considered to tackle the task-->
+		<CommitmentTime>5</CommitmentTime> <!--Seconds - How long the TaskForce is defending at the recently fulfilled task area. Higher value slows down the AI since the have longer breaks between task-->
+		<DangerLevelIncrease>100</DangerLevelIncrease> <!--The danger level increase for a POI if a previous task failed 100 means that the appeal for this poi is almost 0 and unit-superiority has to be twice the normal value-->
+		<DangerLevelCooldown>120</DangerLevelCooldown> <!--Seconds - How long until the danger level is reduced incrementally-->
+	</GuardSettings>
+	
+	<!-- Rally -->
+	<RallySettings>
+		<MaxOngoingTasks>10</MaxOngoingTasks> <!--How many tasks of this type are allowed simultaneously-->
+		<CooldownAdvance>20</CooldownAdvance> <!--Seconds - How long after a finished task until the next task is considered in case of Forward Movement (Attack)-->
+		<CooldownSustain>20</CooldownSustain> <!--Seconds - How long after a finished task until the next task is considered in case of Sustain Position (Defend)-->
+		<MinPassedTime>0</MinPassedTime> <!--Seconds - How much time has to pass before the AI considers tackling the task-->
+		<MinVictoryPoints>0</MinVictoryPoints> <!--Percent - How close has one team to be to winning the game before the AI considers tackling the task-->
+		<MinSuperiority>1.0</MinSuperiority> <!-- The min forces-superiority necessary to tackle the task-->
+		<MaxSuperiority>7.0</MaxSuperiority> <!-- The max forces-superiority considered to tackle the task-->
+		<CommitmentTime>5</CommitmentTime> <!--Seconds - How long the TaskForce is defending at the recently fulfilled task area. Higher value slows down the AI since the have longer breaks between task-->
+		<DangerLevelIncrease>100</DangerLevelIncrease> <!--The danger level increase for a POI if a previous task failed 100 means that the appeal for this poi is almost 0 and unit-superiority has to be twice the normal value-->
+		<DangerLevelCooldown>120</DangerLevelCooldown> <!--Seconds - How long until the danger level is reduced incrementally-->
+	</RallySettings>
+	
+	<!-- CollectResources -->
+	<CollectResourcesSettings>
+		<MaxOngoingTasks>10</MaxOngoingTasks> <!--How many tasks of this type are allowed simultaneously-->
+		<CooldownAdvance>30</CooldownAdvance> <!--Seconds - How long after a finished task until the next task is considered in case of Forward Movement (Attack)-->
+		<CooldownSustain>30</CooldownSustain> <!--Seconds - How long after a finished task until the next task is considered in case of Sustain Position (Defend)-->
+		<MinPassedTime>20</MinPassedTime> <!--Seconds - How much time has to pass before the AI considers tackling the task-->
+		<MinVictoryPoints>0</MinVictoryPoints> <!--Percent - How close has one team to be to winning the game before the AI considers tackling the task-->
+		<MinSuperiority>0.1</MinSuperiority> <!-- The min forces-superiority necessary to tackle the task-->
+		<MaxSuperiority>2.0</MaxSuperiority> <!-- The max forces-superiority considered to tackle the task-->
+		<CommitmentTime>5</CommitmentTime> <!--Seconds - How long the TaskForce is defending at the recently fulfilled task area. Higher value slows down the AI since the have longer breaks between task-->
+		<DangerLevelIncrease>100</DangerLevelIncrease> <!--The danger level increase for a POI if a previous task failed 100 means that the appeal for this poi is almost 0 and unit-superiority has to be twice the normal value-->
+		<DangerLevelCooldown>120</DangerLevelCooldown> <!--Seconds - How long until the danger level is reduced incrementally-->
+	</CollectResourcesSettings>
+	
+	<!-- ConquerWeaponSystems -->
+	<ConquerWeaponSystemsSettings>
+		<MaxOngoingTasks>5</MaxOngoingTasks> <!--How many tasks of this type are allowed simultaneously-->
+		<CooldownAdvance>90</CooldownAdvance> <!--Seconds - How long after a finished task until the next task is considered in case of Forward Movement (Attack)-->
+		<CooldownSustain>90</CooldownSustain> <!--Seconds - How long after a finished task until the next task is considered in case of Sustain Position (Defend)-->
+		<MinPassedTime>30</MinPassedTime> <!--Seconds - How much time has to pass before the AI considers tackling the task-->
+		<MinVictoryPoints>0</MinVictoryPoints> <!--Percent - How close has one team to be to winning the game before the AI considers tackling the task-->
+		<MinSuperiority>1.0</MinSuperiority> <!-- The min forces-superiority necessary to tackle the task-->
+		<MaxSuperiority>7.0</MaxSuperiority> <!-- The max forces-superiority considered to tackle the task-->
+		<CommitmentTime>5</CommitmentTime> <!--Seconds - How long the TaskForce is defending at the recently fulfilled task area. Higher value slows down the AI since the have longer breaks between task-->
+		<DangerLevelIncrease>100</DangerLevelIncrease> <!--The danger level increase for a POI if a previous task failed 100 means that the appeal for this poi is almost 0 and unit-superiority has to be twice the normal value-->
+		<DangerLevelCooldown>120</DangerLevelCooldown> <!--Seconds - How long until the danger level is reduced incrementally-->
+	</ConquerWeaponSystemsSettings>
+	
+	<!-- ChangeEquipment -->
+	<ChangeEquipmentSettings>
+		<MaxOngoingTasks>7</MaxOngoingTasks> <!--How many tasks of this type are allowed simultaneously-->
+		<CooldownAdvance>90</CooldownAdvance> <!--Seconds - How long after a finished task until the next task is considered in case of Forward Movement (Attack)-->
+		<CooldownSustain>90</CooldownSustain> <!--Seconds - How long after a finished task until the next task is considered in case of Sustain Position (Defend)-->
+		<MinPassedTime>30</MinPassedTime> <!--Seconds - How much time has to pass before the AI considers tackling the task-->
+		<MinVictoryPoints>0</MinVictoryPoints> <!--Percent - How close has one team to be to winning the game before the AI considers tackling the task-->
+		<MinSuperiority>0.1</MinSuperiority> <!-- The min forces-superiority necessary to tackle the task-->
+		<MaxSuperiority>7.0</MaxSuperiority> <!-- The max forces-superiority considered to tackle the task-->
+		<CommitmentTime>5</CommitmentTime> <!--Seconds - How long the TaskForce is defending at the recently fulfilled task area. Higher value slows down the AI since the have longer breaks between task-->
+		<DangerLevelIncrease>100</DangerLevelIncrease> <!--The danger level increase for a POI if a previous task failed 100 means that the appeal for this poi is almost 0 and unit-superiority has to be twice the normal value-->
+		<DangerLevelCooldown>120</DangerLevelCooldown> <!--Seconds - How long until the danger level is reduced incrementally-->
+	</ChangeEquipmentSettings>
+	
+	<!-- ProduceUnits -->
+	<ProduceUnitSettings>
+		<MaxOngoingTasks>12</MaxOngoingTasks> <!--How many tasks of this type are allowed simultaneously-->
+		<CooldownAdvance>20</CooldownAdvance> <!--Seconds - How long after a finished task until the next task is considered in case of Forward Movement (Attack)-->
+		<CooldownSustain>20</CooldownSustain> <!--Seconds - How long after a finished task until the next task is considered in case of Sustain Position (Defend)-->
+		<MinPassedTime>60</MinPassedTime> <!--Seconds - How much time has to pass before the AI considers tackling the task-->
+		<MinVictoryPoints>0</MinVictoryPoints> <!--Percent - How close has one team to be to winning the game before the AI considers tackling the task-->
+		<MinSuperiority>0.1</MinSuperiority> <!-- The min forces-superiority necessary to tackle the task-->
+		<MaxSuperiority>7.0</MaxSuperiority> <!-- The max forces-superiority considered to tackle the task-->
+		<CommitmentTime>5</CommitmentTime> <!--Seconds - How long the TaskForce is defending at the recently fulfilled task area. Higher value slows down the AI since the have longer breaks between task-->
+		<DangerLevelIncrease>100</DangerLevelIncrease> <!--The danger level increase for a POI if a previous task failed 100 means that the appeal for this poi is almost 0 and unit-superiority has to be twice the normal value-->
+		<DangerLevelCooldown>120</DangerLevelCooldown> <!--Seconds - How long until the danger level is reduced incrementally-->
+		<MaxWaitingTimeExpansion>240</MaxWaitingTimeExpansion> <!--Seconds - Max Waiting Time for the necessary resources to be gathered to produce a unit that is not affordable at the moment-->
+		<MaxWaitingTimeAttack>240</MaxWaitingTimeAttack> <!--Seconds - Max Waiting Time for the necessary resources to be gathered to produce a unit that is not affordable at the moment-->
+		<MaxWaitingTimeDefend>180</MaxWaitingTimeDefend> <!--Seconds - Max Waiting Time for the necessary resources to be gathered to produce a unit that is not affordable at the moment-->
+	</ProduceUnitSettings>
+	
+	<!-- ConstructStructures -->
+	<ConstructStructuresSettings>
+		<MaxOngoingTasks>2</MaxOngoingTasks> <!--How many tasks of this type are allowed simultaneously-->
+		<CooldownAdvance>30</CooldownAdvance> <!--Seconds - How long after a finished task until the next task is considered in case of Forward Movement (Attack)-->
+		<CooldownSustain>30</CooldownSustain> <!--Seconds - How long after a finished task until the next task is considered in case of Sustain Position (Defend)-->
+		<MinPassedTime>60</MinPassedTime> <!--Seconds - How much time has to pass before the AI considers tackling the task-->
+		<MinVictoryPoints>0</MinVictoryPoints> <!--Percent - How close has one team to be to winning the game before the AI considers tackling the task-->
+		<MinSuperiority>1.0</MinSuperiority> <!-- The min forces-superiority necessary to tackle the task-->
+		<MaxSuperiority>7.0</MaxSuperiority> <!-- The max forces-superiority considered to tackle the task-->
+		<CommitmentTime>5</CommitmentTime> <!--Seconds - How long the TaskForce is defending at the recently fulfilled task area. Higher value slows down the AI since the have longer breaks between task-->
+		<DangerLevelIncrease>100</DangerLevelIncrease> <!--The danger level increase for a POI if a previous task failed 100 means that the appeal for this poi is almost 0 and unit-superiority has to be twice the normal value-->
+		<DangerLevelCooldown>120</DangerLevelCooldown> <!--Seconds - How long until the danger level is reduced incrementally-->
+		<MaxWaitingTimeExpansion>240</MaxWaitingTimeExpansion> <!--Seconds - Max Waiting Time for the necessary resources to be gathered to build a structure that is not affordable at the moment-->
+		<MaxWaitingTimeAttack>320</MaxWaitingTimeAttack> <!--Seconds - Max Waiting Time for the necessary resources to be gathered to build a structure that is not affordable at the moment-->
+		<MaxWaitingTimeDefend>240</MaxWaitingTimeDefend> <!--Seconds - Max Waiting Time for the necessary resources to be gathered to build a structure that is not affordable at the moment-->
+	</ConstructStructuresSettings>
+	
+	<!-- UpgradeStructures -->
+	<UpgradeStructuresSettings>
+		<MaxOngoingTasks>5</MaxOngoingTasks> <!--How many tasks of this type are allowed simultaneously-->
+		<CooldownAdvance>10</CooldownAdvance> <!--Seconds - How long after a finished task until the next task is considered in case of Forward Movement (Attack)-->
+		<CooldownSustain>10</CooldownSustain> <!--Seconds - How long after a finished task until the next task is considered in case of Sustain Position (Defend)-->
+		<MinPassedTime>120</MinPassedTime> <!--Seconds - How much time has to pass before the AI considers tackling the task-->
+		<MinVictoryPoints>0</MinVictoryPoints> <!--Percent - How close has one team to be to winning the game before the AI considers tackling the task-->
+		<MinSuperiority>1.0</MinSuperiority> <!-- The min forces-superiority necessary to tackle the task-->
+		<MaxSuperiority>7.0</MaxSuperiority> <!-- The max forces-superiority considered to tackle the task-->
+		<CommitmentTime>5</CommitmentTime> <!--Seconds - How long the TaskForce is defending at the recently fulfilled task area. Higher value slows down the AI since the have longer breaks between task-->
+		<DangerLevelIncrease>100</DangerLevelIncrease> <!--The danger level increase for a POI if a previous task failed 100 means that the appeal for this poi is almost 0 and unit-superiority has to be twice the normal value-->
+		<DangerLevelCooldown>120</DangerLevelCooldown> <!--Seconds - How long until the danger level is reduced incrementally-->
+		<MaxWaitingTimeExpansion>240</MaxWaitingTimeExpansion> <!--Seconds - Max Waiting Time for the necessary resources to be gathered to upgrade a structure that is not affordable at the moment-->
+		<MaxWaitingTimeAttack>320</MaxWaitingTimeAttack> <!--Seconds - Max Waiting Time for the necessary resources to be gathered to upgrade a structure that is not affordable at the moment-->
+		<MaxWaitingTimeDefend>240</MaxWaitingTimeDefend> <!--Seconds - Max Waiting Time for the necessary resources to be gathered to upgrade a structure that is not affordable at the moment-->
+		<MaxResourceBuildings>6</MaxResourceBuildings> <!--How many resource buildings are allowed to be upgraded to the max-->
+	</UpgradeStructuresSettings>
+	
+	<!-- ReinforceTasks -->
+	<ReinforceSettings>
+		<MaxOngoingTasks>12</MaxOngoingTasks> <!--How many tasks of this type are allowed simultaneously-->
+		<CooldownAdvance>10</CooldownAdvance> <!--Seconds - How long after a finished task until the next task is considered in case of Forward Movement (Attack)-->
+		<CooldownSustain>10</CooldownSustain> <!--Seconds - How long after a finished task until the next task is considered in case of Sustain Position (Defend)-->
+		<MinPassedTime>0</MinPassedTime> <!--Seconds - How much time has to pass before the AI considers tackling the task-->
+		<MinVictoryPoints>0</MinVictoryPoints> <!--Percent - How close has one team to be to winning the game before the AI considers tackling the task-->
+		<MinSuperiority>0.1</MinSuperiority> <!-- The min forces-superiority necessary to tackle the task-->
+		<MaxSuperiority>7.0</MaxSuperiority> <!-- The max forces-superiority considered to tackle the task-->
+		<CommitmentTime>5</CommitmentTime> <!--Seconds - How long the TaskForce is defending at the recently fulfilled task area. Higher value slows down the AI since the have longer breaks between task-->
+		<DangerLevelIncrease>100</DangerLevelIncrease> <!--The danger level increase for a POI if a previous task failed 100 means that the appeal for this poi is almost 0 and unit-superiority has to be twice the normal value-->
+		<DangerLevelCooldown>120</DangerLevelCooldown> <!--Seconds - How long until the danger level is reduced incrementally-->
+		<MinHealth>50</MinHealth> <!--Percent - At what health percentage (in relation to the newly started task) are we considering to reinforcing a task-->
+	</ReinforceSettings>
+
+	<!-- RetreatFromTasks -->
+	<RetreatSettings>
+		<MaxOngoingTasks>12</MaxOngoingTasks> <!--How many tasks of this type are allowed simultaneously-->
+		<CooldownAdvance>0.5</CooldownAdvance> <!--Seconds - How long after a finished task until the next task is considered in case of Forward Movement (Attack)-->
+		<CooldownSustain>0.5</CooldownSustain> <!--Seconds - How long after a finished task until the next task is considered in case of Sustain Position (Defend)-->
+		<MinPassedTime>0</MinPassedTime> <!--Seconds - How much time has to pass before the AI considers tackling the task-->
+		<MinVictoryPoints>0</MinVictoryPoints> <!--Percent - How close has one team to be to winning the game before the AI considers tackling the task-->
+		<MinSuperiority>0.1</MinSuperiority> <!-- The min forces-superiority necessary to tackle the task-->
+		<MaxSuperiority>7.0</MaxSuperiority> <!-- The max forces-superiority considered to tackle the task-->
+		<CommitmentTime>0</CommitmentTime> <!--Seconds - How long the TaskForce is defending at the recently fulfilled task area. Higher value slows down the AI since the have longer breaks between task-->
+		<DangerLevelIncrease>100</DangerLevelIncrease> <!--The danger level increase for a POI if a previous task failed 100 means that the appeal for this poi is almost 0 and unit-superiority has to be twice the normal value-->
+		<DangerLevelCooldown>120</DangerLevelCooldown> <!--Seconds - How long until the danger level is reduced incrementally-->
+		<MinHealth>30</MinHealth> <!--Percent - At what health percentage (in relation to the newly started task) are we considering to retreat units from a task-->
+	</RetreatSettings>
+	</AIDifficulty>
+  <AIDifficulty id="insane" type="insane">
+    <Type>Insane</Type>
+    <UpdateSpeed>0.1</UpdateSpeed> <!-- Seconds - How often the AI evaluates which tasks to execute. Lower value means the AI will make decisions more often -->
+    <MaxTasksPerUpdate>500</MaxTasksPerUpdate> <!-- How many tasks the AI executes per update. Higher value means more tasks are executed simultaneously -->
+	<ErrorMargin>0</ErrorMargin> <!--How high is the possibility that the AI makes a mistake choosing the right unit for the task 0 - 100%-->
+	
+	<!-- ConquerStructures -->
+	<ConquerStructuresSettings>
+		<MaxOngoingTasks>25</MaxOngoingTasks> <!--How many tasks of this type are allowed simultaneously-->
+		<CooldownAdvance>0</CooldownAdvance> <!--Seconds - How long after a finished task until the next task is considered in case of Forward Movement (Attack)-->
+		<CooldownSustain>0</CooldownSustain> <!--Seconds - How long after a finished task until the next task is considered in case of Sustain Position (Defend)-->
+		<MinPassedTime>0</MinPassedTime> <!--Seconds - How much time has to pass before the AI considers tackling the task-->
+		<MinVictoryPoints>0</MinVictoryPoints> <!--Percent - How close has one team to be to winning the game before the AI considers tackling the task-->
+		<MinSuperiority>1.0</MinSuperiority> <!-- The min forces-superiority necessary to tackle the task-->
+		<MaxSuperiority>100.0</MaxSuperiority> <!-- The max forces-superiority considered to tackle the task-->
+		<CommitmentTime>0</CommitmentTime> <!--Seconds - How long the TaskForce is defending at the recently fulfilled task area. Higher value slows down the AI since the have longer breaks between task-->
+		<DangerLevelIncrease>100</DangerLevelIncrease> <!--The danger level increase for a POI if a previous task failed 100 means that the appeal for this poi is almost 0 and unit-superiority has to be twice the normal value-->
+		<DangerLevelCooldown>120</DangerLevelCooldown> <!--Seconds - How long until the danger level is reduced incrementally-->
+	</ConquerStructuresSettings>
+	
+	<!-- ControlAreas -->
+	<ControlAreasSettings>
+		<MaxOngoingTasks>25</MaxOngoingTasks> <!--How many tasks of this type are allowed simultaneously-->
+		<CooldownAdvance>0</CooldownAdvance> <!--Seconds - How long after a finished task until the next task is considered in case of Forward Movement (Attack)-->
+		<CooldownSustain>0</CooldownSustain> <!--Seconds - How long after a finished task until the next task is considered in case of Sustain Position (Defend)-->
+		<MinPassedTime>0</MinPassedTime> <!--Seconds - How much time has to pass before the AI considers tackling the task-->
+		<MinVictoryPoints>0</MinVictoryPoints> <!--Percent - How close has one team to be to winning the game before the AI considers tackling the task-->
+		<MinSuperiority>1.5</MinSuperiority> <!-- The min forces-superiority necessary to tackle the task-->
+		<MaxSuperiority>100.0</MaxSuperiority> <!-- The max forces-superiority considered to tackle the task-->
+		<CommitmentTime>0</CommitmentTime> <!--Seconds - How long the TaskForce is defending at the recently fulfilled task area. Higher value slows down the AI since the have longer breaks between task-->
+		<DangerLevelIncrease>100</DangerLevelIncrease> <!--The danger level increase for a POI if a previous task failed 100 means that the appeal for this poi is almost 0 and unit-superiority has to be twice the normal value-->
+		<DangerLevelCooldown>120</DangerLevelCooldown> <!--Seconds - How long until the danger level is reduced incrementally-->
+	</ControlAreasSettings>
+	
+	<!-- ControlDropZones -->
+	<ControlDropZoneSettings>
+		<MaxOngoingTasks>4</MaxOngoingTasks> <!--How many tasks of this type are allowed simultaneously-->
+		<CooldownAdvance>0</CooldownAdvance> <!--Seconds - How long after a finished task until the next task is considered in case of Forward Movement (Attack)-->
+		<CooldownSustain>0</CooldownSustain> <!--Seconds - How long after a finished task until the next task is considered in case of Sustain Position (Defend)-->
+		<MinPassedTime>0</MinPassedTime> <!--Seconds - How much time has to pass before the AI considers tackling the task-->
+		<MinVictoryPoints>0</MinVictoryPoints> <!--Percent - How close has one team to be to winning the game before the AI considers tackling the task-->
+		<MinSuperiority>1.0</MinSuperiority> <!-- The min forces-superiority necessary to tackle the task-->
+		<MaxSuperiority>1.5</MaxSuperiority> <!-- The max forces-superiority considered to tackle the task-->
+		<CommitmentTime>0</CommitmentTime> <!--Seconds - How long the TaskForce is defending at the recently fulfilled task area. Higher value slows down the AI since the have longer breaks between task-->
+		<DangerLevelIncrease>100</DangerLevelIncrease> <!--The danger level increase for a POI if a previous task failed 100 means that the appeal for this poi is almost 0 and unit-superiority has to be twice the normal value-->
+		<DangerLevelCooldown>120</DangerLevelCooldown> <!--Seconds - How long until the danger level is reduced incrementally-->
+	</ControlDropZoneSettings>
+
+	<!-- AttackBases -->
+	<AttackBasesSettings>
+		<MaxOngoingTasks>25</MaxOngoingTasks> <!--How many tasks of this type are allowed simultaneously-->
+		<CooldownAdvance>0</CooldownAdvance> <!--Seconds - How long after a finished task until the next task is considered in case of Forward Movement (Attack)-->
+		<CooldownSustain>0</CooldownSustain> <!--Seconds - How long after a finished task until the next task is considered in case of Sustain Position (Defend)-->
+		<MinPassedTime>180</MinPassedTime> <!--Seconds - How much time has to pass before the AI considers tackling the task-->
+		<MinVictoryPoints>0</MinVictoryPoints> <!--Percent - How close has one team to be to winning the game before the AI considers tackling the task-->
+		<MinSuperiority>2.0</MinSuperiority> <!-- The min forces-superiority necessary to tackle the task-->
+		<MaxSuperiority>100.0</MaxSuperiority> <!-- The max forces-superiority considered to tackle the task-->
+		<CommitmentTime>0</CommitmentTime> <!--Seconds - How long the TaskForce is defending at the recently fulfilled task area. Higher value slows down the AI since the have longer breaks between task-->
+		<DangerLevelIncrease>100</DangerLevelIncrease> <!--The danger level increase for a POI if a previous task failed 100 means that the appeal for this poi is almost 0 and unit-superiority has to be twice the normal value-->
+		<DangerLevelCooldown>120</DangerLevelCooldown> <!--Seconds - How long until the danger level is reduced incrementally-->
+	</AttackBasesSettings>
+	
+	<!-- AttackForces -->
+	<AttackForcesSettings>
+		<MaxOngoingTasks>25</MaxOngoingTasks> <!--How many tasks of this type are allowed simultaneously-->
+		<CooldownAdvance>0</CooldownAdvance> <!--Seconds - How long after a finished task until the next task is considered in case of Forward Movement (Attack)-->
+		<CooldownSustain>0</CooldownSustain> <!--Seconds - How long after a finished task until the next task is considered in case of Sustain Position (Defend)-->
+		<MinPassedTime>0</MinPassedTime> <!--Seconds - How much time has to pass before the AI considers tackling the task-->
+		<MinVictoryPoints>0</MinVictoryPoints> <!--Percent - How close has one team to be to winning the game before the AI considers tackling the task-->
+		<MinSuperiority>1.5</MinSuperiority> <!-- The min forces-superiority necessary to tackle the task-->
+		<MaxSuperiority>100.0</MaxSuperiority> <!-- The max forces-superiority considered to tackle the task-->
+		<CommitmentTime>0</CommitmentTime> <!--Seconds - How long the TaskForce is defending at the recently fulfilled task area. Higher value slows down the AI since the have longer breaks between task-->
+		<DangerLevelIncrease>100</DangerLevelIncrease> <!--The danger level increase for a POI if a previous task failed 100 means that the appeal for this poi is almost 0 and unit-superiority has to be twice the normal value-->
+		<DangerLevelCooldown>120</DangerLevelCooldown> <!--Seconds - How long until the danger level is reduced incrementally-->
+	</AttackForcesSettings>
+	
+	<!-- DefendBases -->
+	<DefendBasesSettings>
+		<MaxOngoingTasks>2</MaxOngoingTasks> <!--How many tasks of this type are allowed simultaneously-->
+		<CooldownAdvance>0</CooldownAdvance> <!--Seconds - How long after a finished task until the next task is considered in case of Forward Movement (Attack)-->
+		<CooldownSustain>0</CooldownSustain> <!--Seconds - How long after a finished task until the next task is considered in case of Sustain Position (Defend)-->
+		<MinPassedTime>0</MinPassedTime> <!--Seconds - How much time has to pass before the AI considers tackling the task-->
+		<MinVictoryPoints>0</MinVictoryPoints> <!--Percent - How close has one team to be to winning the game before the AI considers tackling the task-->
+		<MinSuperiority>1.0</MinSuperiority> <!-- The min forces-superiority necessary to tackle the task-->
+		<MaxSuperiority>100.0</MaxSuperiority> <!-- The max forces-superiority considered to tackle the task-->
+		<CommitmentTime>0</CommitmentTime> <!--Seconds - How long the TaskForce is defending at the recently fulfilled task area. Higher value slows down the AI since the have longer breaks between task-->
+		<DangerLevelIncrease>100</DangerLevelIncrease> <!--The danger level increase for a POI if a previous task failed 100 means that the appeal for this poi is almost 0 and unit-superiority has to be twice the normal value-->
+		<DangerLevelCooldown>120</DangerLevelCooldown> <!--Seconds - How long until the danger level is reduced incrementally-->
+	</DefendBasesSettings>
+	
+	<!-- DefendAssets -->
+	<DefendAssetsSettings>
+		<MaxOngoingTasks>0</MaxOngoingTasks> <!--How many tasks of this type are allowed simultaneously-->
+		<CooldownAdvance>0</CooldownAdvance> <!--Seconds - How long after a finished task until the next task is considered in case of Forward Movement (Attack)-->
+		<CooldownSustain>0</CooldownSustain> <!--Seconds - How long after a finished task until the next task is considered in case of Sustain Position (Defend)-->
+		<MinPassedTime>0</MinPassedTime> <!--Seconds - How much time has to pass before the AI considers tackling the task-->
+		<MinVictoryPoints>0</MinVictoryPoints> <!--Percent - How close has one team to be to winning the game before the AI considers tackling the task-->
+		<MinSuperiority>1.0</MinSuperiority> <!-- The min forces-superiority necessary to tackle the task-->
+		<MaxSuperiority>100.0</MaxSuperiority> <!-- The max forces-superiority considered to tackle the task-->
+		<CommitmentTime>0</CommitmentTime> <!--Seconds - How long the TaskForce is defending at the recently fulfilled task area. Higher value slows down the AI since the have longer breaks between task-->
+		<DangerLevelIncrease>100</DangerLevelIncrease> <!--The danger level increase for a POI if a previous task failed 100 means that the appeal for this poi is almost 0 and unit-superiority has to be twice the normal value-->
+		<DangerLevelCooldown>120</DangerLevelCooldown> <!--Seconds - How long until the danger level is reduced incrementally-->
+	</DefendAssetsSettings>
+	
+	<!-- GuardOwned -->
+	<GuardSettings>
+		<MaxOngoingTasks>0</MaxOngoingTasks> <!--How many tasks of this type are allowed simultaneously-->
+		<CooldownAdvance>0</CooldownAdvance> <!--Seconds - How long after a finished task until the next task is considered in case of Forward Movement (Attack)-->
+		<CooldownSustain>0</CooldownSustain> <!--Seconds - How long after a finished task until the next task is considered in case of Sustain Position (Defend)-->
+		<MinPassedTime>0</MinPassedTime> <!--Seconds - How much time has to pass before the AI considers tackling the task-->
+		<MinVictoryPoints>0</MinVictoryPoints> <!--Percent - How close has one team to be to winning the game before the AI considers tackling the task-->
+		<MinSuperiority>1.0</MinSuperiority> <!-- The min forces-superiority necessary to tackle the task-->
+		<MaxSuperiority>100.0</MaxSuperiority> <!-- The max forces-superiority considered to tackle the task-->
+		<CommitmentTime>0</CommitmentTime> <!--Seconds - How long the TaskForce is defending at the recently fulfilled task area. Higher value slows down the AI since the have longer breaks between task-->
+		<DangerLevelIncrease>100</DangerLevelIncrease> <!--The danger level increase for a POI if a previous task failed 100 means that the appeal for this poi is almost 0 and unit-superiority has to be twice the normal value-->
+		<DangerLevelCooldown>120</DangerLevelCooldown> <!--Seconds - How long until the danger level is reduced incrementally-->
+	</GuardSettings>
+	
+	<!-- Rally -->
+	<RallySettings>
+		<MaxOngoingTasks>25</MaxOngoingTasks> <!--How many tasks of this type are allowed simultaneously-->
+		<CooldownAdvance>0</CooldownAdvance> <!--Seconds - How long after a finished task until the next task is considered in case of Forward Movement (Attack)-->
+		<CooldownSustain>0</CooldownSustain> <!--Seconds - How long after a finished task until the next task is considered in case of Sustain Position (Defend)-->
+		<MinPassedTime>0</MinPassedTime> <!--Seconds - How much time has to pass before the AI considers tackling the task-->
+		<MinVictoryPoints>0</MinVictoryPoints> <!--Percent - How close has one team to be to winning the game before the AI considers tackling the task-->
+		<MinSuperiority>1.0</MinSuperiority> <!-- The min forces-superiority necessary to tackle the task-->
+		<MaxSuperiority>100.0</MaxSuperiority> <!-- The max forces-superiority considered to tackle the task-->
+		<CommitmentTime>0</CommitmentTime> <!--Seconds - How long the TaskForce is defending at the recently fulfilled task area. Higher value slows down the AI since the have longer breaks between task-->
+		<DangerLevelIncrease>100</DangerLevelIncrease> <!--The danger level increase for a POI if a previous task failed 100 means that the appeal for this poi is almost 0 and unit-superiority has to be twice the normal value-->
+		<DangerLevelCooldown>120</DangerLevelCooldown> <!--Seconds - How long until the danger level is reduced incrementally-->
+	</RallySettings>
+	
+	<!-- CollectResources -->
+	<CollectResourcesSettings>
+		<MaxOngoingTasks>25</MaxOngoingTasks> <!--How many tasks of this type are allowed simultaneously-->
+		<CooldownAdvance>0</CooldownAdvance> <!--Seconds - How long after a finished task until the next task is considered in case of Forward Movement (Attack)-->
+		<CooldownSustain>0</CooldownSustain> <!--Seconds - How long after a finished task until the next task is considered in case of Sustain Position (Defend)-->
+		<MinPassedTime>0</MinPassedTime> <!--Seconds - How much time has to pass before the AI considers tackling the task-->
+		<MinVictoryPoints>0</MinVictoryPoints> <!--Percent - How close has one team to be to winning the game before the AI considers tackling the task-->
+		<MinSuperiority>0.1</MinSuperiority> <!-- The min forces-superiority necessary to tackle the task-->
+		<MaxSuperiority>100.0</MaxSuperiority> <!-- The max forces-superiority considered to tackle the task-->
+		<CommitmentTime>0</CommitmentTime> <!--Seconds - How long the TaskForce is defending at the recently fulfilled task area. Higher value slows down the AI since the have longer breaks between task-->
+		<DangerLevelIncrease>100</DangerLevelIncrease> <!--The danger level increase for a POI if a previous task failed 100 means that the appeal for this poi is almost 0 and unit-superiority has to be twice the normal value-->
+		<DangerLevelCooldown>120</DangerLevelCooldown> <!--Seconds - How long until the danger level is reduced incrementally-->
+	</CollectResourcesSettings>
+	
+	<!-- ConquerWeaponSystems -->
+	<ConquerWeaponSystemsSettings>
+		<MaxOngoingTasks>10</MaxOngoingTasks> <!--How many tasks of this type are allowed simultaneously-->
+		<CooldownAdvance>0</CooldownAdvance> <!--Seconds - How long after a finished task until the next task is considered in case of Forward Movement (Attack)-->
+		<CooldownSustain>0</CooldownSustain> <!--Seconds - How long after a finished task until the next task is considered in case of Sustain Position (Defend)-->
+		<MinPassedTime>0</MinPassedTime> <!--Seconds - How much time has to pass before the AI considers tackling the task-->
+		<MinVictoryPoints>0</MinVictoryPoints> <!--Percent - How close has one team to be to winning the game before the AI considers tackling the task-->
+		<MinSuperiority>1.0</MinSuperiority> <!-- The min forces-superiority necessary to tackle the task-->
+		<MaxSuperiority>100.0</MaxSuperiority> <!-- The max forces-superiority considered to tackle the task-->
+		<CommitmentTime>0</CommitmentTime> <!--Seconds - How long the TaskForce is defending at the recently fulfilled task area. Higher value slows down the AI since the have longer breaks between task-->
+		<DangerLevelIncrease>100</DangerLevelIncrease> <!--The danger level increase for a POI if a previous task failed 100 means that the appeal for this poi is almost 0 and unit-superiority has to be twice the normal value-->
+		<DangerLevelCooldown>120</DangerLevelCooldown> <!--Seconds - How long until the danger level is reduced incrementally-->
+	</ConquerWeaponSystemsSettings>
+	
+	<!-- ChangeEquipment -->
+	<ChangeEquipmentSettings>
+		<MaxOngoingTasks>25</MaxOngoingTasks> <!--How many tasks of this type are allowed simultaneously-->
+		<CooldownAdvance>0</CooldownAdvance> <!--Seconds - How long after a finished task until the next task is considered in case of Forward Movement (Attack)-->
+		<CooldownSustain>0</CooldownSustain> <!--Seconds - How long after a finished task until the next task is considered in case of Sustain Position (Defend)-->
+		<MinPassedTime>0</MinPassedTime> <!--Seconds - How much time has to pass before the AI considers tackling the task-->
+		<MinVictoryPoints>0</MinVictoryPoints> <!--Percent - How close has one team to be to winning the game before the AI considers tackling the task-->
+		<MinSuperiority>0.1</MinSuperiority> <!-- The min forces-superiority necessary to tackle the task-->
+		<MaxSuperiority>100.0</MaxSuperiority> <!-- The max forces-superiority considered to tackle the task-->
+		<CommitmentTime>0</CommitmentTime> <!--Seconds - How long the TaskForce is defending at the recently fulfilled task area. Higher value slows down the AI since the have longer breaks between task-->
+		<DangerLevelIncrease>100</DangerLevelIncrease> <!--The danger level increase for a POI if a previous task failed 100 means that the appeal for this poi is almost 0 and unit-superiority has to be twice the normal value-->
+		<DangerLevelCooldown>120</DangerLevelCooldown> <!--Seconds - How long until the danger level is reduced incrementally-->
+	</ChangeEquipmentSettings>
+	
+	<!-- ProduceUnits -->
+	<ProduceUnitSettings>
+		<MaxOngoingTasks>25</MaxOngoingTasks> <!--How many tasks of this type are allowed simultaneously-->
+		<CooldownAdvance>0.0</CooldownAdvance> <!--Seconds - How long after a finished task until the next task is considered in case of Forward Movement (Attack)-->
+		<CooldownSustain>0.0</CooldownSustain> <!--Seconds - How long after a finished task until the next task is considered in case of Sustain Position (Defend)-->
+		<MinPassedTime>0</MinPassedTime> <!--Seconds - How much time has to pass before the AI considers tackling the task-->
+		<MinVictoryPoints>0</MinVictoryPoints> <!--Percent - How close has one team to be to winning the game before the AI considers tackling the task-->
+		<MinSuperiority>0.1</MinSuperiority> <!-- The min forces-superiority necessary to tackle the task-->
+		<MaxSuperiority>100.0</MaxSuperiority> <!-- The max forces-superiority considered to tackle the task-->
+		<CommitmentTime>0</CommitmentTime> <!--Seconds - How long the TaskForce is defending at the recently fulfilled task area. Higher value slows down the AI since the have longer breaks between task-->
+		<DangerLevelIncrease>100</DangerLevelIncrease> <!--The danger level increase for a POI if a previous task failed 100 means that the appeal for this poi is almost 0 and unit-superiority has to be twice the normal value-->
+		<DangerLevelCooldown>120</DangerLevelCooldown> <!--Seconds - How long until the danger level is reduced incrementally-->
+		<MaxWaitingTimeExpansion>360</MaxWaitingTimeExpansion> <!--Seconds - Max Waiting Time for the necessary resources to be gathered to produce a unit that is not affordable at the moment-->
+		<MaxWaitingTimeAttack>360</MaxWaitingTimeAttack> <!--Seconds - Max Waiting Time for the necessary resources to be gathered to produce a unit that is not affordable at the moment-->
+		<MaxWaitingTimeDefend>300</MaxWaitingTimeDefend> <!--Seconds - Max Waiting Time for the necessary resources to be gathered to produce a unit that is not affordable at the moment-->
+	</ProduceUnitSettings>
+	
+	<!-- ConstructStructures -->
+	<ConstructStructuresSettings>
+		<MaxOngoingTasks>4</MaxOngoingTasks> <!--How many tasks of this type are allowed simultaneously-->
+		<CooldownAdvance>0</CooldownAdvance> <!--Seconds - How long after a finished task until the next task is considered in case of Forward Movement (Attack)-->
+		<CooldownSustain>0</CooldownSustain> <!--Seconds - How long after a finished task until the next task is considered in case of Sustain Position (Defend)-->
+		<MinPassedTime>0</MinPassedTime> <!--Seconds - How much time has to pass before the AI considers tackling the task-->
+		<MinVictoryPoints>0</MinVictoryPoints> <!--Percent - How close has one team to be to winning the game before the AI considers tackling the task-->
+		<MinSuperiority>1.0</MinSuperiority> <!-- The min forces-superiority necessary to tackle the task-->
+		<MaxSuperiority>100.0</MaxSuperiority> <!-- The max forces-superiority considered to tackle the task-->
+		<CommitmentTime>0</CommitmentTime> <!--Seconds - How long the TaskForce is defending at the recently fulfilled task area. Higher value slows down the AI since the have longer breaks between task-->
+		<DangerLevelIncrease>100</DangerLevelIncrease> <!--The danger level increase for a POI if a previous task failed 100 means that the appeal for this poi is almost 0 and unit-superiority has to be twice the normal value-->
+		<DangerLevelCooldown>120</DangerLevelCooldown> <!--Seconds - How long until the danger level is reduced incrementally-->
+		<MaxWaitingTimeExpansion>360</MaxWaitingTimeExpansion> <!--Seconds - Max Waiting Time for the necessary resources to be gathered to build a structure that is not affordable at the moment-->
+		<MaxWaitingTimeAttack>360</MaxWaitingTimeAttack> <!--Seconds - Max Waiting Time for the necessary resources to be gathered to build a structure that is not affordable at the moment-->
+		<MaxWaitingTimeDefend>360</MaxWaitingTimeDefend> <!--Seconds - Max Waiting Time for the necessary resources to be gathered to build a structure that is not affordable at the moment-->
+	</ConstructStructuresSettings>
+	
+	<!-- UpgradeStructures -->
+	<UpgradeStructuresSettings>
+		<MaxOngoingTasks>8</MaxOngoingTasks> <!--How many tasks of this type are allowed simultaneously-->
+		<CooldownAdvance>0</CooldownAdvance> <!--Seconds - How long after a finished task until the next task is considered in case of Forward Movement (Attack)-->
+		<CooldownSustain>0</CooldownSustain> <!--Seconds - How long after a finished task until the next task is considered in case of Sustain Position (Defend)-->
+		<MinPassedTime>0</MinPassedTime> <!--Seconds - How much time has to pass before the AI considers tackling the task-->
+		<MinVictoryPoints>0</MinVictoryPoints> <!--Percent - How close has one team to be to winning the game before the AI considers tackling the task-->
+		<MinSuperiority>1.0</MinSuperiority> <!-- The min forces-superiority necessary to tackle the task-->
+		<MaxSuperiority>100.0</MaxSuperiority> <!-- The max forces-superiority considered to tackle the task-->
+		<CommitmentTime>0</CommitmentTime> <!--Seconds - How long the TaskForce is defending at the recently fulfilled task area. Higher value slows down the AI since the have longer breaks between task-->
+		<DangerLevelIncrease>100</DangerLevelIncrease> <!--The danger level increase for a POI if a previous task failed 100 means that the appeal for this poi is almost 0 and unit-superiority has to be twice the normal value-->
+		<DangerLevelCooldown>120</DangerLevelCooldown> <!--Seconds - How long until the danger level is reduced incrementally-->
+		<MaxWaitingTimeExpansion>360</MaxWaitingTimeExpansion> <!--Seconds - Max Waiting Time for the necessary resources to be gathered to upgrade a structure that is not affordable at the moment-->
+		<MaxWaitingTimeAttack>360</MaxWaitingTimeAttack> <!--Seconds - Max Waiting Time for the necessary resources to be gathered to upgrade a structure that is not affordable at the moment-->
+		<MaxWaitingTimeDefend>360</MaxWaitingTimeDefend> <!--Seconds - Max Waiting Time for the necessary resources to be gathered to upgrade a structure that is not affordable at the moment-->
+		<MaxResourceBuildings>8</MaxResourceBuildings> <!--How many resource buildings are allowed to be upgraded to the max-->
+	</UpgradeStructuresSettings>
+	
+	<!-- ReinforceTasks -->
+	<ReinforceSettings>
+		<MaxOngoingTasks>25</MaxOngoingTasks> <!--How many tasks of this type are allowed simultaneously-->
+		<CooldownAdvance>0</CooldownAdvance> <!--Seconds - How long after a finished task until the next task is considered in case of Forward Movement (Attack)-->
+		<CooldownSustain>0</CooldownSustain> <!--Seconds - How long after a finished task until the next task is considered in case of Sustain Position (Defend)-->
+		<MinPassedTime>0</MinPassedTime> <!--Seconds - How much time has to pass before the AI considers tackling the task-->
+		<MinVictoryPoints>0</MinVictoryPoints> <!--Percent - How close has one team to be to winning the game before the AI considers tackling the task-->
+		<MinSuperiority>0.1</MinSuperiority> <!-- The min forces-superiority necessary to tackle the task-->
+		<MaxSuperiority>100.0</MaxSuperiority> <!-- The max forces-superiority considered to tackle the task-->
+		<CommitmentTime>0</CommitmentTime> <!--Seconds - How long the TaskForce is defending at the recently fulfilled task area. Higher value slows down the AI since the have longer breaks between task-->
+		<DangerLevelIncrease>100</DangerLevelIncrease> <!--The danger level increase for a POI if a previous task failed 100 means that the appeal for this poi is almost 0 and unit-superiority has to be twice the normal value-->
+		<DangerLevelCooldown>120</DangerLevelCooldown> <!--Seconds - How long until the danger level is reduced incrementally-->
+		<MinHealth>70</MinHealth> <!--Percent - At what health percentage (in relation to the newly started task) are we considering to reinforcing a task-->
+	</ReinforceSettings>
+
+	<!-- RetreatFromTasks -->
+	<RetreatSettings>
+		<MaxOngoingTasks>25</MaxOngoingTasks> <!--How many tasks of this type are allowed simultaneously-->
+		<CooldownAdvance>0</CooldownAdvance> <!--Seconds - How long after a finished task until the next task is considered in case of Forward Movement (Attack)-->
+		<CooldownSustain>0</CooldownSustain> <!--Seconds - How long after a finished task until the next task is considered in case of Sustain Position (Defend)-->
+		<MinPassedTime>0</MinPassedTime> <!--Seconds - How much time has to pass before the AI considers tackling the task-->
+		<MinVictoryPoints>0</MinVictoryPoints> <!--Percent - How close has one team to be to winning the game before the AI considers tackling the task-->
+		<MinSuperiority>0.1</MinSuperiority> <!-- The min forces-superiority necessary to tackle the task-->
+		<MaxSuperiority>100.0</MaxSuperiority> <!-- The max forces-superiority considered to tackle the task-->
+		<CommitmentTime>0</CommitmentTime> <!--Seconds - How long the TaskForce is defending at the recently fulfilled task area. Higher value slows down the AI since the have longer breaks between task-->
+		<DangerLevelIncrease>100</DangerLevelIncrease> <!--The danger level increase for a POI if a previous task failed 100 means that the appeal for this poi is almost 0 and unit-superiority has to be twice the normal value-->
+		<DangerLevelCooldown>120</DangerLevelCooldown> <!--Seconds - How long until the danger level is reduced incrementally-->
+		<MinHealth>20</MinHealth> <!--Percent - At what health percentage (in relation to the newly started task) are we considering to retreat units from a task-->
+	</RetreatSettings>
+	</AIDifficulty>  
+  <AIDifficulty id="impostor" type="impostor">
+    <Type>Easy</Type>
+    <UpdateSpeed>0.1</UpdateSpeed> <!-- Seconds - How often the AI evaluates which tasks to execute. Lower value means the AI will make decisions more often -->
+	<MaxTasksPerUpdate>500</MaxTasksPerUpdate> <!-- How many tasks the AI executes per update. Higher value means more tasks are executed simultaneously -->
+	<ErrorMargin>0</ErrorMargin> <!--How high is the possibility that the AI makes a mistake choosing the right unit for the task 0 - 100%-->
+	
+	<!-- ConquerStructures -->
+	<ConquerStructuresSettings>
+		<MaxOngoingTasks>15</MaxOngoingTasks> <!--How many tasks of this type are allowed simultaneously-->
+		<CooldownAdvance>0</CooldownAdvance> <!--Seconds - How long after a finished task until the next task is considered in case of Forward Movement (Attack)-->
+		<CooldownSustain>0</CooldownSustain> <!--Seconds - How long after a finished task until the next task is considered in case of Sustain Position (Defend)-->
+		<MinPassedTime>120</MinPassedTime> <!--Seconds - How much time has to pass before the AI considers tackling the task-->
+		<MinVictoryPoints>0</MinVictoryPoints> <!--Percent - How close has one team to be to winning the game before the AI considers tackling the task-->
+		<MinSuperiority>1.0</MinSuperiority> <!-- The min forces-superiority necessary to tackle the task-->
+		<MaxSuperiority>100.0</MaxSuperiority> <!-- The max forces-superiority considered to tackle the task-->
+		<CommitmentTime>0</CommitmentTime> <!--Seconds - How long the TaskForce is defending at the recently fulfilled task area. Higher value slows down the AI since the have longer breaks between task-->
+		<DangerLevelIncrease>100</DangerLevelIncrease> <!--The danger level increase for a POI if a previous task failed 100 means that the appeal for this poi is almost 0 and unit-superiority has to be twice the normal value-->
+		<DangerLevelCooldown>120</DangerLevelCooldown> <!--Seconds - How long until the danger level is reduced incrementally-->
+	</ConquerStructuresSettings>
+	
+	<!-- ControlAreas -->
+	<ControlAreasSettings>
+		<MaxOngoingTasks>15</MaxOngoingTasks> <!--How many tasks of this type are allowed simultaneously-->
+		<CooldownAdvance>0</CooldownAdvance> <!--Seconds - How long after a finished task until the next task is considered in case of Forward Movement (Attack)-->
+		<CooldownSustain>0</CooldownSustain> <!--Seconds - How long after a finished task until the next task is considered in case of Sustain Position (Defend)-->
+		<MinPassedTime>120</MinPassedTime> <!--Seconds - How much time has to pass before the AI considers tackling the task-->
+		<MinVictoryPoints>0</MinVictoryPoints> <!--Percent - How close has one team to be to winning the game before the AI considers tackling the task-->
+		<MinSuperiority>1.5</MinSuperiority> <!-- The min forces-superiority necessary to tackle the task-->
+		<MaxSuperiority>100.0</MaxSuperiority> <!-- The max forces-superiority considered to tackle the task-->
+		<CommitmentTime>0</CommitmentTime> <!--Seconds - How long the TaskForce is defending at the recently fulfilled task area. Higher value slows down the AI since the have longer breaks between task-->
+		<DangerLevelIncrease>100</DangerLevelIncrease> <!--The danger level increase for a POI if a previous task failed 100 means that the appeal for this poi is almost 0 and unit-superiority has to be twice the normal value-->
+		<DangerLevelCooldown>120</DangerLevelCooldown> <!--Seconds - How long until the danger level is reduced incrementally-->
+	</ControlAreasSettings>
+	
+	<!-- ControlDropZones -->
+	<ControlDropZoneSettings>
+		<MaxOngoingTasks>0</MaxOngoingTasks> <!--How many tasks of this type are allowed simultaneously-->
+		<CooldownAdvance>0</CooldownAdvance> <!--Seconds - How long after a finished task until the next task is considered in case of Forward Movement (Attack)-->
+		<CooldownSustain>0</CooldownSustain> <!--Seconds - How long after a finished task until the next task is considered in case of Sustain Position (Defend)-->
+		<MinPassedTime>120</MinPassedTime> <!--Seconds - How much time has to pass before the AI considers tackling the task-->
+		<MinVictoryPoints>0</MinVictoryPoints> <!--Percent - How close has one team to be to winning the game before the AI considers tackling the task-->
+		<MinSuperiority>1.0</MinSuperiority> <!-- The min forces-superiority necessary to tackle the task-->
+		<MaxSuperiority>1.5</MaxSuperiority> <!-- The max forces-superiority considered to tackle the task-->
+		<CommitmentTime>0</CommitmentTime> <!--Seconds - How long the TaskForce is defending at the recently fulfilled task area. Higher value slows down the AI since the have longer breaks between task-->
+		<DangerLevelIncrease>100</DangerLevelIncrease> <!--The danger level increase for a POI if a previous task failed 100 means that the appeal for this poi is almost 0 and unit-superiority has to be twice the normal value-->
+		<DangerLevelCooldown>120</DangerLevelCooldown> <!--Seconds - How long until the danger level is reduced incrementally-->
+	</ControlDropZoneSettings>
+
+	<!-- AttackBases -->
+	<AttackBasesSettings>
+		<MaxOngoingTasks>15</MaxOngoingTasks> <!--How many tasks of this type are allowed simultaneously-->
+		<CooldownAdvance>0</CooldownAdvance> <!--Seconds - How long after a finished task until the next task is considered in case of Forward Movement (Attack)-->
+		<CooldownSustain>0</CooldownSustain> <!--Seconds - How long after a finished task until the next task is considered in case of Sustain Position (Defend)-->
+		<MinPassedTime>120</MinPassedTime> <!--Seconds - How much time has to pass before the AI considers tackling the task-->
+		<MinVictoryPoints>0</MinVictoryPoints> <!--Percent - How close has one team to be to winning the game before the AI considers tackling the task-->
+		<MinSuperiority>2.0</MinSuperiority> <!-- The min forces-superiority necessary to tackle the task-->
+		<MaxSuperiority>100.0</MaxSuperiority> <!-- The max forces-superiority considered to tackle the task-->
+		<CommitmentTime>0</CommitmentTime> <!--Seconds - How long the TaskForce is defending at the recently fulfilled task area. Higher value slows down the AI since the have longer breaks between task-->
+		<DangerLevelIncrease>100</DangerLevelIncrease> <!--The danger level increase for a POI if a previous task failed 100 means that the appeal for this poi is almost 0 and unit-superiority has to be twice the normal value-->
+		<DangerLevelCooldown>120</DangerLevelCooldown> <!--Seconds - How long until the danger level is reduced incrementally-->
+	</AttackBasesSettings>
+	
+	<!-- AttackForces -->
+	<AttackForcesSettings>
+		<MaxOngoingTasks>15</MaxOngoingTasks> <!--How many tasks of this type are allowed simultaneously-->
+		<CooldownAdvance>0</CooldownAdvance> <!--Seconds - How long after a finished task until the next task is considered in case of Forward Movement (Attack)-->
+		<CooldownSustain>0</CooldownSustain> <!--Seconds - How long after a finished task until the next task is considered in case of Sustain Position (Defend)-->
+		<MinPassedTime>0</MinPassedTime> <!--Seconds - How much time has to pass before the AI considers tackling the task-->
+		<MinVictoryPoints>0</MinVictoryPoints> <!--Percent - How close has one team to be to winning the game before the AI considers tackling the task-->
+		<MinSuperiority>1.5</MinSuperiority> <!-- The min forces-superiority necessary to tackle the task-->
+		<MaxSuperiority>100.0</MaxSuperiority> <!-- The max forces-superiority considered to tackle the task-->
+		<CommitmentTime>0</CommitmentTime> <!--Seconds - How long the TaskForce is defending at the recently fulfilled task area. Higher value slows down the AI since the have longer breaks between task-->
+		<DangerLevelIncrease>100</DangerLevelIncrease> <!--The danger level increase for a POI if a previous task failed 100 means that the appeal for this poi is almost 0 and unit-superiority has to be twice the normal value-->
+		<DangerLevelCooldown>120</DangerLevelCooldown> <!--Seconds - How long until the danger level is reduced incrementally-->
+	</AttackForcesSettings>
+	
+	<!-- DefendBases -->
+	<DefendBasesSettings>
+		<MaxOngoingTasks>2</MaxOngoingTasks> <!--How many tasks of this type are allowed simultaneously-->
+		<CooldownAdvance>0</CooldownAdvance> <!--Seconds - How long after a finished task until the next task is considered in case of Forward Movement (Attack)-->
+		<CooldownSustain>0</CooldownSustain> <!--Seconds - How long after a finished task until the next task is considered in case of Sustain Position (Defend)-->
+		<MinPassedTime>0</MinPassedTime> <!--Seconds - How much time has to pass before the AI considers tackling the task-->
+		<MinVictoryPoints>0</MinVictoryPoints> <!--Percent - How close has one team to be to winning the game before the AI considers tackling the task-->
+		<MinSuperiority>1.0</MinSuperiority> <!-- The min forces-superiority necessary to tackle the task-->
+		<MaxSuperiority>100.0</MaxSuperiority> <!-- The max forces-superiority considered to tackle the task-->
+		<CommitmentTime>0</CommitmentTime> <!--Seconds - How long the TaskForce is defending at the recently fulfilled task area. Higher value slows down the AI since the have longer breaks between task-->
+		<DangerLevelIncrease>100</DangerLevelIncrease> <!--The danger level increase for a POI if a previous task failed 100 means that the appeal for this poi is almost 0 and unit-superiority has to be twice the normal value-->
+		<DangerLevelCooldown>120</DangerLevelCooldown> <!--Seconds - How long until the danger level is reduced incrementally-->
+	</DefendBasesSettings>
+	
+	<!-- DefendAssets -->
+	<DefendAssetsSettings>
+		<MaxOngoingTasks>1</MaxOngoingTasks> <!--How many tasks of this type are allowed simultaneously-->
+		<CooldownAdvance>0</CooldownAdvance> <!--Seconds - How long after a finished task until the next task is considered in case of Forward Movement (Attack)-->
+		<CooldownSustain>0</CooldownSustain> <!--Seconds - How long after a finished task until the next task is considered in case of Sustain Position (Defend)-->
+		<MinPassedTime>0</MinPassedTime> <!--Seconds - How much time has to pass before the AI considers tackling the task-->
+		<MinVictoryPoints>0</MinVictoryPoints> <!--Percent - How close has one team to be to winning the game before the AI considers tackling the task-->
+		<MinSuperiority>1.0</MinSuperiority> <!-- The min forces-superiority necessary to tackle the task-->
+		<MaxSuperiority>100.0</MaxSuperiority> <!-- The max forces-superiority considered to tackle the task-->
+		<CommitmentTime>0</CommitmentTime> <!--Seconds - How long the TaskForce is defending at the recently fulfilled task area. Higher value slows down the AI since the have longer breaks between task-->
+		<DangerLevelIncrease>100</DangerLevelIncrease> <!--The danger level increase for a POI if a previous task failed 100 means that the appeal for this poi is almost 0 and unit-superiority has to be twice the normal value-->
+		<DangerLevelCooldown>120</DangerLevelCooldown> <!--Seconds - How long until the danger level is reduced incrementally-->
+	</DefendAssetsSettings>
+	
+	<!-- GuardOwned -->
+	<GuardSettings>
+		<MaxOngoingTasks>0</MaxOngoingTasks> <!--How many tasks of this type are allowed simultaneously-->
+		<CooldownAdvance>0</CooldownAdvance> <!--Seconds - How long after a finished task until the next task is considered in case of Forward Movement (Attack)-->
+		<CooldownSustain>0</CooldownSustain> <!--Seconds - How long after a finished task until the next task is considered in case of Sustain Position (Defend)-->
+		<MinPassedTime>0</MinPassedTime> <!--Seconds - How much time has to pass before the AI considers tackling the task-->
+		<MinVictoryPoints>0</MinVictoryPoints> <!--Percent - How close has one team to be to winning the game before the AI considers tackling the task-->
+		<MinSuperiority>1.0</MinSuperiority> <!-- The min forces-superiority necessary to tackle the task-->
+		<MaxSuperiority>100.0</MaxSuperiority> <!-- The max forces-superiority considered to tackle the task-->
+		<CommitmentTime>0</CommitmentTime> <!--Seconds - How long the TaskForce is defending at the recently fulfilled task area. Higher value slows down the AI since the have longer breaks between task-->
+		<DangerLevelIncrease>100</DangerLevelIncrease> <!--The danger level increase for a POI if a previous task failed 100 means that the appeal for this poi is almost 0 and unit-superiority has to be twice the normal value-->
+		<DangerLevelCooldown>120</DangerLevelCooldown> <!--Seconds - How long until the danger level is reduced incrementally-->
+	</GuardSettings>
+	
+	<!-- Rally -->
+	<RallySettings>
+		<MaxOngoingTasks>15</MaxOngoingTasks> <!--How many tasks of this type are allowed simultaneously-->
+		<CooldownAdvance>0</CooldownAdvance> <!--Seconds - How long after a finished task until the next task is considered in case of Forward Movement (Attack)-->
+		<CooldownSustain>0</CooldownSustain> <!--Seconds - How long after a finished task until the next task is considered in case of Sustain Position (Defend)-->
+		<MinPassedTime>0</MinPassedTime> <!--Seconds - How much time has to pass before the AI considers tackling the task-->
+		<MinVictoryPoints>0</MinVictoryPoints> <!--Percent - How close has one team to be to winning the game before the AI considers tackling the task-->
+		<MinSuperiority>1.0</MinSuperiority> <!-- The min forces-superiority necessary to tackle the task-->
+		<MaxSuperiority>100.0</MaxSuperiority> <!-- The max forces-superiority considered to tackle the task-->
+		<CommitmentTime>0</CommitmentTime> <!--Seconds - How long the TaskForce is defending at the recently fulfilled task area. Higher value slows down the AI since the have longer breaks between task-->
+		<DangerLevelIncrease>100</DangerLevelIncrease> <!--The danger level increase for a POI if a previous task failed 100 means that the appeal for this poi is almost 0 and unit-superiority has to be twice the normal value-->
+		<DangerLevelCooldown>120</DangerLevelCooldown> <!--Seconds - How long until the danger level is reduced incrementally-->
+	</RallySettings>
+	
+	<!-- CollectResources -->
+	<CollectResourcesSettings>
+		<MaxOngoingTasks>15</MaxOngoingTasks> <!--How many tasks of this type are allowed simultaneously-->
+		<CooldownAdvance>0</CooldownAdvance> <!--Seconds - How long after a finished task until the next task is considered in case of Forward Movement (Attack)-->
+		<CooldownSustain>0</CooldownSustain> <!--Seconds - How long after a finished task until the next task is considered in case of Sustain Position (Defend)-->
+		<MinPassedTime>0</MinPassedTime> <!--Seconds - How much time has to pass before the AI considers tackling the task-->
+		<MinVictoryPoints>0</MinVictoryPoints> <!--Percent - How close has one team to be to winning the game before the AI considers tackling the task-->
+		<MinSuperiority>0.1</MinSuperiority> <!-- The min forces-superiority necessary to tackle the task-->
+		<MaxSuperiority>100.0</MaxSuperiority> <!-- The max forces-superiority considered to tackle the task-->
+		<CommitmentTime>0</CommitmentTime> <!--Seconds - How long the TaskForce is defending at the recently fulfilled task area. Higher value slows down the AI since the have longer breaks between task-->
+		<DangerLevelIncrease>100</DangerLevelIncrease> <!--The danger level increase for a POI if a previous task failed 100 means that the appeal for this poi is almost 0 and unit-superiority has to be twice the normal value-->
+		<DangerLevelCooldown>120</DangerLevelCooldown> <!--Seconds - How long until the danger level is reduced incrementally-->
+	</CollectResourcesSettings>
+	
+	<!-- ConquerWeaponSystems -->
+	<ConquerWeaponSystemsSettings>
+		<MaxOngoingTasks>15</MaxOngoingTasks> <!--How many tasks of this type are allowed simultaneously-->
+		<CooldownAdvance>0</CooldownAdvance> <!--Seconds - How long after a finished task until the next task is considered in case of Forward Movement (Attack)-->
+		<CooldownSustain>0</CooldownSustain> <!--Seconds - How long after a finished task until the next task is considered in case of Sustain Position (Defend)-->
+		<MinPassedTime>0</MinPassedTime> <!--Seconds - How much time has to pass before the AI considers tackling the task-->
+		<MinVictoryPoints>0</MinVictoryPoints> <!--Percent - How close has one team to be to winning the game before the AI considers tackling the task-->
+		<MinSuperiority>1.0</MinSuperiority> <!-- The min forces-superiority necessary to tackle the task-->
+		<MaxSuperiority>100.0</MaxSuperiority> <!-- The max forces-superiority considered to tackle the task-->
+		<CommitmentTime>0</CommitmentTime> <!--Seconds - How long the TaskForce is defending at the recently fulfilled task area. Higher value slows down the AI since the have longer breaks between task-->
+		<DangerLevelIncrease>100</DangerLevelIncrease> <!--The danger level increase for a POI if a previous task failed 100 means that the appeal for this poi is almost 0 and unit-superiority has to be twice the normal value-->
+		<DangerLevelCooldown>120</DangerLevelCooldown> <!--Seconds - How long until the danger level is reduced incrementally-->
+	</ConquerWeaponSystemsSettings>
+	
+	<!-- ChangeEquipment -->
+	<ChangeEquipmentSettings>
+		<MaxOngoingTasks>15</MaxOngoingTasks> <!--How many tasks of this type are allowed simultaneously-->
+		<CooldownAdvance>0</CooldownAdvance> <!--Seconds - How long after a finished task until the next task is considered in case of Forward Movement (Attack)-->
+		<CooldownSustain>0</CooldownSustain> <!--Seconds - How long after a finished task until the next task is considered in case of Sustain Position (Defend)-->
+		<MinPassedTime>0</MinPassedTime> <!--Seconds - How much time has to pass before the AI considers tackling the task-->
+		<MinVictoryPoints>0</MinVictoryPoints> <!--Percent - How close has one team to be to winning the game before the AI considers tackling the task-->
+		<MinSuperiority>0.1</MinSuperiority> <!-- The min forces-superiority necessary to tackle the task-->
+		<MaxSuperiority>100.0</MaxSuperiority> <!-- The max forces-superiority considered to tackle the task-->
+		<CommitmentTime>0</CommitmentTime> <!--Seconds - How long the TaskForce is defending at the recently fulfilled task area. Higher value slows down the AI since the have longer breaks between task-->
+		<DangerLevelIncrease>100</DangerLevelIncrease> <!--The danger level increase for a POI if a previous task failed 100 means that the appeal for this poi is almost 0 and unit-superiority has to be twice the normal value-->
+		<DangerLevelCooldown>120</DangerLevelCooldown> <!--Seconds - How long until the danger level is reduced incrementally-->
+	</ChangeEquipmentSettings>
+	
+	<!-- ProduceUnits -->
+	<ProduceUnitSettings>
+		<MaxOngoingTasks>15</MaxOngoingTasks> <!--How many tasks of this type are allowed simultaneously-->
+		<CooldownAdvance>0</CooldownAdvance> <!--Seconds - How long after a finished task until the next task is considered in case of Forward Movement (Attack)-->
+		<CooldownSustain>0</CooldownSustain> <!--Seconds - How long after a finished task until the next task is considered in case of Sustain Position (Defend)-->
+		<MinPassedTime>0</MinPassedTime> <!--Seconds - How much time has to pass before the AI considers tackling the task-->
+		<MinVictoryPoints>0</MinVictoryPoints> <!--Percent - How close has one team to be to winning the game before the AI considers tackling the task-->
+		<MinSuperiority>0.1</MinSuperiority> <!-- The min forces-superiority necessary to tackle the task-->
+		<MaxSuperiority>100.0</MaxSuperiority> <!-- The max forces-superiority considered to tackle the task-->
+		<CommitmentTime>0</CommitmentTime> <!--Seconds - How long the TaskForce is defending at the recently fulfilled task area. Higher value slows down the AI since the have longer breaks between task-->
+		<DangerLevelIncrease>100</DangerLevelIncrease> <!--The danger level increase for a POI if a previous task failed 100 means that the appeal for this poi is almost 0 and unit-superiority has to be twice the normal value-->
+		<DangerLevelCooldown>120</DangerLevelCooldown> <!--Seconds - How long until the danger level is reduced incrementally-->
+		<MaxWaitingTimeExpansion>360</MaxWaitingTimeExpansion> <!--Seconds - Max Waiting Time for the necessary resources to be gathered to produce a unit that is not affordable at the moment-->
+		<MaxWaitingTimeAttack>360</MaxWaitingTimeAttack> <!--Seconds - Max Waiting Time for the necessary resources to be gathered to produce a unit that is not affordable at the moment-->
+		<MaxWaitingTimeDefend>300</MaxWaitingTimeDefend> <!--Seconds - Max Waiting Time for the necessary resources to be gathered to produce a unit that is not affordable at the moment-->
+	</ProduceUnitSettings>
+	
+	<!-- ConstructStructures -->
+	<ConstructStructuresSettings>
+		<MaxOngoingTasks>4</MaxOngoingTasks> <!--How many tasks of this type are allowed simultaneously-->
+		<CooldownAdvance>0</CooldownAdvance> <!--Seconds - How long after a finished task until the next task is considered in case of Forward Movement (Attack)-->
+		<CooldownSustain>0</CooldownSustain> <!--Seconds - How long after a finished task until the next task is considered in case of Sustain Position (Defend)-->
+		<MinPassedTime>0</MinPassedTime> <!--Seconds - How much time has to pass before the AI considers tackling the task-->
+		<MinVictoryPoints>0</MinVictoryPoints> <!--Percent - How close has one team to be to winning the game before the AI considers tackling the task-->
+		<MinSuperiority>1.0</MinSuperiority> <!-- The min forces-superiority necessary to tackle the task-->
+		<MaxSuperiority>100.0</MaxSuperiority> <!-- The max forces-superiority considered to tackle the task-->
+		<CommitmentTime>0</CommitmentTime> <!--Seconds - How long the TaskForce is defending at the recently fulfilled task area. Higher value slows down the AI since the have longer breaks between task-->
+		<DangerLevelIncrease>100</DangerLevelIncrease> <!--The danger level increase for a POI if a previous task failed 100 means that the appeal for this poi is almost 0 and unit-superiority has to be twice the normal value-->
+		<DangerLevelCooldown>120</DangerLevelCooldown> <!--Seconds - How long until the danger level is reduced incrementally-->
+		<MaxWaitingTimeExpansion>360</MaxWaitingTimeExpansion> <!--Seconds - Max Waiting Time for the necessary resources to be gathered to build a structure that is not affordable at the moment-->
+		<MaxWaitingTimeAttack>360</MaxWaitingTimeAttack> <!--Seconds - Max Waiting Time for the necessary resources to be gathered to build a structure that is not affordable at the moment-->
+		<MaxWaitingTimeDefend>360</MaxWaitingTimeDefend> <!--Seconds - Max Waiting Time for the necessary resources to be gathered to build a structure that is not affordable at the moment-->
+	</ConstructStructuresSettings>
+	
+	<!-- UpgradeStructures -->
+	<UpgradeStructuresSettings>
+		<MaxOngoingTasks>6</MaxOngoingTasks> <!--How many tasks of this type are allowed simultaneously-->
+		<CooldownAdvance>0</CooldownAdvance> <!--Seconds - How long after a finished task until the next task is considered in case of Forward Movement (Attack)-->
+		<CooldownSustain>0</CooldownSustain> <!--Seconds - How long after a finished task until the next task is considered in case of Sustain Position (Defend)-->
+		<MinPassedTime>0</MinPassedTime> <!--Seconds - How much time has to pass before the AI considers tackling the task-->
+		<MinVictoryPoints>0</MinVictoryPoints> <!--Percent - How close has one team to be to winning the game before the AI considers tackling the task-->
+		<MinSuperiority>1.0</MinSuperiority> <!-- The min forces-superiority necessary to tackle the task-->
+		<MaxSuperiority>100.0</MaxSuperiority> <!-- The max forces-superiority considered to tackle the task-->
+		<CommitmentTime>0</CommitmentTime> <!--Seconds - How long the TaskForce is defending at the recently fulfilled task area. Higher value slows down the AI since the have longer breaks between task-->
+		<DangerLevelIncrease>100</DangerLevelIncrease> <!--The danger level increase for a POI if a previous task failed 100 means that the appeal for this poi is almost 0 and unit-superiority has to be twice the normal value-->
+		<DangerLevelCooldown>120</DangerLevelCooldown> <!--Seconds - How long until the danger level is reduced incrementally-->
+		<MaxWaitingTimeExpansion>360</MaxWaitingTimeExpansion> <!--Seconds - Max Waiting Time for the necessary resources to be gathered to upgrade a structure that is not affordable at the moment-->
+		<MaxWaitingTimeAttack>240</MaxWaitingTimeAttack> <!--Seconds - Max Waiting Time for the necessary resources to be gathered to upgrade a structure that is not affordable at the moment-->
+		<MaxWaitingTimeDefend>360</MaxWaitingTimeDefend> <!--Seconds - Max Waiting Time for the necessary resources to be gathered to upgrade a structure that is not affordable at the moment-->
+		<MaxResourceBuildings>6</MaxResourceBuildings> <!--How many resource buildings are allowed to be upgraded to the max-->
+	</UpgradeStructuresSettings>
+	
+	<!-- ReinforceTasks -->
+	<ReinforceSettings>
+		<MaxOngoingTasks>15</MaxOngoingTasks> <!--How many tasks of this type are allowed simultaneously-->
+		<CooldownAdvance>0</CooldownAdvance> <!--Seconds - How long after a finished task until the next task is considered in case of Forward Movement (Attack)-->
+		<CooldownSustain>0</CooldownSustain> <!--Seconds - How long after a finished task until the next task is considered in case of Sustain Position (Defend)-->
+		<MinPassedTime>0</MinPassedTime> <!--Seconds - How much time has to pass before the AI considers tackling the task-->
+		<MinVictoryPoints>0</MinVictoryPoints> <!--Percent - How close has one team to be to winning the game before the AI considers tackling the task-->
+		<MinSuperiority>0.1</MinSuperiority> <!-- The min forces-superiority necessary to tackle the task-->
+		<MaxSuperiority>100.0</MaxSuperiority> <!-- The max forces-superiority considered to tackle the task-->
+		<CommitmentTime>0</CommitmentTime> <!--Seconds - How long the TaskForce is defending at the recently fulfilled task area. Higher value slows down the AI since the have longer breaks between task-->
+		<DangerLevelIncrease>100</DangerLevelIncrease> <!--The danger level increase for a POI if a previous task failed 100 means that the appeal for this poi is almost 0 and unit-superiority has to be twice the normal value-->
+		<DangerLevelCooldown>120</DangerLevelCooldown> <!--Seconds - How long until the danger level is reduced incrementally-->
+		<MinHealth>70</MinHealth> <!--Percent - At what health percentage (in relation to the newly started task) are we considering to reinforcing a task-->
+	</ReinforceSettings>
+
+	<!-- RetreatFromTasks -->
+	<RetreatSettings>
+		<MaxOngoingTasks>15</MaxOngoingTasks> <!--How many tasks of this type are allowed simultaneously-->
+		<CooldownAdvance>0</CooldownAdvance> <!--Seconds - How long after a finished task until the next task is considered in case of Forward Movement (Attack)-->
+		<CooldownSustain>0</CooldownSustain> <!--Seconds - How long after a finished task until the next task is considered in case of Sustain Position (Defend)-->
+		<MinPassedTime>0</MinPassedTime> <!--Seconds - How much time has to pass before the AI considers tackling the task-->
+		<MinVictoryPoints>0</MinVictoryPoints> <!--Percent - How close has one team to be to winning the game before the AI considers tackling the task-->
+		<MinSuperiority>0.1</MinSuperiority> <!-- The min forces-superiority necessary to tackle the task-->
+		<MaxSuperiority>100.0</MaxSuperiority> <!-- The max forces-superiority considered to tackle the task-->
+		<CommitmentTime>0</CommitmentTime> <!--Seconds - How long the TaskForce is defending at the recently fulfilled task area. Higher value slows down the AI since the have longer breaks between task-->
+		<DangerLevelIncrease>100</DangerLevelIncrease> <!--The danger level increase for a POI if a previous task failed 100 means that the appeal for this poi is almost 0 and unit-superiority has to be twice the normal value-->
+		<DangerLevelCooldown>120</DangerLevelCooldown> <!--Seconds - How long until the danger level is reduced incrementally-->
+		<MinHealth>20</MinHealth> <!--Percent - At what health percentage (in relation to the newly started task) are we considering to retreat units from a task-->
+	</RetreatSettings>
+  </AIDifficulty>
+</AIDifficulties>

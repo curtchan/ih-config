@@ -1,0 +1,1654 @@
+<UnitConfigurations>
+	<!--Polania-->
+	<!--Anna-->
+	<UnitConfiguration id="pol_hero_anna" type="hero" parentId="com_soldier_rifleman">
+		<IsAbstract>false</IsAbstract>
+		<Health>320</Health>
+		<ArmorType>Unarmored</ArmorType>
+		<SquadSize>1</SquadSize>
+		<CanCollectEquipment>false</CanCollectEquipment>
+		<LimitedInteractions>Attack, Retreat, Exploration, MeleeAttack, Custom, Conquer, Collect, Revive, Enter, Harvest</LimitedInteractions>
+		<ConquerPower>5</ConquerPower>
+		<WeaponId>pol_hero_anna_rifle</WeaponId>
+		<StatesId>pol_anna_rifle</StatesId>
+		<MeleeWeaponId>pol_hero_anna_melee</MeleeWeaponId>
+		<UnconsciousVisionRadius>5</UnconsciousVisionRadius>
+		<Pets>
+			<Pet>pol_hero_wojtek</Pet>
+		</Pets>
+		<Suppression>
+			<Max>0</Max>
+			<Enter>75</Enter>
+			<Exit>30</Exit>
+		</Suppression>
+
+		<!--Costs-->
+		<BuildCost>
+			<IronCost>300</IronCost>
+			<OilCost>40</OilCost>
+			<PopulationCost>3</PopulationCost>
+		</BuildCost>
+		<ReinforceCost>
+			<IronCost>0</IronCost>
+			<OilCost>0</OilCost>
+			<PopulationCost>0</PopulationCost>
+		</ReinforceCost>
+		<HealCost>
+			<IronCost>100</IronCost>
+			<OilCost>10</OilCost>
+		</HealCost>
+		<ReserveBuildCost>
+				<IronCost>270</IronCost>
+				<OilCost>40</OilCost>
+				<PopulationCost>3</PopulationCost>
+			</ReserveBuildCost>
+		<HealDuration>15</HealDuration><!--Duration of the interaction in Seconds-->
+		<HealCooldown>50</HealCooldown><!--Cooldown for the healing Medics in Seconds-->
+
+		<SingleMatchVeterancyConfig>pol_hero_anna_xp_single</SingleMatchVeterancyConfig>
+
+		<!--Internals-->
+		<PrimaryMoveSpeed>5</PrimaryMoveSpeed>
+		<UnitAbilities>
+			<PowerShotAbilityDefinition weapon="pol_hero_anna_rifle_power_shot" abilityType="PowerShot"/>
+			<CallPetAbilityDefinition cooldown="780" abilityType="CallPet"/>
+		</UnitAbilities>
+		<AutoAbilities>
+			<SingleTargetAttackAutoAbilityDefinition weapon="pol_hero_anna_rifle_power_shot" lookForTargets="true" abilityType="PowerShot" settingIdentifier="PowerShotAutoAbility"/>
+			<ReinforceAutoAbilityDefinition abilityType="CallPet" settingIdentifier="WojtekCallAutoAbility"/>
+		</AutoAbilities>
+	</UnitConfiguration>
+
+
+	<UnitConfiguration id="pol_hero_wojtek" type="pet" parentId="com_soldier_rifleman">
+		<IsAbstract>false</IsAbstract>
+		<Health>500</Health>
+		<ArmorType>Unarmored</ArmorType>
+		<SquadSize>1</SquadSize>
+		<CanCollectEquipment>false</CanCollectEquipment>
+		<LimitedInteractions>Attack, Retreat, Exploration, MeleeAttack, Custom, Heal</LimitedInteractions>
+		<WeaponId>
+			<!--melee only-->
+		</WeaponId>
+		<MeleeWeaponId>pol_hero_wojtek_melee</MeleeWeaponId>
+		<StatesId>pet</StatesId>
+		<ChaseRange>15</ChaseRange>
+		<SendRange>40</SendRange>
+		<Suppression>
+			<Max>0</Max>
+			<Enter>75</Enter>
+			<Exit>30</Exit>
+		</Suppression>
+		<!--Internals-->
+		<KineticToVelocity>0.4</KineticToVelocity>
+		<TumbleThreshold>1.5</TumbleThreshold>
+		<!--Decay describes velocity reduction in meter per tick! -->
+		<KineticVelocityProportionalDecay>0.2</KineticVelocityProportionalDecay>
+		<KineticVelocityConstantDecay>0.1</KineticVelocityConstantDecay>
+		<PrimaryMoveSpeed>5</PrimaryMoveSpeed>
+		<VaultSpeed>4</VaultSpeed>
+		<BrawlSpeed>3</BrawlSpeed>
+		<WalkSpeed>5</WalkSpeed>
+		<UnitAbilities>
+			<WojtekHealAbilityDefinition SelfHealPerSecond="5" HealPerSecond="4" AbilityType="HeroAbility3"/>
+		</UnitAbilities>
+	</UnitConfiguration>
+
+	<!--Cavalry Commander-->
+	<UnitConfiguration id="pol_hero_cavalry" type="cavalry" parentId="com_soldier_rifleman">
+		<IsAbstract>false</IsAbstract>
+		<Health>400</Health>
+		<ArmorType>Light</ArmorType>
+		<SquadSize>5</SquadSize>
+		<CanCollectEquipment>false</CanCollectEquipment>
+		<LimitedInteractions>Attack, Retreat, Exploration, MeleeAttack, Collect</LimitedInteractions>
+		<MeleeWeaponId>pol_hero_cavalry_melee</MeleeWeaponId>
+		<WeaponId>pol_hero_cavalry_rifle</WeaponId>
+		<SquadMemberId>pol_soldier_cavalry</SquadMemberId>
+		<UnconsciousVisionRadius>7</UnconsciousVisionRadius>
+		<Suppression>
+			<Max>0</Max>
+			<Enter>75</Enter>
+			<Exit>30</Exit>
+		</Suppression>
+
+		<UnitAbilities>
+			<StickyBombsAbilityDefinition weapon="pol_hero_cavalry_bomb" abilityType="Grenade"/>
+			<CavalryChargeAbilityDefinition ActiveTime="120" Cooldown="480" abilityType="HeroAbility1" weapon="pol_hero_cavalry_melee"/>
+		</UnitAbilities>
+		<AutoAbilities>
+			<SingleTargetAttackAutoAbilityDefinition weapon="pol_hero_cavalry_bomb" abilityType="Grenade" conditions="SquadOnly" settingIdentifier="BombsAutoAbility"/>
+			<CavalryChargeAutoAbilityDefinition weapon="pol_hero_cavalry_melee" abilityType="HeroAbility1" maxDistance="10" settingIdentifier="CavalryChargeAutoAbility"/>
+		</AutoAbilities>
+		
+		<!--
+		<Weapons>
+			<Weapon>pol_hero_cavalry_rifle</Weapon>
+			<Weapon>pol_hero_cavalry_melee</Weapon>
+			<Weapon>pol_hero_cavalry_charge</Weapon>			
+			<Weapon>pol_hero_cavalry_bomb</Weapon>
+		</Weapons>
+		-->
+
+		<!--Costs-->
+		<BuildCost>
+			<IronCost>400</IronCost>
+			<OilCost>60</OilCost>
+			<PopulationCost>3</PopulationCost>
+		</BuildCost>
+		<ReinforceCost>
+			<IronCost>50</IronCost>
+			<OilCost>7</OilCost>
+			<PopulationCost>0</PopulationCost>
+		</ReinforceCost>
+		<HealCost>
+			<IronCost>100</IronCost>
+			<OilCost>10</OilCost>
+		</HealCost>
+		<ReserveBuildCost>
+				<IronCost>360</IronCost>
+				<OilCost>60</OilCost>
+				<PopulationCost>3</PopulationCost>
+			</ReserveBuildCost>
+		<HealDuration>15</HealDuration><!--Duration of the interaction in Seconds-->
+		<HealCooldown>50</HealCooldown><!--Cooldown for the healing Medics in Seconds-->
+
+		<SingleMatchVeterancyConfig>pol_hero_cavcom_xp_single</SingleMatchVeterancyConfig>
+
+		<!--Internals-->
+		<PrimaryMoveSpeed>8</PrimaryMoveSpeed>
+		<WalkTurnSpeed>0.5</WalkTurnSpeed>
+		<ChargingMoveSpeed>9</ChargingMoveSpeed>
+		<VaultSpeed>8</VaultSpeed>
+		<StatesId>pol_cavalry_rifle</StatesId>
+		<TumbleThreshold>1.5</TumbleThreshold>
+
+		<SquadSizeAtLevels>
+			<SquadSizeAtLevel SquadSize="5"/> <!-- Rank 0-->
+			<SquadSizeAtLevel SquadSize="6"/> <!-- Rank 1-->
+			<SquadSizeAtLevel SquadSize="7"/> <!-- Rank 2-->
+			<SquadSizeAtLevel SquadSize="8"/> <!-- Rank 3-->
+			<SquadSizeAtLevel SquadSize="9"/> <!-- Rank 4-->
+		</SquadSizeAtLevels>
+	</UnitConfiguration>
+
+	<!--Cavalry Soldier-->
+	<UnitConfiguration id="pol_soldier_cavalry" type="cavalry" parentId="pol_hero_cavalry">
+		<IsAbstract>false</IsAbstract>
+		<Health>110</Health>
+		<ArmorType>Unarmored</ArmorType>
+		<SquadSize>5</SquadSize>
+		<CanCollectEquipment>false</CanCollectEquipment>
+		<LimitedInteractions>Attack, Retreat, Exploration, MeleeAttack, Custom</LimitedInteractions>
+		<MeleeWeaponId>pol_hero_cavalry_melee</MeleeWeaponId>
+		<WeaponId>pol_hero_cavalry_rifle</WeaponId>
+		<Suppression>
+			<Max>0</Max>
+			<Enter>75</Enter>
+			<Exit>30</Exit>
+		</Suppression>
+		<HealCost>
+			<IronCost>100</IronCost>
+			<OilCost>10</OilCost>
+		</HealCost>
+		<HealDuration>15</HealDuration><!--Duration of the interaction in Seconds-->
+		<HealCooldown>50</HealCooldown><!--Cooldown for the healing Medics in Seconds-->
+		<!--
+		<Weapons>
+			<Weapon>pol_hero_cavalry_rifle</Weapon>
+			<Weapon>pol_hero_cavalry_melee</Weapon>
+			<Weapon>pol_hero_cavalry_charge</Weapon>			
+			<Weapon>pol_hero_cavalry_bomb</Weapon>
+		</Weapons>
+		-->
+		<!--Internals-->
+		<!--<PrimaryMoveSpeed>6.9</PrimaryMoveSpeed>-->
+		<!--<WalkTurnSpeed>0.5</WalkTurnSpeed>-->
+		<StatesId>pol_cavalry_rifle</StatesId>
+	</UnitConfiguration>
+
+	<!--Rebel Leader-->
+	<UnitConfiguration id="pol_hero_rebel" type="hero_mech">
+		<IsAbstract>false</IsAbstract>
+		<Type>Mech</Type>
+		<Health>1300</Health> <!--temporary increase form 1k-->
+		<ArmorType>Medium</ArmorType>
+		<Tags>Mech</Tags>
+		<VisionRadius>30</VisionRadius>
+		<UnconsciousVisionRadius>10</UnconsciousVisionRadius>
+		<LimitedInteractions>Attack, Retreat, Exploration, MeleeAttack</LimitedInteractions>
+		<Weapons>    
+			<!--<Weapon>pol_hero_rebel_melee</Weapon>-->
+			<Weapon>pol_hero_rebel_melee_slam</Weapon>
+			<Weapon>pol_hero_rebel_melee_stab</Weapon>
+			<Weapon>pol_hero_rebel_melee_swing</Weapon>
+			<Weapon>pol_hero_rebel_melee_swing2</Weapon>
+			<Weapon>pol_hero_rebel_cannon</Weapon>
+			<Weapon>pol_hero_rebel_charge_impact</Weapon>
+		</Weapons>
+		<AttackRange>12</AttackRange><!--as the rebelleaders main weapon is melee, he needs a value for searching for implicit targets -->
+		
+		<!--Hitsystem-->
+		<HitzoneRadius>2.5</HitzoneRadius>
+		<DefaultHeight>2.5</DefaultHeight>
+		<DamageHitzones>
+			<DamageHitzone>
+				<Id>1</Id>
+				<LowerAngle>135</LowerAngle>
+				<UpperAngle>225</UpperAngle>
+				<Type>Vulnerable</Type>
+			</DamageHitzone>
+		</DamageHitzones>
+		<!--Navigation-->
+		<NavRadius>BigMech</NavRadius>
+		<!--Abilities-->
+		<UnitAbilities>
+			<MechMovementAbilityDefinition defaultMovement="true"/>
+			<MechRelentlessFuryDefinition weapon="pol_hero_rebel_cannon" abilityType="HeroAbility2" deactivateAfterShot="true" sweepAngle="60"/>
+			<BerserkAbilityDefinition defaultMelee="true" abilityType="MeleeAttack" useWeaponNameAsStateRequestName="true" sharedCooldown="true">
+				<Weapons>
+					<Weapon>pol_hero_rebel_melee_slam</Weapon>
+					<Weapon>pol_hero_rebel_melee_stab</Weapon>
+					<Weapon>pol_hero_rebel_melee_swing</Weapon>
+					<Weapon>pol_hero_rebel_melee_swing2</Weapon>
+				</Weapons>
+				<BerserkStates>
+					<BerserkState>
+						<StateSuffix>_rage1</StateSuffix> 
+						<StartHealthRatio>0.9</StartHealthRatio>
+						<Cooldown>24</Cooldown>
+					</BerserkState>
+					<BerserkState>
+						<StateSuffix>_rage2</StateSuffix> 
+						<StartHealthRatio>0.5</StartHealthRatio>
+						<Cooldown>16</Cooldown>
+					</BerserkState>
+				</BerserkStates>
+			</BerserkAbilityDefinition>
+			<MechTackleDefinition impactWeapon="pol_hero_rebel_charge_impact" cooldown="400" minRange="5" maxRange="30" pushKinetic="10"/>
+		</UnitAbilities>
+
+		<AutoAbilities>
+			<ConeAttackAutoAbilityDefinition weapon="pol_hero_rebel_cannon" abilityType="HeroAbility2" considerationAngle="90" minTargetsInCone="3" settingIdentifier="ShrapnelAutoAbility"/>
+			<MechChargeAutoAbilityDefinition weapon="pol_hero_rebel_charge_impact" abilityType="Dash" settingIdentifier="ChargeAutoAbility"/>
+		</AutoAbilities>
+
+		<SingleMatchVeterancyConfig>pol_hero_rebel_xp_single</SingleMatchVeterancyConfig>
+
+		<!--Costs-->
+		<BuildCost>
+			<IronCost>450</IronCost>
+			<OilCost>140</OilCost>
+			<PopulationCost>5</PopulationCost>
+		</BuildCost>
+		<RepairCost>
+			<IronCost>4</IronCost>
+			<OilCost>1</OilCost>
+			<BatchSize>60</BatchSize>
+		</RepairCost>
+		<ReserveBuildCost>
+				<IronCost>410</IronCost>
+				<OilCost>140</OilCost>
+				<PopulationCost>5</PopulationCost>
+			</ReserveBuildCost>
+		<UpkeepCost>
+		</UpkeepCost>
+
+		<!--Internals-->
+		<MaxKineticVelocity>40</MaxKineticVelocity>
+		<KineticToVelocity>3</KineticToVelocity>
+		<!--Decay describes velocity reduction in meter per tick! -->
+		<KineticVelocityProportionalDecay>0.8</KineticVelocityProportionalDecay>
+		<KineticVelocityConstantDecay>0.10</KineticVelocityConstantDecay>
+		<MoveSpeed>4.32</MoveSpeed>
+		<ChargingMoveSpeed>6.5</ChargingMoveSpeed>
+		<Acceleration>0.2</Acceleration>
+		<RotationSpeed>77.9</RotationSpeed>
+		<RotationAcceleration>0.2</RotationAcceleration>
+			<MotionScaleCurve>
+			<Key x="0" y="1"/>
+			<Key x="25" y=".5"/>
+			<Key x="180" y=".3"/>
+		</MotionScaleCurve>
+		<ReversingMotionScaleCurve>
+			<Key x="0" y="1"/>
+			<Key x="25" y=".5"/>
+			<Key x="180" y=".3"/>
+		</ReversingMotionScaleCurve>
+
+		<WreckConfiguration>pol_hero_rebel_wreck</WreckConfiguration>
+		<UnitStates>
+			<States>
+				<DefaultMechStateDefinition name="default"/>
+				<MechShootStateDefinition name="shoot" PreTicks="1" PostTicks="3"/>
+				<MechTurnStateDefinition name="turn"/>
+				<MechInteractStateDefinition name="interact"/>
+				<MechAimStateDefinition name="aim"/>
+				<StationaryMechStateDefinition name="unconscious"/>
+				<ChargeMechStateDefinition name="charge"/>
+				<MechShootStateDefinition name="charge_impact" PreTicks="6" PostTicks="24"/>
+
+				<!-- Rebel has many brawl states thanks to his rage ability...-->
+				<!-- Default: -->
+				<MechShootStateDefinition name="brawl1" PreTicks="13" PostTicks="4"/>
+				<MechShootStateDefinition name="brawl2" PreTicks="11" PostTicks="6"/>
+				<MechShootStateDefinition name="brawl3" PreTicks="11" PostTicks="6"/>
+				<MechShootStateDefinition name="brawl4" PreTicks="11" PostTicks="6"/>
+				<!-- Rage 1: -->
+				<MechShootStateDefinition name="brawl1_rage1" PreTicks="10" PostTicks="12"/>
+				<MechShootStateDefinition name="brawl2_rage1" PreTicks="10" PostTicks="12"/>
+				<MechShootStateDefinition name="brawl3_rage1" PreTicks="11" PostTicks="11"/>
+				<MechShootStateDefinition name="brawl4_rage1" PreTicks="12" PostTicks="10"/>
+				<!-- Rage 2: -->
+				<MechShootStateDefinition name="brawl1_rage2" PreTicks="7" PostTicks="8"/>
+				<MechShootStateDefinition name="brawl2_rage2" PreTicks="9" PostTicks="6"/>
+				<MechShootStateDefinition name="brawl3_rage2" PreTicks="5" PostTicks="10"/>
+				<MechShootStateDefinition name="brawl4_rage2" PreTicks="8" PostTicks="7"/>
+				<!-- Rage 3: -->
+				<MechShootStateDefinition name="brawl1_rage3" PreTicks="3" PostTicks="6"/>
+				<MechShootStateDefinition name="brawl2_rage3" PreTicks="4" PostTicks="5"/>
+				<MechShootStateDefinition name="brawl3_rage3" PreTicks="3" PostTicks="6"/>
+				<MechShootStateDefinition name="brawl4_rage3" PreTicks="3" PostTicks="6"/>
+			</States>
+
+			<Transitions>
+				<BlendTransitionDefinition from="default" to="turn" mergeTicks="1"/>
+				<InstantTransitionDefinition from="turn" to="default"/>
+				<BlendTransitionDefinition from="turn" to="shoot" mergeTicks="3"/>
+				<InstantTransitionDefinition from="shoot" to="default"/>
+				<BlendTransitionDefinition from="default" to="shoot" mergeTicks="3"/>
+=
+				<BlendTransitionDefinition from="default" to="unconscious" mergeTicks="3"/>
+				<BlendTransitionDefinition from="turn" to="unconscious" mergeTicks="3"/>
+				<BlendTransitionDefinition from="unconscious" to="default" mergeTicks="3"/>
+				<StationaryTransitionDefinition from="default" to="aim"  fadeOut="3" flat="8" fadeIn="0"/>
+				<StationaryTransitionDefinition from="turn" to="aim"  fadeOut="3" flat="8" fadeIn="0"/>
+				<StationaryTransitionDefinition from="aim" to="default"  fadeOut="3" flat="8" fadeIn="0"/>
+				<InstantTransitionDefinition from="aim" to="shoot"/>
+				<InstantTransitionDefinition from="shoot" to="aim"/>
+				<BlendTransitionDefinition from="turn" to="interact" mergeTicks="3"/>
+				<BlendTransitionDefinition from="default" to="interact" mergeTicks="3"/>
+				<InstantTransitionDefinition from="interact" to="default"/>
+				<InstantTransitionDefinition from="default" to="charge"/>
+				<InstantTransitionDefinition from="turn" to="charge"/>
+				<InstantTransitionDefinition from="charge" to="default" />
+				<InstantTransitionDefinition from="charge" to="charge_impact"/>
+				<InstantTransitionDefinition from="default" to="charge_impact"/>
+				<BlendTransitionDefinition from="turn" to="charge_impact" mergeTicks="3"/>
+				<BlendTransitionDefinition from="charge_impact" to="default" mergeTicks="3"/>
+
+				<!-- Rebel has many brawl states thanks to his rage ability...-->
+				<!-- Default: -->
+				<BlendTransitionDefinition from="turn" to="brawl1" mergeTicks="3"/>
+				<BlendTransitionDefinition from="brawl1" to="default" mergeTicks="3"/>
+				<BlendTransitionDefinition from="default" to="brawl1" mergeTicks="3"/>
+				<BlendTransitionDefinition from="turn" to="brawl2" mergeTicks="3"/>
+				<BlendTransitionDefinition from="brawl2" to="default" mergeTicks="3"/>
+				<BlendTransitionDefinition from="default" to="brawl2" mergeTicks="3"/>
+				<BlendTransitionDefinition from="turn" to="brawl3" mergeTicks="3"/>
+				<BlendTransitionDefinition from="brawl3" to="default" mergeTicks="3"/>
+				<BlendTransitionDefinition from="default" to="brawl3" mergeTicks="3"/>
+				<BlendTransitionDefinition from="brawl4" to="default" mergeTicks="3"/>
+				<BlendTransitionDefinition from="default" to="brawl4" mergeTicks="3"/>
+				<!-- Rage 1: -->
+				<BlendTransitionDefinition from="turn" to="brawl1_rage1" mergeTicks="3"/>
+				<BlendTransitionDefinition from="brawl1_rage1" to="default" mergeTicks="3"/>
+				<BlendTransitionDefinition from="default" to="brawl1_rage1" mergeTicks="3"/>
+				<BlendTransitionDefinition from="turn" to="brawl2_rage1" mergeTicks="3"/>
+				<BlendTransitionDefinition from="brawl2_rage1" to="default" mergeTicks="3"/>
+				<BlendTransitionDefinition from="default" to="brawl2_rage1" mergeTicks="3"/>
+				<BlendTransitionDefinition from="turn" to="brawl3_rage1" mergeTicks="3"/>
+				<BlendTransitionDefinition from="brawl3_rage1" to="default" mergeTicks="3"/>
+				<BlendTransitionDefinition from="default" to="brawl3_rage1" mergeTicks="3"/>
+				<BlendTransitionDefinition from="brawl4_rage1" to="default" mergeTicks="3"/>
+				<BlendTransitionDefinition from="default" to="brawl4_rage1" mergeTicks="3"/>
+				
+				<InstantTransitionDefinition from="brawl1_rage1" to="brawl2_rage1"/>
+				<InstantTransitionDefinition from="brawl2_rage1" to="brawl3_rage1"/>	
+				<InstantTransitionDefinition from="brawl3_rage1" to="brawl4_rage1"/>
+				<InstantTransitionDefinition from="brawl4_rage1" to="brawl1_rage1"/>
+				<!-- Rage 2: -->
+				<BlendTransitionDefinition from="turn" to="brawl1_rage2" mergeTicks="1"/>
+				<BlendTransitionDefinition from="brawl1_rage2" to="default" mergeTicks="1"/>
+				<BlendTransitionDefinition from="default" to="brawl1_rage2" mergeTicks="1"/>
+				<BlendTransitionDefinition from="turn" to="brawl2_rage2" mergeTicks="1"/>
+				<BlendTransitionDefinition from="brawl2_rage2" to="default" mergeTicks="1"/>
+				<BlendTransitionDefinition from="default" to="brawl2_rage2" mergeTicks="1"/>
+				<BlendTransitionDefinition from="turn" to="brawl3_rage2" mergeTicks="1"/>
+				<BlendTransitionDefinition from="brawl3_rage2" to="default" mergeTicks="1"/>
+				<BlendTransitionDefinition from="default" to="brawl3_rage2" mergeTicks="1"/>
+				<BlendTransitionDefinition from="brawl4_rage2" to="default" mergeTicks="1"/>
+				<BlendTransitionDefinition from="default" to="brawl4_rage2" mergeTicks="1"/>
+				
+				<InstantTransitionDefinition from="brawl1_rage2" to="brawl2_rage2"/>
+				<InstantTransitionDefinition from="brawl2_rage2" to="brawl3_rage2"/>	
+				<InstantTransitionDefinition from="brawl3_rage2" to="brawl4_rage2"/>
+				<InstantTransitionDefinition from="brawl4_rage2" to="brawl1_rage2"/>
+				<!-- Rage 3: -->
+				<BlendTransitionDefinition from="turn" to="brawl1_rage3" mergeTicks="1"/>
+				<BlendTransitionDefinition from="brawl1_rage3" to="default" mergeTicks="1"/>
+				<BlendTransitionDefinition from="default" to="brawl1_rage3" mergeTicks="1"/>
+				<BlendTransitionDefinition from="turn" to="brawl2_rage3" mergeTicks="1"/>
+				<BlendTransitionDefinition from="brawl2_rage3" to="default" mergeTicks="1"/>
+				<BlendTransitionDefinition from="default" to="brawl2_rage3" mergeTicks="1"/>
+				<BlendTransitionDefinition from="turn" to="brawl3_rage3" mergeTicks="1"/>
+				<BlendTransitionDefinition from="brawl3_rage3" to="default" mergeTicks="1"/>
+				<BlendTransitionDefinition from="default" to="brawl3_rage3" mergeTicks="1"/>
+				<BlendTransitionDefinition from="brawl4_rage3" to="default" mergeTicks="1"/>
+				<BlendTransitionDefinition from="default" to="brawl4_rage3" mergeTicks="1"/>
+
+				<InstantTransitionDefinition from="brawl1_rage3" to="brawl2_rage3"/>
+				<InstantTransitionDefinition from="brawl2_rage3" to="brawl3_rage3"/>	
+				<InstantTransitionDefinition from="brawl3_rage3" to="brawl4_rage3"/>
+				<InstantTransitionDefinition from="brawl4_rage3" to="brawl1_rage3"/>
+			</Transitions>
+
+			<Requests>
+				<MoveRequest>
+					<StateNames>
+						<Request>default</Request>
+					</StateNames>
+				</MoveRequest>
+				<TurnRequest>
+					<StateNames>
+						<Request>turn</Request>
+					</StateNames>
+				</TurnRequest>
+				<AttackRequest>
+					<StateNames>
+						<Request>shoot</Request>
+						<Request>default</Request>
+					</StateNames>
+				</AttackRequest>
+				<InteractRequest>
+					<StateNames>
+						<Request>interact</Request>
+					</StateNames>
+				</InteractRequest>
+				<MeleeAttackRequest name="pol_hero_rebel_melee_slam">
+					<StateNames>
+						<Request>brawl1</Request>
+						<Request>default</Request>
+					</StateNames>
+				</MeleeAttackRequest>
+				<MeleeAttackRequest name="pol_hero_rebel_melee_stab">
+					<StateNames>
+						<Request>brawl2</Request>
+						<Request>default</Request>
+					</StateNames>
+				</MeleeAttackRequest>
+				<MeleeAttackRequest name="pol_hero_rebel_melee_swing">
+					<StateNames>
+						<Request>brawl3</Request>
+						<Request>default</Request>
+					</StateNames>
+				</MeleeAttackRequest>
+				<MeleeAttackRequest name="pol_hero_rebel_melee_swing2">
+					<StateNames>
+						<Request>brawl2</Request>
+						<Request>default</Request>
+					</StateNames>
+				</MeleeAttackRequest>
+				<MeleeAttackRequest name="pol_hero_rebel_melee_slam_rage1">
+					<StateNames>
+						<Request>brawl1_rage1</Request>
+						<Request>default</Request>
+					</StateNames>
+				</MeleeAttackRequest>
+				<MeleeAttackRequest name="pol_hero_rebel_melee_stab_rage1">
+					<StateNames>
+						<Request>brawl2_rage1</Request>
+						<Request>default</Request>
+					</StateNames>
+				</MeleeAttackRequest>
+				<MeleeAttackRequest name="pol_hero_rebel_melee_swing_rage1">
+					<StateNames>
+						<Request>brawl3_rage1</Request>
+						<Request>default</Request>
+					</StateNames>
+				</MeleeAttackRequest>
+				<MeleeAttackRequest name="pol_hero_rebel_melee_swing2_rage1">
+					<StateNames>
+						<Request>brawl4_rage1</Request>
+						<Request>default</Request>
+					</StateNames>
+				</MeleeAttackRequest>
+				<MeleeAttackRequest name="pol_hero_rebel_melee_slam_rage2">
+					<StateNames>
+						<Request>brawl1_rage2</Request>
+						<Request>default</Request>
+					</StateNames>
+				</MeleeAttackRequest>
+				<MeleeAttackRequest name="pol_hero_rebel_melee_stab_rage2">
+					<StateNames>
+						<Request>brawl2_rage2</Request>
+						<Request>default</Request>
+					</StateNames>
+				</MeleeAttackRequest>
+				<MeleeAttackRequest name="pol_hero_rebel_melee_swing_rage2">
+					<StateNames>
+						<Request>brawl3_rage2</Request>
+						<Request>default</Request>
+					</StateNames>
+				</MeleeAttackRequest>
+				<MeleeAttackRequest name="pol_hero_rebel_melee_swing2_rage2">
+					<StateNames>
+						<Request>brawl4_rage2</Request>
+						<Request>default</Request>
+					</StateNames>
+				</MeleeAttackRequest>
+				<MeleeAttackRequest name="pol_hero_rebel_melee_slam_rage3">
+					<StateNames>
+						<Request>brawl1_rage3</Request>
+						<Request>default</Request>
+					</StateNames>
+				</MeleeAttackRequest>
+				<MeleeAttackRequest name="pol_hero_rebel_melee_stab_rage3">
+					<StateNames>
+						<Request>brawl2_rage3</Request>
+						<Request>default</Request>
+					</StateNames>
+				</MeleeAttackRequest>
+				<MeleeAttackRequest name="pol_hero_rebel_melee_swing_rage3">
+					<StateNames>
+						<Request>brawl3_rage3</Request>
+						<Request>default</Request>
+					</StateNames>
+				</MeleeAttackRequest>
+				<MeleeAttackRequest name="pol_hero_rebel_melee_swing2_rage3">
+					<StateNames>
+						<Request>brawl4_rage3</Request>
+						<Request>default</Request>
+					</StateNames>
+				</MeleeAttackRequest>
+				<AbilityRequest ability="HeroAbility2">
+					<StateNames>
+						<Request>aim</Request>
+						<Request>shoot</Request>
+						<Request>aim</Request>
+					</StateNames>
+				</AbilityRequest>
+				<AbilityRequest ability="HeroAbility3">
+					<StateNames>
+						<Request>charge_impact</Request>
+						<Request>default</Request>
+					</StateNames>
+				</AbilityRequest>
+				<AbilityRequest ability="Dash">
+					<StateNames>
+						<Request>charge</Request>
+					</StateNames>
+				</AbilityRequest>
+				<PassOutRequest>
+					<StateNames>
+						<Request>unconscious</Request>
+					</StateNames>
+				</PassOutRequest>
+				<ReviveRequest>
+					<StateNames>
+						<Request>default</Request>
+					</StateNames>
+				</ReviveRequest>
+			</Requests>
+		</UnitStates>
+
+
+	</UnitConfiguration>
+
+	<!--Saxony-->
+	<!--Brunhilde-->
+	<UnitConfiguration id="sax_hero_brunhilde" type="hero_mech">
+		<IsAbstract>false</IsAbstract>
+		<Type>Mech</Type>
+		<Health>900</Health>
+		<ArmorType>Heavy</ArmorType>
+		<Tags>Mech</Tags>
+		<VisionRadius>30</VisionRadius>
+		<UnconsciousVisionRadius>13</UnconsciousVisionRadius>
+		<LimitedInteractions>Attack, Retreat, Exploration</LimitedInteractions>
+		<Weapons>
+			<Weapon>sax_hero_brunhilde_cannon</Weapon>
+			<Weapon>sax_hero_brunhilde_cannon_LF</Weapon>
+			<Weapon>sax_hero_brunhilde_cannon_LM</Weapon>
+			<Weapon>sax_hero_brunhilde_cannon_LR</Weapon>
+			<Weapon>sax_hero_brunhilde_cannon_RF</Weapon>
+			<Weapon>sax_hero_brunhilde_cannon_RM</Weapon>
+			<Weapon>sax_hero_brunhilde_cannon_RR</Weapon>
+			<Weapon>sax_hero_brunhilde_longshot</Weapon>
+		</Weapons>
+		<AdvancedSecondaryWeaponModuleConfiguration>
+			<SecondaryWeapons>
+				<SecondaryWeaponConfiguration weaponConfigurationId="sax_hero_brunhilde_cannon_LF" offsetX="-2.6" offsetY="-4" direction="270"/>
+				<SecondaryWeaponConfiguration weaponConfigurationId="sax_hero_brunhilde_cannon_LM" offsetX="-2.8" offsetY="-1.75" direction="270"/>
+				<SecondaryWeaponConfiguration weaponConfigurationId="sax_hero_brunhilde_cannon_LR" offsetX="-2.8" offsetY="1.75" direction="270"/>
+				<SecondaryWeaponConfiguration weaponConfigurationId="sax_hero_brunhilde_cannon_RF" offsetX="2.6" offsetY="-4" direction="90"/>
+				<SecondaryWeaponConfiguration weaponConfigurationId="sax_hero_brunhilde_cannon_RM" offsetX="2.8" offsetY="-1.75" direction="90"/>
+				<SecondaryWeaponConfiguration weaponConfigurationId="sax_hero_brunhilde_cannon_RR" offsetX="2.8" offsetY="1.75" direction="90"/>
+			</SecondaryWeapons>
+			<AlternatingWeaponDelay>4</AlternatingWeaponDelay>
+			<State>Alternating</State>
+		</AdvancedSecondaryWeaponModuleConfiguration>
+
+		<BoostWeaponsGarrisonConfiguration>
+			<DealCollateralDamage>False</DealCollateralDamage>
+		</BoostWeaponsGarrisonConfiguration>
+
+		<!--Navigation-->
+		<NavRadius>BigMech</NavRadius>
+		<!--Hitsystem-->
+		<HitzoneRadius>3.5</HitzoneRadius>
+		<DefaultHeight>2.5</DefaultHeight>
+		<DamageHitzones>
+		</DamageHitzones>
+
+		<!--Abilities-->
+		<UnitAbilities>
+			<MechMovementAbilityDefinition defaultMovement="true"/>
+			<TurretMechAttackAbilityDefinition weapon="sax_hero_brunhilde_cannon" defaultAttack="true"/>
+			<DefaultMechAttackAbilityDefinition weapon="sax_hero_brunhilde_longshot" abilityType="VeteranMechAbility" DeactivateAfterShot="true"/>
+			<MechSelfRepairAbilityDefinition healingAmount="4" warmupTime="32" AbilityType="HeroAbility1" />
+			<MechAbilityDefinition abilityType="Unload" />
+			<!--This is the Breakdown-->
+			<MechAbilityDefinition abilityType="Deploy" />
+		</UnitAbilities>
+
+		<AutoAbilities>
+				<AreaAttackAutoAbilityDefinition weapon="sax_hero_brunhilde_longshot" lookForTargets="true" abilityType="VeteranMechAbility" settingIdentifier="StrikeAutoAbility"/>
+		</AutoAbilities>
+
+		<!--Costs-->
+		<BuildCost>
+			<IronCost>550</IronCost>
+			<OilCost>170</OilCost>
+			<PopulationCost>5</PopulationCost>
+		</BuildCost>
+		<RepairCost>
+			<IronCost>4</IronCost>
+			<OilCost>2</OilCost>
+			<BatchSize>45</BatchSize>
+		</RepairCost>
+		<ReserveBuildCost>
+			<IronCost>460</IronCost>
+			<OilCost>160</OilCost>
+			<PopulationCost>5</PopulationCost>
+		</ReserveBuildCost>
+		<UpkeepCost>
+		</UpkeepCost>
+
+		<SingleMatchVeterancyConfig>sax_hero_brunhilde_xp_single</SingleMatchVeterancyConfig>
+
+		<!--Internals-->
+		<MaxKineticVelocity>0</MaxKineticVelocity>
+		<KineticToVelocity>0</KineticToVelocity>
+		<MoveSpeed>1.76</MoveSpeed>
+		<Acceleration>0.1</Acceleration>
+		<RotationSpeed>9</RotationSpeed>
+		<RotationAcceleration>0.05</RotationAcceleration>
+		<MotionScaleCurve>
+			<Key x="0" y="1"/>
+			<Key x="45" y="0"/>
+			<Key x="135" y="0"/>
+			<Key x="180" y="1"/>
+		</MotionScaleCurve>
+		<AutoReversing>True</AutoReversing>
+		<!--Decay describes velocity reduction in meter per tick! -->
+		<KineticVelocityProportionalDecay>0.2</KineticVelocityProportionalDecay>
+		<KineticVelocityConstantDecay>0.1</KineticVelocityConstantDecay>
+		<WreckConfiguration>sax_hero_brunhilde_wreck</WreckConfiguration>
+		<UnitStates>
+			<States>
+				<DefaultMechStateDefinition name="default"/>
+				<MechShootStateDefinition name="shoot" PreTicks="1" PostTicks="3"/>
+				<MechTurnStateDefinition name="turn"/>
+				<MechInteractStateDefinition name="interact"/>
+				<StationaryMechStateDefinition name="unconscious"/>
+				<StationaryMechStateDefinition name="breakdown"/>
+				<MechShootStateDefinition name="mortar" PreTicks="12" PostTicks="16"/>
+			</States>
+			<Transitions>
+				<BlendTransitionDefinition from="default" to="turn" mergeTicks="3"/>
+				<BlendTransitionDefinition from="turn" to="default" mergeTicks="3"/>
+				<BlendTransitionDefinition from="default" to="shoot" mergeTicks="3"/>
+				<InstantTransitionDefinition from="shoot" to="default"/>
+				<BlendTransitionDefinition from="default" to="unconscious" mergeTicks="3"/>
+				<BlendTransitionDefinition from="turn" to="unconscious" mergeTicks="3"/>
+				<BlendTransitionDefinition from="unconscious" to="default" mergeTicks="3"/>
+				<BlendTransitionDefinition from="turn" to="interact" mergeTicks="3"/>
+				<BlendTransitionDefinition from="default" to="interact" mergeTicks="3"/>
+				<InstantTransitionDefinition from="interact" to="default"/>
+				<BlendTransitionDefinition from="default" to="breakdown" mergeTicks="3"/>
+				<BlendTransitionDefinition from="breakdown" to="default" mergeTicks="3"/>
+				<BlendTransitionDefinition from="shoot" to="breakdown" mergeTicks="3"/>
+				<BlendTransitionDefinition from="breakdown" to="shoot" mergeTicks="3"/>
+				<InstantTransitionDefinition from="default" to="mortar"/>
+				<StationaryTransitionDefinition from="mortar" to="default" fadeOut="3" flat="48" fadeIn="0"/>
+			</Transitions>
+			<Requests>
+				<MoveRequest if="breakdown">
+					<StateNames>
+					</StateNames>
+				</MoveRequest>
+				<MoveRequest>
+					<StateNames>
+						<Request>default</Request>
+					</StateNames>
+				</MoveRequest>
+				<TurnRequest if="breakdown">
+					<StateNames>
+					</StateNames>
+				</TurnRequest>
+				<TurnRequest>
+					<StateNames>
+						<Request>default</Request>
+						<Request>turn</Request>
+						<Request>default</Request>
+					</StateNames>
+				</TurnRequest>
+				<AttackRequest if="breakdown">
+					<StateNames>
+						<Request>shoot</Request>
+						<Request>breakdown</Request>
+					</StateNames>
+				</AttackRequest>
+				<AttackRequest>
+					<StateNames>
+						<Request>shoot</Request>
+						<Request>default</Request>
+					</StateNames>
+				</AttackRequest>
+				<InteractRequest if="breakdown">
+					<StateNames>
+					</StateNames>
+				</InteractRequest>
+				<InteractRequest>
+					<StateNames>
+						<Request>interact</Request>
+					</StateNames>
+				</InteractRequest>
+				<PassOutRequest>
+					<StateNames>
+						<Request>unconscious</Request>
+					</StateNames>
+				</PassOutRequest>
+				<ReviveRequest>
+					<StateNames>
+						<Request>default</Request>
+					</StateNames>
+				</ReviveRequest>
+				<AbilityRequest if="default" ability="Deploy">
+					<StateNames>
+						<Request>breakdown</Request>
+					</StateNames>
+				</AbilityRequest>
+				<AbilityRequest if="breakdown" ability="Deploy">
+					<StateNames>
+						<Request>default</Request>
+					</StateNames>
+				</AbilityRequest>
+				<AbilityRequest ability="Deploy">
+					<StateNames>
+						<Request>default</Request>
+						<Request>breakdown</Request>
+					</StateNames>
+				</AbilityRequest>
+				<AbilityRequest ability="VeteranMechAbility">
+					<StateNames>
+						<Request>default</Request>
+						<Request>mortar</Request>
+						<Request>default</Request>
+					</StateNames>
+				</AbilityRequest>				
+			</Requests>
+		</UnitStates>
+	</UnitConfiguration>
+	<!--Brunhilde (Technician)-->
+	<UnitConfiguration id="sax_hero_brunhildegunter" type="hero_mech" parentId="sax_hero_brunhilde" />
+
+	<!--Gunter-->
+	<UnitConfiguration id="sax_hero_gunter" type="hero" parentId="com_soldier_rifleman">
+		<IsAbstract>false</IsAbstract>
+		<Health>400</Health>
+		<ArmorType>Light</ArmorType>
+		<SquadSize>1</SquadSize>
+		<CanCollectEquipment>false</CanCollectEquipment>
+		<LimitedInteractions>Attack, Retreat, Exploration, MeleeAttack, Custom, Conquer, Collect, Revive, Enter, Harvest</LimitedInteractions>
+		<ConquerPower>5</ConquerPower>
+		<UnconsciousVisionRadius>5</UnconsciousVisionRadius>
+		<WeaponId>sax_hero_gunter_handgun</WeaponId>
+		<Weapons>
+			<Weapon>sax_hero_gunter_handgun</Weapon>
+			<Weapon>sax_hero_gunter_melee</Weapon>
+			<Weapon>sax_hero_gunter_stab</Weapon>
+			<Weapon>sax_hero_gunter_tag_shadowguard</Weapon>		
+			<Weapon>sax_hero_gunter_nacht_shadowguard</Weapon>															
+		</Weapons>
+		<StatesId>sax_hero_gunter</StatesId>
+		<MeleeWeaponId>sax_hero_gunter_melee</MeleeWeaponId>
+		
+		<Suppression>
+			<Max>0</Max>
+			<Enter>75</Enter>
+			<Exit>30</Exit>
+		</Suppression>
+
+		<!--Costs-->
+		<BuildCost>
+			<IronCost>350</IronCost>
+			<OilCost>75</OilCost>
+			<PopulationCost>3</PopulationCost>
+		</BuildCost>
+		<ReinforceCost>
+			<IronCost>0</IronCost>
+			<OilCost>0</OilCost>
+			<PopulationCost>0</PopulationCost>
+		</ReinforceCost>
+		<HealCost>
+			<IronCost>100</IronCost>
+			<OilCost>10</OilCost>
+		</HealCost>
+		<ReserveBuildCost>
+			<IronCost>310</IronCost>
+			<OilCost>60</OilCost>
+			<PopulationCost>3</PopulationCost>
+		</ReserveBuildCost>
+		<HealDuration>15</HealDuration><!--Duration of the interaction in Seconds-->
+		<HealCooldown>50</HealCooldown><!--Cooldown for the healing Medics in Seconds-->
+
+		<SingleMatchVeterancyConfig>sax_hero_gunter_xp_single</SingleMatchVeterancyConfig>
+
+		<!--Internals-->
+		<PrimaryMoveSpeed>3.5</PrimaryMoveSpeed>
+		<BrawlSpeed>3.5</BrawlSpeed>
+		<VaultSpeed>3</VaultSpeed>
+		<UnitAbilities>
+			<ScoutingAbilityDefinition cooldown="16"/>
+			<!--<GuardingPetAbilityDefinition cooldown="16" ActivationRange="10" AbilityType="CallPet"/>-->
+			<PackLeaderAbilityDefinition weapon="_shadowguard"/>
+			<HumanHeroMeleeAbilityDefinition weapon="sax_hero_gunter_stab" AbilityType="HeroAbility1"/>
+		</UnitAbilities>
+		
+		<AutoAbilities>
+			<SingleTargetAttackAutoAbilityDefinition weapon="sax_hero_gunter_stab" maxRangeModifier="3" abilityType="HeroAbility1" settingIdentifier="BladeAutoAbility"/>
+		</AutoAbilities>
+	</UnitConfiguration>
+
+	<!--TagNacht-->
+	<UnitConfiguration id="sax_hero_tagnacht" type="pet" parentId="com_soldier_rifleman">
+		<IsAbstract>true</IsAbstract>
+		<Health>300</Health>
+		<ArmorType>Unarmored</ArmorType>
+		<SquadSize>1</SquadSize>
+		<StealthRevealDistance>8</StealthRevealDistance>
+		<!--Each Wolf is used independently-->
+		<StatesId>pet</StatesId>
+		<CanCollectEquipment>false</CanCollectEquipment>
+		<LimitedInteractions>Attack, Retreat, Exploration, MeleeAttack, Custom</LimitedInteractions>
+		<WeaponId>
+			<!--melee only-->
+		</WeaponId>
+		<MeleeWeaponId>pol_hero_wojtek_melee</MeleeWeaponId>
+		<ChaseRange>16</ChaseRange>
+		<SendRange>40</SendRange>
+		<Suppression>
+			<Max>0</Max>
+			<Enter>75</Enter>
+			<Exit>30</Exit>
+		</Suppression>
+		<!--Internals-->
+		<KineticToVelocity>0.4</KineticToVelocity>
+		<TumbleThreshold>1.5</TumbleThreshold><!-- Ensures no tumbling occurs. Set to 1.5 once tumble animation is implemented -->
+		<!-- high enough so he never tumbles -->
+		<!--Decay describes velocity reduction in meter per tick! -->
+		<KineticVelocityProportionalDecay>0.2</KineticVelocityProportionalDecay>
+		<KineticVelocityConstantDecay>0.1</KineticVelocityConstantDecay>
+		<PrimaryMoveSpeed>6</PrimaryMoveSpeed>
+		<VaultSpeed>5.5</VaultSpeed>
+		<WalkSpeed>5</WalkSpeed>
+		<UnitAbilities>
+		</UnitAbilities>
+	</UnitConfiguration>
+	<UnitConfiguration id="sax_hero_tag" parentId="sax_hero_tagnacht" type="pet">
+		<IsAbstract>false</IsAbstract>
+	</UnitConfiguration>
+	<UnitConfiguration id="sax_hero_nacht" parentId="sax_hero_tagnacht" type="pet">
+		<IsAbstract>false</IsAbstract>
+	</UnitConfiguration>
+
+	<!--Prince-->
+	<UnitConfiguration id="sax_hero_prince" type="hero_mech">
+		<IsAbstract>false</IsAbstract>
+		<Type>Mech</Type>
+		<Health>650</Health>
+		<ArmorType>Medium</ArmorType>
+		<Tags>Mech</Tags>
+		<VisionRadius>30</VisionRadius>
+		<UnconsciousVisionRadius>7</UnconsciousVisionRadius>
+		<LimitedInteractions>Attack, Retreat, Exploration</LimitedInteractions>
+		<Weapons>
+			<Weapon>sax_hero_prince_gatling</Weapon>
+			<Weapon>sax_hero_prince_gatling_sweep_L</Weapon>
+			<Weapon>sax_hero_prince_gatling_sweep_R</Weapon>
+			<Weapon>sax_hero_prince_rockets</Weapon>
+		</Weapons>  
+		<!--Hitsystem-->
+		<HitzoneRadius>2.5</HitzoneRadius>
+		<DefaultHeight>2.5</DefaultHeight>
+		<DamageHitzones>
+			<DamageHitzone>
+				<Id>1</Id>
+				<LowerAngle>135</LowerAngle>
+				<UpperAngle>225</UpperAngle>
+				<Type>Vulnerable</Type>
+			</DamageHitzone>
+		</DamageHitzones>
+
+		<!--Navigation-->
+		<NavRadius>SmallMech</NavRadius>
+		<!--Abilities-->
+		<UnitAbilities>
+			<MechMovementAbilityDefinition defaultMovement="true"/>
+			<DefaultMechAttackAbilityDefinition weapon="sax_hero_prince_gatling" defaultAttack="true"/>
+			<DefaultMechAttackAbilityDefinition weapon="sax_hero_prince_rockets" abilityType="Rockets" VeteranAbility="false" DeactivateAfterShot="true"/>
+			<MechDualSweepDefinition abilityType="HeroAbility2" VeteranAbility="false" DeactivateAfterShot="true" sweepAngle="60">
+				<Weapons>
+					<Weapon>sax_hero_prince_gatling_sweep_L</Weapon>
+					<Weapon>sax_hero_prince_gatling_sweep_R</Weapon>
+				</Weapons>
+			</MechDualSweepDefinition>
+			<RegalBearingAbilityDefinition range="5" abilityType="HeroAbility1"/>
+		</UnitAbilities>
+		
+		<AutoAbilities>
+				<AreaAttackAutoAbilityDefinition weapon="sax_hero_prince_rockets" lookForTargets="true" abilityType="Rockets" settingIdentifier="RocketAutoAbility"/>
+				<ConeAttackAutoAbilityDefinition weapon="sax_hero_prince_gatling_sweep_L" abilityType="HeroAbility2" considerationAngle="90" minTargetsInCone="4" settingIdentifier="SweepAutoAbility"/>
+		</AutoAbilities>
+
+		<!--Costs-->
+		<BuildCost>
+			<IronCost>450</IronCost>
+			<OilCost>150</OilCost>
+			<PopulationCost>5</PopulationCost>
+		</BuildCost>
+		<RepairCost>
+			<IronCost>5</IronCost>
+			<OilCost>1</OilCost>
+			<BatchSize>40</BatchSize>
+		</RepairCost>
+		<ReserveBuildCost>
+			<IronCost>410</IronCost>
+			<OilCost>120</OilCost>
+			<PopulationCost>5</PopulationCost>
+		</ReserveBuildCost>
+		<UpkeepCost>
+		</UpkeepCost>
+
+		<SingleMatchVeterancyConfig>sax_hero_prince_xp_single</SingleMatchVeterancyConfig>
+
+		<!--Internals-->
+		<MoveSpeed>2.5</MoveSpeed>
+		<Acceleration>0.1</Acceleration>
+		<RotationSpeed>41</RotationSpeed>
+		<RotationAcceleration>0.05</RotationAcceleration>
+		<MotionScaleCurve>
+			<Key x="0" y="1"/>
+			<Key x="90" y="1"/>
+			<Key x="180" y="1"/>
+		</MotionScaleCurve>
+		<ReversingMotionScaleCurve>
+			<Key x="0" y="1"/>
+			<Key x="90" y="1"/>
+			<Key x="180" y="1"/>
+		</ReversingMotionScaleCurve>
+		<WreckConfiguration>sax_hero_prince_wreck</WreckConfiguration>
+		<UnitStates>
+			<States>
+				<DefaultMechStateDefinition name="default"/>
+				<MechShootStateDefinition name="shoot" PreTicks="1" PostTicks="3"/>
+				<MechShootStateDefinition name="aim_rockets" PreTicks="0" PostTicks="3"/>
+				<MechTurnStateDefinition name="turn"/>
+				<MechInteractStateDefinition name="interact"/>
+				<StationaryMechStateDefinition name="unconscious"/>
+				<MechAimStateDefinition name="aim"/>
+				<MechShootStateDefinition name="aim_laywaste" PreTicks="0" PostTicks="1"/>
+			</States>
+			<Transitions>
+				<BlendTransitionDefinition from="default" to="turn" mergeTicks="3"/>
+				<InstantTransitionDefinition from="turn" to="default"/>
+				<BlendTransitionDefinition from="default" to="unconscious" mergeTicks="3"/>
+				<BlendTransitionDefinition from="turn" to="unconscious" mergeTicks="3"/>
+				<StationaryTransitionDefinition from="unconscious" to="default" fadeOut="3" flat="32" fadeIn="0"/>
+				<BlendTransitionDefinition from="turn" to="interact" mergeTicks="3"/>
+				<BlendTransitionDefinition from="default" to="interact" mergeTicks="3"/>
+				<InstantTransitionDefinition from="interact" to="default"/>
+
+				<BlendTransitionDefinition from="turn" to="aim" mergeTicks="15"/>
+				<BlendTransitionDefinition from="default" to="aim" mergeTicks="15"/>
+				<StationaryTransitionDefinition from="aim" to="default" fadeOut="0" flat="15" fadeIn="0"/>
+				<StationaryTransitionDefinition from="aim" to="turn" fadeOut="0" flat="15" fadeIn="0"/>
+
+				<InstantTransitionDefinition from="aim" to="shoot"/>
+				<InstantTransitionDefinition from="shoot" to="aim"/>
+
+				<InstantTransitionDefinition from="aim" to="aim_rockets"/>
+				<InstantTransitionDefinition from="aim_rockets" to="aim"/>
+
+				<InstantTransitionDefinition from="aim" to="aim_laywaste"/>
+				<InstantTransitionDefinition from="aim_laywaste" to="aim"/>
+			</Transitions>
+			<Requests>
+				<MoveRequest>
+					<StateNames>
+						<Request>default</Request>
+					</StateNames>
+				</MoveRequest>
+				<TurnRequest>
+					<StateNames> 
+						<Request>turn</Request>
+					</StateNames>
+				</TurnRequest>
+				<AttackRequest>
+					<StateNames>
+						<Request>aim</Request>
+						<Request>shoot</Request>
+						<Request>aim</Request>
+					</StateNames>
+				</AttackRequest>
+				<InteractRequest>
+					<StateNames>
+						<Request>interact</Request>
+					</StateNames>
+				</InteractRequest>
+				<AbilityRequest ability="Rockets">
+					<StateNames>
+						<Request>aim</Request>
+						<Request>aim_rockets</Request>
+						<Request>aim</Request>
+					</StateNames>
+				</AbilityRequest>
+				<AbilityRequest ability="HeroAbility2">
+					<StateNames>
+						<Request>aim</Request>
+						<Request>aim_laywaste</Request>
+						<Request>aim</Request>
+					</StateNames>
+				</AbilityRequest>
+				<PassOutRequest>
+					<StateNames>
+						<Request>unconscious</Request>
+					</StateNames>
+				</PassOutRequest>
+				<ReviveRequest>
+					<StateNames>
+						<Request>default</Request>
+					</StateNames>
+				</ReviveRequest>
+			</Requests>
+		</UnitStates>
+	</UnitConfiguration>
+
+	<!--Rusviet-->
+
+	<!--Brother-->
+	<UnitConfiguration id="rus_hero_brother" type="hero_exoskeleton" parentId="com_exo">
+		<IsAbstract>false</IsAbstract>
+		<SquadSize>1</SquadSize>
+		<Health>650</Health>
+		<VisionRadius>30</VisionRadius>
+		<UnconsciousVisionRadius>7</UnconsciousVisionRadius>
+		<LimitedInteractions>Attack, Retreat, Exploration, Custom, Conquer, Collect, Revive</LimitedInteractions>
+		<ConquerPower>5</ConquerPower>
+		<ArmorType>Light</ArmorType>
+		<ImmuneToLightning>true</ImmuneToLightning>
+		<Weapons>
+			<Weapon>rus_hero_brother_rifle</Weapon>
+			<Weapon>rus_hero_brother_melee</Weapon>
+			<Weapon>rus_hero_brother_chainlightning</Weapon>
+			<Weapon>rus_hero_brother_rocket</Weapon>
+		</Weapons>
+		<ReactiveWeaponModuleConfiguration AbilityType="HeroAbility1">
+			<WeaponConfigurationId>rus_hero_brother_rigging</WeaponConfigurationId>
+		</ReactiveWeaponModuleConfiguration>
+		<Suppression>
+			<Max>0</Max>
+			<Enter>75</Enter>
+			<Exit>30</Exit>
+		</Suppression>
+		<!--Hitsystem-->
+		<HitzoneRadius>1</HitzoneRadius>
+		<DefaultHeight>2</DefaultHeight>
+		<!--<DamageHitzones>
+        <DamageHitzone>
+            <Id>1</Id>
+            <LowerAngle>135</LowerAngle>
+            <UpperAngle>225</UpperAngle>
+            <Type>Vulnerable</Type>
+        </DamageHitzone>
+    </DamageHitzones>-->
+		<!--Costs-->
+		<BuildCost>
+			<IronCost>400</IronCost>
+			<OilCost>110</OilCost>
+			<PopulationCost>3</PopulationCost>
+		</BuildCost>
+		<RepairCost>
+			<IronCost>5</IronCost>
+			<OilCost>1</OilCost>
+			<BatchSize>50</BatchSize>
+		</RepairCost>
+		<ReinforceCost>
+			<IronCost>0</IronCost>
+			<OilCost>0</OilCost>
+			<PopulationCost>0</PopulationCost>
+		</ReinforceCost>
+		<HealCost>
+			<IronCost>100</IronCost>
+			<OilCost>10</OilCost>
+		</HealCost>
+		<ReserveBuildCost>
+			<IronCost>360</IronCost>
+			<OilCost>110</OilCost>
+			<PopulationCost>3</PopulationCost>
+		</ReserveBuildCost>
+		<HealDuration>15</HealDuration><!--Duration of the interaction in Seconds-->
+		<HealCooldown>50</HealCooldown><!--Cooldown for the healing Medics in Seconds-->
+
+		<SingleMatchVeterancyConfig>rus_hero_brother_xp_single</SingleMatchVeterancyConfig>
+
+		<!--Internals-->
+		<KineticVelocityProportionalDecay>0.4</KineticVelocityProportionalDecay>
+		<KineticVelocityConstantDecay>0.05</KineticVelocityConstantDecay>
+		<KineticToVelocity>0.2</KineticToVelocity>
+		<RotationSpeed>110</RotationSpeed>
+		<MoveSpeed>3.6</MoveSpeed>
+		<Acceleration>0.15</Acceleration>
+		<MotionScaleCurve>
+			<Key x="0" y="1"/>
+			<Key x="60" y="0.5"/>
+			<Key x="90" y="0"/>
+			<Key x="180" y=".3"/>
+		</MotionScaleCurve>
+		<ReversingMotionScaleCurve>
+			<Key x="0" y=".5"/>
+			<Key x="90" y="0"/>
+			<Key x="150" y=".3"/>
+			<Key x="180" y=".5"/>
+		</ReversingMotionScaleCurve>
+
+
+		<UnitAbilities>
+			<MechMovementAbilityDefinition defaultMovement="true"/>
+			<DefaultMechAttackAbilityDefinition weapon="rus_hero_brother_rifle" defaultAttack="true"/>
+			<DefaultMechAttackAbilityDefinition weapon="rus_hero_brother_melee" defaultMelee="true" abilityType="MeleeAttack"/>
+			<DefaultMechAttackAbilityDefinition abilityType="HeroAbility2" weapon="rus_hero_brother_rocket" DeactivateAfterShot="true"/>
+			<DefaultMechAttackAbilityDefinition abilityType="HeroAbility3" weapon="rus_hero_brother_chainlightning" DeactivateAfterShot="true"/>
+		</UnitAbilities>
+		<AutoAbilities>
+			<SingleTargetAttackAutoAbilityDefinition weapon="rus_hero_brother_rocket" abilityType="HeroAbility2" settingIdentifier="RuptureAutoAbility"/>
+			<ChainAttackAutoAbilityDefinition weapon="rus_hero_brother_chainlightning" abilityType="HeroAbility3" minTargetsInLine="2" settingIdentifier="LightningAutoAbility"/>
+		</AutoAbilities>
+		
+		<UnitStates>
+			<States>
+				<DefaultMechStateDefinition name="default"/>
+				<MechShootStateDefinition name="brawl" PreTicks="8" PostTicks="16"/>
+				<MechShootStateDefinition name="shoot" PreTicks="3" PostTicks="12"/>
+				<MechShootStateDefinition name="rocket" PreTicks="0" PostTicks="15"/>
+				<MechShootStateDefinition name="shoot_chainlightning" PreTicks="12" PostTicks="30"/>
+				<MechTurnStateDefinition name="turn"/>
+				<MechInteractStateDefinition name="interact"/>
+				<StationaryMechStateDefinition name="unconscious"/>
+			</States>
+			<Transitions>
+				<BlendTransitionDefinition from="default" to="turn" mergeTicks="3"/>
+				<InstantTransitionDefinition from="turn" to="default"/>
+				<BlendTransitionDefinition from="default" to="shoot" mergeTicks="3"/>
+				<BlendTransitionDefinition from="turn" to="shoot" mergeTicks="3"/>
+				<BlendTransitionDefinition from="shoot" to="turn" mergeTicks="3"/>
+				<InstantTransitionDefinition from="shoot" to="default"/>
+				<BlendTransitionDefinition from="default" to="rocket" mergeTicks="3"/>
+				<BlendTransitionDefinition from="turn" to="rocket" mergeTicks="3"/>
+				<BlendTransitionDefinition from="rocket" to="turn" mergeTicks="3"/>
+				<InstantTransitionDefinition from="rocket" to="default"/>
+				<BlendTransitionDefinition from="default" to="shoot_chainlightning" mergeTicks="3"/>
+				<BlendTransitionDefinition from="turn" to="shoot_chainlightning" mergeTicks="3"/>
+				<BlendTransitionDefinition from="shoot_chainlightning" to="turn" mergeTicks="3"/>
+				<InstantTransitionDefinition from="shoot_chainlightning" to="default"/>
+				<BlendTransitionDefinition from="turn" to="brawl" mergeTicks="3"/>
+				<InstantTransitionDefinition from="brawl" to="default"/>
+				<BlendTransitionDefinition from="default" to="brawl" mergeTicks="3"/>
+				<BlendTransitionDefinition from="default" to="unconscious" mergeTicks="3"/>
+				<BlendTransitionDefinition from="turn" to="unconscious" mergeTicks="3"/>
+				<BlendTransitionDefinition from="unconscious" to="default" mergeTicks="3"/>
+				<BlendTransitionDefinition from="turn" to="interact" mergeTicks="3"/>
+				<BlendTransitionDefinition from="default" to="interact" mergeTicks="3"/>
+				<InstantTransitionDefinition from="interact" to="default"/>
+			</Transitions>
+			<Requests>
+				<MoveRequest>
+					<StateNames>
+						<Request>default</Request>
+					</StateNames>
+				</MoveRequest>
+				<TurnRequest>
+					<StateNames>
+						<Request>turn</Request>
+					</StateNames>
+				</TurnRequest>
+				<AttackRequest>
+					<StateNames>
+						<Request>shoot</Request>
+						<Request>default</Request>
+					</StateNames>
+				</AttackRequest>
+				<MeleeAttackRequest>
+					<StateNames>
+						<Request>brawl</Request>
+						<Request>default</Request>
+					</StateNames>
+				</MeleeAttackRequest>
+				<InteractRequest>
+					<StateNames>
+						<Request>interact</Request>
+					</StateNames>
+				</InteractRequest>
+				<AbilityRequest ability="HeroAbility2">
+					<StateNames>
+						<Request>rocket</Request>
+						<Request>default</Request>
+					</StateNames>
+				</AbilityRequest>
+				<AbilityRequest ability="HeroAbility3">
+					<StateNames>
+						<Request>shoot_chainlightning</Request>
+						<Request>default</Request>
+					</StateNames>
+				</AbilityRequest>
+				<PassOutRequest>
+					<StateNames>
+						<Request>unconscious</Request>
+					</StateNames>
+				</PassOutRequest>
+				<ReviveRequest>
+					<StateNames>
+						<Request>default</Request>
+					</StateNames>
+				</ReviveRequest>
+			</Requests>
+		</UnitStates>
+	</UnitConfiguration>
+	
+	<UnitConfiguration id="rus_hero_brotherunarmed" type="hero_exoskeleton" parentId="rus_hero_brother">
+		<Weapons>
+			<Weapon>rus_hero_brother_melee</Weapon>
+		</Weapons>
+		
+		<UnitAbilities>
+			<MechMovementAbilityDefinition defaultMovement="true"/>
+			<DefaultMechAttackAbilityDefinition weapon="rus_hero_brother_melee" defaultMelee="true" abilityType="MeleeAttack"/>
+		</UnitAbilities>
+	</UnitConfiguration>
+
+	<!--General-->
+	<UnitConfiguration id="rus_hero_general" type="hero_mech">  
+		<IsAbstract>false</IsAbstract>
+		<Type>Mech</Type>
+		<Health>850</Health>
+		<ArmorType>Heavy</ArmorType>
+		<Tags>Mech</Tags>
+		<VisionRadius>40</VisionRadius>
+		<UnconsciousVisionRadius>10</UnconsciousVisionRadius>
+		<AttackRange>15</AttackRange>
+		<LimitedInteractions>Attack, Retreat, Exploration, MeleeAttack</LimitedInteractions>
+		
+		<Weapons>
+			<Weapon>rus_hero_general_melee1</Weapon>
+			<Weapon>rus_hero_general_melee2</Weapon>
+			<Weapon>rus_hero_general_melee3</Weapon>
+			<Weapon>rus_hero_general_melee4</Weapon>
+			<Weapon>rus_hero_general_cannon</Weapon>
+		</Weapons>
+		<!--Navigation-->
+		<NavRadius>BigMech</NavRadius>
+		
+		<!--Hitsystem-->
+		<HitzoneRadius>3.5</HitzoneRadius>
+		<DefaultHeight>2.5</DefaultHeight>
+
+		<DamageHitzones>
+			<DamageHitzone>
+				<Id>1</Id>
+				<LowerAngle>135</LowerAngle>
+				<UpperAngle>225</UpperAngle>
+				<Type>Vulnerable</Type>
+			</DamageHitzone>
+		</DamageHitzones>
+
+		<AdvancedSecondaryWeaponModuleConfiguration>
+			<SecondaryWeapons>
+				<SecondaryWeaponConfiguration weaponConfigurationId="rus_hero_general_cannon_L"/>
+				<SecondaryWeaponConfiguration weaponConfigurationId="rus_hero_general_cannon_R"/>
+			</SecondaryWeapons>
+			<AlternatingWeaponDelay>4</AlternatingWeaponDelay>
+			<State>Synced</State>
+		</AdvancedSecondaryWeaponModuleConfiguration>
+
+		<!--Abilities-->
+		<UnitAbilities>
+			<MechMovementAbilityDefinition defaultMovement="true"/>
+			<!--<DefaultMechAttackAbilityDefinition weapon="rus_hero_general_melee" defaultMelee="true" abilityType="MeleeAttack"/>
+			<DefaultMechAttackAbilityDefinition weapon="rus_hero_general_cannon"/>
+			<DefaultMechAttackAbilityDefinition weapon="rus_hero_general_melee" defaultMelee="true" abilityType="MeleeAttack"/>-->
+			<MultiWeaponMechAttackAbilityDefinition defaultMelee="true" abilityType="MeleeAttack" useWeaponNameAsStateRequestName="true" sharedCooldown="true">
+				<Weapons>
+					<Weapon>rus_hero_general_melee1</Weapon>
+					<Weapon>rus_hero_general_melee2</Weapon>
+					<Weapon>rus_hero_general_melee3</Weapon>
+					<Weapon>rus_hero_general_melee4</Weapon>
+				</Weapons>
+			</MultiWeaponMechAttackAbilityDefinition>
+			<MechJumpDefinition abilityType="HeroAbility1" weaponId="rus_hero_general_jump" jumpRange="40" cooldown="600" jumpTimeForMinDistance="3.6" jumpTimeForMaxDistance="3.6"/>
+			<LifeStealAbilityDefinition PercentageToHeal="0.4" TypeOfDamageDealt="Melee" abilityType="HeroAbility2"/><!-- Bloodlust Ability -->
+		</UnitAbilities>
+		
+		<AutoAbilities>
+			<JumpAttackAutoAbilityDefinition weapon="rus_hero_general_jump" abilityType="HeroAbility1" settingIdentifier="ShatterAutoAbility"/>
+		</AutoAbilities>
+		
+		<!--Costs-->
+		<BuildCost>
+			<IronCost>500</IronCost>
+			<OilCost>150</OilCost>
+			<PopulationCost>4</PopulationCost>
+		</BuildCost>
+		<RepairCost>
+			<IronCost>5</IronCost>
+			<OilCost>2</OilCost>
+			<BatchSize>60</BatchSize>
+		</RepairCost>
+		<ReserveBuildCost>
+			<IronCost>450</IronCost>
+			<OilCost>150</OilCost>
+			<PopulationCost>4</PopulationCost>
+		</ReserveBuildCost>
+		<UpkeepCost>
+		</UpkeepCost>
+
+		<!--Veterancy-->
+		<SingleMatchVeterancyConfig>rus_hero_general_xp_single</SingleMatchVeterancyConfig>
+
+		<!--Internals-->
+		<KineticToVelocity>2.5</KineticToVelocity>
+		<MaxKineticVelocity>2.5</MaxKineticVelocity>
+		<RotationSpeed>56</RotationSpeed>
+		<MoveSpeed>4.2</MoveSpeed>
+		<PositiveDelta>90</PositiveDelta>
+		<NegativeDelta>160</NegativeDelta>
+		<Acceleration>0.05</Acceleration>
+		<MotionScaleCurve>
+			<Key x="0" y="1"/>
+			<Key x="90" y="0.5"/>
+			<Key x="180" y="1"/>
+		</MotionScaleCurve>
+		<ReversingMotionScaleCurve>
+			<Key x="0" y="0.5"/>
+			<Key x="90" y="0.3"/>
+			<Key x="180" y="0.8"/>
+		</ReversingMotionScaleCurve>
+		<!--Decay describes velocity reduction in meter per tick! -->
+		<KineticVelocityProportionalDecay>0.2</KineticVelocityProportionalDecay>
+		<KineticVelocityConstantDecay>0.1</KineticVelocityConstantDecay>
+		<WreckConfiguration>rus_hero_general_wreck</WreckConfiguration>
+		<!--<WreckConfiguration>sax_mech_gatling_wreck</WreckConfiguration>-->
+
+		<UnitStates>
+			<States>
+				<DefaultMechStateDefinition name="default"/>
+				<MechJumpStateDefinition name="jump" PreTicks="7"/>
+				<MechShootStateDefinition name="shoot" PreTicks="8" PostTicks="1"/>
+				<MechTurnStateDefinition name="turn"/>
+				<StationaryMechStateDefinition name="unconscious"/>
+				<MechInteractStateDefinition name="interact"/>
+				<MechShootStateDefinition name="brawl1" PreTicks="10" PostTicks="8"/>
+				<MechShootStateDefinition name="brawl2" PreTicks="7" PostTicks="9"/><!-- +4 Tick duration -->
+				<MechShootStateDefinition name="brawl3" PreTicks="7" PostTicks="9"/><!-- +4 Tick duration -->
+				<MechShootStateDefinition name="brawl4" PreTicks="9" PostTicks="8"/><!-- +4 Tick duration -->
+			</States>
+			<Transitions>
+				<BlendTransitionDefinition from="default" to="turn" mergeTicks="3"/>
+				<BlendTransitionDefinition from="default" to="shoot" mergeTicks="3"/>
+				<BlendTransitionDefinition from="default" to="jump" mergeTicks="3"/>
+				<BlendTransitionDefinition from="turn" to="jump" mergeTicks="3"/>
+				<StationaryTransitionDefinition from="jump" to="default" fadeOut="40" flat="0" fadeIn="0"/>			
+				<InstantTransitionDefinition from="turn" to="default"/>
+				<BlendTransitionDefinition from="turn" to="shoot" mergeTicks="3"/>				
+				<BlendTransitionDefinition from="shoot" to="turn" mergeTicks="3"/>
+				<InstantTransitionDefinition from="shoot" to="default"/>
+				<BlendTransitionDefinition from="default" to="unconscious" mergeTicks="3"/>
+				<BlendTransitionDefinition from="turn" to="unconscious" mergeTicks="3"/>
+				<BlendTransitionDefinition from="unconscious" to="default" mergeTicks="3"/>
+				<BlendTransitionDefinition from="turn" to="brawl1" mergeTicks="3"/>
+				<InstantTransitionDefinition from="brawl1" to="default"/>
+				<BlendTransitionDefinition from="default" to="brawl1" mergeTicks="3"/>
+				<BlendTransitionDefinition from="turn" to="brawl2" mergeTicks="3"/>
+				<InstantTransitionDefinition from="brawl2" to="default"/>
+				<BlendTransitionDefinition from="default" to="brawl2" mergeTicks="3"/>
+				<BlendTransitionDefinition from="turn" to="brawl3" mergeTicks="3"/>
+				<InstantTransitionDefinition from="brawl3" to="default"/>
+				<BlendTransitionDefinition from="default" to="brawl3" mergeTicks="3"/>
+				<BlendTransitionDefinition from="turn" to="brawl4" mergeTicks="3"/>
+				<InstantTransitionDefinition from="brawl4" to="default"/>
+				<BlendTransitionDefinition from="default" to="brawl4" mergeTicks="3"/>
+				<BlendTransitionDefinition from="turn" to="interact" mergeTicks="3"/>
+				<BlendTransitionDefinition from="default" to="interact" mergeTicks="3"/>
+				<InstantTransitionDefinition from="interact" to="default"/>
+			</Transitions>
+			<Requests>
+				<MoveRequest>
+					<StateNames>
+						<Request>default</Request>
+					</StateNames>
+				</MoveRequest>
+				<TurnRequest>
+					<StateNames>
+						<Request>turn</Request>
+					</StateNames>
+				</TurnRequest>
+				<AttackRequest>
+					<StateNames>
+						<Request>shoot</Request>
+						<Request>default</Request>
+					</StateNames>
+				</AttackRequest>
+				<MeleeAttackRequest name="rus_hero_general_melee1">
+					<StateNames>
+						<Request>brawl1</Request>
+						<Request>default</Request>
+					</StateNames>
+				</MeleeAttackRequest>
+				<MeleeAttackRequest name="rus_hero_general_melee2">
+					<StateNames>
+						<Request>brawl2</Request>
+						<Request>default</Request>
+					</StateNames>
+				</MeleeAttackRequest>
+				<MeleeAttackRequest name="rus_hero_general_melee3">
+					<StateNames>
+						<Request>brawl3</Request>
+						<Request>default</Request>
+					</StateNames>
+				</MeleeAttackRequest>
+				<MeleeAttackRequest name="rus_hero_general_melee4">
+					<StateNames>
+						<Request>brawl4</Request>
+						<Request>default</Request>
+					</StateNames>
+				</MeleeAttackRequest>
+				<InteractRequest>
+					<StateNames>
+						<Request>interact</Request>
+					</StateNames>
+				</InteractRequest>
+				<AbilityRequest ability="HeroAbility1">
+					<StateNames>
+						<Request>jump</Request>
+						<Request>default</Request>
+					</StateNames>
+				</AbilityRequest>
+				<PassOutRequest>
+					<StateNames>
+						<Request>unconscious</Request>
+					</StateNames>
+				</PassOutRequest>
+				<ReviveRequest>
+					<StateNames>
+						<Request>default</Request>
+					</StateNames>
+				</ReviveRequest>
+			</Requests>
+		</UnitStates>	
+	</UnitConfiguration>
+
+	<!--Olga-->
+	<UnitConfiguration id="rus_hero_olga" type="hero" parentId="com_soldier_rifleman">
+		<IsAbstract>false</IsAbstract>
+		<Health>600</Health>
+		<ArmorType>Unarmored</ArmorType>
+		<SquadSize>1</SquadSize>
+		<LimitedInteractions>Attack, Retreat, Exploration, MeleeAttack, Custom, Conquer, Collect, Revive, Enter, Harvest</LimitedInteractions>
+		<ConquerPower>5</ConquerPower>
+		<UnconsciousVisionRadius>5</UnconsciousVisionRadius>
+		<CanCollectEquipment>false</CanCollectEquipment>
+		<StealthRevealDistance>8</StealthRevealDistance>
+		<MeleeWeaponId>rus_hero_olga_melee</MeleeWeaponId>
+		<WeaponId>rus_hero_olga_rifle</WeaponId>
+		<!--
+				<Weapons>
+					<Weapon>rus_hero_olga_detonators</Weapon>
+				</Weapons>-->
+		<StatesId>rus_hero_olga</StatesId>
+
+		<!--Costs-->
+		<BuildCost>
+			<IronCost>350</IronCost>
+			<OilCost>70</OilCost>
+			<PopulationCost>3</PopulationCost>
+		</BuildCost>
+		<ReinforceCost>
+			<IronCost>0</IronCost>
+			<OilCost>0</OilCost>
+			<PopulationCost>0</PopulationCost>
+		</ReinforceCost>
+		<HealCost>
+			<IronCost>100</IronCost>
+			<OilCost>10</OilCost>
+		</HealCost>
+		<ReserveBuildCost>
+			<IronCost>320</IronCost>
+			<OilCost>70</OilCost>
+			<PopulationCost>3</PopulationCost>
+		</ReserveBuildCost>
+		<HealDuration>15</HealDuration><!--Duration of the interaction in Seconds-->
+		<HealCooldown>50</HealCooldown><!--Cooldown for the healing Medics in Seconds-->
+
+		<!--Veterancy-->
+		<SingleMatchVeterancyConfig>rus_hero_olga_xp_single</SingleMatchVeterancyConfig>
+
+		<!--Internals-->
+		<PrimaryMoveSpeed>5</PrimaryMoveSpeed>
+		<BrawlSpeed>3.5</BrawlSpeed>
+		<UnitAbilities>
+			<AutoStealthAbilityDefinition abilityType="Stealth"/>
+			<MountAbilityDefinition cooldown="200" abilityType="HeroAbility1" MountConfiguration="rus_hero_olgachanga"/>
+			<DetonatorAbilityDefinition ammo="Olga_Detonator" autoTriggerRange="20" cooldown="720" abilityType="HeroAbility2" triggerAbilityType="HeroAbility3"/>
+			<TemporaryPetAbilityDefinition cooldown="16" PetConfiguration="rus_hero_changa" MaxDuration="160"/><!--in ticks?-->
+		</UnitAbilities>
+		
+		<AutoAbilities>
+			<RideTheTigerAutoAbilityDefinition abilityType="HeroAbility1" conditions="OnTheMove" MinMovementDistance="20" settingIdentifier="TigerUpAbility"/>
+			<DetonatorsAutoAbilityDefinition abilityType="HeroAbility2" weapon="rus_hero_olga_detonators" minRange="1" maxRange="5" settingIdentifier="DetonatorsAutoAbility"/>
+			<DetonateAutoAbilityDefinition abilityType="HeroAbility3" weapon="rus_hero_olga_detonators" settingIdentifier="DetonateAutoAbility"/>
+		</AutoAbilities>
+		
+		<MaxKineticVelocity>0</MaxKineticVelocity>
+		<KineticToVelocity>1</KineticToVelocity>
+		<TumbleThreshold>1</TumbleThreshold>
+		<KineticVelocityProportionalDecay>0.2</KineticVelocityProportionalDecay>
+		<KineticVelocityConstantDecay>0.05</KineticVelocityConstantDecay>
+		<Suppression>
+			<Max>100</Max>
+			<Enter>101</Enter>
+			<Exit>30</Exit>
+		</Suppression>		  
+	</UnitConfiguration>
+
+	<!--OlgaChanga-->
+	<UnitConfiguration id="rus_hero_olgachanga" type="hero" parentId="com_soldier_rifleman">
+		<IsAbstract>false</IsAbstract>
+		<Health>600</Health>
+		<ArmorType>Unarmored</ArmorType>
+		<SquadSize>1</SquadSize>
+		<LimitedInteractions>Attack, Retreat, Exploration, MeleeAttack, Custom, Conquer, Collect, Revive, Enter, Harvest</LimitedInteractions>
+		<CanCollectEquipment>false</CanCollectEquipment>
+		<MeleeWeaponId>rus_hero_olga_melee</MeleeWeaponId>
+		<WeaponId></WeaponId>
+		<UnconsciousVisionRadius>3</UnconsciousVisionRadius>
+		<TumbleThreshold>1.5</TumbleThreshold>
+		<StatesId>rus_hero_olgachanga</StatesId>
+
+		<!--Costs-->
+		<BuildCost>
+			<IronCost>350</IronCost><!-- Is not being used -->
+			<OilCost>70</OilCost><!-- Is not being used -->
+			<PopulationCost>3</PopulationCost><!-- Is not being used -->
+		</BuildCost>
+		<ReinforceCost>
+			<IronCost>0</IronCost>
+			<OilCost>0</OilCost>
+			<PopulationCost>0</PopulationCost>
+		</ReinforceCost>
+		<HealCost>
+			<IronCost>100</IronCost>
+			<OilCost>10</OilCost>
+		</HealCost>
+		<HealDuration>15</HealDuration><!--Duration of the interaction in Seconds-->
+		<HealCooldown>50</HealCooldown><!--Cooldown for the healing Medics in Seconds-->
+
+		<!--Internals-->
+		<PrimaryMoveSpeed>6.8</PrimaryMoveSpeed>
+		<VaultSpeed>7</VaultSpeed>
+		<UnitAbilities>
+			<DismountAbilityDefinition cooldown="60" abilityType="HeroAbility1" MountConfiguration="rus_hero_olga"/>
+			<DetonatorAbilityDefinition ammo="Olga_Detonator" autoTriggerRange="20" cooldown="720" abilityType="HeroAbility2" triggerAbilityType="HeroAbility3"/>
+		</UnitAbilities>	  
+	</UnitConfiguration>
+
+	<!--Changa-->
+	<UnitConfiguration id="rus_hero_changa" type="pet" parentId="com_soldier_rifleman">
+		<IsAbstract>false</IsAbstract>
+		<Health>750</Health>
+		<ArmorType>Unarmored</ArmorType>
+		<SquadSize>1</SquadSize>
+		<CanCollectEquipment>false</CanCollectEquipment>
+		<WeaponId>
+			<!--com_melee_only-->
+		</WeaponId>
+		<MeleeWeaponId>rus_hero_changa_melee</MeleeWeaponId>
+		<StatesId>rus_hero_changa</StatesId>
+		<LimitedInteractions>Attack, Retreat, Exploration, MeleeAttack, Custom</LimitedInteractions>
+		<!--Internals-->
+		<KineticToVelocity>0.4</KineticToVelocity>
+		<!--Decay describes velocity reduction in meter per tick! -->
+		<KineticVelocityProportionalDecay>0.2</KineticVelocityProportionalDecay>
+		<KineticVelocityConstantDecay>0.1</KineticVelocityConstantDecay>
+		<PrimaryMoveSpeed>6.8</PrimaryMoveSpeed>
+		<VaultSpeed>7</VaultSpeed>
+		<UnitAbilities>
+		</UnitAbilities>
+		<ChaseRange>15</ChaseRange>
+		<SendRange>40</SendRange>
+		<StealthRevealDistance>0</StealthRevealDistance>
+		<TumbleThreshold>1.5</TumbleThreshold>
+	</UnitConfiguration>
+
+	<!--End of File-->
+</UnitConfigurations>

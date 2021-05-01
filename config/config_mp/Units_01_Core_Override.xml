@@ -1,0 +1,432 @@
+<UnitConfigurations>
+
+	<!--Common-->	
+		<!-- Cannon system-->	
+		<UnitConfiguration overrideId="com_support_cannon" type="mech" parentId="com_weaponsys">
+			<Health>700</Health>
+		</UnitConfiguration>
+
+	<!-- Polania -->
+		<!--Polania Medic-->
+		<UnitConfiguration overrideId="pol_soldier_medic" type="medic" parentId="com_soldier_medic">
+			<BuildCost>
+				<IronCost>100</IronCost>
+				<OilCost>0</OilCost>
+				<PopulationCost>3</PopulationCost>
+			</BuildCost>
+		</UnitConfiguration>
+
+		<!--Polania Rifleman-->
+		<UnitConfiguration overrideId="pol_soldier_rifleman" type="human" parentId="com_soldier_rifleman">
+			<BuildCost>
+				<IronCost>225</IronCost>
+				<OilCost>0</OilCost>
+				<PopulationCost>3</PopulationCost>
+			</BuildCost>
+		</UnitConfiguration>
+
+		<!--Polania Grenadier-->
+		<UnitConfiguration overrideId="pol_soldier_grenadier" type="human" parentId="com_soldier_grenadier">
+			<BuildCost>
+				<IronCost>250</IronCost>
+				<OilCost>10</OilCost>
+				<PopulationCost>3</PopulationCost>
+			</BuildCost>
+		</UnitConfiguration>
+
+		<!-- Polania Gunner-->
+		<UnitConfiguration overrideId="pol_soldier_gunner" type="human" parentId="com_soldier_gunner">
+			<BuildCost>
+				<IronCost>275</IronCost>
+				<OilCost>20</OilCost>
+				<PopulationCost>3</PopulationCost>
+			</BuildCost>
+			<Health>150</Health>
+			<TumbleThreshold>1.4</TumbleThreshold>
+		</UnitConfiguration>
+
+		<!--Polania MG Soldier-->
+		<UnitConfiguration overrideId="pol_soldier_mg" type="mg" parentId="com_soldier_mg">
+			<BuildCost>
+				<IronCost>275</IronCost>
+				<OilCost>10</OilCost>
+				<PopulationCost>3</PopulationCost>
+			</BuildCost>
+		</UnitConfiguration>
+
+		<!--Polania Flamethrower-->	
+		<UnitConfiguration overrideId="pol_soldier_flamer" type="human" parentId="com_soldier_flamer">  
+			<BuildCost>
+				<IronCost>225</IronCost>
+				<OilCost>5</OilCost>
+				<PopulationCost>3</PopulationCost>
+			</BuildCost>
+		</UnitConfiguration>
+
+		<!--Polania Spec Ops-->
+		<UnitConfiguration overrideId="pol_soldier_exo" type="exoskeleton" parentId="com_exo">
+			<RepairCost>
+				<IronCost>1</IronCost>
+				<OilCost>0</OilCost>
+				<BatchSize>15</BatchSize>
+			</RepairCost>
+			<ReinforceCost>
+				<IronCost>60</IronCost>
+				<OilCost>10</OilCost>
+				<PopulationCost>0</PopulationCost>
+			</ReinforceCost>	
+		</UnitConfiguration>
+
+		<!--Polania Spider-->
+		<UnitConfiguration overrideId="pol_mech_spider" type="mech" parentId="com_light_mech">
+			<Health>600</Health>
+		</UnitConfiguration>
+
+		<!-- Polania Recon-->
+		<UnitConfiguration overrideId="pol_mech_recon" type="mech" parentId="com_light_mech">
+			<Health>850</Health>
+		</UnitConfiguration>
+
+		<!-- Polania Recon-->
+		<UnitConfiguration overrideId="pol_mech_recon" type="mech" parentId="com_light_mech">
+			<!--Costs-->
+			<BuildCost>
+				<IronCost>400</IronCost>
+				<OilCost>110</OilCost>
+				<PopulationCost>4</PopulationCost>
+			</BuildCost>
+		</UnitConfiguration>
+
+		<!-- Polania Artillery | Siege Tank-->
+		<UnitConfiguration overrideId="pol_mech_artillery" type="mech" parentId="com_medium_mech">
+
+			<!--Costs-->
+			<BuildCost>
+				<IronCost>475</IronCost>
+				<OilCost>125</OilCost>
+				<PopulationCost>5</PopulationCost>
+			</BuildCost>			
+		</UnitConfiguration>
+
+		<!-- Polania Trooptransport-->
+		<UnitConfiguration overrideId="pol_mech_trooptransport" type="mech" parentId="com_heavy_mech">
+			<Health>800</Health>
+		</UnitConfiguration>
+
+
+		<!-- Polania Stinger-->
+		<UnitConfiguration overrideId="pol_mech_stinger" type="mech" parentId="com_medium_mech">
+			<Health>1200</Health>
+
+			<!--Costs-->
+			<BuildCost>
+				<IronCost>525</IronCost>
+				<OilCost>150</OilCost>
+				<PopulationCost>5</PopulationCost>
+			</BuildCost>	
+		</UnitConfiguration>
+
+	<!-- Saxony -->
+		<!--Saxony infantry-->
+			<!-- Saxony Medic-->
+			<UnitConfiguration overrideId="sax_soldier_medic" type="medic" parentId="com_soldier_medic">
+				<BuildCost>
+					<IronCost>100</IronCost>
+					<OilCost>0</OilCost>
+					<PopulationCost>3</PopulationCost>
+				</BuildCost>
+			</UnitConfiguration>
+
+			<!-- Saxony Rifleman|Stormtrooper-->
+			<UnitConfiguration overrideId="sax_soldier_rifleman" type="human" parentId="com_soldier_rifleman">
+				<BuildCost>
+					<IronCost>225</IronCost>
+					<OilCost>0</OilCost>
+					<PopulationCost>3</PopulationCost>
+				</BuildCost>
+			</UnitConfiguration>
+
+			<!-- Saxony Grenadier-->
+			<UnitConfiguration overrideId="sax_soldier_grenadier" type="human" parentId="com_soldier_grenadier">
+			<BuildCost>
+				<IronCost>250</IronCost>
+				<OilCost>10</OilCost>
+				<PopulationCost>3</PopulationCost>
+			</BuildCost>
+			</UnitConfiguration>
+
+			<!-- Saxony Gunner-->
+			<UnitConfiguration overrideId="sax_soldier_gunner" type="human" parentId="com_soldier_gunner">
+				<BuildCost>
+					<IronCost>275</IronCost>
+					<OilCost>20</OilCost>
+					<PopulationCost>3</PopulationCost>
+				</BuildCost>
+				<Health>150</Health>
+				<TumbleThreshold>1.4</TumbleThreshold>
+			</UnitConfiguration>
+
+			<!-- Saxony MG Soldier-->
+			<UnitConfiguration overrideId="sax_soldier_mg" type="mg" parentId="com_soldier_mg">
+				<BuildCost>
+					<IronCost>275</IronCost>
+					<OilCost>10</OilCost>
+					<PopulationCost>3</PopulationCost>
+				</BuildCost>
+			</UnitConfiguration>
+
+			<!-- Saxony Flamethrower-->
+			<UnitConfiguration overrideId="sax_soldier_flamer" type="human" parentId="com_soldier_flamer">
+			<BuildCost>
+				<IronCost>225</IronCost>
+				<OilCost>5</OilCost>
+				<PopulationCost>3</PopulationCost>
+			</BuildCost>
+			</UnitConfiguration>
+
+		<!--Mechs & Exo-Skeletons-->
+
+			<!-- Saxony Mortar | Breacher -->
+			<UnitConfiguration overrideId="sax_soldier_mortar" type="exoskeleton" parentId="com_exo">
+				<Health>350</Health>
+				<ArmorType>Medium</ArmorType>
+
+				<!--Costs-->
+				<RepairCost>
+					<IronCost>1</IronCost>
+					<OilCost>0</OilCost>
+					<BatchSize>30</BatchSize>
+				</RepairCost>
+				<ReinforceCost>
+					<IronCost>55</IronCost>
+					<OilCost>5</OilCost>
+					<PopulationCost>0</PopulationCost>
+				</ReinforceCost>
+			</UnitConfiguration>
+			
+			<!-- Saxony Gatling-->
+			<UnitConfiguration overrideId="sax_mech_gatling" type="mech" parentId="com_light_mech">
+				<Health>1100</Health>
+			</UnitConfiguration>
+
+			<!-- Saxony Tank-->
+			<UnitConfiguration overrideId="sax_mech_tank" type="mech" parentId="com_medium_mech">
+				<Health>950</Health>
+
+				<!--Costs-->
+				<BuildCost>
+					<IronCost>350</IronCost>
+					<OilCost>80</OilCost>
+					<PopulationCost>4</PopulationCost>
+				</BuildCost>
+			</UnitConfiguration>
+
+			<!-- Saxony Tank-->
+			<UnitConfiguration overrideId="sax_mech_tank" type="mech" parentId="com_medium_mech">
+				<!--Costs-->
+				<BuildCost>
+					<IronCost>450</IronCost>
+					<OilCost>110</OilCost>
+					<PopulationCost>4</PopulationCost>
+				</BuildCost>
+			
+			</UnitConfiguration>
+			
+			<UnitConfiguration overrideId="sax_mech_artillery" type="mech" parentId="com_light_mech">
+			<!--Costs-->
+				<BuildCost>
+					<IronCost>450</IronCost>
+					<OilCost>120</OilCost>
+					<PopulationCost>5</PopulationCost>
+				</BuildCost>
+
+			</UnitConfiguration>
+
+			<!-- Saxony Mother-->
+			<UnitConfiguration overrideId="sax_mech_mother" type="mech" parentId="com_medium_mech">
+				<Health>900</Health>
+
+				<!--Costs-->
+				<BuildCost>
+					<IronCost>475</IronCost>
+					<OilCost>135</OilCost>
+					<PopulationCost>5</PopulationCost>
+				</BuildCost>
+			</UnitConfiguration>
+
+			<!-- Saxony Dachs-->
+			<UnitConfiguration overrideId="sax_mech_dachs" type="mech" parentId="sax_mech_tank">
+				<Health>700</Health>
+				<BuildCost>
+					<IronCost>525</IronCost>
+					<OilCost>160</OilCost>
+					<PopulationCost>5</PopulationCost>
+				</BuildCost>
+			</UnitConfiguration>	
+
+			<!-- Saxony Gunfort-->
+			<UnitConfiguration overrideId="sax_mech_gunfort" type="mech" parentId="com_heavy_mech">
+				<!--Costs-->
+				<BuildCost>
+					<IronCost>725</IronCost>
+					<OilCost>215</OilCost>
+					<PopulationCost>7</PopulationCost>
+				</BuildCost>
+			</UnitConfiguration>
+
+	<!-- Rusviet -->
+		<!--Rusviet infantry-->
+			<!--Rusviet Medic-->
+			<UnitConfiguration overrideId="rus_soldier_medic" type="medic" parentId="com_soldier_medic">
+				<BuildCost>
+					<IronCost>100</IronCost>
+					<OilCost>0</OilCost>
+					<PopulationCost>3</PopulationCost>
+				</BuildCost>
+			</UnitConfiguration>
+
+			<!--Rusviet Rifleman-->
+			<UnitConfiguration overrideId="rus_soldier_rifleman" type="human" parentId="com_soldier_rifleman">
+				<BuildCost>
+					<IronCost>225</IronCost>
+					<OilCost>0</OilCost>
+					<PopulationCost>3</PopulationCost>
+				</BuildCost>
+			</UnitConfiguration>
+
+			<!--Rusviet Grenadier-->
+			<UnitConfiguration overrideId="rus_soldier_grenadier" type="human" parentId="com_soldier_grenadier">
+				<BuildCost>
+					<IronCost>250</IronCost>
+					<OilCost>10</OilCost>
+					<PopulationCost>3</PopulationCost>
+				</BuildCost>
+			</UnitConfiguration>
+
+			<!--Rusviet Gunner-->
+			<UnitConfiguration overrideId="rus_soldier_gunner" type="human" parentId="com_soldier_gunner">
+				<BuildCost>
+					<IronCost>275</IronCost>
+					<OilCost>20</OilCost>
+					<PopulationCost>3</PopulationCost>
+				</BuildCost>
+				<Health>150</Health>
+				<TumbleThreshold>1.4</TumbleThreshold>
+			</UnitConfiguration>
+
+			<!--Rusviet MG-->
+			<UnitConfiguration overrideId="rus_soldier_mg" type="mg" parentId="com_soldier_mg">
+				<BuildCost>
+					<IronCost>275</IronCost>
+					<OilCost>10</OilCost>
+					<PopulationCost>3</PopulationCost>
+				</BuildCost>
+			</UnitConfiguration>
+
+			<!--Rusviet Flame-->
+			<UnitConfiguration overrideId="rus_soldier_flamer" type="human" parentId="com_soldier_flamer">
+				<BuildCost>
+					<IronCost>225</IronCost>
+					<OilCost>5</OilCost>
+					<PopulationCost>3</PopulationCost>
+				</BuildCost>
+			</UnitConfiguration>
+
+		<!--Rusviet mechs & exos-->
+			<!--Rusviet Shock Troops-->
+			<UnitConfiguration overrideId="rus_soldier_exo" type="exoskeleton" parentId="com_exo">
+				<Health>200</Health>
+
+				<!--Costs-->
+				<BuildCost>
+					<IronCost>320</IronCost>
+					<OilCost>80</OilCost>
+					<PopulationCost>3</PopulationCost>
+				</BuildCost>
+				<RepairCost>
+					<IronCost>1</IronCost>
+					<OilCost>0</OilCost>
+					<BatchSize>14</BatchSize>
+				</RepairCost>
+				<ReinforceCost>
+					<IronCost>55</IronCost>
+					<OilCost>15</OilCost>
+					<PopulationCost>0</PopulationCost>
+				</ReinforceCost>
+
+				<!--Abilities-->
+				<UnitAbilities>
+					<MechMovementAbilityDefinition defaultMovement="true"/>
+					<!--<DefaultMechAttackAbilityDefinition weapon="rus_soldier_exo_melee" defaultMelee="true" abilityType="MeleeAttack"/>-->
+					<MultiWeaponMechAttackAbilityDefinition defaultMelee="true" abilityType="MeleeAttack" useWeaponNameAsStateRequestName="true" sharedCooldown="true">
+						<Weapons>
+							<Weapon>rus_soldier_exo_melee1</Weapon>
+							<Weapon>rus_soldier_exo_melee2</Weapon>
+						</Weapons>
+					</MultiWeaponMechAttackAbilityDefinition>
+					<MechJumpDefinition abilityType="VeteranMechAbility" weaponId="rus_soldier_exo_jump" jumpRange="35" cooldown="360" jumpTimeForMinDistance="2.94" jumpTimeForMaxDistance="2.94"/>
+					<AirDropBattleReinforceDefinition abilityType="AirDropBattleReinforce" weaponId="rus_soldier_exo_jump" range="15" cooldown="880" maxCount="2" impactDelay="14" delayBetweenSpawns="3" VeteranAbility="true" />
+				</UnitAbilities>
+
+				<!--Veterancy-->
+				<Veterancy>
+					<VeteranThreshold>2200</VeteranThreshold>
+					<EliteThreshold>4750</EliteThreshold>
+				</Veterancy>
+			</UnitConfiguration>
+
+			<!-- Rusviet Flamer Mech-->
+			<UnitConfiguration overrideId="rus_mech_flamer" type="mech"  parentId="com_light_mech">
+				<Health>750</Health>
+			</UnitConfiguration>
+
+			<!-- Rusviet Bomber-->
+			<UnitConfiguration overrideId="rus_mech_bomber" type="mech" parentId="com_light_mech">
+				<Health>900</Health>
+
+				<!--Costs-->
+				<BuildCost>
+					<IronCost>360</IronCost>
+					<OilCost>80</OilCost>
+					<PopulationCost>4</PopulationCost>
+				</BuildCost>
+			</UnitConfiguration>
+
+			<!-- Rusviet Artillery | Rocket artillery-->	
+			<UnitConfiguration overrideId="rus_mech_artillery" type="mech" parentId="com_medium_mech">
+				<UnitAbilities>
+					<MechMovementAbilityDefinition defaultMovement="true"/>
+					<DefaultMechAttackAbilityDefinition weapon="rus_mech_artillery_launcher" abilityType="Rockets" deactivateAfterShot="true" defaultAttack="true"/>
+					<MechSentryModeAbilityDefinition weapon="rus_mech_artillery_sentry_launcher" abilityType="VeteranMechAbility" VeteranAbility="true" SentryRadius="12" BurstSize="3" BurstCooldown="20" Range="55" cooldown="200"/>
+				</UnitAbilities>
+			</UnitConfiguration>
+
+			<!-- Rusviet Revolver-->
+			<UnitConfiguration overrideId="rus_mech_revolver" type="mech" parentId="com_medium_mech">
+				<Health>1100</Health>
+				<BuildCost>
+					<IronCost>525</IronCost>
+					<OilCost>155</OilCost>
+					<PopulationCost>5</PopulationCost>
+				</BuildCost>
+			</UnitConfiguration>
+
+			<!--Rusviet Scythe-->
+			<UnitConfiguration overrideId="rus_mech_scythe" type="mech" parentId="com_heavy_mech">
+				<Health>1400</Health>
+				<BuildCost>
+					<IronCost>600</IronCost>
+					<OilCost>140</OilCost>
+					<PopulationCost>6</PopulationCost>
+				</BuildCost>
+			</UnitConfiguration>
+
+			<!--Rusviet Gunfort-->
+			<UnitConfiguration overrideId="rus_mech_gunfort" type="mech" parentId="com_heavy_mech">
+				<Health>1750</Health>
+			</UnitConfiguration>
+
+
+
+	<!-- End of File-->
+</UnitConfigurations>

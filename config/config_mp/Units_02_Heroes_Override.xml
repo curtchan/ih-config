@@ -1,0 +1,173 @@
+<UnitConfigurations>
+	<!--Polania-->
+	<!--Anna-->
+	<UnitConfiguration overrideId="pol_hero_anna" type="hero" parentId="com_soldier_rifleman">
+		<ReinforceCooldown>90</ReinforceCooldown>
+
+		<ReinforceCost>
+			<IronCost>150</IronCost>
+			<OilCost>20</OilCost>
+			<PopulationCost>0</PopulationCost>
+		</ReinforceCost>
+	</UnitConfiguration>
+
+	<!--Wojtek-->
+	<UnitConfiguration overrideId="pol_hero_wojtek" type="pet" parentId="com_soldier_rifleman">
+		<Health>400</Health>
+	</UnitConfiguration>
+
+	<!--Cavalry Commander-->
+	<UnitConfiguration overrideId="pol_hero_cavalry" type="cavalry" parentId="com_soldier_rifleman">
+		<ReinforceCooldown>90</ReinforceCooldown>
+		<ArmorType>Unarmored</ArmorType>
+		<Health>250</Health>
+		<ReinforceCost>
+			<IronCost>50</IronCost>
+			<OilCost>7</OilCost>
+			<PopulationCost>0</PopulationCost>
+		</ReinforceCost>
+		<LimitedInteractions>Attack, Retreat, Exploration, MeleeAttack</LimitedInteractions>
+	</UnitConfiguration>
+
+	<!--Cavalry Soldier-->
+	<UnitConfiguration overrideId="pol_soldier_cavalry" type="cavalry" parentId="pol_hero_cavalry">
+		<Health>110</Health>
+		<ReinforceCost>
+			<IronCost>50</IronCost>
+			<OilCost>7</OilCost>
+			<PopulationCost>0</PopulationCost>
+		</ReinforceCost>
+	</UnitConfiguration>
+
+	<!--Rebel Leader-->
+	<UnitConfiguration overrideId="pol_hero_rebel" type="hero_mech">
+		<Health>1100</Health>
+
+		<!--Abilities-->
+		<UnitAbilities>
+			<MechMovementAbilityDefinition defaultMovement="true"/>
+			<MechRelentlessFuryDefinition weapon="pol_hero_rebel_cannon" abilityType="HeroAbility2" deactivateAfterShot="true" sweepAngle="60"/>
+			<BerserkAbilityDefinition defaultMelee="true" abilityType="MeleeAttack" useWeaponNameAsStateRequestName="true" sharedCooldown="true">
+				<Weapons>
+					<Weapon>pol_hero_rebel_melee_slam</Weapon>
+					<Weapon>pol_hero_rebel_melee_stab</Weapon>
+					<Weapon>pol_hero_rebel_melee_swing</Weapon>
+					<Weapon>pol_hero_rebel_melee_swing2</Weapon>
+				</Weapons>
+				<BerserkStates>
+					<BerserkState>
+						<StateSuffix>_rage1</StateSuffix> 
+						<StartHealthRatio>0.6</StartHealthRatio>
+						<Cooldown>24</Cooldown>
+					</BerserkState>
+					<BerserkState>
+						<StateSuffix>_rage2</StateSuffix> 
+						<StartHealthRatio>0.2</StartHealthRatio>
+						<Cooldown>16</Cooldown>
+					</BerserkState>
+				</BerserkStates>
+			</BerserkAbilityDefinition>
+			<MechTackleDefinition impactWeapon="pol_hero_rebel_charge_impact" cooldown="400" minRange="5" maxRange="30" pushKinetic="10"/>
+		</UnitAbilities>
+	</UnitConfiguration>
+
+	<!--Saxony-->
+	<!--Gunter-->
+	<UnitConfiguration overrideId="sax_hero_gunter" type="hero" parentId="com_soldier_rifleman">
+		<ReinforceCooldown>90</ReinforceCooldown>
+
+		<ReinforceCost>
+			<IronCost>175</IronCost>
+			<OilCost>40</OilCost>
+			<PopulationCost>0</PopulationCost>
+		</ReinforceCost>
+
+		<!--Hitsystem-->
+		<HitzoneRadius>1</HitzoneRadius>
+	</UnitConfiguration>
+
+	<!--Brunhilde-->
+	<UnitConfiguration overrideId="sax_hero_brunhilde" type="hero_mech">
+		<Health>1100</Health>
+	</UnitConfiguration>
+
+	<!--Rusviet-->
+	<!--Olga-->
+	<UnitConfiguration overrideId="rus_hero_olga" type="hero" parentId="com_soldier_rifleman">
+		<ReinforceCooldown>90</ReinforceCooldown>
+		<Health>400</Health>
+
+		<ReinforceCost>
+			<IronCost>175</IronCost>
+			<OilCost>40</OilCost>
+			<PopulationCost>0</PopulationCost>
+		</ReinforceCost>
+
+		<UnitAbilities>
+			<AutoStealthAbilityDefinition abilityType="Stealth"/>
+			<MountAbilityDefinition cooldown="200" abilityType="HeroAbility1" MountConfiguration="rus_hero_olgachanga"/>
+			<DetonatorAbilityDefinition ammo="Olga_Detonator" autoTriggerRange="20" cooldown="720" abilityType="HeroAbility2" triggerAbilityType="HeroAbility3"/>
+			<TemporaryPetAbilityDefinition cooldown="16" PetConfiguration="rus_hero_changa" MaxDuration="160"/><!--in ticks?-->
+		</UnitAbilities>
+	</UnitConfiguration>
+
+	<!--OlgaChanga-->
+	<UnitConfiguration overrideId="rus_hero_olgachanga" type="hero" parentId="com_soldier_rifleman">
+		<Health>600</Health>
+		<ReinforceCooldown>90</ReinforceCooldown>
+
+		<ReinforceCost>
+			<IronCost>175</IronCost>
+			<OilCost>40</OilCost>
+			<PopulationCost>0</PopulationCost>
+		</ReinforceCost>
+
+		<UnitAbilities>
+			<DismountAbilityDefinition cooldown="60" abilityType="HeroAbility1" MountConfiguration="rus_hero_olga"/>
+			<DetonatorAbilityDefinition ammo="Olga_Detonator" autoTriggerRange="20" cooldown="720" abilityType="HeroAbility2" triggerAbilityType="HeroAbility3"/>
+		</UnitAbilities>	
+	</UnitConfiguration>
+
+	<!--Changa-->
+	<UnitConfiguration overrideId="rus_hero_changa" type="pet" parentId="com_soldier_rifleman">
+		<Health>500</Health>
+	</UnitConfiguration>
+
+	<!--Brother-->
+	<UnitConfiguration overrideId="rus_hero_brother" type="hero_exoskeleton" parentId="com_exo">
+		<ReinforceCooldown>90</ReinforceCooldown>
+
+		<!--Hitsystem-->
+		<HitzoneRadius>1.4</HitzoneRadius>
+	</UnitConfiguration>
+
+	<!--Prince-->
+	<UnitConfiguration overrideId="sax_hero_prince" type="hero_mech">
+		<IsAbstract>false</IsAbstract>
+		<Type>Mech</Type>
+		<Health>700</Health>
+		<ArmorType>Heavy</ArmorType>
+	</UnitConfiguration>
+
+	<!--General-->
+	<UnitConfiguration overrideId="rus_hero_general" type="hero_mech">
+		<!--Abilities-->
+		<UnitAbilities>
+			<MechMovementAbilityDefinition defaultMovement="true"/>
+			<!--<DefaultMechAttackAbilityDefinition weapon="rus_hero_general_melee" defaultMelee="true" abilityType="MeleeAttack"/>
+			<DefaultMechAttackAbilityDefinition weapon="rus_hero_general_cannon"/>
+			<DefaultMechAttackAbilityDefinition weapon="rus_hero_general_melee" defaultMelee="true" abilityType="MeleeAttack"/>-->
+			<MultiWeaponMechAttackAbilityDefinition defaultMelee="true" abilityType="MeleeAttack" useWeaponNameAsStateRequestName="true" sharedCooldown="true">
+				<Weapons>
+					<Weapon>rus_hero_general_melee1</Weapon>
+					<Weapon>rus_hero_general_melee2</Weapon>
+					<Weapon>rus_hero_general_melee3</Weapon>
+					<Weapon>rus_hero_general_melee4</Weapon>
+				</Weapons>
+			</MultiWeaponMechAttackAbilityDefinition>
+			<MechJumpDefinition abilityType="HeroAbility1" weaponId="rus_hero_general_jump" jumpRange="40" cooldown="600" jumpTimeForMinDistance="3.6" jumpTimeForMaxDistance="3.6"/>
+			<LifeStealAbilityDefinition PercentageToHeal="0.2" TypeOfDamageDealt="Melee" abilityType="HeroAbility2"/><!-- Bloodlust Ability -->
+		</UnitAbilities>
+	</UnitConfiguration>
+
+</UnitConfigurations> <!--End of File-->

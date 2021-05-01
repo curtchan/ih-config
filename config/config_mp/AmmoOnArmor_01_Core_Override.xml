@@ -1,0 +1,482 @@
+<AmmoOnArmorInteractionRepository>
+<!--Projectiles-->
+<!--Shotgun-->
+<AmmoOnArmorInteraction overrideId="ShotgunOnLight" ammoType="ShotgunCartridge" armorType="Light">
+	<Damage>0.5</Damage>
+	<Kinetic>0</Kinetic>
+	<Piercing>False</Piercing>
+	<VerticalAim>0.5</VerticalAim>
+	<VerticalAimHigh>0.5</VerticalAimHigh>
+</AmmoOnArmorInteraction>
+
+<!--SpecOps|AutoCannon-->
+<AmmoOnArmorInteraction overrideId="AutoOnUnarmored" ammoType="AutoCannonCartridge" armorType="Unarmored">
+		<Damage>25</Damage>
+		<Kinetic>0.7</Kinetic>
+		<Piercing>False</Piercing>
+		<VerticalAim>0.5</VerticalAim>
+		<VerticalAimHigh>0.9</VerticalAimHigh>
+	</AmmoOnArmorInteraction>
+	<AmmoOnArmorInteraction overrideId="AutoOnLight" ammoType="AutoCannonCartridge" armorType="Light">
+		<Damage>30</Damage>
+		<Kinetic>0.25</Kinetic>
+		<Piercing>False</Piercing>
+		<VerticalAim>0.5</VerticalAim>
+		<VerticalAimHigh>0.5</VerticalAimHigh>
+	</AmmoOnArmorInteraction>
+	<AmmoOnArmorInteraction overrideId="AutoOnMedium" ammoType="AutoCannonCartridge" armorType="Medium">
+		<Effectiveness>1</Effectiveness>
+		<Damage>25</Damage>
+		<Kinetic>0.25</Kinetic>
+		<Piercing>False</Piercing>
+		<VerticalAim>0.5</VerticalAim>
+		<VerticalAimHigh>0.5</VerticalAimHigh>
+	</AmmoOnArmorInteraction>
+	<AmmoOnArmorInteraction overrideId="AutoOnHeavy" ammoType="AutoCannonCartridge" armorType="Heavy">
+		<Damage>12</Damage>
+		<Kinetic>0.125</Kinetic>
+		<Piercing>False</Piercing>
+		<VerticalAim>0.5</VerticalAim>
+		<VerticalAimHigh>0.5</VerticalAimHigh>
+	</AmmoOnArmorInteraction>
+	<AmmoOnArmorInteraction overrideId="AutoOnStructure" ammoType="AutoCannonCartridge" armorType="Structure">
+		<Damage>10</Damage>
+		<Kinetic>0.125</Kinetic>
+		<Piercing>False</Piercing>
+		<VerticalAim>0.2</VerticalAim>
+		<VerticalAimHigh>0.2</VerticalAimHigh>
+	</AmmoOnArmorInteraction>
+
+<!--Stinger Autoattack-->
+	<AmmoOnArmorInteraction overrideId="BoltOnLight" ammoType="StingerBolt" armorType="Light">
+		<Damage>115</Damage>
+		<Kinetic>0</Kinetic>
+		<Piercing>True</Piercing>
+		<VerticalAim>0.5</VerticalAim>
+		<VerticalAimHigh>0.5</VerticalAimHigh>
+	</AmmoOnArmorInteraction>
+	<AmmoOnArmorInteraction overrideId="BoltOnMedium" ammoType="StingerBolt" armorType="Medium">
+		<Damage>90</Damage>
+		<Kinetic>0</Kinetic>
+		<Piercing>False</Piercing>
+		<VerticalAim>0.5</VerticalAim>
+		<VerticalAimHigh>0.5</VerticalAimHigh>
+	</AmmoOnArmorInteraction>
+	<AmmoOnArmorInteraction overrideId="BoltOnHeavy" ammoType="StingerBolt" armorType="Heavy">
+		<Effectiveness>1</Effectiveness>
+		<Damage>90</Damage>
+		<Kinetic>0</Kinetic>
+		<Piercing>False</Piercing>
+		<VerticalAim>0.5</VerticalAim>
+		<VerticalAimHigh>0.5</VerticalAimHigh>
+	</AmmoOnArmorInteraction>
+
+<!--HeavyRifle|Recon-->
+	<AmmoOnArmorInteraction overrideId="HeavyRifleOnLight" ammoType="HeavyRifleShell" armorType="Light">
+		<Damage>70</Damage>
+		<Kinetic>1</Kinetic>
+		<Piercing>False</Piercing>
+		<VerticalAim>0.5</VerticalAim>
+		<VerticalAimHigh>0.5</VerticalAimHigh>
+	</AmmoOnArmorInteraction>
+	<AmmoOnArmorInteraction overrideId="HeavyRifleOnMedium" ammoType="HeavyRifleShell" armorType="Medium">
+		<Effectiveness>1</Effectiveness>
+		<Damage>70</Damage>
+		<Kinetic>1</Kinetic>
+		<Piercing>False</Piercing>
+		<VerticalAim>0.5</VerticalAim>
+		<VerticalAimHigh>0.5</VerticalAimHigh>
+	</AmmoOnArmorInteraction>
+	<AmmoOnArmorInteraction overrideId="HeavyRifleOnHeavy" ammoType="HeavyRifleShell" armorType="Heavy">
+		<Damage>50</Damage>
+		<Kinetic>0.5</Kinetic>
+		<Piercing>False</Piercing>
+		<VerticalAim>0.5</VerticalAim>
+		<VerticalAimHigh>0.5</VerticalAimHigh>
+	</AmmoOnArmorInteraction>
+	<AmmoOnArmorInteraction overrideId="HeavyRifleOnStructure" ammoType="HeavyRifleShell" armorType="Structure">
+		<Damage>35</Damage>
+		<Kinetic>0.5</Kinetic>
+		<Piercing>False</Piercing>
+		<VerticalAim>0.5</VerticalAim>
+		<VerticalAimHigh>0.5</VerticalAimHigh>
+	</AmmoOnArmorInteraction>
+
+	<!--PolArtillery|Siege Tank Motion-->
+	<AmmoOnArmorInteraction overrideId="PolArtShellOnLight" ammoType="PolArtShell" armorType="Light">
+		<Damage>150</Damage>
+		<Kinetic>1.5</Kinetic>
+		<Piercing>False</Piercing>
+		<VerticalAim>0.5</VerticalAim>
+		<VerticalAimHigh>0.5</VerticalAimHigh>
+	</AmmoOnArmorInteraction>
+	<AmmoOnArmorInteraction overrideId="PolArtShellOnMedium" ammoType="PolArtShell" armorType="Medium">
+		<Damage>110</Damage>
+		<Kinetic>0.5</Kinetic>
+		<Piercing>False</Piercing>
+		<VerticalAim>0.5</VerticalAim>
+		<VerticalAimHigh>0.5</VerticalAimHigh>
+	</AmmoOnArmorInteraction>
+	<AmmoOnArmorInteraction overrideId="PolArtShellOnHeavy" ammoType="PolArtShell" armorType="Heavy">
+		<Damage>110</Damage>
+		<Kinetic>0.5</Kinetic>
+		<Piercing>False</Piercing>
+		<VerticalAim>0.5</VerticalAim>
+		<VerticalAimHigh>0.5</VerticalAimHigh>
+		<Effectiveness>1</Effectiveness>
+	</AmmoOnArmorInteraction>
+
+	<!--Breacher|Breacher Melee-->
+		<AmmoOnArmorInteraction overrideId="BreacherOnUnarmored" ammoType="BreacherMelee" armorType="Unarmored" type="melee">
+		<Damage>100</Damage>
+		<Kinetic>1.5</Kinetic>
+	</AmmoOnArmorInteraction>
+
+	<!--SaxArt-->
+	<AmmoOnArmorInteraction overrideId="SaxArtOnUnarmored" ammoType="SaxArtilleryGrenade" armorType="Unarmored" type="explosive">
+		<Damage>100</Damage>
+		<Kinetic>2</Kinetic>
+		<Piercing>False</Piercing>
+	</AmmoOnArmorInteraction>
+	<AmmoOnArmorInteraction overrideId="SaxArtOnLight" ammoType="SaxArtilleryGrenade" armorType="Light" type="explosive">
+		<Damage>140</Damage>
+		<Kinetic>2.5</Kinetic>
+		<Piercing>False</Piercing>
+	</AmmoOnArmorInteraction>
+	<AmmoOnArmorInteraction overrideId="SaxArtOnMedium" ammoType="SaxArtilleryGrenade" armorType="Medium" type="explosive">
+		<Damage>85</Damage>
+		<Kinetic>1</Kinetic>
+		<Piercing>False</Piercing>
+	</AmmoOnArmorInteraction>
+	<AmmoOnArmorInteraction overrideId="SaxArtOnHeavy" ammoType="SaxArtilleryGrenade" armorType="Heavy" type="explosive">
+		<Damage>85</Damage>
+		<Kinetic>0.5</Kinetic>
+		<Piercing>False</Piercing>
+		<Effectiveness>1</Effectiveness>
+	</AmmoOnArmorInteraction>
+	<AmmoOnArmorInteraction overrideId="SaxArtOnStructure" ammoType="SaxArtilleryGrenade" armorType="Structure" type="explosive">
+		<Damage>70</Damage>
+		<Kinetic>0.5</Kinetic>
+		<Piercing>False</Piercing>
+	</AmmoOnArmorInteraction>
+
+	<!--Bomber-->
+	<AmmoOnArmorInteraction overrideId="BomberOnUnarmored" ammoType="BomberGrenade" armorType="Unarmored" type="explosive">
+		<Effectiveness>1</Effectiveness>
+		<Damage>40</Damage>
+		<Kinetic>1.3</Kinetic>
+		<Piercing>False</Piercing>
+	</AmmoOnArmorInteraction>
+	<AmmoOnArmorInteraction overrideId="BomberOnLight" ammoType="BomberGrenade" armorType="Light" type="explosive">
+		<Damage>85</Damage>
+		<Kinetic>0.5</Kinetic>
+		<Piercing>False</Piercing>
+	</AmmoOnArmorInteraction>
+	<AmmoOnArmorInteraction overrideId="BomberOnMedium" ammoType="BomberGrenade" armorType="Medium" type="explosive">
+		<Effectiveness>1</Effectiveness>
+		<Damage>65</Damage>
+		<Kinetic>0.4</Kinetic>
+		<Piercing>False</Piercing>
+	</AmmoOnArmorInteraction>
+	<AmmoOnArmorInteraction overrideId="BomberOnHeavy" ammoType="BomberGrenade" armorType="Heavy" type="explosive">
+		<Damage>50</Damage>
+		<Kinetic>0</Kinetic>
+		<Piercing>False</Piercing>
+	</AmmoOnArmorInteraction>
+	<AmmoOnArmorInteraction overrideId="BomberOnStructure" ammoType="BomberGrenade" armorType="Structure" type="explosive">
+		<Damage>50</Damage>
+		<Kinetic>0</Kinetic>
+		<Piercing>False</Piercing>
+	</AmmoOnArmorInteraction>
+
+	<!--RusArtillery Ability| Rocket Artillery Ability | Sentry Mode-->
+	<AmmoOnArmorInteraction overrideId="RASentryRocketOnUnarmored" ammoType="RusArtillerySentryRocket" armorType="Unarmored" type="explosive">
+		<Damage>60</Damage>
+		<Kinetic>1.3</Kinetic>
+		<Piercing>False</Piercing>
+	</AmmoOnArmorInteraction>
+	<AmmoOnArmorInteraction overrideId="RASentryRocketOnLight" ammoType="RusArtillerySentryRocket" armorType="Light" type="explosive">
+		<Damage>60</Damage>
+		<Kinetic>2.5</Kinetic>
+		<Piercing>False</Piercing>
+	</AmmoOnArmorInteraction>
+	<AmmoOnArmorInteraction overrideId="RASentryRocketOnMedium" ammoType="RusArtillerySentryRocket" armorType="Medium" type="explosive">
+		<Effectiveness>1</Effectiveness>   
+		<Damage>60</Damage>
+		<Kinetic>0.1</Kinetic>
+		<Piercing>False</Piercing>
+	</AmmoOnArmorInteraction>
+	<AmmoOnArmorInteraction overrideId="RASentryRocketOnHeavy" ammoType="RusArtillerySentryRocket" armorType="Heavy" type="explosive">
+		<Damage>40</Damage>
+		<Kinetic>0</Kinetic>
+		<Piercing>False</Piercing>
+	</AmmoOnArmorInteraction>
+
+	<!--Revolver-->
+	<AmmoOnArmorInteraction overrideId="RevolverOnLight" ammoType="RevolverShell" armorType="Light">
+		<Damage>60</Damage>
+		<Kinetic>0.5</Kinetic>
+		<Piercing>False</Piercing>
+		<VerticalAim>0.3</VerticalAim>
+		<VerticalAimHigh>0.3</VerticalAimHigh>
+	</AmmoOnArmorInteraction>
+	<AmmoOnArmorInteraction overrideId="RevolverOnMedium" ammoType="RevolverShell" armorType="Medium">
+		<Damage>40</Damage>
+		<Kinetic>0.5</Kinetic>
+		<Piercing>False</Piercing>
+		<VerticalAim>0.3</VerticalAim>
+		<VerticalAimHigh>0.3</VerticalAimHigh>
+	</AmmoOnArmorInteraction>
+	<AmmoOnArmorInteraction overrideId="RevolverOnHeavy" ammoType="RevolverShell" armorType="Heavy">
+		<Effectiveness>1</Effectiveness>
+		<Damage>40</Damage>
+		<Kinetic>0.25</Kinetic>
+		<Piercing>False</Piercing>
+		<VerticalAim>0.3</VerticalAim>
+		<VerticalAimHigh>0.3</VerticalAimHigh>
+	</AmmoOnArmorInteraction>
+
+	<!--RusvietGunfort|GunfortShell-->
+	<AmmoOnArmorInteraction overrideId="GunfortShellOnLight" ammoType="GunfortShell" armorType="Light">
+		<Damage>65</Damage>
+		<Kinetic>1</Kinetic>
+		<Piercing>False</Piercing>
+		<VerticalAim>0.5</VerticalAim>
+		<VerticalAimHigh>0.5</VerticalAimHigh>
+	</AmmoOnArmorInteraction>
+	<AmmoOnArmorInteraction overrideId="GunfortShellOnMedium" ammoType="GunfortShell" armorType="Medium">
+		<Damage>55</Damage>
+		<Kinetic>0.75</Kinetic>
+		<Piercing>False</Piercing>
+		<VerticalAim>0.5</VerticalAim>
+		<VerticalAimHigh>0.5</VerticalAimHigh>
+	</AmmoOnArmorInteraction>
+	<AmmoOnArmorInteraction overrideId="GunfortShellOnHeavy" ammoType="GunfortShell" armorType="Heavy">
+		<Damage>55</Damage>
+		<Kinetic>0.5</Kinetic>
+		<Piercing>False</Piercing>
+		<VerticalAim>0.5</VerticalAim>
+		<VerticalAimHigh>0.5</VerticalAimHigh>
+		<Effectiveness>1</Effectiveness>
+	</AmmoOnArmorInteraction>
+
+	<!--MortarSystem-->
+	<AmmoOnArmorInteraction overrideId="MortarSOnUnarmored" ammoType="MortarSystemGrenade" armorType="Unarmored" type="explosive">
+		<Damage>70</Damage>
+		<Kinetic>2</Kinetic>
+		<Piercing>False</Piercing>
+	</AmmoOnArmorInteraction>
+	<AmmoOnArmorInteraction overrideId="MortarSOnLight" ammoType="MortarSystemGrenade" armorType="Light" type="explosive">
+		<Damage>50</Damage>
+		<Kinetic>0.5</Kinetic>
+		<Piercing>False</Piercing>
+	</AmmoOnArmorInteraction>
+	<AmmoOnArmorInteraction overrideId="MortarSOnMedium" ammoType="MortarSystemGrenade" armorType="Medium" type="explosive">
+		<Damage>40</Damage>
+		<Kinetic>0.1</Kinetic>
+		<Piercing>False</Piercing>
+	</AmmoOnArmorInteraction>
+	<AmmoOnArmorInteraction overrideId="MortarSOnHeavy" ammoType="MortarSystemGrenade" armorType="Heavy" type="explosive">
+		<Damage>40</Damage>
+		<Kinetic>0</Kinetic>
+		<Piercing>False</Piercing>
+		<Effectiveness>1</Effectiveness>
+	</AmmoOnArmorInteraction>
+	<AmmoOnArmorInteraction overrideId="MortarSOnStructure" ammoType="MortarSystemGrenade" armorType="Structure" type="explosive">
+		<Damage>40</Damage>
+		<Kinetic>0</Kinetic>
+		<Piercing>False</Piercing>
+	</AmmoOnArmorInteraction>
+
+	<!--HeavyCannon|CannonSystem-->
+	<AmmoOnArmorInteraction overrideId="HeavyCannonOnUnarmored" ammoType="HeavyCannonShell" armorType="Unarmored">
+		<Damage>50</Damage>
+		<Kinetic>2</Kinetic>
+		<Piercing>False</Piercing>
+		<VerticalAim>0.4</VerticalAim>
+		<VerticalAimHigh>0.7</VerticalAimHigh>
+	</AmmoOnArmorInteraction>
+	<AmmoOnArmorInteraction overrideId="HeavyCannonOnLight" ammoType="HeavyCannonShell" armorType="Light">
+		<Damage>125</Damage>
+		<Kinetic>1</Kinetic>
+		<Piercing>True</Piercing>
+		<VerticalAim>0.5</VerticalAim>
+		<VerticalAimHigh>0.5</VerticalAimHigh>
+	</AmmoOnArmorInteraction>
+
+	<!--UltraHeavyCannon-->
+	<AmmoOnArmorInteraction overrideId="UltraHeavyCannonOnUnarmored" ammoType="UltraHeavyCannonShell" armorType="Unarmored">
+		<Damage>200</Damage>
+		<Kinetic>2</Kinetic>
+		<Piercing>False</Piercing>
+		<VerticalAim>0.5</VerticalAim>
+		<VerticalAimHigh>0.7</VerticalAimHigh>
+	</AmmoOnArmorInteraction>
+	<AmmoOnArmorInteraction overrideId="UltraHeavyCannonOnLight" ammoType="UltraHeavyCannonShell" armorType="Light">
+		<Damage>200</Damage>
+		<Kinetic>1</Kinetic>
+		<Piercing>False</Piercing>
+		<VerticalAim>0.5</VerticalAim>
+		<VerticalAimHigh>0.5</VerticalAimHigh>
+	</AmmoOnArmorInteraction>
+	<AmmoOnArmorInteraction overrideId="UltraHeavyCannonOnMedium" ammoType="UltraHeavyCannonShell" armorType="Medium">
+		<Damage>200</Damage>
+		<Kinetic>0.75</Kinetic>
+		<Piercing>False</Piercing>
+		<VerticalAim>0.5</VerticalAim>
+		<VerticalAimHigh>0.5</VerticalAimHigh>
+	</AmmoOnArmorInteraction>
+	<AmmoOnArmorInteraction overrideId="UltraHeavyCannonOnHeavy" ammoType="UltraHeavyCannonShell" armorType="Heavy">
+		<Effectiveness>1</Effectiveness>
+		<Damage>100</Damage>
+		<Kinetic>0.5</Kinetic>
+		<Piercing>False</Piercing>
+		<VerticalAim>0.5</VerticalAim>
+		<VerticalAimHigh>0.5</VerticalAimHigh>
+	</AmmoOnArmorInteraction>
+
+<!--Splash Damage-->
+	<!--Splash Damage-->
+	<AmmoOnArmorInteraction overrideId="APSplashOnUnarmored" ammoType="APSplash" armorType="Unarmored" type="explosive">
+		<Damage>5</Damage>
+		<Kinetic>1.3</Kinetic>
+	</AmmoOnArmorInteraction>
+
+	<!--Medium Splash-->
+	<AmmoOnArmorInteraction overrideId="MSplashOnUnarmored" ammoType="MediumSplash" armorType="Unarmored" type="explosive">
+		<Damage>15</Damage>
+		<Kinetic>1.3</Kinetic>
+	</AmmoOnArmorInteraction>
+
+	<!--Heavy Splash-->
+	<AmmoOnArmorInteraction overrideId="HSplashOnUnarmored" ammoType="HeavySplash" armorType="Unarmored" type="explosive">
+		<Damage>45</Damage>
+		<Kinetic>2</Kinetic>
+	</AmmoOnArmorInteraction>
+
+	<!--Ultra Heavy Splash-->
+		<AmmoOnArmorInteraction overrideId="UHSplashOnUnarmored" ammoType="UltraHeavySplash" armorType="Unarmored" type="explosive">
+		<Damage>60</Damage>
+		<Kinetic>2</Kinetic>
+	</AmmoOnArmorInteraction>
+	
+<!--Melee Damage-->
+	<!--Blade|Shock Troops-->
+	<AmmoOnArmorInteraction overrideId="BladeOnUnarmored" ammoType="ShockTroopBlade" armorType="Unarmored" type="melee">
+		<Damage>50</Damage>
+		<Kinetic>1.1</Kinetic>
+	</AmmoOnArmorInteraction>
+	<AmmoOnArmorInteraction overrideId="BladeOnLight" ammoType="ShockTroopBlade" armorType="Light" type="melee">
+		<Damage>40</Damage>
+		<Kinetic>0.7</Kinetic>
+	</AmmoOnArmorInteraction>
+	<AmmoOnArmorInteraction overrideId="BladeOnMedium" ammoType="ShockTroopBlade" armorType="Medium" type="melee">
+		<Damage>35</Damage>
+		<Kinetic>0.2</Kinetic>
+		<Effectiveness>1</Effectiveness>
+	</AmmoOnArmorInteraction>
+	<AmmoOnArmorInteraction overrideId="BladeOnHeavy" ammoType="ShockTroopBlade" armorType="Heavy" type="melee">
+		<Damage>25</Damage>
+		<Kinetic>0.1</Kinetic>
+	</AmmoOnArmorInteraction>	
+	<AmmoOnArmorInteraction overrideId="BladeOnStructure" ammoType="ShockTroopBlade" armorType="Structure" type="melee">
+		<Damage>5</Damage>
+		<Kinetic>0</Kinetic>
+	</AmmoOnArmorInteraction>	
+
+	<!--Scythe|Scythe-->
+	<AmmoOnArmorInteraction overrideId="ScytheOnUnarmored" ammoType="ScytheMelee" armorType="Unarmored" type="melee">
+		<Damage>175</Damage>
+		<Kinetic>1.5</Kinetic>
+	</AmmoOnArmorInteraction>
+	<AmmoOnArmorInteraction overrideId="ScytheOnLight" ammoType="ScytheMelee" armorType="Light" type="melee">
+		<Damage>150</Damage>
+		<Kinetic>1</Kinetic>
+	</AmmoOnArmorInteraction>
+	<AmmoOnArmorInteraction overrideId="ScytheOnMedium" ammoType="ScytheMelee" armorType="Medium" type="melee">
+		<Damage>150</Damage>
+		<Kinetic>2</Kinetic>
+	</AmmoOnArmorInteraction>
+	<AmmoOnArmorInteraction overrideId="ScytheOnHeavy" ammoType="ScytheMelee" armorType="Heavy" type="melee">
+		<Damage>150</Damage>
+		<Kinetic>2</Kinetic>
+		<Effectiveness>1</Effectiveness>
+	</AmmoOnArmorInteraction>	
+	<AmmoOnArmorInteraction overrideId="ScytheOnStructure" ammoType="ScytheMelee" armorType="Structure" type="melee">
+		<Damage>40</Damage>
+		<Kinetic>0</Kinetic>
+	</AmmoOnArmorInteraction>
+
+<!--Special/Tmp-->
+	<!--Flamer Mech|MechFlames-->
+	<AmmoOnArmorInteraction overrideId="MechFlamesOnLight" ammoType="MechFlames" armorType="Light" type="explosive">
+		<Damage>3.5</Damage>
+		<Kinetic>0</Kinetic>
+	</AmmoOnArmorInteraction>
+	<AmmoOnArmorInteraction overrideId="MechFlamesOnMedium" ammoType="MechFlames" armorType="Medium" type="explosive">
+		<Damage>1</Damage>
+		<Kinetic>0</Kinetic>
+	</AmmoOnArmorInteraction>
+	<AmmoOnArmorInteraction overrideId="MechFlamesOnHeavy" ammoType="MechFlames" armorType="Heavy" type="explosive">
+		<Damage>1</Damage>
+		<Kinetic>0</Kinetic>
+			<Effectiveness>-1</Effectiveness>
+	</AmmoOnArmorInteraction>
+
+	<!--Flamer Mech|Mech Frame Flames-->
+	<AmmoOnArmorInteraction overrideId="MechFFlamesOnLight" ammoType="MechFrameFlames" armorType="Light" type="explosive">
+		<Damage>3.5</Damage>
+		<Kinetic>0</Kinetic>
+	</AmmoOnArmorInteraction>
+	<AmmoOnArmorInteraction overrideId="MechFFlamesOnMedium" ammoType="MechFrameFlames" armorType="Medium" type="explosive">
+		<Damage>1</Damage>
+		<Kinetic>0</Kinetic>
+	</AmmoOnArmorInteraction>
+	<AmmoOnArmorInteraction overrideId="MechFFlamesOnHeavy" ammoType="MechFrameFlames" armorType="Heavy" type="explosive">
+		<Damage>1</Damage>
+		<Kinetic>0</Kinetic>
+		<Effectiveness>-1</Effectiveness>
+	</AmmoOnArmorInteraction>
+
+	<!--MotherWheel-->
+	<AmmoOnArmorInteraction overrideId="WheelOnLight" ammoType="MotherWheel" armorType="Light" type="explosive">
+		<Damage>85</Damage>
+		<Kinetic>0</Kinetic>
+		<Piercing>False</Piercing>
+	</AmmoOnArmorInteraction>
+	<AmmoOnArmorInteraction overrideId="WheelOnMedium" ammoType="MotherWheel" armorType="Medium" type="explosive">
+		<Damage>75</Damage>
+		<Kinetic>0</Kinetic>
+		<Piercing>False</Piercing>
+	</AmmoOnArmorInteraction>
+	<AmmoOnArmorInteraction overrideId="WheelOnHeavy" ammoType="MotherWheel" armorType="Heavy" type="explosive">
+		<Damage>65</Damage>
+		<Kinetic>0</Kinetic>
+		<Piercing>False</Piercing>
+		<Effectiveness>1</Effectiveness>
+	</AmmoOnArmorInteraction>
+
+	<!--Rus Exo Jump-->
+	<AmmoOnArmorInteraction overrideId="JumpPackOnUnarmored" ammoType="JumpPack" armorType="Unarmored" type="explosive">
+		<Damage>15</Damage>
+		<Kinetic>1.5</Kinetic>
+	</AmmoOnArmorInteraction>
+	<AmmoOnArmorInteraction overrideId="JumpPackOnLight" ammoType="JumpPack" armorType="Light" type="explosive">
+		<Damage>25</Damage>
+		<Kinetic>1.3</Kinetic>
+	</AmmoOnArmorInteraction>
+	<AmmoOnArmorInteraction overrideId="JumpPackOnMedium" ammoType="JumpPack" armorType="Medium" type="explosive">
+		<Damage>15</Damage>
+		<Kinetic>0.5</Kinetic>
+	</AmmoOnArmorInteraction>
+	<AmmoOnArmorInteraction overrideId="JumpPackOnHeavy" ammoType="JumpPack" armorType="Heavy" type="explosive">
+		<Damage>10</Damage>
+		<Kinetic>0.1</Kinetic>
+	</AmmoOnArmorInteraction>
+	<AmmoOnArmorInteraction overrideId="JumpPackOnStructure" ammoType="JumpPack" armorType="Structure" type="explosive">
+		<Damage>15</Damage>
+		<Kinetic>0</Kinetic>
+	</AmmoOnArmorInteraction>
+
+	<!--End of File-->
+</AmmoOnArmorInteractionRepository>

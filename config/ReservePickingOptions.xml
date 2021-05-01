@@ -1,0 +1,345 @@
+<ReservePickingOptionsConfigurations>
+	
+	<!--Reserve Picking Options Polania-->
+	<ReservePickingOptionsConfiguration id="pol_reservepicking_options_default" type="reserve_picking_option">
+		<Options>
+			<!--Hero Phase-->
+			<HeroReservePickingOption>
+				<UnitName>pol_hero_anna</UnitName>
+				<Phase>1</Phase>
+				<ReservePointCost>2</ReservePointCost>
+			</HeroReservePickingOption>
+			<HeroReservePickingOption>
+				<UnitName>pol_hero_cavalry</UnitName>
+				<Phase>1</Phase>
+				<ReservePointCost>3</ReservePointCost>
+			</HeroReservePickingOption>
+			<HeroReservePickingOption>
+				<UnitName>pol_hero_rebel</UnitName>
+				<Phase>2</Phase>
+				<ReservePointCost>2</ReservePointCost>
+			</HeroReservePickingOption>
+
+			<!--Units Phase 1-->
+			<UnitReservePickingOption>
+				<UnitName>pol_soldier_engineer</UnitName>
+				<Phase>1</Phase>
+				<ReservePointCost>1</ReservePointCost>
+			</UnitReservePickingOption>
+			<UnitReservePickingOption>
+				<UnitName>pol_soldier_rifleman</UnitName>
+				<Phase>1</Phase>
+				<ReservePointCost>1</ReservePointCost>
+			</UnitReservePickingOption>
+			<UnitReservePickingOption>
+				<UnitName>pol_soldier_medic</UnitName>
+				<Phase>1</Phase>
+				<ReservePointCost>2</ReservePointCost>
+			</UnitReservePickingOption>		
+			<UnitReservePickingOption>
+				<UnitName>pol_soldier_flamer</UnitName>
+				<Phase>1</Phase>
+				<ReservePointCost>2</ReservePointCost>
+			</UnitReservePickingOption>			
+			<UnitReservePickingOption>
+				<UnitName>pol_soldier_grenadier</UnitName>
+				<Phase>1</Phase>
+				<ReservePointCost>2</ReservePointCost>
+			</UnitReservePickingOption>
+			<UnitReservePickingOption>
+				<UnitName>pol_soldier_gunner</UnitName>
+				<Phase>1</Phase>
+				<ReservePointCost>2</ReservePointCost>
+			</UnitReservePickingOption>
+			<UnitReservePickingOption>
+				<UnitName>pol_soldier_mg</UnitName>
+				<Phase>1</Phase>
+				<ReservePointCost>2</ReservePointCost>
+			</UnitReservePickingOption>
+			<UnitReservePickingOption>
+				<UnitName>com_support_cannon</UnitName>
+				<Phase>1</Phase>
+				<ReservePointCost>2</ReservePointCost>
+			</UnitReservePickingOption>		
+			<UnitReservePickingOption>
+				<UnitName>com_support_mg</UnitName>
+				<Phase>1</Phase>
+				<ReservePointCost>2</ReservePointCost>
+			</UnitReservePickingOption>
+			<UnitReservePickingOption>
+				<UnitName>com_support_mortar</UnitName>
+				<Phase>1</Phase>
+				<ReservePointCost>1</ReservePointCost>
+			</UnitReservePickingOption>
+
+			<!--Units Phase 2-->
+			<UnitReservePickingOption>
+				<UnitName>pol_soldier_exo</UnitName>
+				<Phase>2</Phase>
+				<ReservePointCost>1</ReservePointCost>
+			</UnitReservePickingOption>
+			<UnitReservePickingOption>
+				<UnitName>pol_mech_spider</UnitName>
+				<Phase>2</Phase>
+				<ReservePointCost>1</ReservePointCost>
+			</UnitReservePickingOption>
+			<UnitReservePickingOption>
+				<UnitName>pol_mech_recon</UnitName>
+				<Phase>2</Phase>
+				<ReservePointCost>2</ReservePointCost>
+			</UnitReservePickingOption>
+			<UnitReservePickingOption>
+				<UnitName>pol_mech_artillery</UnitName>
+				<Phase>2</Phase>
+				<ReservePointCost>2</ReservePointCost>
+			</UnitReservePickingOption>			
+			<UnitReservePickingOption>
+				<UnitName>pol_mech_stinger</UnitName>
+				<Phase>2</Phase>
+				<ReservePointCost>3</ReservePointCost>
+			</UnitReservePickingOption>
+			<UnitReservePickingOption>
+				<UnitName>pol_mech_trooptransport</UnitName>
+				<Phase>2</Phase>
+				<ReservePointCost>3</ReservePointCost>
+			</UnitReservePickingOption>
+			
+			<!--Boni-->
+			<BonusReservePickingOption>
+				<Identifier>start_iron</Identifier>
+				<Value>100</Value>
+				<ReservePointCost>3</ReservePointCost>
+			</BonusReservePickingOption>
+			
+		</Options>
+	</ReservePickingOptionsConfiguration>
+	
+	<!--Reserve Picking Options Saxony-->
+	<ReservePickingOptionsConfiguration id="sax_reservepicking_options_default" type="reserve_picking_option">
+		<Options>
+			<!--Hero Phase-->
+			<HeroReservePickingOption>
+				<UnitName>sax_hero_gunter</UnitName>
+				<Phase>1</Phase>
+				<ReservePointCost>2</ReservePointCost>
+			</HeroReservePickingOption>
+			<HeroReservePickingOption>
+				<UnitName>sax_hero_prince</UnitName>
+				<Phase>2</Phase>
+				<ReservePointCost>1</ReservePointCost>
+			</HeroReservePickingOption>
+			<HeroReservePickingOption>
+				<UnitName>sax_hero_brunhilde</UnitName>
+				<Phase>2</Phase>
+				<ReservePointCost>2</ReservePointCost>
+			</HeroReservePickingOption>
+
+			<!--Units Phase 1-->
+			<UnitReservePickingOption>
+				<UnitName>sax_soldier_engineer</UnitName>
+				<Phase>1</Phase>
+				<ReservePointCost>1</ReservePointCost>
+			</UnitReservePickingOption>
+			<UnitReservePickingOption>
+				<UnitName>sax_soldier_rifleman</UnitName>
+				<Phase>1</Phase>
+				<ReservePointCost>1</ReservePointCost>
+			</UnitReservePickingOption>			
+			<UnitReservePickingOption>
+				<UnitName>sax_soldier_medic</UnitName>
+				<Phase>1</Phase>
+				<ReservePointCost>1</ReservePointCost>
+			</UnitReservePickingOption>
+			<UnitReservePickingOption>
+				<UnitName>sax_soldier_flamer</UnitName>
+				<Phase>1</Phase>
+				<ReservePointCost>2</ReservePointCost>
+			</UnitReservePickingOption>
+			<UnitReservePickingOption>
+				<UnitName>sax_soldier_grenadier</UnitName>
+				<Phase>1</Phase>
+				<ReservePointCost>2</ReservePointCost>
+			</UnitReservePickingOption>
+			<UnitReservePickingOption>
+				<UnitName>sax_soldier_gunner</UnitName>
+				<Phase>1</Phase>
+				<ReservePointCost>2</ReservePointCost>
+			</UnitReservePickingOption>
+			<UnitReservePickingOption>
+				<UnitName>sax_soldier_mg</UnitName>
+				<Phase>1</Phase>
+				<ReservePointCost>3</ReservePointCost>
+			</UnitReservePickingOption>
+			<UnitReservePickingOption>
+				<UnitName>com_support_cannon</UnitName>
+				<Phase>1</Phase>
+				<ReservePointCost>2</ReservePointCost>
+			</UnitReservePickingOption>		
+			<UnitReservePickingOption>
+				<UnitName>com_support_mg</UnitName>
+				<Phase>1</Phase>
+				<ReservePointCost>2</ReservePointCost>
+			</UnitReservePickingOption>
+			<UnitReservePickingOption>
+				<UnitName>com_support_mortar</UnitName>
+				<Phase>1</Phase>
+				<ReservePointCost>1</ReservePointCost>
+			</UnitReservePickingOption>
+			
+			<!--Units Phase 2-->
+			<UnitReservePickingOption>
+				<UnitName>sax_soldier_mortar</UnitName>
+				<Phase>2</Phase>
+				<ReservePointCost>1</ReservePointCost>
+			</UnitReservePickingOption>
+			<UnitReservePickingOption>
+				<UnitName>sax_mech_gatling</UnitName>
+				<Phase>2</Phase>
+				<ReservePointCost>1</ReservePointCost>
+			</UnitReservePickingOption>			
+			<UnitReservePickingOption>
+				<UnitName>sax_mech_tank</UnitName>
+				<Phase>2</Phase>
+				<ReservePointCost>2</ReservePointCost>
+			</UnitReservePickingOption>
+			<UnitReservePickingOption>
+				<UnitName>sax_mech_artillery</UnitName>
+				<Phase>2</Phase>
+				<ReservePointCost>2</ReservePointCost>
+			</UnitReservePickingOption>			
+			<UnitReservePickingOption>
+				<UnitName>sax_mech_dachs</UnitName>
+				<Phase>2</Phase>
+				<ReservePointCost>3</ReservePointCost>
+			</UnitReservePickingOption>
+			<UnitReservePickingOption>
+				<UnitName>sax_mech_mother</UnitName>
+				<Phase>2</Phase>
+				<ReservePointCost>3</ReservePointCost>
+			</UnitReservePickingOption>
+			
+			<!--Boni-->
+			<BonusReservePickingOption>
+				<Identifier>start_iron</Identifier>
+				<Value>100</Value>
+				<ReservePointCost>3</ReservePointCost>
+			</BonusReservePickingOption>
+			
+		</Options>
+	</ReservePickingOptionsConfiguration>
+	
+	<!--Reserve Picking Options Rusviet-->
+	<ReservePickingOptionsConfiguration id="rus_reservepicking_options_default" type="reserve_picking_option">
+		<Options>
+			<!--Hero Phase-->
+			<HeroReservePickingOption>
+				<UnitName>rus_hero_olga</UnitName>
+				<Phase>1</Phase>
+				<ReservePointCost>2</ReservePointCost>
+			</HeroReservePickingOption>
+			<HeroReservePickingOption>
+				<UnitName>rus_hero_brother</UnitName>
+				<Phase>2</Phase>
+				<ReservePointCost>1</ReservePointCost>
+			</HeroReservePickingOption>
+			<HeroReservePickingOption>
+				<UnitName>rus_hero_general</UnitName>
+				<Phase>2</Phase>
+				<ReservePointCost>2</ReservePointCost>
+			</HeroReservePickingOption>
+
+			<!--Units Phase 1-->
+			<UnitReservePickingOption>
+				<UnitName>rus_soldier_engineer</UnitName>
+				<Phase>1</Phase>
+				<ReservePointCost>1</ReservePointCost>
+			</UnitReservePickingOption>
+			<UnitReservePickingOption>
+				<UnitName>rus_soldier_rifleman</UnitName>
+				<Phase>1</Phase>
+				<ReservePointCost>1</ReservePointCost>
+			</UnitReservePickingOption>			
+			<UnitReservePickingOption>
+				<UnitName>rus_soldier_medic</UnitName>
+				<Phase>1</Phase>
+				<ReservePointCost>2</ReservePointCost>
+			</UnitReservePickingOption>
+			<UnitReservePickingOption>
+				<UnitName>rus_soldier_flamer</UnitName>
+				<Phase>1</Phase>
+				<ReservePointCost>1</ReservePointCost>
+			</UnitReservePickingOption>
+			<UnitReservePickingOption>
+				<UnitName>rus_soldier_grenadier</UnitName>
+				<Phase>1</Phase>
+				<ReservePointCost>2</ReservePointCost>
+			</UnitReservePickingOption>
+			<UnitReservePickingOption>
+				<UnitName>rus_soldier_gunner</UnitName>
+				<Phase>1</Phase>
+				<ReservePointCost>2</ReservePointCost>
+			</UnitReservePickingOption>
+			<UnitReservePickingOption>
+				<UnitName>rus_soldier_mg</UnitName>
+				<Phase>1</Phase>
+				<ReservePointCost>3</ReservePointCost>
+			</UnitReservePickingOption>
+			<UnitReservePickingOption>
+				<UnitName>com_support_cannon</UnitName>
+				<Phase>1</Phase>
+				<ReservePointCost>2</ReservePointCost>
+			</UnitReservePickingOption>	
+			<UnitReservePickingOption>
+				<UnitName>com_support_mg</UnitName>
+				<Phase>1</Phase>
+				<ReservePointCost>2</ReservePointCost>
+			</UnitReservePickingOption>
+			<UnitReservePickingOption>
+				<UnitName>com_support_mortar</UnitName>
+				<Phase>1</Phase>
+				<ReservePointCost>1</ReservePointCost>
+			</UnitReservePickingOption>
+			
+			<!--Units Phase 2-->
+			<UnitReservePickingOption>
+				<UnitName>rus_soldier_exo</UnitName>
+				<Phase>2</Phase>
+				<ReservePointCost>1</ReservePointCost>
+			</UnitReservePickingOption>
+			<UnitReservePickingOption>
+				<UnitName>rus_mech_flamer</UnitName>
+				<Phase>2</Phase>
+				<ReservePointCost>1</ReservePointCost>
+			</UnitReservePickingOption>			
+			<UnitReservePickingOption>
+				<UnitName>rus_mech_bomber</UnitName>
+				<Phase>2</Phase>
+				<ReservePointCost>2</ReservePointCost>
+			</UnitReservePickingOption>
+			<UnitReservePickingOption>
+				<UnitName>rus_mech_artillery</UnitName>
+				<Phase>2</Phase>
+				<ReservePointCost>2</ReservePointCost>
+			</UnitReservePickingOption>			
+			<UnitReservePickingOption>
+				<UnitName>rus_mech_revolver</UnitName>
+				<Phase>2</Phase>
+				<ReservePointCost>3</ReservePointCost>
+			</UnitReservePickingOption>
+			<UnitReservePickingOption>
+				<UnitName>rus_mech_scythe</UnitName>
+				<Phase>2</Phase>
+				<ReservePointCost>3</ReservePointCost>
+			</UnitReservePickingOption>
+			
+			<!--Boni-->
+			<BonusReservePickingOption>
+				<Identifier>start_iron</Identifier>
+				<Value>100</Value>
+				<ReservePointCost>3</ReservePointCost>
+			</BonusReservePickingOption>
+			
+		</Options>
+	</ReservePickingOptionsConfiguration>
+	
+</ReservePickingOptionsConfigurations>

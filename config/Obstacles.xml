@@ -1,0 +1,1158 @@
+<ObstacleConfigurationRepository>
+	<!--Untargetable Obstacles-->
+		<!--Default Obstacle-->
+			<ObstacleConfiguration id="default">
+				<Health>50</Health>
+				<ArmorType>Medium</ArmorType>
+				<Targetable>false</Targetable>				
+			</ObstacleConfiguration>
+			
+		<!--Heavy-->	
+			<!--Rocks-->	
+				<ObstacleConfiguration id="Rocks" parentId="default">
+					<ArmorType>Heavy</ArmorType>
+					<Health>-1</Health>
+					<ObstacleType>Rock</ObstacleType>
+					<Targetable>false</Targetable>
+				</ObstacleConfiguration>
+				
+				<ObstacleConfiguration id="Rockwall" parentId="Rocks">
+					<Health>100</Health>
+					<Collision>Human, SmallMech, BigMechBreakable</Collision>
+				</ObstacleConfiguration>
+				
+				<ObstacleConfiguration id="RockwallSmall" parentId="Rockwall">
+					<Collision>HumanVaultable, SmallMechBreakable, BigMechBreakable</Collision>
+				</ObstacleConfiguration>
+				
+				<ObstacleConfiguration id="RockwallSmallNonVaultable" parentId="Rockwall">
+					<Collision>Human, SmallMechBreakable, BigMechBreakable</Collision>
+				</ObstacleConfiguration>
+				
+				
+			<!--Concrete-->
+				<ObstacleConfiguration id="Concrete" parentId="default">
+					<ArmorType>Heavy</ArmorType>
+					<Health>120</Health>
+					<ObstacleType>Concrete</ObstacleType>
+					<Targetable>false</Targetable>
+					<Collision>Human, SmallMech, BigMechBreakable</Collision>
+				</ObstacleConfiguration>
+				
+				<ObstacleConfiguration id="Concretewall" parentId="Concrete">
+					<Collision>Human, SmallMech, BigMechBreakable</Collision>
+				</ObstacleConfiguration>
+				
+				<ObstacleConfiguration id="ConcretewallSmall" parentId="Concrete">
+					<Collision>HumanVaultable, SmallMechBreakable, BigMechBreakable</Collision>
+				</ObstacleConfiguration>
+				
+				<ObstacleConfiguration id="ConcretewallSmallNonVaultable" parentId="Concrete">
+					<Collision>Human, SmallMechBreakable, BigMechBreakable</Collision>
+				</ObstacleConfiguration>
+				
+			<!--Flagbase-->	
+				<ObstacleConfiguration id="Flagbase" parentId="default">
+					<ArmorType>Heavy</ArmorType>
+					<Health>-1</Health>
+					<Targetable>false</Targetable>
+				</ObstacleConfiguration>
+				
+		<!--Medium-->			
+			<!--Brickwall-->
+				<ObstacleConfiguration id="Brickwall" parentId="default">
+					<ArmorType>Medium</ArmorType>
+					<Health>90</Health>
+					<ObstacleType>Brick</ObstacleType>
+					<Targetable>false</Targetable>
+					<Collision>Human, SmallMech, BigMechBreakable</Collision>
+				</ObstacleConfiguration>
+				
+				<ObstacleConfiguration id="BrickwallSmall" parentId="Brickwall">
+					<Collision>HumanVaultable, SmallMechBreakable, BigMechBreakable</Collision>
+				</ObstacleConfiguration>
+				
+				<ObstacleConfiguration id="BrickwallSmallNonVaultable" parentId="BrickwallSmall">
+					<Collision>Human, SmallMechBreakable, BigMechBreakable</Collision>
+				</ObstacleConfiguration>
+				
+			<!--Sandwall-->
+				<ObstacleConfiguration id="Sandwall" parentId="default">
+					<ArmorType>Medium</ArmorType>
+					<Health>90</Health>
+					<ObstacleType>Sand</ObstacleType>
+					<Targetable>false</Targetable>
+					<Collision>Human, SmallMech, BigMechBreakable</Collision>
+				</ObstacleConfiguration>
+				
+				<ObstacleConfiguration id="SandwallSmall" parentId="Sandwall">
+					<Collision>HumanVaultable, SmallMechBreakable, BigMechBreakable</Collision>
+				</ObstacleConfiguration>
+				
+				<ObstacleConfiguration id="SandwallSmallNonVaultable" parentId="SandwallSmall">
+					<Collision>Human, SmallMechBreakable, BigMechBreakable</Collision>
+				</ObstacleConfiguration>
+				
+				
+			<!--Woodwall-->	
+				<ObstacleConfiguration id="Woodwall" parentId="default">
+					<ArmorType>Medium</ArmorType>
+					<Health>50</Health>
+					<ObstacleType>Wood</ObstacleType>
+					<Targetable>false</Targetable>
+					<Collision>Human, SmallMech, BigMechBreakable</Collision>
+				</ObstacleConfiguration>
+				
+				<ObstacleConfiguration id="WoodwallSmall" parentId="Woodwall">
+					<Collision>HumanVaultable, SmallMechBreakable, BigMechBreakable</Collision>
+					<ArmorType>Light</ArmorType>
+					<Health>25</Health>
+				</ObstacleConfiguration>
+				
+				<ObstacleConfiguration id="WoodwallSmallNonVaultable" parentId="WoodwallSmall">
+					<Collision>Human, SmallMechBreakable, BigMechBreakable</Collision>
+				</ObstacleConfiguration>
+				
+				
+			<!--Metalwall-->
+				<ObstacleConfiguration id="Metalwall" parentId="default">
+					<ArmorType>Medium</ArmorType>
+					<Health>100</Health>
+					<Targetable>false</Targetable>
+					<Collision>Human, SmallMech, BigMechBreakable</Collision>
+				</ObstacleConfiguration>
+				
+				<ObstacleConfiguration id="MetalwallSmall" parentId="Metalwall">
+					<Collision>HumanVaultable, SmallMechBreakable, BigMechBreakable</Collision>
+					<Health>50</Health>
+				</ObstacleConfiguration>
+				
+				<ObstacleConfiguration id="MetalwallSmallNonVaultable" parentId="MetalwallSmall">
+					<Collision>Human, SmallMechBreakable, BigMechBreakable</Collision>
+				</ObstacleConfiguration>
+				
+				<ObstacleConfiguration id="ResilientMetalGate" parentId="default">
+					<ArmorType>Medium</ArmorType>
+					<Health>400</Health>
+					<Targetable>false</Targetable>
+					<Collision>Human, SmallMech, BigMech</Collision>
+				</ObstacleConfiguration>
+				
+				
+			<!--Wooden Bars-->
+				<ObstacleConfiguration id="WoodenBars" parentId="default">
+					<ArmorType>Light</ArmorType>
+					<Health>50</Health>
+					<Targetable>false</Targetable>
+					<Collision>Human, SmallMech, BigMechBreakable</Collision>
+				</ObstacleConfiguration>
+				
+			<!--Metal Bars-->
+				<ObstacleConfiguration id="MetalBars" parentId="default">
+					<ArmorType>Medium</ArmorType>
+					<Health>80</Health>
+					<Targetable>false</Targetable>
+					<Collision>Human, SmallMech, BigMechBreakable</Collision>
+				</ObstacleConfiguration>
+				
+				
+			<!--Refinery Tank-->	
+				<ObstacleConfiguration id="RefineryTank" parentId="default">
+					<ArmorType>Light</ArmorType>
+					<Health>30</Health>
+					<Targetable>false</Targetable>
+					<Collision>Human, SmallMech, BigMechBreakable</Collision>
+				</ObstacleConfiguration>
+				
+			<!--Industrial Machines-->
+				<ObstacleConfiguration id="IndustrialMachines" parentId="default">
+					<ArmorType>Medium</ArmorType>
+					<Health>50</Health>
+					<Targetable>false</Targetable>					
+					<Collision>Human, SmallMech, BigMechBreakable</Collision>
+				</ObstacleConfiguration>
+				
+			<!--Metal Crates-->
+				<ObstacleConfiguration id="MetalCrates" parentId="default">
+					<ArmorType>Medium</ArmorType>
+					<Health>50</Health>
+					<Targetable>false</Targetable>
+					<Collision>Human, SmallMechBreakable, BigMechBreakable</Collision>
+				</ObstacleConfiguration>	
+				
+			<!--Wooden Building-->
+				<ObstacleConfiguration id="WoodenBuilding" parentId="default">
+					<ArmorType>Medium</ArmorType>
+					<Health>50</Health>
+					<ObstacleType>Wood</ObstacleType>
+					<Targetable>false</Targetable>
+					<Collision>Human, SmallMech, BigMechBreakable</Collision>
+				</ObstacleConfiguration>
+				
+			<!--Wooden Crates-->
+				<ObstacleConfiguration id="WoodenCrates" parentId="default">
+					<ArmorType>Light</ArmorType>
+					<Health>15</Health>
+					<ObstacleType>Wood</ObstacleType>
+					<Targetable>false</Targetable>
+					<Collision>Human, SmallMechBreakable, BigMechBreakable</Collision>
+				</ObstacleConfiguration>
+				
+			<!--Wooden Barrel-->	
+				<ObstacleConfiguration id="WoodenBarrel" parentId="default">
+					<ArmorType>Light</ArmorType>
+					<Health>15</Health>
+					<Targetable>false</Targetable>
+					<Collision>Human, SmallMechBreakable, BigMechBreakable</Collision>
+				</ObstacleConfiguration>
+				
+			<!--Wooden Billboards-->
+				<ObstacleConfiguration id="WoodenBillboard" parentId="default">
+					<ArmorType>Medium</ArmorType>
+					<Health>25</Health>
+					<ObstacleType>Wood</ObstacleType>
+					<Targetable>false</Targetable>
+					<Collision>Human, SmallMechBreakable, BigMechBreakable</Collision>
+				</ObstacleConfiguration>
+				
+				
+			<!--Tent-->
+			<ObstacleConfiguration id="Tent" parentId="default">
+				<ArmorType>Light</ArmorType>
+				<Health>20</Health>
+				<Targetable>false</Targetable>
+				<Collision>Human, SmallMechBreakable, BigMechBreakable</Collision>
+			</ObstacleConfiguration>
+				
+			<!--Trench-->	
+				<ObstacleConfiguration id="Trench" parentId="default">
+					<ArmorType>Medium</ArmorType>
+					<Health>-1</Health>
+					<ObstacleType>Wood</ObstacleType>
+					<Targetable>false</Targetable>
+				</ObstacleConfiguration>			
+				
+			<!--Tree-->	
+				<ObstacleConfiguration id="Tree" parentId="default">
+					<ArmorType>Medium</ArmorType>
+					<Health>-1</Health>
+					<ObstacleType>Wood</ObstacleType>
+					<Targetable>false</Targetable>
+				</ObstacleConfiguration>
+			<!--Tree Destructible-->	
+				<ObstacleConfiguration id="TreeDestructible" parentId="Tree">
+					<Health>40</Health>
+					<Collision>Human, SmallMech, BigMechBreakable</Collision>
+				</ObstacleConfiguration>
+				
+			<!--Bush-->	
+				<ObstacleConfiguration id="Bush" parentId="default">
+					<ArmorType>Unarmored</ArmorType>
+					<Health>20</Health>
+					<ObstacleType>Wood</ObstacleType>
+					<Targetable>false</Targetable>
+					<Collision>Human, SmallMechBreakable, BigMechBreakable</Collision>
+				</ObstacleConfiguration>
+				
+			<!--Waggon-->
+				<ObstacleConfiguration id="Waggon" parentId="default">
+					<ArmorType>Medium</ArmorType>
+					<Health>70</Health>
+					<ObstacleType>Metal</ObstacleType>
+					<Targetable>false</Targetable>
+					<Collision>Human, SmallMech, BigMechBreakable</Collision>
+				</ObstacleConfiguration>
+				
+				<ObstacleConfiguration id="InvulnerableFlatbed" parentId="Waggon">
+					<Health>-1</Health>
+				</ObstacleConfiguration>
+				
+				<ObstacleConfiguration id="OlgaBarricade" parentId="default">
+					<ArmorType>Medium</ArmorType>
+					<Health>1</Health>
+					<OnlyDamageableBy>Olga_Detonator</OnlyDamageableBy>
+					<ObstacleType>Metal</ObstacleType>
+					<Targetable>false</Targetable>
+				</ObstacleConfiguration>
+				
+			<!--Invulnerable Wood-->
+				<ObstacleConfiguration id="InvulnerableWood" parentId="default">
+					<ArmorType>Medium</ArmorType>
+					<Health>-1</Health>
+					<ObstacleType>Wood</ObstacleType>
+					<Targetable>false</Targetable>
+				</ObstacleConfiguration>
+			
+			<!--Invulnerable Metal-->
+				<ObstacleConfiguration id="InvulnerableMetal" parentId="default">
+					<ArmorType>Medium</ArmorType>
+					<Health>-1</Health>
+					<ObstacleType>Metal</ObstacleType>
+					<Targetable>false</Targetable>
+				</ObstacleConfiguration>
+				
+			<!--Untargetable Sandbag-->	
+				<ObstacleConfiguration id="Sandbags" parentId="default">
+					<ArmorType>Medium</ArmorType>
+					<Health>40</Health>
+					<Targetable>false</Targetable>
+					<ObstacleType>Sand</ObstacleType>
+					<Collision>Human, SmallMechBreakable, BigMechBreakable</Collision>
+				</ObstacleConfiguration>
+				
+		<!--Light-->
+			<!--Untargetable Barbwire-->	
+				<ObstacleConfiguration id="Barbwire" parentId="default">
+					<ArmorType>Light</ArmorType>
+					<Health>-1</Health>
+					<Targetable>false</Targetable>
+				</ObstacleConfiguration>
+				
+			<!--Glass-->	
+				<ObstacleConfiguration id="Glass" parentId="default">
+					<ArmorType>Light</ArmorType>
+					<Health>1</Health>
+					<ObstacleType>Glass</ObstacleType>
+					<Targetable>false</Targetable>
+					<Collision>Human, SmallMechBreakable, BigMechBreakable</Collision>
+				</ObstacleConfiguration>
+				
+			<!--Snow-->	
+			<ObstacleConfiguration id="InvulnerableSnow" parentId="default">
+				<ArmorType>Light</ArmorType>
+				<Health>-1</Health>
+				<Targetable>false</Targetable>
+			</ObstacleConfiguration>
+			
+			<ObstacleConfiguration id="Snow" parentId="default">
+				<ArmorType>Light</ArmorType>
+				<Health>1</Health>
+				<Targetable>true</Targetable>
+				<Collision>Human, SmallMech, BigMechBreakable</Collision>
+			</ObstacleConfiguration>
+			
+			<!--Snowman-->	
+			<ObstacleConfiguration id="Snowman" parentId="default">
+				<ArmorType>Light</ArmorType>
+				<Health>2</Health>
+				<Targetable>true</Targetable>
+				<Collision>Human, SmallMechBreakable, BigMechBreakable</Collision>
+			</ObstacleConfiguration>
+				
+		<!--No AC-->		
+			<!--Water-->	
+				<ObstacleConfiguration id="Water" parentId="default">
+					<Health>-1</Health>
+					<Targetable>false</Targetable>
+				</ObstacleConfiguration>
+				
+			<!--ToggleableBlocker-->	
+				<ObstacleConfiguration id="ToggleableBlocker" parentId="default">
+					<Health>-1</Health>
+					<Targetable>false</Targetable>
+					<Toggleable>true</Toggleable>
+				</ObstacleConfiguration>
+			
+	<!--Explosive Obstacles-->			
+		<!--Medium-->
+			<!--Gastank-->	
+				<ObstacleConfiguration id="Gastank" type="explosive" parentId="default">
+					<ArmorType>Light</ArmorType>
+					<Health>12</Health>
+					<ObstacleType>Base</ObstacleType>
+					<Targetable>true</Targetable>
+					<AmmoConfigName>GasTank</AmmoConfigName>
+					<Collision>Human, SmallMech, BigMechBreakable</Collision>
+				</ObstacleConfiguration>
+		
+			<!--Car-->
+				<ObstacleConfiguration id="CarExplosive" type="explosive" parentId="Gastank">
+					<AmmoConfigName>CarExplosion</AmmoConfigName>
+				</ObstacleConfiguration>
+		
+		<!--Light-->	
+			<!--Explosive Barrel-->	
+				<ObstacleConfiguration id="Explosivebarrel" type="explosive" parentId="default">
+					<ArmorType>Light</ArmorType>
+					<Health>4</Health>
+					<ObstacleType>Metal</ObstacleType>
+					<Targetable>true</Targetable>
+					<AmmoConfigName>ExplosiveBarrel</AmmoConfigName>
+					<Collision>Human, SmallMech, BigMechBreakable</Collision>
+				</ObstacleConfiguration>
+	
+	<!--Wrecks-->
+		<!--Default Wreck-->	
+			<ObstacleConfiguration id="defaultWreck" type="wreck" parentId="default">
+				<AvoidanceRadius>3</AvoidanceRadius>
+				<ArmorType>Light</ArmorType>
+				<Health>75</Health>
+				<ObstacleType>Metal</ObstacleType>
+				<Targetable>true</Targetable>
+				<Collision>HumanVaultable, SmallMechBreakable, BigMechBreakable</Collision>
+				<HarvestGains>
+					<TotalIronGains>50</TotalIronGains>
+					<TotalOilGains>5</TotalOilGains>
+					<HarvestTime>10.0</HarvestTime>
+				</HarvestGains>
+				<InvulnerabilityTicks>16</InvulnerabilityTicks>
+			</ObstacleConfiguration>
+			
+		<!--Tier1 Wreck-->	
+			<ObstacleConfiguration id="tier1Wreck" type="wreck" parentId="defaultWreck">
+				<AvoidanceRadius>2.5</AvoidanceRadius>
+				<HarvestGains>
+					<TotalIronGains>50</TotalIronGains>
+					<TotalOilGains>15</TotalOilGains>
+					<HarvestTime>10.0</HarvestTime>
+				</HarvestGains>
+			</ObstacleConfiguration>
+			
+		<!--Tier2 Wreck-->	
+			<ObstacleConfiguration id="tier2Wreck" type="wreck" parentId="defaultWreck">
+				<AvoidanceRadius>3.5</AvoidanceRadius>
+				<HarvestGains>
+					<TotalIronGains>90</TotalIronGains>
+					<TotalOilGains>30</TotalOilGains>
+					<HarvestTime>10.0</HarvestTime>
+				</HarvestGains>
+			</ObstacleConfiguration>
+			
+		<!--Gunfort Wreck-->	
+			<ObstacleConfiguration id="gunfortWreck" type="wreck" parentId="defaultWreck">
+				<HarvestGains>
+					<TotalIronGains>120</TotalIronGains>
+					<TotalOilGains>40</TotalOilGains>
+					<HarvestTime>15.0</HarvestTime>
+				</HarvestGains>
+			</ObstacleConfiguration>
+				
+		<!--Polania Wrecks-->
+			<!--Spider Wreck-->	
+				<ObstacleConfiguration id="pol_mech_spider_wreck" type="wreck" parentId="tier1Wreck">
+					<Shape type="convex"><Vertex x="-0.3315773" y="3.404564" height="1" /><Vertex x="-2.962223" y="1.451729" height="1" /><Vertex x="-0.7665062" y="-1.325653" height="1" /><Vertex x="1.59108" y="0.2053757" height="1" /></Shape>
+				</ObstacleConfiguration>
+			
+			<!--Recon Wreck-->	
+				<ObstacleConfiguration id="pol_mech_recon_wreck" type="wreck" parentId="tier1Wreck">			
+					<Shape type="convex">
+						<Vertex x="2.0" y="-1.25" height="1" />
+						<Vertex x="-0.25" y="1.0" height="1" />
+						<Vertex x="-1.25" y="0.5" height="1" />
+						<Vertex x="1.25" y="-2.0" height="1" />
+					</Shape>
+				</ObstacleConfiguration>
+				
+			<!--Polania Artillery Wreck-->
+				<ObstacleConfiguration id="pol_mech_artillery_wreck" type="wreck" parentId="tier2Wreck">
+					<Shape type="convex">
+						<Vertex x="3.66" y="3.10" height="2" />
+						<Vertex x="0.37" y="2.12" height="2" />
+						<Vertex x="0.28" y="-2.23" height="2" />
+						<Vertex x="1.94" y="-2.89" height="2" />
+						<Vertex x="4.789" y="-2.81" height="2" />
+						<Vertex x="4.82" y="-0.53" height="2" />
+					</Shape>
+				</ObstacleConfiguration>
+				
+			<!--Stinger Wreck-->	
+				<ObstacleConfiguration id="pol_mech_stinger_wreck" type="wreck" parentId="tier2Wreck">
+					<Shape type="convex"><Vertex x="-3.385617" y="-2.899656" height="2" /><Vertex x="0.5480858" y="-4.198582" height="2" /><Vertex x="2.425735" y="0.05890852" height="2" /><Vertex x="-1.340726" y="1.662099" height="2" /></Shape>
+				</ObstacleConfiguration>	
+				
+			<!--Trooptransport Wreck-->	
+				<ObstacleConfiguration id="pol_mech_trooptransport_wreck" type="wreck" parentId="tier2Wreck">
+					<Shape type="convex">
+						<Vertex x="1.26" y="3.24" height="2" />
+						<Vertex x="-1" y="3.1" height="2" />
+						<Vertex x="-2.27" y="0" height="2" />
+						<Vertex x="-0.6" y="-2.9" height="2" />
+						<Vertex x="1.24" y="-2.9" height="2" />
+						<Vertex x="2.6" y="0" height="2" />
+					</Shape>
+				</ObstacleConfiguration>
+				
+			<!--Gunfort Wreck-->	
+				<ObstacleConfiguration id="pol_mech_gunfort_wreck" type="wreck" parentId="gunfortWreck">
+					<Shape type="convex">
+						<Vertex x="1.26" y="3.24" height="2" />
+						<Vertex x="-1" y="3.1" height="2" />
+						<Vertex x="-2.27" y="0" height="2" />
+						<Vertex x="-0.6" y="-2.9" height="2" />
+						<Vertex x="1.24" y="-2.9" height="2" />
+						<Vertex x="2.6" y="0" height="2" />
+					</Shape>
+				</ObstacleConfiguration>
+			
+			<!--Rebelleader Wreck-->
+				<ObstacleConfiguration id="pol_hero_rebel_wreck" type="wreck" parentId="defaultWreck">
+					<Shape type="convex">
+						<Vertex x="3.18" y="3" height="2" />
+						<Vertex x="-1.6" y="2" height="2" />
+						<Vertex x="0.2" y="-4.3" height="2" />
+						<Vertex x="4.5" y="-3.4" height="2" />
+					</Shape>
+				</ObstacleConfiguration>
+			
+		<!--Saxony Wrecks-->		
+			<!--Gatling Wreck-->	
+				<ObstacleConfiguration id="sax_mech_gatling_wreck" type="wreck" parentId="tier1Wreck">
+					<Shape type="convex">
+						<Vertex x="0.42" y="-1.66" height="3" />
+						<Vertex x="2.03" y="-0.08" height="3" />
+						<Vertex x="0.165" y="1.66" height="3" />
+						<Vertex x="-1.52" y="0.24" height="3" />
+					</Shape>
+				</ObstacleConfiguration>
+				
+			<!--Tank Wrenk-->
+				<ObstacleConfiguration id="sax_mech_tank_wreck" type="wreck" parentId="tier1Wreck">
+					<Shape type="convex">
+						<Vertex x="1.41" y="1.97" height="2" />
+						<Vertex x="-2.47" y="1.69" height="2" />
+						<Vertex x="-2.33" y="-4.97" height="2" />
+						<Vertex x="2.00" y="-4.56" height="2" />
+					</Shape>
+				</ObstacleConfiguration>
+				
+			<!--Saxony Artillery Wreck-->
+				<ObstacleConfiguration id="sax_mech_artillery_wreck" type="wreck" parentId="tier2Wreck">
+					<Shape type="convex">
+						<Vertex x="1.66" y="1.39" height="2" />
+						<Vertex x="-2.03" y="1.9" height="2" />
+						<Vertex x="-1.8" y="-1.48" height="2" />
+						<Vertex x="0.25" y="-2.45" height="2" />
+						<Vertex x="2.47" y="-0.86" height="2" />
+					</Shape>
+				</ObstacleConfiguration>
+			
+			<!--Dachs Wreck-->
+				<ObstacleConfiguration id="sax_mech_dachs_wreck" type="wreck" parentId="tier2Wreck">
+					<Shape type="convex">
+						<Vertex x="3.18" y="3" height="2" />
+						<Vertex x="-1.6" y="2" height="2" />
+						<Vertex x="0.2" y="-4.3" height="2" />
+						<Vertex x="4.5" y="-3.4" height="2" />
+					</Shape>
+				</ObstacleConfiguration>
+			
+			<!--Gunfort Wreck-->
+				<ObstacleConfiguration id="sax_mech_gunfort_wreck" type="wreck" parentId="gunfortWreck">
+					<Shape type="convex"><Vertex x="1.346731" y="4.05286" height="2" /><Vertex x="-4.391252" y="3.318612" height="2" /><Vertex x="-3.033941" y="-2.903219" height="2" /><Vertex x="2.075812" y="-2.10258" height="2" /></Shape>
+				</ObstacleConfiguration>
+				
+			<!--Mother Wreck-->
+				<ObstacleConfiguration id="sax_mech_mother_wreck" type="wreck" parentId="tier2Wreck">
+					<Shape type="convex">
+						<Vertex x="3.18" y="3" height="2" />
+						<Vertex x="-1.6" y="2" height="2" />
+						<Vertex x="0.2" y="-4.3" height="2" />
+						<Vertex x="4.5" y="-3.4" height="2" />
+					</Shape>
+				</ObstacleConfiguration>
+				
+			<!--Brunhilde Wreck-->
+				<ObstacleConfiguration id="sax_hero_brunhilde_wreck" type="wreck" parentId="defaultWreck">
+					<Shape type="convex">
+						<Vertex x="3.18" y="3" height="2" />
+						<Vertex x="-1.6" y="2" height="2" />
+						<Vertex x="0.2" y="-4.3" height="2" />
+						<Vertex x="4.5" y="-3.4" height="2" />
+					</Shape>
+				</ObstacleConfiguration>
+				
+			
+			<!--Rebelleader Wreck-->
+				<ObstacleConfiguration id="sax_hero_prince_wreck" type="wreck" parentId="defaultWreck">
+					<Shape type="convex">
+						<Vertex x="3.18" y="3" height="2" />
+						<Vertex x="-1.6" y="2" height="2" />
+						<Vertex x="0.2" y="-4.3" height="2" />
+						<Vertex x="4.5" y="-3.4" height="2" />
+					</Shape>
+				</ObstacleConfiguration>
+			
+		<!--Rusviet Wrecks-->		
+			<!--Bomber Wreck-->	
+				<ObstacleConfiguration id="rus_mech_bomber_wreck" type="wreck" parentId="tier1Wreck">
+					<Shape type="convex">
+						<Vertex x="0.42" y="-1.66" height="3" />
+						<Vertex x="2.03" y="-0.08" height="3" />
+						<Vertex x="0.165" y="1.66" height="3" />
+						<Vertex x="-1.52" y="0.24" height="3" />
+					</Shape>
+				</ObstacleConfiguration>
+				
+			<!--Flamer Wreck-->
+				<ObstacleConfiguration id="rus_mech_flamer_wreck" type="wreck" parentId="tier1Wreck">
+					<Shape type="convex"><Vertex x="0.7132034" y="1.479269" height="2" /><Vertex x="-1.437402" y="1.933654" height="2" /><Vertex x="-3.419428" y="-1.154564" height="2" /><Vertex x="-0.3146013" y="-3.120843" height="2" /><Vertex x="1.460434" y="-1.815572" height="2" /></Shape>
+				</ObstacleConfiguration>		
+						
+			<!--Artillery Wreck-->
+				<ObstacleConfiguration id="rus_mech_artillery_wreck" type="wreck" parentId="tier2Wreck">
+					<Shape type="convex"><Vertex x="2.841039" y="2.982716" height="2" /><Vertex x="-1.74623" y="4.860608" height="2" /><Vertex x="-4.417472" y="-0.5871544" height="2" /><Vertex x="1.219814" y="-2.84146" height="2" /></Shape>
+				</ObstacleConfiguration>		
+				
+			<!--General Wreck-->
+				<ObstacleConfiguration id="rus_hero_general_wreck" type="wreck" parentId="defaultWreck">
+					<Shape type="convex">
+						<Vertex x="1.41" y="1.97" height="2" />
+						<Vertex x="-2.47" y="1.69" height="2" />
+						<Vertex x="-2.33" y="-4.97" height="2" />
+						<Vertex x="2.00" y="-4.56" height="2" />
+					</Shape>
+				</ObstacleConfiguration>
+				
+			<!--Scythe Wreck-->
+				<ObstacleConfiguration id="rus_mech_scythe_wreck" type="wreck" parentId="tier2Wreck">
+					<Shape type="convex"><Vertex x="-0.6238718" y="5.777984" height="2" /><Vertex x="-2.89999" y="4.395703" height="2" /><Vertex x="-1.634781" y="-0.2055824" height="2" /><Vertex x="1.521877" y="0.122124" height="2" /><Vertex x="1.8774" y="4.968813" height="2" /></Shape>
+				</ObstacleConfiguration>
+				
+			<!--Revolver Wreck-->
+				<ObstacleConfiguration id="rus_mech_revolver_wreck" type="wreck" parentId="tier2Wreck">
+					<Shape type="convex"><Vertex x="2.107418" y="3.780097" height="2" /><Vertex x="-2.389922" y="3.258554" height="2" /><Vertex x="-1.788538" y="-2.856835" height="2" /><Vertex x="0.5279138" y="-3.789736" height="2" /><Vertex x="3.062152" y="-1.52826" height="2" /></Shape>
+				</ObstacleConfiguration>
+				
+			<!--Gunfort Wreck-->
+				<ObstacleConfiguration id="rus_mech_gunfort_wreck" type="wreck" parentId="gunfortWreck">
+					<Shape type="convex"><Vertex x="3.495189" y="4.472691" height="2" /><Vertex x="-3.715798" y="4.480187" height="2" /><Vertex x="-4.036249" y="2.727949" height="2" /><Vertex x="-2.238832" y="-1.901157" height="2" /><Vertex x="2.41505" y="-2.191021" height="2" /><Vertex x="3.738001" y="3.251917" height="2" /></Shape>
+				</ObstacleConfiguration>				
+			
+		<!--Tesla Wrecks-->
+			<!--Ikarus Wreck (pol_mech_trooptransport_wreck) -->	
+				<ObstacleConfiguration id="tes_mech_ikarus_wreck" type="wreck" parentId="defaultWreck">
+					<Shape type="convex">
+						<Vertex x="1.26" y="3.24" height="2" />
+						<Vertex x="-1" y="3.1" height="2" />
+						<Vertex x="-2.27" y="0" height="2" />
+						<Vertex x="-0.6" y="-2.9" height="2" />
+						<Vertex x="1.24" y="-2.9" height="2" />
+						<Vertex x="2.6" y="0" height="2" />
+					</Shape>
+				</ObstacleConfiguration>
+				
+		
+		<!--Train Wreck-->	
+			<!--Trainlocomotive Wreck-->	
+				<ObstacleConfiguration id="com_mech_trainlocomotive_wreck" type="wreck" parentId="tier1Wreck">
+					<Shape type="convex">
+						<Vertex x="1.26" y="3.24" height="2" />
+						<Vertex x="-1" y="3.1" height="2" />
+						<Vertex x="-2.27" y="0" height="2" />
+						<Vertex x="-0.6" y="-2.9" height="2" />
+						<Vertex x="1.24" y="-2.9" height="2" />
+						<Vertex x="2.6" y="0" height="2" />
+					</Shape>
+				</ObstacleConfiguration>
+
+				<ObstacleConfiguration id="com_mech_trainlocomotivetender_wreck" type="wreck" parentId="tier1Wreck">
+					<Shape type="convex">
+						<Vertex x="1.26" y="3.24" height="2" />
+						<Vertex x="-1" y="3.1" height="2" />
+						<Vertex x="-2.27" y="0" height="2" />
+						<Vertex x="-0.6" y="-2.9" height="2" />
+						<Vertex x="1.24" y="-2.9" height="2" />
+						<Vertex x="2.6" y="0" height="2" />
+					</Shape>
+				</ObstacleConfiguration>
+				
+			<!--Armored Transport Wagon-->
+				<ObstacleConfiguration id="com_mech_trainarmored_wreck" type="wreck" parentId="tier2Wreck">
+					<Shape type="convex">
+						<Vertex x="1.26" y="3.24" height="2" />
+						<Vertex x="-1" y="3.1" height="2" />
+						<Vertex x="-2.27" y="0" height="2" />
+						<Vertex x="-0.6" y="-2.9" height="2" />
+						<Vertex x="1.24" y="-2.9" height="2" />
+						<Vertex x="2.6" y="0" height="2" />
+					</Shape>
+				</ObstacleConfiguration>
+				
+			<!--Cannon Wagon-->
+				<ObstacleConfiguration id="com_mech_traincannon_wreck" type="wreck" parentId="tier2Wreck">
+					<Shape type="convex">
+						<Vertex x="1.26" y="3.24" height="2" />
+						<Vertex x="-1" y="3.1" height="2" />
+						<Vertex x="-2.27" y="0" height="2" />
+						<Vertex x="-0.6" y="-2.9" height="2" />
+						<Vertex x="1.24" y="-2.9" height="2" />
+						<Vertex x="2.6" y="0" height="2" />
+					</Shape>
+				</ObstacleConfiguration>
+				
+			<!--Cannon Support Wagon-->
+				<ObstacleConfiguration id="com_mech_traincannonsupport_wreck" type="wreck" parentId="tier1Wreck">
+					<Shape type="convex">
+						<Vertex x="1.26" y="3.24" height="2" />
+						<Vertex x="-1" y="3.1" height="2" />
+						<Vertex x="-2.27" y="0" height="2" />
+						<Vertex x="-0.6" y="-2.9" height="2" />
+						<Vertex x="1.24" y="-2.9" height="2" />
+						<Vertex x="2.6" y="0" height="2" />
+					</Shape>
+				</ObstacleConfiguration>
+
+			<!--Flatbed Wagon-->
+				<ObstacleConfiguration id="com_mech_trainflatbed_wreck" type="wreck" parentId="defaultWreck">
+					<Shape type="convex">
+						<Vertex x="1.26" y="3.24" height="2" />
+						<Vertex x="-1" y="3.1" height="2" />
+						<Vertex x="-2.27" y="0" height="2" />
+						<Vertex x="-0.6" y="-2.9" height="2" />
+						<Vertex x="1.24" y="-2.9" height="2" />
+						<Vertex x="2.6" y="0" height="2" />
+					</Shape>
+				</ObstacleConfiguration>
+				
+			<!--Freight Wagon-->
+				<ObstacleConfiguration id="com_mech_trainfreight_wreck" type="wreck" parentId="defaultWreck">
+					<Shape type="convex">
+						<Vertex x="1.26" y="3.24" height="2" />
+						<Vertex x="-1" y="3.1" height="2" />
+						<Vertex x="-2.27" y="0" height="2" />
+						<Vertex x="-0.6" y="-2.9" height="2" />
+						<Vertex x="1.24" y="-2.9" height="2" />
+						<Vertex x="2.6" y="0" height="2" />
+					</Shape>
+				</ObstacleConfiguration>
+		
+	<!--Barbwires-->
+		<!--Barbwire-->
+			<ObstacleConfiguration id="com_structure_barbwire" type="wallSegment">
+				<IsAbstract>true</IsAbstract>
+				<!--Stats-->
+					<SetId>com_structure_barbwire_set</SetId>
+					<Health>45</Health>
+					<ArmorType>Medium</ArmorType>
+				
+				<!--Construction-->
+					<BuildCost>
+						<IronCost>5</IronCost>
+						<OilCost>0</OilCost>
+						<PopulationCost>0</PopulationCost>
+					</BuildCost>
+					<ConstructionPoints>15</ConstructionPoints>
+					<ConstructionExperience>0</ConstructionExperience>
+					<SingleUnitConstruction>true</SingleUnitConstruction>
+				
+				<!--Deconstruction-->
+					<AllowDeconstruction>true</AllowDeconstruction>
+					<DeconstructionPoints>300</DeconstructionPoints> <!-- divide by 8 to get seconds (only true if just one person is working at a time) (160 >>> 20 seconds) -->
+				
+				<!--XP-->
+					<ExperienceValues>
+						<AttackerXP>42</AttackerXP>
+					</ExperienceValues>
+					
+				<!--Placement & Geometry-->
+					<BottomCenter x="0" y="0"></BottomCenter>
+					<RotationDeg>0</RotationDeg>
+
+				<!--Highlight-->
+					<HighlightDelay>0.1</HighlightDelay>
+					
+				<Collision>Human, SmallMechBreakable, BigMechBreakable</Collision>
+			</ObstacleConfiguration>
+		
+		<!--Barbwire Straight-->
+			<ObstacleConfiguration id="com_structure_barbwire_straight" type="straightWallSegment" parentId="com_structure_barbwire">
+				<IsAbstract>false</IsAbstract>
+				<!--Placement & Geometry-->
+					<BottomCenter x="-1" y="0"></BottomCenter>
+					<Length>2</Length>
+					<Shape type="convex">
+						<Vertex x="-2" y="-0.5" height="0.2" />
+						<Vertex x="0" y="-0.5" height="0.2" />
+						<Vertex x="0" y="0.5" height="0.2" />
+						<Vertex x="-2" y="0.5" height="0.2" />
+					</Shape>
+			</ObstacleConfiguration>
+		
+		<!--Barbwire Curve 22.5 left-->		
+			<ObstacleConfiguration id="com_structure_barbwire_curve22-5_left" type="curveWallSegment" parentId="com_structure_barbwire">
+				<IsAbstract>false</IsAbstract>
+				<!--Placement & Geometry-->
+					<BottomCenter x="-0.75" y="0"></BottomCenter>
+					<Side>Left</Side>
+					<StartLength>0.75</StartLength>
+					<EndLength>0.75</EndLength>
+					<RotationDeg>-22.5</RotationDeg>
+					<CurveDeg>22.5</CurveDeg>
+					<Shape type="convex">
+						<Vertex x="-1.88399" y="0.1315984" height="0.2" />
+						<Vertex x="-1.339399" y="-0.7497829" height="0.2" />
+						<Vertex x="0.0696246" y="-0.4525572" height="0.2" />
+						<Vertex x="0.1331741" y="0.5821102" height="0.2" />
+						<Vertex x="-0.9342826" y="0.415729" height="0.2" />
+					</Shape>
+			</ObstacleConfiguration>
+			
+		<!--Barbwire Curve 22.5 right-->	
+			<ObstacleConfiguration id="com_structure_barbwire_curve22-5_right" type="curveWallSegment" parentId="com_structure_barbwire">
+				<IsAbstract>false</IsAbstract>
+				<!--Placement & Geometry-->
+					<BottomCenter x="-0.75" y="0"></BottomCenter>
+					<Side>Right</Side>
+					<StartLength>0.75</StartLength>
+					<EndLength>0.75</EndLength>
+					<RotationDeg>180</RotationDeg>
+					<CurveDeg>22.5</CurveDeg>
+					<Shape type="convex">
+						<Vertex x="-1.88399" y="0.1315984" height="0.2" />
+						<Vertex x="-1.339399" y="-0.7497829" height="0.2" />
+						<Vertex x="0.0696246" y="-0.4525572" height="0.2" />
+						<Vertex x="0.1331741" y="0.5821102" height="0.2" />
+						<Vertex x="-0.9342826" y="0.415729" height="0.2" />
+					</Shape>
+			</ObstacleConfiguration>
+			
+		<!--Barbwire Curve 45 left-->	
+			<ObstacleConfiguration id="com_structure_barbwire_curve45_left" type="curveWallSegment" parentId="com_structure_barbwire">
+				<IsAbstract>false</IsAbstract>
+				<!--Placement & Geometry-->
+				<BottomCenter x="-0.8" y="0"></BottomCenter>
+				<Side>Left</Side>
+				<StartLength>0.8</StartLength>
+				<EndLength>0.8</EndLength>
+				<RotationDeg>-45</RotationDeg>
+				<CurveDeg>45</CurveDeg>
+				<Shape type="convex">
+					<Vertex x="-1.839533" y="-0.2516336" height="0.2" />
+					<Vertex x="-1.110829" y="-0.9063023" height="0.2" />
+					<Vertex x="-0.03034449" y="-0.4855098" height="0.2" />
+					<Vertex x="0.09861892" y="0.3862088" height="0.2" />
+					<Vertex x="-0.357423" y="0.4913402" height="0.2" />
+					<Vertex x="-1.291923" y="0.1312323" height="0.2" />
+				</Shape>
+			</ObstacleConfiguration>
+			
+		<!--Barbwire Curve 45 right-->	
+			<ObstacleConfiguration id="com_structure_barbwire_curve45_right" type="curveWallSegment" parentId="com_structure_barbwire">
+				<IsAbstract>false</IsAbstract>
+				<!--Placement & Geometry-->
+				<BottomCenter x="-0.8" y="0"></BottomCenter>
+				<Side>Right</Side>
+				<StartLength>0.8</StartLength>
+				<EndLength>0.8</EndLength>
+				<RotationDeg>180</RotationDeg>
+				<CurveDeg>45</CurveDeg>
+				<Shape type="convex">
+					<Vertex x="-1.839533" y="-0.2516336" height="0.2" />
+					<Vertex x="-1.110829" y="-0.9063023" height="0.2" />
+					<Vertex x="-0.03034449" y="-0.4855098" height="0.2" />
+					<Vertex x="0.09861892" y="0.3862088" height="0.2" />
+					<Vertex x="-0.357423" y="0.4913402" height="0.2" />
+					<Vertex x="-1.291923" y="0.1312323" height="0.2" />
+				</Shape>
+			</ObstacleConfiguration>
+			
+		<!--Barbwire Curve 90 left-->		
+			<ObstacleConfiguration id="com_structure_barbwire_curve90_left" type="curveWallSegment" parentId="com_structure_barbwire">
+				<IsAbstract>false</IsAbstract>
+				<!--Placement & Geometry-->
+				<BottomCenter x="-1" y="0"></BottomCenter>
+				<Side>Left</Side>
+				<StartLength>1</StartLength>
+				<EndLength>1</EndLength>
+				<RotationDeg>-90</RotationDeg>
+				<CurveDeg>90</CurveDeg>
+				<Shape type="convex">
+					<Vertex x="-1.64978" y="-1.102248" height="0.2" />
+					<Vertex x="-0.6651011" y="-1.03058" height="0.2" />
+					<Vertex x="0.02086848" y="-0.3970064" height="0.2" />
+					<Vertex x="0.09521961" y="0.3736231" height="0.2" />
+					<Vertex x="-0.5210981" y="0.5003539" height="0.2" />
+					<Vertex x="-1.311624" y="-0.07875666" height="0.2" />
+				</Shape>
+			</ObstacleConfiguration>
+			
+		<!--Barbwire Curve 90 right-->	
+			<ObstacleConfiguration id="com_structure_barbwire_curve90_right" type="curveWallSegment" parentId="com_structure_barbwire">
+				<IsAbstract>false</IsAbstract>
+				<!--Placement & Geometry-->
+				<BottomCenter x="-1" y="0"></BottomCenter>
+				<Side>Right</Side>
+				<StartLength>1</StartLength>
+				<EndLength>1</EndLength>
+				<RotationDeg>180</RotationDeg>
+				<CurveDeg>90</CurveDeg>
+				<Shape type="convex">
+					<Vertex x="-1.64978" y="-1.102248" height="0.2" />
+					<Vertex x="-0.6651011" y="-1.03058" height="0.2" />
+					<Vertex x="0.02086848" y="-0.3970064" height="0.2" />
+					<Vertex x="0.09521961" y="0.3736231" height="0.2" />
+					<Vertex x="-0.5210981" y="0.5003539" height="0.2" />
+					<Vertex x="-1.311624" y="-0.07875666" height="0.2" />
+				</Shape>
+			</ObstacleConfiguration>
+			
+		<!--Sandbag-->	
+			<ObstacleConfiguration id="com_structure_sandbags" type="wallSegment">
+				<IsAbstract>true</IsAbstract>
+				<!--Stats-->
+					<SetId>com_structure_sandbags_set</SetId>
+					<Health>75</Health>
+					<ArmorType>Heavy</ArmorType>
+					<CoverType>WaistHigh</CoverType>
+					<ObstacleType>Sand</ObstacleType>
+				<!--Constructions-->
+					<BuildCost>
+						<IronCost>5</IronCost>
+						<OilCost>0</OilCost>
+						<PopulationCost>0</PopulationCost>
+					</BuildCost>
+					<ConstructionPoints>100</ConstructionPoints>
+					<ConstructionExperience>0</ConstructionExperience>
+				<!--XP-->
+					<ExperienceValues>
+						<AttackerXP>42</AttackerXP>
+					</ExperienceValues>
+				<!--placement & Geometry-->
+					<BottomCenter x="0" y="0"></BottomCenter>
+					<RotationDeg>0</RotationDeg>
+
+				<!--Highlight-->
+					<HighlightDelay>0.1</HighlightDelay>
+					
+				<Collision>HumanVaultable, SmallMechBreakable, BigMechBreakable</Collision>
+			</ObstacleConfiguration>
+		
+		<!--Sandbag straight-->	
+			<ObstacleConfiguration id="com_structure_sandbags_straight" type="straightWallSegment" parentId="com_structure_sandbags">
+				<IsAbstract>false</IsAbstract>
+				<!--Placement & Geometry-->
+				<BottomCenter x="-1" y="0"></BottomCenter>
+				<Length>2</Length>
+				<Shape type="convex">
+					<Vertex x="-2.1" y="0.3" height="1" />
+					<Vertex x="-2.1" y="-0.3" height="1" />
+					<Vertex x="0.1" y="-0.3" height="1" />
+					<Vertex x="0.1" y="0.3" height="1" />
+				</Shape>
+			</ObstacleConfiguration>
+			
+		<!--Sandbag Curve 22.5 left-->		
+			<ObstacleConfiguration id="com_structure_sandbags_curve22-5_left" type="curveWallSegment" parentId="com_structure_sandbags">
+				<IsAbstract>false</IsAbstract>
+				<!--Placement & Geometry-->
+				<BottomCenter x="-0.82" y="0"></BottomCenter>
+				<Side>Left</Side>
+				<StartLength>0.82</StartLength>
+				<EndLength>0.82</EndLength>
+				<RotationDeg>-22.5</RotationDeg>
+				<CurveDeg>22.5</CurveDeg>
+				<Shape type="convex">
+					<Vertex x="-1.7" y="-0.06" height="1" />
+					<Vertex x="-1.5" y="-0.52" height="1" />
+					<Vertex x="0.08" y="-0.25" height="1" />
+					<Vertex x="0.08" y="0.27" height="1" />
+					<Vertex x="-0.92" y="0.27" height="1" />
+				</Shape>
+				<AdditionalCoverSpots>
+					<CoverSpot>
+						<Position x="-1.035" y="1.06" />
+						<Direction x="-0.1149" y="0.79" />
+					</CoverSpot>
+				</AdditionalCoverSpots>
+			</ObstacleConfiguration>
+		
+		<!--Sandbag Curve 22.5 right-->		
+			<ObstacleConfiguration id="com_structure_sandbags_curve22-5_right" type="curveWallSegment" parentId="com_structure_sandbags">
+				<IsAbstract>false</IsAbstract>
+				<!--Placement & Geometry-->
+				<BottomCenter x="-0.82" y="0"></BottomCenter>
+				<Side>Right</Side>
+				<StartLength>0.82</StartLength>
+				<EndLength>0.82</EndLength>
+				<RotationDeg>180</RotationDeg>
+				<CurveDeg>22.5</CurveDeg>			
+				<Shape type="convex">
+					<Vertex x="-1.7" y="-0.06" height="1" />
+					<Vertex x="-1.5" y="-0.52" height="1" />
+					<Vertex x="0.08" y="-0.25" height="1" />
+					<Vertex x="0.08" y="0.27" height="1" />
+					<Vertex x="-0.92" y="0.27" height="1" />
+				</Shape>
+				<AdditionalCoverSpots>
+					<CoverSpot>
+						<Position x="-1.035" y="1.06" />
+						<Direction x="-0.1149" y="0.79" />
+					</CoverSpot>
+				</AdditionalCoverSpots>
+			</ObstacleConfiguration>
+	
+		<!--Sandbag Curve 45 left-->	
+			<ObstacleConfiguration id="com_structure_sandbags_curve45_left" type="curveWallSegment" parentId="com_structure_sandbags">
+				<IsAbstract>false</IsAbstract>
+				<!--Placement & Geometry-->
+				<BottomCenter x="-0.85" y="0"></BottomCenter>
+				<Side>Left</Side>
+				<StartLength>0.85</StartLength>
+				<EndLength>0.85</EndLength>
+				<RotationDeg>-45</RotationDeg>
+				<CurveDeg>45</CurveDeg>
+				<Shape type="convex">
+					<Vertex x="-1.34" y="0.05" height="1" />
+					<Vertex x="-1.7" y="-0.45" height="1" />
+					<Vertex x="-1.3" y="-0.8" height="1" />
+					<Vertex x="0.085" y="-0.27" height="1" />
+					<Vertex x="0.12" y="0.3" height="1" />
+					<Vertex x="-0.6" y="0.3" height="1" />
+				</Shape>
+				<AdditionalCoverSpots>
+					<CoverSpot>
+						<Position x="-1.219" y="0.935" />
+						<Direction x="-0.2594" y="0.7567" />
+					</CoverSpot>
+				</AdditionalCoverSpots>
+			</ObstacleConfiguration>
+		
+		<!--Sandbag Curve 45 right-->		
+			<ObstacleConfiguration id="com_structure_sandbags_curve45_right" type="curveWallSegment" parentId="com_structure_sandbags">
+				<IsAbstract>false</IsAbstract>
+				<!--Placement & Geometry-->
+				<BottomCenter x="-0.85" y="0"></BottomCenter>
+				<Side>Right</Side>
+				<StartLength>0.85</StartLength>
+				<EndLength>0.85</EndLength>
+				<RotationDeg>180</RotationDeg>
+				<CurveDeg>45</CurveDeg>
+				<Shape type="convex">
+					<Vertex x="-1.34" y="0.05" height="1" />
+					<Vertex x="-1.7" y="-0.45" height="1" />
+					<Vertex x="-1.3" y="-0.8" height="1" />
+					<Vertex x="0.085" y="-0.27" height="1" />
+					<Vertex x="0.12" y="0.3" height="1" />
+					<Vertex x="-0.6" y="0.3" height="1" />
+				</Shape>
+				<AdditionalCoverSpots>
+					<CoverSpot>
+						<Position x="-1.219" y="0.935" />
+						<Direction x="-0.2594" y="0.7567" />
+					</CoverSpot>
+				</AdditionalCoverSpots>
+			</ObstacleConfiguration>
+			
+		<!--Sandbag Curve 90 left-->	
+			<ObstacleConfiguration id="com_structure_sandbags_curve90_left" type="curveWallSegment" parentId="com_structure_sandbags">
+				<IsAbstract>false</IsAbstract>
+				<!--Placement & Geometry-->
+				<BottomCenter x="-1" y="0"></BottomCenter>
+				<Side>Left</Side>
+				<StartLength>1</StartLength>
+				<EndLength>1</EndLength>
+				<RotationDeg>-90</RotationDeg>
+				<CurveDeg>90</CurveDeg>
+				<Shape type="convex">
+					<Vertex x="-1.26" y="-1.06" height="1" />
+					<Vertex x="-0.77" y="-1.06" height="1" />
+					<Vertex x="0.07" y="-0.25" height="1" />
+					<Vertex x="0.075" y="0.3" height="1" />
+					<Vertex x="-0.58" y="0.23" height="1" />
+					<Vertex x="-1.22" y="-0.4" height="1" />
+				</Shape>
+				<AdditionalCoverSpots>
+					<CoverSpot>
+						<Position x="-0.8501" y="0.9831" />
+						<Direction x="-0.2701" y="0.7531" />
+					</CoverSpot>
+					<CoverSpot>
+						<Position x="-1.928" y="-0.028" />
+						<Direction x="-0.708" y="0.372" />
+					</CoverSpot>
+				</AdditionalCoverSpots>
+			</ObstacleConfiguration>
+			
+		<!--Sandbag Curve 90 right-->	
+			<ObstacleConfiguration id="com_structure_sandbags_curve90_right" type="curveWallSegment" parentId="com_structure_sandbags">
+				<IsAbstract>false</IsAbstract>
+				<!--Placement & Geometry-->
+				<Side>Right</Side>
+				<StartLength>1</StartLength>
+				<EndLength>1</EndLength>
+				<BottomCenter x="-1" y="0"></BottomCenter>
+				<RotationDeg>180</RotationDeg>
+				<CurveDeg>90</CurveDeg>
+				<Shape type="convex">
+					<Vertex x="-1.26" y="-1.06" height="1" />
+					<Vertex x="-0.77" y="-1.06" height="1" />
+					<Vertex x="0.07" y="-0.25" height="1" />
+					<Vertex x="0.075" y="0.3" height="1" />
+					<Vertex x="-0.58" y="0.23" height="1" />
+					<Vertex x="-1.22" y="-0.4" height="1" />
+				</Shape>
+				<AdditionalCoverSpots>
+					<CoverSpot>
+						<Position x="-0.8501" y="0.9831" />
+						<Direction x="-0.2701" y="0.7531" />
+					</CoverSpot>
+					<CoverSpot>
+						<Position x="-1.928" y="-0.028" />
+						<Direction x="-0.708" y="0.372" />
+					</CoverSpot>
+				</AdditionalCoverSpots>
+			</ObstacleConfiguration>
+	
+	<ObstacleConfiguration id="DefaultBuildingWall" type="buildingWall">
+		<Health>50</Health>
+		<ArmorType>Medium</ArmorType>
+		<Targetable>false</Targetable>
+		<Collision>Human, SmallMech, BigMechBreakable</Collision>
+	</ObstacleConfiguration>
+	
+	<ObstacleConfiguration id="BuildingWallBrick" parentId="DefaultBuildingWall" type="buildingWall">
+		<ArmorType>Medium</ArmorType>
+		<Health>150</Health>
+		<ObstacleType>Brick</ObstacleType>
+		<Targetable>false</Targetable>
+	</ObstacleConfiguration>
+	
+	<ObstacleConfiguration id="BuildingWallWood" parentId="DefaultBuildingWall" type="buildingWall">
+		<ArmorType>Medium</ArmorType>
+		<Health>90</Health>
+		<ObstacleType>Wood</ObstacleType>
+		<Targetable>false</Targetable>
+	</ObstacleConfiguration>
+	
+	<ObstacleConfiguration id="BuildingWallMetal" parentId="DefaultBuildingWall" type="buildingWall">
+		<ArmorType>Medium</ArmorType>
+		<Health>175</Health>
+		<ObstacleType>Metal</ObstacleType>
+		<Targetable>false</Targetable>
+	</ObstacleConfiguration>
+
+	<ObstacleConfiguration id="BuildingWallBrickInvulnerable" parentId="BuildingWallBrick" type="buildingWall">
+		<Health>-1</Health>
+		<Collision>Human, SmallMech, BigMech</Collision>		
+	</ObstacleConfiguration>
+
+	<ObstacleConfiguration id="BuildingDebris" parentId="default">
+		<Health>-1</Health>
+		<Targetable>false</Targetable>
+		<Collision>Human, SmallMech, BigMechBreakable</Collision>
+	</ObstacleConfiguration>
+
+	<ObstacleConfiguration id="TargetableDoor" parentId="DefaultBuildingWall" type="buildingWall">
+		<ArmorType>Unarmored</ArmorType>
+		<Health>50</Health>
+		<ObstacleType>Metal</ObstacleType>
+		<Targetable>true</Targetable>
+	</ObstacleConfiguration>
+	
+	<ObstacleConfiguration id="BrotherDoor" parentId="default">
+		<ArmorType>Medium</ArmorType>
+		<Health>20</Health>
+		<OnlyDamageableBy>Brother_Rocket</OnlyDamageableBy>
+		<ObstacleType>Metal</ObstacleType>
+		<Targetable>true</Targetable>
+	</ObstacleConfiguration>
+	
+	<ObstacleConfiguration id="FortressGate" parentId="default">
+		<ArmorType>Medium</ArmorType>
+		<Health>400</Health>
+		<Targetable>true</Targetable>
+		<Collision>Human, SmallMech, BigMech</Collision>
+		<UseSnappedPositionForNavigation>true</UseSnappedPositionForNavigation>
+	</ObstacleConfiguration>
+	
+ </ObstacleConfigurationRepository>

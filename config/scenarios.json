@@ -1,0 +1,508 @@
+{
+  "Scenarios": [
+    {
+      "Id": "mp_2p_01",
+      "SceneName": "scene_mp_2p_01",
+      "PlayerCount": 2,
+      "BattlePlanName": "mp_2p_01",
+      "Type": "Skirmish, Multiplayer"
+    },
+    {
+      "Id": "mp_2p_01_demo",
+      "SceneName": "scene_mp_2p_01",
+      "PlayerCount": 2,
+      "BattlePlanName": "mp_2p_01_demo",
+      "Type": "Skirmish"
+    },
+    {
+      "Id": "mp_2p_01_test_airdrop",
+      "SceneName": "scene_mp_2p_01",
+      "PlayerCount": 2,
+      "BattlePlanName": "mp_2p_01_test_airdrop",
+      "Type": "Skirmish, Multiplayer"
+    },
+    {
+      "Id": "mp_2p_02",
+      "SceneName": "scene_mp_2p_02",
+      "PlayerCount": 2,
+      "BattlePlanName": "mp_2p_02",
+      "Type": "Skirmish, Multiplayer"
+    },
+    {
+      "Id": "mp_2p_02_demo",
+      "SceneName": "scene_mp_2p_02",
+      "PlayerCount": 2,
+      "BattlePlanName": "mp_2p_02_demo",
+      "Type": "Skirmish"
+    },
+    {
+      "Id": "mp_2p_03",
+      "SceneName": "scene_mp_2p_03",
+      "PlayerCount": 2,
+      "BattlePlanName": "mp_2p_03",
+      "Type": "Skirmish, Multiplayer"
+    },
+    {
+      "Id": "mp_2p_03_demo",
+      "SceneName": "scene_mp_2p_03",
+      "PlayerCount": 2,
+      "BattlePlanName": "mp_2p_03_demo",
+      "Type": "Skirmish"
+    },
+    {
+      "Id": "mp_2p_04",
+      "SceneName": "scene_mp_2p_04",
+      "PlayerCount": 2,
+      "BattlePlanName": "mp_2p_04",
+      "Type": "Skirmish, Multiplayer"
+    },
+    {
+      "Id": "mp_2p_04_test_EnemyAI",
+      "SceneName": "scene_mp_2p_04",
+      "PlayerCount": 2,
+      "BattlePlanName": "mp_2p_04_test_EnemyAI",
+      "Type": "Skirmish, Multiplayer"
+    },
+    {
+      "Id": "mp_2p_05",
+      "SceneName": "scene_mp_2p_05",
+      "PlayerCount": 2,
+      "BattlePlanName": "mp_2p_05",
+      "Type": "Skirmish, Multiplayer"
+    },
+    {
+      "Id": "mp_4p_01",
+      "SceneName": "scene_mp_4p_01",
+      "PlayerCount": 4,
+      "BattlePlanName": "mp_4p_01",
+      "Type": "Skirmish, Multiplayer"
+    },
+    {
+      "Id": "mp_4p_01_demo",
+      "SceneName": "scene_mp_4p_01",
+      "PlayerCount": 4,
+      "BattlePlanName": "mp_4p_01_demo",
+      "Type": "Skirmish"
+    },
+    {
+      "Id": "mp_4p_01_test_airdrop",
+      "SceneName": "scene_mp_4p_01",
+      "PlayerCount": 4,
+      "BattlePlanName": "mp_4p_01_test_airdrop",
+      "Type": "Skirmish, Multiplayer"
+    },
+    {
+      "Id": "mp_4p_02",
+      "SceneName": "scene_mp_4p_02",
+      "PlayerCount": 4,
+      "BattlePlanName": "mp_4p_02",
+      "Type": "Skirmish, Multiplayer"
+    },
+    {
+      "Id": "mp_4p_02_demo",
+      "SceneName": "scene_mp_4p_02",
+      "PlayerCount": 4,
+      "BattlePlanName": "mp_4p_02_demo",
+      "Type": "Skirmish"
+    },
+    {
+      "Id": "mp_4p_03",
+      "SceneName": "scene_mp_4p_03",
+      "PlayerCount": 4,
+      "BattlePlanName": "mp_4p_03",
+      "Type": "Skirmish, Multiplayer"
+    },
+    {
+      "Id": "mp_4p_03_test_EnemyAI",
+      "SceneName": "scene_mp_4p_03",
+      "PlayerCount": 4,
+      "BattlePlanName": "mp_4p_03_test_EnemyAI",
+      "Type": "Skirmish, Multiplayer"
+    },
+    {
+      "Id": "mp_4p_04",
+      "SceneName": "scene_mp_4p_04",
+      "PlayerCount": 4,
+      "BattlePlanName": "mp_4p_04",
+      "Type": "Skirmish, Multiplayer"
+    },
+    {
+      "Id": "mp_4p_05",
+      "SceneName": "scene_mp_4p_05",
+      "PlayerCount": 4,
+      "BattlePlanName": "mp_4p_05",
+      "Type": "Skirmish, Multiplayer"
+    },
+    {
+      "Id": "mp_4p_06",
+      "SceneName": "scene_mp_4p_06",
+      "PlayerCount": 4,
+      "BattlePlanName": "mp_4p_06",
+      "Type": "Skirmish, Multiplayer"
+    },
+    {
+      "Id": "mp_6p_01",
+      "SceneName": "scene_mp_6p_01",
+      "PlayerCount": 6,
+      "BattlePlanName": "mp_6p_01",
+      "Type": "Skirmish, Multiplayer"
+    },
+    {
+      "Id": "mp_6p_02",
+      "SceneName": "scene_mp_6p_02",
+      "PlayerCount": 6,
+      "BattlePlanName": "mp_6p_02",
+      "Type": "Skirmish, Multiplayer"
+    },
+    {
+      "Id": "mp_6p_03",
+      "SceneName": "scene_mp_6p_03",
+      "PlayerCount": 6,
+      "BattlePlanName": "mp_6p_03",
+      "Type": "Skirmish, Multiplayer"
+    },
+    {
+      "Id": "mp_6p_04",
+      "SceneName": "scene_mp_6p_04",
+      "PlayerCount": 6,
+      "BattlePlanName": "mp_6p_04",
+      "Type": "Skirmish, Multiplayer"
+    },
+    {
+      "Id": "mp_rus_06",
+      "SceneName": "scene_mp_rus_06",
+      "PlayerCount": 2,
+      "BattlePlanName": "mp_rus_06",
+      "Type": "Multiplayer"
+    },
+    {
+      "Id": "performance_testmap_big",
+      "SceneName": "scene_performance_testmap_big",
+      "PlayerCount": 8,
+      "BattlePlanName": "performance_testmap_big",
+      "Type": "Benchmark"
+    },
+    {
+      "Id": "scene_sp_endmaps",
+      "SceneName": "scene_sp_endmaps",
+      "PlayerCount": 1,
+      "BattlePlanName": "sp_endmaps",
+      "Type": "Campaign"
+    },
+    {
+      "Id": "sp_bon_01",
+      "SceneName": "scene_sp_bon_01",
+      "PlayerCount": 3,
+      "BattlePlanName": "sp_bon_01",
+      "Type": "Campaign"
+    },
+    {
+      "Id": "sp_bon_02",
+      "SceneName": "scene_sp_bon_02",
+      "PlayerCount": 3,
+      "BattlePlanName": "sp_bon_02",
+      "Type": "Campaign"
+    },
+    {
+      "Id": "sp_bon_03",
+      "SceneName": "scene_sp_bon_03",
+      "PlayerCount": 5,
+      "BattlePlanName": "sp_bon_03",
+      "Type": "Campaign"
+    },
+    {
+      "Id": "sp_bon_04",
+      "SceneName": "scene_sp_bon_04",
+      "PlayerCount": 3,
+      "BattlePlanName": "sp_bon_04",
+      "Type": "Campaign"
+    },
+    {
+      "Id": "sp_cha_01",
+      "SceneName": "scene_sp_cha_01",
+      "PlayerCount": 2,
+      "BattlePlanName": "sp_cha_01",
+      "Type": "Challenge"
+    },
+    {
+      "Id": "sp_cha_01_demo",
+      "SceneName": "scene_sp_cha_01",
+      "PlayerCount": 2,
+      "BattlePlanName": "sp_cha_01_demo",
+      "Type": "Challenge"
+    },
+    {
+      "Id": "sp_cha_01_demo2",
+      "SceneName": "scene_sp_cha_01",
+      "PlayerCount": 2,
+      "BattlePlanName": "sp_cha_01_demo2",
+      "Type": "Challenge"
+    },
+    {
+      "Id": "sp_cha_02",
+      "SceneName": "scene_sp_cha_02",
+      "PlayerCount": 3,
+      "BattlePlanName": "sp_cha_02",
+      "Type": "Challenge"
+    },
+    {
+      "Id": "sp_cha_03",
+      "SceneName": "scene_sp_cha_03",
+      "PlayerCount": 2,
+      "BattlePlanName": "sp_cha_03",
+      "Type": "Challenge"
+    },
+    {
+      "Id": "sp_cha_04",
+      "SceneName": "scene_sp_cha_04",
+      "PlayerCount": 2,
+      "BattlePlanName": "sp_cha_04",
+      "Type": "Challenge"
+    },
+    {
+      "Id": "sp_cha_05",
+      "SceneName": "scene_sp_cha_05",
+      "PlayerCount": 2,
+      "BattlePlanName": "sp_cha_05",
+      "Type": "Challenge"
+    },
+    {
+      "Id": "sp_cha_06",
+      "SceneName": "scene_sp_cha_06",
+      "PlayerCount": 2,
+      "BattlePlanName": "sp_cha_06_battleplan",
+      "Type": "Challenge"
+    },
+    {
+      "Id": "sp_endmaps",
+      "SceneName": "scene_sp_endmaps",
+      "PlayerCount": 2,
+      "BattlePlanName": "sp_endmaps",
+      "Type": "Campaign"
+    },
+    {
+      "Id": "sp_pol_01",
+      "SceneName": "scene_sp_pol_01",
+      "PlayerCount": 2,
+      "BattlePlanName": "sp_pol_01",
+      "Type": "Campaign"
+    },
+    {
+      "Id": "sp_pol_02",
+      "SceneName": "scene_sp_pol_02",
+      "PlayerCount": 2,
+      "BattlePlanName": "sp_pol_02",
+      "Type": "Campaign"
+    },
+    {
+      "Id": "sp_pol_03",
+      "SceneName": "scene_sp_pol_03",
+      "PlayerCount": 2,
+      "BattlePlanName": "sp_pol_03",
+      "Type": "Campaign"
+    },
+    {
+      "Id": "sp_pol_03_trailer",
+      "SceneName": "scene_sp_pol_03",
+      "PlayerCount": 2,
+      "BattlePlanName": "sp_pol_03_trailer",
+      "Type": "Campaign"
+    },
+    {
+      "Id": "sp_pol_04",
+      "SceneName": "scene_sp_pol_04",
+      "PlayerCount": 2,
+      "BattlePlanName": "sp_pol_04",
+      "Type": "Campaign"
+    },
+    {
+      "Id": "sp_pol_05",
+      "SceneName": "scene_sp_pol_05",
+      "PlayerCount": 2,
+      "BattlePlanName": "sp_pol_05",
+      "Type": "Campaign"
+    },
+    {
+      "Id": "sp_pol_06",
+      "SceneName": "scene_sp_pol_06",
+      "PlayerCount": 2,
+      "BattlePlanName": "sp_pol_06",
+      "Type": "Campaign"
+    },
+    {
+      "Id": "sp_pol_06_performance",
+      "SceneName": "scene_sp_pol_06",
+      "PlayerCount": 3,
+      "BattlePlanName": "sp_pol_06_performance",
+      "Type": "Campaign"
+    },
+    {
+      "Id": "sp_pol_06_trailer",
+      "SceneName": "scene_sp_pol_06",
+      "PlayerCount": 2,
+      "BattlePlanName": "sp_pol_06_trailer",
+      "Type": "Campaign"
+    },
+    {
+      "Id": "sp_pol_07",
+      "SceneName": "scene_sp_pol_07",
+      "PlayerCount": 2,
+      "BattlePlanName": "sp_pol_07",
+      "Type": "Campaign"
+    },
+    {
+      "Id": "sp_rus_01",
+      "SceneName": "scene_sp_rus_01",
+      "PlayerCount": 4,
+      "BattlePlanName": "sp_rus_01",
+      "Type": "Campaign"
+    },
+    {
+      "Id": "sp_rus_02",
+      "SceneName": "scene_sp_rus_02",
+      "PlayerCount": 2,
+      "BattlePlanName": "sp_rus_02",
+      "Type": "Campaign"
+    },
+    {
+      "Id": "sp_rus_03",
+      "SceneName": "scene_sp_rus_03",
+      "PlayerCount": 2,
+      "BattlePlanName": "sp_rus_03",
+      "Type": "Campaign"
+    },
+    {
+      "Id": "sp_rus_04",
+      "SceneName": "scene_sp_rus_04",
+      "PlayerCount": 2,
+      "BattlePlanName": "sp_rus_04",
+      "Type": "Campaign"
+    },
+    {
+      "Id": "sp_rus_05",
+      "SceneName": "scene_sp_rus_05",
+      "PlayerCount": 2,
+      "BattlePlanName": "sp_rus_05",
+      "Type": "Campaign"
+    },
+    {
+      "Id": "sp_rus_06",
+      "SceneName": "scene_sp_rus_06",
+      "PlayerCount": 2,
+      "BattlePlanName": "sp_rus_06",
+      "Type": "Campaign"
+    },
+    {
+      "Id": "sp_rus_07",
+      "SceneName": "scene_sp_rus_07",
+      "PlayerCount": 2,
+      "BattlePlanName": "sp_rus_07",
+      "Type": "Campaign"
+    },
+    {
+      "Id": "sp_sax_01",
+      "SceneName": "scene_sp_sax_01",
+      "PlayerCount": 2,
+      "BattlePlanName": "sp_sax_01",
+      "Type": "Campaign"
+    },
+    {
+      "Id": "sp_sax_02",
+      "SceneName": "scene_sp_sax_02",
+      "PlayerCount": 2,
+      "BattlePlanName": "sp_sax_02",
+      "Type": "Campaign"
+    },
+    {
+      "Id": "sp_sax_03",
+      "SceneName": "scene_sp_sax_03",
+      "PlayerCount": 2,
+      "BattlePlanName": "sp_sax_03",
+      "Type": "Campaign"
+    },
+    {
+      "Id": "sp_sax_04",
+      "SceneName": "scene_sp_sax_04",
+      "PlayerCount": 2,
+      "BattlePlanName": "sp_sax_04",
+      "Type": "Campaign"
+    },
+    {
+      "Id": "sp_sax_05",
+      "SceneName": "scene_sp_sax_05",
+      "PlayerCount": 2,
+      "BattlePlanName": "sp_sax_05",
+      "Type": "Campaign"
+    },
+    {
+      "Id": "sp_sax_06",
+      "SceneName": "scene_sp_sax_06",
+      "PlayerCount": 2,
+      "BattlePlanName": "sp_sax_06",
+      "Type": "Campaign"
+    },
+    {
+      "Id": "sp_sax_07",
+      "SceneName": "scene_sp_sax_07",
+      "PlayerCount": 2,
+      "BattlePlanName": "sp_sax_07",
+      "Type": "Campaign"
+    },
+    {
+      "Id": "sp_usa_01",
+      "SceneName": "scene_sp_usa_01",
+      "PlayerCount": 3,
+      "BattlePlanName": "sp_usa_01",
+      "Type": "Campaign"
+    },
+    {
+      "Id": "sp_usa_02",
+      "SceneName": "scene_sp_usa_02",
+      "PlayerCount": 3,
+      "BattlePlanName": "sp_usa_02",
+      "Type": "Campaign"
+    },
+    {
+      "Id": "sp_usa_03",
+      "SceneName": "scene_sp_usa_03",
+      "PlayerCount": 3,
+      "BattlePlanName": "sp_usa_03",
+      "Type": "Campaign"
+    },
+    {
+      "Id": "sp_usa_04",
+      "SceneName": "scene_sp_usa_04",
+      "PlayerCount": 2,
+      "BattlePlanName": "sp_usa_04",
+      "Type": "Campaign"
+    },
+    {
+      "Id": "sp_usa_05",
+      "SceneName": "scene_sp_usa_05",
+      "PlayerCount": 2,
+      "BattlePlanName": "sp_usa_05",
+      "Type": "Campaign"
+    },
+    {
+      "Id": "sp_usa_06",
+      "SceneName": "scene_sp_usa_04",
+      "PlayerCount": 2,
+      "BattlePlanName": "sp_usa_06",
+      "Type": "Campaign"
+    },
+    {
+      "Id": "sp_usa_06",
+      "SceneName": "scene_sp_usa_06",
+      "PlayerCount": 2,
+      "BattlePlanName": "sp_usa_06",
+      "Type": "Campaign"
+    },
+    {
+      "Id": "sp_usa_07",
+      "SceneName": "scene_sp_usa_04",
+      "PlayerCount": 2,
+      "BattlePlanName": "sp_usa_07",
+      "Type": "Campaign"
+    }
+  ]
+}

@@ -1,0 +1,612 @@
+{
+  "Units": [
+    {
+      "UnitID": "com_animal_chicken",
+      "SkinID": "default",
+      "MainPrefabName": "cha_com_animal_chicken.prefab",
+      "RagdollPrefabName": "cha_com_animal_chicken_ragdoll.prefab",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_com_default"
+    },
+    {
+      "UnitID": "com_animal_deer",
+      "SkinID": "default",
+      "MainPrefabName": "cha_com_animal_deer.prefab",
+      "RagdollPrefabName": "cha_com_animal_deer_ragdoll.prefab",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_com_default"
+    },
+    {
+      "UnitID": "com_animal_piglet",
+      "SkinID": "default",
+      "MainPrefabName": "cha_com_animal_piglet.prefab",
+      "RagdollPrefabName": "cha_com_animal_piglet_ragdoll.prefab",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_com_default"
+    },
+    {
+      "UnitID": "com_animal_sheep",
+      "SkinID": "default",
+      "MainPrefabName": "cha_com_animal_sheep.prefab",
+      "RagdollPrefabName": "cha_com_animal_sheep_ragdoll.prefab",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_com_default"
+    },
+    {
+      "UnitID": "com_mech_fieldworker",
+      "SkinID": "default",
+      "MainPrefabName": "cha_com_mech_fieldworker.prefab",
+      "RagdollPrefabName": "",
+      "DestroyedPrefabName": "cha_com_mech_fieldworker_wreck.prefab",
+      "AssetBundleFile": "units_com_default"
+    },
+    {
+      "UnitID": "com_mech_transport",
+      "SkinID": "default",
+      "MainPrefabName": "cha_com_mech_transport.prefab",
+      "RagdollPrefabName": "",
+      "DestroyedPrefabName": "cha_com_mech_transport_wreck.prefab",
+      "AssetBundleFile": "units_com_default"
+    },
+    {
+      "UnitID": "com_mech_woodcutter",
+      "SkinID": "default",
+      "MainPrefabName": "cha_com_mech_woodcutter.prefab",
+      "RagdollPrefabName": "",
+      "DestroyedPrefabName": "cha_com_mech_woodcutter_wreck.prefab",
+      "AssetBundleFile": "units_com_default"
+    },
+    {
+      "UnitID": "com_npc_farmerboy",
+      "SkinID": "default",
+      "MainPrefabName": "cha_com_npc_farmerboy.prefab",
+      "RagdollPrefabName": "cha_com_npc_farmerboy_ragdoll.prefab",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_com_default"
+    },
+    {
+      "UnitID": "com_soldier_engineer",
+      "SkinID": "default",
+      "MainPrefabName": "",
+      "RagdollPrefabName": "",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_com_default"
+    },
+    {
+      "UnitID": "com_soldier_flamer",
+      "SkinID": "default",
+      "MainPrefabName": "",
+      "RagdollPrefabName": "",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_com_default"
+    },
+    {
+      "UnitID": "com_soldier_gunner",
+      "SkinID": "default",
+      "MainPrefabName": "",
+      "RagdollPrefabName": "",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_com_default"
+    },
+    {
+      "UnitID": "com_soldier_medic",
+      "SkinID": "default",
+      "MainPrefabName": "",
+      "RagdollPrefabName": "",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_com_default"
+    },
+    {
+      "UnitID": "com_soldier_mg",
+      "SkinID": "default",
+      "MainPrefabName": "",
+      "RagdollPrefabName": "",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_com_default"
+    },
+    {
+      "UnitID": "com_structure_barbwire_curve22-5_left",
+      "SkinID": "default",
+      "MainPrefabName": "Barbwire02-22-5_left.prefab",
+      "RagdollPrefabName": "",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_com_default"
+    },
+    {
+      "UnitID": "com_structure_barbwire_curve22-5_right",
+      "SkinID": "default",
+      "MainPrefabName": "Barbwire02-22-5_right.prefab",
+      "RagdollPrefabName": "",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_com_default"
+    },
+    {
+      "UnitID": "com_structure_barbwire_curve45_left",
+      "SkinID": "default",
+      "MainPrefabName": "Barbwire02-45_left.prefab",
+      "RagdollPrefabName": "",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_com_default"
+    },
+    {
+      "UnitID": "com_structure_barbwire_curve45_right",
+      "SkinID": "default",
+      "MainPrefabName": "Barbwire02-45_right.prefab",
+      "RagdollPrefabName": "",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_com_default"
+    },
+    {
+      "UnitID": "com_structure_barbwire_curve90_left",
+      "SkinID": "default",
+      "MainPrefabName": "Barbwire02-90_left.prefab",
+      "RagdollPrefabName": "",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_com_default"
+    },
+    {
+      "UnitID": "com_structure_barbwire_curve90_right",
+      "SkinID": "default",
+      "MainPrefabName": "Barbwire02-90_right.prefab",
+      "RagdollPrefabName": "",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_com_default"
+    },
+    {
+      "UnitID": "com_structure_barbwire_straight",
+      "SkinID": "default",
+      "MainPrefabName": "Barbwire02-straight.prefab",
+      "RagdollPrefabName": "",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_com_default"
+    },
+    {
+      "UnitID": "com_structure_ironmine",
+      "SkinID": "default",
+      "MainPrefabName": "sct_com_structure_ironmine.prefab",
+      "RagdollPrefabName": "",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_com_default"
+    },
+    {
+      "UnitID": "com_structure_oilfield",
+      "SkinID": "default",
+      "MainPrefabName": "sct_com_structure_oilfield.prefab",
+      "RagdollPrefabName": "",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_com_default"
+    },
+    {
+      "UnitID": "com_structure_sandbags_curve22-5_left",
+      "SkinID": "default",
+      "MainPrefabName": "sandbags02-22-5_left.prefab",
+      "RagdollPrefabName": "",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_com_default"
+    },
+    {
+      "UnitID": "com_structure_sandbags_curve22-5_right",
+      "SkinID": "default",
+      "MainPrefabName": "sandbags02-22-5_right.prefab",
+      "RagdollPrefabName": "",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_com_default"
+    },
+    {
+      "UnitID": "com_structure_sandbags_curve45_left",
+      "SkinID": "default",
+      "MainPrefabName": "sandbags02-45_left.prefab",
+      "RagdollPrefabName": "",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_com_default"
+    },
+    {
+      "UnitID": "com_structure_sandbags_curve45_right",
+      "SkinID": "default",
+      "MainPrefabName": "sandbags02-45_right.prefab",
+      "RagdollPrefabName": "",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_com_default"
+    },
+    {
+      "UnitID": "com_structure_sandbags_curve90_left",
+      "SkinID": "default",
+      "MainPrefabName": "sandbags02-90_left.prefab",
+      "RagdollPrefabName": "",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_com_default"
+    },
+    {
+      "UnitID": "com_structure_sandbags_curve90_right",
+      "SkinID": "default",
+      "MainPrefabName": "sandbags02-90_right.prefab",
+      "RagdollPrefabName": "",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_com_default"
+    },
+    {
+      "UnitID": "com_structure_sandbags_straight",
+      "SkinID": "default",
+      "MainPrefabName": "sandbags02-straight.prefab",
+      "RagdollPrefabName": "",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_com_default"
+    },
+    {
+      "UnitID": "com_support_cannon",
+      "SkinID": "default",
+      "MainPrefabName": "cha_com_support_cannon.prefab",
+      "RagdollPrefabName": "",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_com_default"
+    },
+    {
+      "UnitID": "com_support_mg",
+      "SkinID": "default",
+      "MainPrefabName": "cha_com_support_mg.prefab",
+      "RagdollPrefabName": "",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_com_default"
+    },
+    {
+      "UnitID": "com_support_mortar",
+      "SkinID": "default",
+      "MainPrefabName": "cha_com_support_mortar.prefab",
+      "RagdollPrefabName": "",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_com_default"
+    },
+    {
+      "UnitID": "com_npc_farmermale",
+      "SkinID": "default",
+      "MainPrefabName": "cha_com_npc_farmermale.prefab",
+      "RagdollPrefabName": "cha_com_npc_farmermale_ragdoll.prefab",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_com_default"
+    },
+    {
+      "UnitID": "com_npc_farmerfemale",
+      "SkinID": "default",
+      "MainPrefabName": "cha_com_npc_farmerfemale.prefab",
+      "RagdollPrefabName": "cha_com_npc_farmerfemale_ragdoll.prefab",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_com_default"
+    },
+    {
+      "UnitID": "com_npc_citymale",
+      "SkinID": "default",
+      "MainPrefabName": "cha_com_npc_citymale.prefab",
+      "RagdollPrefabName": "cha_com_npc_citymale_ragdoll.prefab",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_com_default"
+    },
+    {
+      "UnitID": "com_npc_cityfemale",
+      "SkinID": "default",
+      "MainPrefabName": "cha_com_npc_cityfemale.prefab",
+      "RagdollPrefabName": "cha_com_npc_cityfemale_ragdoll.prefab",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_com_default"
+    },
+    {
+      "UnitID": "com_support_destroyer",
+      "SkinID": "default",
+      "MainPrefabName": "cha_com_support_destroyer.prefab",
+      "RagdollPrefabName": "",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_com_default"
+    },
+    {
+      "UnitID": "tes_soldier_walker",
+      "SkinID": "default",
+      "MainPrefabName": "cha_tes_soldier_walker.prefab",
+      "RagdollPrefabName": "cha_tes_soldier_walker_ragdoll.prefab",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_com_default"
+    },
+    {
+      "UnitID": "com_mech_trainarmored",
+      "SkinID": "default",
+      "MainPrefabName": "cha_com_mech_trainarmored.prefab",
+      "RagdollPrefabName": "",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_com_default"
+    },
+    {
+      "UnitID": "com_mech_traincannon",
+      "SkinID": "default",
+      "MainPrefabName": "cha_com_mech_traincannon.prefab",
+      "RagdollPrefabName": "",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_com_default"
+    },
+    {
+      "UnitID": "com_mech_traincannonsupport",
+      "SkinID": "default",
+      "MainPrefabName": "cha_com_mech_traincannonsupport.prefab",
+      "RagdollPrefabName": "",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_com_default"
+    },
+    {
+      "UnitID": "com_mech_trainflatbed",
+      "SkinID": "default",
+      "MainPrefabName": "cha_com_mech_trainflatbed.prefab",
+      "RagdollPrefabName": "",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_com_default"
+    },
+    {
+      "UnitID": "com_mech_trainfreight",
+      "SkinID": "default",
+      "MainPrefabName": "cha_com_mech_trainfreight.prefab",
+      "RagdollPrefabName": "",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_com_default"
+    },
+    {
+      "UnitID": "tes_mech_serve",
+      "SkinID": "default",
+      "MainPrefabName": "cha_tes_mech_serve.prefab",
+      "RagdollPrefabName": "",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_com_default"
+    },
+    {
+      "UnitID": "tes_mech_guard",
+      "SkinID": "default",
+      "MainPrefabName": "cha_tes_mech_guard.prefab",
+      "RagdollPrefabName": "",
+      "DestroyedPrefabName": "cha_tes_mech_guard_wreck.prefab",
+      "AssetBundleFile": "units_com_default"
+    },
+    {
+      "UnitID": "com_animal_bear",
+      "SkinID": "default",
+      "MainPrefabName": "cha_com_animal_bear.prefab",
+      "RagdollPrefabName": "cha_com_animal_bear_ragdoll.prefab",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_com_default"
+    },
+    {
+      "UnitID": "com_npc_farmermalegrenadier",
+      "SkinID": "default",
+      "MainPrefabName": "cha_com_npc_farmermalegrenadier.prefab",
+      "RagdollPrefabName": "cha_com_npc_farmermale_ragdoll.prefab",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_com_default"
+    },
+    {
+      "UnitID": "com_npc_farmermalerifleman",
+      "SkinID": "default",
+      "MainPrefabName": "cha_com_npc_farmermalerifleman.prefab",
+      "RagdollPrefabName": "cha_com_npc_farmermale_ragdoll.prefab",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_com_default"
+    },
+    {
+      "UnitID": "com_npc_farmermalegunner",
+      "SkinID": "default",
+      "MainPrefabName": "cha_com_npc_farmermalegunner.prefab",
+      "RagdollPrefabName": "cha_com_npc_farmermale_ragdoll.prefab",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_com_default"
+    },
+    {
+      "UnitID": "com_structure_rangetargetlarge",
+      "SkinID": "default",
+      "MainPrefabName": "sct_com_structure_rangetargetlarge.prefab",
+      "RagdollPrefabName": "",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_com_default"
+    },
+    {
+      "UnitID": "com_structure_rangetargetmedium",
+      "SkinID": "default",
+      "MainPrefabName": "sct_com_structure_rangetargetmedium.prefab",
+      "RagdollPrefabName": "",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_com_default"
+    },
+    {
+      "UnitID": "com_structure_rangetargetsmall",
+      "SkinID": "default",
+      "MainPrefabName": "sct_com_structure_rangetargetsmall.prefab",
+      "RagdollPrefabName": "",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_com_default"
+    },
+    {
+      "UnitID": "com_mech_trainlocomotive",
+      "SkinID": "default",
+      "MainPrefabName": "cha_com_mech_trainlocomotive.prefab",
+      "RagdollPrefabName": "",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_com_default"
+    },
+    {
+      "UnitID": "com_mech_trainlocomotivetender",
+      "SkinID": "default",
+      "MainPrefabName": "cha_com_mech_trainlocomotivetender.prefab",
+      "RagdollPrefabName": "",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_com_default"
+    },
+    {
+      "UnitID": "tes_mech_ikarus",
+      "SkinID": "default",
+      "MainPrefabName": "cha_tes_mech_ikarus.prefab",
+      "RagdollPrefabName": "",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_com_default"
+    },
+    {
+      "UnitID": "tes_structure_generator01",
+      "SkinID": "default",
+      "MainPrefabName": "tes_structure_generator01.prefab",
+      "RagdollPrefabName": "",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_com_default"
+    },
+    {
+      "UnitID": "tes_structure_generator02",
+      "SkinID": "default",
+      "MainPrefabName": "tes_structure_generator02.prefab",
+      "RagdollPrefabName": "",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_com_default"
+    },
+    {
+      "UnitID": "tes_mech_charger",
+      "SkinID": "default",
+      "MainPrefabName": "cha_tes_mech_charger.prefab",
+      "RagdollPrefabName": "",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_com_default"
+    },
+    {
+      "UnitID": "com_mech_mine",
+      "SkinID": "default",
+      "MainPrefabName": "cha_com_mech_mine.prefab",
+      "RagdollPrefabName": "",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_com_default"
+    },
+    {
+      "UnitID": "com_npc_farmerboysnow",
+      "SkinID": "default",
+      "MainPrefabName": "cha_com_npc_farmerboysnow.prefab",
+      "RagdollPrefabName": "cha_com_npc_farmerboy_ragdoll.prefab",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_com_default"
+    },
+    {
+      "UnitID": "com_animal_cow",
+      "SkinID": "default",
+      "MainPrefabName": "cha_com_animal_cow.prefab",
+      "RagdollPrefabName": "cha_com_animal_cow_ragdoll.prefab",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_com_default"
+    },
+    {
+      "UnitID": "com_animal_crow",
+      "SkinID": "default",
+      "MainPrefabName": "cha_com_animal_crow.prefab",
+      "RagdollPrefabName": "cha_com_animal_crow_ragdoll.prefab",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_com_default"
+    },
+    {
+      "UnitID": "com_animal_pig",
+      "SkinID": "default",
+      "MainPrefabName": "cha_com_animal_pig.prefab",
+      "RagdollPrefabName": "cha_com_animal_pig_ragdoll.prefab",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_com_default"
+    },
+    {
+      "UnitID": "tes_npc_cityfemale",
+      "SkinID": "default",
+      "MainPrefabName": "cha_tes_npc_cityfemale.prefab",
+      "RagdollPrefabName": "cha_com_npc_cityfemale_ragdoll.prefab",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_com_default"
+    },
+    {
+      "UnitID": "tes_npc_citymale",
+      "SkinID": "default",
+      "MainPrefabName": "cha_tes_npc_citymale.prefab",
+      "RagdollPrefabName": "cha_com_npc_citymale_ragdoll.prefab",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_com_default"
+    },
+    {
+      "UnitID": "com_npc_citymalerifleman",
+      "SkinID": "default",
+      "MainPrefabName": "cha_com_npc_citymalerifleman.prefab",
+      "RagdollPrefabName": "cha_com_npc_citymale_ragdoll.prefab",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_com_default"
+    },
+    {
+      "UnitID": "com_npc_citymalegrenadier",
+      "SkinID": "default",
+      "MainPrefabName": "cha_com_npc_citymalegrenadier.prefab",
+      "RagdollPrefabName": "cha_com_npc_citymale_ragdoll.prefab",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_com_default"
+    },
+    {
+      "UnitID": "com_npc_citymalegunner",
+      "SkinID": "default",
+      "MainPrefabName": "cha_com_npc_citymalegunner.prefab",
+      "RagdollPrefabName": "cha_com_npc_citymale_ragdoll.prefab",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_com_default"
+    },
+    {
+      "UnitID": "tes_npc_citymalerifleman",
+      "SkinID": "default",
+      "MainPrefabName": "cha_tes_npc_citymalerifleman.prefab",
+      "RagdollPrefabName": "cha_com_npc_citymale_ragdoll.prefab",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_com_default"
+    },
+    {
+      "UnitID": "tes_npc_citymalegrenadier",
+      "SkinID": "default",
+      "MainPrefabName": "cha_tes_npc_citymalegrenadier.prefab",
+      "RagdollPrefabName": "cha_com_npc_citymale_ragdoll.prefab",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_com_default"
+    },
+    {
+      "UnitID": "tes_npc_citymalegunner",
+      "SkinID": "default",
+      "MainPrefabName": "cha_tes_npc_citymalegunner.prefab",
+      "RagdollPrefabName": "cha_com_npc_citymale_ragdoll.prefab",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_com_default"
+    },
+    {
+      "UnitID": "com_npc_citymalepartyguest",
+      "SkinID": "default",
+      "MainPrefabName": "cha_com_npc_citymalepartyguest.prefab",
+      "RagdollPrefabName": "cha_com_npc_citymale_ragdoll.prefab",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_com_default"
+    },
+    {
+      "UnitID": "com_npc_citymalepartywaiter",
+      "SkinID": "default",
+      "MainPrefabName": "cha_com_npc_citymalepartywaiter.prefab",
+      "RagdollPrefabName": "cha_com_npc_citymale_ragdoll.prefab",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_com_default"
+    },
+    {
+      "UnitID": "com_npc_cityfemalepartyguest",
+      "SkinID": "default",
+      "MainPrefabName": "cha_com_npc_cityfemalepartyguest.prefab",
+      "RagdollPrefabName": "cha_com_npc_cityfemale_ragdoll.prefab",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_com_default"
+    },
+    {
+      "UnitID": "tes_structure_generator01sturdy",
+      "SkinID": "default",
+      "MainPrefabName": "tes_structure_generator01sturdy.prefab",
+      "RagdollPrefabName": "",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_com_default"
+    },
+    {
+      "UnitID": "tes_structure_generator02sturdy",
+      "SkinID": "default",
+      "MainPrefabName": "tes_structure_generator02sturdy.prefab",
+      "RagdollPrefabName": "",
+      "DestroyedPrefabName": "",
+      "AssetBundleFile": "units_com_default"
+    }
+  ]
+}

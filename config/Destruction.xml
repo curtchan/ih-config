@@ -1,0 +1,19 @@
+<destruction>
+	<GlobalSettings>
+		<DebrisFractureDelay>-1</DebrisFractureDelay>
+		<FractureThresholdLarge>500</FractureThresholdLarge>
+		<FractureThresholdMedium>50</FractureThresholdMedium>
+		<SmallDebrisLimit>1000</SmallDebrisLimit>
+		<MediumDebrisLimit>100</MediumDebrisLimit>
+		<LargeDebrisLimit>50</LargeDebrisLimit>
+		<SmallDebrisMass>2</SmallDebrisMass>
+		<MediumDebrisMass>20</MediumDebrisMass>
+		<LargeDebrisMass>100</LargeDebrisMass>
+		<UseDensityInsteadOfMass>true</UseDensityInsteadOfMass>
+		<DebrisDensity>2000</DebrisDensity>
+		<SmallDebrisPowerModifier>0.05</SmallDebrisPowerModifier>
+		<MediumDebrisPowerModifier>0.5</MediumDebrisPowerModifier>
+		<LargeDebrisPowerModifier>1</LargeDebrisPowerModifier>
+		<DebrisMaxDepenetrationVelocity>10</DebrisMaxDepenetrationVelocity>
+	</GlobalSettings>
+</destruction>

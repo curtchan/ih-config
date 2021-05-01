@@ -1,0 +1,45 @@
+<HeroVeterancyConfigurations>
+	<!-- Anna Single Match Definition -->
+    <HeroVeterancyConfiguration overrideId="pol_hero_anna_xp_single" type="SingleMatch">
+		<HeroRanks>
+			<Rank ExperienceThreshold="0"    DamageModifier="1.0" HealthModifier="1.0" AttackerXP="427" DamageXP="250" HealerXP="450"/> <!-- This is the starting level, so the experience threshold should be 0 -->
+			<Rank ExperienceThreshold="2500" DamageModifier="1.15" HealthModifier="1.3" AttackerXP="640" DamageXP="375" HealerXP="675"/>
+			<Rank ExperienceThreshold="5500" DamageModifier="1.3" HealthModifier="1.6" AttackerXP="853" DamageXP="500" HealerXP="900"/>
+			<Rank ExperienceThreshold="9000" DamageModifier="1.6" HealthModifier="1.9" AttackerXP="1066" DamageXP="625" HealerXP="1125"/>
+			<Rank ExperienceThreshold="13000" DamageModifier="2" HealthModifier="2.2" AttackerXP="1280" DamageXP="750" HealerXP="1350"/>
+		</HeroRanks>
+	</HeroVeterancyConfiguration>
+
+	<!-- Gunter Single Match Definition -->
+	<HeroVeterancyConfiguration overrideId="sax_hero_gunter_xp_single" type="SingleMatch">
+		<HeroRanks>
+			<Rank ExperienceThreshold="0"    DamageModifier="1.0" HealthModifier="1.0" AttackerXP="533" DamageXP="250" HealerXP="600"/>	<!-- This is the starting level, so the experience threshold should be 0 -->
+			<Rank ExperienceThreshold="2000" DamageModifier="1.15" HealthModifier="1.3" AttackerXP="800" DamageXP="375" HealerXP="900"/>
+			<Rank ExperienceThreshold="4500" DamageModifier="1.3" HealthModifier="1.6" AttackerXP="1066" DamageXP="500" HealerXP="1200"/>
+			<Rank ExperienceThreshold="7500" DamageModifier="1.6" HealthModifier="1.9" AttackerXP="1333" DamageXP="625" HealerXP="1500"/>
+			<Rank ExperienceThreshold="11000" DamageModifier="2" HealthModifier="2.2" AttackerXP="1600" DamageXP="750" HealerXP="1800"/>
+		</HeroRanks>
+	</HeroVeterancyConfiguration>
+	
+	<!-- Olga Single Match Definition -->
+	<HeroVeterancyConfiguration overrideId="rus_hero_olga_xp_single" type="SingleMatch">
+		<HeroRanks>
+			<Rank ExperienceThreshold="0"    DamageModifier="1.0" HealthModifier="1.0" AttackerXP="533" DamageXP="250" HealerXP="600"/>	<!-- This is the starting level, so the experience threshold should be 0 -->
+			<Rank ExperienceThreshold="1500" DamageModifier="1.15" HealthModifier="1.3" AttackerXP="800" DamageXP="375" HealerXP="900"/>
+			<Rank ExperienceThreshold="4000" DamageModifier="1.3" HealthModifier="1.6" AttackerXP="1066" DamageXP="500" HealerXP="1200"/>
+			<Rank ExperienceThreshold="7000" DamageModifier="1.6" HealthModifier="1.9" AttackerXP="1333" DamageXP="625" HealerXP="1500"/>
+			<Rank ExperienceThreshold="10000" DamageModifier="2" HealthModifier="2.2" AttackerXP="1600" DamageXP="750" HealerXP="1800"/>
+		</HeroRanks>
+	</HeroVeterancyConfiguration>
+
+	<!-- Brother Exo Single Match Definition -->
+	<HeroVeterancyConfiguration overrideId="rus_hero_brother_xp_single" type="SingleMatch">
+		<HeroRanks>
+			<Rank ExperienceThreshold="0"    DamageModifier="1.0" HealthModifier="1.0" AttackerXP="867"  DamageXP="500" HealerXP="250"/>	<!-- This is the starting level, so the experience threshold should be 0 -->
+			<Rank ExperienceThreshold="2500" DamageModifier="1.1" HealthModifier="1.2" AttackerXP="1083"  DamageXP="625" HealerXP="250"/>
+			<Rank ExperienceThreshold="6500" DamageModifier="1.3" HealthModifier="1.4" AttackerXP="2600" DamageXP="750" HealerXP="250"/>
+			<Rank ExperienceThreshold="11000" DamageModifier="1.5" HealthModifier="1.6" AttackerXP="4550" DamageXP="875" HealerXP="250"/>
+			<Rank ExperienceThreshold="16000" DamageModifier="1.75" HealthModifier="1.8" AttackerXP="6933" DamageXP="1000" HealerXP="250"/>
+		</HeroRanks>
+	</HeroVeterancyConfiguration>
+</HeroVeterancyConfigurations>

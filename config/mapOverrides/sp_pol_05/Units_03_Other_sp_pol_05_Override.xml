@@ -1,0 +1,50 @@
+<UnitConfigurations>
+	<!--Playable Units-->
+	<!--Polania-->
+	<!--Heroes-->
+
+	<!--Trains-->
+	<!-- Locomotive -->
+	<UnitConfiguration overrideId="com_mech_trainlocomotive" type="wagon" parentId="com_wagon">
+		<IsAbstract>false</IsAbstract>
+		<Health>1450</Health>
+		<VisionRadius>30</VisionRadius>
+
+		<!--Wagon-Specific-->
+		<AxisSuspensionInfo>
+			<Offset>0</Offset>
+			<SubAxes>
+				<AxisSuspensionInfo>
+					<Offset>1.6</Offset>
+					<SubAxes>
+						<AxisSuspensionInfo>
+							<Offset>1.825</Offset>
+							<AxisDirection>Rail</AxisDirection>
+						</AxisSuspensionInfo>
+						<AxisSuspensionInfo>
+							<Offset>0</Offset>
+							<AxisDirection>Train</AxisDirection>
+						</AxisSuspensionInfo>
+					</SubAxes>
+				</AxisSuspensionInfo>
+				<AxisSuspensionInfo>
+					<Offset>-1.6</Offset>
+					<SubAxes>
+						<AxisSuspensionInfo>
+							<Offset>0</Offset>
+							<AxisDirection>Train</AxisDirection>
+						</AxisSuspensionInfo>
+						<AxisSuspensionInfo>
+							<Offset>-2</Offset>
+							<AxisDirection>Rail</AxisDirection>
+						</AxisSuspensionInfo>
+					</SubAxes>
+				</AxisSuspensionInfo>
+			</SubAxes>
+		</AxisSuspensionInfo>
+		<Length>10</Length>
+		<WreckConfiguration/>
+	</UnitConfiguration>
+
+	<!-- End of File-->
+</UnitConfigurations>

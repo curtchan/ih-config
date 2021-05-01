@@ -1,0 +1,65 @@
+<DropZoneConfigurations>
+	<!--DropZone Settings-->
+	<DropZoneConfiguration id="base_drop_zone_settings">
+		<!-- Drop Timings -->
+		<DropAnnouncementTime>60</DropAnnouncementTime>
+		<InitialDropInterval>180</InitialDropInterval>
+		<DropInterval>120</DropInterval>
+		<DroppingDuration>11</DroppingDuration>
+		
+		<!-- Other Drop Settings -->
+		<MaxExistingDrops>3</MaxExistingDrops>
+		<CrateConfigName>crate_victorypoints</CrateConfigName>
+		<AnnouncedRevealRadius>15</AnnouncedRevealRadius>
+		<DroppedRevealRadius>15</DroppedRevealRadius>
+		
+		<!-- relative Drop Count Probababilities -->
+		<Weight1Drop>1</Weight1Drop>
+		<Weight2Drop>1</Weight2Drop>
+		<Weight3Drop>1</Weight3Drop>
+		
+		<!-- AntiRepetition-Bias settings -->
+		<AntiRepetitionBias>0.5</AntiRepetitionBias> <!-- value between 0 and 1 -->
+		<AntiRepetitionBiasDecayModifier>0.6</AntiRepetitionBiasDecayModifier> <!-- value between 0 and 1 -->
+		<AntiRepetitionBiasMaxConsideredDrops>6</AntiRepetitionBiasMaxConsideredDrops> <!-- value between 0 and 10 -->
+		
+		<!-- VictoryPoint-Bias settings -->
+		<VictoryPointThresholds>
+			<VictoryPointBiasThreshold dropCount="3" missingPointThreshold="200" bias="0" />
+			<VictoryPointBiasThreshold dropCount="2" missingPointThreshold="150" bias="0" />
+		</VictoryPointThresholds>
+	</DropZoneConfiguration>
+	
+	<DropZoneConfiguration id="2p_drop_zone_settings" parentId="base_drop_zone_settings">
+		<!-- Drop Timings -->
+		<DropAnnouncementTime>60</DropAnnouncementTime>
+		<DropInterval>120</DropInterval>
+	
+		<!-- relative Drop Count Probababilities -->
+		<Weight1Drop>3</Weight1Drop>
+		<Weight2Drop>3</Weight2Drop>
+		<Weight3Drop>2</Weight3Drop>
+	</DropZoneConfiguration>
+	
+	<DropZoneConfiguration id="4p_drop_zone_settings" parentId="base_drop_zone_settings">
+		<!-- Drop Timings -->
+		<DropAnnouncementTime>60</DropAnnouncementTime>
+		<DropInterval>150</DropInterval>
+		
+		<!-- relative Drop Count Probababilities -->
+		<Weight1Drop>1</Weight1Drop>
+		<Weight2Drop>1</Weight2Drop>
+		<Weight3Drop>1</Weight3Drop>
+	</DropZoneConfiguration>
+	
+	<DropZoneConfiguration id="6p_drop_zone_settings" parentId="base_drop_zone_settings">
+		<!-- Drop Timings -->
+		<DropAnnouncementTime>60</DropAnnouncementTime>
+		<DropInterval>180</DropInterval>
+	
+		<!-- relative Drop Count Probababilities -->
+		<Weight1Drop>2</Weight1Drop>
+		<Weight2Drop>3</Weight2Drop>
+		<Weight3Drop>3</Weight3Drop>
+	</DropZoneConfiguration>
+</DropZoneConfigurations>
